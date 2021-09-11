@@ -5,765 +5,517 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 'YouTube-阿伟科技01/1-JP-10-1', server: 18.183.164.218, port: 15169, type: vmess, uuid: 0f2d3933-f314-47b3-9f9c-0dfcdb63907e, alterId: 0, cipher: auto, tls: false, network: ws}
-  - {name: 'YouTube-阿伟科技01/2-JP-10-2', server: 18.183.164.218, port: 15169, type: vmess, uuid: 6d183a39-9fc0-472e-98fb-4bee2a542db9, alterId: 0, cipher: auto, tls: false, network: ws}
-  - {name: 'YouTube-阿伟科技01/3-US-10-3', server: 45.11.92.139, port: 32382, type: vmess, uuid: 711a60c6-5752-487f-80fb-5d410f0c2138, alterId: 0, cipher: auto, tls: false, network: ws}
-  - {name: 'YouTube-阿伟科技02-HK-10-4', server: 120.232.214.25, port: 9443, type: vmess, uuid: f0dfedf9-81cc-4de2-8742-2dc758ee6c5a, alterId: 0, cipher: auto, tls: true, network: tcp}
-  - {name: 'YouTube-阿伟科技02-HK-10-5', server: 120.232.214.25, port: 9444, type: vmess, uuid: 7bd09130-af71-42cf-b878-fc2e5039db8e, alterId: 0, cipher: auto, tls: true, network: tcp}
-  - {name: 'YouTube-阿伟科技02-HK-10-6', server: 120.232.214.25, port: 119, type: vmess, uuid: 9f073c5b-f926-41b4-8e80-20053976dc1c, alterId: 0, cipher: auto, tls: true, network: tcp}
-  - {name: 'YouTube-阿伟科技02-HK-10-7', server: 120.232.214.25, port: 121, type: vmess, uuid: cdc2e0f0-7b3c-4461-a8e2-ad054d5708fc, alterId: 0, cipher: auto, tls: true, network: tcp}
-  - {name: 'YouTube-阿伟科技02-HK-10-8', server: 120.232.214.25, port: 122, type: vmess, uuid: 04ecb307-8d40-44ec-87db-9d8c63fc707a, alterId: 0, cipher: auto, tls: true, network: tcp}
-  - {name: 'YouTube-阿伟科技02-JP-10-9', server: 120.232.214.25, port: 113, type: vmess, uuid: 51e1dd24-6880-4fe9-a9cf-24a48378585a, alterId: 0, cipher: auto, tls: true, network: tcp}
-  - {name: 'YouTube-阿伟科技02-KR-10-10', server: 120.232.214.25, port: 110, type: vmess, uuid: d36f13d5-5c92-45ef-8024-6c98614ab190, alterId: 0, cipher: auto, tls: true, network: tcp}
-  - {name: 'YouTube-阿伟科技02-SG-10-11', server: 120.232.214.25, port: 115, type: vmess, uuid: 5545d56c-47de-4161-8f58-16f21dbe6e7f, alterId: 0, cipher: auto, tls: true, network: tcp}
-  - {name: 'YouTube-阿伟科技08-HK-10-12', server: 103.85.20.81, port: 12345, type: vmess, uuid: 03fafc6e-9a12-370f-990e-e36e51fcdd53, alterId: 2, cipher: auto, tls: false, network: tcp}
-  - {name: 'YouTube-阿伟科技08-HK-10-13', server: 103.85.20.176, port: 12345, type: vmess, uuid: 10e1c13e-bc46-3f14-bb21-2d415c5e9de7, alterId: 2, cipher: auto, tls: false, network: tcp}
-  - {name: 'YouTube-阿伟科技13-JP-10-14', server: azjp.v2jx.site, port: 80, type: vmess, uuid: a07a3bce-9419-445d-b239-7a96353ab972, alterId: 64, cipher: auto, tls: false, network: ws}
-  - {name: 'YouTube-阿伟科技13-US-10-15', server: free-hk-a.uck.life, port: 26659, type: vmess, uuid: a07a3bce-9419-445d-b239-7a96353ab972, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /}
-  - {name: 'YouTube-阿伟科技16-HK-10-16', server: 18.167.94.242, port: 80, type: vmess, uuid: cec85927-8a7a-4866-df8c-27ed589de0ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: pull.free.video.10010.com}}
-  - {name: 'YouTube-阿伟科技17-HK-10-17', server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ssrgr-hk18, ws-headers: {Host: none}}
-  - {name: 'YouTube-阿伟科技18-JP-10-18', server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ssrgr-jp3, ws-headers: {Host: none}}
-  - {name: 'YouTube-阿伟科技19-HK-10-19', server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ssrgr-sg07, ws-headers: {Host: none}}
-  - {name: 'YouTube-阿伟科技20-SG-10-20', server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ssrgr-sg05, ws-headers: {Host: none}}
-  - {name: 'YouTube-阿伟科技21-SG-10-21', server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ssrgr-sg3, ws-headers: {Host: none}}
-  - {name: 'YouTube-阿伟科技22-SG-10-22', server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ssrgr-sg01, ws-headers: {Host: none}}
-  - {name: 'YouTube-阿伟科技23-SG-10-23', server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ssrgr-in02, ws-headers: {Host: none}}
-  - {name: 'YouTube-阿伟科技24-JP-10-24', server: 54.238.86.254, port: 13033, type: ss, cipher: chacha20-ietf-poly1305, password: DJLYliqCX9veEn0O14}
-  - {name: 'YouTube-阿伟科技25-US-10-25', server: 2.58.241.45, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 'YouTube-阿伟科技26-SG-10-26', server: 54.238.86.254, port: 13033, type: ss, cipher: chacha20-ietf-poly1305, password: DJLYliqCX9veEn0O14}
-  - {name: 'YouTube-阿伟科技-8-27', server: 103.152.151.68, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
-  - {name: 'YouTube-阿伟科技-8-28', server: 204.124.181.224, port: 26917, type: vmess, uuid: 3bc30c04-4854-47bc-80b5-4fbb2364006e, alterId: 8, cipher: auto, tls: false, network: tcp, ws-path: t.me/vpnpool, ws-headers: {Host: t.me/vpnhat}}
-  - {name: 'YouTube-阿伟科技DE-8-29', server: 37.120.217.149, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 'YouTube-阿伟科技GB-8-30', server: 89.238.130.253, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 'YouTube-阿伟科技GB-8-31', server: 195.181.171.233, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 'YouTube-阿伟科技GB-8-32', server: 89.238.130.227, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 'YouTube-阿伟科技HK-8-33', server: 18.167.94.242, port: 80, type: vmess, uuid: cec85927-8a7a-4866-df8c-27ed589de0ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: pull.free.video.10010.com}}
-  - {name: 'YouTube-阿伟科技HK-8-34', server: 32.ssrj.xyz, port: 65132, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, network: tcp}
-  - {name: 'YouTube-阿伟科技HK-8-35', server: 4.ssrj.xyz, port: 65104, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, network: tcp}
-  - {name: 'YouTube-阿伟科技HK-8-36', server: 7.ssrj.xyz, port: 65107, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, network: tcp}
-  - {name: 'YouTube-阿伟科技JP-8-37', server: 54.178.67.40, port: 80, type: vmess, uuid: 00000000-0000-0000-0000-000000000001, alterId: 64, cipher: auto, tls: false, network: tcp}
-  - {name: 'YouTube-阿伟科技JP-8-38', server: 11.ssrj.xyz, port: 65111, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, network: tcp}
-  - {name: 'YouTube-阿伟科技JP-8-39', server: 3.ssrj.xyz, port: 65103, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, network: tcp}
-  - {name: 'YouTube-阿伟科技RO-8-40', server: 193.29.106.61, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 'YouTube-阿伟科技SK-8-41', server: 37.120.221.5, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 'YouTube-阿伟科技TW-8-42', server: 2.58.241.46, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 'YouTube-阿伟科技TW-8-43', server: 2.58.241.46, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 'YouTube-阿伟科技TW-8-44', server: 2.58.241.45, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 'YouTube-阿伟科技TW-8-45', server: 2.58.241.45, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
-  - {name: 'YouTube-阿伟科技TW-8-46', server: 2.58.241.27, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
-  - {name: 'YouTube-阿伟科技-US-47', server: 2.58.242.54, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: 'YouTube-阿伟科技-US-48', server: 2.58.242.54, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
-  - {name: 'YouTube-阿伟科技-US-49', server: 2.58.242.54, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: 'YouTube-阿伟科技-US-50', server: 2.58.242.54, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: 'YouTube-阿伟科技-US-51', server: 107.150.8.102, port: 38924, type: vmess, uuid: b149e8e3-8c53-4c31-936f-db467c61766b, alterId: 0, cipher: auto, tls: false, network: tcp}
-  - {name: 'YouTube-阿伟科技US-8-52', server: 104.200.131.167, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
-  - {name: 'YouTube-阿伟科技US-8-53', server: 199.10.64.133, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: 'YouTube-阿伟科技US-8-54', server: 104.200.131.167, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: '🇭🇰香港-55', server: 212.102.42.201, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
-  - {name: '🇭🇰香港-56', server: 212.102.42.201, port: 42166, type: ss, cipher: aes-256-gcm, password: H9Dbn3szZMqLR3NpgEFEPCKb}
-  - {name: '🇭🇰香港-57', server: 212.102.42.201, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: '🇭🇰香港-58', server: 212.102.42.201, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: '🇭🇰香港-59', server: 212.102.42.201, port: 50024, type: ss, cipher: aes-256-gcm, password: b2jDPHUQxCNa2KmGHZjy7C4B}
-  - {name: '🇭🇰香港-60', server: 212.102.42.201, port: 49468, type: ss, cipher: aes-256-gcm, password: LsYSQDxmPj9AcWpSX5HrYfu6}
-  - {name: '🇭🇰香港-61', server: 212.102.42.201, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: '🇭🇰香港-62', server: 212.102.42.201, port: 47861, type: ss, cipher: aes-256-gcm, password: LJcChRsGQRhywrtXUU55TLTu}
-  - {name: '🇭🇰香港-63', server: 212.102.42.201, port: 45329, type: ss, cipher: aes-256-gcm, password: CXSjgD7u7Ar7GxkZ4CgTMUsj}
-  - {name: '🇭🇰香港-64', server: 212.102.42.201, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: '🇭🇰香港-65', server: 212.102.42.201, port: 38742, type: ss, cipher: aes-256-gcm, password: DKXfWwc4ebscpXTKpbt85rSH}
-  - {name: '🇭🇰香港-66', server: 212.102.42.201, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
-  - {name: '🇭🇰香港-67', server: 212.102.42.201, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: '🇭🇰香港-68', server: 212.102.42.201, port: 31944, type: ss, cipher: aes-256-gcm, password: aYNeKDMzYQYw4KbUbJA8Wszq}
-  - {name: '🇭🇰香港-69', server: 212.102.42.201, port: 49514, type: ss, cipher: aes-256-gcm, password: dpGjA4GkzV28QPDYzEp94cTe}
-  - {name: '🇭🇰香港-70', server: 212.102.42.201, port: 48970, type: ss, cipher: aes-256-gcm, password: ZKEsXkFbUZ2z667YA8A7cEDP}
-  - {name: '🇭🇰香港-71', server: 212.102.42.201, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: '🇭🇰香港-72', server: 212.102.42.201, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
-  - {name: '🇭🇰香港-73', server: 212.102.42.201, port: 42304, type: ss, cipher: aes-256-gcm, password: p26v2JwhQVHDHsXk66fXt56r}
-  - {name: '🇭🇰香港-74', server: 212.102.42.201, port: 41992, type: ss, cipher: aes-256-gcm, password: XmQSxDCn5ehpcq6DBYms8FJf}
-  - {name: '🇭🇰香港-75', server: 212.102.42.201, port: 40282, type: ss, cipher: aes-256-gcm, password: Pvvaw486867D2w4yctL2ULTQ}
-  - {name: '🇭🇰香港-76', server: 212.102.42.201, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: '🇭🇰香港-77', server: 212.102.42.201, port: 35294, type: ss, cipher: aes-256-gcm, password: J9Y2ncrdPEC38gwydNFFGBna}
-  - {name: '🇭🇰香港-78', server: 212.102.42.201, port: 31764, type: ss, cipher: aes-256-gcm, password: YgusH2MWA8PWc3p2VDsR7AVv}
-  - {name: '🇭🇰香港-79', server: 212.102.42.201, port: 50695, type: ss, cipher: aes-256-gcm, password: gqtwGu9bVreJqL3FTHSVKGzy}
-  - {name: '🇭🇰香港-80', server: 212.102.42.201, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
-  - {name: '🇭🇰香港-81', server: 212.102.42.201, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
-  - {name: '🇭🇰香港-82', server: 212.102.42.201, port: 49202, type: ss, cipher: aes-256-gcm, password: btzEYXKZxnR7g6H2vFTQK5TD}
-  - {name: '🇭🇰香港-83', server: 212.102.42.201, port: 47027, type: ss, cipher: aes-256-gcm, password: Vt5pBJFwdtNB26cJbTXxm88Z}
-  - {name: '🇭🇰香港-84', server: 212.102.42.201, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: '🇭🇰香港-85', server: 212.102.42.201, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
-  - {name: '🇭🇰香港-86', server: 212.102.42.201, port: 44745, type: ss, cipher: aes-256-gcm, password: fyXdw87yCH9SAmFkPvsvLVqC}
-  - {name: '🇭🇰香港-87', server: 212.102.42.201, port: 44628, type: ss, cipher: aes-256-gcm, password: VASQbVcukHfdBGmeS9L7Z8TT}
-  - {name: '🇭🇰香港-88', server: 212.102.42.201, port: 33148, type: ss, cipher: aes-256-gcm, password: CMduaFXddcQbwNAAs7xFDnc8}
-  - {name: '🇭🇰香港-89', server: 212.102.42.201, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
-  - {name: '🇭🇰香港-90', server: 212.102.42.201, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 'YouTube-阿伟科技01/1-JP-11-1', server: 18.183.164.218, port: 15169, type: vmess, uuid: 0f2d3933-f314-47b3-9f9c-0dfcdb63907e, alterId: 0, cipher: auto, tls: false, network: ws}
+  - {name: 'YouTube-阿伟科技01/2-JP-11-2', server: 18.183.164.218, port: 15169, type: vmess, uuid: 6d183a39-9fc0-472e-98fb-4bee2a542db9, alterId: 0, cipher: auto, tls: false, network: ws}
+  - {name: 'YouTube-阿伟科技01/3-US-11-3', server: 45.11.92.139, port: 32382, type: vmess, uuid: 711a60c6-5752-487f-80fb-5d410f0c2138, alterId: 0, cipher: auto, tls: false, network: ws}
+  - {name: 'YouTube-阿伟科技02-HK-11-4', server: 120.232.214.25, port: 9443, type: vmess, uuid: 72ce6223-14d4-4148-8a25-4920d627676d, alterId: 0, cipher: auto, tls: true, network: tcp}
+  - {name: 'YouTube-阿伟科技02-HK-11-5', server: 120.232.214.25, port: 9444, type: vmess, uuid: d3c0fab6-ba82-4525-aa3c-157ae652833e, alterId: 0, cipher: auto, tls: true, network: tcp}
+  - {name: 'YouTube-阿伟科技02-HK-11-6', server: 120.232.214.25, port: 119, type: vmess, uuid: de1e8851-0653-45c5-aa68-de237101decf, alterId: 0, cipher: auto, tls: true, network: tcp}
+  - {name: 'YouTube-阿伟科技02-HK-11-7', server: 120.232.214.25, port: 121, type: vmess, uuid: 3d44b4c8-1ae9-4b0d-8e9b-0f959e0d398a, alterId: 0, cipher: auto, tls: true, network: tcp}
+  - {name: 'YouTube-阿伟科技02-JP-11-8', server: 120.232.214.25, port: 113, type: vmess, uuid: 4a1e29ae-97bc-4f6d-82b8-f4a62d8e5840, alterId: 0, cipher: auto, tls: true, network: tcp}
+  - {name: 'YouTube-阿伟科技02-KR-11-9', server: 120.232.214.25, port: 110, type: vmess, uuid: 49d45e79-6329-49e1-bbd2-71dd67df892d, alterId: 0, cipher: auto, tls: true, network: tcp}
+  - {name: 'YouTube-阿伟科技02-SG-11-10', server: 120.232.214.25, port: 115, type: vmess, uuid: 7126391a-65ae-43db-baaa-3f0f0f1919df, alterId: 0, cipher: auto, tls: true, network: tcp}
+  - {name: 'YouTube-阿伟科技08-HK-11-11', server: 103.85.20.81, port: 12345, type: vmess, uuid: 8b0a20d2-8a9a-3bb2-8b64-89e05a9ce644, alterId: 2, cipher: auto, tls: false, network: tcp}
+  - {name: 'YouTube-阿伟科技08-HK-11-12', server: 103.85.20.176, port: 12345, type: vmess, uuid: 8ad62dd7-7585-3712-8814-f7df1631ad1a, alterId: 2, cipher: auto, tls: false, network: tcp}
+  - {name: 'YouTube-阿伟科技08-HK-11-13', server: 103.85.20.81, port: 12345, type: vmess, uuid: 93e5b5a4-b216-3b77-bb24-93bfffcd4398, alterId: 2, cipher: auto, tls: false, network: tcp}
+  - {name: 'YouTube-阿伟科技15-HK-11/-14', server: hk1.ifl520.xyz, port: 16001, type: trojan, password: 6ef0515a-b3c5-3244-b3ff-03a8e47f8763, sni: hk1.ifl520.xyz}
+  - {name: 'YouTube-阿伟科技15-HK-11//-15', server: hk2.ifl520.xyz, port: 16005, type: trojan, password: 6ef0515a-b3c5-3244-b3ff-03a8e47f8763, sni: hk2.ifl520.xyz}
+  - {name: 'YouTube-阿伟科技16-HK-11//-16', server: 18.167.94.242, port: 80, type: vmess, uuid: cec85927-8a7a-4866-df8c-27ed589de0ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 'YouTube-阿伟科技17-HK-11//-17', server: hkf2.dior.bar, port: 21223, type: vmess, uuid: f5d83b8a-65d1-45bb-a9b6-45d014dcf708, alterId: 1, cipher: auto, tls: false, network: ws, ws-path: /, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 'YouTube-阿伟科技18-HK-11//-18', server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ssrgr-hk18, ws-headers: {Host: none}}
+  - {name: 'YouTube-阿伟科技19/-JP-11-19', server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ssrgr-jp3, ws-headers: {Host: none}}
+  - {name: 'YouTube-阿伟科技20/-SG-11-20', server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ssrgr-sg05, ws-headers: {Host: none}}
+  - {name: 'YouTube-阿伟科技22-SG-11-21', server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ssrgr-sg01, ws-headers: {Host: none}}
+  - {name: 'YouTube-阿伟科技23-SG-11-22', server: gzcm.sspro.nl, port: 10799, type: vmess, uuid: fd252902-aac0-36be-8420-a3b23fe803af, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /ssrgr-in02, ws-headers: {Host: none}}
+  - {name: 'YouTube-阿伟科技24-JP-11-23', server: 54.238.86.254, port: 13033, type: ss, cipher: chacha20-ietf-poly1305, password: DJLYliqCX9veEn0O14}
+  - {name: 'YouTube-阿伟科技25-US-11-24', server: 2.58.241.45, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 'YouTube-阿伟科技26-SG-11-25', server: 54.238.86.254, port: 13033, type: ss, cipher: chacha20-ietf-poly1305, password: DJLYliqCX9veEn0O14}
+  - {name: 'YouTube-阿伟科技-8-26', server: 103.152.151.68, port: 41372, type: ss, cipher: aes-256-gcm, password: 5kGAhC3AmVC35GbruHjSrZf2}
+  - {name: 'YouTube-阿伟科技-8-27', server: 204.124.181.224, port: 26917, type: vmess, uuid: 3bc30c04-4854-47bc-80b5-4fbb2364006e, alterId: 8, cipher: auto, tls: false, network: tcp, ws-path: t.me/vpnpool, ws-headers: {Host: t.me/vpnhat}}
+  - {name: 'YouTube-阿伟科技DE-8-28', server: 37.120.217.149, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 'YouTube-阿伟科技-GB-29', server: 89.238.130.253, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 'YouTube-阿伟科技-GB-30', server: 89.238.130.227, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 'YouTube-阿伟科技GB-8-31', server: 89.238.130.253, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 'YouTube-阿伟科技GB-8-32', server: 195.181.171.233, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 'YouTube-阿伟科技GB-8-33', server: 89.238.130.227, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
+  - {name: 'YouTube-阿伟科技HK-8-34', server: 18.167.94.242, port: 80, type: vmess, uuid: cec85927-8a7a-4866-df8c-27ed589de0ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /TS/recharge/tzUrl.html, ws-headers: {Host: pull.free.video.10010.com}}
+  - {name: 'YouTube-阿伟科技HK-8-35', server: 32.ssrj.xyz, port: 65132, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, network: tcp}
+  - {name: 'YouTube-阿伟科技HK-8-36', server: 4.ssrj.xyz, port: 65104, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, network: tcp}
+  - {name: 'YouTube-阿伟科技HK-8-37', server: 7.ssrj.xyz, port: 65107, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, network: tcp}
+  - {name: 'YouTube-阿伟科技-ITA-38', server: 212.102.44.86, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 'YouTube-阿伟科技-ITA-39', server: 212.102.44.86, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 'YouTube-阿伟科技-ITA-40', server: 212.102.44.86, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
+  - {name: 'YouTube-阿伟科技JP-8-41', server: 54.178.67.40, port: 80, type: vmess, uuid: 00000000-0000-0000-0000-000000000001, alterId: 64, cipher: auto, tls: false, network: tcp}
+  - {name: 'YouTube-阿伟科技JP-8-42', server: 11.ssrj.xyz, port: 65111, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, network: tcp}
+  - {name: 'YouTube-阿伟科技JP-8-43', server: 3.ssrj.xyz, port: 65103, type: vmess, uuid: 24ea3f63-d495-3a0a-a7de-f92a4e6fb9ae, alterId: 2, cipher: auto, tls: false, network: tcp}
+  - {name: 'YouTube-阿伟科技-KR-44', server: kr02.uuv2.uk, port: 2053, type: vmess, uuid: 1d488ee0-5ce0-4211-9ed1-e0621eae2b63, alterId: 1, cipher: auto, tls: true, network: ws, ws-path: /TG@mftizi, ws-headers: {Host: kr02.uuv2.uk}}
+  - {name: 'YouTube-阿伟科技RO-8-45', server: 193.29.106.61, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 'YouTube-阿伟科技-ROM-46', server: 89.46.223.239, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 'YouTube-阿伟科技SK-8-47', server: 37.120.221.5, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 'YouTube-阿伟科技TW-8-48', server: 2.58.241.46, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 'YouTube-阿伟科技TW-8-49', server: 2.58.241.45, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 'YouTube-阿伟科技TW-8-50', server: 2.58.241.45, port: 33998, type: ss, cipher: aes-256-gcm, password: NHwQTPLCfaTMSqTnU3mjcSxe}
+  - {name: 'YouTube-阿伟科技TW-8-51', server: 2.58.241.27, port: 38033, type: ss, cipher: aes-256-gcm, password: xpQwyV4W5FdA6NMANJJx73US}
+  - {name: 'YouTube-阿伟科技-US-52', server: 2.58.242.54, port: 43893, type: ss, cipher: aes-256-gcm, password: YyCBeDdYX4cadHpCkkmdJLq8}
+  - {name: 'YouTube-阿伟科技-US-53', server: 2.58.242.54, port: 42816, type: ss, cipher: aes-256-gcm, password: tBKBf4pVzNCFKdbPgvwrNXq3}
+  - {name: 'YouTube-阿伟科技-US-54', server: 2.58.242.54, port: 44539, type: ss, cipher: aes-256-gcm, password: r6hDrkP4Et6EENTS8Qy7Tcmg}
+  - {name: 'YouTube-阿伟科技-US-55', server: 2.58.242.54, port: 44236, type: ss, cipher: aes-256-gcm, password: FWrXcxPZjJxAN89xLgqY3Acp}
+  - {name: 'YouTube-阿伟科技-US-56', server: 107.150.8.102, port: 38924, type: vmess, uuid: b149e8e3-8c53-4c31-936f-db467c61766b, alterId: 0, cipher: auto, tls: false, network: tcp}
+  - {name: 'YouTube-阿伟科技-US-57', server: 199.10.64.133, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 'YouTube-阿伟科技US-8-58', server: 104.200.131.167, port: 34687, type: ss, cipher: aes-256-gcm, password: txmK9WhwP6WPhP7hqSBLVxpN}
+  - {name: 'YouTube-阿伟科技US-8-59', server: 199.10.64.133, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube-阿伟科技01/1-JP-10-1
-      - YouTube-阿伟科技01/2-JP-10-2
-      - YouTube-阿伟科技01/3-US-10-3
-      - YouTube-阿伟科技02-HK-10-4
-      - YouTube-阿伟科技02-HK-10-5
-      - YouTube-阿伟科技02-HK-10-6
-      - YouTube-阿伟科技02-HK-10-7
-      - YouTube-阿伟科技02-HK-10-8
-      - YouTube-阿伟科技02-JP-10-9
-      - YouTube-阿伟科技02-KR-10-10
-      - YouTube-阿伟科技02-SG-10-11
-      - YouTube-阿伟科技08-HK-10-12
-      - YouTube-阿伟科技08-HK-10-13
-      - YouTube-阿伟科技13-JP-10-14
-      - YouTube-阿伟科技13-US-10-15
-      - YouTube-阿伟科技16-HK-10-16
-      - YouTube-阿伟科技17-HK-10-17
-      - YouTube-阿伟科技18-JP-10-18
-      - YouTube-阿伟科技19-HK-10-19
-      - YouTube-阿伟科技20-SG-10-20
-      - YouTube-阿伟科技21-SG-10-21
-      - YouTube-阿伟科技22-SG-10-22
-      - YouTube-阿伟科技23-SG-10-23
-      - YouTube-阿伟科技24-JP-10-24
-      - YouTube-阿伟科技25-US-10-25
-      - YouTube-阿伟科技26-SG-10-26
+      - YouTube-阿伟科技01/1-JP-11-1
+      - YouTube-阿伟科技01/2-JP-11-2
+      - YouTube-阿伟科技01/3-US-11-3
+      - YouTube-阿伟科技02-HK-11-4
+      - YouTube-阿伟科技02-HK-11-5
+      - YouTube-阿伟科技02-HK-11-6
+      - YouTube-阿伟科技02-HK-11-7
+      - YouTube-阿伟科技02-JP-11-8
+      - YouTube-阿伟科技02-KR-11-9
+      - YouTube-阿伟科技02-SG-11-10
+      - YouTube-阿伟科技08-HK-11-11
+      - YouTube-阿伟科技08-HK-11-12
+      - YouTube-阿伟科技08-HK-11-13
+      - YouTube-阿伟科技15-HK-11/-14
+      - YouTube-阿伟科技15-HK-11//-15
+      - YouTube-阿伟科技16-HK-11//-16
+      - YouTube-阿伟科技17-HK-11//-17
+      - YouTube-阿伟科技18-HK-11//-18
+      - YouTube-阿伟科技19/-JP-11-19
+      - YouTube-阿伟科技20/-SG-11-20
+      - YouTube-阿伟科技22-SG-11-21
+      - YouTube-阿伟科技23-SG-11-22
+      - YouTube-阿伟科技24-JP-11-23
+      - YouTube-阿伟科技25-US-11-24
+      - YouTube-阿伟科技26-SG-11-25
+      - YouTube-阿伟科技-8-26
       - YouTube-阿伟科技-8-27
-      - YouTube-阿伟科技-8-28
-      - YouTube-阿伟科技DE-8-29
-      - YouTube-阿伟科技GB-8-30
+      - YouTube-阿伟科技DE-8-28
+      - YouTube-阿伟科技-GB-29
+      - YouTube-阿伟科技-GB-30
       - YouTube-阿伟科技GB-8-31
       - YouTube-阿伟科技GB-8-32
-      - YouTube-阿伟科技HK-8-33
+      - YouTube-阿伟科技GB-8-33
       - YouTube-阿伟科技HK-8-34
       - YouTube-阿伟科技HK-8-35
       - YouTube-阿伟科技HK-8-36
-      - YouTube-阿伟科技JP-8-37
-      - YouTube-阿伟科技JP-8-38
-      - YouTube-阿伟科技JP-8-39
-      - YouTube-阿伟科技RO-8-40
-      - YouTube-阿伟科技SK-8-41
-      - YouTube-阿伟科技TW-8-42
-      - YouTube-阿伟科技TW-8-43
-      - YouTube-阿伟科技TW-8-44
-      - YouTube-阿伟科技TW-8-45
-      - YouTube-阿伟科技TW-8-46
-      - YouTube-阿伟科技-US-47
-      - YouTube-阿伟科技-US-48
-      - YouTube-阿伟科技-US-49
-      - YouTube-阿伟科技-US-50
-      - YouTube-阿伟科技-US-51
-      - YouTube-阿伟科技US-8-52
-      - YouTube-阿伟科技US-8-53
-      - YouTube-阿伟科技US-8-54
-      - 🇭🇰香港-55
-      - 🇭🇰香港-56
-      - 🇭🇰香港-57
-      - 🇭🇰香港-58
-      - 🇭🇰香港-59
-      - 🇭🇰香港-60
-      - 🇭🇰香港-61
-      - 🇭🇰香港-62
-      - 🇭🇰香港-63
-      - 🇭🇰香港-64
-      - 🇭🇰香港-65
-      - 🇭🇰香港-66
-      - 🇭🇰香港-67
-      - 🇭🇰香港-68
-      - 🇭🇰香港-69
-      - 🇭🇰香港-70
-      - 🇭🇰香港-71
-      - 🇭🇰香港-72
-      - 🇭🇰香港-73
-      - 🇭🇰香港-74
-      - 🇭🇰香港-75
-      - 🇭🇰香港-76
-      - 🇭🇰香港-77
-      - 🇭🇰香港-78
-      - 🇭🇰香港-79
-      - 🇭🇰香港-80
-      - 🇭🇰香港-81
-      - 🇭🇰香港-82
-      - 🇭🇰香港-83
-      - 🇭🇰香港-84
-      - 🇭🇰香港-85
-      - 🇭🇰香港-86
-      - 🇭🇰香港-87
-      - 🇭🇰香港-88
-      - 🇭🇰香港-89
-      - 🇭🇰香港-90
+      - YouTube-阿伟科技HK-8-37
+      - YouTube-阿伟科技-ITA-38
+      - YouTube-阿伟科技-ITA-39
+      - YouTube-阿伟科技-ITA-40
+      - YouTube-阿伟科技JP-8-41
+      - YouTube-阿伟科技JP-8-42
+      - YouTube-阿伟科技JP-8-43
+      - YouTube-阿伟科技-KR-44
+      - YouTube-阿伟科技RO-8-45
+      - YouTube-阿伟科技-ROM-46
+      - YouTube-阿伟科技SK-8-47
+      - YouTube-阿伟科技TW-8-48
+      - YouTube-阿伟科技TW-8-49
+      - YouTube-阿伟科技TW-8-50
+      - YouTube-阿伟科技TW-8-51
+      - YouTube-阿伟科技-US-52
+      - YouTube-阿伟科技-US-53
+      - YouTube-阿伟科技-US-54
+      - YouTube-阿伟科技-US-55
+      - YouTube-阿伟科技-US-56
+      - YouTube-阿伟科技-US-57
+      - YouTube-阿伟科技US-8-58
+      - YouTube-阿伟科技US-8-59
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - YouTube-阿伟科技01/1-JP-10-1
-      - YouTube-阿伟科技01/2-JP-10-2
-      - YouTube-阿伟科技01/3-US-10-3
-      - YouTube-阿伟科技02-HK-10-4
-      - YouTube-阿伟科技02-HK-10-5
-      - YouTube-阿伟科技02-HK-10-6
-      - YouTube-阿伟科技02-HK-10-7
-      - YouTube-阿伟科技02-HK-10-8
-      - YouTube-阿伟科技02-JP-10-9
-      - YouTube-阿伟科技02-KR-10-10
-      - YouTube-阿伟科技02-SG-10-11
-      - YouTube-阿伟科技08-HK-10-12
-      - YouTube-阿伟科技08-HK-10-13
-      - YouTube-阿伟科技13-JP-10-14
-      - YouTube-阿伟科技13-US-10-15
-      - YouTube-阿伟科技16-HK-10-16
-      - YouTube-阿伟科技17-HK-10-17
-      - YouTube-阿伟科技18-JP-10-18
-      - YouTube-阿伟科技19-HK-10-19
-      - YouTube-阿伟科技20-SG-10-20
-      - YouTube-阿伟科技21-SG-10-21
-      - YouTube-阿伟科技22-SG-10-22
-      - YouTube-阿伟科技23-SG-10-23
-      - YouTube-阿伟科技24-JP-10-24
-      - YouTube-阿伟科技25-US-10-25
-      - YouTube-阿伟科技26-SG-10-26
+      - YouTube-阿伟科技01/1-JP-11-1
+      - YouTube-阿伟科技01/2-JP-11-2
+      - YouTube-阿伟科技01/3-US-11-3
+      - YouTube-阿伟科技02-HK-11-4
+      - YouTube-阿伟科技02-HK-11-5
+      - YouTube-阿伟科技02-HK-11-6
+      - YouTube-阿伟科技02-HK-11-7
+      - YouTube-阿伟科技02-JP-11-8
+      - YouTube-阿伟科技02-KR-11-9
+      - YouTube-阿伟科技02-SG-11-10
+      - YouTube-阿伟科技08-HK-11-11
+      - YouTube-阿伟科技08-HK-11-12
+      - YouTube-阿伟科技08-HK-11-13
+      - YouTube-阿伟科技15-HK-11/-14
+      - YouTube-阿伟科技15-HK-11//-15
+      - YouTube-阿伟科技16-HK-11//-16
+      - YouTube-阿伟科技17-HK-11//-17
+      - YouTube-阿伟科技18-HK-11//-18
+      - YouTube-阿伟科技19/-JP-11-19
+      - YouTube-阿伟科技20/-SG-11-20
+      - YouTube-阿伟科技22-SG-11-21
+      - YouTube-阿伟科技23-SG-11-22
+      - YouTube-阿伟科技24-JP-11-23
+      - YouTube-阿伟科技25-US-11-24
+      - YouTube-阿伟科技26-SG-11-25
+      - YouTube-阿伟科技-8-26
       - YouTube-阿伟科技-8-27
-      - YouTube-阿伟科技-8-28
-      - YouTube-阿伟科技DE-8-29
-      - YouTube-阿伟科技GB-8-30
+      - YouTube-阿伟科技DE-8-28
+      - YouTube-阿伟科技-GB-29
+      - YouTube-阿伟科技-GB-30
       - YouTube-阿伟科技GB-8-31
       - YouTube-阿伟科技GB-8-32
-      - YouTube-阿伟科技HK-8-33
+      - YouTube-阿伟科技GB-8-33
       - YouTube-阿伟科技HK-8-34
       - YouTube-阿伟科技HK-8-35
       - YouTube-阿伟科技HK-8-36
-      - YouTube-阿伟科技JP-8-37
-      - YouTube-阿伟科技JP-8-38
-      - YouTube-阿伟科技JP-8-39
-      - YouTube-阿伟科技RO-8-40
-      - YouTube-阿伟科技SK-8-41
-      - YouTube-阿伟科技TW-8-42
-      - YouTube-阿伟科技TW-8-43
-      - YouTube-阿伟科技TW-8-44
-      - YouTube-阿伟科技TW-8-45
-      - YouTube-阿伟科技TW-8-46
-      - YouTube-阿伟科技-US-47
-      - YouTube-阿伟科技-US-48
-      - YouTube-阿伟科技-US-49
-      - YouTube-阿伟科技-US-50
-      - YouTube-阿伟科技-US-51
-      - YouTube-阿伟科技US-8-52
-      - YouTube-阿伟科技US-8-53
-      - YouTube-阿伟科技US-8-54
-      - 🇭🇰香港-55
-      - 🇭🇰香港-56
-      - 🇭🇰香港-57
-      - 🇭🇰香港-58
-      - 🇭🇰香港-59
-      - 🇭🇰香港-60
-      - 🇭🇰香港-61
-      - 🇭🇰香港-62
-      - 🇭🇰香港-63
-      - 🇭🇰香港-64
-      - 🇭🇰香港-65
-      - 🇭🇰香港-66
-      - 🇭🇰香港-67
-      - 🇭🇰香港-68
-      - 🇭🇰香港-69
-      - 🇭🇰香港-70
-      - 🇭🇰香港-71
-      - 🇭🇰香港-72
-      - 🇭🇰香港-73
-      - 🇭🇰香港-74
-      - 🇭🇰香港-75
-      - 🇭🇰香港-76
-      - 🇭🇰香港-77
-      - 🇭🇰香港-78
-      - 🇭🇰香港-79
-      - 🇭🇰香港-80
-      - 🇭🇰香港-81
-      - 🇭🇰香港-82
-      - 🇭🇰香港-83
-      - 🇭🇰香港-84
-      - 🇭🇰香港-85
-      - 🇭🇰香港-86
-      - 🇭🇰香港-87
-      - 🇭🇰香港-88
-      - 🇭🇰香港-89
-      - 🇭🇰香港-90
+      - YouTube-阿伟科技HK-8-37
+      - YouTube-阿伟科技-ITA-38
+      - YouTube-阿伟科技-ITA-39
+      - YouTube-阿伟科技-ITA-40
+      - YouTube-阿伟科技JP-8-41
+      - YouTube-阿伟科技JP-8-42
+      - YouTube-阿伟科技JP-8-43
+      - YouTube-阿伟科技-KR-44
+      - YouTube-阿伟科技RO-8-45
+      - YouTube-阿伟科技-ROM-46
+      - YouTube-阿伟科技SK-8-47
+      - YouTube-阿伟科技TW-8-48
+      - YouTube-阿伟科技TW-8-49
+      - YouTube-阿伟科技TW-8-50
+      - YouTube-阿伟科技TW-8-51
+      - YouTube-阿伟科技-US-52
+      - YouTube-阿伟科技-US-53
+      - YouTube-阿伟科技-US-54
+      - YouTube-阿伟科技-US-55
+      - YouTube-阿伟科技-US-56
+      - YouTube-阿伟科技-US-57
+      - YouTube-阿伟科技US-8-58
+      - YouTube-阿伟科技US-8-59
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube-阿伟科技01/1-JP-10-1
-      - YouTube-阿伟科技01/2-JP-10-2
-      - YouTube-阿伟科技01/3-US-10-3
-      - YouTube-阿伟科技02-HK-10-4
-      - YouTube-阿伟科技02-HK-10-5
-      - YouTube-阿伟科技02-HK-10-6
-      - YouTube-阿伟科技02-HK-10-7
-      - YouTube-阿伟科技02-HK-10-8
-      - YouTube-阿伟科技02-JP-10-9
-      - YouTube-阿伟科技02-KR-10-10
-      - YouTube-阿伟科技02-SG-10-11
-      - YouTube-阿伟科技08-HK-10-12
-      - YouTube-阿伟科技08-HK-10-13
-      - YouTube-阿伟科技13-JP-10-14
-      - YouTube-阿伟科技13-US-10-15
-      - YouTube-阿伟科技16-HK-10-16
-      - YouTube-阿伟科技17-HK-10-17
-      - YouTube-阿伟科技18-JP-10-18
-      - YouTube-阿伟科技19-HK-10-19
-      - YouTube-阿伟科技20-SG-10-20
-      - YouTube-阿伟科技21-SG-10-21
-      - YouTube-阿伟科技22-SG-10-22
-      - YouTube-阿伟科技23-SG-10-23
-      - YouTube-阿伟科技24-JP-10-24
-      - YouTube-阿伟科技25-US-10-25
-      - YouTube-阿伟科技26-SG-10-26
+      - YouTube-阿伟科技01/1-JP-11-1
+      - YouTube-阿伟科技01/2-JP-11-2
+      - YouTube-阿伟科技01/3-US-11-3
+      - YouTube-阿伟科技02-HK-11-4
+      - YouTube-阿伟科技02-HK-11-5
+      - YouTube-阿伟科技02-HK-11-6
+      - YouTube-阿伟科技02-HK-11-7
+      - YouTube-阿伟科技02-JP-11-8
+      - YouTube-阿伟科技02-KR-11-9
+      - YouTube-阿伟科技02-SG-11-10
+      - YouTube-阿伟科技08-HK-11-11
+      - YouTube-阿伟科技08-HK-11-12
+      - YouTube-阿伟科技08-HK-11-13
+      - YouTube-阿伟科技15-HK-11/-14
+      - YouTube-阿伟科技15-HK-11//-15
+      - YouTube-阿伟科技16-HK-11//-16
+      - YouTube-阿伟科技17-HK-11//-17
+      - YouTube-阿伟科技18-HK-11//-18
+      - YouTube-阿伟科技19/-JP-11-19
+      - YouTube-阿伟科技20/-SG-11-20
+      - YouTube-阿伟科技22-SG-11-21
+      - YouTube-阿伟科技23-SG-11-22
+      - YouTube-阿伟科技24-JP-11-23
+      - YouTube-阿伟科技25-US-11-24
+      - YouTube-阿伟科技26-SG-11-25
+      - YouTube-阿伟科技-8-26
       - YouTube-阿伟科技-8-27
-      - YouTube-阿伟科技-8-28
-      - YouTube-阿伟科技DE-8-29
-      - YouTube-阿伟科技GB-8-30
+      - YouTube-阿伟科技DE-8-28
+      - YouTube-阿伟科技-GB-29
+      - YouTube-阿伟科技-GB-30
       - YouTube-阿伟科技GB-8-31
       - YouTube-阿伟科技GB-8-32
-      - YouTube-阿伟科技HK-8-33
+      - YouTube-阿伟科技GB-8-33
       - YouTube-阿伟科技HK-8-34
       - YouTube-阿伟科技HK-8-35
       - YouTube-阿伟科技HK-8-36
-      - YouTube-阿伟科技JP-8-37
-      - YouTube-阿伟科技JP-8-38
-      - YouTube-阿伟科技JP-8-39
-      - YouTube-阿伟科技RO-8-40
-      - YouTube-阿伟科技SK-8-41
-      - YouTube-阿伟科技TW-8-42
-      - YouTube-阿伟科技TW-8-43
-      - YouTube-阿伟科技TW-8-44
-      - YouTube-阿伟科技TW-8-45
-      - YouTube-阿伟科技TW-8-46
-      - YouTube-阿伟科技-US-47
-      - YouTube-阿伟科技-US-48
-      - YouTube-阿伟科技-US-49
-      - YouTube-阿伟科技-US-50
-      - YouTube-阿伟科技-US-51
-      - YouTube-阿伟科技US-8-52
-      - YouTube-阿伟科技US-8-53
-      - YouTube-阿伟科技US-8-54
-      - 🇭🇰香港-55
-      - 🇭🇰香港-56
-      - 🇭🇰香港-57
-      - 🇭🇰香港-58
-      - 🇭🇰香港-59
-      - 🇭🇰香港-60
-      - 🇭🇰香港-61
-      - 🇭🇰香港-62
-      - 🇭🇰香港-63
-      - 🇭🇰香港-64
-      - 🇭🇰香港-65
-      - 🇭🇰香港-66
-      - 🇭🇰香港-67
-      - 🇭🇰香港-68
-      - 🇭🇰香港-69
-      - 🇭🇰香港-70
-      - 🇭🇰香港-71
-      - 🇭🇰香港-72
-      - 🇭🇰香港-73
-      - 🇭🇰香港-74
-      - 🇭🇰香港-75
-      - 🇭🇰香港-76
-      - 🇭🇰香港-77
-      - 🇭🇰香港-78
-      - 🇭🇰香港-79
-      - 🇭🇰香港-80
-      - 🇭🇰香港-81
-      - 🇭🇰香港-82
-      - 🇭🇰香港-83
-      - 🇭🇰香港-84
-      - 🇭🇰香港-85
-      - 🇭🇰香港-86
-      - 🇭🇰香港-87
-      - 🇭🇰香港-88
-      - 🇭🇰香港-89
-      - 🇭🇰香港-90
+      - YouTube-阿伟科技HK-8-37
+      - YouTube-阿伟科技-ITA-38
+      - YouTube-阿伟科技-ITA-39
+      - YouTube-阿伟科技-ITA-40
+      - YouTube-阿伟科技JP-8-41
+      - YouTube-阿伟科技JP-8-42
+      - YouTube-阿伟科技JP-8-43
+      - YouTube-阿伟科技-KR-44
+      - YouTube-阿伟科技RO-8-45
+      - YouTube-阿伟科技-ROM-46
+      - YouTube-阿伟科技SK-8-47
+      - YouTube-阿伟科技TW-8-48
+      - YouTube-阿伟科技TW-8-49
+      - YouTube-阿伟科技TW-8-50
+      - YouTube-阿伟科技TW-8-51
+      - YouTube-阿伟科技-US-52
+      - YouTube-阿伟科技-US-53
+      - YouTube-阿伟科技-US-54
+      - YouTube-阿伟科技-US-55
+      - YouTube-阿伟科技-US-56
+      - YouTube-阿伟科技-US-57
+      - YouTube-阿伟科技US-8-58
+      - YouTube-阿伟科技US-8-59
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - YouTube-阿伟科技01/1-JP-10-1
-      - YouTube-阿伟科技01/2-JP-10-2
-      - YouTube-阿伟科技01/3-US-10-3
-      - YouTube-阿伟科技02-HK-10-4
-      - YouTube-阿伟科技02-HK-10-5
-      - YouTube-阿伟科技02-HK-10-6
-      - YouTube-阿伟科技02-HK-10-7
-      - YouTube-阿伟科技02-HK-10-8
-      - YouTube-阿伟科技02-JP-10-9
-      - YouTube-阿伟科技02-KR-10-10
-      - YouTube-阿伟科技02-SG-10-11
-      - YouTube-阿伟科技08-HK-10-12
-      - YouTube-阿伟科技08-HK-10-13
-      - YouTube-阿伟科技13-JP-10-14
-      - YouTube-阿伟科技13-US-10-15
-      - YouTube-阿伟科技16-HK-10-16
-      - YouTube-阿伟科技17-HK-10-17
-      - YouTube-阿伟科技18-JP-10-18
-      - YouTube-阿伟科技19-HK-10-19
-      - YouTube-阿伟科技20-SG-10-20
-      - YouTube-阿伟科技21-SG-10-21
-      - YouTube-阿伟科技22-SG-10-22
-      - YouTube-阿伟科技23-SG-10-23
-      - YouTube-阿伟科技24-JP-10-24
-      - YouTube-阿伟科技25-US-10-25
-      - YouTube-阿伟科技26-SG-10-26
+      - YouTube-阿伟科技01/1-JP-11-1
+      - YouTube-阿伟科技01/2-JP-11-2
+      - YouTube-阿伟科技01/3-US-11-3
+      - YouTube-阿伟科技02-HK-11-4
+      - YouTube-阿伟科技02-HK-11-5
+      - YouTube-阿伟科技02-HK-11-6
+      - YouTube-阿伟科技02-HK-11-7
+      - YouTube-阿伟科技02-JP-11-8
+      - YouTube-阿伟科技02-KR-11-9
+      - YouTube-阿伟科技02-SG-11-10
+      - YouTube-阿伟科技08-HK-11-11
+      - YouTube-阿伟科技08-HK-11-12
+      - YouTube-阿伟科技08-HK-11-13
+      - YouTube-阿伟科技15-HK-11/-14
+      - YouTube-阿伟科技15-HK-11//-15
+      - YouTube-阿伟科技16-HK-11//-16
+      - YouTube-阿伟科技17-HK-11//-17
+      - YouTube-阿伟科技18-HK-11//-18
+      - YouTube-阿伟科技19/-JP-11-19
+      - YouTube-阿伟科技20/-SG-11-20
+      - YouTube-阿伟科技22-SG-11-21
+      - YouTube-阿伟科技23-SG-11-22
+      - YouTube-阿伟科技24-JP-11-23
+      - YouTube-阿伟科技25-US-11-24
+      - YouTube-阿伟科技26-SG-11-25
+      - YouTube-阿伟科技-8-26
       - YouTube-阿伟科技-8-27
-      - YouTube-阿伟科技-8-28
-      - YouTube-阿伟科技DE-8-29
-      - YouTube-阿伟科技GB-8-30
+      - YouTube-阿伟科技DE-8-28
+      - YouTube-阿伟科技-GB-29
+      - YouTube-阿伟科技-GB-30
       - YouTube-阿伟科技GB-8-31
       - YouTube-阿伟科技GB-8-32
-      - YouTube-阿伟科技HK-8-33
+      - YouTube-阿伟科技GB-8-33
       - YouTube-阿伟科技HK-8-34
       - YouTube-阿伟科技HK-8-35
       - YouTube-阿伟科技HK-8-36
-      - YouTube-阿伟科技JP-8-37
-      - YouTube-阿伟科技JP-8-38
-      - YouTube-阿伟科技JP-8-39
-      - YouTube-阿伟科技RO-8-40
-      - YouTube-阿伟科技SK-8-41
-      - YouTube-阿伟科技TW-8-42
-      - YouTube-阿伟科技TW-8-43
-      - YouTube-阿伟科技TW-8-44
-      - YouTube-阿伟科技TW-8-45
-      - YouTube-阿伟科技TW-8-46
-      - YouTube-阿伟科技-US-47
-      - YouTube-阿伟科技-US-48
-      - YouTube-阿伟科技-US-49
-      - YouTube-阿伟科技-US-50
-      - YouTube-阿伟科技-US-51
-      - YouTube-阿伟科技US-8-52
-      - YouTube-阿伟科技US-8-53
-      - YouTube-阿伟科技US-8-54
-      - 🇭🇰香港-55
-      - 🇭🇰香港-56
-      - 🇭🇰香港-57
-      - 🇭🇰香港-58
-      - 🇭🇰香港-59
-      - 🇭🇰香港-60
-      - 🇭🇰香港-61
-      - 🇭🇰香港-62
-      - 🇭🇰香港-63
-      - 🇭🇰香港-64
-      - 🇭🇰香港-65
-      - 🇭🇰香港-66
-      - 🇭🇰香港-67
-      - 🇭🇰香港-68
-      - 🇭🇰香港-69
-      - 🇭🇰香港-70
-      - 🇭🇰香港-71
-      - 🇭🇰香港-72
-      - 🇭🇰香港-73
-      - 🇭🇰香港-74
-      - 🇭🇰香港-75
-      - 🇭🇰香港-76
-      - 🇭🇰香港-77
-      - 🇭🇰香港-78
-      - 🇭🇰香港-79
-      - 🇭🇰香港-80
-      - 🇭🇰香港-81
-      - 🇭🇰香港-82
-      - 🇭🇰香港-83
-      - 🇭🇰香港-84
-      - 🇭🇰香港-85
-      - 🇭🇰香港-86
-      - 🇭🇰香港-87
-      - 🇭🇰香港-88
-      - 🇭🇰香港-89
-      - 🇭🇰香港-90
+      - YouTube-阿伟科技HK-8-37
+      - YouTube-阿伟科技-ITA-38
+      - YouTube-阿伟科技-ITA-39
+      - YouTube-阿伟科技-ITA-40
+      - YouTube-阿伟科技JP-8-41
+      - YouTube-阿伟科技JP-8-42
+      - YouTube-阿伟科技JP-8-43
+      - YouTube-阿伟科技-KR-44
+      - YouTube-阿伟科技RO-8-45
+      - YouTube-阿伟科技-ROM-46
+      - YouTube-阿伟科技SK-8-47
+      - YouTube-阿伟科技TW-8-48
+      - YouTube-阿伟科技TW-8-49
+      - YouTube-阿伟科技TW-8-50
+      - YouTube-阿伟科技TW-8-51
+      - YouTube-阿伟科技-US-52
+      - YouTube-阿伟科技-US-53
+      - YouTube-阿伟科技-US-54
+      - YouTube-阿伟科技-US-55
+      - YouTube-阿伟科技-US-56
+      - YouTube-阿伟科技-US-57
+      - YouTube-阿伟科技US-8-58
+      - YouTube-阿伟科技US-8-59
 
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - YouTube-阿伟科技01/1-JP-10-1
-      - YouTube-阿伟科技01/2-JP-10-2
-      - YouTube-阿伟科技01/3-US-10-3
-      - YouTube-阿伟科技02-HK-10-4
-      - YouTube-阿伟科技02-HK-10-5
-      - YouTube-阿伟科技02-HK-10-6
-      - YouTube-阿伟科技02-HK-10-7
-      - YouTube-阿伟科技02-HK-10-8
-      - YouTube-阿伟科技02-JP-10-9
-      - YouTube-阿伟科技02-KR-10-10
-      - YouTube-阿伟科技02-SG-10-11
-      - YouTube-阿伟科技08-HK-10-12
-      - YouTube-阿伟科技08-HK-10-13
-      - YouTube-阿伟科技13-JP-10-14
-      - YouTube-阿伟科技13-US-10-15
-      - YouTube-阿伟科技16-HK-10-16
-      - YouTube-阿伟科技17-HK-10-17
-      - YouTube-阿伟科技18-JP-10-18
-      - YouTube-阿伟科技19-HK-10-19
-      - YouTube-阿伟科技20-SG-10-20
-      - YouTube-阿伟科技21-SG-10-21
-      - YouTube-阿伟科技22-SG-10-22
-      - YouTube-阿伟科技23-SG-10-23
-      - YouTube-阿伟科技24-JP-10-24
-      - YouTube-阿伟科技25-US-10-25
-      - YouTube-阿伟科技26-SG-10-26
+      - YouTube-阿伟科技01/1-JP-11-1
+      - YouTube-阿伟科技01/2-JP-11-2
+      - YouTube-阿伟科技01/3-US-11-3
+      - YouTube-阿伟科技02-HK-11-4
+      - YouTube-阿伟科技02-HK-11-5
+      - YouTube-阿伟科技02-HK-11-6
+      - YouTube-阿伟科技02-HK-11-7
+      - YouTube-阿伟科技02-JP-11-8
+      - YouTube-阿伟科技02-KR-11-9
+      - YouTube-阿伟科技02-SG-11-10
+      - YouTube-阿伟科技08-HK-11-11
+      - YouTube-阿伟科技08-HK-11-12
+      - YouTube-阿伟科技08-HK-11-13
+      - YouTube-阿伟科技15-HK-11/-14
+      - YouTube-阿伟科技15-HK-11//-15
+      - YouTube-阿伟科技16-HK-11//-16
+      - YouTube-阿伟科技17-HK-11//-17
+      - YouTube-阿伟科技18-HK-11//-18
+      - YouTube-阿伟科技19/-JP-11-19
+      - YouTube-阿伟科技20/-SG-11-20
+      - YouTube-阿伟科技22-SG-11-21
+      - YouTube-阿伟科技23-SG-11-22
+      - YouTube-阿伟科技24-JP-11-23
+      - YouTube-阿伟科技25-US-11-24
+      - YouTube-阿伟科技26-SG-11-25
+      - YouTube-阿伟科技-8-26
       - YouTube-阿伟科技-8-27
-      - YouTube-阿伟科技-8-28
-      - YouTube-阿伟科技DE-8-29
-      - YouTube-阿伟科技GB-8-30
+      - YouTube-阿伟科技DE-8-28
+      - YouTube-阿伟科技-GB-29
+      - YouTube-阿伟科技-GB-30
       - YouTube-阿伟科技GB-8-31
       - YouTube-阿伟科技GB-8-32
-      - YouTube-阿伟科技HK-8-33
+      - YouTube-阿伟科技GB-8-33
       - YouTube-阿伟科技HK-8-34
       - YouTube-阿伟科技HK-8-35
       - YouTube-阿伟科技HK-8-36
-      - YouTube-阿伟科技JP-8-37
-      - YouTube-阿伟科技JP-8-38
-      - YouTube-阿伟科技JP-8-39
-      - YouTube-阿伟科技RO-8-40
-      - YouTube-阿伟科技SK-8-41
-      - YouTube-阿伟科技TW-8-42
-      - YouTube-阿伟科技TW-8-43
-      - YouTube-阿伟科技TW-8-44
-      - YouTube-阿伟科技TW-8-45
-      - YouTube-阿伟科技TW-8-46
-      - YouTube-阿伟科技-US-47
-      - YouTube-阿伟科技-US-48
-      - YouTube-阿伟科技-US-49
-      - YouTube-阿伟科技-US-50
-      - YouTube-阿伟科技-US-51
-      - YouTube-阿伟科技US-8-52
-      - YouTube-阿伟科技US-8-53
-      - YouTube-阿伟科技US-8-54
-      - 🇭🇰香港-55
-      - 🇭🇰香港-56
-      - 🇭🇰香港-57
-      - 🇭🇰香港-58
-      - 🇭🇰香港-59
-      - 🇭🇰香港-60
-      - 🇭🇰香港-61
-      - 🇭🇰香港-62
-      - 🇭🇰香港-63
-      - 🇭🇰香港-64
-      - 🇭🇰香港-65
-      - 🇭🇰香港-66
-      - 🇭🇰香港-67
-      - 🇭🇰香港-68
-      - 🇭🇰香港-69
-      - 🇭🇰香港-70
-      - 🇭🇰香港-71
-      - 🇭🇰香港-72
-      - 🇭🇰香港-73
-      - 🇭🇰香港-74
-      - 🇭🇰香港-75
-      - 🇭🇰香港-76
-      - 🇭🇰香港-77
-      - 🇭🇰香港-78
-      - 🇭🇰香港-79
-      - 🇭🇰香港-80
-      - 🇭🇰香港-81
-      - 🇭🇰香港-82
-      - 🇭🇰香港-83
-      - 🇭🇰香港-84
-      - 🇭🇰香港-85
-      - 🇭🇰香港-86
-      - 🇭🇰香港-87
-      - 🇭🇰香港-88
-      - 🇭🇰香港-89
-      - 🇭🇰香港-90
+      - YouTube-阿伟科技HK-8-37
+      - YouTube-阿伟科技-ITA-38
+      - YouTube-阿伟科技-ITA-39
+      - YouTube-阿伟科技-ITA-40
+      - YouTube-阿伟科技JP-8-41
+      - YouTube-阿伟科技JP-8-42
+      - YouTube-阿伟科技JP-8-43
+      - YouTube-阿伟科技-KR-44
+      - YouTube-阿伟科技RO-8-45
+      - YouTube-阿伟科技-ROM-46
+      - YouTube-阿伟科技SK-8-47
+      - YouTube-阿伟科技TW-8-48
+      - YouTube-阿伟科技TW-8-49
+      - YouTube-阿伟科技TW-8-50
+      - YouTube-阿伟科技TW-8-51
+      - YouTube-阿伟科技-US-52
+      - YouTube-阿伟科技-US-53
+      - YouTube-阿伟科技-US-54
+      - YouTube-阿伟科技-US-55
+      - YouTube-阿伟科技-US-56
+      - YouTube-阿伟科技-US-57
+      - YouTube-阿伟科技US-8-58
+      - YouTube-阿伟科技US-8-59
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - YouTube-阿伟科技01/1-JP-10-1
-      - YouTube-阿伟科技01/2-JP-10-2
-      - YouTube-阿伟科技01/3-US-10-3
-      - YouTube-阿伟科技02-HK-10-4
-      - YouTube-阿伟科技02-HK-10-5
-      - YouTube-阿伟科技02-HK-10-6
-      - YouTube-阿伟科技02-HK-10-7
-      - YouTube-阿伟科技02-HK-10-8
-      - YouTube-阿伟科技02-JP-10-9
-      - YouTube-阿伟科技02-KR-10-10
-      - YouTube-阿伟科技02-SG-10-11
-      - YouTube-阿伟科技08-HK-10-12
-      - YouTube-阿伟科技08-HK-10-13
-      - YouTube-阿伟科技13-JP-10-14
-      - YouTube-阿伟科技13-US-10-15
-      - YouTube-阿伟科技16-HK-10-16
-      - YouTube-阿伟科技17-HK-10-17
-      - YouTube-阿伟科技18-JP-10-18
-      - YouTube-阿伟科技19-HK-10-19
-      - YouTube-阿伟科技20-SG-10-20
-      - YouTube-阿伟科技21-SG-10-21
-      - YouTube-阿伟科技22-SG-10-22
-      - YouTube-阿伟科技23-SG-10-23
-      - YouTube-阿伟科技24-JP-10-24
-      - YouTube-阿伟科技25-US-10-25
-      - YouTube-阿伟科技26-SG-10-26
+      - YouTube-阿伟科技01/1-JP-11-1
+      - YouTube-阿伟科技01/2-JP-11-2
+      - YouTube-阿伟科技01/3-US-11-3
+      - YouTube-阿伟科技02-HK-11-4
+      - YouTube-阿伟科技02-HK-11-5
+      - YouTube-阿伟科技02-HK-11-6
+      - YouTube-阿伟科技02-HK-11-7
+      - YouTube-阿伟科技02-JP-11-8
+      - YouTube-阿伟科技02-KR-11-9
+      - YouTube-阿伟科技02-SG-11-10
+      - YouTube-阿伟科技08-HK-11-11
+      - YouTube-阿伟科技08-HK-11-12
+      - YouTube-阿伟科技08-HK-11-13
+      - YouTube-阿伟科技15-HK-11/-14
+      - YouTube-阿伟科技15-HK-11//-15
+      - YouTube-阿伟科技16-HK-11//-16
+      - YouTube-阿伟科技17-HK-11//-17
+      - YouTube-阿伟科技18-HK-11//-18
+      - YouTube-阿伟科技19/-JP-11-19
+      - YouTube-阿伟科技20/-SG-11-20
+      - YouTube-阿伟科技22-SG-11-21
+      - YouTube-阿伟科技23-SG-11-22
+      - YouTube-阿伟科技24-JP-11-23
+      - YouTube-阿伟科技25-US-11-24
+      - YouTube-阿伟科技26-SG-11-25
+      - YouTube-阿伟科技-8-26
       - YouTube-阿伟科技-8-27
-      - YouTube-阿伟科技-8-28
-      - YouTube-阿伟科技DE-8-29
-      - YouTube-阿伟科技GB-8-30
+      - YouTube-阿伟科技DE-8-28
+      - YouTube-阿伟科技-GB-29
+      - YouTube-阿伟科技-GB-30
       - YouTube-阿伟科技GB-8-31
       - YouTube-阿伟科技GB-8-32
-      - YouTube-阿伟科技HK-8-33
+      - YouTube-阿伟科技GB-8-33
       - YouTube-阿伟科技HK-8-34
       - YouTube-阿伟科技HK-8-35
       - YouTube-阿伟科技HK-8-36
-      - YouTube-阿伟科技JP-8-37
-      - YouTube-阿伟科技JP-8-38
-      - YouTube-阿伟科技JP-8-39
-      - YouTube-阿伟科技RO-8-40
-      - YouTube-阿伟科技SK-8-41
-      - YouTube-阿伟科技TW-8-42
-      - YouTube-阿伟科技TW-8-43
-      - YouTube-阿伟科技TW-8-44
-      - YouTube-阿伟科技TW-8-45
-      - YouTube-阿伟科技TW-8-46
-      - YouTube-阿伟科技-US-47
-      - YouTube-阿伟科技-US-48
-      - YouTube-阿伟科技-US-49
-      - YouTube-阿伟科技-US-50
-      - YouTube-阿伟科技-US-51
-      - YouTube-阿伟科技US-8-52
-      - YouTube-阿伟科技US-8-53
-      - YouTube-阿伟科技US-8-54
-      - 🇭🇰香港-55
-      - 🇭🇰香港-56
-      - 🇭🇰香港-57
-      - 🇭🇰香港-58
-      - 🇭🇰香港-59
-      - 🇭🇰香港-60
-      - 🇭🇰香港-61
-      - 🇭🇰香港-62
-      - 🇭🇰香港-63
-      - 🇭🇰香港-64
-      - 🇭🇰香港-65
-      - 🇭🇰香港-66
-      - 🇭🇰香港-67
-      - 🇭🇰香港-68
-      - 🇭🇰香港-69
-      - 🇭🇰香港-70
-      - 🇭🇰香港-71
-      - 🇭🇰香港-72
-      - 🇭🇰香港-73
-      - 🇭🇰香港-74
-      - 🇭🇰香港-75
-      - 🇭🇰香港-76
-      - 🇭🇰香港-77
-      - 🇭🇰香港-78
-      - 🇭🇰香港-79
-      - 🇭🇰香港-80
-      - 🇭🇰香港-81
-      - 🇭🇰香港-82
-      - 🇭🇰香港-83
-      - 🇭🇰香港-84
-      - 🇭🇰香港-85
-      - 🇭🇰香港-86
-      - 🇭🇰香港-87
-      - 🇭🇰香港-88
-      - 🇭🇰香港-89
-      - 🇭🇰香港-90
+      - YouTube-阿伟科技HK-8-37
+      - YouTube-阿伟科技-ITA-38
+      - YouTube-阿伟科技-ITA-39
+      - YouTube-阿伟科技-ITA-40
+      - YouTube-阿伟科技JP-8-41
+      - YouTube-阿伟科技JP-8-42
+      - YouTube-阿伟科技JP-8-43
+      - YouTube-阿伟科技-KR-44
+      - YouTube-阿伟科技RO-8-45
+      - YouTube-阿伟科技-ROM-46
+      - YouTube-阿伟科技SK-8-47
+      - YouTube-阿伟科技TW-8-48
+      - YouTube-阿伟科技TW-8-49
+      - YouTube-阿伟科技TW-8-50
+      - YouTube-阿伟科技TW-8-51
+      - YouTube-阿伟科技-US-52
+      - YouTube-阿伟科技-US-53
+      - YouTube-阿伟科技-US-54
+      - YouTube-阿伟科技-US-55
+      - YouTube-阿伟科技-US-56
+      - YouTube-阿伟科技-US-57
+      - YouTube-阿伟科技US-8-58
+      - YouTube-阿伟科技US-8-59
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube-阿伟科技01/1-JP-10-1
-      - YouTube-阿伟科技01/2-JP-10-2
-      - YouTube-阿伟科技01/3-US-10-3
-      - YouTube-阿伟科技02-HK-10-4
-      - YouTube-阿伟科技02-HK-10-5
-      - YouTube-阿伟科技02-HK-10-6
-      - YouTube-阿伟科技02-HK-10-7
-      - YouTube-阿伟科技02-HK-10-8
-      - YouTube-阿伟科技02-JP-10-9
-      - YouTube-阿伟科技02-KR-10-10
-      - YouTube-阿伟科技02-SG-10-11
-      - YouTube-阿伟科技08-HK-10-12
-      - YouTube-阿伟科技08-HK-10-13
-      - YouTube-阿伟科技13-JP-10-14
-      - YouTube-阿伟科技13-US-10-15
-      - YouTube-阿伟科技16-HK-10-16
-      - YouTube-阿伟科技17-HK-10-17
-      - YouTube-阿伟科技18-JP-10-18
-      - YouTube-阿伟科技19-HK-10-19
-      - YouTube-阿伟科技20-SG-10-20
-      - YouTube-阿伟科技21-SG-10-21
-      - YouTube-阿伟科技22-SG-10-22
-      - YouTube-阿伟科技23-SG-10-23
-      - YouTube-阿伟科技24-JP-10-24
-      - YouTube-阿伟科技25-US-10-25
-      - YouTube-阿伟科技26-SG-10-26
+      - YouTube-阿伟科技01/1-JP-11-1
+      - YouTube-阿伟科技01/2-JP-11-2
+      - YouTube-阿伟科技01/3-US-11-3
+      - YouTube-阿伟科技02-HK-11-4
+      - YouTube-阿伟科技02-HK-11-5
+      - YouTube-阿伟科技02-HK-11-6
+      - YouTube-阿伟科技02-HK-11-7
+      - YouTube-阿伟科技02-JP-11-8
+      - YouTube-阿伟科技02-KR-11-9
+      - YouTube-阿伟科技02-SG-11-10
+      - YouTube-阿伟科技08-HK-11-11
+      - YouTube-阿伟科技08-HK-11-12
+      - YouTube-阿伟科技08-HK-11-13
+      - YouTube-阿伟科技15-HK-11/-14
+      - YouTube-阿伟科技15-HK-11//-15
+      - YouTube-阿伟科技16-HK-11//-16
+      - YouTube-阿伟科技17-HK-11//-17
+      - YouTube-阿伟科技18-HK-11//-18
+      - YouTube-阿伟科技19/-JP-11-19
+      - YouTube-阿伟科技20/-SG-11-20
+      - YouTube-阿伟科技22-SG-11-21
+      - YouTube-阿伟科技23-SG-11-22
+      - YouTube-阿伟科技24-JP-11-23
+      - YouTube-阿伟科技25-US-11-24
+      - YouTube-阿伟科技26-SG-11-25
+      - YouTube-阿伟科技-8-26
       - YouTube-阿伟科技-8-27
-      - YouTube-阿伟科技-8-28
-      - YouTube-阿伟科技DE-8-29
-      - YouTube-阿伟科技GB-8-30
+      - YouTube-阿伟科技DE-8-28
+      - YouTube-阿伟科技-GB-29
+      - YouTube-阿伟科技-GB-30
       - YouTube-阿伟科技GB-8-31
       - YouTube-阿伟科技GB-8-32
-      - YouTube-阿伟科技HK-8-33
+      - YouTube-阿伟科技GB-8-33
       - YouTube-阿伟科技HK-8-34
       - YouTube-阿伟科技HK-8-35
       - YouTube-阿伟科技HK-8-36
-      - YouTube-阿伟科技JP-8-37
-      - YouTube-阿伟科技JP-8-38
-      - YouTube-阿伟科技JP-8-39
-      - YouTube-阿伟科技RO-8-40
-      - YouTube-阿伟科技SK-8-41
-      - YouTube-阿伟科技TW-8-42
-      - YouTube-阿伟科技TW-8-43
-      - YouTube-阿伟科技TW-8-44
-      - YouTube-阿伟科技TW-8-45
-      - YouTube-阿伟科技TW-8-46
-      - YouTube-阿伟科技-US-47
-      - YouTube-阿伟科技-US-48
-      - YouTube-阿伟科技-US-49
-      - YouTube-阿伟科技-US-50
-      - YouTube-阿伟科技-US-51
-      - YouTube-阿伟科技US-8-52
-      - YouTube-阿伟科技US-8-53
-      - YouTube-阿伟科技US-8-54
-      - 🇭🇰香港-55
-      - 🇭🇰香港-56
-      - 🇭🇰香港-57
-      - 🇭🇰香港-58
-      - 🇭🇰香港-59
-      - 🇭🇰香港-60
-      - 🇭🇰香港-61
-      - 🇭🇰香港-62
-      - 🇭🇰香港-63
-      - 🇭🇰香港-64
-      - 🇭🇰香港-65
-      - 🇭🇰香港-66
-      - 🇭🇰香港-67
-      - 🇭🇰香港-68
-      - 🇭🇰香港-69
-      - 🇭🇰香港-70
-      - 🇭🇰香港-71
-      - 🇭🇰香港-72
-      - 🇭🇰香港-73
-      - 🇭🇰香港-74
-      - 🇭🇰香港-75
-      - 🇭🇰香港-76
-      - 🇭🇰香港-77
-      - 🇭🇰香港-78
-      - 🇭🇰香港-79
-      - 🇭🇰香港-80
-      - 🇭🇰香港-81
-      - 🇭🇰香港-82
-      - 🇭🇰香港-83
-      - 🇭🇰香港-84
-      - 🇭🇰香港-85
-      - 🇭🇰香港-86
-      - 🇭🇰香港-87
-      - 🇭🇰香港-88
-      - 🇭🇰香港-89
-      - 🇭🇰香港-90
+      - YouTube-阿伟科技HK-8-37
+      - YouTube-阿伟科技-ITA-38
+      - YouTube-阿伟科技-ITA-39
+      - YouTube-阿伟科技-ITA-40
+      - YouTube-阿伟科技JP-8-41
+      - YouTube-阿伟科技JP-8-42
+      - YouTube-阿伟科技JP-8-43
+      - YouTube-阿伟科技-KR-44
+      - YouTube-阿伟科技RO-8-45
+      - YouTube-阿伟科技-ROM-46
+      - YouTube-阿伟科技SK-8-47
+      - YouTube-阿伟科技TW-8-48
+      - YouTube-阿伟科技TW-8-49
+      - YouTube-阿伟科技TW-8-50
+      - YouTube-阿伟科技TW-8-51
+      - YouTube-阿伟科技-US-52
+      - YouTube-阿伟科技-US-53
+      - YouTube-阿伟科技-US-54
+      - YouTube-阿伟科技-US-55
+      - YouTube-阿伟科技-US-56
+      - YouTube-阿伟科技-US-57
+      - YouTube-阿伟科技US-8-58
+      - YouTube-阿伟科技US-8-59
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -779,96 +531,65 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube-阿伟科技01/1-JP-10-1
-      - YouTube-阿伟科技01/2-JP-10-2
-      - YouTube-阿伟科技01/3-US-10-3
-      - YouTube-阿伟科技02-HK-10-4
-      - YouTube-阿伟科技02-HK-10-5
-      - YouTube-阿伟科技02-HK-10-6
-      - YouTube-阿伟科技02-HK-10-7
-      - YouTube-阿伟科技02-HK-10-8
-      - YouTube-阿伟科技02-JP-10-9
-      - YouTube-阿伟科技02-KR-10-10
-      - YouTube-阿伟科技02-SG-10-11
-      - YouTube-阿伟科技08-HK-10-12
-      - YouTube-阿伟科技08-HK-10-13
-      - YouTube-阿伟科技13-JP-10-14
-      - YouTube-阿伟科技13-US-10-15
-      - YouTube-阿伟科技16-HK-10-16
-      - YouTube-阿伟科技17-HK-10-17
-      - YouTube-阿伟科技18-JP-10-18
-      - YouTube-阿伟科技19-HK-10-19
-      - YouTube-阿伟科技20-SG-10-20
-      - YouTube-阿伟科技21-SG-10-21
-      - YouTube-阿伟科技22-SG-10-22
-      - YouTube-阿伟科技23-SG-10-23
-      - YouTube-阿伟科技24-JP-10-24
-      - YouTube-阿伟科技25-US-10-25
-      - YouTube-阿伟科技26-SG-10-26
+      - YouTube-阿伟科技01/1-JP-11-1
+      - YouTube-阿伟科技01/2-JP-11-2
+      - YouTube-阿伟科技01/3-US-11-3
+      - YouTube-阿伟科技02-HK-11-4
+      - YouTube-阿伟科技02-HK-11-5
+      - YouTube-阿伟科技02-HK-11-6
+      - YouTube-阿伟科技02-HK-11-7
+      - YouTube-阿伟科技02-JP-11-8
+      - YouTube-阿伟科技02-KR-11-9
+      - YouTube-阿伟科技02-SG-11-10
+      - YouTube-阿伟科技08-HK-11-11
+      - YouTube-阿伟科技08-HK-11-12
+      - YouTube-阿伟科技08-HK-11-13
+      - YouTube-阿伟科技15-HK-11/-14
+      - YouTube-阿伟科技15-HK-11//-15
+      - YouTube-阿伟科技16-HK-11//-16
+      - YouTube-阿伟科技17-HK-11//-17
+      - YouTube-阿伟科技18-HK-11//-18
+      - YouTube-阿伟科技19/-JP-11-19
+      - YouTube-阿伟科技20/-SG-11-20
+      - YouTube-阿伟科技22-SG-11-21
+      - YouTube-阿伟科技23-SG-11-22
+      - YouTube-阿伟科技24-JP-11-23
+      - YouTube-阿伟科技25-US-11-24
+      - YouTube-阿伟科技26-SG-11-25
+      - YouTube-阿伟科技-8-26
       - YouTube-阿伟科技-8-27
-      - YouTube-阿伟科技-8-28
-      - YouTube-阿伟科技DE-8-29
-      - YouTube-阿伟科技GB-8-30
+      - YouTube-阿伟科技DE-8-28
+      - YouTube-阿伟科技-GB-29
+      - YouTube-阿伟科技-GB-30
       - YouTube-阿伟科技GB-8-31
       - YouTube-阿伟科技GB-8-32
-      - YouTube-阿伟科技HK-8-33
+      - YouTube-阿伟科技GB-8-33
       - YouTube-阿伟科技HK-8-34
       - YouTube-阿伟科技HK-8-35
       - YouTube-阿伟科技HK-8-36
-      - YouTube-阿伟科技JP-8-37
-      - YouTube-阿伟科技JP-8-38
-      - YouTube-阿伟科技JP-8-39
-      - YouTube-阿伟科技RO-8-40
-      - YouTube-阿伟科技SK-8-41
-      - YouTube-阿伟科技TW-8-42
-      - YouTube-阿伟科技TW-8-43
-      - YouTube-阿伟科技TW-8-44
-      - YouTube-阿伟科技TW-8-45
-      - YouTube-阿伟科技TW-8-46
-      - YouTube-阿伟科技-US-47
-      - YouTube-阿伟科技-US-48
-      - YouTube-阿伟科技-US-49
-      - YouTube-阿伟科技-US-50
-      - YouTube-阿伟科技-US-51
-      - YouTube-阿伟科技US-8-52
-      - YouTube-阿伟科技US-8-53
-      - YouTube-阿伟科技US-8-54
-      - 🇭🇰香港-55
-      - 🇭🇰香港-56
-      - 🇭🇰香港-57
-      - 🇭🇰香港-58
-      - 🇭🇰香港-59
-      - 🇭🇰香港-60
-      - 🇭🇰香港-61
-      - 🇭🇰香港-62
-      - 🇭🇰香港-63
-      - 🇭🇰香港-64
-      - 🇭🇰香港-65
-      - 🇭🇰香港-66
-      - 🇭🇰香港-67
-      - 🇭🇰香港-68
-      - 🇭🇰香港-69
-      - 🇭🇰香港-70
-      - 🇭🇰香港-71
-      - 🇭🇰香港-72
-      - 🇭🇰香港-73
-      - 🇭🇰香港-74
-      - 🇭🇰香港-75
-      - 🇭🇰香港-76
-      - 🇭🇰香港-77
-      - 🇭🇰香港-78
-      - 🇭🇰香港-79
-      - 🇭🇰香港-80
-      - 🇭🇰香港-81
-      - 🇭🇰香港-82
-      - 🇭🇰香港-83
-      - 🇭🇰香港-84
-      - 🇭🇰香港-85
-      - 🇭🇰香港-86
-      - 🇭🇰香港-87
-      - 🇭🇰香港-88
-      - 🇭🇰香港-89
-      - 🇭🇰香港-90
+      - YouTube-阿伟科技HK-8-37
+      - YouTube-阿伟科技-ITA-38
+      - YouTube-阿伟科技-ITA-39
+      - YouTube-阿伟科技-ITA-40
+      - YouTube-阿伟科技JP-8-41
+      - YouTube-阿伟科技JP-8-42
+      - YouTube-阿伟科技JP-8-43
+      - YouTube-阿伟科技-KR-44
+      - YouTube-阿伟科技RO-8-45
+      - YouTube-阿伟科技-ROM-46
+      - YouTube-阿伟科技SK-8-47
+      - YouTube-阿伟科技TW-8-48
+      - YouTube-阿伟科技TW-8-49
+      - YouTube-阿伟科技TW-8-50
+      - YouTube-阿伟科技TW-8-51
+      - YouTube-阿伟科技-US-52
+      - YouTube-阿伟科技-US-53
+      - YouTube-阿伟科技-US-54
+      - YouTube-阿伟科技-US-55
+      - YouTube-阿伟科技-US-56
+      - YouTube-阿伟科技-US-57
+      - YouTube-阿伟科技US-8-58
+      - YouTube-阿伟科技US-8-59
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
