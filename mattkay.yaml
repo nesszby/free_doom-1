@@ -5,383 +5,523 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CYL-科技（2021.12.30）, server: 112.33.32.136, port: 10002, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CYL-科技（2021.12.30） 2, server: in-am2.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: fD0KP8PWA, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: CYL-科技（2021.12.30） 3, server: sy-am2.eqsunshine.com, port: 443, type: ssr, cipher: aes-256-cfb, password: Jz8r4gLNP, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: CYL-科技（2021.12.30） 4, server: 183.31.11.146, port: 7777, type: ss, cipher: chacha20-ietf-poly1305, password: !<str> 12345678, udp: true}
-  - {name: CYL-科技（2021.12.30） 5, server: zz-az-hk-01.xncloud.xyz, port: 110, type: vmess, uuid: 44606009-f8e0-37d3-99be-b59b7075f991, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-10.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.30） 6, server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.gov.hk}, udp: true}
-  - {name: CYL-科技（2021.12.30） 7, server: 167.88.61.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CYL-科技（2021.12.30） 8, server: 38.91.102.96, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CYL-科技（2021.12.30） 9, server: 38.91.102.86, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.30） 10, server: 38.143.66.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CYL-科技（2021.12.30） 11, server: zz-az-hk-01.xncloud.xyz, port: 107, type: vmess, uuid: 38ecde79-4031-3c86-b6c0-3d2ce9abab1d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-07.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.30） 12, server: zz-az-hk-01.xncloud.xyz, port: 103, type: vmess, uuid: 38ecde79-4031-3c86-b6c0-3d2ce9abab1d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-03.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.29） 145, server: 38.91.102.86, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: CYL-科技（2021.12.30） 13, server: zz-az-hk-01.xncloud.xyz, port: 105, type: vmess, uuid: 44606009-f8e0-37d3-99be-b59b7075f991, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-05.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.30） 14, server: 38.91.102.96, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.30） 15, server: 38.143.66.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.30） 16, server: 38.143.66.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CYL-科技（2021.12.30） 17, server: 38.91.102.86, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.30） 18, server: zz-az-hk-01.xncloud.xyz, port: 110, type: vmess, uuid: 38ecde79-4031-3c86-b6c0-3d2ce9abab1d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-10.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.30） 19, server: zz-az-hk-01.xncloud.xyz, port: 108, type: vmess, uuid: 44606009-f8e0-37d3-99be-b59b7075f991, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-08.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.30） 20, server: zz-az-hk-01.xncloud.xyz, port: 102, type: vmess, uuid: 38ecde79-4031-3c86-b6c0-3d2ce9abab1d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-02.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.30） 21, server: 134.195.196.68, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CYL-科技（2021.12.29） 194, server: pr1.mooncloud.bike, port: 8443, type: vmess, uuid: 79fedd93-e758-4655-83ed-574f4afe2a04, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pr1.mooncloud.bike}, udp: true}
-  - {name: CYL-科技（2021.12.30） 22, server: us-am11.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: vGndzdmPB, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
-  - {name: CYL-科技（2021.12.30） 23, server: 169.197.141.24, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CYL-科技（2021.12.29） 185, server: 38.91.102.96, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CYL-科技（2021.12.30） 24, server: 62.210.209.50, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: CYL-科技（2021.12.30） 25, server: zz-az-hk-01.xncloud.xyz, port: 103, type: vmess, uuid: 44606009-f8e0-37d3-99be-b59b7075f991, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-03.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.30） 26, server: zz-az-hk-01.xncloud.xyz, port: 102, type: vmess, uuid: 44606009-f8e0-37d3-99be-b59b7075f991, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-02.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.30） 27, server: zz-az-hk-01.xncloud.xyz, port: 101, type: vmess, uuid: 44606009-f8e0-37d3-99be-b59b7075f991, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-01.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.29） 471, server: 38.75.136.93, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.30） 28, server: zz-az-hk-01.xncloud.xyz, port: 104, type: vmess, uuid: 44606009-f8e0-37d3-99be-b59b7075f991, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-04.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.30） 29, server: 167.88.61.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CYL-科技（2021.12.30） 30, server: zz-az-hk-01.xncloud.xyz, port: 101, type: vmess, uuid: 38ecde79-4031-3c86-b6c0-3d2ce9abab1d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-01.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.30） 31, server: 38.91.102.86, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.30） 32, server: 38.91.102.86, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.30） 33, server: zz-az-hk-01.xncloud.xyz, port: 109, type: vmess, uuid: 44606009-f8e0-37d3-99be-b59b7075f991, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-09.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.30） 34, server: sg-am11.eqnode.net, port: 8181, type: ssr, cipher: aes-256-cfb, password: kKdNNt2HZ, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
-  - {name: CYL-科技（2021.12.29） 184, server: 38.91.102.96, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: CYL-科技（2021.12.29） 193, server: 38.91.102.96, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CYL-科技（2021.12.30） 35, server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.30） 36, server: 38.91.102.96, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.29） 259, server: 62.210.209.50, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: CYL-科技（2021.12.30） 37, server: 167.88.61.60, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: CYL-科技（2021.12.30） 38, server: 107.167.23.50, port: 8084, type: ssr, cipher: aes-256-cfb, password: RhKqtYoG8, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
-  - {name: CYL-科技（2021.12.29） 275, server: 62.210.209.50, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CYL-科技（2021.12.30） 39, server: de-am2.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: 82BMko4lE, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: CYL-科技（2021.12.30） 40, server: 38.91.102.96, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.29） 173, server: 38.91.102.96, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: CYL-科技（2021.12.30） 41, server: zz-az-hk-01.xncloud.xyz, port: 106, type: vmess, uuid: 38ecde79-4031-3c86-b6c0-3d2ce9abab1d, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-06.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.30） 42, server: 38.91.102.86, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CYL-科技（2021.12.30） 43, server: 62.210.209.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CYL-科技（2021.12.30） 44, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: CYL-科技（2021.12.30） 45, server: uk-am3-5.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: PNRbp3j9B, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: CYL-科技（2021.12.29） 125, server: 38.91.102.86, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CYL-科技（2021.12.30） 46, server: 167.88.61.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.30） 47, server: 169.197.141.24, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: CYL-科技（2021.12.29） 272, server: 62.210.209.50, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.30） 48, server: fr-am1-4.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: X3LKnwp5C, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: CYL-科技（2021.12.30） 49, server: 38.143.66.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: CYL-科技（2021.12.30） 50, server: 38.91.102.86, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CYL-科技（2021.12.30） 51, server: ca-am3.eqnode.net, port: 8080, type: ssr, cipher: aes-256-cfb, password: 4axflHccX, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: CYL-科技（2021.12.30） 52, server: sg-am21.eqsunshine.com, port: 8080, type: ssr, cipher: aes-256-cfb, password: jUQAcjhEG, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: releases.ubuntu.com, udp: true}
-  - {name: CYL-科技（2021.12.30） 53, server: 62.210.209.50, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CYL-科技（2021.12.30） 54, server: 62.210.209.50, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: CYL-科技（2021.12.29） 387, server: 62.210.209.50, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CYL-科技（2021.12.29） 505, server: 38.75.136.93, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CYL-科技（2021.12.30） 55, server: zz-az-hk-01.xncloud.xyz, port: 106, type: vmess, uuid: 44606009-f8e0-37d3-99be-b59b7075f991, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-06.xncloud.xyz}, udp: true}
-  - {name: CYL-科技（2021.12.30） 56, server: 38.143.66.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.30） 57, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: CYL-科技（2021.12.30） 58, server: 38.143.66.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: CYL-科技（2021.12.30） 59, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.29） 229, server: 62.210.209.50, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: CYL-科技（2021.12.29） 101, server: 38.91.102.96, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国, server: 38.143.66.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国 2, server: 38.91.102.96, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 3, server: 38.91.102.86, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 4, server: 167.88.61.60, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国 5, server: 169.197.142.39, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国 6, server: 167.88.61.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _AU_澳大利亚, server: 172.105.180.227, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 7, server: 167.88.61.60, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _AU_澳大利亚 2, server: 172.105.180.227, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 8, server: 167.88.61.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _AU_澳大利亚 3, server: 172.105.180.227, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 9, server: 38.143.66.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 10, server: 38.143.66.71, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 11, server: 38.91.102.96, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 12, server: 167.88.61.60, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 13, server: 167.88.61.60, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国 14, server: 38.91.102.86, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 15, server: 169.197.142.39, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国 16, server: 167.88.61.60, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 17, server: 38.143.66.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 18, server: 38.91.102.86, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 19, server: 38.91.102.86, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 20, server: www.ltzs.buzz, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
+  - {name: _US_美国 21, server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 22, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: default_name, server: 104.21.62.193, port: 443, type: vmess, uuid: e64c6f7c-48eb-4852-9b29-778faef14212, alterId: 233, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /319285eb2d/, ws-headers: {Host: free-russian-cdn.xiaohouzi.club}, udp: true}
+  - {name: _US_美国 23, server: 169.197.142.39, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 24, server: 169.197.142.39, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _US_美国 25, server: 167.88.61.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 26, server: 38.91.102.86, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 27, server: 169.197.142.39, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 28, server: 38.143.66.71, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _US_美国 29, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 30, server: 169.197.142.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 31, server: 167.88.61.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 32, server: 38.91.102.86, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 33, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 34, server: 38.91.102.86, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 35, server: 38.91.102.86, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 36, server: 167.88.61.60, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 37, server: 169.197.142.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 38, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CA_加拿大, server: 198.57.27.218, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 39, server: 38.91.102.96, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 40, server: 38.91.102.96, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 41, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_美国 42, server: 38.91.102.96, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 43, server: 38.91.102.96, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 44, server: 38.91.102.86, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 45, server: 169.197.142.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _US_美国 46, server: 38.91.102.86, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_美国 47, server: 38.91.102.86, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 48, server: 38.91.102.96, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 49, server: 167.88.61.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _US_美国 50, server: 38.91.102.86, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _NO_挪威, server: 46.29.218.6, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 51, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _US_美国 52, server: 38.143.66.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _US_美国 53, server: 169.197.141.24, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _FR_法国, server: 62.210.209.50, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _US_美国 54, server: 38.91.102.86, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 55, server: 38.91.102.86, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _US_美国 56, server: 167.88.61.60, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 57, server: 38.91.102.86, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _US_美国 58, server: 167.88.61.60, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_美国 59, server: 38.91.102.86, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_加拿大 2, server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 60, server: 38.91.102.96, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _US_美国 61, server: 169.197.142.39, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _AU_澳大利亚 4, server: 172.105.180.227, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: +HK(Youtube技术分享室整理), server: 118.107.244.114, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
   - {name: "US美国(技术分享室整理,欢迎订阅)", server: 154.17.2.64, port: 18335, type: ss, cipher: chacha20-ietf-poly1305, password: ZEAC0K2Iulex3XajSe8pCy3YaDCSDpz9Z67OwDnT8ANRalRSYcqFF54yBx3Og3, udp: true}
-  - {name: HK(Youtube技术分享室整理), server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK(Youtube技术分享室整理) 2, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US(Youtube技术分享室整理), server: shcu01.iplc188.com, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK(Youtube技术分享室整理) 3, server: ff2.uuv2.co.uk, port: 443, type: vmess, uuid: f6c1babe-416e-47d1-8726-049678e25c7a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sshocean, ws-headers: {Host: us2.v2rayserv.com}, udp: true}
-  - {name: US(Youtube技术分享室整理) 2, server: 104.16.181.197, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
-  - {name: US(Youtube技术分享室整理) 3, server: 104.24.160.31, port: 80, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
-  - {name: HK(Youtube技术分享室整理) 4, server: pl-waw-01-tr.cdn.savoy.click, port: 889, type: trojan, password: nodnqJmXykIChRXUqqodCfhcWhtFglJX, sni: pl-waw-01-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
-  - {name: US(Youtube技术分享室整理) 4, server: 104.16.181.103, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
-  - {name: "挪威(技术分享室整理,欢迎订阅)", server: 46.29.218.6, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: TW(Youtube技术分享室整理), server: 139.162.116.154, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US美国(Youtube技术分享室整理), server: 167.88.61.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 澳大利亚+🇦🇺(Youtube技术分享室整理), server: 172.105.232.147, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US(Youtube技术分享室整理) 5, server: 38.91.102.86, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: HK(Youtube技术分享室整理), server: www.xinyi369.tk, port: 443, type: trojan, password: 3528818a-1fe2-4c2a-b4f7-17e4d1eca52a, sni: www.xinyi369.tk, skip-cert-verify: true, udp: true}
+  - {name: HK(Youtube技术分享室整理) 2, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
+  - {name: US(Youtube技术分享室整理), server: 172.67.176.114, port: 443, type: vmess, uuid: f84136de-e03e-4b19-abb0-388d5c8614b9, alterId: 233, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /0459ac88c41c8f/, ws-headers: {Host: free-russian02-cdn.xiaohouzi.club}, udp: true}
+  - {name: US(Youtube技术分享室整理) 2, server: 104.24.160.31, port: 80, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: HK(Youtube技术分享室整理) 3, server: www.digitalocean.com, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: +HK(Youtube技术分享室整理) 2, server: iepl.tw.9548.linkit.dev, port: 11316, type: ss, cipher: aes-256-gcm, password: gTVvCY, udp: true}
+  - {name: US(Youtube技术分享室整理) 3, server: 169.197.142.39, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: HK(Youtube技术分享室整理) 4, server: mf-aws-sg-10.xncloud.xyz, port: 18000, type: vmess, uuid: 2bed78b3-2f6a-3d68-906b-9baedeb0198c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /niaoyun, ws-headers: {Host: mf-aws-sg-10.xncloud.xyz}, udp: true}
+  - {name: AU(Youtube技术分享室整理), server: 172.105.180.227, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US(Youtube技术分享室整理) 4, server: 104.16.181.150, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: US(Youtube技术分享室整理) 5, server: 169.197.142.39, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US(Youtube技术分享室整理) 6, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US(Youtube技术分享室整理) 7, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: AU(Youtube技术分享室整理) 2, server: 172.105.180.227, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: "挪威+🇳🇴(技术分享室整理,欢迎订阅)", server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US(Youtube技术分享室整理) 8, server: 104.16.181.103, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: AU(Youtube技术分享室整理) 3, server: 172.105.180.227, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US(Youtube技术分享室整理) 9, server: 169.197.141.24, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US美国(Youtube技术分享室整理), server: 169.197.141.24, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US(Youtube技术分享室整理) 10, server: 169.197.141.24, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: IN(Youtube技术分享室整理), server: 172.105.35.61, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US(Youtube技术分享室整理) 11, server: 169.197.141.24, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
   - {name: US美国(Youtube技术分享室整理) 2, server: 198.41.212.154, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
-  - {name: US(Youtube技术分享室整理) 6, server: 104.26.9.74, port: 443, type: vmess, uuid: f6c1babe-416e-47d1-8726-049678e25c7a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sshocean, ws-headers: {Host: us2.v2rayserv.com}, udp: true}
+  - {name: US(Youtube技术分享室整理) 12, server: 169.197.142.39, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: "加拿大🇨🇦(技术分享室整理,欢迎订阅)", server: 198.57.27.218, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: AU(Youtube技术分享室整理) 4, server: 172.105.180.227, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US(Youtube技术分享室整理) 13, server: 167.88.61.60, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: "CA(技术分享室整理,欢迎订阅)", server: 198.57.27.218, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US(Youtube技术分享室整理) 14, server: 104.16.181.197, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: 挪威+🇳🇴(Youtube技术分享室整理), server: 46.29.218.6, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US美国(Youtube技术分享室整理) 3, server: 169.197.141.24, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: NO(Youtube技术分享室整理), server: 46.29.218.6, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: US(Youtube技术分享室整理) 15, server: 169.197.141.24, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 日本+🇯🇵(Youtube技术分享室整理), server: 172.105.232.147, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: AU(Youtube技术分享室整理) 5, server: 172.105.180.227, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US(Youtube技术分享室整理) 16, server: 169.197.142.39, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US(Youtube技术分享室整理) 17, server: 167.88.61.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: AU(Youtube技术分享室整理) 6, server: 172.105.180.227, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: AU(Youtube技术分享室整理) 7, server: 172.105.180.227, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: AU(Youtube技术分享室整理) 8, server: 172.105.180.227, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US(Youtube技术分享室整理) 18, server: 38.91.102.86, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US美国(Youtube技术分享室整理) 4, server: 172.99.190.87, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US(Youtube技术分享室整理) 19, server: 38.91.102.86, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US(Youtube技术分享室整理) 20, server: 167.88.61.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US(Youtube技术分享室整理) 21, server: 172.99.190.87, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US美国(Youtube技术分享室整理) 5, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: RU(Youtube技术分享室整理), server: 194.156.120.52, port: 41002, type: vmess, uuid: ebb93e84-5bb7-11ec-8bc6-6a5c6e054e4d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: AU(Youtube技术分享室整理) 9, server: 172.105.180.227, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: AU(Youtube技术分享室整理) 10, server: 172.105.180.227, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US(Youtube技术分享室整理) 22, server: 167.88.61.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: AU(Youtube技术分享室整理) 11, server: 172.105.180.227, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US(Youtube技术分享室整理) 23, server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US(Youtube技术分享室整理) 24, server: 169.197.141.24, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CYL-科技（2021.12.30）
-      - CYL-科技（2021.12.30） 2
-      - CYL-科技（2021.12.30） 3
-      - CYL-科技（2021.12.30） 4
-      - CYL-科技（2021.12.30） 5
-      - CYL-科技（2021.12.30） 6
-      - CYL-科技（2021.12.30） 7
-      - CYL-科技（2021.12.30） 8
-      - CYL-科技（2021.12.30） 9
-      - CYL-科技（2021.12.30） 10
-      - CYL-科技（2021.12.30） 11
-      - CYL-科技（2021.12.30） 12
-      - CYL-科技（2021.12.29） 145
-      - CYL-科技（2021.12.30） 13
-      - CYL-科技（2021.12.30） 14
-      - CYL-科技（2021.12.30） 15
-      - CYL-科技（2021.12.30） 16
-      - CYL-科技（2021.12.30） 17
-      - CYL-科技（2021.12.30） 18
-      - CYL-科技（2021.12.30） 19
-      - CYL-科技（2021.12.30） 20
-      - CYL-科技（2021.12.30） 21
-      - CYL-科技（2021.12.29） 194
-      - CYL-科技（2021.12.30） 22
-      - CYL-科技（2021.12.30） 23
-      - CYL-科技（2021.12.29） 185
-      - CYL-科技（2021.12.30） 24
-      - CYL-科技（2021.12.30） 25
-      - CYL-科技（2021.12.30） 26
-      - CYL-科技（2021.12.30） 27
-      - CYL-科技（2021.12.29） 471
-      - CYL-科技（2021.12.30） 28
-      - CYL-科技（2021.12.30） 29
-      - CYL-科技（2021.12.30） 30
-      - CYL-科技（2021.12.30） 31
-      - CYL-科技（2021.12.30） 32
-      - CYL-科技（2021.12.30） 33
-      - CYL-科技（2021.12.30） 34
-      - CYL-科技（2021.12.29） 184
-      - CYL-科技（2021.12.29） 193
-      - CYL-科技（2021.12.30） 35
-      - CYL-科技（2021.12.30） 36
-      - CYL-科技（2021.12.29） 259
-      - CYL-科技（2021.12.30） 37
-      - CYL-科技（2021.12.30） 38
-      - CYL-科技（2021.12.29） 275
-      - CYL-科技（2021.12.30） 39
-      - CYL-科技（2021.12.30） 40
-      - CYL-科技（2021.12.29） 173
-      - CYL-科技（2021.12.30） 41
-      - CYL-科技（2021.12.30） 42
-      - CYL-科技（2021.12.30） 43
-      - CYL-科技（2021.12.30） 44
-      - CYL-科技（2021.12.30） 45
-      - CYL-科技（2021.12.29） 125
-      - CYL-科技（2021.12.30） 46
-      - CYL-科技（2021.12.30） 47
-      - CYL-科技（2021.12.29） 272
-      - CYL-科技（2021.12.30） 48
-      - CYL-科技（2021.12.30） 49
-      - CYL-科技（2021.12.30） 50
-      - CYL-科技（2021.12.30） 51
-      - CYL-科技（2021.12.30） 52
-      - CYL-科技（2021.12.30） 53
-      - CYL-科技（2021.12.30） 54
-      - CYL-科技（2021.12.29） 387
-      - CYL-科技（2021.12.29） 505
-      - CYL-科技（2021.12.30） 55
-      - CYL-科技（2021.12.30） 56
-      - CYL-科技（2021.12.30） 57
-      - CYL-科技（2021.12.30） 58
-      - CYL-科技（2021.12.30） 59
-      - CYL-科技（2021.12.29） 229
-      - CYL-科技（2021.12.29） 101
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _AU_澳大利亚
+      - _US_美国 7
+      - _AU_澳大利亚 2
+      - _US_美国 8
+      - _AU_澳大利亚 3
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - default_name
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - _US_美国 27
+      - _US_美国 28
+      - _US_美国 29
+      - _US_美国 30
+      - _US_美国 31
+      - _US_美国 32
+      - _US_美国 33
+      - _US_美国 34
+      - _US_美国 35
+      - _US_美国 36
+      - _US_美国 37
+      - _US_美国 38
+      - _CA_加拿大
+      - _US_美国 39
+      - _US_美国 40
+      - _US_美国 41
+      - _US_美国 42
+      - _US_美国 43
+      - _US_美国 44
+      - _US_美国 45
+      - _US_美国 46
+      - _US_美国 47
+      - _US_美国 48
+      - _US_美国 49
+      - _US_美国 50
+      - _NO_挪威
+      - _US_美国 51
+      - _US_美国 52
+      - _US_美国 53
+      - _FR_法国
+      - _US_美国 54
+      - _US_美国 55
+      - _US_美国 56
+      - _US_美国 57
+      - _US_美国 58
+      - _US_美国 59
+      - _CA_加拿大 2
+      - _US_美国 60
+      - _US_美国 61
+      - _AU_澳大利亚 4
+      - +HK(Youtube技术分享室整理)
       - US美国(技术分享室整理,欢迎订阅)
       - HK(Youtube技术分享室整理)
       - HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理)
-      - HK(Youtube技术分享室整理) 3
       - US(Youtube技术分享室整理) 2
+      - HK(Youtube技术分享室整理) 3
+      - +HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 3
       - HK(Youtube技术分享室整理) 4
+      - AU(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 4
-      - 挪威(技术分享室整理,欢迎订阅)
-      - TW(Youtube技术分享室整理)
-      - US美国(Youtube技术分享室整理)
-      - 澳大利亚+🇦🇺(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 5
-      - US美国(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 6
+      - US(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 2
+      - 挪威+🇳🇴(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 8
+      - AU(Youtube技术分享室整理) 3
+      - US(Youtube技术分享室整理) 9
+      - US美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 10
+      - IN(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 11
+      - US美国(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 12
+      - 加拿大🇨🇦(技术分享室整理,欢迎订阅)
+      - AU(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 13
+      - CA(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 14
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - US美国(Youtube技术分享室整理) 3
+      - NO(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 15
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 5
+      - US(Youtube技术分享室整理) 16
+      - US(Youtube技术分享室整理) 17
+      - AU(Youtube技术分享室整理) 6
+      - AU(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 8
+      - US(Youtube技术分享室整理) 18
+      - US美国(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 19
+      - US(Youtube技术分享室整理) 20
+      - US(Youtube技术分享室整理) 21
+      - US美国(Youtube技术分享室整理) 5
+      - RU(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 9
+      - AU(Youtube技术分享室整理) 10
+      - US(Youtube技术分享室整理) 22
+      - AU(Youtube技术分享室整理) 11
+      - US(Youtube技术分享室整理) 23
+      - US(Youtube技术分享室整理) 24
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CYL-科技（2021.12.30）
-      - CYL-科技（2021.12.30） 2
-      - CYL-科技（2021.12.30） 3
-      - CYL-科技（2021.12.30） 4
-      - CYL-科技（2021.12.30） 5
-      - CYL-科技（2021.12.30） 6
-      - CYL-科技（2021.12.30） 7
-      - CYL-科技（2021.12.30） 8
-      - CYL-科技（2021.12.30） 9
-      - CYL-科技（2021.12.30） 10
-      - CYL-科技（2021.12.30） 11
-      - CYL-科技（2021.12.30） 12
-      - CYL-科技（2021.12.29） 145
-      - CYL-科技（2021.12.30） 13
-      - CYL-科技（2021.12.30） 14
-      - CYL-科技（2021.12.30） 15
-      - CYL-科技（2021.12.30） 16
-      - CYL-科技（2021.12.30） 17
-      - CYL-科技（2021.12.30） 18
-      - CYL-科技（2021.12.30） 19
-      - CYL-科技（2021.12.30） 20
-      - CYL-科技（2021.12.30） 21
-      - CYL-科技（2021.12.29） 194
-      - CYL-科技（2021.12.30） 22
-      - CYL-科技（2021.12.30） 23
-      - CYL-科技（2021.12.29） 185
-      - CYL-科技（2021.12.30） 24
-      - CYL-科技（2021.12.30） 25
-      - CYL-科技（2021.12.30） 26
-      - CYL-科技（2021.12.30） 27
-      - CYL-科技（2021.12.29） 471
-      - CYL-科技（2021.12.30） 28
-      - CYL-科技（2021.12.30） 29
-      - CYL-科技（2021.12.30） 30
-      - CYL-科技（2021.12.30） 31
-      - CYL-科技（2021.12.30） 32
-      - CYL-科技（2021.12.30） 33
-      - CYL-科技（2021.12.30） 34
-      - CYL-科技（2021.12.29） 184
-      - CYL-科技（2021.12.29） 193
-      - CYL-科技（2021.12.30） 35
-      - CYL-科技（2021.12.30） 36
-      - CYL-科技（2021.12.29） 259
-      - CYL-科技（2021.12.30） 37
-      - CYL-科技（2021.12.30） 38
-      - CYL-科技（2021.12.29） 275
-      - CYL-科技（2021.12.30） 39
-      - CYL-科技（2021.12.30） 40
-      - CYL-科技（2021.12.29） 173
-      - CYL-科技（2021.12.30） 41
-      - CYL-科技（2021.12.30） 42
-      - CYL-科技（2021.12.30） 43
-      - CYL-科技（2021.12.30） 44
-      - CYL-科技（2021.12.30） 45
-      - CYL-科技（2021.12.29） 125
-      - CYL-科技（2021.12.30） 46
-      - CYL-科技（2021.12.30） 47
-      - CYL-科技（2021.12.29） 272
-      - CYL-科技（2021.12.30） 48
-      - CYL-科技（2021.12.30） 49
-      - CYL-科技（2021.12.30） 50
-      - CYL-科技（2021.12.30） 51
-      - CYL-科技（2021.12.30） 52
-      - CYL-科技（2021.12.30） 53
-      - CYL-科技（2021.12.30） 54
-      - CYL-科技（2021.12.29） 387
-      - CYL-科技（2021.12.29） 505
-      - CYL-科技（2021.12.30） 55
-      - CYL-科技（2021.12.30） 56
-      - CYL-科技（2021.12.30） 57
-      - CYL-科技（2021.12.30） 58
-      - CYL-科技（2021.12.30） 59
-      - CYL-科技（2021.12.29） 229
-      - CYL-科技（2021.12.29） 101
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _AU_澳大利亚
+      - _US_美国 7
+      - _AU_澳大利亚 2
+      - _US_美国 8
+      - _AU_澳大利亚 3
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - default_name
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - _US_美国 27
+      - _US_美国 28
+      - _US_美国 29
+      - _US_美国 30
+      - _US_美国 31
+      - _US_美国 32
+      - _US_美国 33
+      - _US_美国 34
+      - _US_美国 35
+      - _US_美国 36
+      - _US_美国 37
+      - _US_美国 38
+      - _CA_加拿大
+      - _US_美国 39
+      - _US_美国 40
+      - _US_美国 41
+      - _US_美国 42
+      - _US_美国 43
+      - _US_美国 44
+      - _US_美国 45
+      - _US_美国 46
+      - _US_美国 47
+      - _US_美国 48
+      - _US_美国 49
+      - _US_美国 50
+      - _NO_挪威
+      - _US_美国 51
+      - _US_美国 52
+      - _US_美国 53
+      - _FR_法国
+      - _US_美国 54
+      - _US_美国 55
+      - _US_美国 56
+      - _US_美国 57
+      - _US_美国 58
+      - _US_美国 59
+      - _CA_加拿大 2
+      - _US_美国 60
+      - _US_美国 61
+      - _AU_澳大利亚 4
+      - +HK(Youtube技术分享室整理)
       - US美国(技术分享室整理,欢迎订阅)
       - HK(Youtube技术分享室整理)
       - HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理)
-      - HK(Youtube技术分享室整理) 3
       - US(Youtube技术分享室整理) 2
+      - HK(Youtube技术分享室整理) 3
+      - +HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 3
       - HK(Youtube技术分享室整理) 4
+      - AU(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 4
-      - 挪威(技术分享室整理,欢迎订阅)
-      - TW(Youtube技术分享室整理)
-      - US美国(Youtube技术分享室整理)
-      - 澳大利亚+🇦🇺(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 5
-      - US美国(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 6
+      - US(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 2
+      - 挪威+🇳🇴(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 8
+      - AU(Youtube技术分享室整理) 3
+      - US(Youtube技术分享室整理) 9
+      - US美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 10
+      - IN(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 11
+      - US美国(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 12
+      - 加拿大🇨🇦(技术分享室整理,欢迎订阅)
+      - AU(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 13
+      - CA(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 14
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - US美国(Youtube技术分享室整理) 3
+      - NO(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 15
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 5
+      - US(Youtube技术分享室整理) 16
+      - US(Youtube技术分享室整理) 17
+      - AU(Youtube技术分享室整理) 6
+      - AU(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 8
+      - US(Youtube技术分享室整理) 18
+      - US美国(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 19
+      - US(Youtube技术分享室整理) 20
+      - US(Youtube技术分享室整理) 21
+      - US美国(Youtube技术分享室整理) 5
+      - RU(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 9
+      - AU(Youtube技术分享室整理) 10
+      - US(Youtube技术分享室整理) 22
+      - AU(Youtube技术分享室整理) 11
+      - US(Youtube技术分享室整理) 23
+      - US(Youtube技术分享室整理) 24
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CYL-科技（2021.12.30）
-      - CYL-科技（2021.12.30） 2
-      - CYL-科技（2021.12.30） 3
-      - CYL-科技（2021.12.30） 4
-      - CYL-科技（2021.12.30） 5
-      - CYL-科技（2021.12.30） 6
-      - CYL-科技（2021.12.30） 7
-      - CYL-科技（2021.12.30） 8
-      - CYL-科技（2021.12.30） 9
-      - CYL-科技（2021.12.30） 10
-      - CYL-科技（2021.12.30） 11
-      - CYL-科技（2021.12.30） 12
-      - CYL-科技（2021.12.29） 145
-      - CYL-科技（2021.12.30） 13
-      - CYL-科技（2021.12.30） 14
-      - CYL-科技（2021.12.30） 15
-      - CYL-科技（2021.12.30） 16
-      - CYL-科技（2021.12.30） 17
-      - CYL-科技（2021.12.30） 18
-      - CYL-科技（2021.12.30） 19
-      - CYL-科技（2021.12.30） 20
-      - CYL-科技（2021.12.30） 21
-      - CYL-科技（2021.12.29） 194
-      - CYL-科技（2021.12.30） 22
-      - CYL-科技（2021.12.30） 23
-      - CYL-科技（2021.12.29） 185
-      - CYL-科技（2021.12.30） 24
-      - CYL-科技（2021.12.30） 25
-      - CYL-科技（2021.12.30） 26
-      - CYL-科技（2021.12.30） 27
-      - CYL-科技（2021.12.29） 471
-      - CYL-科技（2021.12.30） 28
-      - CYL-科技（2021.12.30） 29
-      - CYL-科技（2021.12.30） 30
-      - CYL-科技（2021.12.30） 31
-      - CYL-科技（2021.12.30） 32
-      - CYL-科技（2021.12.30） 33
-      - CYL-科技（2021.12.30） 34
-      - CYL-科技（2021.12.29） 184
-      - CYL-科技（2021.12.29） 193
-      - CYL-科技（2021.12.30） 35
-      - CYL-科技（2021.12.30） 36
-      - CYL-科技（2021.12.29） 259
-      - CYL-科技（2021.12.30） 37
-      - CYL-科技（2021.12.30） 38
-      - CYL-科技（2021.12.29） 275
-      - CYL-科技（2021.12.30） 39
-      - CYL-科技（2021.12.30） 40
-      - CYL-科技（2021.12.29） 173
-      - CYL-科技（2021.12.30） 41
-      - CYL-科技（2021.12.30） 42
-      - CYL-科技（2021.12.30） 43
-      - CYL-科技（2021.12.30） 44
-      - CYL-科技（2021.12.30） 45
-      - CYL-科技（2021.12.29） 125
-      - CYL-科技（2021.12.30） 46
-      - CYL-科技（2021.12.30） 47
-      - CYL-科技（2021.12.29） 272
-      - CYL-科技（2021.12.30） 48
-      - CYL-科技（2021.12.30） 49
-      - CYL-科技（2021.12.30） 50
-      - CYL-科技（2021.12.30） 51
-      - CYL-科技（2021.12.30） 52
-      - CYL-科技（2021.12.30） 53
-      - CYL-科技（2021.12.30） 54
-      - CYL-科技（2021.12.29） 387
-      - CYL-科技（2021.12.29） 505
-      - CYL-科技（2021.12.30） 55
-      - CYL-科技（2021.12.30） 56
-      - CYL-科技（2021.12.30） 57
-      - CYL-科技（2021.12.30） 58
-      - CYL-科技（2021.12.30） 59
-      - CYL-科技（2021.12.29） 229
-      - CYL-科技（2021.12.29） 101
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _AU_澳大利亚
+      - _US_美国 7
+      - _AU_澳大利亚 2
+      - _US_美国 8
+      - _AU_澳大利亚 3
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - default_name
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - _US_美国 27
+      - _US_美国 28
+      - _US_美国 29
+      - _US_美国 30
+      - _US_美国 31
+      - _US_美国 32
+      - _US_美国 33
+      - _US_美国 34
+      - _US_美国 35
+      - _US_美国 36
+      - _US_美国 37
+      - _US_美国 38
+      - _CA_加拿大
+      - _US_美国 39
+      - _US_美国 40
+      - _US_美国 41
+      - _US_美国 42
+      - _US_美国 43
+      - _US_美国 44
+      - _US_美国 45
+      - _US_美国 46
+      - _US_美国 47
+      - _US_美国 48
+      - _US_美国 49
+      - _US_美国 50
+      - _NO_挪威
+      - _US_美国 51
+      - _US_美国 52
+      - _US_美国 53
+      - _FR_法国
+      - _US_美国 54
+      - _US_美国 55
+      - _US_美国 56
+      - _US_美国 57
+      - _US_美国 58
+      - _US_美国 59
+      - _CA_加拿大 2
+      - _US_美国 60
+      - _US_美国 61
+      - _AU_澳大利亚 4
+      - +HK(Youtube技术分享室整理)
       - US美国(技术分享室整理,欢迎订阅)
       - HK(Youtube技术分享室整理)
       - HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理)
-      - HK(Youtube技术分享室整理) 3
       - US(Youtube技术分享室整理) 2
+      - HK(Youtube技术分享室整理) 3
+      - +HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 3
       - HK(Youtube技术分享室整理) 4
+      - AU(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 4
-      - 挪威(技术分享室整理,欢迎订阅)
-      - TW(Youtube技术分享室整理)
-      - US美国(Youtube技术分享室整理)
-      - 澳大利亚+🇦🇺(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 5
-      - US美国(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 6
+      - US(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 2
+      - 挪威+🇳🇴(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 8
+      - AU(Youtube技术分享室整理) 3
+      - US(Youtube技术分享室整理) 9
+      - US美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 10
+      - IN(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 11
+      - US美国(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 12
+      - 加拿大🇨🇦(技术分享室整理,欢迎订阅)
+      - AU(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 13
+      - CA(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 14
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - US美国(Youtube技术分享室整理) 3
+      - NO(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 15
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 5
+      - US(Youtube技术分享室整理) 16
+      - US(Youtube技术分享室整理) 17
+      - AU(Youtube技术分享室整理) 6
+      - AU(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 8
+      - US(Youtube技术分享室整理) 18
+      - US美国(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 19
+      - US(Youtube技术分享室整理) 20
+      - US(Youtube技术分享室整理) 21
+      - US美国(Youtube技术分享室整理) 5
+      - RU(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 9
+      - AU(Youtube技术分享室整理) 10
+      - US(Youtube技术分享室整理) 22
+      - AU(Youtube技术分享室整理) 11
+      - US(Youtube技术分享室整理) 23
+      - US(Youtube技术分享室整理) 24
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -400,96 +540,131 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CYL-科技（2021.12.30）
-      - CYL-科技（2021.12.30） 2
-      - CYL-科技（2021.12.30） 3
-      - CYL-科技（2021.12.30） 4
-      - CYL-科技（2021.12.30） 5
-      - CYL-科技（2021.12.30） 6
-      - CYL-科技（2021.12.30） 7
-      - CYL-科技（2021.12.30） 8
-      - CYL-科技（2021.12.30） 9
-      - CYL-科技（2021.12.30） 10
-      - CYL-科技（2021.12.30） 11
-      - CYL-科技（2021.12.30） 12
-      - CYL-科技（2021.12.29） 145
-      - CYL-科技（2021.12.30） 13
-      - CYL-科技（2021.12.30） 14
-      - CYL-科技（2021.12.30） 15
-      - CYL-科技（2021.12.30） 16
-      - CYL-科技（2021.12.30） 17
-      - CYL-科技（2021.12.30） 18
-      - CYL-科技（2021.12.30） 19
-      - CYL-科技（2021.12.30） 20
-      - CYL-科技（2021.12.30） 21
-      - CYL-科技（2021.12.29） 194
-      - CYL-科技（2021.12.30） 22
-      - CYL-科技（2021.12.30） 23
-      - CYL-科技（2021.12.29） 185
-      - CYL-科技（2021.12.30） 24
-      - CYL-科技（2021.12.30） 25
-      - CYL-科技（2021.12.30） 26
-      - CYL-科技（2021.12.30） 27
-      - CYL-科技（2021.12.29） 471
-      - CYL-科技（2021.12.30） 28
-      - CYL-科技（2021.12.30） 29
-      - CYL-科技（2021.12.30） 30
-      - CYL-科技（2021.12.30） 31
-      - CYL-科技（2021.12.30） 32
-      - CYL-科技（2021.12.30） 33
-      - CYL-科技（2021.12.30） 34
-      - CYL-科技（2021.12.29） 184
-      - CYL-科技（2021.12.29） 193
-      - CYL-科技（2021.12.30） 35
-      - CYL-科技（2021.12.30） 36
-      - CYL-科技（2021.12.29） 259
-      - CYL-科技（2021.12.30） 37
-      - CYL-科技（2021.12.30） 38
-      - CYL-科技（2021.12.29） 275
-      - CYL-科技（2021.12.30） 39
-      - CYL-科技（2021.12.30） 40
-      - CYL-科技（2021.12.29） 173
-      - CYL-科技（2021.12.30） 41
-      - CYL-科技（2021.12.30） 42
-      - CYL-科技（2021.12.30） 43
-      - CYL-科技（2021.12.30） 44
-      - CYL-科技（2021.12.30） 45
-      - CYL-科技（2021.12.29） 125
-      - CYL-科技（2021.12.30） 46
-      - CYL-科技（2021.12.30） 47
-      - CYL-科技（2021.12.29） 272
-      - CYL-科技（2021.12.30） 48
-      - CYL-科技（2021.12.30） 49
-      - CYL-科技（2021.12.30） 50
-      - CYL-科技（2021.12.30） 51
-      - CYL-科技（2021.12.30） 52
-      - CYL-科技（2021.12.30） 53
-      - CYL-科技（2021.12.30） 54
-      - CYL-科技（2021.12.29） 387
-      - CYL-科技（2021.12.29） 505
-      - CYL-科技（2021.12.30） 55
-      - CYL-科技（2021.12.30） 56
-      - CYL-科技（2021.12.30） 57
-      - CYL-科技（2021.12.30） 58
-      - CYL-科技（2021.12.30） 59
-      - CYL-科技（2021.12.29） 229
-      - CYL-科技（2021.12.29） 101
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _AU_澳大利亚
+      - _US_美国 7
+      - _AU_澳大利亚 2
+      - _US_美国 8
+      - _AU_澳大利亚 3
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - default_name
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - _US_美国 27
+      - _US_美国 28
+      - _US_美国 29
+      - _US_美国 30
+      - _US_美国 31
+      - _US_美国 32
+      - _US_美国 33
+      - _US_美国 34
+      - _US_美国 35
+      - _US_美国 36
+      - _US_美国 37
+      - _US_美国 38
+      - _CA_加拿大
+      - _US_美国 39
+      - _US_美国 40
+      - _US_美国 41
+      - _US_美国 42
+      - _US_美国 43
+      - _US_美国 44
+      - _US_美国 45
+      - _US_美国 46
+      - _US_美国 47
+      - _US_美国 48
+      - _US_美国 49
+      - _US_美国 50
+      - _NO_挪威
+      - _US_美国 51
+      - _US_美国 52
+      - _US_美国 53
+      - _FR_法国
+      - _US_美国 54
+      - _US_美国 55
+      - _US_美国 56
+      - _US_美国 57
+      - _US_美国 58
+      - _US_美国 59
+      - _CA_加拿大 2
+      - _US_美国 60
+      - _US_美国 61
+      - _AU_澳大利亚 4
+      - +HK(Youtube技术分享室整理)
       - US美国(技术分享室整理,欢迎订阅)
       - HK(Youtube技术分享室整理)
       - HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理)
-      - HK(Youtube技术分享室整理) 3
       - US(Youtube技术分享室整理) 2
+      - HK(Youtube技术分享室整理) 3
+      - +HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 3
       - HK(Youtube技术分享室整理) 4
+      - AU(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 4
-      - 挪威(技术分享室整理,欢迎订阅)
-      - TW(Youtube技术分享室整理)
-      - US美国(Youtube技术分享室整理)
-      - 澳大利亚+🇦🇺(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 5
-      - US美国(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 6
+      - US(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 2
+      - 挪威+🇳🇴(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 8
+      - AU(Youtube技术分享室整理) 3
+      - US(Youtube技术分享室整理) 9
+      - US美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 10
+      - IN(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 11
+      - US美国(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 12
+      - 加拿大🇨🇦(技术分享室整理,欢迎订阅)
+      - AU(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 13
+      - CA(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 14
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - US美国(Youtube技术分享室整理) 3
+      - NO(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 15
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 5
+      - US(Youtube技术分享室整理) 16
+      - US(Youtube技术分享室整理) 17
+      - AU(Youtube技术分享室整理) 6
+      - AU(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 8
+      - US(Youtube技术分享室整理) 18
+      - US美国(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 19
+      - US(Youtube技术分享室整理) 20
+      - US(Youtube技术分享室整理) 21
+      - US美国(Youtube技术分享室整理) 5
+      - RU(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 9
+      - AU(Youtube技术分享室整理) 10
+      - US(Youtube技术分享室整理) 22
+      - AU(Youtube技术分享室整理) 11
+      - US(Youtube技术分享室整理) 23
+      - US(Youtube技术分享室整理) 24
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -500,287 +675,392 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CYL-科技（2021.12.30）
-      - CYL-科技（2021.12.30） 2
-      - CYL-科技（2021.12.30） 3
-      - CYL-科技（2021.12.30） 4
-      - CYL-科技（2021.12.30） 5
-      - CYL-科技（2021.12.30） 6
-      - CYL-科技（2021.12.30） 7
-      - CYL-科技（2021.12.30） 8
-      - CYL-科技（2021.12.30） 9
-      - CYL-科技（2021.12.30） 10
-      - CYL-科技（2021.12.30） 11
-      - CYL-科技（2021.12.30） 12
-      - CYL-科技（2021.12.29） 145
-      - CYL-科技（2021.12.30） 13
-      - CYL-科技（2021.12.30） 14
-      - CYL-科技（2021.12.30） 15
-      - CYL-科技（2021.12.30） 16
-      - CYL-科技（2021.12.30） 17
-      - CYL-科技（2021.12.30） 18
-      - CYL-科技（2021.12.30） 19
-      - CYL-科技（2021.12.30） 20
-      - CYL-科技（2021.12.30） 21
-      - CYL-科技（2021.12.29） 194
-      - CYL-科技（2021.12.30） 22
-      - CYL-科技（2021.12.30） 23
-      - CYL-科技（2021.12.29） 185
-      - CYL-科技（2021.12.30） 24
-      - CYL-科技（2021.12.30） 25
-      - CYL-科技（2021.12.30） 26
-      - CYL-科技（2021.12.30） 27
-      - CYL-科技（2021.12.29） 471
-      - CYL-科技（2021.12.30） 28
-      - CYL-科技（2021.12.30） 29
-      - CYL-科技（2021.12.30） 30
-      - CYL-科技（2021.12.30） 31
-      - CYL-科技（2021.12.30） 32
-      - CYL-科技（2021.12.30） 33
-      - CYL-科技（2021.12.30） 34
-      - CYL-科技（2021.12.29） 184
-      - CYL-科技（2021.12.29） 193
-      - CYL-科技（2021.12.30） 35
-      - CYL-科技（2021.12.30） 36
-      - CYL-科技（2021.12.29） 259
-      - CYL-科技（2021.12.30） 37
-      - CYL-科技（2021.12.30） 38
-      - CYL-科技（2021.12.29） 275
-      - CYL-科技（2021.12.30） 39
-      - CYL-科技（2021.12.30） 40
-      - CYL-科技（2021.12.29） 173
-      - CYL-科技（2021.12.30） 41
-      - CYL-科技（2021.12.30） 42
-      - CYL-科技（2021.12.30） 43
-      - CYL-科技（2021.12.30） 44
-      - CYL-科技（2021.12.30） 45
-      - CYL-科技（2021.12.29） 125
-      - CYL-科技（2021.12.30） 46
-      - CYL-科技（2021.12.30） 47
-      - CYL-科技（2021.12.29） 272
-      - CYL-科技（2021.12.30） 48
-      - CYL-科技（2021.12.30） 49
-      - CYL-科技（2021.12.30） 50
-      - CYL-科技（2021.12.30） 51
-      - CYL-科技（2021.12.30） 52
-      - CYL-科技（2021.12.30） 53
-      - CYL-科技（2021.12.30） 54
-      - CYL-科技（2021.12.29） 387
-      - CYL-科技（2021.12.29） 505
-      - CYL-科技（2021.12.30） 55
-      - CYL-科技（2021.12.30） 56
-      - CYL-科技（2021.12.30） 57
-      - CYL-科技（2021.12.30） 58
-      - CYL-科技（2021.12.30） 59
-      - CYL-科技（2021.12.29） 229
-      - CYL-科技（2021.12.29） 101
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _AU_澳大利亚
+      - _US_美国 7
+      - _AU_澳大利亚 2
+      - _US_美国 8
+      - _AU_澳大利亚 3
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - default_name
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - _US_美国 27
+      - _US_美国 28
+      - _US_美国 29
+      - _US_美国 30
+      - _US_美国 31
+      - _US_美国 32
+      - _US_美国 33
+      - _US_美国 34
+      - _US_美国 35
+      - _US_美国 36
+      - _US_美国 37
+      - _US_美国 38
+      - _CA_加拿大
+      - _US_美国 39
+      - _US_美国 40
+      - _US_美国 41
+      - _US_美国 42
+      - _US_美国 43
+      - _US_美国 44
+      - _US_美国 45
+      - _US_美国 46
+      - _US_美国 47
+      - _US_美国 48
+      - _US_美国 49
+      - _US_美国 50
+      - _NO_挪威
+      - _US_美国 51
+      - _US_美国 52
+      - _US_美国 53
+      - _FR_法国
+      - _US_美国 54
+      - _US_美国 55
+      - _US_美国 56
+      - _US_美国 57
+      - _US_美国 58
+      - _US_美国 59
+      - _CA_加拿大 2
+      - _US_美国 60
+      - _US_美国 61
+      - _AU_澳大利亚 4
+      - +HK(Youtube技术分享室整理)
       - US美国(技术分享室整理,欢迎订阅)
       - HK(Youtube技术分享室整理)
       - HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理)
-      - HK(Youtube技术分享室整理) 3
       - US(Youtube技术分享室整理) 2
+      - HK(Youtube技术分享室整理) 3
+      - +HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 3
       - HK(Youtube技术分享室整理) 4
+      - AU(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 4
-      - 挪威(技术分享室整理,欢迎订阅)
-      - TW(Youtube技术分享室整理)
-      - US美国(Youtube技术分享室整理)
-      - 澳大利亚+🇦🇺(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 5
-      - US美国(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 6
+      - US(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 2
+      - 挪威+🇳🇴(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 8
+      - AU(Youtube技术分享室整理) 3
+      - US(Youtube技术分享室整理) 9
+      - US美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 10
+      - IN(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 11
+      - US美国(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 12
+      - 加拿大🇨🇦(技术分享室整理,欢迎订阅)
+      - AU(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 13
+      - CA(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 14
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - US美国(Youtube技术分享室整理) 3
+      - NO(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 15
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 5
+      - US(Youtube技术分享室整理) 16
+      - US(Youtube技术分享室整理) 17
+      - AU(Youtube技术分享室整理) 6
+      - AU(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 8
+      - US(Youtube技术分享室整理) 18
+      - US美国(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 19
+      - US(Youtube技术分享室整理) 20
+      - US(Youtube技术分享室整理) 21
+      - US美国(Youtube技术分享室整理) 5
+      - RU(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 9
+      - AU(Youtube技术分享室整理) 10
+      - US(Youtube技术分享室整理) 22
+      - AU(Youtube技术分享室整理) 11
+      - US(Youtube技术分享室整理) 23
+      - US(Youtube技术分享室整理) 24
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CYL-科技（2021.12.30）
-      - CYL-科技（2021.12.30） 2
-      - CYL-科技（2021.12.30） 3
-      - CYL-科技（2021.12.30） 4
-      - CYL-科技（2021.12.30） 5
-      - CYL-科技（2021.12.30） 6
-      - CYL-科技（2021.12.30） 7
-      - CYL-科技（2021.12.30） 8
-      - CYL-科技（2021.12.30） 9
-      - CYL-科技（2021.12.30） 10
-      - CYL-科技（2021.12.30） 11
-      - CYL-科技（2021.12.30） 12
-      - CYL-科技（2021.12.29） 145
-      - CYL-科技（2021.12.30） 13
-      - CYL-科技（2021.12.30） 14
-      - CYL-科技（2021.12.30） 15
-      - CYL-科技（2021.12.30） 16
-      - CYL-科技（2021.12.30） 17
-      - CYL-科技（2021.12.30） 18
-      - CYL-科技（2021.12.30） 19
-      - CYL-科技（2021.12.30） 20
-      - CYL-科技（2021.12.30） 21
-      - CYL-科技（2021.12.29） 194
-      - CYL-科技（2021.12.30） 22
-      - CYL-科技（2021.12.30） 23
-      - CYL-科技（2021.12.29） 185
-      - CYL-科技（2021.12.30） 24
-      - CYL-科技（2021.12.30） 25
-      - CYL-科技（2021.12.30） 26
-      - CYL-科技（2021.12.30） 27
-      - CYL-科技（2021.12.29） 471
-      - CYL-科技（2021.12.30） 28
-      - CYL-科技（2021.12.30） 29
-      - CYL-科技（2021.12.30） 30
-      - CYL-科技（2021.12.30） 31
-      - CYL-科技（2021.12.30） 32
-      - CYL-科技（2021.12.30） 33
-      - CYL-科技（2021.12.30） 34
-      - CYL-科技（2021.12.29） 184
-      - CYL-科技（2021.12.29） 193
-      - CYL-科技（2021.12.30） 35
-      - CYL-科技（2021.12.30） 36
-      - CYL-科技（2021.12.29） 259
-      - CYL-科技（2021.12.30） 37
-      - CYL-科技（2021.12.30） 38
-      - CYL-科技（2021.12.29） 275
-      - CYL-科技（2021.12.30） 39
-      - CYL-科技（2021.12.30） 40
-      - CYL-科技（2021.12.29） 173
-      - CYL-科技（2021.12.30） 41
-      - CYL-科技（2021.12.30） 42
-      - CYL-科技（2021.12.30） 43
-      - CYL-科技（2021.12.30） 44
-      - CYL-科技（2021.12.30） 45
-      - CYL-科技（2021.12.29） 125
-      - CYL-科技（2021.12.30） 46
-      - CYL-科技（2021.12.30） 47
-      - CYL-科技（2021.12.29） 272
-      - CYL-科技（2021.12.30） 48
-      - CYL-科技（2021.12.30） 49
-      - CYL-科技（2021.12.30） 50
-      - CYL-科技（2021.12.30） 51
-      - CYL-科技（2021.12.30） 52
-      - CYL-科技（2021.12.30） 53
-      - CYL-科技（2021.12.30） 54
-      - CYL-科技（2021.12.29） 387
-      - CYL-科技（2021.12.29） 505
-      - CYL-科技（2021.12.30） 55
-      - CYL-科技（2021.12.30） 56
-      - CYL-科技（2021.12.30） 57
-      - CYL-科技（2021.12.30） 58
-      - CYL-科技（2021.12.30） 59
-      - CYL-科技（2021.12.29） 229
-      - CYL-科技（2021.12.29） 101
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _AU_澳大利亚
+      - _US_美国 7
+      - _AU_澳大利亚 2
+      - _US_美国 8
+      - _AU_澳大利亚 3
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - default_name
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - _US_美国 27
+      - _US_美国 28
+      - _US_美国 29
+      - _US_美国 30
+      - _US_美国 31
+      - _US_美国 32
+      - _US_美国 33
+      - _US_美国 34
+      - _US_美国 35
+      - _US_美国 36
+      - _US_美国 37
+      - _US_美国 38
+      - _CA_加拿大
+      - _US_美国 39
+      - _US_美国 40
+      - _US_美国 41
+      - _US_美国 42
+      - _US_美国 43
+      - _US_美国 44
+      - _US_美国 45
+      - _US_美国 46
+      - _US_美国 47
+      - _US_美国 48
+      - _US_美国 49
+      - _US_美国 50
+      - _NO_挪威
+      - _US_美国 51
+      - _US_美国 52
+      - _US_美国 53
+      - _FR_法国
+      - _US_美国 54
+      - _US_美国 55
+      - _US_美国 56
+      - _US_美国 57
+      - _US_美国 58
+      - _US_美国 59
+      - _CA_加拿大 2
+      - _US_美国 60
+      - _US_美国 61
+      - _AU_澳大利亚 4
+      - +HK(Youtube技术分享室整理)
       - US美国(技术分享室整理,欢迎订阅)
       - HK(Youtube技术分享室整理)
       - HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理)
-      - HK(Youtube技术分享室整理) 3
       - US(Youtube技术分享室整理) 2
+      - HK(Youtube技术分享室整理) 3
+      - +HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 3
       - HK(Youtube技术分享室整理) 4
+      - AU(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 4
-      - 挪威(技术分享室整理,欢迎订阅)
-      - TW(Youtube技术分享室整理)
-      - US美国(Youtube技术分享室整理)
-      - 澳大利亚+🇦🇺(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 5
-      - US美国(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 6
+      - US(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 2
+      - 挪威+🇳🇴(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 8
+      - AU(Youtube技术分享室整理) 3
+      - US(Youtube技术分享室整理) 9
+      - US美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 10
+      - IN(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 11
+      - US美国(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 12
+      - 加拿大🇨🇦(技术分享室整理,欢迎订阅)
+      - AU(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 13
+      - CA(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 14
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - US美国(Youtube技术分享室整理) 3
+      - NO(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 15
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 5
+      - US(Youtube技术分享室整理) 16
+      - US(Youtube技术分享室整理) 17
+      - AU(Youtube技术分享室整理) 6
+      - AU(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 8
+      - US(Youtube技术分享室整理) 18
+      - US美国(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 19
+      - US(Youtube技术分享室整理) 20
+      - US(Youtube技术分享室整理) 21
+      - US美国(Youtube技术分享室整理) 5
+      - RU(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 9
+      - AU(Youtube技术分享室整理) 10
+      - US(Youtube技术分享室整理) 22
+      - AU(Youtube技术分享室整理) 11
+      - US(Youtube技术分享室整理) 23
+      - US(Youtube技术分享室整理) 24
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CYL-科技（2021.12.30）
-      - CYL-科技（2021.12.30） 2
-      - CYL-科技（2021.12.30） 3
-      - CYL-科技（2021.12.30） 4
-      - CYL-科技（2021.12.30） 5
-      - CYL-科技（2021.12.30） 6
-      - CYL-科技（2021.12.30） 7
-      - CYL-科技（2021.12.30） 8
-      - CYL-科技（2021.12.30） 9
-      - CYL-科技（2021.12.30） 10
-      - CYL-科技（2021.12.30） 11
-      - CYL-科技（2021.12.30） 12
-      - CYL-科技（2021.12.29） 145
-      - CYL-科技（2021.12.30） 13
-      - CYL-科技（2021.12.30） 14
-      - CYL-科技（2021.12.30） 15
-      - CYL-科技（2021.12.30） 16
-      - CYL-科技（2021.12.30） 17
-      - CYL-科技（2021.12.30） 18
-      - CYL-科技（2021.12.30） 19
-      - CYL-科技（2021.12.30） 20
-      - CYL-科技（2021.12.30） 21
-      - CYL-科技（2021.12.29） 194
-      - CYL-科技（2021.12.30） 22
-      - CYL-科技（2021.12.30） 23
-      - CYL-科技（2021.12.29） 185
-      - CYL-科技（2021.12.30） 24
-      - CYL-科技（2021.12.30） 25
-      - CYL-科技（2021.12.30） 26
-      - CYL-科技（2021.12.30） 27
-      - CYL-科技（2021.12.29） 471
-      - CYL-科技（2021.12.30） 28
-      - CYL-科技（2021.12.30） 29
-      - CYL-科技（2021.12.30） 30
-      - CYL-科技（2021.12.30） 31
-      - CYL-科技（2021.12.30） 32
-      - CYL-科技（2021.12.30） 33
-      - CYL-科技（2021.12.30） 34
-      - CYL-科技（2021.12.29） 184
-      - CYL-科技（2021.12.29） 193
-      - CYL-科技（2021.12.30） 35
-      - CYL-科技（2021.12.30） 36
-      - CYL-科技（2021.12.29） 259
-      - CYL-科技（2021.12.30） 37
-      - CYL-科技（2021.12.30） 38
-      - CYL-科技（2021.12.29） 275
-      - CYL-科技（2021.12.30） 39
-      - CYL-科技（2021.12.30） 40
-      - CYL-科技（2021.12.29） 173
-      - CYL-科技（2021.12.30） 41
-      - CYL-科技（2021.12.30） 42
-      - CYL-科技（2021.12.30） 43
-      - CYL-科技（2021.12.30） 44
-      - CYL-科技（2021.12.30） 45
-      - CYL-科技（2021.12.29） 125
-      - CYL-科技（2021.12.30） 46
-      - CYL-科技（2021.12.30） 47
-      - CYL-科技（2021.12.29） 272
-      - CYL-科技（2021.12.30） 48
-      - CYL-科技（2021.12.30） 49
-      - CYL-科技（2021.12.30） 50
-      - CYL-科技（2021.12.30） 51
-      - CYL-科技（2021.12.30） 52
-      - CYL-科技（2021.12.30） 53
-      - CYL-科技（2021.12.30） 54
-      - CYL-科技（2021.12.29） 387
-      - CYL-科技（2021.12.29） 505
-      - CYL-科技（2021.12.30） 55
-      - CYL-科技（2021.12.30） 56
-      - CYL-科技（2021.12.30） 57
-      - CYL-科技（2021.12.30） 58
-      - CYL-科技（2021.12.30） 59
-      - CYL-科技（2021.12.29） 229
-      - CYL-科技（2021.12.29） 101
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _AU_澳大利亚
+      - _US_美国 7
+      - _AU_澳大利亚 2
+      - _US_美国 8
+      - _AU_澳大利亚 3
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - default_name
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - _US_美国 27
+      - _US_美国 28
+      - _US_美国 29
+      - _US_美国 30
+      - _US_美国 31
+      - _US_美国 32
+      - _US_美国 33
+      - _US_美国 34
+      - _US_美国 35
+      - _US_美国 36
+      - _US_美国 37
+      - _US_美国 38
+      - _CA_加拿大
+      - _US_美国 39
+      - _US_美国 40
+      - _US_美国 41
+      - _US_美国 42
+      - _US_美国 43
+      - _US_美国 44
+      - _US_美国 45
+      - _US_美国 46
+      - _US_美国 47
+      - _US_美国 48
+      - _US_美国 49
+      - _US_美国 50
+      - _NO_挪威
+      - _US_美国 51
+      - _US_美国 52
+      - _US_美国 53
+      - _FR_法国
+      - _US_美国 54
+      - _US_美国 55
+      - _US_美国 56
+      - _US_美国 57
+      - _US_美国 58
+      - _US_美国 59
+      - _CA_加拿大 2
+      - _US_美国 60
+      - _US_美国 61
+      - _AU_澳大利亚 4
+      - +HK(Youtube技术分享室整理)
       - US美国(技术分享室整理,欢迎订阅)
       - HK(Youtube技术分享室整理)
       - HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理)
-      - HK(Youtube技术分享室整理) 3
       - US(Youtube技术分享室整理) 2
+      - HK(Youtube技术分享室整理) 3
+      - +HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 3
       - HK(Youtube技术分享室整理) 4
+      - AU(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 4
-      - 挪威(技术分享室整理,欢迎订阅)
-      - TW(Youtube技术分享室整理)
-      - US美国(Youtube技术分享室整理)
-      - 澳大利亚+🇦🇺(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 5
-      - US美国(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 6
+      - US(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 2
+      - 挪威+🇳🇴(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 8
+      - AU(Youtube技术分享室整理) 3
+      - US(Youtube技术分享室整理) 9
+      - US美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 10
+      - IN(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 11
+      - US美国(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 12
+      - 加拿大🇨🇦(技术分享室整理,欢迎订阅)
+      - AU(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 13
+      - CA(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 14
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - US美国(Youtube技术分享室整理) 3
+      - NO(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 15
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 5
+      - US(Youtube技术分享室整理) 16
+      - US(Youtube技术分享室整理) 17
+      - AU(Youtube技术分享室整理) 6
+      - AU(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 8
+      - US(Youtube技术分享室整理) 18
+      - US美国(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 19
+      - US(Youtube技术分享室整理) 20
+      - US(Youtube技术分享室整理) 21
+      - US美国(Youtube技术分享室整理) 5
+      - RU(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 9
+      - AU(Youtube技术分享室整理) 10
+      - US(Youtube技术分享室整理) 22
+      - AU(Youtube技术分享室整理) 11
+      - US(Youtube技术分享室整理) 23
+      - US(Youtube技术分享室整理) 24
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -796,96 +1076,131 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CYL-科技（2021.12.30）
-      - CYL-科技（2021.12.30） 2
-      - CYL-科技（2021.12.30） 3
-      - CYL-科技（2021.12.30） 4
-      - CYL-科技（2021.12.30） 5
-      - CYL-科技（2021.12.30） 6
-      - CYL-科技（2021.12.30） 7
-      - CYL-科技（2021.12.30） 8
-      - CYL-科技（2021.12.30） 9
-      - CYL-科技（2021.12.30） 10
-      - CYL-科技（2021.12.30） 11
-      - CYL-科技（2021.12.30） 12
-      - CYL-科技（2021.12.29） 145
-      - CYL-科技（2021.12.30） 13
-      - CYL-科技（2021.12.30） 14
-      - CYL-科技（2021.12.30） 15
-      - CYL-科技（2021.12.30） 16
-      - CYL-科技（2021.12.30） 17
-      - CYL-科技（2021.12.30） 18
-      - CYL-科技（2021.12.30） 19
-      - CYL-科技（2021.12.30） 20
-      - CYL-科技（2021.12.30） 21
-      - CYL-科技（2021.12.29） 194
-      - CYL-科技（2021.12.30） 22
-      - CYL-科技（2021.12.30） 23
-      - CYL-科技（2021.12.29） 185
-      - CYL-科技（2021.12.30） 24
-      - CYL-科技（2021.12.30） 25
-      - CYL-科技（2021.12.30） 26
-      - CYL-科技（2021.12.30） 27
-      - CYL-科技（2021.12.29） 471
-      - CYL-科技（2021.12.30） 28
-      - CYL-科技（2021.12.30） 29
-      - CYL-科技（2021.12.30） 30
-      - CYL-科技（2021.12.30） 31
-      - CYL-科技（2021.12.30） 32
-      - CYL-科技（2021.12.30） 33
-      - CYL-科技（2021.12.30） 34
-      - CYL-科技（2021.12.29） 184
-      - CYL-科技（2021.12.29） 193
-      - CYL-科技（2021.12.30） 35
-      - CYL-科技（2021.12.30） 36
-      - CYL-科技（2021.12.29） 259
-      - CYL-科技（2021.12.30） 37
-      - CYL-科技（2021.12.30） 38
-      - CYL-科技（2021.12.29） 275
-      - CYL-科技（2021.12.30） 39
-      - CYL-科技（2021.12.30） 40
-      - CYL-科技（2021.12.29） 173
-      - CYL-科技（2021.12.30） 41
-      - CYL-科技（2021.12.30） 42
-      - CYL-科技（2021.12.30） 43
-      - CYL-科技（2021.12.30） 44
-      - CYL-科技（2021.12.30） 45
-      - CYL-科技（2021.12.29） 125
-      - CYL-科技（2021.12.30） 46
-      - CYL-科技（2021.12.30） 47
-      - CYL-科技（2021.12.29） 272
-      - CYL-科技（2021.12.30） 48
-      - CYL-科技（2021.12.30） 49
-      - CYL-科技（2021.12.30） 50
-      - CYL-科技（2021.12.30） 51
-      - CYL-科技（2021.12.30） 52
-      - CYL-科技（2021.12.30） 53
-      - CYL-科技（2021.12.30） 54
-      - CYL-科技（2021.12.29） 387
-      - CYL-科技（2021.12.29） 505
-      - CYL-科技（2021.12.30） 55
-      - CYL-科技（2021.12.30） 56
-      - CYL-科技（2021.12.30） 57
-      - CYL-科技（2021.12.30） 58
-      - CYL-科技（2021.12.30） 59
-      - CYL-科技（2021.12.29） 229
-      - CYL-科技（2021.12.29） 101
+      - _US_美国
+      - _US_美国 2
+      - _US_美国 3
+      - _US_美国 4
+      - _US_美国 5
+      - _US_美国 6
+      - _AU_澳大利亚
+      - _US_美国 7
+      - _AU_澳大利亚 2
+      - _US_美国 8
+      - _AU_澳大利亚 3
+      - _US_美国 9
+      - _US_美国 10
+      - _US_美国 11
+      - _US_美国 12
+      - _US_美国 13
+      - _US_美国 14
+      - _US_美国 15
+      - _US_美国 16
+      - _US_美国 17
+      - _US_美国 18
+      - _US_美国 19
+      - _US_美国 20
+      - _US_美国 21
+      - _US_美国 22
+      - default_name
+      - _US_美国 23
+      - _US_美国 24
+      - _US_美国 25
+      - _US_美国 26
+      - _US_美国 27
+      - _US_美国 28
+      - _US_美国 29
+      - _US_美国 30
+      - _US_美国 31
+      - _US_美国 32
+      - _US_美国 33
+      - _US_美国 34
+      - _US_美国 35
+      - _US_美国 36
+      - _US_美国 37
+      - _US_美国 38
+      - _CA_加拿大
+      - _US_美国 39
+      - _US_美国 40
+      - _US_美国 41
+      - _US_美国 42
+      - _US_美国 43
+      - _US_美国 44
+      - _US_美国 45
+      - _US_美国 46
+      - _US_美国 47
+      - _US_美国 48
+      - _US_美国 49
+      - _US_美国 50
+      - _NO_挪威
+      - _US_美国 51
+      - _US_美国 52
+      - _US_美国 53
+      - _FR_法国
+      - _US_美国 54
+      - _US_美国 55
+      - _US_美国 56
+      - _US_美国 57
+      - _US_美国 58
+      - _US_美国 59
+      - _CA_加拿大 2
+      - _US_美国 60
+      - _US_美国 61
+      - _AU_澳大利亚 4
+      - +HK(Youtube技术分享室整理)
       - US美国(技术分享室整理,欢迎订阅)
       - HK(Youtube技术分享室整理)
       - HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理)
-      - HK(Youtube技术分享室整理) 3
       - US(Youtube技术分享室整理) 2
+      - HK(Youtube技术分享室整理) 3
+      - +HK(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 3
       - HK(Youtube技术分享室整理) 4
+      - AU(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 4
-      - 挪威(技术分享室整理,欢迎订阅)
-      - TW(Youtube技术分享室整理)
-      - US美国(Youtube技术分享室整理)
-      - 澳大利亚+🇦🇺(Youtube技术分享室整理)
       - US(Youtube技术分享室整理) 5
-      - US美国(Youtube技术分享室整理) 2
       - US(Youtube技术分享室整理) 6
+      - US(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 2
+      - 挪威+🇳🇴(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 8
+      - AU(Youtube技术分享室整理) 3
+      - US(Youtube技术分享室整理) 9
+      - US美国(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 10
+      - IN(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 11
+      - US美国(Youtube技术分享室整理) 2
+      - US(Youtube技术分享室整理) 12
+      - 加拿大🇨🇦(技术分享室整理,欢迎订阅)
+      - AU(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 13
+      - CA(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 14
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - US美国(Youtube技术分享室整理) 3
+      - NO(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 15
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 5
+      - US(Youtube技术分享室整理) 16
+      - US(Youtube技术分享室整理) 17
+      - AU(Youtube技术分享室整理) 6
+      - AU(Youtube技术分享室整理) 7
+      - AU(Youtube技术分享室整理) 8
+      - US(Youtube技术分享室整理) 18
+      - US美国(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 19
+      - US(Youtube技术分享室整理) 20
+      - US(Youtube技术分享室整理) 21
+      - US美国(Youtube技术分享室整理) 5
+      - RU(Youtube技术分享室整理)
+      - AU(Youtube技术分享室整理) 9
+      - AU(Youtube技术分享室整理) 10
+      - US(Youtube技术分享室整理) 22
+      - AU(Youtube技术分享室整理) 11
+      - US(Youtube技术分享室整理) 23
+      - US(Youtube技术分享室整理) 24
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
