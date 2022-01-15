@@ -5,151 +5,327 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本阿伟科技-油管, server: jp19.holiganfan.com, port: 10088, type: trojan, password: 052c0a58-cc6b-437a-b15e-be23f27d17d9, sni: jp19.holiganfan.com, skip-cert-verify: true, udp: true}
-  - {name: 香港阿伟科技-油管, server: cm-jm.okvpn.xyz, port: 20001, type: vmess, uuid: bbf375e6-d185-4d08-9c29-142169e08ca0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}, udp: true}
-  - {name: 日本阿伟科技-油管 2, server: vipdedi.boom.ovh, port: 65521, type: vmess, uuid: a8d9724a-d61c-3d85-8cad-07e4d45a9441, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mydisk, ws-headers: {Host: vipdedi.boom.ovh}, udp: true}
-  - {name: 美国阿伟科技-油管, server: 142.4.105.253, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 142.4.105.253}, udp: true}
-  - {name: 美国阿伟科技-油管 2, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 台湾阿伟科技-油管, server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国阿伟科技-油管 3, server: cm-jm.okvpn.xyz, port: 20004, type: vmess, uuid: bbf375e6-d185-4d08-9c29-142169e08ca0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm-jm.okvpn.xyz}, udp: true}
-  - {name: 韩国阿伟科技-油管, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: c1de45d9-87eb-3af5-84fc-db92dc104e16, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1031kr.fans8.xyz}, udp: true}
-  - {name: 日本阿伟科技-油管 3, server: hzcu.rymv2rayssl.xyz, port: 44601, type: vmess, uuid: 5002a71b-d203-3a1d-987f-99522eccdc25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: hzcu.rymv2rayssl.xyz}, udp: true}
-  - {name: 美国阿伟科技-油管 4, server: hzcu.rymv2rayssl.xyz, port: 44605, type: vmess, uuid: 5002a71b-d203-3a1d-987f-99522eccdc25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 185.172.115.80}, udp: true}
-  - {name: 美国阿伟科技-油管 5, server: 108.165.196.212, port: 2340, type: ss, cipher: aes-256-gcm, password: 81d7d46b9c66c779e81b83bc594df5eb, udp: true}
+  - {name: 韩国阿伟科技-油管, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: c1de45d9-87eb-3af5-84fc-db92dc104e16, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: youtube-aweikeji}, udp: true}
+  - {name: 韩国阿伟科技-油管 2, server: 1031kr.fans8.xyz, port: 80, type: vmess, uuid: c1de45d9-87eb-3af5-84fc-db92dc104e16, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1031kr.fans8.xyz}, udp: true}
+  - {name: 日本阿伟科技-油管, server: hzcu.rymv2rayssl.xyz, port: 44601, type: vmess, uuid: 5002a71b-d203-3a1d-987f-99522eccdc25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: hzcu.rymv2rayssl.xyz}, udp: true}
+  - {name: 日本阿伟科技-油管 2, server: hzcu.rymv2rayssl.xyz, port: 44601, type: vmess, uuid: 5002a71b-d203-3a1d-987f-99522eccdc25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 185.172.115.80}, udp: true}
+  - {name: 香港阿伟科技-油管, server: 40.83.116.96, port: 8880, type: vmess, uuid: 09fe98b8-3795-3294-b749-5a39208a6cdd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 40.83.116.96}, udp: true}
+  - {name: 美国阿伟科技-油管, server: 172.99.190.149, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 香港阿伟科技-油管 2, server: 1229hk.fans8.xyz, port: 80, type: vmess, uuid: 5c41411a-750a-37e8-966f-11aea49227c4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1229hk.fans8.xyz}, udp: true}
-  - {name: 日本阿伟科技-油管 4, server: hzcu.rymv2rayssl.xyz, port: 44601, type: vmess, uuid: 5002a71b-d203-3a1d-987f-99522eccdc25, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 185.172.115.80}, udp: true}
-  - {name: 韩国阿伟科技-油管 2, server: freeb.vproxy.us, port: 443, type: trojan, password: 066771f4-b7f5-426a-bbb2-5fecfe9190f5, sni: freeb.vproxy.us, skip-cert-verify: true, udp: true}
-  - {name: 美国阿伟科技-油管 6, server: 167.88.61.96, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 匈牙利阿伟科技-油管, server: 185.252.223.204, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/243535322906, ws-headers: {Host: www.16675463.xyz}, udp: true}
-  - {name: 美国阿伟科技-油管 7, server: 104.17.161.28, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: us.fovi.tk}, udp: true}
-  - {name: 加拿大阿伟科技-油管, server: t1.ssrsub.com, port: 8443, type: trojan, password: 64c3ab43-dc1b-401c-9437-9adf7bcf4a28, sni: t1.ssrsub.com, skip-cert-verify: true, udp: true}
-  - {name: 美国阿伟科技-油管 8, server: 38.114.114.67, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 俄罗斯阿伟科技-油管, server: 194.5.79.15, port: 60764, type: vmess, uuid: e1107940-740b-11ec-8f34-0e8969ca1a20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国阿伟科技-油管 9, server: 104.24.223.86, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: us.fovi.tk}, udp: true}
-  - {name: 美国阿伟科技-油管 10, server: 198.41.212.234, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: 2022-world-1.a-yu.xyz}, udp: true}
-  - {name: 美国阿伟科技-油管 11, server: 38.114.114.67, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 台湾阿伟科技-油管 2, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国阿伟科技-油管 12, server: 38.114.114.67, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 香港阿伟科技-油管 3, server: shcn2-06b.iplc188.com, port: 10001, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国阿伟科技-油管 13, server: 38.114.114.67, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国阿伟科技-油管 14, server: 38.86.135.27, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 德国阿伟科技-油管, server: 20.79.17.130, port: 10080, type: vmess, uuid: fbfe2c35-643e-4c43-b710-8f107788f18a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.79.17.130}, udp: true}
-  - {name: 美国阿伟科技-油管 15, server: shz3.mooncloud.bike, port: 8443, type: vmess, uuid: fbfe2c35-643e-4c43-b710-8f107788f18a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: shz3.mooncloud.bike}, udp: true}
-  - {name: 美国阿伟科技-油管 16, server: 38.114.114.67, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国阿伟科技-油管 17, server: www.ltzs.buzz, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
+  - {name: 美国阿伟科技-油管 2, server: 38.75.137.71, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 新加坡阿伟科技-油管, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
+  - {name: 美国阿伟科技-油管 3, server: 38.114.114.67, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国阿伟科技-油管 4, server: 167.88.61.96, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国阿伟科技-油管 5, server: targoo1.mirror.cn.com, port: 443, type: vmess, uuid: 351b9b77-a6f0-4772-a845-04bed6814563, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: targoo1.mirror.cn.com}, udp: true}
+  - {name: 美国阿伟科技-油管 6, server: 167.88.63.61, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国阿伟科技-油管 7, server: 38.114.114.67, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国阿伟科技-油管 8, server: 142.4.105.253, port: 9233, type: vmess, uuid: be58f4e4-894a-47ee-8836-cf75e74fa9c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 142.4.105.253}, udp: true}
+  - {name: 美国阿伟科技-油管 9, server: 38.114.114.67, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国阿伟科技-油管 10, server: 104.24.223.86, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: us.fovi.tk}, udp: true}
+  - {name: 美国阿伟科技-油管 11, server: 104.17.161.28, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /eisasqa, ws-headers: {Host: us.fovi.tk}, udp: true}
+  - {name: 加拿大阿伟科技-油管, server: t1.ssrsub.com, port: 8443, type: trojan, password: b3f4826a-01e1-438a-8cb4-becb9e8b140c, sni: t1.ssrsub.com, skip-cert-verify: true, udp: true}
+  - {name: JP(Youtube技术分享室整理), server: 141.164.47.208, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: HK(Youtube技术分享室整理), server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
+  - {name: HK(Youtube技术分享室整理) 2, server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 挪威🇳🇴(Youtube技术分享室整理), server: 46.29.219.246, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: HK(Youtube技术分享室整理) 3, server: 47.113.190.48, port: 47972, type: vmess, uuid: d1f1e8e0-bf5c-4219-8ba4-48de32c50557, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 加拿大🇨🇦(Youtube技术分享室整理), server: 134.195.196.154, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: HK(Youtube技术分享室整理) 4, server: 203.189.208.74, port: 48776, type: vmess, uuid: d40c20e7-a5c3-4dcf-93c3-b2d7efb1159f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK(Youtube技术分享室整理) 5, server: 42.157.8.52, port: 48727, type: vmess, uuid: 57aa5ac3-d1d0-4e2f-b32e-6488d5a7cb45, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK(Youtube技术分享室整理) 6, server: 112.33.32.136, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK(Youtube技术分享室整理) 7, server: fa6.uuv2.co.uk, port: 10003, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国香港(Youtube技术分享室整理), server: 112.33.32.136, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US(Youtube技术分享室整理), server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
+  - {name: Ytb:鹏哥分享_US_美国_22, server: 167.88.63.74, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US(Youtube技术分享室整理) 2, server: 108.165.196.212, port: 2340, type: ss, cipher: aes-256-gcm, password: 81d7d46b9c66c779e81b83bc594df5eb, udp: true}
+  - {name: 加拿大🇨🇦(Youtube技术分享室整理) 2, server: 134.195.196.12, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Ytb:鹏哥分享_US_美国_77, server: 167.88.63.74, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "_CA加拿大(技术分享室整理,欢迎订阅)", server: 134.195.196.154, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US(Youtube技术分享室整理) 3, server: 38.75.137.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大🇨🇦(Youtube技术分享室整理) 3, server: 134.195.196.154, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Ytb:鹏哥分享_US_美国_83, server: 167.88.61.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Ytb:鹏哥分享_GB_英国_58, server: 149.7.16.10, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 加拿大🇨🇦(Youtube技术分享室整理) 4, server: 134.195.196.12, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US(Youtube技术分享室整理) 4, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US(Youtube技术分享室整理) 5, server: 149.7.16.10, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 挪威+🇳🇴(Youtube技术分享室整理), server: 46.29.219.246, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Ytb:鹏哥分享_CA_加拿大_16, server: 134.195.196.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国(Youtube技术分享室整理), server: 38.75.137.71, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Ytb:鹏哥分享_US_美国_56, server: 167.88.63.74, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Ytb:鹏哥分享_GB_英国_99, server: 172.99.190.87, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国(Youtube技术分享室整理) 2, server: 38.75.137.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国(Youtube技术分享室整理) 3, server: 167.88.63.74, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US美国(Youtube技术分享室整理), server: 198.41.212.154, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: PL(Youtube技术分享室整理), server: 5.188.108.155, port: 889, type: ss, cipher: chacha20-ietf-poly1305, password: KhS1x8JT7p58RIp7gz, udp: true}
+  - {name: 加拿大🇨🇦(Youtube技术分享室整理) 5, server: 134.195.196.12, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 加拿大+🇨🇦(Youtube技术分享室整理), server: 134.195.196.154, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: Ytb:鹏哥分享_US_美国_81, server: 167.88.61.60, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US(Youtube技术分享室整理) 6, server: 172.67.197.254, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
+  - {name: "_US美国(技术分享室整理,欢迎订阅)", server: 167.88.63.74, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Ytb:鹏哥分享_GB_英国_55, server: 149.7.16.10, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Ytb:鹏哥分享_US_美国_89, server: 167.88.61.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: Ytb:鹏哥分享_JP_日本_68, server: 109.166.37.246, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: Ytb:鹏哥分享_GB_英国_113, server: 172.99.190.87, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US(Youtube技术分享室整理) 7, server: 104.16.181.197, port: 443, type: vmess, uuid: 7be43971-52f1-48af-9036-454a94b4723a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/ws/?ed=2048", ws-headers: {Host: download.china666.ml}, udp: true}
+  - {name: Ytb:鹏哥分享_CA_加拿大_19, server: 134.195.196.149, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: Ytb:鹏哥分享_US_美国_28, server: 167.88.63.74, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 日本(Youtube技术分享室整理), server: 141.164.56.250, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Ytb:鹏哥分享_GB_英国_14, server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 加拿大+🇨🇦(Youtube技术分享室整理) 2, server: 134.195.196.12, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: PL(Youtube技术分享室整理) 2, server: 5.188.108.155, port: 890, type: ss, cipher: chacha20-ietf-poly1305, password: KhS1x8JT7p58RIp7gz, udp: true}
+  - {name: 加拿大🇨🇦(Youtube技术分享室整理) 6, server: 134.195.196.12, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Ytb:鹏哥分享_GB_英国_15, server: 172.99.190.149, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Ytb:鹏哥分享_GB_英国_25, server: 172.99.190.149, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: Ytb:鹏哥分享_GB_英国_110, server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 美国(Youtube技术分享室整理) 4, server: 38.75.137.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大🇨🇦(Youtube技术分享室整理) 7, server: 134.195.196.12, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: Ytb:鹏哥分享_US_美国_26, server: 167.88.63.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Ytb:鹏哥分享_US_美国_101, server: 167.88.61.60, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本阿伟科技-油管
-      - 香港阿伟科技-油管
-      - 日本阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 美国阿伟科技-油管 2
-      - 台湾阿伟科技-油管
-      - 美国阿伟科技-油管 3
       - 韩国阿伟科技-油管
-      - 日本阿伟科技-油管 3
+      - 韩国阿伟科技-油管 2
+      - 日本阿伟科技-油管
+      - 日本阿伟科技-油管 2
+      - 香港阿伟科技-油管
+      - 美国阿伟科技-油管
+      - 香港阿伟科技-油管 2
+      - 美国阿伟科技-油管 2
+      - 新加坡阿伟科技-油管
+      - 美国阿伟科技-油管 3
       - 美国阿伟科技-油管 4
       - 美国阿伟科技-油管 5
-      - 香港阿伟科技-油管 2
-      - 日本阿伟科技-油管 4
-      - 韩国阿伟科技-油管 2
       - 美国阿伟科技-油管 6
-      - 匈牙利阿伟科技-油管
       - 美国阿伟科技-油管 7
-      - 加拿大阿伟科技-油管
       - 美国阿伟科技-油管 8
-      - 俄罗斯阿伟科技-油管
       - 美国阿伟科技-油管 9
       - 美国阿伟科技-油管 10
       - 美国阿伟科技-油管 11
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 12
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 13
-      - 美国阿伟科技-油管 14
-      - 德国阿伟科技-油管
-      - 美国阿伟科技-油管 15
-      - 美国阿伟科技-油管 16
-      - 美国阿伟科技-油管 17
+      - 加拿大阿伟科技-油管
+      - JP(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 2
+      - 挪威🇳🇴(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 4
+      - HK(Youtube技术分享室整理) 5
+      - HK(Youtube技术分享室整理) 6
+      - HK(Youtube技术分享室整理) 7
+      - 中国香港(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_22
+      - US(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - Ytb:鹏哥分享_US_美国_77
+      - _CA加拿大(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - Ytb:鹏哥分享_US_美国_83
+      - Ytb:鹏哥分享_GB_英国_58
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_CA_加拿大_16
+      - 美国(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_56
+      - Ytb:鹏哥分享_GB_英国_99
+      - 美国(Youtube技术分享室整理) 2
+      - 美国(Youtube技术分享室整理) 3
+      - US美国(Youtube技术分享室整理)
+      - PL(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_81
+      - US(Youtube技术分享室整理) 6
+      - _US美国(技术分享室整理,欢迎订阅)
+      - Ytb:鹏哥分享_GB_英国_55
+      - Ytb:鹏哥分享_US_美国_89
+      - Ytb:鹏哥分享_JP_日本_68
+      - Ytb:鹏哥分享_GB_英国_113
+      - US(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_CA_加拿大_19
+      - Ytb:鹏哥分享_US_美国_28
+      - 日本(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_GB_英国_14
+      - 加拿大+🇨🇦(Youtube技术分享室整理) 2
+      - PL(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 6
+      - Ytb:鹏哥分享_GB_英国_15
+      - Ytb:鹏哥分享_GB_英国_25
+      - Ytb:鹏哥分享_GB_英国_110
+      - 美国(Youtube技术分享室整理) 4
+      - 加拿大🇨🇦(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_US_美国_26
+      - Ytb:鹏哥分享_US_美国_101
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本阿伟科技-油管
-      - 香港阿伟科技-油管
-      - 日本阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 美国阿伟科技-油管 2
-      - 台湾阿伟科技-油管
-      - 美国阿伟科技-油管 3
       - 韩国阿伟科技-油管
-      - 日本阿伟科技-油管 3
+      - 韩国阿伟科技-油管 2
+      - 日本阿伟科技-油管
+      - 日本阿伟科技-油管 2
+      - 香港阿伟科技-油管
+      - 美国阿伟科技-油管
+      - 香港阿伟科技-油管 2
+      - 美国阿伟科技-油管 2
+      - 新加坡阿伟科技-油管
+      - 美国阿伟科技-油管 3
       - 美国阿伟科技-油管 4
       - 美国阿伟科技-油管 5
-      - 香港阿伟科技-油管 2
-      - 日本阿伟科技-油管 4
-      - 韩国阿伟科技-油管 2
       - 美国阿伟科技-油管 6
-      - 匈牙利阿伟科技-油管
       - 美国阿伟科技-油管 7
-      - 加拿大阿伟科技-油管
       - 美国阿伟科技-油管 8
-      - 俄罗斯阿伟科技-油管
       - 美国阿伟科技-油管 9
       - 美国阿伟科技-油管 10
       - 美国阿伟科技-油管 11
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 12
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 13
-      - 美国阿伟科技-油管 14
-      - 德国阿伟科技-油管
-      - 美国阿伟科技-油管 15
-      - 美国阿伟科技-油管 16
-      - 美国阿伟科技-油管 17
+      - 加拿大阿伟科技-油管
+      - JP(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 2
+      - 挪威🇳🇴(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 4
+      - HK(Youtube技术分享室整理) 5
+      - HK(Youtube技术分享室整理) 6
+      - HK(Youtube技术分享室整理) 7
+      - 中国香港(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_22
+      - US(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - Ytb:鹏哥分享_US_美国_77
+      - _CA加拿大(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - Ytb:鹏哥分享_US_美国_83
+      - Ytb:鹏哥分享_GB_英国_58
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_CA_加拿大_16
+      - 美国(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_56
+      - Ytb:鹏哥分享_GB_英国_99
+      - 美国(Youtube技术分享室整理) 2
+      - 美国(Youtube技术分享室整理) 3
+      - US美国(Youtube技术分享室整理)
+      - PL(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_81
+      - US(Youtube技术分享室整理) 6
+      - _US美国(技术分享室整理,欢迎订阅)
+      - Ytb:鹏哥分享_GB_英国_55
+      - Ytb:鹏哥分享_US_美国_89
+      - Ytb:鹏哥分享_JP_日本_68
+      - Ytb:鹏哥分享_GB_英国_113
+      - US(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_CA_加拿大_19
+      - Ytb:鹏哥分享_US_美国_28
+      - 日本(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_GB_英国_14
+      - 加拿大+🇨🇦(Youtube技术分享室整理) 2
+      - PL(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 6
+      - Ytb:鹏哥分享_GB_英国_15
+      - Ytb:鹏哥分享_GB_英国_25
+      - Ytb:鹏哥分享_GB_英国_110
+      - 美国(Youtube技术分享室整理) 4
+      - 加拿大🇨🇦(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_US_美国_26
+      - Ytb:鹏哥分享_US_美国_101
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本阿伟科技-油管
-      - 香港阿伟科技-油管
-      - 日本阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 美国阿伟科技-油管 2
-      - 台湾阿伟科技-油管
-      - 美国阿伟科技-油管 3
       - 韩国阿伟科技-油管
-      - 日本阿伟科技-油管 3
+      - 韩国阿伟科技-油管 2
+      - 日本阿伟科技-油管
+      - 日本阿伟科技-油管 2
+      - 香港阿伟科技-油管
+      - 美国阿伟科技-油管
+      - 香港阿伟科技-油管 2
+      - 美国阿伟科技-油管 2
+      - 新加坡阿伟科技-油管
+      - 美国阿伟科技-油管 3
       - 美国阿伟科技-油管 4
       - 美国阿伟科技-油管 5
-      - 香港阿伟科技-油管 2
-      - 日本阿伟科技-油管 4
-      - 韩国阿伟科技-油管 2
       - 美国阿伟科技-油管 6
-      - 匈牙利阿伟科技-油管
       - 美国阿伟科技-油管 7
-      - 加拿大阿伟科技-油管
       - 美国阿伟科技-油管 8
-      - 俄罗斯阿伟科技-油管
       - 美国阿伟科技-油管 9
       - 美国阿伟科技-油管 10
       - 美国阿伟科技-油管 11
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 12
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 13
-      - 美国阿伟科技-油管 14
-      - 德国阿伟科技-油管
-      - 美国阿伟科技-油管 15
-      - 美国阿伟科技-油管 16
-      - 美国阿伟科技-油管 17
+      - 加拿大阿伟科技-油管
+      - JP(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 2
+      - 挪威🇳🇴(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 4
+      - HK(Youtube技术分享室整理) 5
+      - HK(Youtube技术分享室整理) 6
+      - HK(Youtube技术分享室整理) 7
+      - 中国香港(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_22
+      - US(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - Ytb:鹏哥分享_US_美国_77
+      - _CA加拿大(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - Ytb:鹏哥分享_US_美国_83
+      - Ytb:鹏哥分享_GB_英国_58
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_CA_加拿大_16
+      - 美国(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_56
+      - Ytb:鹏哥分享_GB_英国_99
+      - 美国(Youtube技术分享室整理) 2
+      - 美国(Youtube技术分享室整理) 3
+      - US美国(Youtube技术分享室整理)
+      - PL(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_81
+      - US(Youtube技术分享室整理) 6
+      - _US美国(技术分享室整理,欢迎订阅)
+      - Ytb:鹏哥分享_GB_英国_55
+      - Ytb:鹏哥分享_US_美国_89
+      - Ytb:鹏哥分享_JP_日本_68
+      - Ytb:鹏哥分享_GB_英国_113
+      - US(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_CA_加拿大_19
+      - Ytb:鹏哥分享_US_美国_28
+      - 日本(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_GB_英国_14
+      - 加拿大+🇨🇦(Youtube技术分享室整理) 2
+      - PL(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 6
+      - Ytb:鹏哥分享_GB_英国_15
+      - Ytb:鹏哥分享_GB_英国_25
+      - Ytb:鹏哥分享_GB_英国_110
+      - 美国(Youtube技术分享室整理) 4
+      - 加拿大🇨🇦(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_US_美国_26
+      - Ytb:鹏哥分享_US_美国_101
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -168,160 +344,334 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本阿伟科技-油管
-      - 香港阿伟科技-油管
-      - 日本阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 美国阿伟科技-油管 2
-      - 台湾阿伟科技-油管
-      - 美国阿伟科技-油管 3
       - 韩国阿伟科技-油管
-      - 日本阿伟科技-油管 3
+      - 韩国阿伟科技-油管 2
+      - 日本阿伟科技-油管
+      - 日本阿伟科技-油管 2
+      - 香港阿伟科技-油管
+      - 美国阿伟科技-油管
+      - 香港阿伟科技-油管 2
+      - 美国阿伟科技-油管 2
+      - 新加坡阿伟科技-油管
+      - 美国阿伟科技-油管 3
       - 美国阿伟科技-油管 4
       - 美国阿伟科技-油管 5
-      - 香港阿伟科技-油管 2
-      - 日本阿伟科技-油管 4
-      - 韩国阿伟科技-油管 2
       - 美国阿伟科技-油管 6
-      - 匈牙利阿伟科技-油管
       - 美国阿伟科技-油管 7
-      - 加拿大阿伟科技-油管
       - 美国阿伟科技-油管 8
-      - 俄罗斯阿伟科技-油管
       - 美国阿伟科技-油管 9
       - 美国阿伟科技-油管 10
       - 美国阿伟科技-油管 11
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 12
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 13
-      - 美国阿伟科技-油管 14
-      - 德国阿伟科技-油管
-      - 美国阿伟科技-油管 15
-      - 美国阿伟科技-油管 16
-      - 美国阿伟科技-油管 17
+      - 加拿大阿伟科技-油管
+      - JP(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 2
+      - 挪威🇳🇴(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 4
+      - HK(Youtube技术分享室整理) 5
+      - HK(Youtube技术分享室整理) 6
+      - HK(Youtube技术分享室整理) 7
+      - 中国香港(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_22
+      - US(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - Ytb:鹏哥分享_US_美国_77
+      - _CA加拿大(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - Ytb:鹏哥分享_US_美国_83
+      - Ytb:鹏哥分享_GB_英国_58
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_CA_加拿大_16
+      - 美国(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_56
+      - Ytb:鹏哥分享_GB_英国_99
+      - 美国(Youtube技术分享室整理) 2
+      - 美国(Youtube技术分享室整理) 3
+      - US美国(Youtube技术分享室整理)
+      - PL(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_81
+      - US(Youtube技术分享室整理) 6
+      - _US美国(技术分享室整理,欢迎订阅)
+      - Ytb:鹏哥分享_GB_英国_55
+      - Ytb:鹏哥分享_US_美国_89
+      - Ytb:鹏哥分享_JP_日本_68
+      - Ytb:鹏哥分享_GB_英国_113
+      - US(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_CA_加拿大_19
+      - Ytb:鹏哥分享_US_美国_28
+      - 日本(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_GB_英国_14
+      - 加拿大+🇨🇦(Youtube技术分享室整理) 2
+      - PL(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 6
+      - Ytb:鹏哥分享_GB_英国_15
+      - Ytb:鹏哥分享_GB_英国_25
+      - Ytb:鹏哥分享_GB_英国_110
+      - 美国(Youtube技术分享室整理) 4
+      - 加拿大🇨🇦(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_US_美国_26
+      - Ytb:鹏哥分享_US_美国_101
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港阿伟科技-油管
-      - 台湾阿伟科技-油管
       - 香港阿伟科技-油管 2
-      - 台湾阿伟科技-油管 2
-      - 香港阿伟科技-油管 3
+      - 中国香港(Youtube技术分享室整理)
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本阿伟科技-油管
-      - 香港阿伟科技-油管
-      - 日本阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 美国阿伟科技-油管 2
-      - 台湾阿伟科技-油管
-      - 美国阿伟科技-油管 3
       - 韩国阿伟科技-油管
-      - 日本阿伟科技-油管 3
+      - 韩国阿伟科技-油管 2
+      - 日本阿伟科技-油管
+      - 日本阿伟科技-油管 2
+      - 香港阿伟科技-油管
+      - 美国阿伟科技-油管
+      - 香港阿伟科技-油管 2
+      - 美国阿伟科技-油管 2
+      - 新加坡阿伟科技-油管
+      - 美国阿伟科技-油管 3
       - 美国阿伟科技-油管 4
       - 美国阿伟科技-油管 5
-      - 香港阿伟科技-油管 2
-      - 日本阿伟科技-油管 4
-      - 韩国阿伟科技-油管 2
       - 美国阿伟科技-油管 6
-      - 匈牙利阿伟科技-油管
       - 美国阿伟科技-油管 7
-      - 加拿大阿伟科技-油管
       - 美国阿伟科技-油管 8
-      - 俄罗斯阿伟科技-油管
       - 美国阿伟科技-油管 9
       - 美国阿伟科技-油管 10
       - 美国阿伟科技-油管 11
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 12
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 13
-      - 美国阿伟科技-油管 14
-      - 德国阿伟科技-油管
-      - 美国阿伟科技-油管 15
-      - 美国阿伟科技-油管 16
-      - 美国阿伟科技-油管 17
+      - 加拿大阿伟科技-油管
+      - JP(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 2
+      - 挪威🇳🇴(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 4
+      - HK(Youtube技术分享室整理) 5
+      - HK(Youtube技术分享室整理) 6
+      - HK(Youtube技术分享室整理) 7
+      - 中国香港(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_22
+      - US(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - Ytb:鹏哥分享_US_美国_77
+      - _CA加拿大(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - Ytb:鹏哥分享_US_美国_83
+      - Ytb:鹏哥分享_GB_英国_58
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_CA_加拿大_16
+      - 美国(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_56
+      - Ytb:鹏哥分享_GB_英国_99
+      - 美国(Youtube技术分享室整理) 2
+      - 美国(Youtube技术分享室整理) 3
+      - US美国(Youtube技术分享室整理)
+      - PL(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_81
+      - US(Youtube技术分享室整理) 6
+      - _US美国(技术分享室整理,欢迎订阅)
+      - Ytb:鹏哥分享_GB_英国_55
+      - Ytb:鹏哥分享_US_美国_89
+      - Ytb:鹏哥分享_JP_日本_68
+      - Ytb:鹏哥分享_GB_英国_113
+      - US(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_CA_加拿大_19
+      - Ytb:鹏哥分享_US_美国_28
+      - 日本(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_GB_英国_14
+      - 加拿大+🇨🇦(Youtube技术分享室整理) 2
+      - PL(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 6
+      - Ytb:鹏哥分享_GB_英国_15
+      - Ytb:鹏哥分享_GB_英国_25
+      - Ytb:鹏哥分享_GB_英国_110
+      - 美国(Youtube技术分享室整理) 4
+      - 加拿大🇨🇦(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_US_美国_26
+      - Ytb:鹏哥分享_US_美国_101
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本阿伟科技-油管
-      - 香港阿伟科技-油管
-      - 日本阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 美国阿伟科技-油管 2
-      - 台湾阿伟科技-油管
-      - 美国阿伟科技-油管 3
       - 韩国阿伟科技-油管
-      - 日本阿伟科技-油管 3
+      - 韩国阿伟科技-油管 2
+      - 日本阿伟科技-油管
+      - 日本阿伟科技-油管 2
+      - 香港阿伟科技-油管
+      - 美国阿伟科技-油管
+      - 香港阿伟科技-油管 2
+      - 美国阿伟科技-油管 2
+      - 新加坡阿伟科技-油管
+      - 美国阿伟科技-油管 3
       - 美国阿伟科技-油管 4
       - 美国阿伟科技-油管 5
-      - 香港阿伟科技-油管 2
-      - 日本阿伟科技-油管 4
-      - 韩国阿伟科技-油管 2
       - 美国阿伟科技-油管 6
-      - 匈牙利阿伟科技-油管
       - 美国阿伟科技-油管 7
-      - 加拿大阿伟科技-油管
       - 美国阿伟科技-油管 8
-      - 俄罗斯阿伟科技-油管
       - 美国阿伟科技-油管 9
       - 美国阿伟科技-油管 10
       - 美国阿伟科技-油管 11
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 12
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 13
-      - 美国阿伟科技-油管 14
-      - 德国阿伟科技-油管
-      - 美国阿伟科技-油管 15
-      - 美国阿伟科技-油管 16
-      - 美国阿伟科技-油管 17
+      - 加拿大阿伟科技-油管
+      - JP(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 2
+      - 挪威🇳🇴(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 4
+      - HK(Youtube技术分享室整理) 5
+      - HK(Youtube技术分享室整理) 6
+      - HK(Youtube技术分享室整理) 7
+      - 中国香港(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_22
+      - US(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - Ytb:鹏哥分享_US_美国_77
+      - _CA加拿大(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - Ytb:鹏哥分享_US_美国_83
+      - Ytb:鹏哥分享_GB_英国_58
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_CA_加拿大_16
+      - 美国(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_56
+      - Ytb:鹏哥分享_GB_英国_99
+      - 美国(Youtube技术分享室整理) 2
+      - 美国(Youtube技术分享室整理) 3
+      - US美国(Youtube技术分享室整理)
+      - PL(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_81
+      - US(Youtube技术分享室整理) 6
+      - _US美国(技术分享室整理,欢迎订阅)
+      - Ytb:鹏哥分享_GB_英国_55
+      - Ytb:鹏哥分享_US_美国_89
+      - Ytb:鹏哥分享_JP_日本_68
+      - Ytb:鹏哥分享_GB_英国_113
+      - US(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_CA_加拿大_19
+      - Ytb:鹏哥分享_US_美国_28
+      - 日本(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_GB_英国_14
+      - 加拿大+🇨🇦(Youtube技术分享室整理) 2
+      - PL(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 6
+      - Ytb:鹏哥分享_GB_英国_15
+      - Ytb:鹏哥分享_GB_英国_25
+      - Ytb:鹏哥分享_GB_英国_110
+      - 美国(Youtube技术分享室整理) 4
+      - 加拿大🇨🇦(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_US_美国_26
+      - Ytb:鹏哥分享_US_美国_101
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本阿伟科技-油管
-      - 香港阿伟科技-油管
-      - 日本阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 美国阿伟科技-油管 2
-      - 台湾阿伟科技-油管
-      - 美国阿伟科技-油管 3
       - 韩国阿伟科技-油管
-      - 日本阿伟科技-油管 3
+      - 韩国阿伟科技-油管 2
+      - 日本阿伟科技-油管
+      - 日本阿伟科技-油管 2
+      - 香港阿伟科技-油管
+      - 美国阿伟科技-油管
+      - 香港阿伟科技-油管 2
+      - 美国阿伟科技-油管 2
+      - 新加坡阿伟科技-油管
+      - 美国阿伟科技-油管 3
       - 美国阿伟科技-油管 4
       - 美国阿伟科技-油管 5
-      - 香港阿伟科技-油管 2
-      - 日本阿伟科技-油管 4
-      - 韩国阿伟科技-油管 2
       - 美国阿伟科技-油管 6
-      - 匈牙利阿伟科技-油管
       - 美国阿伟科技-油管 7
-      - 加拿大阿伟科技-油管
       - 美国阿伟科技-油管 8
-      - 俄罗斯阿伟科技-油管
       - 美国阿伟科技-油管 9
       - 美国阿伟科技-油管 10
       - 美国阿伟科技-油管 11
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 12
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 13
-      - 美国阿伟科技-油管 14
-      - 德国阿伟科技-油管
-      - 美国阿伟科技-油管 15
-      - 美国阿伟科技-油管 16
-      - 美国阿伟科技-油管 17
+      - 加拿大阿伟科技-油管
+      - JP(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 2
+      - 挪威🇳🇴(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 4
+      - HK(Youtube技术分享室整理) 5
+      - HK(Youtube技术分享室整理) 6
+      - HK(Youtube技术分享室整理) 7
+      - 中国香港(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_22
+      - US(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - Ytb:鹏哥分享_US_美国_77
+      - _CA加拿大(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - Ytb:鹏哥分享_US_美国_83
+      - Ytb:鹏哥分享_GB_英国_58
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_CA_加拿大_16
+      - 美国(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_56
+      - Ytb:鹏哥分享_GB_英国_99
+      - 美国(Youtube技术分享室整理) 2
+      - 美国(Youtube技术分享室整理) 3
+      - US美国(Youtube技术分享室整理)
+      - PL(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_81
+      - US(Youtube技术分享室整理) 6
+      - _US美国(技术分享室整理,欢迎订阅)
+      - Ytb:鹏哥分享_GB_英国_55
+      - Ytb:鹏哥分享_US_美国_89
+      - Ytb:鹏哥分享_JP_日本_68
+      - Ytb:鹏哥分享_GB_英国_113
+      - US(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_CA_加拿大_19
+      - Ytb:鹏哥分享_US_美国_28
+      - 日本(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_GB_英国_14
+      - 加拿大+🇨🇦(Youtube技术分享室整理) 2
+      - PL(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 6
+      - Ytb:鹏哥分享_GB_英国_15
+      - Ytb:鹏哥分享_GB_英国_25
+      - Ytb:鹏哥分享_GB_英国_110
+      - 美国(Youtube技术分享室整理) 4
+      - 加拿大🇨🇦(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_US_美国_26
+      - Ytb:鹏哥分享_US_美国_101
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -337,38 +687,82 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本阿伟科技-油管
-      - 香港阿伟科技-油管
-      - 日本阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 美国阿伟科技-油管 2
-      - 台湾阿伟科技-油管
-      - 美国阿伟科技-油管 3
       - 韩国阿伟科技-油管
-      - 日本阿伟科技-油管 3
+      - 韩国阿伟科技-油管 2
+      - 日本阿伟科技-油管
+      - 日本阿伟科技-油管 2
+      - 香港阿伟科技-油管
+      - 美国阿伟科技-油管
+      - 香港阿伟科技-油管 2
+      - 美国阿伟科技-油管 2
+      - 新加坡阿伟科技-油管
+      - 美国阿伟科技-油管 3
       - 美国阿伟科技-油管 4
       - 美国阿伟科技-油管 5
-      - 香港阿伟科技-油管 2
-      - 日本阿伟科技-油管 4
-      - 韩国阿伟科技-油管 2
       - 美国阿伟科技-油管 6
-      - 匈牙利阿伟科技-油管
       - 美国阿伟科技-油管 7
-      - 加拿大阿伟科技-油管
       - 美国阿伟科技-油管 8
-      - 俄罗斯阿伟科技-油管
       - 美国阿伟科技-油管 9
       - 美国阿伟科技-油管 10
       - 美国阿伟科技-油管 11
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 12
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 13
-      - 美国阿伟科技-油管 14
-      - 德国阿伟科技-油管
-      - 美国阿伟科技-油管 15
-      - 美国阿伟科技-油管 16
-      - 美国阿伟科技-油管 17
+      - 加拿大阿伟科技-油管
+      - JP(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 2
+      - 挪威🇳🇴(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理) 4
+      - HK(Youtube技术分享室整理) 5
+      - HK(Youtube技术分享室整理) 6
+      - HK(Youtube技术分享室整理) 7
+      - 中国香港(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_22
+      - US(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - Ytb:鹏哥分享_US_美国_77
+      - _CA加拿大(技术分享室整理,欢迎订阅)
+      - US(Youtube技术分享室整理) 3
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - Ytb:鹏哥分享_US_美国_83
+      - Ytb:鹏哥分享_GB_英国_58
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 挪威+🇳🇴(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_CA_加拿大_16
+      - 美国(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_56
+      - Ytb:鹏哥分享_GB_英国_99
+      - 美国(Youtube技术分享室整理) 2
+      - 美国(Youtube技术分享室整理) 3
+      - US美国(Youtube技术分享室整理)
+      - PL(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_US_美国_81
+      - US(Youtube技术分享室整理) 6
+      - _US美国(技术分享室整理,欢迎订阅)
+      - Ytb:鹏哥分享_GB_英国_55
+      - Ytb:鹏哥分享_US_美国_89
+      - Ytb:鹏哥分享_JP_日本_68
+      - Ytb:鹏哥分享_GB_英国_113
+      - US(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_CA_加拿大_19
+      - Ytb:鹏哥分享_US_美国_28
+      - 日本(Youtube技术分享室整理)
+      - Ytb:鹏哥分享_GB_英国_14
+      - 加拿大+🇨🇦(Youtube技术分享室整理) 2
+      - PL(Youtube技术分享室整理) 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 6
+      - Ytb:鹏哥分享_GB_英国_15
+      - Ytb:鹏哥分享_GB_英国_25
+      - Ytb:鹏哥分享_GB_英国_110
+      - 美国(Youtube技术分享室整理) 4
+      - 加拿大🇨🇦(Youtube技术分享室整理) 7
+      - Ytb:鹏哥分享_US_美国_26
+      - Ytb:鹏哥分享_US_美国_101
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
