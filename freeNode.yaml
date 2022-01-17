@@ -5,687 +5,227 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _US_美国, server: 20.212.202.199, port: 23418, type: ss, cipher: chacha20-ietf-poly1305, password: 89386c1f-435f-4bb5-9c10-118e07c01621, udp: true}
-  - {name: _US_美国 2, server: 38.75.136.93, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大, server: 134.195.196.149, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 3, server: 142.202.48.43, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 4, server: 167.88.63.74, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国 5, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大 2, server: 134.195.196.12, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CN_中国, server: 118.193.179.2, port: 36923, type: ss, cipher: chacha20-ietf-poly1305, password: koko666, udp: true}
-  - {name: _US_美国 6, server: 172.67.197.254, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
-  - {name: _US_美国 7, server: 38.114.114.67, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _BV_布维岛, server: 46.29.219.246, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 8, server: 169.197.142.39, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 3, server: 134.195.196.149, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国 9, server: 167.88.61.60, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _GB_英国, server: 212.38.189.174, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 10, server: 167.88.61.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 11, server: 38.75.137.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _BV_布维岛 2, server: 46.29.219.246, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: default_name, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
-  - {name: _US_美国 12, server: 38.86.135.27, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 13, server: 38.143.66.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 4, server: 198.57.27.218, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 14, server: 169.197.142.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 5, server: 134.195.196.12, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _KR_韩国, server: 141.164.47.208, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 15, server: api.ssfree.ru, port: 443, type: vmess, uuid: 085d582c-7553-11ec-b206-000017022008, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /getweather, ws-headers: {Host: api.ssfree.ru}, udp: true}
-  - {name: _US_美国 16, server: 167.88.63.74, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _FR_法国, server: 62.210.209.50, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国 17, server: 167.88.61.60, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _US_美国 18, server: 38.114.114.67, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 19, server: 38.75.137.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _BV_布维岛 3, server: 46.29.219.246, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 20, server: 38.75.137.71, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _GB_英国 2, server: 172.99.190.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _FR_法国 2, server: 62.210.209.50, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 21, server: 167.88.61.60, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _GB_英国 3, server: 172.99.190.87, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国 22, server: 66.55.92.101, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: NK4wZejCzDfPdWXTK4FW, udp: true}
-  - {name: _US_美国 23, server: 38.143.66.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US_美国 24, server: 169.197.142.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 25, server: 169.197.142.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国 26, server: 167.88.63.74, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 27, server: 167.88.63.74, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_加拿大 6, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _HU_匈牙利, server: 185.252.223.204, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/243535322906, ws-headers: {Host: www.16675463.xyz}, udp: true}
-  - {name: _US_美国 28, server: 142.202.48.43, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 29, server: 38.114.114.67, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 30, server: 38.75.136.93, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国 31, server: 167.88.61.60, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _GB_英国 4, server: 212.38.189.174, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 32, server: 142.202.48.99, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 33, server: 169.197.142.39, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 34, server: 169.197.142.39, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国 35, server: 38.143.66.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国 36, server: 167.88.63.74, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 37, server: 167.88.61.60, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 38, server: 38.75.136.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_美国 39, server: 38.143.66.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_加拿大 7, server: 134.195.196.154, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _GB_英国 5, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _US_美国 40, server: 167.88.61.60, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US_美国 41, server: 169.197.142.39, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 42, server: 142.202.48.105, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 43, server: 142.202.48.43, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 44, server: 38.75.136.93, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _IN_印度, server: 172.105.59.32, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 45, server: 169.197.142.39, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _NO_挪威, server: 46.29.218.6, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 46, server: 142.202.48.105, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _GB_英国 6, server: 172.99.190.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 8, server: 134.195.196.12, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 47, server: 169.197.142.39, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 48, server: 38.75.136.93, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _BV_布维岛 4, server: 46.29.219.246, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 49, server: 169.197.142.39, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _US_美国 50, server: 142.202.48.99, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 51, server: 169.197.142.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _PL_波兰, server: 5.188.108.155, port: 890, type: ss, cipher: chacha20-ietf-poly1305, password: KhS1x8JT7p58RIp7gz, udp: true}
-  - {name: _US_美国 52, server: 38.75.136.93, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_加拿大 9, server: 134.195.196.154, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 53, server: 169.197.142.39, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 54, server: 167.88.61.60, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国 55, server: 38.75.137.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 56, server: 142.202.48.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 57, server: 167.88.61.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 58, server: 169.197.142.39, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 10, server: 134.195.196.154, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _GB_英国 7, server: 149.7.16.10, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 59, server: 38.75.136.93, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 11, server: 134.195.196.154, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: default_name 2, server: 198.41.212.234, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: 2022-world-1.a-yu.xyz}, udp: true}
-  - {name: _GB_英国 8, server: 212.38.189.174, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 60, server: 38.75.136.93, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: default_name 3, server: 104.16.160.114, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /The-Great-Awakening_vws, ws-headers: {Host: vincent-jackson2021.ga}, udp: true}
-  - {name: _US_美国 61, server: 142.202.48.105, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _KR_韩国 2, server: 141.164.47.208, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _US_美国 62, server: 169.197.142.39, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 12, server: 134.195.196.154, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _GB_英国 9, server: 172.99.190.87, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _NO_挪威 2, server: 46.29.218.6, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 63, server: 169.197.142.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 64, server: www.ltzs.buzz, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
-  - {name: _US_美国 65, server: 38.114.114.67, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_美国 66, server: 142.202.48.43, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 13, server: 134.195.196.12, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 14, server: 134.195.196.12, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: default_name 4, server: targoo2.mirror.cn.com, port: 443, type: vmess, uuid: 349fd062-d61b-4979-a6d6-1b4935ffbf89, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: targoo2.mirror.cn.com}, udp: true}
-  - {name: _US_美国 67, server: 169.197.142.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _KR_韩国 3, server: 141.164.46.233, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _NO_挪威 3, server: 46.29.218.6, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _US_美国 68, server: 142.202.48.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _KR_韩国 4, server: 141.164.46.233, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _NO_挪威 4, server: 46.29.218.6, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 69, server: 142.202.48.99, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 70, server: 169.197.142.39, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _GB_英国 10, server: 172.99.190.149, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _BV_布维岛 5, server: 46.29.219.246, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _GB_英国 11, server: 172.99.190.87, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 71, server: 38.143.66.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_美国 72, server: 38.75.136.93, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _US_美国 73, server: 169.197.142.39, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _NO_挪威 5, server: 46.29.218.6, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 15, server: 134.195.196.154, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 74, server: 169.197.142.39, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 75, server: 38.114.114.67, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 76, server: 142.202.48.43, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_加拿大 16, server: 134.195.196.12, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 77, server: 167.88.61.60, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _GB_英国 12, server: 212.38.189.174, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 78, server: 38.143.66.71, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _IN_印度 2, server: 172.105.59.32, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 79, server: 38.75.136.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 80, server: 167.88.63.74, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 81, server: 142.202.48.105, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 82, server: 167.88.63.74, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_加拿大 17, server: 134.195.196.12, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 83, server: 142.202.48.105, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _NO_挪威 6, server: 46.29.218.6, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 84, server: 38.143.66.71, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _GB_英国 13, server: 172.99.190.149, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 85, server: usa-buffalo.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-buffalo.lvuft.com}, udp: true}
-  - {name: _US_美国 86, server: 167.88.61.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _GB_英国 14, server: 172.99.190.87, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _IN_印度 3, server: 172.105.59.32, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _GB_英国 15, server: 149.7.16.10, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _GB_英国 16, server: 172.99.190.87, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_美国 87, server: 142.202.48.99, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _PL_波兰 2, server: 5.188.108.155, port: 889, type: ss, cipher: chacha20-ietf-poly1305, password: KhS1x8JT7p58RIp7gz, udp: true}
-  - {name: _GB_英国 17, server: 212.38.189.174, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 88, server: 169.197.142.39, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _US_美国 89, server: 167.88.63.74, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_美国 90, server: 169.197.142.39, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US_美国 91, server: 38.143.66.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _US_美国 92, server: 167.88.61.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 93, server: 169.197.142.39, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 94, server: 167.88.63.74, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 95, server: 142.202.48.43, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _GB_英国 18, server: 172.99.190.87, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 96, server: 167.88.61.60, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _NO_挪威 7, server: 46.29.218.6, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_美国 97, server: 167.88.63.74, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国->🇫🇷_FR_法国, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}, udp: true}
-  - {name: _US_美国 98, server: 142.202.48.43, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_加拿大 18, server: 198.57.27.218, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_美国 99, server: 142.202.48.43, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 100, server: 38.143.66.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 日本(Youtube技术分享室整理), server: vipdedi.boom.ovh, port: 65521, type: vmess, uuid: a8d9724a-d61c-3d85-8cad-07e4d45a9441, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mydisk, ws-headers: {Host: vipdedi.boom.ovh}, udp: true}
+  - {name: HK(Youtube技术分享室整理), server: 42.193.48.64, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "澳大利亚[感谢订阅——科技网络]", server: 37.120.194.82, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 2V7N5kGUghaLxF4aUqTw, udp: true}
+  - {name: "美国[感谢订阅——科技网络]", server: 38.68.134.202, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大+🇨🇦(Youtube技术分享室整理), server: 134.195.196.154, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US(Youtube技术分享室整理), server: 38.107.226.48, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US(Youtube技术分享室整理) 2, server: 38.68.134.23, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 2", server: 142.202.48.17, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Ytb:鹏哥分享_GB_英国_120, server: 212.38.189.174, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 3", server: 38.121.43.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: "香港[感谢订阅——科技网络]", server: 118.107.244.112, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US(Youtube技术分享室整理) 3, server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 4", server: 142.202.48.108, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: HK(Youtube技术分享室整理) 2, server: 42.157.8.52, port: 48727, type: vmess, uuid: 57aa5ac3-d1d0-4e2f-b32e-6488d5a7cb45, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "印度[感谢订阅——科技网络]", server: 172.105.59.32, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 5", server: 38.68.134.23, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大🇨🇦(Youtube技术分享室整理), server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 加拿大🇨🇦(Youtube技术分享室整理) 2, server: 134.195.196.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 日本🇯🇵(Youtube技术分享室整理), server: 158.247.222.102, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 6", server: 38.75.136.102, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 7", server: 134.195.196.68, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 澳大利亚🇦🇺(Youtube技术分享室整理), server: 172.105.170.229, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 8", server: 167.88.61.130, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: "英国[感谢订阅——科技网络]", server: 212.38.189.174, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 9", server: 38.75.136.102, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 10", server: 38.75.136.116, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US(Youtube技术分享室整理) 4, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: b3f4826a-01e1-438a-8cb4-becb9e8b140c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
+  - {name: US(Youtube技术分享室整理) 5, server: 38.68.135.19, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 11", server: 38.64.138.145, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 12", server: 142.202.48.52, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 13", server: 167.88.61.60, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 14", server: 38.75.136.45, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 加拿大🇨🇦(Youtube技术分享室整理) 3, server: 198.57.27.172, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 日本+🇯🇵(Youtube技术分享室整理), server: 158.247.219.68, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US(Youtube技术分享室整理) 6, server: 167.88.61.130, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 15", server: 167.88.63.61, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 16", server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 17", server: 38.75.136.45, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 加拿大🇨🇦(Youtube技术分享室整理) 4, server: 134.195.196.199, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 18", server: 38.68.134.202, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 19", server: 38.143.66.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 20", server: 38.75.136.45, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "英国[感谢订阅——科技网络] 2", server: 212.38.189.174, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 加拿大🇨🇦(Youtube技术分享室整理) 5, server: 134.195.196.154, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 21", server: 38.75.136.45, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 22", server: 167.88.63.61, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 23", server: 167.88.63.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 24", server: 167.88.61.130, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 25", server: 167.88.63.74, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 26", server: 142.202.48.17, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: "美国[感谢订阅——科技网络] 27", server: 38.91.101.11, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
-      - _US_美国 2
-      - _CA_加拿大
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _CA_加拿大 2
-      - _CN_中国
-      - _US_美国 6
-      - _US_美国 7
-      - _BV_布维岛
-      - _US_美国 8
-      - _CA_加拿大 3
-      - _US_美国 9
-      - _GB_英国
-      - _US_美国 10
-      - _US_美国 11
-      - _BV_布维岛 2
-      - default_name
-      - _US_美国 12
-      - _US_美国 13
-      - _CA_加拿大 4
-      - _US_美国 14
-      - _CA_加拿大 5
-      - _KR_韩国
-      - _US_美国 15
-      - _US_美国 16
-      - _FR_法国
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _BV_布维岛 3
-      - _US_美国 20
-      - _GB_英国 2
-      - _FR_法国 2
-      - _US_美国 21
-      - _GB_英国 3
-      - _US_美国 22
-      - _US_美国 23
-      - _US_美国 24
-      - _US_美国 25
-      - _US_美国 26
-      - _US_美国 27
-      - _CA_加拿大 6
-      - _HU_匈牙利
-      - _US_美国 28
-      - _US_美国 29
-      - _US_美国 30
-      - _US_美国 31
-      - _GB_英国 4
-      - _US_美国 32
-      - _US_美国 33
-      - _US_美国 34
-      - _US_美国 35
-      - _US_美国 36
-      - _US_美国 37
-      - _US_美国 38
-      - _US_美国 39
-      - _CA_加拿大 7
-      - _GB_英国 5
-      - _US_美国 40
-      - _US_美国 41
-      - _US_美国 42
-      - _US_美国 43
-      - _US_美国 44
-      - _IN_印度
-      - _US_美国 45
-      - _NO_挪威
-      - _US_美国 46
-      - _GB_英国 6
-      - _CA_加拿大 8
-      - _US_美国 47
-      - _US_美国 48
-      - _BV_布维岛 4
-      - _US_美国 49
-      - _US_美国 50
-      - _US_美国 51
-      - _PL_波兰
-      - _US_美国 52
-      - _CA_加拿大 9
-      - _US_美国 53
-      - _US_美国 54
-      - _US_美国 55
-      - _US_美国 56
-      - _US_美国 57
-      - _US_美国 58
-      - _CA_加拿大 10
-      - _GB_英国 7
-      - _US_美国 59
-      - _CA_加拿大 11
-      - default_name 2
-      - _GB_英国 8
-      - _US_美国 60
-      - default_name 3
-      - _US_美国 61
-      - _KR_韩国 2
-      - _US_美国 62
-      - _CA_加拿大 12
-      - _GB_英国 9
-      - _NO_挪威 2
-      - _US_美国 63
-      - _US_美国 64
-      - _US_美国 65
-      - _US_美国 66
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - default_name 4
-      - _US_美国 67
-      - _KR_韩国 3
-      - _NO_挪威 3
-      - _US_美国 68
-      - _KR_韩国 4
-      - _NO_挪威 4
-      - _US_美国 69
-      - _US_美国 70
-      - _GB_英国 10
-      - _BV_布维岛 5
-      - _GB_英国 11
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _NO_挪威 5
-      - _CA_加拿大 15
-      - _US_美国 74
-      - _US_美国 75
-      - _US_美国 76
-      - _CA_加拿大 16
-      - _US_美国 77
-      - _GB_英国 12
-      - _US_美国 78
-      - _IN_印度 2
-      - _US_美国 79
-      - _US_美国 80
-      - _US_美国 81
-      - _US_美国 82
-      - _CA_加拿大 17
-      - _US_美国 83
-      - _NO_挪威 6
-      - _US_美国 84
-      - _GB_英国 13
-      - _US_美国 85
-      - _US_美国 86
-      - _GB_英国 14
-      - _IN_印度 3
-      - _GB_英国 15
-      - _GB_英国 16
-      - _US_美国 87
-      - _PL_波兰 2
-      - _GB_英国 17
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - _US_美国 91
-      - _US_美国 92
-      - _US_美国 93
-      - _US_美国 94
-      - _US_美国 95
-      - _GB_英国 18
-      - _US_美国 96
-      - _NO_挪威 7
-      - _US_美国 97
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 98
-      - _CA_加拿大 18
-      - _US_美国 99
-      - _US_美国 100
+      - 日本(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - 澳大利亚[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络]
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络] 2
+      - Ytb:鹏哥分享_GB_英国_120
+      - 美国[感谢订阅——科技网络] 3
+      - 香港[感谢订阅——科技网络]
+      - US(Youtube技术分享室整理) 3
+      - 美国[感谢订阅——科技网络] 4
+      - HK(Youtube技术分享室整理) 2
+      - 印度[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 5
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 澳大利亚🇦🇺(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 8
+      - 英国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 9
+      - 美国[感谢订阅——科技网络] 10
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 11
+      - 美国[感谢订阅——科技网络] 12
+      - 美国[感谢订阅——科技网络] 13
+      - 美国[感谢订阅——科技网络] 14
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 6
+      - 美国[感谢订阅——科技网络] 15
+      - 美国[感谢订阅——科技网络] 16
+      - 美国[感谢订阅——科技网络] 17
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - 美国[感谢订阅——科技网络] 18
+      - 美国[感谢订阅——科技网络] 19
+      - 美国[感谢订阅——科技网络] 20
+      - 英国[感谢订阅——科技网络] 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 21
+      - 美国[感谢订阅——科技网络] 22
+      - 美国[感谢订阅——科技网络] 23
+      - 美国[感谢订阅——科技网络] 24
+      - 美国[感谢订阅——科技网络] 25
+      - 美国[感谢订阅——科技网络] 26
+      - 美国[感谢订阅——科技网络] 27
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _US_美国
-      - _US_美国 2
-      - _CA_加拿大
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _CA_加拿大 2
-      - _CN_中国
-      - _US_美国 6
-      - _US_美国 7
-      - _BV_布维岛
-      - _US_美国 8
-      - _CA_加拿大 3
-      - _US_美国 9
-      - _GB_英国
-      - _US_美国 10
-      - _US_美国 11
-      - _BV_布维岛 2
-      - default_name
-      - _US_美国 12
-      - _US_美国 13
-      - _CA_加拿大 4
-      - _US_美国 14
-      - _CA_加拿大 5
-      - _KR_韩国
-      - _US_美国 15
-      - _US_美国 16
-      - _FR_法国
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _BV_布维岛 3
-      - _US_美国 20
-      - _GB_英国 2
-      - _FR_法国 2
-      - _US_美国 21
-      - _GB_英国 3
-      - _US_美国 22
-      - _US_美国 23
-      - _US_美国 24
-      - _US_美国 25
-      - _US_美国 26
-      - _US_美国 27
-      - _CA_加拿大 6
-      - _HU_匈牙利
-      - _US_美国 28
-      - _US_美国 29
-      - _US_美国 30
-      - _US_美国 31
-      - _GB_英国 4
-      - _US_美国 32
-      - _US_美国 33
-      - _US_美国 34
-      - _US_美国 35
-      - _US_美国 36
-      - _US_美国 37
-      - _US_美国 38
-      - _US_美国 39
-      - _CA_加拿大 7
-      - _GB_英国 5
-      - _US_美国 40
-      - _US_美国 41
-      - _US_美国 42
-      - _US_美国 43
-      - _US_美国 44
-      - _IN_印度
-      - _US_美国 45
-      - _NO_挪威
-      - _US_美国 46
-      - _GB_英国 6
-      - _CA_加拿大 8
-      - _US_美国 47
-      - _US_美国 48
-      - _BV_布维岛 4
-      - _US_美国 49
-      - _US_美国 50
-      - _US_美国 51
-      - _PL_波兰
-      - _US_美国 52
-      - _CA_加拿大 9
-      - _US_美国 53
-      - _US_美国 54
-      - _US_美国 55
-      - _US_美国 56
-      - _US_美国 57
-      - _US_美国 58
-      - _CA_加拿大 10
-      - _GB_英国 7
-      - _US_美国 59
-      - _CA_加拿大 11
-      - default_name 2
-      - _GB_英国 8
-      - _US_美国 60
-      - default_name 3
-      - _US_美国 61
-      - _KR_韩国 2
-      - _US_美国 62
-      - _CA_加拿大 12
-      - _GB_英国 9
-      - _NO_挪威 2
-      - _US_美国 63
-      - _US_美国 64
-      - _US_美国 65
-      - _US_美国 66
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - default_name 4
-      - _US_美国 67
-      - _KR_韩国 3
-      - _NO_挪威 3
-      - _US_美国 68
-      - _KR_韩国 4
-      - _NO_挪威 4
-      - _US_美国 69
-      - _US_美国 70
-      - _GB_英国 10
-      - _BV_布维岛 5
-      - _GB_英国 11
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _NO_挪威 5
-      - _CA_加拿大 15
-      - _US_美国 74
-      - _US_美国 75
-      - _US_美国 76
-      - _CA_加拿大 16
-      - _US_美国 77
-      - _GB_英国 12
-      - _US_美国 78
-      - _IN_印度 2
-      - _US_美国 79
-      - _US_美国 80
-      - _US_美国 81
-      - _US_美国 82
-      - _CA_加拿大 17
-      - _US_美国 83
-      - _NO_挪威 6
-      - _US_美国 84
-      - _GB_英国 13
-      - _US_美国 85
-      - _US_美国 86
-      - _GB_英国 14
-      - _IN_印度 3
-      - _GB_英国 15
-      - _GB_英国 16
-      - _US_美国 87
-      - _PL_波兰 2
-      - _GB_英国 17
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - _US_美国 91
-      - _US_美国 92
-      - _US_美国 93
-      - _US_美国 94
-      - _US_美国 95
-      - _GB_英国 18
-      - _US_美国 96
-      - _NO_挪威 7
-      - _US_美国 97
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 98
-      - _CA_加拿大 18
-      - _US_美国 99
-      - _US_美国 100
+      - 日本(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - 澳大利亚[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络]
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络] 2
+      - Ytb:鹏哥分享_GB_英国_120
+      - 美国[感谢订阅——科技网络] 3
+      - 香港[感谢订阅——科技网络]
+      - US(Youtube技术分享室整理) 3
+      - 美国[感谢订阅——科技网络] 4
+      - HK(Youtube技术分享室整理) 2
+      - 印度[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 5
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 澳大利亚🇦🇺(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 8
+      - 英国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 9
+      - 美国[感谢订阅——科技网络] 10
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 11
+      - 美国[感谢订阅——科技网络] 12
+      - 美国[感谢订阅——科技网络] 13
+      - 美国[感谢订阅——科技网络] 14
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 6
+      - 美国[感谢订阅——科技网络] 15
+      - 美国[感谢订阅——科技网络] 16
+      - 美国[感谢订阅——科技网络] 17
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - 美国[感谢订阅——科技网络] 18
+      - 美国[感谢订阅——科技网络] 19
+      - 美国[感谢订阅——科技网络] 20
+      - 英国[感谢订阅——科技网络] 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 21
+      - 美国[感谢订阅——科技网络] 22
+      - 美国[感谢订阅——科技网络] 23
+      - 美国[感谢订阅——科技网络] 24
+      - 美国[感谢订阅——科技网络] 25
+      - 美国[感谢订阅——科技网络] 26
+      - 美国[感谢订阅——科技网络] 27
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
-      - _US_美国 2
-      - _CA_加拿大
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _CA_加拿大 2
-      - _CN_中国
-      - _US_美国 6
-      - _US_美国 7
-      - _BV_布维岛
-      - _US_美国 8
-      - _CA_加拿大 3
-      - _US_美国 9
-      - _GB_英国
-      - _US_美国 10
-      - _US_美国 11
-      - _BV_布维岛 2
-      - default_name
-      - _US_美国 12
-      - _US_美国 13
-      - _CA_加拿大 4
-      - _US_美国 14
-      - _CA_加拿大 5
-      - _KR_韩国
-      - _US_美国 15
-      - _US_美国 16
-      - _FR_法国
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _BV_布维岛 3
-      - _US_美国 20
-      - _GB_英国 2
-      - _FR_法国 2
-      - _US_美国 21
-      - _GB_英国 3
-      - _US_美国 22
-      - _US_美国 23
-      - _US_美国 24
-      - _US_美国 25
-      - _US_美国 26
-      - _US_美国 27
-      - _CA_加拿大 6
-      - _HU_匈牙利
-      - _US_美国 28
-      - _US_美国 29
-      - _US_美国 30
-      - _US_美国 31
-      - _GB_英国 4
-      - _US_美国 32
-      - _US_美国 33
-      - _US_美国 34
-      - _US_美国 35
-      - _US_美国 36
-      - _US_美国 37
-      - _US_美国 38
-      - _US_美国 39
-      - _CA_加拿大 7
-      - _GB_英国 5
-      - _US_美国 40
-      - _US_美国 41
-      - _US_美国 42
-      - _US_美国 43
-      - _US_美国 44
-      - _IN_印度
-      - _US_美国 45
-      - _NO_挪威
-      - _US_美国 46
-      - _GB_英国 6
-      - _CA_加拿大 8
-      - _US_美国 47
-      - _US_美国 48
-      - _BV_布维岛 4
-      - _US_美国 49
-      - _US_美国 50
-      - _US_美国 51
-      - _PL_波兰
-      - _US_美国 52
-      - _CA_加拿大 9
-      - _US_美国 53
-      - _US_美国 54
-      - _US_美国 55
-      - _US_美国 56
-      - _US_美国 57
-      - _US_美国 58
-      - _CA_加拿大 10
-      - _GB_英国 7
-      - _US_美国 59
-      - _CA_加拿大 11
-      - default_name 2
-      - _GB_英国 8
-      - _US_美国 60
-      - default_name 3
-      - _US_美国 61
-      - _KR_韩国 2
-      - _US_美国 62
-      - _CA_加拿大 12
-      - _GB_英国 9
-      - _NO_挪威 2
-      - _US_美国 63
-      - _US_美国 64
-      - _US_美国 65
-      - _US_美国 66
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - default_name 4
-      - _US_美国 67
-      - _KR_韩国 3
-      - _NO_挪威 3
-      - _US_美国 68
-      - _KR_韩国 4
-      - _NO_挪威 4
-      - _US_美国 69
-      - _US_美国 70
-      - _GB_英国 10
-      - _BV_布维岛 5
-      - _GB_英国 11
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _NO_挪威 5
-      - _CA_加拿大 15
-      - _US_美国 74
-      - _US_美国 75
-      - _US_美国 76
-      - _CA_加拿大 16
-      - _US_美国 77
-      - _GB_英国 12
-      - _US_美国 78
-      - _IN_印度 2
-      - _US_美国 79
-      - _US_美国 80
-      - _US_美国 81
-      - _US_美国 82
-      - _CA_加拿大 17
-      - _US_美国 83
-      - _NO_挪威 6
-      - _US_美国 84
-      - _GB_英国 13
-      - _US_美国 85
-      - _US_美国 86
-      - _GB_英国 14
-      - _IN_印度 3
-      - _GB_英国 15
-      - _GB_英国 16
-      - _US_美国 87
-      - _PL_波兰 2
-      - _GB_英国 17
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - _US_美国 91
-      - _US_美国 92
-      - _US_美国 93
-      - _US_美国 94
-      - _US_美国 95
-      - _GB_英国 18
-      - _US_美国 96
-      - _NO_挪威 7
-      - _US_美国 97
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 98
-      - _CA_加拿大 18
-      - _US_美国 99
-      - _US_美国 100
+      - 日本(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - 澳大利亚[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络]
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络] 2
+      - Ytb:鹏哥分享_GB_英国_120
+      - 美国[感谢订阅——科技网络] 3
+      - 香港[感谢订阅——科技网络]
+      - US(Youtube技术分享室整理) 3
+      - 美国[感谢订阅——科技网络] 4
+      - HK(Youtube技术分享室整理) 2
+      - 印度[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 5
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 澳大利亚🇦🇺(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 8
+      - 英国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 9
+      - 美国[感谢订阅——科技网络] 10
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 11
+      - 美国[感谢订阅——科技网络] 12
+      - 美国[感谢订阅——科技网络] 13
+      - 美国[感谢订阅——科技网络] 14
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 6
+      - 美国[感谢订阅——科技网络] 15
+      - 美国[感谢订阅——科技网络] 16
+      - 美国[感谢订阅——科技网络] 17
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - 美国[感谢订阅——科技网络] 18
+      - 美国[感谢订阅——科技网络] 19
+      - 美国[感谢订阅——科技网络] 20
+      - 英国[感谢订阅——科技网络] 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 21
+      - 美国[感谢订阅——科技网络] 22
+      - 美国[感谢订阅——科技网络] 23
+      - 美国[感谢订阅——科技网络] 24
+      - 美国[感谢订阅——科技网络] 25
+      - 美国[感谢订阅——科技网络] 26
+      - 美国[感谢订阅——科技网络] 27
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -704,691 +244,232 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_美国
-      - _US_美国 2
-      - _CA_加拿大
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _CA_加拿大 2
-      - _CN_中国
-      - _US_美国 6
-      - _US_美国 7
-      - _BV_布维岛
-      - _US_美国 8
-      - _CA_加拿大 3
-      - _US_美国 9
-      - _GB_英国
-      - _US_美国 10
-      - _US_美国 11
-      - _BV_布维岛 2
-      - default_name
-      - _US_美国 12
-      - _US_美国 13
-      - _CA_加拿大 4
-      - _US_美国 14
-      - _CA_加拿大 5
-      - _KR_韩国
-      - _US_美国 15
-      - _US_美国 16
-      - _FR_法国
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _BV_布维岛 3
-      - _US_美国 20
-      - _GB_英国 2
-      - _FR_法国 2
-      - _US_美国 21
-      - _GB_英国 3
-      - _US_美国 22
-      - _US_美国 23
-      - _US_美国 24
-      - _US_美国 25
-      - _US_美国 26
-      - _US_美国 27
-      - _CA_加拿大 6
-      - _HU_匈牙利
-      - _US_美国 28
-      - _US_美国 29
-      - _US_美国 30
-      - _US_美国 31
-      - _GB_英国 4
-      - _US_美国 32
-      - _US_美国 33
-      - _US_美国 34
-      - _US_美国 35
-      - _US_美国 36
-      - _US_美国 37
-      - _US_美国 38
-      - _US_美国 39
-      - _CA_加拿大 7
-      - _GB_英国 5
-      - _US_美国 40
-      - _US_美国 41
-      - _US_美国 42
-      - _US_美国 43
-      - _US_美国 44
-      - _IN_印度
-      - _US_美国 45
-      - _NO_挪威
-      - _US_美国 46
-      - _GB_英国 6
-      - _CA_加拿大 8
-      - _US_美国 47
-      - _US_美国 48
-      - _BV_布维岛 4
-      - _US_美国 49
-      - _US_美国 50
-      - _US_美国 51
-      - _PL_波兰
-      - _US_美国 52
-      - _CA_加拿大 9
-      - _US_美国 53
-      - _US_美国 54
-      - _US_美国 55
-      - _US_美国 56
-      - _US_美国 57
-      - _US_美国 58
-      - _CA_加拿大 10
-      - _GB_英国 7
-      - _US_美国 59
-      - _CA_加拿大 11
-      - default_name 2
-      - _GB_英国 8
-      - _US_美国 60
-      - default_name 3
-      - _US_美国 61
-      - _KR_韩国 2
-      - _US_美国 62
-      - _CA_加拿大 12
-      - _GB_英国 9
-      - _NO_挪威 2
-      - _US_美国 63
-      - _US_美国 64
-      - _US_美国 65
-      - _US_美国 66
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - default_name 4
-      - _US_美国 67
-      - _KR_韩国 3
-      - _NO_挪威 3
-      - _US_美国 68
-      - _KR_韩国 4
-      - _NO_挪威 4
-      - _US_美国 69
-      - _US_美国 70
-      - _GB_英国 10
-      - _BV_布维岛 5
-      - _GB_英国 11
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _NO_挪威 5
-      - _CA_加拿大 15
-      - _US_美国 74
-      - _US_美国 75
-      - _US_美国 76
-      - _CA_加拿大 16
-      - _US_美国 77
-      - _GB_英国 12
-      - _US_美国 78
-      - _IN_印度 2
-      - _US_美国 79
-      - _US_美国 80
-      - _US_美国 81
-      - _US_美国 82
-      - _CA_加拿大 17
-      - _US_美国 83
-      - _NO_挪威 6
-      - _US_美国 84
-      - _GB_英国 13
-      - _US_美国 85
-      - _US_美国 86
-      - _GB_英国 14
-      - _IN_印度 3
-      - _GB_英国 15
-      - _GB_英国 16
-      - _US_美国 87
-      - _PL_波兰 2
-      - _GB_英国 17
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - _US_美国 91
-      - _US_美国 92
-      - _US_美国 93
-      - _US_美国 94
-      - _US_美国 95
-      - _GB_英国 18
-      - _US_美国 96
-      - _NO_挪威 7
-      - _US_美国 97
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 98
-      - _CA_加拿大 18
-      - _US_美国 99
-      - _US_美国 100
+      - 日本(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - 澳大利亚[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络]
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络] 2
+      - Ytb:鹏哥分享_GB_英国_120
+      - 美国[感谢订阅——科技网络] 3
+      - 香港[感谢订阅——科技网络]
+      - US(Youtube技术分享室整理) 3
+      - 美国[感谢订阅——科技网络] 4
+      - HK(Youtube技术分享室整理) 2
+      - 印度[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 5
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 澳大利亚🇦🇺(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 8
+      - 英国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 9
+      - 美国[感谢订阅——科技网络] 10
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 11
+      - 美国[感谢订阅——科技网络] 12
+      - 美国[感谢订阅——科技网络] 13
+      - 美国[感谢订阅——科技网络] 14
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 6
+      - 美国[感谢订阅——科技网络] 15
+      - 美国[感谢订阅——科技网络] 16
+      - 美国[感谢订阅——科技网络] 17
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - 美国[感谢订阅——科技网络] 18
+      - 美国[感谢订阅——科技网络] 19
+      - 美国[感谢订阅——科技网络] 20
+      - 英国[感谢订阅——科技网络] 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 21
+      - 美国[感谢订阅——科技网络] 22
+      - 美国[感谢订阅——科技网络] 23
+      - 美国[感谢订阅——科技网络] 24
+      - 美国[感谢订阅——科技网络] 25
+      - 美国[感谢订阅——科技网络] 26
+      - 美国[感谢订阅——科技网络] 27
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港[感谢订阅——科技网络]
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _US_美国
-      - _US_美国 2
-      - _CA_加拿大
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _CA_加拿大 2
-      - _CN_中国
-      - _US_美国 6
-      - _US_美国 7
-      - _BV_布维岛
-      - _US_美国 8
-      - _CA_加拿大 3
-      - _US_美国 9
-      - _GB_英国
-      - _US_美国 10
-      - _US_美国 11
-      - _BV_布维岛 2
-      - default_name
-      - _US_美国 12
-      - _US_美国 13
-      - _CA_加拿大 4
-      - _US_美国 14
-      - _CA_加拿大 5
-      - _KR_韩国
-      - _US_美国 15
-      - _US_美国 16
-      - _FR_法国
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _BV_布维岛 3
-      - _US_美国 20
-      - _GB_英国 2
-      - _FR_法国 2
-      - _US_美国 21
-      - _GB_英国 3
-      - _US_美国 22
-      - _US_美国 23
-      - _US_美国 24
-      - _US_美国 25
-      - _US_美国 26
-      - _US_美国 27
-      - _CA_加拿大 6
-      - _HU_匈牙利
-      - _US_美国 28
-      - _US_美国 29
-      - _US_美国 30
-      - _US_美国 31
-      - _GB_英国 4
-      - _US_美国 32
-      - _US_美国 33
-      - _US_美国 34
-      - _US_美国 35
-      - _US_美国 36
-      - _US_美国 37
-      - _US_美国 38
-      - _US_美国 39
-      - _CA_加拿大 7
-      - _GB_英国 5
-      - _US_美国 40
-      - _US_美国 41
-      - _US_美国 42
-      - _US_美国 43
-      - _US_美国 44
-      - _IN_印度
-      - _US_美国 45
-      - _NO_挪威
-      - _US_美国 46
-      - _GB_英国 6
-      - _CA_加拿大 8
-      - _US_美国 47
-      - _US_美国 48
-      - _BV_布维岛 4
-      - _US_美国 49
-      - _US_美国 50
-      - _US_美国 51
-      - _PL_波兰
-      - _US_美国 52
-      - _CA_加拿大 9
-      - _US_美国 53
-      - _US_美国 54
-      - _US_美国 55
-      - _US_美国 56
-      - _US_美国 57
-      - _US_美国 58
-      - _CA_加拿大 10
-      - _GB_英国 7
-      - _US_美国 59
-      - _CA_加拿大 11
-      - default_name 2
-      - _GB_英国 8
-      - _US_美国 60
-      - default_name 3
-      - _US_美国 61
-      - _KR_韩国 2
-      - _US_美国 62
-      - _CA_加拿大 12
-      - _GB_英国 9
-      - _NO_挪威 2
-      - _US_美国 63
-      - _US_美国 64
-      - _US_美国 65
-      - _US_美国 66
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - default_name 4
-      - _US_美国 67
-      - _KR_韩国 3
-      - _NO_挪威 3
-      - _US_美国 68
-      - _KR_韩国 4
-      - _NO_挪威 4
-      - _US_美国 69
-      - _US_美国 70
-      - _GB_英国 10
-      - _BV_布维岛 5
-      - _GB_英国 11
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _NO_挪威 5
-      - _CA_加拿大 15
-      - _US_美国 74
-      - _US_美国 75
-      - _US_美国 76
-      - _CA_加拿大 16
-      - _US_美国 77
-      - _GB_英国 12
-      - _US_美国 78
-      - _IN_印度 2
-      - _US_美国 79
-      - _US_美国 80
-      - _US_美国 81
-      - _US_美国 82
-      - _CA_加拿大 17
-      - _US_美国 83
-      - _NO_挪威 6
-      - _US_美国 84
-      - _GB_英国 13
-      - _US_美国 85
-      - _US_美国 86
-      - _GB_英国 14
-      - _IN_印度 3
-      - _GB_英国 15
-      - _GB_英国 16
-      - _US_美国 87
-      - _PL_波兰 2
-      - _GB_英国 17
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - _US_美国 91
-      - _US_美国 92
-      - _US_美国 93
-      - _US_美国 94
-      - _US_美国 95
-      - _GB_英国 18
-      - _US_美国 96
-      - _NO_挪威 7
-      - _US_美国 97
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 98
-      - _CA_加拿大 18
-      - _US_美国 99
-      - _US_美国 100
+      - 日本(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - 澳大利亚[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络]
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络] 2
+      - Ytb:鹏哥分享_GB_英国_120
+      - 美国[感谢订阅——科技网络] 3
+      - 香港[感谢订阅——科技网络]
+      - US(Youtube技术分享室整理) 3
+      - 美国[感谢订阅——科技网络] 4
+      - HK(Youtube技术分享室整理) 2
+      - 印度[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 5
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 澳大利亚🇦🇺(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 8
+      - 英国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 9
+      - 美国[感谢订阅——科技网络] 10
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 11
+      - 美国[感谢订阅——科技网络] 12
+      - 美国[感谢订阅——科技网络] 13
+      - 美国[感谢订阅——科技网络] 14
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 6
+      - 美国[感谢订阅——科技网络] 15
+      - 美国[感谢订阅——科技网络] 16
+      - 美国[感谢订阅——科技网络] 17
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - 美国[感谢订阅——科技网络] 18
+      - 美国[感谢订阅——科技网络] 19
+      - 美国[感谢订阅——科技网络] 20
+      - 英国[感谢订阅——科技网络] 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 21
+      - 美国[感谢订阅——科技网络] 22
+      - 美国[感谢订阅——科技网络] 23
+      - 美国[感谢订阅——科技网络] 24
+      - 美国[感谢订阅——科技网络] 25
+      - 美国[感谢订阅——科技网络] 26
+      - 美国[感谢订阅——科技网络] 27
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _US_美国
-      - _US_美国 2
-      - _CA_加拿大
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _CA_加拿大 2
-      - _CN_中国
-      - _US_美国 6
-      - _US_美国 7
-      - _BV_布维岛
-      - _US_美国 8
-      - _CA_加拿大 3
-      - _US_美国 9
-      - _GB_英国
-      - _US_美国 10
-      - _US_美国 11
-      - _BV_布维岛 2
-      - default_name
-      - _US_美国 12
-      - _US_美国 13
-      - _CA_加拿大 4
-      - _US_美国 14
-      - _CA_加拿大 5
-      - _KR_韩国
-      - _US_美国 15
-      - _US_美国 16
-      - _FR_法国
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _BV_布维岛 3
-      - _US_美国 20
-      - _GB_英国 2
-      - _FR_法国 2
-      - _US_美国 21
-      - _GB_英国 3
-      - _US_美国 22
-      - _US_美国 23
-      - _US_美国 24
-      - _US_美国 25
-      - _US_美国 26
-      - _US_美国 27
-      - _CA_加拿大 6
-      - _HU_匈牙利
-      - _US_美国 28
-      - _US_美国 29
-      - _US_美国 30
-      - _US_美国 31
-      - _GB_英国 4
-      - _US_美国 32
-      - _US_美国 33
-      - _US_美国 34
-      - _US_美国 35
-      - _US_美国 36
-      - _US_美国 37
-      - _US_美国 38
-      - _US_美国 39
-      - _CA_加拿大 7
-      - _GB_英国 5
-      - _US_美国 40
-      - _US_美国 41
-      - _US_美国 42
-      - _US_美国 43
-      - _US_美国 44
-      - _IN_印度
-      - _US_美国 45
-      - _NO_挪威
-      - _US_美国 46
-      - _GB_英国 6
-      - _CA_加拿大 8
-      - _US_美国 47
-      - _US_美国 48
-      - _BV_布维岛 4
-      - _US_美国 49
-      - _US_美国 50
-      - _US_美国 51
-      - _PL_波兰
-      - _US_美国 52
-      - _CA_加拿大 9
-      - _US_美国 53
-      - _US_美国 54
-      - _US_美国 55
-      - _US_美国 56
-      - _US_美国 57
-      - _US_美国 58
-      - _CA_加拿大 10
-      - _GB_英国 7
-      - _US_美国 59
-      - _CA_加拿大 11
-      - default_name 2
-      - _GB_英国 8
-      - _US_美国 60
-      - default_name 3
-      - _US_美国 61
-      - _KR_韩国 2
-      - _US_美国 62
-      - _CA_加拿大 12
-      - _GB_英国 9
-      - _NO_挪威 2
-      - _US_美国 63
-      - _US_美国 64
-      - _US_美国 65
-      - _US_美国 66
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - default_name 4
-      - _US_美国 67
-      - _KR_韩国 3
-      - _NO_挪威 3
-      - _US_美国 68
-      - _KR_韩国 4
-      - _NO_挪威 4
-      - _US_美国 69
-      - _US_美国 70
-      - _GB_英国 10
-      - _BV_布维岛 5
-      - _GB_英国 11
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _NO_挪威 5
-      - _CA_加拿大 15
-      - _US_美国 74
-      - _US_美国 75
-      - _US_美国 76
-      - _CA_加拿大 16
-      - _US_美国 77
-      - _GB_英国 12
-      - _US_美国 78
-      - _IN_印度 2
-      - _US_美国 79
-      - _US_美国 80
-      - _US_美国 81
-      - _US_美国 82
-      - _CA_加拿大 17
-      - _US_美国 83
-      - _NO_挪威 6
-      - _US_美国 84
-      - _GB_英国 13
-      - _US_美国 85
-      - _US_美国 86
-      - _GB_英国 14
-      - _IN_印度 3
-      - _GB_英国 15
-      - _GB_英国 16
-      - _US_美国 87
-      - _PL_波兰 2
-      - _GB_英国 17
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - _US_美国 91
-      - _US_美国 92
-      - _US_美国 93
-      - _US_美国 94
-      - _US_美国 95
-      - _GB_英国 18
-      - _US_美国 96
-      - _NO_挪威 7
-      - _US_美国 97
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 98
-      - _CA_加拿大 18
-      - _US_美国 99
-      - _US_美国 100
+      - 日本(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - 澳大利亚[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络]
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络] 2
+      - Ytb:鹏哥分享_GB_英国_120
+      - 美国[感谢订阅——科技网络] 3
+      - 香港[感谢订阅——科技网络]
+      - US(Youtube技术分享室整理) 3
+      - 美国[感谢订阅——科技网络] 4
+      - HK(Youtube技术分享室整理) 2
+      - 印度[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 5
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 澳大利亚🇦🇺(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 8
+      - 英国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 9
+      - 美国[感谢订阅——科技网络] 10
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 11
+      - 美国[感谢订阅——科技网络] 12
+      - 美国[感谢订阅——科技网络] 13
+      - 美国[感谢订阅——科技网络] 14
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 6
+      - 美国[感谢订阅——科技网络] 15
+      - 美国[感谢订阅——科技网络] 16
+      - 美国[感谢订阅——科技网络] 17
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - 美国[感谢订阅——科技网络] 18
+      - 美国[感谢订阅——科技网络] 19
+      - 美国[感谢订阅——科技网络] 20
+      - 英国[感谢订阅——科技网络] 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 21
+      - 美国[感谢订阅——科技网络] 22
+      - 美国[感谢订阅——科技网络] 23
+      - 美国[感谢订阅——科技网络] 24
+      - 美国[感谢订阅——科技网络] 25
+      - 美国[感谢订阅——科技网络] 26
+      - 美国[感谢订阅——科技网络] 27
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_美国
-      - _US_美国 2
-      - _CA_加拿大
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _CA_加拿大 2
-      - _CN_中国
-      - _US_美国 6
-      - _US_美国 7
-      - _BV_布维岛
-      - _US_美国 8
-      - _CA_加拿大 3
-      - _US_美国 9
-      - _GB_英国
-      - _US_美国 10
-      - _US_美国 11
-      - _BV_布维岛 2
-      - default_name
-      - _US_美国 12
-      - _US_美国 13
-      - _CA_加拿大 4
-      - _US_美国 14
-      - _CA_加拿大 5
-      - _KR_韩国
-      - _US_美国 15
-      - _US_美国 16
-      - _FR_法国
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _BV_布维岛 3
-      - _US_美国 20
-      - _GB_英国 2
-      - _FR_法国 2
-      - _US_美国 21
-      - _GB_英国 3
-      - _US_美国 22
-      - _US_美国 23
-      - _US_美国 24
-      - _US_美国 25
-      - _US_美国 26
-      - _US_美国 27
-      - _CA_加拿大 6
-      - _HU_匈牙利
-      - _US_美国 28
-      - _US_美国 29
-      - _US_美国 30
-      - _US_美国 31
-      - _GB_英国 4
-      - _US_美国 32
-      - _US_美国 33
-      - _US_美国 34
-      - _US_美国 35
-      - _US_美国 36
-      - _US_美国 37
-      - _US_美国 38
-      - _US_美国 39
-      - _CA_加拿大 7
-      - _GB_英国 5
-      - _US_美国 40
-      - _US_美国 41
-      - _US_美国 42
-      - _US_美国 43
-      - _US_美国 44
-      - _IN_印度
-      - _US_美国 45
-      - _NO_挪威
-      - _US_美国 46
-      - _GB_英国 6
-      - _CA_加拿大 8
-      - _US_美国 47
-      - _US_美国 48
-      - _BV_布维岛 4
-      - _US_美国 49
-      - _US_美国 50
-      - _US_美国 51
-      - _PL_波兰
-      - _US_美国 52
-      - _CA_加拿大 9
-      - _US_美国 53
-      - _US_美国 54
-      - _US_美国 55
-      - _US_美国 56
-      - _US_美国 57
-      - _US_美国 58
-      - _CA_加拿大 10
-      - _GB_英国 7
-      - _US_美国 59
-      - _CA_加拿大 11
-      - default_name 2
-      - _GB_英国 8
-      - _US_美国 60
-      - default_name 3
-      - _US_美国 61
-      - _KR_韩国 2
-      - _US_美国 62
-      - _CA_加拿大 12
-      - _GB_英国 9
-      - _NO_挪威 2
-      - _US_美国 63
-      - _US_美国 64
-      - _US_美国 65
-      - _US_美国 66
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - default_name 4
-      - _US_美国 67
-      - _KR_韩国 3
-      - _NO_挪威 3
-      - _US_美国 68
-      - _KR_韩国 4
-      - _NO_挪威 4
-      - _US_美国 69
-      - _US_美国 70
-      - _GB_英国 10
-      - _BV_布维岛 5
-      - _GB_英国 11
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _NO_挪威 5
-      - _CA_加拿大 15
-      - _US_美国 74
-      - _US_美国 75
-      - _US_美国 76
-      - _CA_加拿大 16
-      - _US_美国 77
-      - _GB_英国 12
-      - _US_美国 78
-      - _IN_印度 2
-      - _US_美国 79
-      - _US_美国 80
-      - _US_美国 81
-      - _US_美国 82
-      - _CA_加拿大 17
-      - _US_美国 83
-      - _NO_挪威 6
-      - _US_美国 84
-      - _GB_英国 13
-      - _US_美国 85
-      - _US_美国 86
-      - _GB_英国 14
-      - _IN_印度 3
-      - _GB_英国 15
-      - _GB_英国 16
-      - _US_美国 87
-      - _PL_波兰 2
-      - _GB_英国 17
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - _US_美国 91
-      - _US_美国 92
-      - _US_美国 93
-      - _US_美国 94
-      - _US_美国 95
-      - _GB_英国 18
-      - _US_美国 96
-      - _NO_挪威 7
-      - _US_美国 97
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 98
-      - _CA_加拿大 18
-      - _US_美国 99
-      - _US_美国 100
+      - 日本(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - 澳大利亚[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络]
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络] 2
+      - Ytb:鹏哥分享_GB_英国_120
+      - 美国[感谢订阅——科技网络] 3
+      - 香港[感谢订阅——科技网络]
+      - US(Youtube技术分享室整理) 3
+      - 美国[感谢订阅——科技网络] 4
+      - HK(Youtube技术分享室整理) 2
+      - 印度[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 5
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 澳大利亚🇦🇺(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 8
+      - 英国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 9
+      - 美国[感谢订阅——科技网络] 10
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 11
+      - 美国[感谢订阅——科技网络] 12
+      - 美国[感谢订阅——科技网络] 13
+      - 美国[感谢订阅——科技网络] 14
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 6
+      - 美国[感谢订阅——科技网络] 15
+      - 美国[感谢订阅——科技网络] 16
+      - 美国[感谢订阅——科技网络] 17
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - 美国[感谢订阅——科技网络] 18
+      - 美国[感谢订阅——科技网络] 19
+      - 美国[感谢订阅——科技网络] 20
+      - 英国[感谢订阅——科技网络] 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 21
+      - 美国[感谢订阅——科技网络] 22
+      - 美国[感谢订阅——科技网络] 23
+      - 美国[感谢订阅——科技网络] 24
+      - 美国[感谢订阅——科技网络] 25
+      - 美国[感谢订阅——科技网络] 26
+      - 美国[感谢订阅——科技网络] 27
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1404,172 +485,57 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_美国
-      - _US_美国 2
-      - _CA_加拿大
-      - _US_美国 3
-      - _US_美国 4
-      - _US_美国 5
-      - _CA_加拿大 2
-      - _CN_中国
-      - _US_美国 6
-      - _US_美国 7
-      - _BV_布维岛
-      - _US_美国 8
-      - _CA_加拿大 3
-      - _US_美国 9
-      - _GB_英国
-      - _US_美国 10
-      - _US_美国 11
-      - _BV_布维岛 2
-      - default_name
-      - _US_美国 12
-      - _US_美国 13
-      - _CA_加拿大 4
-      - _US_美国 14
-      - _CA_加拿大 5
-      - _KR_韩国
-      - _US_美国 15
-      - _US_美国 16
-      - _FR_法国
-      - _US_美国 17
-      - _US_美国 18
-      - _US_美国 19
-      - _BV_布维岛 3
-      - _US_美国 20
-      - _GB_英国 2
-      - _FR_法国 2
-      - _US_美国 21
-      - _GB_英国 3
-      - _US_美国 22
-      - _US_美国 23
-      - _US_美国 24
-      - _US_美国 25
-      - _US_美国 26
-      - _US_美国 27
-      - _CA_加拿大 6
-      - _HU_匈牙利
-      - _US_美国 28
-      - _US_美国 29
-      - _US_美国 30
-      - _US_美国 31
-      - _GB_英国 4
-      - _US_美国 32
-      - _US_美国 33
-      - _US_美国 34
-      - _US_美国 35
-      - _US_美国 36
-      - _US_美国 37
-      - _US_美国 38
-      - _US_美国 39
-      - _CA_加拿大 7
-      - _GB_英国 5
-      - _US_美国 40
-      - _US_美国 41
-      - _US_美国 42
-      - _US_美国 43
-      - _US_美国 44
-      - _IN_印度
-      - _US_美国 45
-      - _NO_挪威
-      - _US_美国 46
-      - _GB_英国 6
-      - _CA_加拿大 8
-      - _US_美国 47
-      - _US_美国 48
-      - _BV_布维岛 4
-      - _US_美国 49
-      - _US_美国 50
-      - _US_美国 51
-      - _PL_波兰
-      - _US_美国 52
-      - _CA_加拿大 9
-      - _US_美国 53
-      - _US_美国 54
-      - _US_美国 55
-      - _US_美国 56
-      - _US_美国 57
-      - _US_美国 58
-      - _CA_加拿大 10
-      - _GB_英国 7
-      - _US_美国 59
-      - _CA_加拿大 11
-      - default_name 2
-      - _GB_英国 8
-      - _US_美国 60
-      - default_name 3
-      - _US_美国 61
-      - _KR_韩国 2
-      - _US_美国 62
-      - _CA_加拿大 12
-      - _GB_英国 9
-      - _NO_挪威 2
-      - _US_美国 63
-      - _US_美国 64
-      - _US_美国 65
-      - _US_美国 66
-      - _CA_加拿大 13
-      - _CA_加拿大 14
-      - default_name 4
-      - _US_美国 67
-      - _KR_韩国 3
-      - _NO_挪威 3
-      - _US_美国 68
-      - _KR_韩国 4
-      - _NO_挪威 4
-      - _US_美国 69
-      - _US_美国 70
-      - _GB_英国 10
-      - _BV_布维岛 5
-      - _GB_英国 11
-      - _US_美国 71
-      - _US_美国 72
-      - _US_美国 73
-      - _NO_挪威 5
-      - _CA_加拿大 15
-      - _US_美国 74
-      - _US_美国 75
-      - _US_美国 76
-      - _CA_加拿大 16
-      - _US_美国 77
-      - _GB_英国 12
-      - _US_美国 78
-      - _IN_印度 2
-      - _US_美国 79
-      - _US_美国 80
-      - _US_美国 81
-      - _US_美国 82
-      - _CA_加拿大 17
-      - _US_美国 83
-      - _NO_挪威 6
-      - _US_美国 84
-      - _GB_英国 13
-      - _US_美国 85
-      - _US_美国 86
-      - _GB_英国 14
-      - _IN_印度 3
-      - _GB_英国 15
-      - _GB_英国 16
-      - _US_美国 87
-      - _PL_波兰 2
-      - _GB_英国 17
-      - _US_美国 88
-      - _US_美国 89
-      - _US_美国 90
-      - _US_美国 91
-      - _US_美国 92
-      - _US_美国 93
-      - _US_美国 94
-      - _US_美国 95
-      - _GB_英国 18
-      - _US_美国 96
-      - _NO_挪威 7
-      - _US_美国 97
-      - _US_美国->🇫🇷_FR_法国
-      - _US_美国 98
-      - _CA_加拿大 18
-      - _US_美国 99
-      - _US_美国 100
+      - 日本(Youtube技术分享室整理)
+      - HK(Youtube技术分享室整理)
+      - 澳大利亚[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络]
+      - 加拿大+🇨🇦(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 2
+      - 美国[感谢订阅——科技网络] 2
+      - Ytb:鹏哥分享_GB_英国_120
+      - 美国[感谢订阅——科技网络] 3
+      - 香港[感谢订阅——科技网络]
+      - US(Youtube技术分享室整理) 3
+      - 美国[感谢订阅——科技网络] 4
+      - HK(Youtube技术分享室整理) 2
+      - 印度[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 5
+      - 加拿大🇨🇦(Youtube技术分享室整理)
+      - 加拿大🇨🇦(Youtube技术分享室整理) 2
+      - 日本🇯🇵(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 6
+      - 美国[感谢订阅——科技网络] 7
+      - 澳大利亚🇦🇺(Youtube技术分享室整理)
+      - 美国[感谢订阅——科技网络] 8
+      - 英国[感谢订阅——科技网络]
+      - 美国[感谢订阅——科技网络] 9
+      - 美国[感谢订阅——科技网络] 10
+      - US(Youtube技术分享室整理) 4
+      - US(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 11
+      - 美国[感谢订阅——科技网络] 12
+      - 美国[感谢订阅——科技网络] 13
+      - 美国[感谢订阅——科技网络] 14
+      - 加拿大🇨🇦(Youtube技术分享室整理) 3
+      - 日本+🇯🇵(Youtube技术分享室整理)
+      - US(Youtube技术分享室整理) 6
+      - 美国[感谢订阅——科技网络] 15
+      - 美国[感谢订阅——科技网络] 16
+      - 美国[感谢订阅——科技网络] 17
+      - 加拿大🇨🇦(Youtube技术分享室整理) 4
+      - 美国[感谢订阅——科技网络] 18
+      - 美国[感谢订阅——科技网络] 19
+      - 美国[感谢订阅——科技网络] 20
+      - 英国[感谢订阅——科技网络] 2
+      - 加拿大🇨🇦(Youtube技术分享室整理) 5
+      - 美国[感谢订阅——科技网络] 21
+      - 美国[感谢订阅——科技网络] 22
+      - 美国[感谢订阅——科技网络] 23
+      - 美国[感谢订阅——科技网络] 24
+      - 美国[感谢订阅——科技网络] 25
+      - 美国[感谢订阅——科技网络] 26
+      - 美国[感谢订阅——科技网络] 27
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
