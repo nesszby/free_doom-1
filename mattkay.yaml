@@ -5,251 +5,547 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: wmt(1.18)_GB_英国_1, server: uk1-4.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: uk1-4.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: wmt(1.18)_GB_英国_2, server: uk1-3.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: uk1-3.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: wmt(1.18)_GB_英国_3, server: uk1-1.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: uk1-1.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: wmt(1.18)_GB_英国_4, server: uk1-2.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: uk1-2.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: wmt(1.18)_NL_荷兰_5, server: nl1-2.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: nl1-2.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: wmt(1.18)_NL_荷兰_6, server: nl1-8.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: nl1-8.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: wmt(1.18)_JP_日本_7, server: ty1-2.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: ty1-2.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_8, server: 134.195.196.199, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_9, server: 134.195.196.33, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: wmt(1.18)_US_美国_10, server: 38.64.138.145, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_11, server: 198.57.27.191, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: wmt(1.18)_US_美国_12, server: 142.202.48.34, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: wmt(1.18)_US_美国_13, server: 169.197.141.240, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_14, server: 134.195.198.250, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: wmt(1.18)_US_美国_15, server: 142.202.48.34, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_16, server: 134.195.198.250, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: wmt(1.18)_US_美国_17, server: 142.202.48.52, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: wmt(1.18)_US_美国_18, server: 38.64.138.145, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: wmt(1.18)_US_美国_19, server: 167.88.63.61, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: wmt(1.18)_GB_英国_20, server: 212.38.189.174, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: wmt(1.18)_US_美国_21, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_22, server: 134.195.198.250, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_23, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: wmt(1.18)_FR_法国_24, server: 62.210.209.50, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: wmt(1.18)_US_美国_25, server: 38.121.43.91, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: wmt(1.18)_US_美国_26, server: 167.88.63.74, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: wmt(1.18)_US_美国_27, server: 142.202.48.108, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_28, server: 198.57.27.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: wmt(1.18)_US_美国_29, server: 142.202.48.78, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: wmt(1.18)_GB_英国_30, server: 172.99.190.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_31, server: 134.195.196.52, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: wmt(1.18)_US_美国_32, server: 167.88.61.130, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: wmt(1.18)_33, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: 64c3ab43-dc1b-401c-9437-9adf7bcf4a28, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
-  - {name: wmt(1.18)_FR_法国_34, server: 62.210.209.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: wmt(1.18)_US_美国_35, server: 167.88.63.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_36, server: 134.195.196.52, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: wmt(1.18)_US_美国_37, server: 167.88.63.61, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: wmt(1.18)_US_美国_38, server: 167.88.61.96, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: wmt(1.18)_US_美国_39, server: 167.88.63.61, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: wmt(1.18)_US_美国_40, server: 167.88.63.61, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_41, server: 198.57.27.172, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: wmt(1.18)_US_美国_42, server: 167.88.63.71, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: wmt(1.18)_US_美国_43, server: 167.88.63.61, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: wmt(1.18)_US_美国_44, server: 167.88.63.61, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_45, server: 134.195.196.33, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_46, server: 198.57.27.184, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_47, server: 134.195.198.250, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: wmt(1.18)_GB_英国_48, server: 172.99.190.90, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: wmt(1.18)_US_美国_49, server: 167.88.61.130, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_50, server: 134.195.196.52, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: wmt(1.18)_NO_挪威_51, server: 46.29.218.146, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: wmt(1.18)_US_美国_52, server: 142.202.48.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: wmt(1.18)_CA_加拿大_53, server: 134.195.196.199, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: wmt(1.18)_GB_英国_54, server: 212.38.189.174, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: wmt(1.18)_US_美国_55, server: 167.88.61.130, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: wmt(1.18)_US_美国_56, server: 38.121.43.71, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: wmt(1.18)_US_美国_57, server: 38.64.138.145, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: wmt(1.20)_CN_中国_1, server: 101.89.109.30, port: 10015, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: wmt(1.20)_CN_中国_2, server: vipdedi.boom.ovh, port: 65521, type: vmess, uuid: a8d9724a-d61c-3d85-8cad-07e4d45a9441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mydisk, ws-headers: {Host: vipdedi.boom.ovh}, udp: true}
+  - {name: wmt(1.20)_GB_英国_3, server: uk1-3.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: uk1-3.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: wmt(1.20)_GB_英国_4, server: uk1-1.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: uk1-1.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: wmt(1.20)_CN_中国_5, server: 183.232.56.189, port: 64075, type: vmess, uuid: 55c2178c-bc0c-3d84-9295-8bac798b76b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.56.189}, udp: true}
+  - {name: wmt(1.20)_NO_挪威_6, server: 46.29.218.146, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_7, server: 142.202.48.17, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_8, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_9, server: 198.57.27.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_10, server: 198.57.27.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_US_美国_11, server: 38.91.101.11, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_12, server: 167.88.63.61, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_NL_荷兰_13, server: 37.218.245.122, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: fPn40BnheGrB, udp: true}
+  - {name: wmt(1.20)_US_美国_14, server: 167.88.61.130, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: wmt(1.20)_US_美国_15, server: 142.202.48.108, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: wmt(1.20)_FR_法国_16, server: 62.210.209.50, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: wmt(1.20)_CN_中国_17, server: 112.33.32.136, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: wmt(1.20)_CN_中国_18, server: 183.232.56.189, port: 64071, type: vmess, uuid: 55c2178c-bc0c-3d84-9295-8bac798b76b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.232.56.189}, udp: true}
+  - {name: wmt(1.20)_US_美国_19, server: 38.68.134.202, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_IN_印度_20, server: 172.105.59.32, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_NO_挪威_21, server: 46.29.218.146, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: wmt(1.20)_US_美国_22, server: 38.75.136.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: wmt(1.20)_US_美国_23, server: 169.197.143.157, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: wmt(1.20)_US_美国_24, server: 167.88.61.204, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: wmt(1.20)_US_美国_25, server: 38.75.136.102, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_26, server: 38.75.136.45, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: wmt(1.20)_US_美国_27, server: 38.68.134.69, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_GB_英国_28, server: 212.38.189.174, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: wmt(1.20)_US_美国_29, server: 38.68.135.19, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: wmt(1.20)_US_美国_30, server: 38.68.134.69, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_31, server: 142.202.48.34, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_32, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: wmt(1.20)_US_美国_33, server: 38.75.136.102, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_US_美国_34, server: 169.197.143.157, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: wmt(1.20)_CN_中国_35, server: 112.33.32.136, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_36, server: 134.195.196.110, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_US_美国_37, server: 169.197.143.157, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_38, server: 134.195.196.199, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_39, server: 198.57.27.152, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: wmt(1.20)_US_美国_40, server: 167.88.62.68, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_GB_英国_41, server: 212.38.189.174, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_42, server: 134.195.196.33, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_US_美国_43, server: 142.202.48.78, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: wmt(1.20)_US_美国_44, server: 167.88.61.130, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: wmt(1.20)_US_美国_45, server: 167.88.61.130, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: wmt(1.20)_US_美国_46, server: 167.88.63.61, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: wmt(1.20)_US_美国_47, server: 169.197.141.240, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_48, server: 134.195.196.199, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: wmt(1.20)_US_美国_49, server: 167.88.63.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_US_美国_50, server: 167.88.63.61, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: wmt(1.20)_US_美国_51, server: 142.202.48.105, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: wmt(1.20)_US_美国_52, server: 142.202.48.108, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: wmt(1.20)_US_美国_53, server: 169.197.143.157, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_54, server: 169.197.143.157, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: wmt(1.20)_US_美国_55, server: 142.202.48.105, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: wmt(1.20)_JP_日本_56, server: 85.208.108.134, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_57, server: 134.195.196.199, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: wmt(1.20)_US_美国_58, server: 167.88.63.74, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: wmt(1.20)_US_美国_59, server: 142.202.48.52, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: wmt(1.20)_US_美国_60, server: trojan.wefuckgfw.gq, port: 443, type: trojan, password: RKfyQBry, sni: trojan.wefuckgfw.gq, skip-cert-verify: true, udp: true}
+  - {name: wmt(1.20)_US_美国_61, server: 142.202.48.34, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_62, server: 134.195.198.250, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: wmt(1.20)_US_美国_63, server: 169.197.143.157, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: wmt(1.20)_US_美国_64, server: 167.88.62.68, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: wmt(1.20)_US_美国_65, server: 38.75.136.45, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_66, server: 169.197.141.91, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: wmt(1.20)_JP_日本_67, server: 85.208.110.2, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_GB_英国_68, server: 212.38.189.174, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: wmt(1.20)_GB_英国_69, server: 212.38.189.174, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_70, server: 134.195.198.250, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_71, server: 134.195.196.71, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_72, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_73, server: t1.ssrsub.com, port: 8443, type: trojan, password: 64c3ab43-dc1b-401c-9437-9adf7bcf4a28, sni: t1.ssrsub.com, skip-cert-verify: true, udp: true}
+  - {name: wmt(1.20)_GB_英国_74, server: 172.99.190.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_US_美国_75, server: 142.202.48.108, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: wmt(1.20)_US_美国_76, server: 167.88.61.130, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: wmt(1.20)_US_美国_77, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: wmt(1.20)_US_美国_78, server: 169.197.143.157, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_79, server: 134.195.196.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_80, server: 167.88.61.204, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_81, server: 169.197.143.157, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: wmt(1.20)_US_美国_82, server: 167.88.63.61, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: wmt(1.20)_US_美国_83, server: 169.197.141.91, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_84, server: 198.57.27.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: wmt(1.20)_US_美国_85, server: 167.88.63.61, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_86, server: 169.197.143.157, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: wmt(1.20)_US_美国_87, server: 38.75.136.58, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_US_美国_88, server: 38.143.66.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: wmt(1.20)_US_美国_89, server: 38.75.136.58, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_90, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: wmt(1.20)_NO_挪威_91, server: 46.29.218.146, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: wmt(1.20)_US_美国_92, server: 167.88.61.130, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: wmt(1.20)_US_美国_93, server: 169.197.143.157, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_GB_英国_94, server: 212.38.189.174, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_95, server: 38.75.136.58, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: wmt(1.20)_US_美国_96, server: 142.202.48.108, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_US_美国_97, server: 38.143.66.71, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: wmt(1.20)_NO_挪威_98, server: 46.29.218.170, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: wmt(1.20)_US_美国_99, server: 38.68.134.85, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_100, server: 167.88.63.61, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_101, server: 167.88.61.130, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_102, server: 38.68.134.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: wmt(1.20)_US_美国_103, server: 38.143.66.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: wmt(1.20)_US_美国_104, server: 167.88.63.61, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: wmt(1.20)_US_美国_105, server: 169.197.143.157, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_US_美国_106, server: 169.197.141.91, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_107, server: 134.195.196.199, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_108, server: 169.197.143.157, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: wmt(1.20)_US_美国_109, server: 167.88.61.130, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_110, server: 38.75.136.58, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: wmt(1.20)_US_美国_111, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: wmt(1.20)_US_美国_112, server: 38.68.134.191, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: wmt(1.20)_US_美国_113, server: 142.202.48.108, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: wmt(1.20)_US_美国_114, server: 38.121.43.91, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_GB_英国_115, server: 212.38.189.174, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_116, server: 134.195.196.199, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_117, server: 198.57.27.241, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: wmt(1.20)_US_美国_118, server: 167.88.63.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: wmt(1.20)_GB_英国_119, server: 172.99.190.90, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_120, server: 142.202.48.34, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: wmt(1.20)_US_美国_121, server: 167.88.61.130, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_US_美国_122, server: 142.202.48.105, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: wmt(1.20)_US_美国_123, server: 169.197.143.157, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(1.20)_CA_加拿大_124, server: 134.195.196.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: wmt(1.20)_US_美国_125, server: 169.197.143.157, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: wmt(1.20)_US_美国_126, server: 38.68.134.85, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: wmt(1.20)_US_美国_127, server: 38.107.226.48, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: wmt(1.20)_US_美国_128, server: 38.68.134.191, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: wmt(1.20)_JP_日本_129, server: 85.208.110.2, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: wmt(1.20)_GB_英国_130, server: 172.99.190.90, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: wmt(1.20)_GB_英国_131, server: 212.38.189.174, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - wmt(1.18)_GB_英国_1
-      - wmt(1.18)_GB_英国_2
-      - wmt(1.18)_GB_英国_3
-      - wmt(1.18)_GB_英国_4
-      - wmt(1.18)_NL_荷兰_5
-      - wmt(1.18)_NL_荷兰_6
-      - wmt(1.18)_JP_日本_7
-      - wmt(1.18)_CA_加拿大_8
-      - wmt(1.18)_CA_加拿大_9
-      - wmt(1.18)_US_美国_10
-      - wmt(1.18)_CA_加拿大_11
-      - wmt(1.18)_US_美国_12
-      - wmt(1.18)_US_美国_13
-      - wmt(1.18)_CA_加拿大_14
-      - wmt(1.18)_US_美国_15
-      - wmt(1.18)_CA_加拿大_16
-      - wmt(1.18)_US_美国_17
-      - wmt(1.18)_US_美国_18
-      - wmt(1.18)_US_美国_19
-      - wmt(1.18)_GB_英国_20
-      - wmt(1.18)_US_美国_21
-      - wmt(1.18)_CA_加拿大_22
-      - wmt(1.18)_CA_加拿大_23
-      - wmt(1.18)_FR_法国_24
-      - wmt(1.18)_US_美国_25
-      - wmt(1.18)_US_美国_26
-      - wmt(1.18)_US_美国_27
-      - wmt(1.18)_CA_加拿大_28
-      - wmt(1.18)_US_美国_29
-      - wmt(1.18)_GB_英国_30
-      - wmt(1.18)_CA_加拿大_31
-      - wmt(1.18)_US_美国_32
-      - wmt(1.18)_33
-      - wmt(1.18)_FR_法国_34
-      - wmt(1.18)_US_美国_35
-      - wmt(1.18)_CA_加拿大_36
-      - wmt(1.18)_US_美国_37
-      - wmt(1.18)_US_美国_38
-      - wmt(1.18)_US_美国_39
-      - wmt(1.18)_US_美国_40
-      - wmt(1.18)_CA_加拿大_41
-      - wmt(1.18)_US_美国_42
-      - wmt(1.18)_US_美国_43
-      - wmt(1.18)_US_美国_44
-      - wmt(1.18)_CA_加拿大_45
-      - wmt(1.18)_CA_加拿大_46
-      - wmt(1.18)_CA_加拿大_47
-      - wmt(1.18)_GB_英国_48
-      - wmt(1.18)_US_美国_49
-      - wmt(1.18)_CA_加拿大_50
-      - wmt(1.18)_NO_挪威_51
-      - wmt(1.18)_US_美国_52
-      - wmt(1.18)_CA_加拿大_53
-      - wmt(1.18)_GB_英国_54
-      - wmt(1.18)_US_美国_55
-      - wmt(1.18)_US_美国_56
-      - wmt(1.18)_US_美国_57
+      - wmt(1.20)_CN_中国_1
+      - wmt(1.20)_CN_中国_2
+      - wmt(1.20)_GB_英国_3
+      - wmt(1.20)_GB_英国_4
+      - wmt(1.20)_CN_中国_5
+      - wmt(1.20)_NO_挪威_6
+      - wmt(1.20)_US_美国_7
+      - wmt(1.20)_CA_加拿大_8
+      - wmt(1.20)_CA_加拿大_9
+      - wmt(1.20)_CA_加拿大_10
+      - wmt(1.20)_US_美国_11
+      - wmt(1.20)_US_美国_12
+      - wmt(1.20)_NL_荷兰_13
+      - wmt(1.20)_US_美国_14
+      - wmt(1.20)_US_美国_15
+      - wmt(1.20)_FR_法国_16
+      - wmt(1.20)_CN_中国_17
+      - wmt(1.20)_CN_中国_18
+      - wmt(1.20)_US_美国_19
+      - wmt(1.20)_IN_印度_20
+      - wmt(1.20)_NO_挪威_21
+      - wmt(1.20)_US_美国_22
+      - wmt(1.20)_US_美国_23
+      - wmt(1.20)_US_美国_24
+      - wmt(1.20)_US_美国_25
+      - wmt(1.20)_US_美国_26
+      - wmt(1.20)_US_美国_27
+      - wmt(1.20)_GB_英国_28
+      - wmt(1.20)_US_美国_29
+      - wmt(1.20)_US_美国_30
+      - wmt(1.20)_US_美国_31
+      - wmt(1.20)_CA_加拿大_32
+      - wmt(1.20)_US_美国_33
+      - wmt(1.20)_US_美国_34
+      - wmt(1.20)_CN_中国_35
+      - wmt(1.20)_CA_加拿大_36
+      - wmt(1.20)_US_美国_37
+      - wmt(1.20)_CA_加拿大_38
+      - wmt(1.20)_CA_加拿大_39
+      - wmt(1.20)_US_美国_40
+      - wmt(1.20)_GB_英国_41
+      - wmt(1.20)_CA_加拿大_42
+      - wmt(1.20)_US_美国_43
+      - wmt(1.20)_US_美国_44
+      - wmt(1.20)_US_美国_45
+      - wmt(1.20)_US_美国_46
+      - wmt(1.20)_US_美国_47
+      - wmt(1.20)_CA_加拿大_48
+      - wmt(1.20)_US_美国_49
+      - wmt(1.20)_US_美国_50
+      - wmt(1.20)_US_美国_51
+      - wmt(1.20)_US_美国_52
+      - wmt(1.20)_US_美国_53
+      - wmt(1.20)_US_美国_54
+      - wmt(1.20)_US_美国_55
+      - wmt(1.20)_JP_日本_56
+      - wmt(1.20)_CA_加拿大_57
+      - wmt(1.20)_US_美国_58
+      - wmt(1.20)_US_美国_59
+      - wmt(1.20)_US_美国_60
+      - wmt(1.20)_US_美国_61
+      - wmt(1.20)_CA_加拿大_62
+      - wmt(1.20)_US_美国_63
+      - wmt(1.20)_US_美国_64
+      - wmt(1.20)_US_美国_65
+      - wmt(1.20)_US_美国_66
+      - wmt(1.20)_JP_日本_67
+      - wmt(1.20)_GB_英国_68
+      - wmt(1.20)_GB_英国_69
+      - wmt(1.20)_CA_加拿大_70
+      - wmt(1.20)_CA_加拿大_71
+      - wmt(1.20)_CA_加拿大_72
+      - wmt(1.20)_CA_加拿大_73
+      - wmt(1.20)_GB_英国_74
+      - wmt(1.20)_US_美国_75
+      - wmt(1.20)_US_美国_76
+      - wmt(1.20)_US_美国_77
+      - wmt(1.20)_US_美国_78
+      - wmt(1.20)_CA_加拿大_79
+      - wmt(1.20)_US_美国_80
+      - wmt(1.20)_US_美国_81
+      - wmt(1.20)_US_美国_82
+      - wmt(1.20)_US_美国_83
+      - wmt(1.20)_CA_加拿大_84
+      - wmt(1.20)_US_美国_85
+      - wmt(1.20)_US_美国_86
+      - wmt(1.20)_US_美国_87
+      - wmt(1.20)_US_美国_88
+      - wmt(1.20)_US_美国_89
+      - wmt(1.20)_US_美国_90
+      - wmt(1.20)_NO_挪威_91
+      - wmt(1.20)_US_美国_92
+      - wmt(1.20)_US_美国_93
+      - wmt(1.20)_GB_英国_94
+      - wmt(1.20)_US_美国_95
+      - wmt(1.20)_US_美国_96
+      - wmt(1.20)_US_美国_97
+      - wmt(1.20)_NO_挪威_98
+      - wmt(1.20)_US_美国_99
+      - wmt(1.20)_US_美国_100
+      - wmt(1.20)_US_美国_101
+      - wmt(1.20)_US_美国_102
+      - wmt(1.20)_US_美国_103
+      - wmt(1.20)_US_美国_104
+      - wmt(1.20)_US_美国_105
+      - wmt(1.20)_US_美国_106
+      - wmt(1.20)_CA_加拿大_107
+      - wmt(1.20)_US_美国_108
+      - wmt(1.20)_US_美国_109
+      - wmt(1.20)_US_美国_110
+      - wmt(1.20)_US_美国_111
+      - wmt(1.20)_US_美国_112
+      - wmt(1.20)_US_美国_113
+      - wmt(1.20)_US_美国_114
+      - wmt(1.20)_GB_英国_115
+      - wmt(1.20)_CA_加拿大_116
+      - wmt(1.20)_CA_加拿大_117
+      - wmt(1.20)_US_美国_118
+      - wmt(1.20)_GB_英国_119
+      - wmt(1.20)_US_美国_120
+      - wmt(1.20)_US_美国_121
+      - wmt(1.20)_US_美国_122
+      - wmt(1.20)_US_美国_123
+      - wmt(1.20)_CA_加拿大_124
+      - wmt(1.20)_US_美国_125
+      - wmt(1.20)_US_美国_126
+      - wmt(1.20)_US_美国_127
+      - wmt(1.20)_US_美国_128
+      - wmt(1.20)_JP_日本_129
+      - wmt(1.20)_GB_英国_130
+      - wmt(1.20)_GB_英国_131
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - wmt(1.18)_GB_英国_1
-      - wmt(1.18)_GB_英国_2
-      - wmt(1.18)_GB_英国_3
-      - wmt(1.18)_GB_英国_4
-      - wmt(1.18)_NL_荷兰_5
-      - wmt(1.18)_NL_荷兰_6
-      - wmt(1.18)_JP_日本_7
-      - wmt(1.18)_CA_加拿大_8
-      - wmt(1.18)_CA_加拿大_9
-      - wmt(1.18)_US_美国_10
-      - wmt(1.18)_CA_加拿大_11
-      - wmt(1.18)_US_美国_12
-      - wmt(1.18)_US_美国_13
-      - wmt(1.18)_CA_加拿大_14
-      - wmt(1.18)_US_美国_15
-      - wmt(1.18)_CA_加拿大_16
-      - wmt(1.18)_US_美国_17
-      - wmt(1.18)_US_美国_18
-      - wmt(1.18)_US_美国_19
-      - wmt(1.18)_GB_英国_20
-      - wmt(1.18)_US_美国_21
-      - wmt(1.18)_CA_加拿大_22
-      - wmt(1.18)_CA_加拿大_23
-      - wmt(1.18)_FR_法国_24
-      - wmt(1.18)_US_美国_25
-      - wmt(1.18)_US_美国_26
-      - wmt(1.18)_US_美国_27
-      - wmt(1.18)_CA_加拿大_28
-      - wmt(1.18)_US_美国_29
-      - wmt(1.18)_GB_英国_30
-      - wmt(1.18)_CA_加拿大_31
-      - wmt(1.18)_US_美国_32
-      - wmt(1.18)_33
-      - wmt(1.18)_FR_法国_34
-      - wmt(1.18)_US_美国_35
-      - wmt(1.18)_CA_加拿大_36
-      - wmt(1.18)_US_美国_37
-      - wmt(1.18)_US_美国_38
-      - wmt(1.18)_US_美国_39
-      - wmt(1.18)_US_美国_40
-      - wmt(1.18)_CA_加拿大_41
-      - wmt(1.18)_US_美国_42
-      - wmt(1.18)_US_美国_43
-      - wmt(1.18)_US_美国_44
-      - wmt(1.18)_CA_加拿大_45
-      - wmt(1.18)_CA_加拿大_46
-      - wmt(1.18)_CA_加拿大_47
-      - wmt(1.18)_GB_英国_48
-      - wmt(1.18)_US_美国_49
-      - wmt(1.18)_CA_加拿大_50
-      - wmt(1.18)_NO_挪威_51
-      - wmt(1.18)_US_美国_52
-      - wmt(1.18)_CA_加拿大_53
-      - wmt(1.18)_GB_英国_54
-      - wmt(1.18)_US_美国_55
-      - wmt(1.18)_US_美国_56
-      - wmt(1.18)_US_美国_57
+      - wmt(1.20)_CN_中国_1
+      - wmt(1.20)_CN_中国_2
+      - wmt(1.20)_GB_英国_3
+      - wmt(1.20)_GB_英国_4
+      - wmt(1.20)_CN_中国_5
+      - wmt(1.20)_NO_挪威_6
+      - wmt(1.20)_US_美国_7
+      - wmt(1.20)_CA_加拿大_8
+      - wmt(1.20)_CA_加拿大_9
+      - wmt(1.20)_CA_加拿大_10
+      - wmt(1.20)_US_美国_11
+      - wmt(1.20)_US_美国_12
+      - wmt(1.20)_NL_荷兰_13
+      - wmt(1.20)_US_美国_14
+      - wmt(1.20)_US_美国_15
+      - wmt(1.20)_FR_法国_16
+      - wmt(1.20)_CN_中国_17
+      - wmt(1.20)_CN_中国_18
+      - wmt(1.20)_US_美国_19
+      - wmt(1.20)_IN_印度_20
+      - wmt(1.20)_NO_挪威_21
+      - wmt(1.20)_US_美国_22
+      - wmt(1.20)_US_美国_23
+      - wmt(1.20)_US_美国_24
+      - wmt(1.20)_US_美国_25
+      - wmt(1.20)_US_美国_26
+      - wmt(1.20)_US_美国_27
+      - wmt(1.20)_GB_英国_28
+      - wmt(1.20)_US_美国_29
+      - wmt(1.20)_US_美国_30
+      - wmt(1.20)_US_美国_31
+      - wmt(1.20)_CA_加拿大_32
+      - wmt(1.20)_US_美国_33
+      - wmt(1.20)_US_美国_34
+      - wmt(1.20)_CN_中国_35
+      - wmt(1.20)_CA_加拿大_36
+      - wmt(1.20)_US_美国_37
+      - wmt(1.20)_CA_加拿大_38
+      - wmt(1.20)_CA_加拿大_39
+      - wmt(1.20)_US_美国_40
+      - wmt(1.20)_GB_英国_41
+      - wmt(1.20)_CA_加拿大_42
+      - wmt(1.20)_US_美国_43
+      - wmt(1.20)_US_美国_44
+      - wmt(1.20)_US_美国_45
+      - wmt(1.20)_US_美国_46
+      - wmt(1.20)_US_美国_47
+      - wmt(1.20)_CA_加拿大_48
+      - wmt(1.20)_US_美国_49
+      - wmt(1.20)_US_美国_50
+      - wmt(1.20)_US_美国_51
+      - wmt(1.20)_US_美国_52
+      - wmt(1.20)_US_美国_53
+      - wmt(1.20)_US_美国_54
+      - wmt(1.20)_US_美国_55
+      - wmt(1.20)_JP_日本_56
+      - wmt(1.20)_CA_加拿大_57
+      - wmt(1.20)_US_美国_58
+      - wmt(1.20)_US_美国_59
+      - wmt(1.20)_US_美国_60
+      - wmt(1.20)_US_美国_61
+      - wmt(1.20)_CA_加拿大_62
+      - wmt(1.20)_US_美国_63
+      - wmt(1.20)_US_美国_64
+      - wmt(1.20)_US_美国_65
+      - wmt(1.20)_US_美国_66
+      - wmt(1.20)_JP_日本_67
+      - wmt(1.20)_GB_英国_68
+      - wmt(1.20)_GB_英国_69
+      - wmt(1.20)_CA_加拿大_70
+      - wmt(1.20)_CA_加拿大_71
+      - wmt(1.20)_CA_加拿大_72
+      - wmt(1.20)_CA_加拿大_73
+      - wmt(1.20)_GB_英国_74
+      - wmt(1.20)_US_美国_75
+      - wmt(1.20)_US_美国_76
+      - wmt(1.20)_US_美国_77
+      - wmt(1.20)_US_美国_78
+      - wmt(1.20)_CA_加拿大_79
+      - wmt(1.20)_US_美国_80
+      - wmt(1.20)_US_美国_81
+      - wmt(1.20)_US_美国_82
+      - wmt(1.20)_US_美国_83
+      - wmt(1.20)_CA_加拿大_84
+      - wmt(1.20)_US_美国_85
+      - wmt(1.20)_US_美国_86
+      - wmt(1.20)_US_美国_87
+      - wmt(1.20)_US_美国_88
+      - wmt(1.20)_US_美国_89
+      - wmt(1.20)_US_美国_90
+      - wmt(1.20)_NO_挪威_91
+      - wmt(1.20)_US_美国_92
+      - wmt(1.20)_US_美国_93
+      - wmt(1.20)_GB_英国_94
+      - wmt(1.20)_US_美国_95
+      - wmt(1.20)_US_美国_96
+      - wmt(1.20)_US_美国_97
+      - wmt(1.20)_NO_挪威_98
+      - wmt(1.20)_US_美国_99
+      - wmt(1.20)_US_美国_100
+      - wmt(1.20)_US_美国_101
+      - wmt(1.20)_US_美国_102
+      - wmt(1.20)_US_美国_103
+      - wmt(1.20)_US_美国_104
+      - wmt(1.20)_US_美国_105
+      - wmt(1.20)_US_美国_106
+      - wmt(1.20)_CA_加拿大_107
+      - wmt(1.20)_US_美国_108
+      - wmt(1.20)_US_美国_109
+      - wmt(1.20)_US_美国_110
+      - wmt(1.20)_US_美国_111
+      - wmt(1.20)_US_美国_112
+      - wmt(1.20)_US_美国_113
+      - wmt(1.20)_US_美国_114
+      - wmt(1.20)_GB_英国_115
+      - wmt(1.20)_CA_加拿大_116
+      - wmt(1.20)_CA_加拿大_117
+      - wmt(1.20)_US_美国_118
+      - wmt(1.20)_GB_英国_119
+      - wmt(1.20)_US_美国_120
+      - wmt(1.20)_US_美国_121
+      - wmt(1.20)_US_美国_122
+      - wmt(1.20)_US_美国_123
+      - wmt(1.20)_CA_加拿大_124
+      - wmt(1.20)_US_美国_125
+      - wmt(1.20)_US_美国_126
+      - wmt(1.20)_US_美国_127
+      - wmt(1.20)_US_美国_128
+      - wmt(1.20)_JP_日本_129
+      - wmt(1.20)_GB_英国_130
+      - wmt(1.20)_GB_英国_131
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - wmt(1.18)_GB_英国_1
-      - wmt(1.18)_GB_英国_2
-      - wmt(1.18)_GB_英国_3
-      - wmt(1.18)_GB_英国_4
-      - wmt(1.18)_NL_荷兰_5
-      - wmt(1.18)_NL_荷兰_6
-      - wmt(1.18)_JP_日本_7
-      - wmt(1.18)_CA_加拿大_8
-      - wmt(1.18)_CA_加拿大_9
-      - wmt(1.18)_US_美国_10
-      - wmt(1.18)_CA_加拿大_11
-      - wmt(1.18)_US_美国_12
-      - wmt(1.18)_US_美国_13
-      - wmt(1.18)_CA_加拿大_14
-      - wmt(1.18)_US_美国_15
-      - wmt(1.18)_CA_加拿大_16
-      - wmt(1.18)_US_美国_17
-      - wmt(1.18)_US_美国_18
-      - wmt(1.18)_US_美国_19
-      - wmt(1.18)_GB_英国_20
-      - wmt(1.18)_US_美国_21
-      - wmt(1.18)_CA_加拿大_22
-      - wmt(1.18)_CA_加拿大_23
-      - wmt(1.18)_FR_法国_24
-      - wmt(1.18)_US_美国_25
-      - wmt(1.18)_US_美国_26
-      - wmt(1.18)_US_美国_27
-      - wmt(1.18)_CA_加拿大_28
-      - wmt(1.18)_US_美国_29
-      - wmt(1.18)_GB_英国_30
-      - wmt(1.18)_CA_加拿大_31
-      - wmt(1.18)_US_美国_32
-      - wmt(1.18)_33
-      - wmt(1.18)_FR_法国_34
-      - wmt(1.18)_US_美国_35
-      - wmt(1.18)_CA_加拿大_36
-      - wmt(1.18)_US_美国_37
-      - wmt(1.18)_US_美国_38
-      - wmt(1.18)_US_美国_39
-      - wmt(1.18)_US_美国_40
-      - wmt(1.18)_CA_加拿大_41
-      - wmt(1.18)_US_美国_42
-      - wmt(1.18)_US_美国_43
-      - wmt(1.18)_US_美国_44
-      - wmt(1.18)_CA_加拿大_45
-      - wmt(1.18)_CA_加拿大_46
-      - wmt(1.18)_CA_加拿大_47
-      - wmt(1.18)_GB_英国_48
-      - wmt(1.18)_US_美国_49
-      - wmt(1.18)_CA_加拿大_50
-      - wmt(1.18)_NO_挪威_51
-      - wmt(1.18)_US_美国_52
-      - wmt(1.18)_CA_加拿大_53
-      - wmt(1.18)_GB_英国_54
-      - wmt(1.18)_US_美国_55
-      - wmt(1.18)_US_美国_56
-      - wmt(1.18)_US_美国_57
+      - wmt(1.20)_CN_中国_1
+      - wmt(1.20)_CN_中国_2
+      - wmt(1.20)_GB_英国_3
+      - wmt(1.20)_GB_英国_4
+      - wmt(1.20)_CN_中国_5
+      - wmt(1.20)_NO_挪威_6
+      - wmt(1.20)_US_美国_7
+      - wmt(1.20)_CA_加拿大_8
+      - wmt(1.20)_CA_加拿大_9
+      - wmt(1.20)_CA_加拿大_10
+      - wmt(1.20)_US_美国_11
+      - wmt(1.20)_US_美国_12
+      - wmt(1.20)_NL_荷兰_13
+      - wmt(1.20)_US_美国_14
+      - wmt(1.20)_US_美国_15
+      - wmt(1.20)_FR_法国_16
+      - wmt(1.20)_CN_中国_17
+      - wmt(1.20)_CN_中国_18
+      - wmt(1.20)_US_美国_19
+      - wmt(1.20)_IN_印度_20
+      - wmt(1.20)_NO_挪威_21
+      - wmt(1.20)_US_美国_22
+      - wmt(1.20)_US_美国_23
+      - wmt(1.20)_US_美国_24
+      - wmt(1.20)_US_美国_25
+      - wmt(1.20)_US_美国_26
+      - wmt(1.20)_US_美国_27
+      - wmt(1.20)_GB_英国_28
+      - wmt(1.20)_US_美国_29
+      - wmt(1.20)_US_美国_30
+      - wmt(1.20)_US_美国_31
+      - wmt(1.20)_CA_加拿大_32
+      - wmt(1.20)_US_美国_33
+      - wmt(1.20)_US_美国_34
+      - wmt(1.20)_CN_中国_35
+      - wmt(1.20)_CA_加拿大_36
+      - wmt(1.20)_US_美国_37
+      - wmt(1.20)_CA_加拿大_38
+      - wmt(1.20)_CA_加拿大_39
+      - wmt(1.20)_US_美国_40
+      - wmt(1.20)_GB_英国_41
+      - wmt(1.20)_CA_加拿大_42
+      - wmt(1.20)_US_美国_43
+      - wmt(1.20)_US_美国_44
+      - wmt(1.20)_US_美国_45
+      - wmt(1.20)_US_美国_46
+      - wmt(1.20)_US_美国_47
+      - wmt(1.20)_CA_加拿大_48
+      - wmt(1.20)_US_美国_49
+      - wmt(1.20)_US_美国_50
+      - wmt(1.20)_US_美国_51
+      - wmt(1.20)_US_美国_52
+      - wmt(1.20)_US_美国_53
+      - wmt(1.20)_US_美国_54
+      - wmt(1.20)_US_美国_55
+      - wmt(1.20)_JP_日本_56
+      - wmt(1.20)_CA_加拿大_57
+      - wmt(1.20)_US_美国_58
+      - wmt(1.20)_US_美国_59
+      - wmt(1.20)_US_美国_60
+      - wmt(1.20)_US_美国_61
+      - wmt(1.20)_CA_加拿大_62
+      - wmt(1.20)_US_美国_63
+      - wmt(1.20)_US_美国_64
+      - wmt(1.20)_US_美国_65
+      - wmt(1.20)_US_美国_66
+      - wmt(1.20)_JP_日本_67
+      - wmt(1.20)_GB_英国_68
+      - wmt(1.20)_GB_英国_69
+      - wmt(1.20)_CA_加拿大_70
+      - wmt(1.20)_CA_加拿大_71
+      - wmt(1.20)_CA_加拿大_72
+      - wmt(1.20)_CA_加拿大_73
+      - wmt(1.20)_GB_英国_74
+      - wmt(1.20)_US_美国_75
+      - wmt(1.20)_US_美国_76
+      - wmt(1.20)_US_美国_77
+      - wmt(1.20)_US_美国_78
+      - wmt(1.20)_CA_加拿大_79
+      - wmt(1.20)_US_美国_80
+      - wmt(1.20)_US_美国_81
+      - wmt(1.20)_US_美国_82
+      - wmt(1.20)_US_美国_83
+      - wmt(1.20)_CA_加拿大_84
+      - wmt(1.20)_US_美国_85
+      - wmt(1.20)_US_美国_86
+      - wmt(1.20)_US_美国_87
+      - wmt(1.20)_US_美国_88
+      - wmt(1.20)_US_美国_89
+      - wmt(1.20)_US_美国_90
+      - wmt(1.20)_NO_挪威_91
+      - wmt(1.20)_US_美国_92
+      - wmt(1.20)_US_美国_93
+      - wmt(1.20)_GB_英国_94
+      - wmt(1.20)_US_美国_95
+      - wmt(1.20)_US_美国_96
+      - wmt(1.20)_US_美国_97
+      - wmt(1.20)_NO_挪威_98
+      - wmt(1.20)_US_美国_99
+      - wmt(1.20)_US_美国_100
+      - wmt(1.20)_US_美国_101
+      - wmt(1.20)_US_美国_102
+      - wmt(1.20)_US_美国_103
+      - wmt(1.20)_US_美国_104
+      - wmt(1.20)_US_美国_105
+      - wmt(1.20)_US_美国_106
+      - wmt(1.20)_CA_加拿大_107
+      - wmt(1.20)_US_美国_108
+      - wmt(1.20)_US_美国_109
+      - wmt(1.20)_US_美国_110
+      - wmt(1.20)_US_美国_111
+      - wmt(1.20)_US_美国_112
+      - wmt(1.20)_US_美国_113
+      - wmt(1.20)_US_美国_114
+      - wmt(1.20)_GB_英国_115
+      - wmt(1.20)_CA_加拿大_116
+      - wmt(1.20)_CA_加拿大_117
+      - wmt(1.20)_US_美国_118
+      - wmt(1.20)_GB_英国_119
+      - wmt(1.20)_US_美国_120
+      - wmt(1.20)_US_美国_121
+      - wmt(1.20)_US_美国_122
+      - wmt(1.20)_US_美国_123
+      - wmt(1.20)_CA_加拿大_124
+      - wmt(1.20)_US_美国_125
+      - wmt(1.20)_US_美国_126
+      - wmt(1.20)_US_美国_127
+      - wmt(1.20)_US_美国_128
+      - wmt(1.20)_JP_日本_129
+      - wmt(1.20)_GB_英国_130
+      - wmt(1.20)_GB_英国_131
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -268,63 +564,137 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - wmt(1.18)_GB_英国_1
-      - wmt(1.18)_GB_英国_2
-      - wmt(1.18)_GB_英国_3
-      - wmt(1.18)_GB_英国_4
-      - wmt(1.18)_NL_荷兰_5
-      - wmt(1.18)_NL_荷兰_6
-      - wmt(1.18)_JP_日本_7
-      - wmt(1.18)_CA_加拿大_8
-      - wmt(1.18)_CA_加拿大_9
-      - wmt(1.18)_US_美国_10
-      - wmt(1.18)_CA_加拿大_11
-      - wmt(1.18)_US_美国_12
-      - wmt(1.18)_US_美国_13
-      - wmt(1.18)_CA_加拿大_14
-      - wmt(1.18)_US_美国_15
-      - wmt(1.18)_CA_加拿大_16
-      - wmt(1.18)_US_美国_17
-      - wmt(1.18)_US_美国_18
-      - wmt(1.18)_US_美国_19
-      - wmt(1.18)_GB_英国_20
-      - wmt(1.18)_US_美国_21
-      - wmt(1.18)_CA_加拿大_22
-      - wmt(1.18)_CA_加拿大_23
-      - wmt(1.18)_FR_法国_24
-      - wmt(1.18)_US_美国_25
-      - wmt(1.18)_US_美国_26
-      - wmt(1.18)_US_美国_27
-      - wmt(1.18)_CA_加拿大_28
-      - wmt(1.18)_US_美国_29
-      - wmt(1.18)_GB_英国_30
-      - wmt(1.18)_CA_加拿大_31
-      - wmt(1.18)_US_美国_32
-      - wmt(1.18)_33
-      - wmt(1.18)_FR_法国_34
-      - wmt(1.18)_US_美国_35
-      - wmt(1.18)_CA_加拿大_36
-      - wmt(1.18)_US_美国_37
-      - wmt(1.18)_US_美国_38
-      - wmt(1.18)_US_美国_39
-      - wmt(1.18)_US_美国_40
-      - wmt(1.18)_CA_加拿大_41
-      - wmt(1.18)_US_美国_42
-      - wmt(1.18)_US_美国_43
-      - wmt(1.18)_US_美国_44
-      - wmt(1.18)_CA_加拿大_45
-      - wmt(1.18)_CA_加拿大_46
-      - wmt(1.18)_CA_加拿大_47
-      - wmt(1.18)_GB_英国_48
-      - wmt(1.18)_US_美国_49
-      - wmt(1.18)_CA_加拿大_50
-      - wmt(1.18)_NO_挪威_51
-      - wmt(1.18)_US_美国_52
-      - wmt(1.18)_CA_加拿大_53
-      - wmt(1.18)_GB_英国_54
-      - wmt(1.18)_US_美国_55
-      - wmt(1.18)_US_美国_56
-      - wmt(1.18)_US_美国_57
+      - wmt(1.20)_CN_中国_1
+      - wmt(1.20)_CN_中国_2
+      - wmt(1.20)_GB_英国_3
+      - wmt(1.20)_GB_英国_4
+      - wmt(1.20)_CN_中国_5
+      - wmt(1.20)_NO_挪威_6
+      - wmt(1.20)_US_美国_7
+      - wmt(1.20)_CA_加拿大_8
+      - wmt(1.20)_CA_加拿大_9
+      - wmt(1.20)_CA_加拿大_10
+      - wmt(1.20)_US_美国_11
+      - wmt(1.20)_US_美国_12
+      - wmt(1.20)_NL_荷兰_13
+      - wmt(1.20)_US_美国_14
+      - wmt(1.20)_US_美国_15
+      - wmt(1.20)_FR_法国_16
+      - wmt(1.20)_CN_中国_17
+      - wmt(1.20)_CN_中国_18
+      - wmt(1.20)_US_美国_19
+      - wmt(1.20)_IN_印度_20
+      - wmt(1.20)_NO_挪威_21
+      - wmt(1.20)_US_美国_22
+      - wmt(1.20)_US_美国_23
+      - wmt(1.20)_US_美国_24
+      - wmt(1.20)_US_美国_25
+      - wmt(1.20)_US_美国_26
+      - wmt(1.20)_US_美国_27
+      - wmt(1.20)_GB_英国_28
+      - wmt(1.20)_US_美国_29
+      - wmt(1.20)_US_美国_30
+      - wmt(1.20)_US_美国_31
+      - wmt(1.20)_CA_加拿大_32
+      - wmt(1.20)_US_美国_33
+      - wmt(1.20)_US_美国_34
+      - wmt(1.20)_CN_中国_35
+      - wmt(1.20)_CA_加拿大_36
+      - wmt(1.20)_US_美国_37
+      - wmt(1.20)_CA_加拿大_38
+      - wmt(1.20)_CA_加拿大_39
+      - wmt(1.20)_US_美国_40
+      - wmt(1.20)_GB_英国_41
+      - wmt(1.20)_CA_加拿大_42
+      - wmt(1.20)_US_美国_43
+      - wmt(1.20)_US_美国_44
+      - wmt(1.20)_US_美国_45
+      - wmt(1.20)_US_美国_46
+      - wmt(1.20)_US_美国_47
+      - wmt(1.20)_CA_加拿大_48
+      - wmt(1.20)_US_美国_49
+      - wmt(1.20)_US_美国_50
+      - wmt(1.20)_US_美国_51
+      - wmt(1.20)_US_美国_52
+      - wmt(1.20)_US_美国_53
+      - wmt(1.20)_US_美国_54
+      - wmt(1.20)_US_美国_55
+      - wmt(1.20)_JP_日本_56
+      - wmt(1.20)_CA_加拿大_57
+      - wmt(1.20)_US_美国_58
+      - wmt(1.20)_US_美国_59
+      - wmt(1.20)_US_美国_60
+      - wmt(1.20)_US_美国_61
+      - wmt(1.20)_CA_加拿大_62
+      - wmt(1.20)_US_美国_63
+      - wmt(1.20)_US_美国_64
+      - wmt(1.20)_US_美国_65
+      - wmt(1.20)_US_美国_66
+      - wmt(1.20)_JP_日本_67
+      - wmt(1.20)_GB_英国_68
+      - wmt(1.20)_GB_英国_69
+      - wmt(1.20)_CA_加拿大_70
+      - wmt(1.20)_CA_加拿大_71
+      - wmt(1.20)_CA_加拿大_72
+      - wmt(1.20)_CA_加拿大_73
+      - wmt(1.20)_GB_英国_74
+      - wmt(1.20)_US_美国_75
+      - wmt(1.20)_US_美国_76
+      - wmt(1.20)_US_美国_77
+      - wmt(1.20)_US_美国_78
+      - wmt(1.20)_CA_加拿大_79
+      - wmt(1.20)_US_美国_80
+      - wmt(1.20)_US_美国_81
+      - wmt(1.20)_US_美国_82
+      - wmt(1.20)_US_美国_83
+      - wmt(1.20)_CA_加拿大_84
+      - wmt(1.20)_US_美国_85
+      - wmt(1.20)_US_美国_86
+      - wmt(1.20)_US_美国_87
+      - wmt(1.20)_US_美国_88
+      - wmt(1.20)_US_美国_89
+      - wmt(1.20)_US_美国_90
+      - wmt(1.20)_NO_挪威_91
+      - wmt(1.20)_US_美国_92
+      - wmt(1.20)_US_美国_93
+      - wmt(1.20)_GB_英国_94
+      - wmt(1.20)_US_美国_95
+      - wmt(1.20)_US_美国_96
+      - wmt(1.20)_US_美国_97
+      - wmt(1.20)_NO_挪威_98
+      - wmt(1.20)_US_美国_99
+      - wmt(1.20)_US_美国_100
+      - wmt(1.20)_US_美国_101
+      - wmt(1.20)_US_美国_102
+      - wmt(1.20)_US_美国_103
+      - wmt(1.20)_US_美国_104
+      - wmt(1.20)_US_美国_105
+      - wmt(1.20)_US_美国_106
+      - wmt(1.20)_CA_加拿大_107
+      - wmt(1.20)_US_美国_108
+      - wmt(1.20)_US_美国_109
+      - wmt(1.20)_US_美国_110
+      - wmt(1.20)_US_美国_111
+      - wmt(1.20)_US_美国_112
+      - wmt(1.20)_US_美国_113
+      - wmt(1.20)_US_美国_114
+      - wmt(1.20)_GB_英国_115
+      - wmt(1.20)_CA_加拿大_116
+      - wmt(1.20)_CA_加拿大_117
+      - wmt(1.20)_US_美国_118
+      - wmt(1.20)_GB_英国_119
+      - wmt(1.20)_US_美国_120
+      - wmt(1.20)_US_美国_121
+      - wmt(1.20)_US_美国_122
+      - wmt(1.20)_US_美国_123
+      - wmt(1.20)_CA_加拿大_124
+      - wmt(1.20)_US_美国_125
+      - wmt(1.20)_US_美国_126
+      - wmt(1.20)_US_美国_127
+      - wmt(1.20)_US_美国_128
+      - wmt(1.20)_JP_日本_129
+      - wmt(1.20)_GB_英国_130
+      - wmt(1.20)_GB_英国_131
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -335,188 +705,410 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - wmt(1.18)_GB_英国_1
-      - wmt(1.18)_GB_英国_2
-      - wmt(1.18)_GB_英国_3
-      - wmt(1.18)_GB_英国_4
-      - wmt(1.18)_NL_荷兰_5
-      - wmt(1.18)_NL_荷兰_6
-      - wmt(1.18)_JP_日本_7
-      - wmt(1.18)_CA_加拿大_8
-      - wmt(1.18)_CA_加拿大_9
-      - wmt(1.18)_US_美国_10
-      - wmt(1.18)_CA_加拿大_11
-      - wmt(1.18)_US_美国_12
-      - wmt(1.18)_US_美国_13
-      - wmt(1.18)_CA_加拿大_14
-      - wmt(1.18)_US_美国_15
-      - wmt(1.18)_CA_加拿大_16
-      - wmt(1.18)_US_美国_17
-      - wmt(1.18)_US_美国_18
-      - wmt(1.18)_US_美国_19
-      - wmt(1.18)_GB_英国_20
-      - wmt(1.18)_US_美国_21
-      - wmt(1.18)_CA_加拿大_22
-      - wmt(1.18)_CA_加拿大_23
-      - wmt(1.18)_FR_法国_24
-      - wmt(1.18)_US_美国_25
-      - wmt(1.18)_US_美国_26
-      - wmt(1.18)_US_美国_27
-      - wmt(1.18)_CA_加拿大_28
-      - wmt(1.18)_US_美国_29
-      - wmt(1.18)_GB_英国_30
-      - wmt(1.18)_CA_加拿大_31
-      - wmt(1.18)_US_美国_32
-      - wmt(1.18)_33
-      - wmt(1.18)_FR_法国_34
-      - wmt(1.18)_US_美国_35
-      - wmt(1.18)_CA_加拿大_36
-      - wmt(1.18)_US_美国_37
-      - wmt(1.18)_US_美国_38
-      - wmt(1.18)_US_美国_39
-      - wmt(1.18)_US_美国_40
-      - wmt(1.18)_CA_加拿大_41
-      - wmt(1.18)_US_美国_42
-      - wmt(1.18)_US_美国_43
-      - wmt(1.18)_US_美国_44
-      - wmt(1.18)_CA_加拿大_45
-      - wmt(1.18)_CA_加拿大_46
-      - wmt(1.18)_CA_加拿大_47
-      - wmt(1.18)_GB_英国_48
-      - wmt(1.18)_US_美国_49
-      - wmt(1.18)_CA_加拿大_50
-      - wmt(1.18)_NO_挪威_51
-      - wmt(1.18)_US_美国_52
-      - wmt(1.18)_CA_加拿大_53
-      - wmt(1.18)_GB_英国_54
-      - wmt(1.18)_US_美国_55
-      - wmt(1.18)_US_美国_56
-      - wmt(1.18)_US_美国_57
+      - wmt(1.20)_CN_中国_1
+      - wmt(1.20)_CN_中国_2
+      - wmt(1.20)_GB_英国_3
+      - wmt(1.20)_GB_英国_4
+      - wmt(1.20)_CN_中国_5
+      - wmt(1.20)_NO_挪威_6
+      - wmt(1.20)_US_美国_7
+      - wmt(1.20)_CA_加拿大_8
+      - wmt(1.20)_CA_加拿大_9
+      - wmt(1.20)_CA_加拿大_10
+      - wmt(1.20)_US_美国_11
+      - wmt(1.20)_US_美国_12
+      - wmt(1.20)_NL_荷兰_13
+      - wmt(1.20)_US_美国_14
+      - wmt(1.20)_US_美国_15
+      - wmt(1.20)_FR_法国_16
+      - wmt(1.20)_CN_中国_17
+      - wmt(1.20)_CN_中国_18
+      - wmt(1.20)_US_美国_19
+      - wmt(1.20)_IN_印度_20
+      - wmt(1.20)_NO_挪威_21
+      - wmt(1.20)_US_美国_22
+      - wmt(1.20)_US_美国_23
+      - wmt(1.20)_US_美国_24
+      - wmt(1.20)_US_美国_25
+      - wmt(1.20)_US_美国_26
+      - wmt(1.20)_US_美国_27
+      - wmt(1.20)_GB_英国_28
+      - wmt(1.20)_US_美国_29
+      - wmt(1.20)_US_美国_30
+      - wmt(1.20)_US_美国_31
+      - wmt(1.20)_CA_加拿大_32
+      - wmt(1.20)_US_美国_33
+      - wmt(1.20)_US_美国_34
+      - wmt(1.20)_CN_中国_35
+      - wmt(1.20)_CA_加拿大_36
+      - wmt(1.20)_US_美国_37
+      - wmt(1.20)_CA_加拿大_38
+      - wmt(1.20)_CA_加拿大_39
+      - wmt(1.20)_US_美国_40
+      - wmt(1.20)_GB_英国_41
+      - wmt(1.20)_CA_加拿大_42
+      - wmt(1.20)_US_美国_43
+      - wmt(1.20)_US_美国_44
+      - wmt(1.20)_US_美国_45
+      - wmt(1.20)_US_美国_46
+      - wmt(1.20)_US_美国_47
+      - wmt(1.20)_CA_加拿大_48
+      - wmt(1.20)_US_美国_49
+      - wmt(1.20)_US_美国_50
+      - wmt(1.20)_US_美国_51
+      - wmt(1.20)_US_美国_52
+      - wmt(1.20)_US_美国_53
+      - wmt(1.20)_US_美国_54
+      - wmt(1.20)_US_美国_55
+      - wmt(1.20)_JP_日本_56
+      - wmt(1.20)_CA_加拿大_57
+      - wmt(1.20)_US_美国_58
+      - wmt(1.20)_US_美国_59
+      - wmt(1.20)_US_美国_60
+      - wmt(1.20)_US_美国_61
+      - wmt(1.20)_CA_加拿大_62
+      - wmt(1.20)_US_美国_63
+      - wmt(1.20)_US_美国_64
+      - wmt(1.20)_US_美国_65
+      - wmt(1.20)_US_美国_66
+      - wmt(1.20)_JP_日本_67
+      - wmt(1.20)_GB_英国_68
+      - wmt(1.20)_GB_英国_69
+      - wmt(1.20)_CA_加拿大_70
+      - wmt(1.20)_CA_加拿大_71
+      - wmt(1.20)_CA_加拿大_72
+      - wmt(1.20)_CA_加拿大_73
+      - wmt(1.20)_GB_英国_74
+      - wmt(1.20)_US_美国_75
+      - wmt(1.20)_US_美国_76
+      - wmt(1.20)_US_美国_77
+      - wmt(1.20)_US_美国_78
+      - wmt(1.20)_CA_加拿大_79
+      - wmt(1.20)_US_美国_80
+      - wmt(1.20)_US_美国_81
+      - wmt(1.20)_US_美国_82
+      - wmt(1.20)_US_美国_83
+      - wmt(1.20)_CA_加拿大_84
+      - wmt(1.20)_US_美国_85
+      - wmt(1.20)_US_美国_86
+      - wmt(1.20)_US_美国_87
+      - wmt(1.20)_US_美国_88
+      - wmt(1.20)_US_美国_89
+      - wmt(1.20)_US_美国_90
+      - wmt(1.20)_NO_挪威_91
+      - wmt(1.20)_US_美国_92
+      - wmt(1.20)_US_美国_93
+      - wmt(1.20)_GB_英国_94
+      - wmt(1.20)_US_美国_95
+      - wmt(1.20)_US_美国_96
+      - wmt(1.20)_US_美国_97
+      - wmt(1.20)_NO_挪威_98
+      - wmt(1.20)_US_美国_99
+      - wmt(1.20)_US_美国_100
+      - wmt(1.20)_US_美国_101
+      - wmt(1.20)_US_美国_102
+      - wmt(1.20)_US_美国_103
+      - wmt(1.20)_US_美国_104
+      - wmt(1.20)_US_美国_105
+      - wmt(1.20)_US_美国_106
+      - wmt(1.20)_CA_加拿大_107
+      - wmt(1.20)_US_美国_108
+      - wmt(1.20)_US_美国_109
+      - wmt(1.20)_US_美国_110
+      - wmt(1.20)_US_美国_111
+      - wmt(1.20)_US_美国_112
+      - wmt(1.20)_US_美国_113
+      - wmt(1.20)_US_美国_114
+      - wmt(1.20)_GB_英国_115
+      - wmt(1.20)_CA_加拿大_116
+      - wmt(1.20)_CA_加拿大_117
+      - wmt(1.20)_US_美国_118
+      - wmt(1.20)_GB_英国_119
+      - wmt(1.20)_US_美国_120
+      - wmt(1.20)_US_美国_121
+      - wmt(1.20)_US_美国_122
+      - wmt(1.20)_US_美国_123
+      - wmt(1.20)_CA_加拿大_124
+      - wmt(1.20)_US_美国_125
+      - wmt(1.20)_US_美国_126
+      - wmt(1.20)_US_美国_127
+      - wmt(1.20)_US_美国_128
+      - wmt(1.20)_JP_日本_129
+      - wmt(1.20)_GB_英国_130
+      - wmt(1.20)_GB_英国_131
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - wmt(1.18)_GB_英国_1
-      - wmt(1.18)_GB_英国_2
-      - wmt(1.18)_GB_英国_3
-      - wmt(1.18)_GB_英国_4
-      - wmt(1.18)_NL_荷兰_5
-      - wmt(1.18)_NL_荷兰_6
-      - wmt(1.18)_JP_日本_7
-      - wmt(1.18)_CA_加拿大_8
-      - wmt(1.18)_CA_加拿大_9
-      - wmt(1.18)_US_美国_10
-      - wmt(1.18)_CA_加拿大_11
-      - wmt(1.18)_US_美国_12
-      - wmt(1.18)_US_美国_13
-      - wmt(1.18)_CA_加拿大_14
-      - wmt(1.18)_US_美国_15
-      - wmt(1.18)_CA_加拿大_16
-      - wmt(1.18)_US_美国_17
-      - wmt(1.18)_US_美国_18
-      - wmt(1.18)_US_美国_19
-      - wmt(1.18)_GB_英国_20
-      - wmt(1.18)_US_美国_21
-      - wmt(1.18)_CA_加拿大_22
-      - wmt(1.18)_CA_加拿大_23
-      - wmt(1.18)_FR_法国_24
-      - wmt(1.18)_US_美国_25
-      - wmt(1.18)_US_美国_26
-      - wmt(1.18)_US_美国_27
-      - wmt(1.18)_CA_加拿大_28
-      - wmt(1.18)_US_美国_29
-      - wmt(1.18)_GB_英国_30
-      - wmt(1.18)_CA_加拿大_31
-      - wmt(1.18)_US_美国_32
-      - wmt(1.18)_33
-      - wmt(1.18)_FR_法国_34
-      - wmt(1.18)_US_美国_35
-      - wmt(1.18)_CA_加拿大_36
-      - wmt(1.18)_US_美国_37
-      - wmt(1.18)_US_美国_38
-      - wmt(1.18)_US_美国_39
-      - wmt(1.18)_US_美国_40
-      - wmt(1.18)_CA_加拿大_41
-      - wmt(1.18)_US_美国_42
-      - wmt(1.18)_US_美国_43
-      - wmt(1.18)_US_美国_44
-      - wmt(1.18)_CA_加拿大_45
-      - wmt(1.18)_CA_加拿大_46
-      - wmt(1.18)_CA_加拿大_47
-      - wmt(1.18)_GB_英国_48
-      - wmt(1.18)_US_美国_49
-      - wmt(1.18)_CA_加拿大_50
-      - wmt(1.18)_NO_挪威_51
-      - wmt(1.18)_US_美国_52
-      - wmt(1.18)_CA_加拿大_53
-      - wmt(1.18)_GB_英国_54
-      - wmt(1.18)_US_美国_55
-      - wmt(1.18)_US_美国_56
-      - wmt(1.18)_US_美国_57
+      - wmt(1.20)_CN_中国_1
+      - wmt(1.20)_CN_中国_2
+      - wmt(1.20)_GB_英国_3
+      - wmt(1.20)_GB_英国_4
+      - wmt(1.20)_CN_中国_5
+      - wmt(1.20)_NO_挪威_6
+      - wmt(1.20)_US_美国_7
+      - wmt(1.20)_CA_加拿大_8
+      - wmt(1.20)_CA_加拿大_9
+      - wmt(1.20)_CA_加拿大_10
+      - wmt(1.20)_US_美国_11
+      - wmt(1.20)_US_美国_12
+      - wmt(1.20)_NL_荷兰_13
+      - wmt(1.20)_US_美国_14
+      - wmt(1.20)_US_美国_15
+      - wmt(1.20)_FR_法国_16
+      - wmt(1.20)_CN_中国_17
+      - wmt(1.20)_CN_中国_18
+      - wmt(1.20)_US_美国_19
+      - wmt(1.20)_IN_印度_20
+      - wmt(1.20)_NO_挪威_21
+      - wmt(1.20)_US_美国_22
+      - wmt(1.20)_US_美国_23
+      - wmt(1.20)_US_美国_24
+      - wmt(1.20)_US_美国_25
+      - wmt(1.20)_US_美国_26
+      - wmt(1.20)_US_美国_27
+      - wmt(1.20)_GB_英国_28
+      - wmt(1.20)_US_美国_29
+      - wmt(1.20)_US_美国_30
+      - wmt(1.20)_US_美国_31
+      - wmt(1.20)_CA_加拿大_32
+      - wmt(1.20)_US_美国_33
+      - wmt(1.20)_US_美国_34
+      - wmt(1.20)_CN_中国_35
+      - wmt(1.20)_CA_加拿大_36
+      - wmt(1.20)_US_美国_37
+      - wmt(1.20)_CA_加拿大_38
+      - wmt(1.20)_CA_加拿大_39
+      - wmt(1.20)_US_美国_40
+      - wmt(1.20)_GB_英国_41
+      - wmt(1.20)_CA_加拿大_42
+      - wmt(1.20)_US_美国_43
+      - wmt(1.20)_US_美国_44
+      - wmt(1.20)_US_美国_45
+      - wmt(1.20)_US_美国_46
+      - wmt(1.20)_US_美国_47
+      - wmt(1.20)_CA_加拿大_48
+      - wmt(1.20)_US_美国_49
+      - wmt(1.20)_US_美国_50
+      - wmt(1.20)_US_美国_51
+      - wmt(1.20)_US_美国_52
+      - wmt(1.20)_US_美国_53
+      - wmt(1.20)_US_美国_54
+      - wmt(1.20)_US_美国_55
+      - wmt(1.20)_JP_日本_56
+      - wmt(1.20)_CA_加拿大_57
+      - wmt(1.20)_US_美国_58
+      - wmt(1.20)_US_美国_59
+      - wmt(1.20)_US_美国_60
+      - wmt(1.20)_US_美国_61
+      - wmt(1.20)_CA_加拿大_62
+      - wmt(1.20)_US_美国_63
+      - wmt(1.20)_US_美国_64
+      - wmt(1.20)_US_美国_65
+      - wmt(1.20)_US_美国_66
+      - wmt(1.20)_JP_日本_67
+      - wmt(1.20)_GB_英国_68
+      - wmt(1.20)_GB_英国_69
+      - wmt(1.20)_CA_加拿大_70
+      - wmt(1.20)_CA_加拿大_71
+      - wmt(1.20)_CA_加拿大_72
+      - wmt(1.20)_CA_加拿大_73
+      - wmt(1.20)_GB_英国_74
+      - wmt(1.20)_US_美国_75
+      - wmt(1.20)_US_美国_76
+      - wmt(1.20)_US_美国_77
+      - wmt(1.20)_US_美国_78
+      - wmt(1.20)_CA_加拿大_79
+      - wmt(1.20)_US_美国_80
+      - wmt(1.20)_US_美国_81
+      - wmt(1.20)_US_美国_82
+      - wmt(1.20)_US_美国_83
+      - wmt(1.20)_CA_加拿大_84
+      - wmt(1.20)_US_美国_85
+      - wmt(1.20)_US_美国_86
+      - wmt(1.20)_US_美国_87
+      - wmt(1.20)_US_美国_88
+      - wmt(1.20)_US_美国_89
+      - wmt(1.20)_US_美国_90
+      - wmt(1.20)_NO_挪威_91
+      - wmt(1.20)_US_美国_92
+      - wmt(1.20)_US_美国_93
+      - wmt(1.20)_GB_英国_94
+      - wmt(1.20)_US_美国_95
+      - wmt(1.20)_US_美国_96
+      - wmt(1.20)_US_美国_97
+      - wmt(1.20)_NO_挪威_98
+      - wmt(1.20)_US_美国_99
+      - wmt(1.20)_US_美国_100
+      - wmt(1.20)_US_美国_101
+      - wmt(1.20)_US_美国_102
+      - wmt(1.20)_US_美国_103
+      - wmt(1.20)_US_美国_104
+      - wmt(1.20)_US_美国_105
+      - wmt(1.20)_US_美国_106
+      - wmt(1.20)_CA_加拿大_107
+      - wmt(1.20)_US_美国_108
+      - wmt(1.20)_US_美国_109
+      - wmt(1.20)_US_美国_110
+      - wmt(1.20)_US_美国_111
+      - wmt(1.20)_US_美国_112
+      - wmt(1.20)_US_美国_113
+      - wmt(1.20)_US_美国_114
+      - wmt(1.20)_GB_英国_115
+      - wmt(1.20)_CA_加拿大_116
+      - wmt(1.20)_CA_加拿大_117
+      - wmt(1.20)_US_美国_118
+      - wmt(1.20)_GB_英国_119
+      - wmt(1.20)_US_美国_120
+      - wmt(1.20)_US_美国_121
+      - wmt(1.20)_US_美国_122
+      - wmt(1.20)_US_美国_123
+      - wmt(1.20)_CA_加拿大_124
+      - wmt(1.20)_US_美国_125
+      - wmt(1.20)_US_美国_126
+      - wmt(1.20)_US_美国_127
+      - wmt(1.20)_US_美国_128
+      - wmt(1.20)_JP_日本_129
+      - wmt(1.20)_GB_英国_130
+      - wmt(1.20)_GB_英国_131
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - wmt(1.18)_GB_英国_1
-      - wmt(1.18)_GB_英国_2
-      - wmt(1.18)_GB_英国_3
-      - wmt(1.18)_GB_英国_4
-      - wmt(1.18)_NL_荷兰_5
-      - wmt(1.18)_NL_荷兰_6
-      - wmt(1.18)_JP_日本_7
-      - wmt(1.18)_CA_加拿大_8
-      - wmt(1.18)_CA_加拿大_9
-      - wmt(1.18)_US_美国_10
-      - wmt(1.18)_CA_加拿大_11
-      - wmt(1.18)_US_美国_12
-      - wmt(1.18)_US_美国_13
-      - wmt(1.18)_CA_加拿大_14
-      - wmt(1.18)_US_美国_15
-      - wmt(1.18)_CA_加拿大_16
-      - wmt(1.18)_US_美国_17
-      - wmt(1.18)_US_美国_18
-      - wmt(1.18)_US_美国_19
-      - wmt(1.18)_GB_英国_20
-      - wmt(1.18)_US_美国_21
-      - wmt(1.18)_CA_加拿大_22
-      - wmt(1.18)_CA_加拿大_23
-      - wmt(1.18)_FR_法国_24
-      - wmt(1.18)_US_美国_25
-      - wmt(1.18)_US_美国_26
-      - wmt(1.18)_US_美国_27
-      - wmt(1.18)_CA_加拿大_28
-      - wmt(1.18)_US_美国_29
-      - wmt(1.18)_GB_英国_30
-      - wmt(1.18)_CA_加拿大_31
-      - wmt(1.18)_US_美国_32
-      - wmt(1.18)_33
-      - wmt(1.18)_FR_法国_34
-      - wmt(1.18)_US_美国_35
-      - wmt(1.18)_CA_加拿大_36
-      - wmt(1.18)_US_美国_37
-      - wmt(1.18)_US_美国_38
-      - wmt(1.18)_US_美国_39
-      - wmt(1.18)_US_美国_40
-      - wmt(1.18)_CA_加拿大_41
-      - wmt(1.18)_US_美国_42
-      - wmt(1.18)_US_美国_43
-      - wmt(1.18)_US_美国_44
-      - wmt(1.18)_CA_加拿大_45
-      - wmt(1.18)_CA_加拿大_46
-      - wmt(1.18)_CA_加拿大_47
-      - wmt(1.18)_GB_英国_48
-      - wmt(1.18)_US_美国_49
-      - wmt(1.18)_CA_加拿大_50
-      - wmt(1.18)_NO_挪威_51
-      - wmt(1.18)_US_美国_52
-      - wmt(1.18)_CA_加拿大_53
-      - wmt(1.18)_GB_英国_54
-      - wmt(1.18)_US_美国_55
-      - wmt(1.18)_US_美国_56
-      - wmt(1.18)_US_美国_57
+      - wmt(1.20)_CN_中国_1
+      - wmt(1.20)_CN_中国_2
+      - wmt(1.20)_GB_英国_3
+      - wmt(1.20)_GB_英国_4
+      - wmt(1.20)_CN_中国_5
+      - wmt(1.20)_NO_挪威_6
+      - wmt(1.20)_US_美国_7
+      - wmt(1.20)_CA_加拿大_8
+      - wmt(1.20)_CA_加拿大_9
+      - wmt(1.20)_CA_加拿大_10
+      - wmt(1.20)_US_美国_11
+      - wmt(1.20)_US_美国_12
+      - wmt(1.20)_NL_荷兰_13
+      - wmt(1.20)_US_美国_14
+      - wmt(1.20)_US_美国_15
+      - wmt(1.20)_FR_法国_16
+      - wmt(1.20)_CN_中国_17
+      - wmt(1.20)_CN_中国_18
+      - wmt(1.20)_US_美国_19
+      - wmt(1.20)_IN_印度_20
+      - wmt(1.20)_NO_挪威_21
+      - wmt(1.20)_US_美国_22
+      - wmt(1.20)_US_美国_23
+      - wmt(1.20)_US_美国_24
+      - wmt(1.20)_US_美国_25
+      - wmt(1.20)_US_美国_26
+      - wmt(1.20)_US_美国_27
+      - wmt(1.20)_GB_英国_28
+      - wmt(1.20)_US_美国_29
+      - wmt(1.20)_US_美国_30
+      - wmt(1.20)_US_美国_31
+      - wmt(1.20)_CA_加拿大_32
+      - wmt(1.20)_US_美国_33
+      - wmt(1.20)_US_美国_34
+      - wmt(1.20)_CN_中国_35
+      - wmt(1.20)_CA_加拿大_36
+      - wmt(1.20)_US_美国_37
+      - wmt(1.20)_CA_加拿大_38
+      - wmt(1.20)_CA_加拿大_39
+      - wmt(1.20)_US_美国_40
+      - wmt(1.20)_GB_英国_41
+      - wmt(1.20)_CA_加拿大_42
+      - wmt(1.20)_US_美国_43
+      - wmt(1.20)_US_美国_44
+      - wmt(1.20)_US_美国_45
+      - wmt(1.20)_US_美国_46
+      - wmt(1.20)_US_美国_47
+      - wmt(1.20)_CA_加拿大_48
+      - wmt(1.20)_US_美国_49
+      - wmt(1.20)_US_美国_50
+      - wmt(1.20)_US_美国_51
+      - wmt(1.20)_US_美国_52
+      - wmt(1.20)_US_美国_53
+      - wmt(1.20)_US_美国_54
+      - wmt(1.20)_US_美国_55
+      - wmt(1.20)_JP_日本_56
+      - wmt(1.20)_CA_加拿大_57
+      - wmt(1.20)_US_美国_58
+      - wmt(1.20)_US_美国_59
+      - wmt(1.20)_US_美国_60
+      - wmt(1.20)_US_美国_61
+      - wmt(1.20)_CA_加拿大_62
+      - wmt(1.20)_US_美国_63
+      - wmt(1.20)_US_美国_64
+      - wmt(1.20)_US_美国_65
+      - wmt(1.20)_US_美国_66
+      - wmt(1.20)_JP_日本_67
+      - wmt(1.20)_GB_英国_68
+      - wmt(1.20)_GB_英国_69
+      - wmt(1.20)_CA_加拿大_70
+      - wmt(1.20)_CA_加拿大_71
+      - wmt(1.20)_CA_加拿大_72
+      - wmt(1.20)_CA_加拿大_73
+      - wmt(1.20)_GB_英国_74
+      - wmt(1.20)_US_美国_75
+      - wmt(1.20)_US_美国_76
+      - wmt(1.20)_US_美国_77
+      - wmt(1.20)_US_美国_78
+      - wmt(1.20)_CA_加拿大_79
+      - wmt(1.20)_US_美国_80
+      - wmt(1.20)_US_美国_81
+      - wmt(1.20)_US_美国_82
+      - wmt(1.20)_US_美国_83
+      - wmt(1.20)_CA_加拿大_84
+      - wmt(1.20)_US_美国_85
+      - wmt(1.20)_US_美国_86
+      - wmt(1.20)_US_美国_87
+      - wmt(1.20)_US_美国_88
+      - wmt(1.20)_US_美国_89
+      - wmt(1.20)_US_美国_90
+      - wmt(1.20)_NO_挪威_91
+      - wmt(1.20)_US_美国_92
+      - wmt(1.20)_US_美国_93
+      - wmt(1.20)_GB_英国_94
+      - wmt(1.20)_US_美国_95
+      - wmt(1.20)_US_美国_96
+      - wmt(1.20)_US_美国_97
+      - wmt(1.20)_NO_挪威_98
+      - wmt(1.20)_US_美国_99
+      - wmt(1.20)_US_美国_100
+      - wmt(1.20)_US_美国_101
+      - wmt(1.20)_US_美国_102
+      - wmt(1.20)_US_美国_103
+      - wmt(1.20)_US_美国_104
+      - wmt(1.20)_US_美国_105
+      - wmt(1.20)_US_美国_106
+      - wmt(1.20)_CA_加拿大_107
+      - wmt(1.20)_US_美国_108
+      - wmt(1.20)_US_美国_109
+      - wmt(1.20)_US_美国_110
+      - wmt(1.20)_US_美国_111
+      - wmt(1.20)_US_美国_112
+      - wmt(1.20)_US_美国_113
+      - wmt(1.20)_US_美国_114
+      - wmt(1.20)_GB_英国_115
+      - wmt(1.20)_CA_加拿大_116
+      - wmt(1.20)_CA_加拿大_117
+      - wmt(1.20)_US_美国_118
+      - wmt(1.20)_GB_英国_119
+      - wmt(1.20)_US_美国_120
+      - wmt(1.20)_US_美国_121
+      - wmt(1.20)_US_美国_122
+      - wmt(1.20)_US_美国_123
+      - wmt(1.20)_CA_加拿大_124
+      - wmt(1.20)_US_美国_125
+      - wmt(1.20)_US_美国_126
+      - wmt(1.20)_US_美国_127
+      - wmt(1.20)_US_美国_128
+      - wmt(1.20)_JP_日本_129
+      - wmt(1.20)_GB_英国_130
+      - wmt(1.20)_GB_英国_131
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -532,63 +1124,137 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - wmt(1.18)_GB_英国_1
-      - wmt(1.18)_GB_英国_2
-      - wmt(1.18)_GB_英国_3
-      - wmt(1.18)_GB_英国_4
-      - wmt(1.18)_NL_荷兰_5
-      - wmt(1.18)_NL_荷兰_6
-      - wmt(1.18)_JP_日本_7
-      - wmt(1.18)_CA_加拿大_8
-      - wmt(1.18)_CA_加拿大_9
-      - wmt(1.18)_US_美国_10
-      - wmt(1.18)_CA_加拿大_11
-      - wmt(1.18)_US_美国_12
-      - wmt(1.18)_US_美国_13
-      - wmt(1.18)_CA_加拿大_14
-      - wmt(1.18)_US_美国_15
-      - wmt(1.18)_CA_加拿大_16
-      - wmt(1.18)_US_美国_17
-      - wmt(1.18)_US_美国_18
-      - wmt(1.18)_US_美国_19
-      - wmt(1.18)_GB_英国_20
-      - wmt(1.18)_US_美国_21
-      - wmt(1.18)_CA_加拿大_22
-      - wmt(1.18)_CA_加拿大_23
-      - wmt(1.18)_FR_法国_24
-      - wmt(1.18)_US_美国_25
-      - wmt(1.18)_US_美国_26
-      - wmt(1.18)_US_美国_27
-      - wmt(1.18)_CA_加拿大_28
-      - wmt(1.18)_US_美国_29
-      - wmt(1.18)_GB_英国_30
-      - wmt(1.18)_CA_加拿大_31
-      - wmt(1.18)_US_美国_32
-      - wmt(1.18)_33
-      - wmt(1.18)_FR_法国_34
-      - wmt(1.18)_US_美国_35
-      - wmt(1.18)_CA_加拿大_36
-      - wmt(1.18)_US_美国_37
-      - wmt(1.18)_US_美国_38
-      - wmt(1.18)_US_美国_39
-      - wmt(1.18)_US_美国_40
-      - wmt(1.18)_CA_加拿大_41
-      - wmt(1.18)_US_美国_42
-      - wmt(1.18)_US_美国_43
-      - wmt(1.18)_US_美国_44
-      - wmt(1.18)_CA_加拿大_45
-      - wmt(1.18)_CA_加拿大_46
-      - wmt(1.18)_CA_加拿大_47
-      - wmt(1.18)_GB_英国_48
-      - wmt(1.18)_US_美国_49
-      - wmt(1.18)_CA_加拿大_50
-      - wmt(1.18)_NO_挪威_51
-      - wmt(1.18)_US_美国_52
-      - wmt(1.18)_CA_加拿大_53
-      - wmt(1.18)_GB_英国_54
-      - wmt(1.18)_US_美国_55
-      - wmt(1.18)_US_美国_56
-      - wmt(1.18)_US_美国_57
+      - wmt(1.20)_CN_中国_1
+      - wmt(1.20)_CN_中国_2
+      - wmt(1.20)_GB_英国_3
+      - wmt(1.20)_GB_英国_4
+      - wmt(1.20)_CN_中国_5
+      - wmt(1.20)_NO_挪威_6
+      - wmt(1.20)_US_美国_7
+      - wmt(1.20)_CA_加拿大_8
+      - wmt(1.20)_CA_加拿大_9
+      - wmt(1.20)_CA_加拿大_10
+      - wmt(1.20)_US_美国_11
+      - wmt(1.20)_US_美国_12
+      - wmt(1.20)_NL_荷兰_13
+      - wmt(1.20)_US_美国_14
+      - wmt(1.20)_US_美国_15
+      - wmt(1.20)_FR_法国_16
+      - wmt(1.20)_CN_中国_17
+      - wmt(1.20)_CN_中国_18
+      - wmt(1.20)_US_美国_19
+      - wmt(1.20)_IN_印度_20
+      - wmt(1.20)_NO_挪威_21
+      - wmt(1.20)_US_美国_22
+      - wmt(1.20)_US_美国_23
+      - wmt(1.20)_US_美国_24
+      - wmt(1.20)_US_美国_25
+      - wmt(1.20)_US_美国_26
+      - wmt(1.20)_US_美国_27
+      - wmt(1.20)_GB_英国_28
+      - wmt(1.20)_US_美国_29
+      - wmt(1.20)_US_美国_30
+      - wmt(1.20)_US_美国_31
+      - wmt(1.20)_CA_加拿大_32
+      - wmt(1.20)_US_美国_33
+      - wmt(1.20)_US_美国_34
+      - wmt(1.20)_CN_中国_35
+      - wmt(1.20)_CA_加拿大_36
+      - wmt(1.20)_US_美国_37
+      - wmt(1.20)_CA_加拿大_38
+      - wmt(1.20)_CA_加拿大_39
+      - wmt(1.20)_US_美国_40
+      - wmt(1.20)_GB_英国_41
+      - wmt(1.20)_CA_加拿大_42
+      - wmt(1.20)_US_美国_43
+      - wmt(1.20)_US_美国_44
+      - wmt(1.20)_US_美国_45
+      - wmt(1.20)_US_美国_46
+      - wmt(1.20)_US_美国_47
+      - wmt(1.20)_CA_加拿大_48
+      - wmt(1.20)_US_美国_49
+      - wmt(1.20)_US_美国_50
+      - wmt(1.20)_US_美国_51
+      - wmt(1.20)_US_美国_52
+      - wmt(1.20)_US_美国_53
+      - wmt(1.20)_US_美国_54
+      - wmt(1.20)_US_美国_55
+      - wmt(1.20)_JP_日本_56
+      - wmt(1.20)_CA_加拿大_57
+      - wmt(1.20)_US_美国_58
+      - wmt(1.20)_US_美国_59
+      - wmt(1.20)_US_美国_60
+      - wmt(1.20)_US_美国_61
+      - wmt(1.20)_CA_加拿大_62
+      - wmt(1.20)_US_美国_63
+      - wmt(1.20)_US_美国_64
+      - wmt(1.20)_US_美国_65
+      - wmt(1.20)_US_美国_66
+      - wmt(1.20)_JP_日本_67
+      - wmt(1.20)_GB_英国_68
+      - wmt(1.20)_GB_英国_69
+      - wmt(1.20)_CA_加拿大_70
+      - wmt(1.20)_CA_加拿大_71
+      - wmt(1.20)_CA_加拿大_72
+      - wmt(1.20)_CA_加拿大_73
+      - wmt(1.20)_GB_英国_74
+      - wmt(1.20)_US_美国_75
+      - wmt(1.20)_US_美国_76
+      - wmt(1.20)_US_美国_77
+      - wmt(1.20)_US_美国_78
+      - wmt(1.20)_CA_加拿大_79
+      - wmt(1.20)_US_美国_80
+      - wmt(1.20)_US_美国_81
+      - wmt(1.20)_US_美国_82
+      - wmt(1.20)_US_美国_83
+      - wmt(1.20)_CA_加拿大_84
+      - wmt(1.20)_US_美国_85
+      - wmt(1.20)_US_美国_86
+      - wmt(1.20)_US_美国_87
+      - wmt(1.20)_US_美国_88
+      - wmt(1.20)_US_美国_89
+      - wmt(1.20)_US_美国_90
+      - wmt(1.20)_NO_挪威_91
+      - wmt(1.20)_US_美国_92
+      - wmt(1.20)_US_美国_93
+      - wmt(1.20)_GB_英国_94
+      - wmt(1.20)_US_美国_95
+      - wmt(1.20)_US_美国_96
+      - wmt(1.20)_US_美国_97
+      - wmt(1.20)_NO_挪威_98
+      - wmt(1.20)_US_美国_99
+      - wmt(1.20)_US_美国_100
+      - wmt(1.20)_US_美国_101
+      - wmt(1.20)_US_美国_102
+      - wmt(1.20)_US_美国_103
+      - wmt(1.20)_US_美国_104
+      - wmt(1.20)_US_美国_105
+      - wmt(1.20)_US_美国_106
+      - wmt(1.20)_CA_加拿大_107
+      - wmt(1.20)_US_美国_108
+      - wmt(1.20)_US_美国_109
+      - wmt(1.20)_US_美国_110
+      - wmt(1.20)_US_美国_111
+      - wmt(1.20)_US_美国_112
+      - wmt(1.20)_US_美国_113
+      - wmt(1.20)_US_美国_114
+      - wmt(1.20)_GB_英国_115
+      - wmt(1.20)_CA_加拿大_116
+      - wmt(1.20)_CA_加拿大_117
+      - wmt(1.20)_US_美国_118
+      - wmt(1.20)_GB_英国_119
+      - wmt(1.20)_US_美国_120
+      - wmt(1.20)_US_美国_121
+      - wmt(1.20)_US_美国_122
+      - wmt(1.20)_US_美国_123
+      - wmt(1.20)_CA_加拿大_124
+      - wmt(1.20)_US_美国_125
+      - wmt(1.20)_US_美国_126
+      - wmt(1.20)_US_美国_127
+      - wmt(1.20)_US_美国_128
+      - wmt(1.20)_JP_日本_129
+      - wmt(1.20)_GB_英国_130
+      - wmt(1.20)_GB_英国_131
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
