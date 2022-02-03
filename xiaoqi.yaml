@@ -5,1115 +5,659 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港阿伟科技-油管, server: azhk.pluscloud.top, port: 443, type: trojan, password: b231bb88-b550-4a6d-b36e-41a3d5b50419, sni: azhk.pluscloud.top, skip-cert-verify: true, udp: true}
-  - {name: 香港_阿伟科技-油管, server: 136.wgong.xyz, port: 52436, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_阿伟科技-油管 2, server: 127.wgong.xyz, port: 52227, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_阿伟科技-油管 3, server: 128.wgong.xyz, port: 52228, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_阿伟科技-油管 4, server: 107.wgong.xyz, port: 52207, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港_阿伟科技-油管 5, server: 121.wgong.xyz, port: 52221, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国阿伟科技-新年快乐, server: 183.232.56.161, port: 1602, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: microsoft.com}, udp: true}
   - {name: 中国_阿伟科技-油管, server: iepl.naigai1.club, port: 11895, type: ss, cipher: aes-128-gcm, password: b2e37e3b-d651-46d1-81a8-bb61246de20a, udp: true}
-  - {name: 台湾阿伟科技-油管, server: v111.wgong.xyz, port: 52211, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_阿伟科技-油管 2, server: vipdedi.boom.ovh, port: 65521, type: vmess, uuid: a8d9724a-d61c-3d85-8cad-07e4d45a9441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mydisk, ws-headers: {Host: vipdedi.boom.ovh}, udp: true}
-  - {name: 香港_阿伟科技-油管 6, server: 81.wgong.xyz, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡阿伟科技-油管, server: v113.wgong.xyz, port: 52213, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_阿伟科技-油管 3, server: cn2.relay.starlink.st, port: 50102, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
+  - {name: 中国_阿伟科技-油管 2, server: 82.wgong.xyz, port: 52282, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_阿伟科技-油管 3, server: 105.wgong.xyz, port: 52205, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港_阿伟科技-油管, server: 136.wgong.xyz, port: 52436, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港阿伟科技-新年快乐, server: 128v.gq, port: 443, type: trojan, password: 32vshopyyds, sni: 128v.gq, skip-cert-verify: true, udp: true}
+  - {name: 香港_阿伟科技-油管 2, server: 110.wgong.xyz, port: 52210, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港_阿伟科技-油管 3, server: 81.wgong.xyz, port: 52281, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本阿伟科技-新年快乐, server: 126.wgong.xyz, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国阿伟科技-新年快乐, server: 120.wgong.xyz, port: 52220, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 中国_阿伟科技-油管 4, server: 117.28.243.173, port: 4173, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: 美国_阿伟科技-油管, server: 38.75.136.49, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_阿伟科技-油管 2, server: 167.88.61.5, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 中国_阿伟科技-油管 5, server: 120.233.150.200, port: 50102, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
-  - {name: 美国_阿伟科技-油管 3, server: 169.197.142.99, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_阿伟科技-油管 4, server: 38.143.66.187, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 5, server: 167.88.62.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 阿伟科技-油管, server: 198.41.212.9, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
-  - {name: 美国_阿伟科技-油管 6, server: 169.197.142.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_阿伟科技-油管 7, server: 169.197.143.29, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 8, server: 38.91.102.123, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 9, server: 38.143.66.20, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 阿伟科技-油管 2, server: 198.41.212.18, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
-  - {name: 美国阿伟科技-油管, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 中国_阿伟科技-油管 6, server: ddns04.r8o8c8k.xyz, port: 65009, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 美国_阿伟科技-油管 10, server: 142.202.48.34, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 英国阿伟科技-油管, server: 212.38.189.174, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 中国_阿伟科技-油管 7, server: ddns04.r8o8c8k.xyz, port: 65012, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: t.me/vpnhat}, udp: true}
-  - {name: 美国_阿伟科技-油管 11, server: 142.202.48.34, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国阿伟科技-油管 2, server: 6.lyzghim.com, port: 443, type: vmess, uuid: 2bb8823b-6938-4c82-87dc-0dee4c118b2d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 6.lyzghim.com}, udp: true}
-  - {name: 美国_阿伟科技-油管 12, server: 169.197.142.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国_阿伟科技-油管 13, server: 167.88.61.5, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国阿伟科技-油管 3, server: 129.153.100.148, port: 443, type: vmess, uuid: 16a3217d-32f5-4212-9380-4c06d75ab440, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管 14, server: 167.88.61.5, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 香港_阿伟科技-油管 7, server: 83.wgong.xyz, port: 52283, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国阿伟科技-油管 4, server: 169.197.142.99, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国_阿伟科技-油管 15, server: 169.197.142.99, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 16, server: 38.143.66.55, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 17, server: 169.197.143.243, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_阿伟科技-油管 18, server: 38.143.66.210, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国_阿伟科技-油管 19, server: 38.75.136.49, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 20, server: 38.143.66.210, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 中国_阿伟科技-油管 8, server: 112.64.69.187, port: 10002, type: vmess, uuid: b82814c6-2b6a-4c15-ae33-a0cc681ee5fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管 21, server: 38.143.66.55, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 22, server: 38.75.136.49, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 23, server: 167.88.61.109, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 捷克_阿伟科技-油管, server: 195.133.53.88, port: 25964, type: vmess, uuid: ba93e56c-77f9-11ec-af43-d2e8b4c3a75a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管 24, server: 38.143.66.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 25, server: 169.197.142.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_阿伟科技-油管 26, server: 38.143.66.249, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 27, server: 169.197.142.99, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 新加坡阿伟科技-油管 2, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
-  - {name: 美国_阿伟科技-油管 28, server: 38.91.102.124, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 29, server: 38.143.66.210, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 中国_阿伟科技-油管 9, server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: 美国_阿伟科技-油管 30, server: 38.143.66.249, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 31, server: 169.197.143.243, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 32, server: 169.197.142.99, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 33, server: 38.143.66.55, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_阿伟科技-油管 34, server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国_阿伟科技-油管 35, server: 38.68.134.37, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_阿伟科技-油管 36, server: 169.197.142.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 37, server: 38.143.66.20, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 日本阿伟科技-油管, server: 133.wgong.xyz, port: 52333, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管 38, server: 38.143.66.55, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_阿伟科技-油管 39, server: 169.197.142.99, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国_阿伟科技-油管 40, server: 169.197.142.99, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_阿伟科技-油管 41, server: 38.91.102.125, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 42, server: 167.88.61.5, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国_阿伟科技-油管 43, server: 38.143.66.20, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_阿伟科技-油管 44, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国_阿伟科技-油管 45, server: 169.197.142.187, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 46, server: 38.143.66.55, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 47, server: 167.88.61.109, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_阿伟科技-油管 48, server: 38.143.66.187, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_阿伟科技-油管 49, server: 38.75.136.49, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国_阿伟科技-油管 50, server: 38.68.134.23, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 51, server: 167.88.61.109, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国_阿伟科技-油管 52, server: 38.91.102.125, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 53, server: 38.143.66.249, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 台湾阿伟科技-油管 2, server: 128tw02.fans8.xyz, port: 80, type: vmess, uuid: dc27590b-ff30-3ed8-a012-cea805fce959, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 128tw02.fans8.xyz}, udp: true}
-  - {name: 美国阿伟科技-油管 5, server: 38.68.134.23, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_阿伟科技-油管 54, server: 38.143.66.210, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国_阿伟科技-油管 55, server: 38.68.134.37, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 56, server: 169.197.142.187, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 57, server: 38.91.102.125, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 58, server: 38.143.66.55, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国_阿伟科技-油管 59, server: 38.143.66.20, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_阿伟科技-油管 60, server: 38.143.66.55, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_阿伟科技-油管 61, server: 167.88.61.5, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 阿伟科技-油管 3, server: 198.41.212.8, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
-  - {name: 美国_阿伟科技-油管 62, server: 169.197.143.29, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 63, server: 167.88.61.109, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 64, server: 169.197.143.243, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 65, server: 169.197.143.243, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国阿伟科技-油管 6, server: 172.67.197.254, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
-  - {name: 美国阿伟科技-油管 7, server: 167.88.62.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国阿伟科技-油管 8, server: 6.lyzghim.com, port: 443, type: vmess, uuid: 2bb8823b-6938-4c82-87dc-0dee4c118b2d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 6.lyzghim.com}, udp: true}
-  - {name: 美国阿伟科技-油管 9, server: 167.88.63.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 台湾阿伟科技-油管 3, server: 120.233.150.200, port: 50202, type: ss, cipher: aes-128-gcm, password: 0f7fe3da-c8eb-48f8-a983-b10ed5edcab9, udp: true}
-  - {name: 捷克_阿伟科技-油管 2, server: 195.133.53.88, port: 25964, type: vmess, uuid: ba93e56c-77f9-11ec-af43-d2e8b4c3a75a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管 66, server: 38.143.66.187, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国阿伟科技-油管 10, server: 666.lyzghim.com, port: 443, type: vmess, uuid: 435a71b8-197d-4af8-ea17-7b2f7bb9eeda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 666.lyzghim.com}, udp: true}
-  - {name: 美国_阿伟科技-油管 67, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 68, server: 38.75.136.58, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 69, server: 169.197.142.99, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_阿伟科技-油管 70, server: 38.91.102.123, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 71, server: 38.143.66.187, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国_阿伟科技-油管 72, server: 169.197.143.243, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国_阿伟科技-油管 73, server: 169.197.143.243, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 香港阿伟科技-油管 2, server: gg.piyun.bid, port: 10651, type: trojan, password: 2803debb-27c4-455f-9bff-46ba0bebb710, sni: gg.piyun.bid, skip-cert-verify: true, udp: true}
-  - {name: 美国阿伟科技-油管 11, server: aws.us.tgproxy.wtf, port: 21888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: aws.us.tgproxy.wtf}, udp: true}
-  - {name: 美国_阿伟科技-油管 74, server: 169.197.142.99, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国_阿伟科技-油管 75, server: 38.143.66.55, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 76, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 77, server: 38.143.66.187, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国_阿伟科技-油管 78, server: 169.197.143.243, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 79, server: 38.143.66.20, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 80, server: 169.197.142.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国阿伟科技-油管 12, server: 129.153.100.148, port: 443, type: vmess, uuid: 16a3217d-32f5-4212-9380-4c06d75ab440, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管 81, server: 38.68.134.23, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_阿伟科技-油管 82, server: 38.143.66.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国_阿伟科技-油管 83, server: 167.88.61.109, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国_阿伟科技-油管 84, server: 38.143.66.20, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 85, server: 167.88.62.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 86, server: 38.68.134.23, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 87, server: 38.68.134.23, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国_阿伟科技-油管 88, server: 167.88.61.5, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国_阿伟科技-油管 89, server: 38.68.134.37, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 90, server: 38.143.66.20, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国_阿伟科技-油管 91, server: 167.88.62.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 92, server: 167.88.62.34, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国阿伟科技-油管 13, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}, udp: true}
-  - {name: 美国_阿伟科技-油管 93, server: 167.88.62.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 94, server: 169.197.143.29, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国_阿伟科技-油管 95, server: 38.143.66.210, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国_阿伟科技-油管 96, server: 38.68.134.191, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_阿伟科技-油管 97, server: 169.197.142.99, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国_阿伟科技-油管 98, server: 169.197.143.29, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 99, server: 169.197.143.29, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_阿伟科技-油管 100, server: 38.91.102.124, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 101, server: 38.143.66.55, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_阿伟科技-油管 102, server: 38.143.66.55, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国_阿伟科技-油管 103, server: 38.143.66.210, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 104, server: 167.88.63.60, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 105, server: 169.197.142.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_阿伟科技-油管 106, server: 167.88.62.34, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 107, server: 38.68.134.191, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国_阿伟科技-油管 108, server: 38.143.66.210, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国阿伟科技-油管 14, server: 38.75.136.49, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_阿伟科技-油管 109, server: 38.143.66.55, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 110, server: 38.143.66.20, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 111, server: 38.75.136.49, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 112, server: 38.143.66.20, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国阿伟科技-油管 15, server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_阿伟科技-油管 113, server: 169.197.141.24, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 114, server: 38.107.226.48, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_阿伟科技-油管 115, server: 38.143.66.210, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_阿伟科技-油管 116, server: 169.197.142.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国_阿伟科技-油管 117, server: 38.143.66.187, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 118, server: 38.143.66.187, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_阿伟科技-油管 119, server: 167.88.62.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 120, server: 169.197.142.99, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国_阿伟科技-油管 121, server: 38.68.134.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 英国阿伟科技-油管 2, server: 172.99.190.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 英国阿伟科技-油管 3, server: 172.99.190.139, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国阿伟科技-油管 16, server: 38.75.136.45, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 122, server: 38.143.66.210, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_阿伟科技-油管 123, server: 169.197.143.29, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国_阿伟科技-油管 124, server: 38.121.43.91, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 125, server: 169.197.142.99, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 126, server: 38.121.43.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 127, server: 38.143.66.20, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_阿伟科技-油管 128, server: 167.88.61.5, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 129, server: 169.197.143.243, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 130, server: 169.197.141.240, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 131, server: 38.143.66.210, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国阿伟科技-油管 17, server: oz1.mooncloud.bike, port: 8443, type: vmess, uuid: f1533fd1-4562-4935-a1e6-832685d4a919, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: oz.mooncloud.bike}, udp: true}
-  - {name: 美国_阿伟科技-油管 132, server: 38.107.226.241, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 133, server: 38.143.66.55, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 134, server: 169.197.142.187, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 台湾阿伟科技-油管 4, server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管 135, server: 38.91.102.123, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 日本_阿伟科技-油管, server: 172.105.205.190, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 英国阿伟科技-油管 4, server: 104.16.192.211, port: 443, type: vmess, uuid: 59a44ca8-085b-426f-9e06-51fd334279a5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /59a44ca8-085b-426f-9e06-51fd334279a5-vmess, ws-headers: {Host: eu1.xyou.workers.dev}, udp: true}
-  - {name: 美国_阿伟科技-油管 136, server: 38.107.226.241, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 137, server: 167.88.61.5, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 138, server: 38.143.66.20, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国_阿伟科技-油管 139, server: 169.197.142.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国_阿伟科技-油管 140, server: 169.197.142.187, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 英国_阿伟科技-油管, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 141, server: 169.197.142.99, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 142, server: 167.88.61.109, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国_阿伟科技-油管 143, server: 38.68.134.191, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 中国_阿伟科技-油管 5, server: ddns04.r8o8c8k.xyz, port: 65012, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 美国阿伟科技-新年快乐 2, server: ddns04.r8o8c8k.xyz, port: 65012, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: ddns04.r8o8c8k.xyz}, udp: true}
+  - {name: 美国_阿伟科技-油管, server: 169.197.142.238, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 中国_阿伟科技-油管 6, server: 103.wgong.xyz, port: 52203, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_阿伟科技-油管 2, server: 169.197.142.238, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国阿伟科技-新年快乐 3, server: nmsl.lyzghim.com, port: 443, type: vmess, uuid: 0bbf596c-1623-4bfc-8650-80cf343a8e92, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: nmsl.lyzghim.com}, udp: true}
+  - {name: 中国_阿伟科技-油管 7, server: 109.wgong.xyz, port: 52209, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国阿伟科技-新年快乐 4, server: 3.ezydfdd.com, port: 443, type: vmess, uuid: 7ab3f0d7-164c-4bde-8a45-2d6653da2ad1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 3.ezydfdd.com}, udp: true}
+  - {name: 美西阿伟科技-新年快乐, server: ceraus.moonfree.top, port: 80, type: vmess, uuid: e111e566-795c-42a3-b6c8-5f0a85feba8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cerus.moonfree.top}, udp: true}
+  - {name: 美国阿伟科技-新年快乐 5, server: 3.ezydfdd.com, port: 443, type: vmess, uuid: 7ab3f0d7-164c-4bde-8a45-2d6653da2ad1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 3.ezydfdd.com}, udp: true}
+  - {name: 中国_阿伟科技-油管 8, server: 101.wgong.xyz, port: 52201, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_阿伟科技-油管 3, server: 38.68.134.191, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 中国_阿伟科技-油管 9, server: ddns04.r8o8c8k.xyz, port: 65009, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: 芬兰阿伟科技-新年快乐, server: ddns04.r8o8c8k.xyz, port: 65009, type: vmess, uuid: aefcd764-7d2e-3a86-803d-b11c1e77aa30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: ddns04.r8o8c8k.xyz}, udp: true}
+  - {name: 台湾阿伟科技-新年快乐, server: v111.wgong.xyz, port: 52211, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国_阿伟科技-油管, server: 141.164.42.236, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 阿伟科技-油管, server: 198.41.212.18, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
+  - {name: 美国_阿伟科技-油管 4, server: 169.197.143.141, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_阿伟科技-油管 5, server: 169.197.143.141, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 香港_阿伟科技-油管 4, server: 83.wgong.xyz, port: 52283, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港阿伟科技-新年快乐 2, server: gg.piyun.bid, port: 10651, type: trojan, password: 2803debb-27c4-455f-9bff-46ba0bebb710, sni: gg.piyun.bid, skip-cert-verify: true, udp: true}
+  - {name: 美国_阿伟科技-油管 6, server: 38.143.66.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_阿伟科技-油管 7, server: 169.197.143.29, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国_阿伟科技-油管 8, server: 169.197.143.29, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 美国阿伟科技-新年快乐 6, server: 666.lyzghim.com, port: 443, type: vmess, uuid: 435a71b8-197d-4af8-ea17-7b2f7bb9eeda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 666.lyzghim.com}, udp: true}
+  - {name: 美国阿伟科技-新年快乐 7, server: wq199879.gq, port: 34321, type: vmess, uuid: 9e42e8b4-31ef-4c00-be7d-e23ee7aeafe6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国_阿伟科技-油管 9, server: 169.197.142.238, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国_阿伟科技-油管 10, server: 38.143.66.249, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_阿伟科技-油管 11, server: 38.143.66.210, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 美国_阿伟科技-油管 12, server: 38.143.66.55, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国_阿伟科技-油管 13, server: 169.197.143.29, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_阿伟科技-油管 14, server: 38.91.102.124, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_阿伟科技-油管 15, server: 169.197.143.29, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 美国_阿伟科技-油管 16, server: 38.91.102.123, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_阿伟科技-油管 17, server: 169.197.142.238, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_阿伟科技-油管 18, server: 169.197.142.238, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国_阿伟科技-油管 19, server: 169.197.143.141, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国_阿伟科技-油管 20, server: 38.68.134.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国_阿伟科技-油管 21, server: 125.wgong.xyz, port: 52225, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_阿伟科技-油管 22, server: 38.143.66.20, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国阿伟科技-新年快乐 8, server: oz1.mooncloud.bike, port: 8443, type: vmess, uuid: f1533fd1-4562-4935-a1e6-832685d4a919, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: oz.mooncloud.bike}, udp: true}
+  - {name: 美国_阿伟科技-油管 23, server: 38.91.102.125, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_阿伟科技-油管 24, server: 169.197.143.29, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_阿伟科技-油管 25, server: 38.68.134.23, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_阿伟科技-油管 26, server: 38.143.66.55, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_阿伟科技-油管 27, server: 169.197.143.29, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 英国_阿伟科技-油管, server: 172.99.190.109, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_阿伟科技-油管 28, server: 38.68.134.191, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
   - {name: 中国_阿伟科技-油管 10, server: 117.28.243.220, port: 8076, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: 美国_阿伟科技-油管 144, server: 38.68.134.191, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国_阿伟科技-油管 2, server: 172.99.190.139, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 145, server: 169.197.142.99, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 146, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_阿伟科技-油管 147, server: 38.143.66.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_阿伟科技-油管 148, server: 169.197.142.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国_阿伟科技-油管 149, server: 38.121.43.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_阿伟科技-油管 150, server: 38.68.134.23, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 151, server: 169.197.142.99, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 152, server: 38.107.226.241, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_阿伟科技-油管 153, server: 169.197.141.240, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 154, server: 38.68.134.37, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 155, server: 167.88.62.34, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 香港阿伟科技-油管 3, server: cnm.lyzghim.com, port: 443, type: vmess, uuid: 3c6ad333-ea28-4b3a-dd7f-aef59a73a0d9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: cnm.lyzghim.com}, udp: true}
-  - {name: 美国阿伟科技-油管 18, server: 38.68.134.37, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 加拿大阿伟科技-油管, server: 198.57.27.152, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 156, server: 169.197.142.187, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 157, server: 167.88.61.5, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国_阿伟科技-油管 158, server: 38.68.134.48, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 英国_阿伟科技-油管 3, server: 172.99.190.109, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 159, server: 169.197.141.24, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国阿伟科技-油管 19, server: oz1.mooncloud.bike, port: 8443, type: vmess, uuid: 2c42a34e-5f88-492b-8a59-3531090578f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: oz.mooncloud.bike}, udp: true}
-  - {name: 美国_阿伟科技-油管 160, server: 38.107.226.48, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 日本阿伟科技-油管 2, server: 20.187.72.211, port: 52226, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管 161, server: 38.91.100.200, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 英国_阿伟科技-油管 4, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国_阿伟科技-油管 162, server: 38.91.102.125, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 台湾阿伟科技-油管 5, server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管 163, server: 167.88.61.109, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 阿伟科技-油管 4, server: 198.41.212.5, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
-  - {name: 美国_阿伟科技-油管 164, server: 169.197.141.244, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 165, server: 38.68.134.23, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_阿伟科技-油管 166, server: 169.197.142.187, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 台湾阿伟科技-油管 6, server: 112.64.69.187, port: 10004, type: vmess, uuid: 65cac56d-4155-43c8-bae0-f368cb21f771, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管 167, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_阿伟科技-油管 168, server: 169.197.143.29, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_阿伟科技-油管 169, server: 169.197.143.243, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国_阿伟科技-油管 170, server: 38.143.66.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_阿伟科技-油管 171, server: 169.197.143.243, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_阿伟科技-油管 172, server: 38.143.66.187, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国_阿伟科技-油管 173, server: 38.143.66.187, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 174, server: 38.143.66.55, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国阿伟科技-油管 20, server: 3.ezydfdd.com, port: 443, type: vmess, uuid: 7ab3f0d7-164c-4bde-8a45-2d6653da2ad1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 3.ezydfdd.com}, udp: true}
-  - {name: 美国_阿伟科技-油管 175, server: 167.88.61.60, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国_阿伟科技-油管 176, server: 38.143.66.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 阿伟科技-油管 5, server: 104.16.160.114, port: 443, type: vmess, uuid: 5f4b2e42-ff2b-4342-86fc-b7ba1b5361e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /The-Great-Awakening_vws, ws-headers: {Host: vincent-jackson2021.ga}, udp: true}
-  - {name: 法国_阿伟科技-油管, server: 145.239.1.137, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国_阿伟科技-油管 177, server: 38.114.114.49, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 178, server: 169.197.142.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_阿伟科技-油管 179, server: 167.88.61.5, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 中国_阿伟科技-油管 11, server: 109.wgong.xyz, port: 52209, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管 180, server: 142.202.48.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国阿伟科技-油管 21, server: 38.75.136.49, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 阿伟科技-油管 6, server: 198.41.212.2, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
-  - {name: 英国_阿伟科技-油管 5, server: 172.99.190.139, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 181, server: 169.197.142.187, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 中国_阿伟科技-油管 12, server: 103.wgong.xyz, port: 52203, type: vmess, uuid: 08103798-414e-32b6-8748-2507732d2c51, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管 182, server: 169.197.143.243, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国_阿伟科技-油管 183, server: 38.143.66.20, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国_阿伟科技-油管 184, server: 72.167.45.6, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: 美国_阿伟科技-油管 185, server: 169.197.142.187, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国_阿伟科技-油管 6, server: 172.99.190.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国_阿伟科技-油管 186, server: 167.88.61.5, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国阿伟科技-油管 22, server: 167.88.63.28, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国阿伟科技-油管 23, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国_阿伟科技-油管 187, server: 169.197.142.99, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 台湾阿伟科技-油管 7, server: 1207tw.fans8.xyz, port: 80, type: vmess, uuid: dc27590b-ff30-3ed8-a012-cea805fce959, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1207tw.fans8.xyz}, udp: true}
+  - {name: 中国_阿伟科技-油管 11, server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: 美国_阿伟科技-油管 29, server: 38.143.66.55, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_阿伟科技-油管 30, server: 167.88.62.34, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_阿伟科技-油管 31, server: 38.75.137.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_阿伟科技-油管 32, server: 38.143.66.55, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 中国_阿伟科技-油管 12, server: 117.28.243.154, port: 6145, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: 美国_阿伟科技-油管 33, server: 38.143.66.55, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 阿伟科技-油管 2, server: 198.41.212.8, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
+  - {name: 美国_阿伟科技-油管 34, server: 38.68.134.23, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国_阿伟科技-油管 35, server: 38.68.134.191, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 英国_阿伟科技-油管 2, server: 172.99.190.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 马来西亚阿伟科技-新年快乐, server: mydf.sczssr.xyz, port: 50003, type: ss, cipher: aes-256-gcm, password: 405303c8-9e49-46df-b275-84a75561ba76, udp: true}
+  - {name: 英国_阿伟科技-油管 3, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_阿伟科技-油管 36, server: 38.143.66.55, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_阿伟科技-油管 37, server: 38.91.101.11, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_阿伟科技-油管 38, server: 38.121.43.71, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_阿伟科技-油管 39, server: 169.197.142.238, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国阿伟科技-新年快乐 9, server: 172.99.190.149, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国_阿伟科技-油管 40, server: 169.197.142.238, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 美国_阿伟科技-油管 41, server: 167.88.62.34, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国_阿伟科技-油管 42, server: 38.91.102.124, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_阿伟科技-油管 43, server: 38.91.102.125, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_阿伟科技-油管 44, server: 38.143.66.210, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国阿伟科技-新年快乐 10, server: 167.88.62.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_阿伟科技-油管 45, server: 169.197.143.141, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国阿伟科技-新年快乐 11, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}, udp: true}
+  - {name: 美国_阿伟科技-油管 46, server: 167.88.62.34, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_阿伟科技-油管 47, server: 167.88.62.34, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_阿伟科技-油管 48, server: 38.121.43.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 法国阿伟科技-新年快乐, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国_阿伟科技-油管 49, server: 38.143.66.55, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 阿伟科技-油管 3, server: 198.41.212.9, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
+  - {name: 香港阿伟科技-新年快乐 3, server: azhk.pluscloud.top, port: 443, type: trojan, password: 2842cbcf-ad92-4a43-bed6-e73e03dc2bbe, sni: azhk.pluscloud.top, skip-cert-verify: true, udp: true}
+  - {name: 美国_阿伟科技-油管 50, server: 38.121.43.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国_阿伟科技-油管 51, server: 142.202.48.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 越南阿伟科技-新年快乐, server: 180.93.172.207, port: 30169, type: vmess, uuid: c18c0861-4232-4daa-be46-9fcc6be309b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国_阿伟科技-油管 52, server: 167.88.62.34, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_阿伟科技-油管 53, server: 167.88.62.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_阿伟科技-油管 54, server: 38.91.102.125, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_阿伟科技-油管 55, server: 38.143.66.20, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 美国_阿伟科技-油管 56, server: 169.197.143.141, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_阿伟科技-油管 57, server: 38.75.136.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_阿伟科技-油管 58, server: 169.197.143.141, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国_阿伟科技-油管 59, server: 169.197.142.238, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 美国阿伟科技-新年快乐 12, server: v8.ssrsub.com, port: 443, type: vmess, uuid: a56903b7-e983-4cd5-99a6-94d62c79b128, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
+  - {name: 美国_阿伟科技-油管 60, server: 169.197.143.141, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国_阿伟科技-油管 61, server: 38.143.66.55, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 英国_阿伟科技-油管 4, server: 172.99.190.109, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 俄罗斯阿伟科技-新年快乐, server: v5.ssrsub.com, port: 8443, type: vmess, uuid: a56903b7-e983-4cd5-99a6-94d62c79b128, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v5.ssrsub.com}, udp: true}
+  - {name: 美国阿伟科技-新年快乐 13, server: 6.lyzghim.com, port: 443, type: vmess, uuid: 2bb8823b-6938-4c82-87dc-0dee4c118b2d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 6.lyzghim.com}, udp: true}
+  - {name: 美国_阿伟科技-油管 62, server: 38.143.66.55, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 韩国_阿伟科技-油管 2, server: 158.247.215.187, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_阿伟科技-油管 63, server: 142.202.48.34, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_阿伟科技-油管 64, server: 38.143.66.55, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国阿伟科技-新年快乐 14, server: 38.68.134.23, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 法国_阿伟科技-油管, server: 145.239.1.137, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 法国_阿伟科技-油管 2, server: 145.239.1.137, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_阿伟科技-油管 65, server: 38.143.66.55, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 阿伟科技-油管 4, server: 198.41.212.2, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
+  - {name: 韩国_阿伟科技-油管 3, server: 158.247.214.205, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国_阿伟科技-油管 66, server: 167.88.61.60, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_阿伟科技-油管 67, server: 38.68.134.191, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国_阿伟科技-油管 68, server: 38.68.134.23, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国阿伟科技-新年快乐 15, server: 1222us.fans8.xyz, port: 80, type: vmess, uuid: 7b9af40a-3af6-327c-9bd4-48e512ceddd6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 1222us.fans8.xyz}, udp: true}
+  - {name: 美国_阿伟科技-油管 69, server: 38.68.134.23, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_阿伟科技-油管 70, server: 169.197.143.29, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国_阿伟科技-油管 71, server: 169.197.142.238, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_阿伟科技-油管 72, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国_阿伟科技-油管 73, server: 169.197.142.238, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国_阿伟科技-油管 74, server: 38.143.66.55, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 日本阿伟科技-新年快乐 2, server: 172.67.197.254, port: 443, type: vmess, uuid: d0ce51d5-b4de-4f99-ac7c-c5c1a123bd94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bb2b34a1, ws-headers: {Host: www.ltzs.buzz}, udp: true}
+  - {name: 美国_阿伟科技-油管 75, server: 38.107.226.48, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 香港阿伟科技-新年快乐 4, server: azhk.pluscloud.top, port: 10060, type: ss, cipher: chacha20-ietf-poly1305, password: 2842cbcf-ad92-4a43-bed6-e73e03dc2bbe, udp: true}
+  - {name: 美国阿伟科技-新年快乐 16, server: targoo1.mirror.cn.com, port: 443, type: vmess, uuid: 351b9b77-a6f0-4772-a845-04bed6814563, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: targoo1.mirror.cn.com}, udp: true}
+  - {name: 美国_阿伟科技-油管 76, server: 38.143.66.210, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国阿伟科技-新年快乐 17, server: aws.us.tgproxy.wtf, port: 21888, type: vmess, uuid: ae7486f9-d7b7-4f26-97a0-dc5b093dfa89, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: aws.us.tgproxy.wtf}, udp: true}
+  - {name: 美国_阿伟科技-油管 77, server: 38.143.66.55, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 美国_阿伟科技-油管 78, server: 167.88.62.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 台湾阿伟科技-新年快乐 2, server: 128tw01.fans8.xyz, port: 80, type: vmess, uuid: 7b9af40a-3af6-327c-9bd4-48e512ceddd6, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 128tw01.fans8.xyz}, udp: true}
+  - {name: 美国_阿伟科技-油管 79, server: 38.68.134.191, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国_阿伟科技-油管 80, server: 169.197.142.238, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国_阿伟科技-油管 81, server: 142.202.48.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_阿伟科技-油管 82, server: 38.143.66.187, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 法国_阿伟科技-油管 3, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
+  - {name: 英国_阿伟科技-油管 5, server: 172.99.190.109, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_阿伟科技-油管 83, server: 38.143.66.55, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: 加拿大_阿伟科技-油管, server: 134.195.196.149, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 188, server: 167.88.61.5, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国_阿伟科技-油管 189, server: 169.197.143.29, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国_阿伟科技-油管 190, server: 38.143.66.55, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 英国阿伟科技-油管 5, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国_阿伟科技-油管 191, server: 169.197.142.187, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国_阿伟科技-油管 192, server: 167.88.61.5, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国_阿伟科技-油管 193, server: 38.91.102.123, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国_阿伟科技-油管 194, server: 169.197.143.243, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 阿伟科技-油管 5, server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero1.a-yu.xyz}, udp: true}
+  - {name: 美国_阿伟科技-油管 84, server: 38.91.101.11, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国_阿伟科技-油管 85, server: 38.91.101.11, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 英国_阿伟科技-油管 6, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 澳大利亚_阿伟科技-油管, server: 172.105.180.227, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 日本_阿伟科技-油管, server: 172.105.205.190, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国阿伟科技-新年快乐 18, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国阿伟科技-新年快乐 19, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国_阿伟科技-油管 86, server: 169.197.142.238, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国_阿伟科技-油管 87, server: 38.143.66.210, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 美国_阿伟科技-油管 88, server: 38.75.136.93, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国_阿伟科技-油管 89, server: 38.75.136.93, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港阿伟科技-油管
+      - 韩国阿伟科技-新年快乐
+      - 中国_阿伟科技-油管
+      - 中国_阿伟科技-油管 2
+      - 中国_阿伟科技-油管 3
       - 香港_阿伟科技-油管
+      - 香港阿伟科技-新年快乐
       - 香港_阿伟科技-油管 2
       - 香港_阿伟科技-油管 3
-      - 香港_阿伟科技-油管 4
-      - 香港_阿伟科技-油管 5
-      - 中国_阿伟科技-油管
-      - 台湾阿伟科技-油管
-      - 中国_阿伟科技-油管 2
-      - 香港_阿伟科技-油管 6
-      - 新加坡阿伟科技-油管
-      - 中国_阿伟科技-油管 3
+      - 日本阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐
       - 中国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管
-      - 美国_阿伟科技-油管 2
       - 中国_阿伟科技-油管 5
+      - 美国阿伟科技-新年快乐 2
+      - 美国_阿伟科技-油管
+      - 中国_阿伟科技-油管 6
+      - 美国_阿伟科技-油管 2
+      - 美国阿伟科技-新年快乐 3
+      - 中国_阿伟科技-油管 7
+      - 美国阿伟科技-新年快乐 4
+      - 美西阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 5
+      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 3
+      - 中国_阿伟科技-油管 9
+      - 芬兰阿伟科技-新年快乐
+      - 台湾阿伟科技-新年快乐
+      - 韩国_阿伟科技-油管
+      - 阿伟科技-油管
       - 美国_阿伟科技-油管 4
       - 美国_阿伟科技-油管 5
-      - 阿伟科技-油管
+      - 香港_阿伟科技-油管 4
+      - 香港阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 8
+      - 美国阿伟科技-新年快乐 6
+      - 美国阿伟科技-新年快乐 7
       - 美国_阿伟科技-油管 9
-      - 阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 中国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 10
-      - 英国阿伟科技-油管
-      - 中国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 11
-      - 美国阿伟科技-油管 2
       - 美国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 13
-      - 美国阿伟科技-油管 3
       - 美国_阿伟科技-油管 14
-      - 香港_阿伟科技-油管 7
-      - 美国阿伟科技-油管 4
       - 美国_阿伟科技-油管 15
       - 美国_阿伟科技-油管 16
       - 美国_阿伟科技-油管 17
       - 美国_阿伟科技-油管 18
       - 美国_阿伟科技-油管 19
       - 美国_阿伟科技-油管 20
-      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 21
       - 美国_阿伟科技-油管 22
+      - 美国阿伟科技-新年快乐 8
       - 美国_阿伟科技-油管 23
-      - 捷克_阿伟科技-油管
       - 美国_阿伟科技-油管 24
       - 美国_阿伟科技-油管 25
       - 美国_阿伟科技-油管 26
       - 美国_阿伟科技-油管 27
-      - 新加坡阿伟科技-油管 2
+      - 英国_阿伟科技-油管
       - 美国_阿伟科技-油管 28
+      - 中国_阿伟科技-油管 10
+      - 中国_阿伟科技-油管 11
       - 美国_阿伟科技-油管 29
-      - 中国_阿伟科技-油管 9
       - 美国_阿伟科技-油管 30
       - 美国_阿伟科技-油管 31
       - 美国_阿伟科技-油管 32
+      - 中国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 33
+      - 阿伟科技-油管 2
       - 美国_阿伟科技-油管 34
       - 美国_阿伟科技-油管 35
+      - 英国_阿伟科技-油管 2
+      - 马来西亚阿伟科技-新年快乐
+      - 英国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 36
       - 美国_阿伟科技-油管 37
-      - 日本阿伟科技-油管
       - 美国_阿伟科技-油管 38
       - 美国_阿伟科技-油管 39
+      - 美国阿伟科技-新年快乐 9
       - 美国_阿伟科技-油管 40
       - 美国_阿伟科技-油管 41
       - 美国_阿伟科技-油管 42
       - 美国_阿伟科技-油管 43
       - 美国_阿伟科技-油管 44
+      - 美国阿伟科技-新年快乐 10
       - 美国_阿伟科技-油管 45
+      - 美国阿伟科技-新年快乐 11
       - 美国_阿伟科技-油管 46
       - 美国_阿伟科技-油管 47
       - 美国_阿伟科技-油管 48
+      - 法国阿伟科技-新年快乐
       - 美国_阿伟科技-油管 49
+      - 阿伟科技-油管 3
+      - 香港阿伟科技-新年快乐 3
       - 美国_阿伟科技-油管 50
       - 美国_阿伟科技-油管 51
+      - 越南阿伟科技-新年快乐
       - 美国_阿伟科技-油管 52
       - 美国_阿伟科技-油管 53
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 5
       - 美国_阿伟科技-油管 54
       - 美国_阿伟科技-油管 55
       - 美国_阿伟科技-油管 56
       - 美国_阿伟科技-油管 57
       - 美国_阿伟科技-油管 58
       - 美国_阿伟科技-油管 59
+      - 美国阿伟科技-新年快乐 12
       - 美国_阿伟科技-油管 60
       - 美国_阿伟科技-油管 61
-      - 阿伟科技-油管 3
+      - 英国_阿伟科技-油管 4
+      - 俄罗斯阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 13
       - 美国_阿伟科技-油管 62
+      - 韩国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 63
       - 美国_阿伟科技-油管 64
+      - 美国阿伟科技-新年快乐 14
+      - 法国_阿伟科技-油管
+      - 法国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 65
-      - 美国阿伟科技-油管 6
-      - 美国阿伟科技-油管 7
-      - 美国阿伟科技-油管 8
-      - 美国阿伟科技-油管 9
-      - 台湾阿伟科技-油管 3
-      - 捷克_阿伟科技-油管 2
+      - 阿伟科技-油管 4
+      - 韩国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 66
-      - 美国阿伟科技-油管 10
       - 美国_阿伟科技-油管 67
       - 美国_阿伟科技-油管 68
+      - 美国阿伟科技-新年快乐 15
       - 美国_阿伟科技-油管 69
       - 美国_阿伟科技-油管 70
       - 美国_阿伟科技-油管 71
       - 美国_阿伟科技-油管 72
       - 美国_阿伟科技-油管 73
-      - 香港阿伟科技-油管 2
-      - 美国阿伟科技-油管 11
       - 美国_阿伟科技-油管 74
+      - 日本阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 75
+      - 香港阿伟科技-新年快乐 4
+      - 美国阿伟科技-新年快乐 16
       - 美国_阿伟科技-油管 76
+      - 美国阿伟科技-新年快乐 17
       - 美国_阿伟科技-油管 77
       - 美国_阿伟科技-油管 78
+      - 台湾阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 79
       - 美国_阿伟科技-油管 80
-      - 美国阿伟科技-油管 12
       - 美国_阿伟科技-油管 81
       - 美国_阿伟科技-油管 82
+      - 法国_阿伟科技-油管 3
+      - 英国_阿伟科技-油管 5
       - 美国_阿伟科技-油管 83
+      - 加拿大_阿伟科技-油管
+      - 阿伟科技-油管 5
       - 美国_阿伟科技-油管 84
       - 美国_阿伟科技-油管 85
+      - 英国_阿伟科技-油管 6
+      - 澳大利亚_阿伟科技-油管
+      - 日本_阿伟科技-油管
+      - 美国阿伟科技-新年快乐 18
+      - 美国阿伟科技-新年快乐 19
       - 美国_阿伟科技-油管 86
       - 美国_阿伟科技-油管 87
       - 美国_阿伟科技-油管 88
       - 美国_阿伟科技-油管 89
-      - 美国_阿伟科技-油管 90
-      - 美国_阿伟科技-油管 91
-      - 美国_阿伟科技-油管 92
-      - 美国阿伟科技-油管 13
-      - 美国_阿伟科技-油管 93
-      - 美国_阿伟科技-油管 94
-      - 美国_阿伟科技-油管 95
-      - 美国_阿伟科技-油管 96
-      - 美国_阿伟科技-油管 97
-      - 美国_阿伟科技-油管 98
-      - 美国_阿伟科技-油管 99
-      - 美国_阿伟科技-油管 100
-      - 美国_阿伟科技-油管 101
-      - 美国_阿伟科技-油管 102
-      - 美国_阿伟科技-油管 103
-      - 美国_阿伟科技-油管 104
-      - 美国_阿伟科技-油管 105
-      - 美国_阿伟科技-油管 106
-      - 美国_阿伟科技-油管 107
-      - 美国_阿伟科技-油管 108
-      - 美国阿伟科技-油管 14
-      - 美国_阿伟科技-油管 109
-      - 美国_阿伟科技-油管 110
-      - 美国_阿伟科技-油管 111
-      - 美国_阿伟科技-油管 112
-      - 美国阿伟科技-油管 15
-      - 美国_阿伟科技-油管 113
-      - 美国_阿伟科技-油管 114
-      - 美国_阿伟科技-油管 115
-      - 美国_阿伟科技-油管 116
-      - 美国_阿伟科技-油管 117
-      - 美国_阿伟科技-油管 118
-      - 美国_阿伟科技-油管 119
-      - 美国_阿伟科技-油管 120
-      - 美国_阿伟科技-油管 121
-      - 英国阿伟科技-油管 2
-      - 英国阿伟科技-油管 3
-      - 美国阿伟科技-油管 16
-      - 美国_阿伟科技-油管 122
-      - 美国_阿伟科技-油管 123
-      - 美国_阿伟科技-油管 124
-      - 美国_阿伟科技-油管 125
-      - 美国_阿伟科技-油管 126
-      - 美国_阿伟科技-油管 127
-      - 美国_阿伟科技-油管 128
-      - 美国_阿伟科技-油管 129
-      - 美国_阿伟科技-油管 130
-      - 美国_阿伟科技-油管 131
-      - 美国阿伟科技-油管 17
-      - 美国_阿伟科技-油管 132
-      - 美国_阿伟科技-油管 133
-      - 美国_阿伟科技-油管 134
-      - 台湾阿伟科技-油管 4
-      - 美国_阿伟科技-油管 135
-      - 日本_阿伟科技-油管
-      - 英国阿伟科技-油管 4
-      - 美国_阿伟科技-油管 136
-      - 美国_阿伟科技-油管 137
-      - 美国_阿伟科技-油管 138
-      - 美国_阿伟科技-油管 139
-      - 美国_阿伟科技-油管 140
-      - 英国_阿伟科技-油管
-      - 美国_阿伟科技-油管 141
-      - 美国_阿伟科技-油管 142
-      - 美国_阿伟科技-油管 143
-      - 中国_阿伟科技-油管 10
-      - 美国_阿伟科技-油管 144
-      - 英国_阿伟科技-油管 2
-      - 美国_阿伟科技-油管 145
-      - 美国_阿伟科技-油管 146
-      - 美国_阿伟科技-油管 147
-      - 美国_阿伟科技-油管 148
-      - 美国_阿伟科技-油管 149
-      - 美国_阿伟科技-油管 150
-      - 美国_阿伟科技-油管 151
-      - 美国_阿伟科技-油管 152
-      - 美国_阿伟科技-油管 153
-      - 美国_阿伟科技-油管 154
-      - 美国_阿伟科技-油管 155
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 18
-      - 加拿大阿伟科技-油管
-      - 美国_阿伟科技-油管 156
-      - 美国_阿伟科技-油管 157
-      - 美国_阿伟科技-油管 158
-      - 英国_阿伟科技-油管 3
-      - 美国_阿伟科技-油管 159
-      - 美国阿伟科技-油管 19
-      - 美国_阿伟科技-油管 160
-      - 日本阿伟科技-油管 2
-      - 美国_阿伟科技-油管 161
-      - 英国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管 162
-      - 台湾阿伟科技-油管 5
-      - 美国_阿伟科技-油管 163
-      - 阿伟科技-油管 4
-      - 美国_阿伟科技-油管 164
-      - 美国_阿伟科技-油管 165
-      - 美国_阿伟科技-油管 166
-      - 台湾阿伟科技-油管 6
-      - 美国_阿伟科技-油管 167
-      - 美国_阿伟科技-油管 168
-      - 美国_阿伟科技-油管 169
-      - 美国_阿伟科技-油管 170
-      - 美国_阿伟科技-油管 171
-      - 美国_阿伟科技-油管 172
-      - 美国_阿伟科技-油管 173
-      - 美国_阿伟科技-油管 174
-      - 美国阿伟科技-油管 20
-      - 美国_阿伟科技-油管 175
-      - 美国_阿伟科技-油管 176
-      - 阿伟科技-油管 5
-      - 法国_阿伟科技-油管
-      - 美国_阿伟科技-油管 177
-      - 美国_阿伟科技-油管 178
-      - 美国_阿伟科技-油管 179
-      - 中国_阿伟科技-油管 11
-      - 美国_阿伟科技-油管 180
-      - 美国阿伟科技-油管 21
-      - 阿伟科技-油管 6
-      - 英国_阿伟科技-油管 5
-      - 美国_阿伟科技-油管 181
-      - 中国_阿伟科技-油管 12
-      - 美国_阿伟科技-油管 182
-      - 美国_阿伟科技-油管 183
-      - 美国_阿伟科技-油管 184
-      - 美国_阿伟科技-油管 185
-      - 英国_阿伟科技-油管 6
-      - 美国_阿伟科技-油管 186
-      - 美国阿伟科技-油管 22
-      - 美国阿伟科技-油管 23
-      - 美国_阿伟科技-油管 187
-      - 台湾阿伟科技-油管 7
-      - 加拿大_阿伟科技-油管
-      - 美国_阿伟科技-油管 188
-      - 美国_阿伟科技-油管 189
-      - 美国_阿伟科技-油管 190
-      - 英国阿伟科技-油管 5
-      - 美国_阿伟科技-油管 191
-      - 美国_阿伟科技-油管 192
-      - 美国_阿伟科技-油管 193
-      - 美国_阿伟科技-油管 194
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港阿伟科技-油管
+      - 韩国阿伟科技-新年快乐
+      - 中国_阿伟科技-油管
+      - 中国_阿伟科技-油管 2
+      - 中国_阿伟科技-油管 3
       - 香港_阿伟科技-油管
+      - 香港阿伟科技-新年快乐
       - 香港_阿伟科技-油管 2
       - 香港_阿伟科技-油管 3
-      - 香港_阿伟科技-油管 4
-      - 香港_阿伟科技-油管 5
-      - 中国_阿伟科技-油管
-      - 台湾阿伟科技-油管
-      - 中国_阿伟科技-油管 2
-      - 香港_阿伟科技-油管 6
-      - 新加坡阿伟科技-油管
-      - 中国_阿伟科技-油管 3
+      - 日本阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐
       - 中国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管
-      - 美国_阿伟科技-油管 2
       - 中国_阿伟科技-油管 5
+      - 美国阿伟科技-新年快乐 2
+      - 美国_阿伟科技-油管
+      - 中国_阿伟科技-油管 6
+      - 美国_阿伟科技-油管 2
+      - 美国阿伟科技-新年快乐 3
+      - 中国_阿伟科技-油管 7
+      - 美国阿伟科技-新年快乐 4
+      - 美西阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 5
+      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 3
+      - 中国_阿伟科技-油管 9
+      - 芬兰阿伟科技-新年快乐
+      - 台湾阿伟科技-新年快乐
+      - 韩国_阿伟科技-油管
+      - 阿伟科技-油管
       - 美国_阿伟科技-油管 4
       - 美国_阿伟科技-油管 5
-      - 阿伟科技-油管
+      - 香港_阿伟科技-油管 4
+      - 香港阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 8
+      - 美国阿伟科技-新年快乐 6
+      - 美国阿伟科技-新年快乐 7
       - 美国_阿伟科技-油管 9
-      - 阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 中国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 10
-      - 英国阿伟科技-油管
-      - 中国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 11
-      - 美国阿伟科技-油管 2
       - 美国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 13
-      - 美国阿伟科技-油管 3
       - 美国_阿伟科技-油管 14
-      - 香港_阿伟科技-油管 7
-      - 美国阿伟科技-油管 4
       - 美国_阿伟科技-油管 15
       - 美国_阿伟科技-油管 16
       - 美国_阿伟科技-油管 17
       - 美国_阿伟科技-油管 18
       - 美国_阿伟科技-油管 19
       - 美国_阿伟科技-油管 20
-      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 21
       - 美国_阿伟科技-油管 22
+      - 美国阿伟科技-新年快乐 8
       - 美国_阿伟科技-油管 23
-      - 捷克_阿伟科技-油管
       - 美国_阿伟科技-油管 24
       - 美国_阿伟科技-油管 25
       - 美国_阿伟科技-油管 26
       - 美国_阿伟科技-油管 27
-      - 新加坡阿伟科技-油管 2
+      - 英国_阿伟科技-油管
       - 美国_阿伟科技-油管 28
+      - 中国_阿伟科技-油管 10
+      - 中国_阿伟科技-油管 11
       - 美国_阿伟科技-油管 29
-      - 中国_阿伟科技-油管 9
       - 美国_阿伟科技-油管 30
       - 美国_阿伟科技-油管 31
       - 美国_阿伟科技-油管 32
+      - 中国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 33
+      - 阿伟科技-油管 2
       - 美国_阿伟科技-油管 34
       - 美国_阿伟科技-油管 35
+      - 英国_阿伟科技-油管 2
+      - 马来西亚阿伟科技-新年快乐
+      - 英国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 36
       - 美国_阿伟科技-油管 37
-      - 日本阿伟科技-油管
       - 美国_阿伟科技-油管 38
       - 美国_阿伟科技-油管 39
+      - 美国阿伟科技-新年快乐 9
       - 美国_阿伟科技-油管 40
       - 美国_阿伟科技-油管 41
       - 美国_阿伟科技-油管 42
       - 美国_阿伟科技-油管 43
       - 美国_阿伟科技-油管 44
+      - 美国阿伟科技-新年快乐 10
       - 美国_阿伟科技-油管 45
+      - 美国阿伟科技-新年快乐 11
       - 美国_阿伟科技-油管 46
       - 美国_阿伟科技-油管 47
       - 美国_阿伟科技-油管 48
+      - 法国阿伟科技-新年快乐
       - 美国_阿伟科技-油管 49
+      - 阿伟科技-油管 3
+      - 香港阿伟科技-新年快乐 3
       - 美国_阿伟科技-油管 50
       - 美国_阿伟科技-油管 51
+      - 越南阿伟科技-新年快乐
       - 美国_阿伟科技-油管 52
       - 美国_阿伟科技-油管 53
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 5
       - 美国_阿伟科技-油管 54
       - 美国_阿伟科技-油管 55
       - 美国_阿伟科技-油管 56
       - 美国_阿伟科技-油管 57
       - 美国_阿伟科技-油管 58
       - 美国_阿伟科技-油管 59
+      - 美国阿伟科技-新年快乐 12
       - 美国_阿伟科技-油管 60
       - 美国_阿伟科技-油管 61
-      - 阿伟科技-油管 3
+      - 英国_阿伟科技-油管 4
+      - 俄罗斯阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 13
       - 美国_阿伟科技-油管 62
+      - 韩国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 63
       - 美国_阿伟科技-油管 64
+      - 美国阿伟科技-新年快乐 14
+      - 法国_阿伟科技-油管
+      - 法国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 65
-      - 美国阿伟科技-油管 6
-      - 美国阿伟科技-油管 7
-      - 美国阿伟科技-油管 8
-      - 美国阿伟科技-油管 9
-      - 台湾阿伟科技-油管 3
-      - 捷克_阿伟科技-油管 2
+      - 阿伟科技-油管 4
+      - 韩国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 66
-      - 美国阿伟科技-油管 10
       - 美国_阿伟科技-油管 67
       - 美国_阿伟科技-油管 68
+      - 美国阿伟科技-新年快乐 15
       - 美国_阿伟科技-油管 69
       - 美国_阿伟科技-油管 70
       - 美国_阿伟科技-油管 71
       - 美国_阿伟科技-油管 72
       - 美国_阿伟科技-油管 73
-      - 香港阿伟科技-油管 2
-      - 美国阿伟科技-油管 11
       - 美国_阿伟科技-油管 74
+      - 日本阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 75
+      - 香港阿伟科技-新年快乐 4
+      - 美国阿伟科技-新年快乐 16
       - 美国_阿伟科技-油管 76
+      - 美国阿伟科技-新年快乐 17
       - 美国_阿伟科技-油管 77
       - 美国_阿伟科技-油管 78
+      - 台湾阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 79
       - 美国_阿伟科技-油管 80
-      - 美国阿伟科技-油管 12
       - 美国_阿伟科技-油管 81
       - 美国_阿伟科技-油管 82
+      - 法国_阿伟科技-油管 3
+      - 英国_阿伟科技-油管 5
       - 美国_阿伟科技-油管 83
+      - 加拿大_阿伟科技-油管
+      - 阿伟科技-油管 5
       - 美国_阿伟科技-油管 84
       - 美国_阿伟科技-油管 85
+      - 英国_阿伟科技-油管 6
+      - 澳大利亚_阿伟科技-油管
+      - 日本_阿伟科技-油管
+      - 美国阿伟科技-新年快乐 18
+      - 美国阿伟科技-新年快乐 19
       - 美国_阿伟科技-油管 86
       - 美国_阿伟科技-油管 87
       - 美国_阿伟科技-油管 88
       - 美国_阿伟科技-油管 89
-      - 美国_阿伟科技-油管 90
-      - 美国_阿伟科技-油管 91
-      - 美国_阿伟科技-油管 92
-      - 美国阿伟科技-油管 13
-      - 美国_阿伟科技-油管 93
-      - 美国_阿伟科技-油管 94
-      - 美国_阿伟科技-油管 95
-      - 美国_阿伟科技-油管 96
-      - 美国_阿伟科技-油管 97
-      - 美国_阿伟科技-油管 98
-      - 美国_阿伟科技-油管 99
-      - 美国_阿伟科技-油管 100
-      - 美国_阿伟科技-油管 101
-      - 美国_阿伟科技-油管 102
-      - 美国_阿伟科技-油管 103
-      - 美国_阿伟科技-油管 104
-      - 美国_阿伟科技-油管 105
-      - 美国_阿伟科技-油管 106
-      - 美国_阿伟科技-油管 107
-      - 美国_阿伟科技-油管 108
-      - 美国阿伟科技-油管 14
-      - 美国_阿伟科技-油管 109
-      - 美国_阿伟科技-油管 110
-      - 美国_阿伟科技-油管 111
-      - 美国_阿伟科技-油管 112
-      - 美国阿伟科技-油管 15
-      - 美国_阿伟科技-油管 113
-      - 美国_阿伟科技-油管 114
-      - 美国_阿伟科技-油管 115
-      - 美国_阿伟科技-油管 116
-      - 美国_阿伟科技-油管 117
-      - 美国_阿伟科技-油管 118
-      - 美国_阿伟科技-油管 119
-      - 美国_阿伟科技-油管 120
-      - 美国_阿伟科技-油管 121
-      - 英国阿伟科技-油管 2
-      - 英国阿伟科技-油管 3
-      - 美国阿伟科技-油管 16
-      - 美国_阿伟科技-油管 122
-      - 美国_阿伟科技-油管 123
-      - 美国_阿伟科技-油管 124
-      - 美国_阿伟科技-油管 125
-      - 美国_阿伟科技-油管 126
-      - 美国_阿伟科技-油管 127
-      - 美国_阿伟科技-油管 128
-      - 美国_阿伟科技-油管 129
-      - 美国_阿伟科技-油管 130
-      - 美国_阿伟科技-油管 131
-      - 美国阿伟科技-油管 17
-      - 美国_阿伟科技-油管 132
-      - 美国_阿伟科技-油管 133
-      - 美国_阿伟科技-油管 134
-      - 台湾阿伟科技-油管 4
-      - 美国_阿伟科技-油管 135
-      - 日本_阿伟科技-油管
-      - 英国阿伟科技-油管 4
-      - 美国_阿伟科技-油管 136
-      - 美国_阿伟科技-油管 137
-      - 美国_阿伟科技-油管 138
-      - 美国_阿伟科技-油管 139
-      - 美国_阿伟科技-油管 140
-      - 英国_阿伟科技-油管
-      - 美国_阿伟科技-油管 141
-      - 美国_阿伟科技-油管 142
-      - 美国_阿伟科技-油管 143
-      - 中国_阿伟科技-油管 10
-      - 美国_阿伟科技-油管 144
-      - 英国_阿伟科技-油管 2
-      - 美国_阿伟科技-油管 145
-      - 美国_阿伟科技-油管 146
-      - 美国_阿伟科技-油管 147
-      - 美国_阿伟科技-油管 148
-      - 美国_阿伟科技-油管 149
-      - 美国_阿伟科技-油管 150
-      - 美国_阿伟科技-油管 151
-      - 美国_阿伟科技-油管 152
-      - 美国_阿伟科技-油管 153
-      - 美国_阿伟科技-油管 154
-      - 美国_阿伟科技-油管 155
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 18
-      - 加拿大阿伟科技-油管
-      - 美国_阿伟科技-油管 156
-      - 美国_阿伟科技-油管 157
-      - 美国_阿伟科技-油管 158
-      - 英国_阿伟科技-油管 3
-      - 美国_阿伟科技-油管 159
-      - 美国阿伟科技-油管 19
-      - 美国_阿伟科技-油管 160
-      - 日本阿伟科技-油管 2
-      - 美国_阿伟科技-油管 161
-      - 英国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管 162
-      - 台湾阿伟科技-油管 5
-      - 美国_阿伟科技-油管 163
-      - 阿伟科技-油管 4
-      - 美国_阿伟科技-油管 164
-      - 美国_阿伟科技-油管 165
-      - 美国_阿伟科技-油管 166
-      - 台湾阿伟科技-油管 6
-      - 美国_阿伟科技-油管 167
-      - 美国_阿伟科技-油管 168
-      - 美国_阿伟科技-油管 169
-      - 美国_阿伟科技-油管 170
-      - 美国_阿伟科技-油管 171
-      - 美国_阿伟科技-油管 172
-      - 美国_阿伟科技-油管 173
-      - 美国_阿伟科技-油管 174
-      - 美国阿伟科技-油管 20
-      - 美国_阿伟科技-油管 175
-      - 美国_阿伟科技-油管 176
-      - 阿伟科技-油管 5
-      - 法国_阿伟科技-油管
-      - 美国_阿伟科技-油管 177
-      - 美国_阿伟科技-油管 178
-      - 美国_阿伟科技-油管 179
-      - 中国_阿伟科技-油管 11
-      - 美国_阿伟科技-油管 180
-      - 美国阿伟科技-油管 21
-      - 阿伟科技-油管 6
-      - 英国_阿伟科技-油管 5
-      - 美国_阿伟科技-油管 181
-      - 中国_阿伟科技-油管 12
-      - 美国_阿伟科技-油管 182
-      - 美国_阿伟科技-油管 183
-      - 美国_阿伟科技-油管 184
-      - 美国_阿伟科技-油管 185
-      - 英国_阿伟科技-油管 6
-      - 美国_阿伟科技-油管 186
-      - 美国阿伟科技-油管 22
-      - 美国阿伟科技-油管 23
-      - 美国_阿伟科技-油管 187
-      - 台湾阿伟科技-油管 7
-      - 加拿大_阿伟科技-油管
-      - 美国_阿伟科技-油管 188
-      - 美国_阿伟科技-油管 189
-      - 美国_阿伟科技-油管 190
-      - 英国阿伟科技-油管 5
-      - 美国_阿伟科技-油管 191
-      - 美国_阿伟科技-油管 192
-      - 美国_阿伟科技-油管 193
-      - 美国_阿伟科技-油管 194
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港阿伟科技-油管
+      - 韩国阿伟科技-新年快乐
+      - 中国_阿伟科技-油管
+      - 中国_阿伟科技-油管 2
+      - 中国_阿伟科技-油管 3
       - 香港_阿伟科技-油管
+      - 香港阿伟科技-新年快乐
       - 香港_阿伟科技-油管 2
       - 香港_阿伟科技-油管 3
-      - 香港_阿伟科技-油管 4
-      - 香港_阿伟科技-油管 5
-      - 中国_阿伟科技-油管
-      - 台湾阿伟科技-油管
-      - 中国_阿伟科技-油管 2
-      - 香港_阿伟科技-油管 6
-      - 新加坡阿伟科技-油管
-      - 中国_阿伟科技-油管 3
+      - 日本阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐
       - 中国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管
-      - 美国_阿伟科技-油管 2
       - 中国_阿伟科技-油管 5
+      - 美国阿伟科技-新年快乐 2
+      - 美国_阿伟科技-油管
+      - 中国_阿伟科技-油管 6
+      - 美国_阿伟科技-油管 2
+      - 美国阿伟科技-新年快乐 3
+      - 中国_阿伟科技-油管 7
+      - 美国阿伟科技-新年快乐 4
+      - 美西阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 5
+      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 3
+      - 中国_阿伟科技-油管 9
+      - 芬兰阿伟科技-新年快乐
+      - 台湾阿伟科技-新年快乐
+      - 韩国_阿伟科技-油管
+      - 阿伟科技-油管
       - 美国_阿伟科技-油管 4
       - 美国_阿伟科技-油管 5
-      - 阿伟科技-油管
+      - 香港_阿伟科技-油管 4
+      - 香港阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 8
+      - 美国阿伟科技-新年快乐 6
+      - 美国阿伟科技-新年快乐 7
       - 美国_阿伟科技-油管 9
-      - 阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 中国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 10
-      - 英国阿伟科技-油管
-      - 中国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 11
-      - 美国阿伟科技-油管 2
       - 美国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 13
-      - 美国阿伟科技-油管 3
       - 美国_阿伟科技-油管 14
-      - 香港_阿伟科技-油管 7
-      - 美国阿伟科技-油管 4
       - 美国_阿伟科技-油管 15
       - 美国_阿伟科技-油管 16
       - 美国_阿伟科技-油管 17
       - 美国_阿伟科技-油管 18
       - 美国_阿伟科技-油管 19
       - 美国_阿伟科技-油管 20
-      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 21
       - 美国_阿伟科技-油管 22
+      - 美国阿伟科技-新年快乐 8
       - 美国_阿伟科技-油管 23
-      - 捷克_阿伟科技-油管
       - 美国_阿伟科技-油管 24
       - 美国_阿伟科技-油管 25
       - 美国_阿伟科技-油管 26
       - 美国_阿伟科技-油管 27
-      - 新加坡阿伟科技-油管 2
+      - 英国_阿伟科技-油管
       - 美国_阿伟科技-油管 28
+      - 中国_阿伟科技-油管 10
+      - 中国_阿伟科技-油管 11
       - 美国_阿伟科技-油管 29
-      - 中国_阿伟科技-油管 9
       - 美国_阿伟科技-油管 30
       - 美国_阿伟科技-油管 31
       - 美国_阿伟科技-油管 32
+      - 中国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 33
+      - 阿伟科技-油管 2
       - 美国_阿伟科技-油管 34
       - 美国_阿伟科技-油管 35
+      - 英国_阿伟科技-油管 2
+      - 马来西亚阿伟科技-新年快乐
+      - 英国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 36
       - 美国_阿伟科技-油管 37
-      - 日本阿伟科技-油管
       - 美国_阿伟科技-油管 38
       - 美国_阿伟科技-油管 39
+      - 美国阿伟科技-新年快乐 9
       - 美国_阿伟科技-油管 40
       - 美国_阿伟科技-油管 41
       - 美国_阿伟科技-油管 42
       - 美国_阿伟科技-油管 43
       - 美国_阿伟科技-油管 44
+      - 美国阿伟科技-新年快乐 10
       - 美国_阿伟科技-油管 45
+      - 美国阿伟科技-新年快乐 11
       - 美国_阿伟科技-油管 46
       - 美国_阿伟科技-油管 47
       - 美国_阿伟科技-油管 48
+      - 法国阿伟科技-新年快乐
       - 美国_阿伟科技-油管 49
+      - 阿伟科技-油管 3
+      - 香港阿伟科技-新年快乐 3
       - 美国_阿伟科技-油管 50
       - 美国_阿伟科技-油管 51
+      - 越南阿伟科技-新年快乐
       - 美国_阿伟科技-油管 52
       - 美国_阿伟科技-油管 53
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 5
       - 美国_阿伟科技-油管 54
       - 美国_阿伟科技-油管 55
       - 美国_阿伟科技-油管 56
       - 美国_阿伟科技-油管 57
       - 美国_阿伟科技-油管 58
       - 美国_阿伟科技-油管 59
+      - 美国阿伟科技-新年快乐 12
       - 美国_阿伟科技-油管 60
       - 美国_阿伟科技-油管 61
-      - 阿伟科技-油管 3
+      - 英国_阿伟科技-油管 4
+      - 俄罗斯阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 13
       - 美国_阿伟科技-油管 62
+      - 韩国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 63
       - 美国_阿伟科技-油管 64
+      - 美国阿伟科技-新年快乐 14
+      - 法国_阿伟科技-油管
+      - 法国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 65
-      - 美国阿伟科技-油管 6
-      - 美国阿伟科技-油管 7
-      - 美国阿伟科技-油管 8
-      - 美国阿伟科技-油管 9
-      - 台湾阿伟科技-油管 3
-      - 捷克_阿伟科技-油管 2
+      - 阿伟科技-油管 4
+      - 韩国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 66
-      - 美国阿伟科技-油管 10
       - 美国_阿伟科技-油管 67
       - 美国_阿伟科技-油管 68
+      - 美国阿伟科技-新年快乐 15
       - 美国_阿伟科技-油管 69
       - 美国_阿伟科技-油管 70
       - 美国_阿伟科技-油管 71
       - 美国_阿伟科技-油管 72
       - 美国_阿伟科技-油管 73
-      - 香港阿伟科技-油管 2
-      - 美国阿伟科技-油管 11
       - 美国_阿伟科技-油管 74
+      - 日本阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 75
+      - 香港阿伟科技-新年快乐 4
+      - 美国阿伟科技-新年快乐 16
       - 美国_阿伟科技-油管 76
+      - 美国阿伟科技-新年快乐 17
       - 美国_阿伟科技-油管 77
       - 美国_阿伟科技-油管 78
+      - 台湾阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 79
       - 美国_阿伟科技-油管 80
-      - 美国阿伟科技-油管 12
       - 美国_阿伟科技-油管 81
       - 美国_阿伟科技-油管 82
+      - 法国_阿伟科技-油管 3
+      - 英国_阿伟科技-油管 5
       - 美国_阿伟科技-油管 83
+      - 加拿大_阿伟科技-油管
+      - 阿伟科技-油管 5
       - 美国_阿伟科技-油管 84
       - 美国_阿伟科技-油管 85
+      - 英国_阿伟科技-油管 6
+      - 澳大利亚_阿伟科技-油管
+      - 日本_阿伟科技-油管
+      - 美国阿伟科技-新年快乐 18
+      - 美国阿伟科技-新年快乐 19
       - 美国_阿伟科技-油管 86
       - 美国_阿伟科技-油管 87
       - 美国_阿伟科技-油管 88
       - 美国_阿伟科技-油管 89
-      - 美国_阿伟科技-油管 90
-      - 美国_阿伟科技-油管 91
-      - 美国_阿伟科技-油管 92
-      - 美国阿伟科技-油管 13
-      - 美国_阿伟科技-油管 93
-      - 美国_阿伟科技-油管 94
-      - 美国_阿伟科技-油管 95
-      - 美国_阿伟科技-油管 96
-      - 美国_阿伟科技-油管 97
-      - 美国_阿伟科技-油管 98
-      - 美国_阿伟科技-油管 99
-      - 美国_阿伟科技-油管 100
-      - 美国_阿伟科技-油管 101
-      - 美国_阿伟科技-油管 102
-      - 美国_阿伟科技-油管 103
-      - 美国_阿伟科技-油管 104
-      - 美国_阿伟科技-油管 105
-      - 美国_阿伟科技-油管 106
-      - 美国_阿伟科技-油管 107
-      - 美国_阿伟科技-油管 108
-      - 美国阿伟科技-油管 14
-      - 美国_阿伟科技-油管 109
-      - 美国_阿伟科技-油管 110
-      - 美国_阿伟科技-油管 111
-      - 美国_阿伟科技-油管 112
-      - 美国阿伟科技-油管 15
-      - 美国_阿伟科技-油管 113
-      - 美国_阿伟科技-油管 114
-      - 美国_阿伟科技-油管 115
-      - 美国_阿伟科技-油管 116
-      - 美国_阿伟科技-油管 117
-      - 美国_阿伟科技-油管 118
-      - 美国_阿伟科技-油管 119
-      - 美国_阿伟科技-油管 120
-      - 美国_阿伟科技-油管 121
-      - 英国阿伟科技-油管 2
-      - 英国阿伟科技-油管 3
-      - 美国阿伟科技-油管 16
-      - 美国_阿伟科技-油管 122
-      - 美国_阿伟科技-油管 123
-      - 美国_阿伟科技-油管 124
-      - 美国_阿伟科技-油管 125
-      - 美国_阿伟科技-油管 126
-      - 美国_阿伟科技-油管 127
-      - 美国_阿伟科技-油管 128
-      - 美国_阿伟科技-油管 129
-      - 美国_阿伟科技-油管 130
-      - 美国_阿伟科技-油管 131
-      - 美国阿伟科技-油管 17
-      - 美国_阿伟科技-油管 132
-      - 美国_阿伟科技-油管 133
-      - 美国_阿伟科技-油管 134
-      - 台湾阿伟科技-油管 4
-      - 美国_阿伟科技-油管 135
-      - 日本_阿伟科技-油管
-      - 英国阿伟科技-油管 4
-      - 美国_阿伟科技-油管 136
-      - 美国_阿伟科技-油管 137
-      - 美国_阿伟科技-油管 138
-      - 美国_阿伟科技-油管 139
-      - 美国_阿伟科技-油管 140
-      - 英国_阿伟科技-油管
-      - 美国_阿伟科技-油管 141
-      - 美国_阿伟科技-油管 142
-      - 美国_阿伟科技-油管 143
-      - 中国_阿伟科技-油管 10
-      - 美国_阿伟科技-油管 144
-      - 英国_阿伟科技-油管 2
-      - 美国_阿伟科技-油管 145
-      - 美国_阿伟科技-油管 146
-      - 美国_阿伟科技-油管 147
-      - 美国_阿伟科技-油管 148
-      - 美国_阿伟科技-油管 149
-      - 美国_阿伟科技-油管 150
-      - 美国_阿伟科技-油管 151
-      - 美国_阿伟科技-油管 152
-      - 美国_阿伟科技-油管 153
-      - 美国_阿伟科技-油管 154
-      - 美国_阿伟科技-油管 155
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 18
-      - 加拿大阿伟科技-油管
-      - 美国_阿伟科技-油管 156
-      - 美国_阿伟科技-油管 157
-      - 美国_阿伟科技-油管 158
-      - 英国_阿伟科技-油管 3
-      - 美国_阿伟科技-油管 159
-      - 美国阿伟科技-油管 19
-      - 美国_阿伟科技-油管 160
-      - 日本阿伟科技-油管 2
-      - 美国_阿伟科技-油管 161
-      - 英国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管 162
-      - 台湾阿伟科技-油管 5
-      - 美国_阿伟科技-油管 163
-      - 阿伟科技-油管 4
-      - 美国_阿伟科技-油管 164
-      - 美国_阿伟科技-油管 165
-      - 美国_阿伟科技-油管 166
-      - 台湾阿伟科技-油管 6
-      - 美国_阿伟科技-油管 167
-      - 美国_阿伟科技-油管 168
-      - 美国_阿伟科技-油管 169
-      - 美国_阿伟科技-油管 170
-      - 美国_阿伟科技-油管 171
-      - 美国_阿伟科技-油管 172
-      - 美国_阿伟科技-油管 173
-      - 美国_阿伟科技-油管 174
-      - 美国阿伟科技-油管 20
-      - 美国_阿伟科技-油管 175
-      - 美国_阿伟科技-油管 176
-      - 阿伟科技-油管 5
-      - 法国_阿伟科技-油管
-      - 美国_阿伟科技-油管 177
-      - 美国_阿伟科技-油管 178
-      - 美国_阿伟科技-油管 179
-      - 中国_阿伟科技-油管 11
-      - 美国_阿伟科技-油管 180
-      - 美国阿伟科技-油管 21
-      - 阿伟科技-油管 6
-      - 英国_阿伟科技-油管 5
-      - 美国_阿伟科技-油管 181
-      - 中国_阿伟科技-油管 12
-      - 美国_阿伟科技-油管 182
-      - 美国_阿伟科技-油管 183
-      - 美国_阿伟科技-油管 184
-      - 美国_阿伟科技-油管 185
-      - 英国_阿伟科技-油管 6
-      - 美国_阿伟科技-油管 186
-      - 美国阿伟科技-油管 22
-      - 美国阿伟科技-油管 23
-      - 美国_阿伟科技-油管 187
-      - 台湾阿伟科技-油管 7
-      - 加拿大_阿伟科技-油管
-      - 美国_阿伟科技-油管 188
-      - 美国_阿伟科技-油管 189
-      - 美国_阿伟科技-油管 190
-      - 英国阿伟科技-油管 5
-      - 美国_阿伟科技-油管 191
-      - 美国_阿伟科技-油管 192
-      - 美国_阿伟科技-油管 193
-      - 美国_阿伟科技-油管 194
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -1132,1136 +676,673 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港阿伟科技-油管
+      - 韩国阿伟科技-新年快乐
+      - 中国_阿伟科技-油管
+      - 中国_阿伟科技-油管 2
+      - 中国_阿伟科技-油管 3
       - 香港_阿伟科技-油管
+      - 香港阿伟科技-新年快乐
       - 香港_阿伟科技-油管 2
       - 香港_阿伟科技-油管 3
-      - 香港_阿伟科技-油管 4
-      - 香港_阿伟科技-油管 5
-      - 中国_阿伟科技-油管
-      - 台湾阿伟科技-油管
-      - 中国_阿伟科技-油管 2
-      - 香港_阿伟科技-油管 6
-      - 新加坡阿伟科技-油管
-      - 中国_阿伟科技-油管 3
+      - 日本阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐
       - 中国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管
-      - 美国_阿伟科技-油管 2
       - 中国_阿伟科技-油管 5
+      - 美国阿伟科技-新年快乐 2
+      - 美国_阿伟科技-油管
+      - 中国_阿伟科技-油管 6
+      - 美国_阿伟科技-油管 2
+      - 美国阿伟科技-新年快乐 3
+      - 中国_阿伟科技-油管 7
+      - 美国阿伟科技-新年快乐 4
+      - 美西阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 5
+      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 3
+      - 中国_阿伟科技-油管 9
+      - 芬兰阿伟科技-新年快乐
+      - 台湾阿伟科技-新年快乐
+      - 韩国_阿伟科技-油管
+      - 阿伟科技-油管
       - 美国_阿伟科技-油管 4
       - 美国_阿伟科技-油管 5
-      - 阿伟科技-油管
+      - 香港_阿伟科技-油管 4
+      - 香港阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 8
+      - 美国阿伟科技-新年快乐 6
+      - 美国阿伟科技-新年快乐 7
       - 美国_阿伟科技-油管 9
-      - 阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 中国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 10
-      - 英国阿伟科技-油管
-      - 中国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 11
-      - 美国阿伟科技-油管 2
       - 美国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 13
-      - 美国阿伟科技-油管 3
       - 美国_阿伟科技-油管 14
-      - 香港_阿伟科技-油管 7
-      - 美国阿伟科技-油管 4
       - 美国_阿伟科技-油管 15
       - 美国_阿伟科技-油管 16
       - 美国_阿伟科技-油管 17
       - 美国_阿伟科技-油管 18
       - 美国_阿伟科技-油管 19
       - 美国_阿伟科技-油管 20
-      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 21
       - 美国_阿伟科技-油管 22
+      - 美国阿伟科技-新年快乐 8
       - 美国_阿伟科技-油管 23
-      - 捷克_阿伟科技-油管
       - 美国_阿伟科技-油管 24
       - 美国_阿伟科技-油管 25
       - 美国_阿伟科技-油管 26
       - 美国_阿伟科技-油管 27
-      - 新加坡阿伟科技-油管 2
+      - 英国_阿伟科技-油管
       - 美国_阿伟科技-油管 28
+      - 中国_阿伟科技-油管 10
+      - 中国_阿伟科技-油管 11
       - 美国_阿伟科技-油管 29
-      - 中国_阿伟科技-油管 9
       - 美国_阿伟科技-油管 30
       - 美国_阿伟科技-油管 31
       - 美国_阿伟科技-油管 32
+      - 中国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 33
+      - 阿伟科技-油管 2
       - 美国_阿伟科技-油管 34
       - 美国_阿伟科技-油管 35
+      - 英国_阿伟科技-油管 2
+      - 马来西亚阿伟科技-新年快乐
+      - 英国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 36
       - 美国_阿伟科技-油管 37
-      - 日本阿伟科技-油管
       - 美国_阿伟科技-油管 38
       - 美国_阿伟科技-油管 39
+      - 美国阿伟科技-新年快乐 9
       - 美国_阿伟科技-油管 40
       - 美国_阿伟科技-油管 41
       - 美国_阿伟科技-油管 42
       - 美国_阿伟科技-油管 43
       - 美国_阿伟科技-油管 44
+      - 美国阿伟科技-新年快乐 10
       - 美国_阿伟科技-油管 45
+      - 美国阿伟科技-新年快乐 11
       - 美国_阿伟科技-油管 46
       - 美国_阿伟科技-油管 47
       - 美国_阿伟科技-油管 48
+      - 法国阿伟科技-新年快乐
       - 美国_阿伟科技-油管 49
+      - 阿伟科技-油管 3
+      - 香港阿伟科技-新年快乐 3
       - 美国_阿伟科技-油管 50
       - 美国_阿伟科技-油管 51
+      - 越南阿伟科技-新年快乐
       - 美国_阿伟科技-油管 52
       - 美国_阿伟科技-油管 53
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 5
       - 美国_阿伟科技-油管 54
       - 美国_阿伟科技-油管 55
       - 美国_阿伟科技-油管 56
       - 美国_阿伟科技-油管 57
       - 美国_阿伟科技-油管 58
       - 美国_阿伟科技-油管 59
+      - 美国阿伟科技-新年快乐 12
       - 美国_阿伟科技-油管 60
       - 美国_阿伟科技-油管 61
-      - 阿伟科技-油管 3
+      - 英国_阿伟科技-油管 4
+      - 俄罗斯阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 13
       - 美国_阿伟科技-油管 62
+      - 韩国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 63
       - 美国_阿伟科技-油管 64
+      - 美国阿伟科技-新年快乐 14
+      - 法国_阿伟科技-油管
+      - 法国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 65
-      - 美国阿伟科技-油管 6
-      - 美国阿伟科技-油管 7
-      - 美国阿伟科技-油管 8
-      - 美国阿伟科技-油管 9
-      - 台湾阿伟科技-油管 3
-      - 捷克_阿伟科技-油管 2
+      - 阿伟科技-油管 4
+      - 韩国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 66
-      - 美国阿伟科技-油管 10
       - 美国_阿伟科技-油管 67
       - 美国_阿伟科技-油管 68
+      - 美国阿伟科技-新年快乐 15
       - 美国_阿伟科技-油管 69
       - 美国_阿伟科技-油管 70
       - 美国_阿伟科技-油管 71
       - 美国_阿伟科技-油管 72
       - 美国_阿伟科技-油管 73
-      - 香港阿伟科技-油管 2
-      - 美国阿伟科技-油管 11
       - 美国_阿伟科技-油管 74
+      - 日本阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 75
+      - 香港阿伟科技-新年快乐 4
+      - 美国阿伟科技-新年快乐 16
       - 美国_阿伟科技-油管 76
+      - 美国阿伟科技-新年快乐 17
       - 美国_阿伟科技-油管 77
       - 美国_阿伟科技-油管 78
+      - 台湾阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 79
       - 美国_阿伟科技-油管 80
-      - 美国阿伟科技-油管 12
       - 美国_阿伟科技-油管 81
       - 美国_阿伟科技-油管 82
+      - 法国_阿伟科技-油管 3
+      - 英国_阿伟科技-油管 5
       - 美国_阿伟科技-油管 83
+      - 加拿大_阿伟科技-油管
+      - 阿伟科技-油管 5
       - 美国_阿伟科技-油管 84
       - 美国_阿伟科技-油管 85
+      - 英国_阿伟科技-油管 6
+      - 澳大利亚_阿伟科技-油管
+      - 日本_阿伟科技-油管
+      - 美国阿伟科技-新年快乐 18
+      - 美国阿伟科技-新年快乐 19
       - 美国_阿伟科技-油管 86
       - 美国_阿伟科技-油管 87
       - 美国_阿伟科技-油管 88
       - 美国_阿伟科技-油管 89
-      - 美国_阿伟科技-油管 90
-      - 美国_阿伟科技-油管 91
-      - 美国_阿伟科技-油管 92
-      - 美国阿伟科技-油管 13
-      - 美国_阿伟科技-油管 93
-      - 美国_阿伟科技-油管 94
-      - 美国_阿伟科技-油管 95
-      - 美国_阿伟科技-油管 96
-      - 美国_阿伟科技-油管 97
-      - 美国_阿伟科技-油管 98
-      - 美国_阿伟科技-油管 99
-      - 美国_阿伟科技-油管 100
-      - 美国_阿伟科技-油管 101
-      - 美国_阿伟科技-油管 102
-      - 美国_阿伟科技-油管 103
-      - 美国_阿伟科技-油管 104
-      - 美国_阿伟科技-油管 105
-      - 美国_阿伟科技-油管 106
-      - 美国_阿伟科技-油管 107
-      - 美国_阿伟科技-油管 108
-      - 美国阿伟科技-油管 14
-      - 美国_阿伟科技-油管 109
-      - 美国_阿伟科技-油管 110
-      - 美国_阿伟科技-油管 111
-      - 美国_阿伟科技-油管 112
-      - 美国阿伟科技-油管 15
-      - 美国_阿伟科技-油管 113
-      - 美国_阿伟科技-油管 114
-      - 美国_阿伟科技-油管 115
-      - 美国_阿伟科技-油管 116
-      - 美国_阿伟科技-油管 117
-      - 美国_阿伟科技-油管 118
-      - 美国_阿伟科技-油管 119
-      - 美国_阿伟科技-油管 120
-      - 美国_阿伟科技-油管 121
-      - 英国阿伟科技-油管 2
-      - 英国阿伟科技-油管 3
-      - 美国阿伟科技-油管 16
-      - 美国_阿伟科技-油管 122
-      - 美国_阿伟科技-油管 123
-      - 美国_阿伟科技-油管 124
-      - 美国_阿伟科技-油管 125
-      - 美国_阿伟科技-油管 126
-      - 美国_阿伟科技-油管 127
-      - 美国_阿伟科技-油管 128
-      - 美国_阿伟科技-油管 129
-      - 美国_阿伟科技-油管 130
-      - 美国_阿伟科技-油管 131
-      - 美国阿伟科技-油管 17
-      - 美国_阿伟科技-油管 132
-      - 美国_阿伟科技-油管 133
-      - 美国_阿伟科技-油管 134
-      - 台湾阿伟科技-油管 4
-      - 美国_阿伟科技-油管 135
-      - 日本_阿伟科技-油管
-      - 英国阿伟科技-油管 4
-      - 美国_阿伟科技-油管 136
-      - 美国_阿伟科技-油管 137
-      - 美国_阿伟科技-油管 138
-      - 美国_阿伟科技-油管 139
-      - 美国_阿伟科技-油管 140
-      - 英国_阿伟科技-油管
-      - 美国_阿伟科技-油管 141
-      - 美国_阿伟科技-油管 142
-      - 美国_阿伟科技-油管 143
-      - 中国_阿伟科技-油管 10
-      - 美国_阿伟科技-油管 144
-      - 英国_阿伟科技-油管 2
-      - 美国_阿伟科技-油管 145
-      - 美国_阿伟科技-油管 146
-      - 美国_阿伟科技-油管 147
-      - 美国_阿伟科技-油管 148
-      - 美国_阿伟科技-油管 149
-      - 美国_阿伟科技-油管 150
-      - 美国_阿伟科技-油管 151
-      - 美国_阿伟科技-油管 152
-      - 美国_阿伟科技-油管 153
-      - 美国_阿伟科技-油管 154
-      - 美国_阿伟科技-油管 155
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 18
-      - 加拿大阿伟科技-油管
-      - 美国_阿伟科技-油管 156
-      - 美国_阿伟科技-油管 157
-      - 美国_阿伟科技-油管 158
-      - 英国_阿伟科技-油管 3
-      - 美国_阿伟科技-油管 159
-      - 美国阿伟科技-油管 19
-      - 美国_阿伟科技-油管 160
-      - 日本阿伟科技-油管 2
-      - 美国_阿伟科技-油管 161
-      - 英国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管 162
-      - 台湾阿伟科技-油管 5
-      - 美国_阿伟科技-油管 163
-      - 阿伟科技-油管 4
-      - 美国_阿伟科技-油管 164
-      - 美国_阿伟科技-油管 165
-      - 美国_阿伟科技-油管 166
-      - 台湾阿伟科技-油管 6
-      - 美国_阿伟科技-油管 167
-      - 美国_阿伟科技-油管 168
-      - 美国_阿伟科技-油管 169
-      - 美国_阿伟科技-油管 170
-      - 美国_阿伟科技-油管 171
-      - 美国_阿伟科技-油管 172
-      - 美国_阿伟科技-油管 173
-      - 美国_阿伟科技-油管 174
-      - 美国阿伟科技-油管 20
-      - 美国_阿伟科技-油管 175
-      - 美国_阿伟科技-油管 176
-      - 阿伟科技-油管 5
-      - 法国_阿伟科技-油管
-      - 美国_阿伟科技-油管 177
-      - 美国_阿伟科技-油管 178
-      - 美国_阿伟科技-油管 179
-      - 中国_阿伟科技-油管 11
-      - 美国_阿伟科技-油管 180
-      - 美国阿伟科技-油管 21
-      - 阿伟科技-油管 6
-      - 英国_阿伟科技-油管 5
-      - 美国_阿伟科技-油管 181
-      - 中国_阿伟科技-油管 12
-      - 美国_阿伟科技-油管 182
-      - 美国_阿伟科技-油管 183
-      - 美国_阿伟科技-油管 184
-      - 美国_阿伟科技-油管 185
-      - 英国_阿伟科技-油管 6
-      - 美国_阿伟科技-油管 186
-      - 美国阿伟科技-油管 22
-      - 美国阿伟科技-油管 23
-      - 美国_阿伟科技-油管 187
-      - 台湾阿伟科技-油管 7
-      - 加拿大_阿伟科技-油管
-      - 美国_阿伟科技-油管 188
-      - 美国_阿伟科技-油管 189
-      - 美国_阿伟科技-油管 190
-      - 英国阿伟科技-油管 5
-      - 美国_阿伟科技-油管 191
-      - 美国_阿伟科技-油管 192
-      - 美国_阿伟科技-油管 193
-      - 美国_阿伟科技-油管 194
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港阿伟科技-油管
       - 香港_阿伟科技-油管
+      - 香港阿伟科技-新年快乐
       - 香港_阿伟科技-油管 2
       - 香港_阿伟科技-油管 3
+      - 台湾阿伟科技-新年快乐
       - 香港_阿伟科技-油管 4
-      - 香港_阿伟科技-油管 5
-      - 台湾阿伟科技-油管
-      - 香港_阿伟科技-油管 6
-      - 香港_阿伟科技-油管 7
-      - 台湾阿伟科技-油管 2
-      - 台湾阿伟科技-油管 3
-      - 香港阿伟科技-油管 2
-      - 台湾阿伟科技-油管 4
-      - 香港阿伟科技-油管 3
-      - 台湾阿伟科技-油管 5
-      - 台湾阿伟科技-油管 6
-      - 台湾阿伟科技-油管 7
+      - 香港阿伟科技-新年快乐 2
+      - 香港阿伟科技-新年快乐 3
+      - 香港阿伟科技-新年快乐 4
+      - 台湾阿伟科技-新年快乐 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港阿伟科技-油管
+      - 韩国阿伟科技-新年快乐
+      - 中国_阿伟科技-油管
+      - 中国_阿伟科技-油管 2
+      - 中国_阿伟科技-油管 3
       - 香港_阿伟科技-油管
+      - 香港阿伟科技-新年快乐
       - 香港_阿伟科技-油管 2
       - 香港_阿伟科技-油管 3
-      - 香港_阿伟科技-油管 4
-      - 香港_阿伟科技-油管 5
-      - 中国_阿伟科技-油管
-      - 台湾阿伟科技-油管
-      - 中国_阿伟科技-油管 2
-      - 香港_阿伟科技-油管 6
-      - 新加坡阿伟科技-油管
-      - 中国_阿伟科技-油管 3
+      - 日本阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐
       - 中国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管
-      - 美国_阿伟科技-油管 2
       - 中国_阿伟科技-油管 5
+      - 美国阿伟科技-新年快乐 2
+      - 美国_阿伟科技-油管
+      - 中国_阿伟科技-油管 6
+      - 美国_阿伟科技-油管 2
+      - 美国阿伟科技-新年快乐 3
+      - 中国_阿伟科技-油管 7
+      - 美国阿伟科技-新年快乐 4
+      - 美西阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 5
+      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 3
+      - 中国_阿伟科技-油管 9
+      - 芬兰阿伟科技-新年快乐
+      - 台湾阿伟科技-新年快乐
+      - 韩国_阿伟科技-油管
+      - 阿伟科技-油管
       - 美国_阿伟科技-油管 4
       - 美国_阿伟科技-油管 5
-      - 阿伟科技-油管
+      - 香港_阿伟科技-油管 4
+      - 香港阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 8
+      - 美国阿伟科技-新年快乐 6
+      - 美国阿伟科技-新年快乐 7
       - 美国_阿伟科技-油管 9
-      - 阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 中国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 10
-      - 英国阿伟科技-油管
-      - 中国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 11
-      - 美国阿伟科技-油管 2
       - 美国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 13
-      - 美国阿伟科技-油管 3
       - 美国_阿伟科技-油管 14
-      - 香港_阿伟科技-油管 7
-      - 美国阿伟科技-油管 4
       - 美国_阿伟科技-油管 15
       - 美国_阿伟科技-油管 16
       - 美国_阿伟科技-油管 17
       - 美国_阿伟科技-油管 18
       - 美国_阿伟科技-油管 19
       - 美国_阿伟科技-油管 20
-      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 21
       - 美国_阿伟科技-油管 22
+      - 美国阿伟科技-新年快乐 8
       - 美国_阿伟科技-油管 23
-      - 捷克_阿伟科技-油管
       - 美国_阿伟科技-油管 24
       - 美国_阿伟科技-油管 25
       - 美国_阿伟科技-油管 26
       - 美国_阿伟科技-油管 27
-      - 新加坡阿伟科技-油管 2
+      - 英国_阿伟科技-油管
       - 美国_阿伟科技-油管 28
+      - 中国_阿伟科技-油管 10
+      - 中国_阿伟科技-油管 11
       - 美国_阿伟科技-油管 29
-      - 中国_阿伟科技-油管 9
       - 美国_阿伟科技-油管 30
       - 美国_阿伟科技-油管 31
       - 美国_阿伟科技-油管 32
+      - 中国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 33
+      - 阿伟科技-油管 2
       - 美国_阿伟科技-油管 34
       - 美国_阿伟科技-油管 35
+      - 英国_阿伟科技-油管 2
+      - 马来西亚阿伟科技-新年快乐
+      - 英国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 36
       - 美国_阿伟科技-油管 37
-      - 日本阿伟科技-油管
       - 美国_阿伟科技-油管 38
       - 美国_阿伟科技-油管 39
+      - 美国阿伟科技-新年快乐 9
       - 美国_阿伟科技-油管 40
       - 美国_阿伟科技-油管 41
       - 美国_阿伟科技-油管 42
       - 美国_阿伟科技-油管 43
       - 美国_阿伟科技-油管 44
+      - 美国阿伟科技-新年快乐 10
       - 美国_阿伟科技-油管 45
+      - 美国阿伟科技-新年快乐 11
       - 美国_阿伟科技-油管 46
       - 美国_阿伟科技-油管 47
       - 美国_阿伟科技-油管 48
+      - 法国阿伟科技-新年快乐
       - 美国_阿伟科技-油管 49
+      - 阿伟科技-油管 3
+      - 香港阿伟科技-新年快乐 3
       - 美国_阿伟科技-油管 50
       - 美国_阿伟科技-油管 51
+      - 越南阿伟科技-新年快乐
       - 美国_阿伟科技-油管 52
       - 美国_阿伟科技-油管 53
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 5
       - 美国_阿伟科技-油管 54
       - 美国_阿伟科技-油管 55
       - 美国_阿伟科技-油管 56
       - 美国_阿伟科技-油管 57
       - 美国_阿伟科技-油管 58
       - 美国_阿伟科技-油管 59
+      - 美国阿伟科技-新年快乐 12
       - 美国_阿伟科技-油管 60
       - 美国_阿伟科技-油管 61
-      - 阿伟科技-油管 3
+      - 英国_阿伟科技-油管 4
+      - 俄罗斯阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 13
       - 美国_阿伟科技-油管 62
+      - 韩国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 63
       - 美国_阿伟科技-油管 64
+      - 美国阿伟科技-新年快乐 14
+      - 法国_阿伟科技-油管
+      - 法国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 65
-      - 美国阿伟科技-油管 6
-      - 美国阿伟科技-油管 7
-      - 美国阿伟科技-油管 8
-      - 美国阿伟科技-油管 9
-      - 台湾阿伟科技-油管 3
-      - 捷克_阿伟科技-油管 2
+      - 阿伟科技-油管 4
+      - 韩国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 66
-      - 美国阿伟科技-油管 10
       - 美国_阿伟科技-油管 67
       - 美国_阿伟科技-油管 68
+      - 美国阿伟科技-新年快乐 15
       - 美国_阿伟科技-油管 69
       - 美国_阿伟科技-油管 70
       - 美国_阿伟科技-油管 71
       - 美国_阿伟科技-油管 72
       - 美国_阿伟科技-油管 73
-      - 香港阿伟科技-油管 2
-      - 美国阿伟科技-油管 11
       - 美国_阿伟科技-油管 74
+      - 日本阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 75
+      - 香港阿伟科技-新年快乐 4
+      - 美国阿伟科技-新年快乐 16
       - 美国_阿伟科技-油管 76
+      - 美国阿伟科技-新年快乐 17
       - 美国_阿伟科技-油管 77
       - 美国_阿伟科技-油管 78
+      - 台湾阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 79
       - 美国_阿伟科技-油管 80
-      - 美国阿伟科技-油管 12
       - 美国_阿伟科技-油管 81
       - 美国_阿伟科技-油管 82
+      - 法国_阿伟科技-油管 3
+      - 英国_阿伟科技-油管 5
       - 美国_阿伟科技-油管 83
+      - 加拿大_阿伟科技-油管
+      - 阿伟科技-油管 5
       - 美国_阿伟科技-油管 84
       - 美国_阿伟科技-油管 85
+      - 英国_阿伟科技-油管 6
+      - 澳大利亚_阿伟科技-油管
+      - 日本_阿伟科技-油管
+      - 美国阿伟科技-新年快乐 18
+      - 美国阿伟科技-新年快乐 19
       - 美国_阿伟科技-油管 86
       - 美国_阿伟科技-油管 87
       - 美国_阿伟科技-油管 88
       - 美国_阿伟科技-油管 89
-      - 美国_阿伟科技-油管 90
-      - 美国_阿伟科技-油管 91
-      - 美国_阿伟科技-油管 92
-      - 美国阿伟科技-油管 13
-      - 美国_阿伟科技-油管 93
-      - 美国_阿伟科技-油管 94
-      - 美国_阿伟科技-油管 95
-      - 美国_阿伟科技-油管 96
-      - 美国_阿伟科技-油管 97
-      - 美国_阿伟科技-油管 98
-      - 美国_阿伟科技-油管 99
-      - 美国_阿伟科技-油管 100
-      - 美国_阿伟科技-油管 101
-      - 美国_阿伟科技-油管 102
-      - 美国_阿伟科技-油管 103
-      - 美国_阿伟科技-油管 104
-      - 美国_阿伟科技-油管 105
-      - 美国_阿伟科技-油管 106
-      - 美国_阿伟科技-油管 107
-      - 美国_阿伟科技-油管 108
-      - 美国阿伟科技-油管 14
-      - 美国_阿伟科技-油管 109
-      - 美国_阿伟科技-油管 110
-      - 美国_阿伟科技-油管 111
-      - 美国_阿伟科技-油管 112
-      - 美国阿伟科技-油管 15
-      - 美国_阿伟科技-油管 113
-      - 美国_阿伟科技-油管 114
-      - 美国_阿伟科技-油管 115
-      - 美国_阿伟科技-油管 116
-      - 美国_阿伟科技-油管 117
-      - 美国_阿伟科技-油管 118
-      - 美国_阿伟科技-油管 119
-      - 美国_阿伟科技-油管 120
-      - 美国_阿伟科技-油管 121
-      - 英国阿伟科技-油管 2
-      - 英国阿伟科技-油管 3
-      - 美国阿伟科技-油管 16
-      - 美国_阿伟科技-油管 122
-      - 美国_阿伟科技-油管 123
-      - 美国_阿伟科技-油管 124
-      - 美国_阿伟科技-油管 125
-      - 美国_阿伟科技-油管 126
-      - 美国_阿伟科技-油管 127
-      - 美国_阿伟科技-油管 128
-      - 美国_阿伟科技-油管 129
-      - 美国_阿伟科技-油管 130
-      - 美国_阿伟科技-油管 131
-      - 美国阿伟科技-油管 17
-      - 美国_阿伟科技-油管 132
-      - 美国_阿伟科技-油管 133
-      - 美国_阿伟科技-油管 134
-      - 台湾阿伟科技-油管 4
-      - 美国_阿伟科技-油管 135
-      - 日本_阿伟科技-油管
-      - 英国阿伟科技-油管 4
-      - 美国_阿伟科技-油管 136
-      - 美国_阿伟科技-油管 137
-      - 美国_阿伟科技-油管 138
-      - 美国_阿伟科技-油管 139
-      - 美国_阿伟科技-油管 140
-      - 英国_阿伟科技-油管
-      - 美国_阿伟科技-油管 141
-      - 美国_阿伟科技-油管 142
-      - 美国_阿伟科技-油管 143
-      - 中国_阿伟科技-油管 10
-      - 美国_阿伟科技-油管 144
-      - 英国_阿伟科技-油管 2
-      - 美国_阿伟科技-油管 145
-      - 美国_阿伟科技-油管 146
-      - 美国_阿伟科技-油管 147
-      - 美国_阿伟科技-油管 148
-      - 美国_阿伟科技-油管 149
-      - 美国_阿伟科技-油管 150
-      - 美国_阿伟科技-油管 151
-      - 美国_阿伟科技-油管 152
-      - 美国_阿伟科技-油管 153
-      - 美国_阿伟科技-油管 154
-      - 美国_阿伟科技-油管 155
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 18
-      - 加拿大阿伟科技-油管
-      - 美国_阿伟科技-油管 156
-      - 美国_阿伟科技-油管 157
-      - 美国_阿伟科技-油管 158
-      - 英国_阿伟科技-油管 3
-      - 美国_阿伟科技-油管 159
-      - 美国阿伟科技-油管 19
-      - 美国_阿伟科技-油管 160
-      - 日本阿伟科技-油管 2
-      - 美国_阿伟科技-油管 161
-      - 英国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管 162
-      - 台湾阿伟科技-油管 5
-      - 美国_阿伟科技-油管 163
-      - 阿伟科技-油管 4
-      - 美国_阿伟科技-油管 164
-      - 美国_阿伟科技-油管 165
-      - 美国_阿伟科技-油管 166
-      - 台湾阿伟科技-油管 6
-      - 美国_阿伟科技-油管 167
-      - 美国_阿伟科技-油管 168
-      - 美国_阿伟科技-油管 169
-      - 美国_阿伟科技-油管 170
-      - 美国_阿伟科技-油管 171
-      - 美国_阿伟科技-油管 172
-      - 美国_阿伟科技-油管 173
-      - 美国_阿伟科技-油管 174
-      - 美国阿伟科技-油管 20
-      - 美国_阿伟科技-油管 175
-      - 美国_阿伟科技-油管 176
-      - 阿伟科技-油管 5
-      - 法国_阿伟科技-油管
-      - 美国_阿伟科技-油管 177
-      - 美国_阿伟科技-油管 178
-      - 美国_阿伟科技-油管 179
-      - 中国_阿伟科技-油管 11
-      - 美国_阿伟科技-油管 180
-      - 美国阿伟科技-油管 21
-      - 阿伟科技-油管 6
-      - 英国_阿伟科技-油管 5
-      - 美国_阿伟科技-油管 181
-      - 中国_阿伟科技-油管 12
-      - 美国_阿伟科技-油管 182
-      - 美国_阿伟科技-油管 183
-      - 美国_阿伟科技-油管 184
-      - 美国_阿伟科技-油管 185
-      - 英国_阿伟科技-油管 6
-      - 美国_阿伟科技-油管 186
-      - 美国阿伟科技-油管 22
-      - 美国阿伟科技-油管 23
-      - 美国_阿伟科技-油管 187
-      - 台湾阿伟科技-油管 7
-      - 加拿大_阿伟科技-油管
-      - 美国_阿伟科技-油管 188
-      - 美国_阿伟科技-油管 189
-      - 美国_阿伟科技-油管 190
-      - 英国阿伟科技-油管 5
-      - 美国_阿伟科技-油管 191
-      - 美国_阿伟科技-油管 192
-      - 美国_阿伟科技-油管 193
-      - 美国_阿伟科技-油管 194
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港阿伟科技-油管
+      - 韩国阿伟科技-新年快乐
+      - 中国_阿伟科技-油管
+      - 中国_阿伟科技-油管 2
+      - 中国_阿伟科技-油管 3
       - 香港_阿伟科技-油管
+      - 香港阿伟科技-新年快乐
       - 香港_阿伟科技-油管 2
       - 香港_阿伟科技-油管 3
-      - 香港_阿伟科技-油管 4
-      - 香港_阿伟科技-油管 5
-      - 中国_阿伟科技-油管
-      - 台湾阿伟科技-油管
-      - 中国_阿伟科技-油管 2
-      - 香港_阿伟科技-油管 6
-      - 新加坡阿伟科技-油管
-      - 中国_阿伟科技-油管 3
+      - 日本阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐
       - 中国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管
-      - 美国_阿伟科技-油管 2
       - 中国_阿伟科技-油管 5
+      - 美国阿伟科技-新年快乐 2
+      - 美国_阿伟科技-油管
+      - 中国_阿伟科技-油管 6
+      - 美国_阿伟科技-油管 2
+      - 美国阿伟科技-新年快乐 3
+      - 中国_阿伟科技-油管 7
+      - 美国阿伟科技-新年快乐 4
+      - 美西阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 5
+      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 3
+      - 中国_阿伟科技-油管 9
+      - 芬兰阿伟科技-新年快乐
+      - 台湾阿伟科技-新年快乐
+      - 韩国_阿伟科技-油管
+      - 阿伟科技-油管
       - 美国_阿伟科技-油管 4
       - 美国_阿伟科技-油管 5
-      - 阿伟科技-油管
+      - 香港_阿伟科技-油管 4
+      - 香港阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 8
+      - 美国阿伟科技-新年快乐 6
+      - 美国阿伟科技-新年快乐 7
       - 美国_阿伟科技-油管 9
-      - 阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 中国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 10
-      - 英国阿伟科技-油管
-      - 中国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 11
-      - 美国阿伟科技-油管 2
       - 美国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 13
-      - 美国阿伟科技-油管 3
       - 美国_阿伟科技-油管 14
-      - 香港_阿伟科技-油管 7
-      - 美国阿伟科技-油管 4
       - 美国_阿伟科技-油管 15
       - 美国_阿伟科技-油管 16
       - 美国_阿伟科技-油管 17
       - 美国_阿伟科技-油管 18
       - 美国_阿伟科技-油管 19
       - 美国_阿伟科技-油管 20
-      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 21
       - 美国_阿伟科技-油管 22
+      - 美国阿伟科技-新年快乐 8
       - 美国_阿伟科技-油管 23
-      - 捷克_阿伟科技-油管
       - 美国_阿伟科技-油管 24
       - 美国_阿伟科技-油管 25
       - 美国_阿伟科技-油管 26
       - 美国_阿伟科技-油管 27
-      - 新加坡阿伟科技-油管 2
+      - 英国_阿伟科技-油管
       - 美国_阿伟科技-油管 28
+      - 中国_阿伟科技-油管 10
+      - 中国_阿伟科技-油管 11
       - 美国_阿伟科技-油管 29
-      - 中国_阿伟科技-油管 9
       - 美国_阿伟科技-油管 30
       - 美国_阿伟科技-油管 31
       - 美国_阿伟科技-油管 32
+      - 中国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 33
+      - 阿伟科技-油管 2
       - 美国_阿伟科技-油管 34
       - 美国_阿伟科技-油管 35
+      - 英国_阿伟科技-油管 2
+      - 马来西亚阿伟科技-新年快乐
+      - 英国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 36
       - 美国_阿伟科技-油管 37
-      - 日本阿伟科技-油管
       - 美国_阿伟科技-油管 38
       - 美国_阿伟科技-油管 39
+      - 美国阿伟科技-新年快乐 9
       - 美国_阿伟科技-油管 40
       - 美国_阿伟科技-油管 41
       - 美国_阿伟科技-油管 42
       - 美国_阿伟科技-油管 43
       - 美国_阿伟科技-油管 44
+      - 美国阿伟科技-新年快乐 10
       - 美国_阿伟科技-油管 45
+      - 美国阿伟科技-新年快乐 11
       - 美国_阿伟科技-油管 46
       - 美国_阿伟科技-油管 47
       - 美国_阿伟科技-油管 48
+      - 法国阿伟科技-新年快乐
       - 美国_阿伟科技-油管 49
+      - 阿伟科技-油管 3
+      - 香港阿伟科技-新年快乐 3
       - 美国_阿伟科技-油管 50
       - 美国_阿伟科技-油管 51
+      - 越南阿伟科技-新年快乐
       - 美国_阿伟科技-油管 52
       - 美国_阿伟科技-油管 53
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 5
       - 美国_阿伟科技-油管 54
       - 美国_阿伟科技-油管 55
       - 美国_阿伟科技-油管 56
       - 美国_阿伟科技-油管 57
       - 美国_阿伟科技-油管 58
       - 美国_阿伟科技-油管 59
+      - 美国阿伟科技-新年快乐 12
       - 美国_阿伟科技-油管 60
       - 美国_阿伟科技-油管 61
-      - 阿伟科技-油管 3
+      - 英国_阿伟科技-油管 4
+      - 俄罗斯阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 13
       - 美国_阿伟科技-油管 62
+      - 韩国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 63
       - 美国_阿伟科技-油管 64
+      - 美国阿伟科技-新年快乐 14
+      - 法国_阿伟科技-油管
+      - 法国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 65
-      - 美国阿伟科技-油管 6
-      - 美国阿伟科技-油管 7
-      - 美国阿伟科技-油管 8
-      - 美国阿伟科技-油管 9
-      - 台湾阿伟科技-油管 3
-      - 捷克_阿伟科技-油管 2
+      - 阿伟科技-油管 4
+      - 韩国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 66
-      - 美国阿伟科技-油管 10
       - 美国_阿伟科技-油管 67
       - 美国_阿伟科技-油管 68
+      - 美国阿伟科技-新年快乐 15
       - 美国_阿伟科技-油管 69
       - 美国_阿伟科技-油管 70
       - 美国_阿伟科技-油管 71
       - 美国_阿伟科技-油管 72
       - 美国_阿伟科技-油管 73
-      - 香港阿伟科技-油管 2
-      - 美国阿伟科技-油管 11
       - 美国_阿伟科技-油管 74
+      - 日本阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 75
+      - 香港阿伟科技-新年快乐 4
+      - 美国阿伟科技-新年快乐 16
       - 美国_阿伟科技-油管 76
+      - 美国阿伟科技-新年快乐 17
       - 美国_阿伟科技-油管 77
       - 美国_阿伟科技-油管 78
+      - 台湾阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 79
       - 美国_阿伟科技-油管 80
-      - 美国阿伟科技-油管 12
       - 美国_阿伟科技-油管 81
       - 美国_阿伟科技-油管 82
+      - 法国_阿伟科技-油管 3
+      - 英国_阿伟科技-油管 5
       - 美国_阿伟科技-油管 83
+      - 加拿大_阿伟科技-油管
+      - 阿伟科技-油管 5
       - 美国_阿伟科技-油管 84
       - 美国_阿伟科技-油管 85
+      - 英国_阿伟科技-油管 6
+      - 澳大利亚_阿伟科技-油管
+      - 日本_阿伟科技-油管
+      - 美国阿伟科技-新年快乐 18
+      - 美国阿伟科技-新年快乐 19
       - 美国_阿伟科技-油管 86
       - 美国_阿伟科技-油管 87
       - 美国_阿伟科技-油管 88
       - 美国_阿伟科技-油管 89
-      - 美国_阿伟科技-油管 90
-      - 美国_阿伟科技-油管 91
-      - 美国_阿伟科技-油管 92
-      - 美国阿伟科技-油管 13
-      - 美国_阿伟科技-油管 93
-      - 美国_阿伟科技-油管 94
-      - 美国_阿伟科技-油管 95
-      - 美国_阿伟科技-油管 96
-      - 美国_阿伟科技-油管 97
-      - 美国_阿伟科技-油管 98
-      - 美国_阿伟科技-油管 99
-      - 美国_阿伟科技-油管 100
-      - 美国_阿伟科技-油管 101
-      - 美国_阿伟科技-油管 102
-      - 美国_阿伟科技-油管 103
-      - 美国_阿伟科技-油管 104
-      - 美国_阿伟科技-油管 105
-      - 美国_阿伟科技-油管 106
-      - 美国_阿伟科技-油管 107
-      - 美国_阿伟科技-油管 108
-      - 美国阿伟科技-油管 14
-      - 美国_阿伟科技-油管 109
-      - 美国_阿伟科技-油管 110
-      - 美国_阿伟科技-油管 111
-      - 美国_阿伟科技-油管 112
-      - 美国阿伟科技-油管 15
-      - 美国_阿伟科技-油管 113
-      - 美国_阿伟科技-油管 114
-      - 美国_阿伟科技-油管 115
-      - 美国_阿伟科技-油管 116
-      - 美国_阿伟科技-油管 117
-      - 美国_阿伟科技-油管 118
-      - 美国_阿伟科技-油管 119
-      - 美国_阿伟科技-油管 120
-      - 美国_阿伟科技-油管 121
-      - 英国阿伟科技-油管 2
-      - 英国阿伟科技-油管 3
-      - 美国阿伟科技-油管 16
-      - 美国_阿伟科技-油管 122
-      - 美国_阿伟科技-油管 123
-      - 美国_阿伟科技-油管 124
-      - 美国_阿伟科技-油管 125
-      - 美国_阿伟科技-油管 126
-      - 美国_阿伟科技-油管 127
-      - 美国_阿伟科技-油管 128
-      - 美国_阿伟科技-油管 129
-      - 美国_阿伟科技-油管 130
-      - 美国_阿伟科技-油管 131
-      - 美国阿伟科技-油管 17
-      - 美国_阿伟科技-油管 132
-      - 美国_阿伟科技-油管 133
-      - 美国_阿伟科技-油管 134
-      - 台湾阿伟科技-油管 4
-      - 美国_阿伟科技-油管 135
-      - 日本_阿伟科技-油管
-      - 英国阿伟科技-油管 4
-      - 美国_阿伟科技-油管 136
-      - 美国_阿伟科技-油管 137
-      - 美国_阿伟科技-油管 138
-      - 美国_阿伟科技-油管 139
-      - 美国_阿伟科技-油管 140
-      - 英国_阿伟科技-油管
-      - 美国_阿伟科技-油管 141
-      - 美国_阿伟科技-油管 142
-      - 美国_阿伟科技-油管 143
-      - 中国_阿伟科技-油管 10
-      - 美国_阿伟科技-油管 144
-      - 英国_阿伟科技-油管 2
-      - 美国_阿伟科技-油管 145
-      - 美国_阿伟科技-油管 146
-      - 美国_阿伟科技-油管 147
-      - 美国_阿伟科技-油管 148
-      - 美国_阿伟科技-油管 149
-      - 美国_阿伟科技-油管 150
-      - 美国_阿伟科技-油管 151
-      - 美国_阿伟科技-油管 152
-      - 美国_阿伟科技-油管 153
-      - 美国_阿伟科技-油管 154
-      - 美国_阿伟科技-油管 155
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 18
-      - 加拿大阿伟科技-油管
-      - 美国_阿伟科技-油管 156
-      - 美国_阿伟科技-油管 157
-      - 美国_阿伟科技-油管 158
-      - 英国_阿伟科技-油管 3
-      - 美国_阿伟科技-油管 159
-      - 美国阿伟科技-油管 19
-      - 美国_阿伟科技-油管 160
-      - 日本阿伟科技-油管 2
-      - 美国_阿伟科技-油管 161
-      - 英国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管 162
-      - 台湾阿伟科技-油管 5
-      - 美国_阿伟科技-油管 163
-      - 阿伟科技-油管 4
-      - 美国_阿伟科技-油管 164
-      - 美国_阿伟科技-油管 165
-      - 美国_阿伟科技-油管 166
-      - 台湾阿伟科技-油管 6
-      - 美国_阿伟科技-油管 167
-      - 美国_阿伟科技-油管 168
-      - 美国_阿伟科技-油管 169
-      - 美国_阿伟科技-油管 170
-      - 美国_阿伟科技-油管 171
-      - 美国_阿伟科技-油管 172
-      - 美国_阿伟科技-油管 173
-      - 美国_阿伟科技-油管 174
-      - 美国阿伟科技-油管 20
-      - 美国_阿伟科技-油管 175
-      - 美国_阿伟科技-油管 176
-      - 阿伟科技-油管 5
-      - 法国_阿伟科技-油管
-      - 美国_阿伟科技-油管 177
-      - 美国_阿伟科技-油管 178
-      - 美国_阿伟科技-油管 179
-      - 中国_阿伟科技-油管 11
-      - 美国_阿伟科技-油管 180
-      - 美国阿伟科技-油管 21
-      - 阿伟科技-油管 6
-      - 英国_阿伟科技-油管 5
-      - 美国_阿伟科技-油管 181
-      - 中国_阿伟科技-油管 12
-      - 美国_阿伟科技-油管 182
-      - 美国_阿伟科技-油管 183
-      - 美国_阿伟科技-油管 184
-      - 美国_阿伟科技-油管 185
-      - 英国_阿伟科技-油管 6
-      - 美国_阿伟科技-油管 186
-      - 美国阿伟科技-油管 22
-      - 美国阿伟科技-油管 23
-      - 美国_阿伟科技-油管 187
-      - 台湾阿伟科技-油管 7
-      - 加拿大_阿伟科技-油管
-      - 美国_阿伟科技-油管 188
-      - 美国_阿伟科技-油管 189
-      - 美国_阿伟科技-油管 190
-      - 英国阿伟科技-油管 5
-      - 美国_阿伟科技-油管 191
-      - 美国_阿伟科技-油管 192
-      - 美国_阿伟科技-油管 193
-      - 美国_阿伟科技-油管 194
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港阿伟科技-油管
+      - 韩国阿伟科技-新年快乐
+      - 中国_阿伟科技-油管
+      - 中国_阿伟科技-油管 2
+      - 中国_阿伟科技-油管 3
       - 香港_阿伟科技-油管
+      - 香港阿伟科技-新年快乐
       - 香港_阿伟科技-油管 2
       - 香港_阿伟科技-油管 3
-      - 香港_阿伟科技-油管 4
-      - 香港_阿伟科技-油管 5
-      - 中国_阿伟科技-油管
-      - 台湾阿伟科技-油管
-      - 中国_阿伟科技-油管 2
-      - 香港_阿伟科技-油管 6
-      - 新加坡阿伟科技-油管
-      - 中国_阿伟科技-油管 3
+      - 日本阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐
       - 中国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管
-      - 美国_阿伟科技-油管 2
       - 中国_阿伟科技-油管 5
+      - 美国阿伟科技-新年快乐 2
+      - 美国_阿伟科技-油管
+      - 中国_阿伟科技-油管 6
+      - 美国_阿伟科技-油管 2
+      - 美国阿伟科技-新年快乐 3
+      - 中国_阿伟科技-油管 7
+      - 美国阿伟科技-新年快乐 4
+      - 美西阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 5
+      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 3
+      - 中国_阿伟科技-油管 9
+      - 芬兰阿伟科技-新年快乐
+      - 台湾阿伟科技-新年快乐
+      - 韩国_阿伟科技-油管
+      - 阿伟科技-油管
       - 美国_阿伟科技-油管 4
       - 美国_阿伟科技-油管 5
-      - 阿伟科技-油管
+      - 香港_阿伟科技-油管 4
+      - 香港阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 8
+      - 美国阿伟科技-新年快乐 6
+      - 美国阿伟科技-新年快乐 7
       - 美国_阿伟科技-油管 9
-      - 阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 中国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 10
-      - 英国阿伟科技-油管
-      - 中国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 11
-      - 美国阿伟科技-油管 2
       - 美国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 13
-      - 美国阿伟科技-油管 3
       - 美国_阿伟科技-油管 14
-      - 香港_阿伟科技-油管 7
-      - 美国阿伟科技-油管 4
       - 美国_阿伟科技-油管 15
       - 美国_阿伟科技-油管 16
       - 美国_阿伟科技-油管 17
       - 美国_阿伟科技-油管 18
       - 美国_阿伟科技-油管 19
       - 美国_阿伟科技-油管 20
-      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 21
       - 美国_阿伟科技-油管 22
+      - 美国阿伟科技-新年快乐 8
       - 美国_阿伟科技-油管 23
-      - 捷克_阿伟科技-油管
       - 美国_阿伟科技-油管 24
       - 美国_阿伟科技-油管 25
       - 美国_阿伟科技-油管 26
       - 美国_阿伟科技-油管 27
-      - 新加坡阿伟科技-油管 2
+      - 英国_阿伟科技-油管
       - 美国_阿伟科技-油管 28
+      - 中国_阿伟科技-油管 10
+      - 中国_阿伟科技-油管 11
       - 美国_阿伟科技-油管 29
-      - 中国_阿伟科技-油管 9
       - 美国_阿伟科技-油管 30
       - 美国_阿伟科技-油管 31
       - 美国_阿伟科技-油管 32
+      - 中国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 33
+      - 阿伟科技-油管 2
       - 美国_阿伟科技-油管 34
       - 美国_阿伟科技-油管 35
+      - 英国_阿伟科技-油管 2
+      - 马来西亚阿伟科技-新年快乐
+      - 英国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 36
       - 美国_阿伟科技-油管 37
-      - 日本阿伟科技-油管
       - 美国_阿伟科技-油管 38
       - 美国_阿伟科技-油管 39
+      - 美国阿伟科技-新年快乐 9
       - 美国_阿伟科技-油管 40
       - 美国_阿伟科技-油管 41
       - 美国_阿伟科技-油管 42
       - 美国_阿伟科技-油管 43
       - 美国_阿伟科技-油管 44
+      - 美国阿伟科技-新年快乐 10
       - 美国_阿伟科技-油管 45
+      - 美国阿伟科技-新年快乐 11
       - 美国_阿伟科技-油管 46
       - 美国_阿伟科技-油管 47
       - 美国_阿伟科技-油管 48
+      - 法国阿伟科技-新年快乐
       - 美国_阿伟科技-油管 49
+      - 阿伟科技-油管 3
+      - 香港阿伟科技-新年快乐 3
       - 美国_阿伟科技-油管 50
       - 美国_阿伟科技-油管 51
+      - 越南阿伟科技-新年快乐
       - 美国_阿伟科技-油管 52
       - 美国_阿伟科技-油管 53
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 5
       - 美国_阿伟科技-油管 54
       - 美国_阿伟科技-油管 55
       - 美国_阿伟科技-油管 56
       - 美国_阿伟科技-油管 57
       - 美国_阿伟科技-油管 58
       - 美国_阿伟科技-油管 59
+      - 美国阿伟科技-新年快乐 12
       - 美国_阿伟科技-油管 60
       - 美国_阿伟科技-油管 61
-      - 阿伟科技-油管 3
+      - 英国_阿伟科技-油管 4
+      - 俄罗斯阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 13
       - 美国_阿伟科技-油管 62
+      - 韩国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 63
       - 美国_阿伟科技-油管 64
+      - 美国阿伟科技-新年快乐 14
+      - 法国_阿伟科技-油管
+      - 法国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 65
-      - 美国阿伟科技-油管 6
-      - 美国阿伟科技-油管 7
-      - 美国阿伟科技-油管 8
-      - 美国阿伟科技-油管 9
-      - 台湾阿伟科技-油管 3
-      - 捷克_阿伟科技-油管 2
+      - 阿伟科技-油管 4
+      - 韩国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 66
-      - 美国阿伟科技-油管 10
       - 美国_阿伟科技-油管 67
       - 美国_阿伟科技-油管 68
+      - 美国阿伟科技-新年快乐 15
       - 美国_阿伟科技-油管 69
       - 美国_阿伟科技-油管 70
       - 美国_阿伟科技-油管 71
       - 美国_阿伟科技-油管 72
       - 美国_阿伟科技-油管 73
-      - 香港阿伟科技-油管 2
-      - 美国阿伟科技-油管 11
       - 美国_阿伟科技-油管 74
+      - 日本阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 75
+      - 香港阿伟科技-新年快乐 4
+      - 美国阿伟科技-新年快乐 16
       - 美国_阿伟科技-油管 76
+      - 美国阿伟科技-新年快乐 17
       - 美国_阿伟科技-油管 77
       - 美国_阿伟科技-油管 78
+      - 台湾阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 79
       - 美国_阿伟科技-油管 80
-      - 美国阿伟科技-油管 12
       - 美国_阿伟科技-油管 81
       - 美国_阿伟科技-油管 82
+      - 法国_阿伟科技-油管 3
+      - 英国_阿伟科技-油管 5
       - 美国_阿伟科技-油管 83
+      - 加拿大_阿伟科技-油管
+      - 阿伟科技-油管 5
       - 美国_阿伟科技-油管 84
       - 美国_阿伟科技-油管 85
+      - 英国_阿伟科技-油管 6
+      - 澳大利亚_阿伟科技-油管
+      - 日本_阿伟科技-油管
+      - 美国阿伟科技-新年快乐 18
+      - 美国阿伟科技-新年快乐 19
       - 美国_阿伟科技-油管 86
       - 美国_阿伟科技-油管 87
       - 美国_阿伟科技-油管 88
       - 美国_阿伟科技-油管 89
-      - 美国_阿伟科技-油管 90
-      - 美国_阿伟科技-油管 91
-      - 美国_阿伟科技-油管 92
-      - 美国阿伟科技-油管 13
-      - 美国_阿伟科技-油管 93
-      - 美国_阿伟科技-油管 94
-      - 美国_阿伟科技-油管 95
-      - 美国_阿伟科技-油管 96
-      - 美国_阿伟科技-油管 97
-      - 美国_阿伟科技-油管 98
-      - 美国_阿伟科技-油管 99
-      - 美国_阿伟科技-油管 100
-      - 美国_阿伟科技-油管 101
-      - 美国_阿伟科技-油管 102
-      - 美国_阿伟科技-油管 103
-      - 美国_阿伟科技-油管 104
-      - 美国_阿伟科技-油管 105
-      - 美国_阿伟科技-油管 106
-      - 美国_阿伟科技-油管 107
-      - 美国_阿伟科技-油管 108
-      - 美国阿伟科技-油管 14
-      - 美国_阿伟科技-油管 109
-      - 美国_阿伟科技-油管 110
-      - 美国_阿伟科技-油管 111
-      - 美国_阿伟科技-油管 112
-      - 美国阿伟科技-油管 15
-      - 美国_阿伟科技-油管 113
-      - 美国_阿伟科技-油管 114
-      - 美国_阿伟科技-油管 115
-      - 美国_阿伟科技-油管 116
-      - 美国_阿伟科技-油管 117
-      - 美国_阿伟科技-油管 118
-      - 美国_阿伟科技-油管 119
-      - 美国_阿伟科技-油管 120
-      - 美国_阿伟科技-油管 121
-      - 英国阿伟科技-油管 2
-      - 英国阿伟科技-油管 3
-      - 美国阿伟科技-油管 16
-      - 美国_阿伟科技-油管 122
-      - 美国_阿伟科技-油管 123
-      - 美国_阿伟科技-油管 124
-      - 美国_阿伟科技-油管 125
-      - 美国_阿伟科技-油管 126
-      - 美国_阿伟科技-油管 127
-      - 美国_阿伟科技-油管 128
-      - 美国_阿伟科技-油管 129
-      - 美国_阿伟科技-油管 130
-      - 美国_阿伟科技-油管 131
-      - 美国阿伟科技-油管 17
-      - 美国_阿伟科技-油管 132
-      - 美国_阿伟科技-油管 133
-      - 美国_阿伟科技-油管 134
-      - 台湾阿伟科技-油管 4
-      - 美国_阿伟科技-油管 135
-      - 日本_阿伟科技-油管
-      - 英国阿伟科技-油管 4
-      - 美国_阿伟科技-油管 136
-      - 美国_阿伟科技-油管 137
-      - 美国_阿伟科技-油管 138
-      - 美国_阿伟科技-油管 139
-      - 美国_阿伟科技-油管 140
-      - 英国_阿伟科技-油管
-      - 美国_阿伟科技-油管 141
-      - 美国_阿伟科技-油管 142
-      - 美国_阿伟科技-油管 143
-      - 中国_阿伟科技-油管 10
-      - 美国_阿伟科技-油管 144
-      - 英国_阿伟科技-油管 2
-      - 美国_阿伟科技-油管 145
-      - 美国_阿伟科技-油管 146
-      - 美国_阿伟科技-油管 147
-      - 美国_阿伟科技-油管 148
-      - 美国_阿伟科技-油管 149
-      - 美国_阿伟科技-油管 150
-      - 美国_阿伟科技-油管 151
-      - 美国_阿伟科技-油管 152
-      - 美国_阿伟科技-油管 153
-      - 美国_阿伟科技-油管 154
-      - 美国_阿伟科技-油管 155
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 18
-      - 加拿大阿伟科技-油管
-      - 美国_阿伟科技-油管 156
-      - 美国_阿伟科技-油管 157
-      - 美国_阿伟科技-油管 158
-      - 英国_阿伟科技-油管 3
-      - 美国_阿伟科技-油管 159
-      - 美国阿伟科技-油管 19
-      - 美国_阿伟科技-油管 160
-      - 日本阿伟科技-油管 2
-      - 美国_阿伟科技-油管 161
-      - 英国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管 162
-      - 台湾阿伟科技-油管 5
-      - 美国_阿伟科技-油管 163
-      - 阿伟科技-油管 4
-      - 美国_阿伟科技-油管 164
-      - 美国_阿伟科技-油管 165
-      - 美国_阿伟科技-油管 166
-      - 台湾阿伟科技-油管 6
-      - 美国_阿伟科技-油管 167
-      - 美国_阿伟科技-油管 168
-      - 美国_阿伟科技-油管 169
-      - 美国_阿伟科技-油管 170
-      - 美国_阿伟科技-油管 171
-      - 美国_阿伟科技-油管 172
-      - 美国_阿伟科技-油管 173
-      - 美国_阿伟科技-油管 174
-      - 美国阿伟科技-油管 20
-      - 美国_阿伟科技-油管 175
-      - 美国_阿伟科技-油管 176
-      - 阿伟科技-油管 5
-      - 法国_阿伟科技-油管
-      - 美国_阿伟科技-油管 177
-      - 美国_阿伟科技-油管 178
-      - 美国_阿伟科技-油管 179
-      - 中国_阿伟科技-油管 11
-      - 美国_阿伟科技-油管 180
-      - 美国阿伟科技-油管 21
-      - 阿伟科技-油管 6
-      - 英国_阿伟科技-油管 5
-      - 美国_阿伟科技-油管 181
-      - 中国_阿伟科技-油管 12
-      - 美国_阿伟科技-油管 182
-      - 美国_阿伟科技-油管 183
-      - 美国_阿伟科技-油管 184
-      - 美国_阿伟科技-油管 185
-      - 英国_阿伟科技-油管 6
-      - 美国_阿伟科技-油管 186
-      - 美国阿伟科技-油管 22
-      - 美国阿伟科技-油管 23
-      - 美国_阿伟科技-油管 187
-      - 台湾阿伟科技-油管 7
-      - 加拿大_阿伟科技-油管
-      - 美国_阿伟科技-油管 188
-      - 美国_阿伟科技-油管 189
-      - 美国_阿伟科技-油管 190
-      - 英国阿伟科技-油管 5
-      - 美国_阿伟科技-油管 191
-      - 美国_阿伟科技-油管 192
-      - 美国_阿伟科技-油管 193
-      - 美国_阿伟科技-油管 194
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2277,279 +1358,165 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港阿伟科技-油管
+      - 韩国阿伟科技-新年快乐
+      - 中国_阿伟科技-油管
+      - 中国_阿伟科技-油管 2
+      - 中国_阿伟科技-油管 3
       - 香港_阿伟科技-油管
+      - 香港阿伟科技-新年快乐
       - 香港_阿伟科技-油管 2
       - 香港_阿伟科技-油管 3
-      - 香港_阿伟科技-油管 4
-      - 香港_阿伟科技-油管 5
-      - 中国_阿伟科技-油管
-      - 台湾阿伟科技-油管
-      - 中国_阿伟科技-油管 2
-      - 香港_阿伟科技-油管 6
-      - 新加坡阿伟科技-油管
-      - 中国_阿伟科技-油管 3
+      - 日本阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐
       - 中国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管
-      - 美国_阿伟科技-油管 2
       - 中国_阿伟科技-油管 5
+      - 美国阿伟科技-新年快乐 2
+      - 美国_阿伟科技-油管
+      - 中国_阿伟科技-油管 6
+      - 美国_阿伟科技-油管 2
+      - 美国阿伟科技-新年快乐 3
+      - 中国_阿伟科技-油管 7
+      - 美国阿伟科技-新年快乐 4
+      - 美西阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 5
+      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 3
+      - 中国_阿伟科技-油管 9
+      - 芬兰阿伟科技-新年快乐
+      - 台湾阿伟科技-新年快乐
+      - 韩国_阿伟科技-油管
+      - 阿伟科技-油管
       - 美国_阿伟科技-油管 4
       - 美国_阿伟科技-油管 5
-      - 阿伟科技-油管
+      - 香港_阿伟科技-油管 4
+      - 香港阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 8
+      - 美国阿伟科技-新年快乐 6
+      - 美国阿伟科技-新年快乐 7
       - 美国_阿伟科技-油管 9
-      - 阿伟科技-油管 2
-      - 美国阿伟科技-油管
-      - 中国_阿伟科技-油管 6
       - 美国_阿伟科技-油管 10
-      - 英国阿伟科技-油管
-      - 中国_阿伟科技-油管 7
       - 美国_阿伟科技-油管 11
-      - 美国阿伟科技-油管 2
       - 美国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 13
-      - 美国阿伟科技-油管 3
       - 美国_阿伟科技-油管 14
-      - 香港_阿伟科技-油管 7
-      - 美国阿伟科技-油管 4
       - 美国_阿伟科技-油管 15
       - 美国_阿伟科技-油管 16
       - 美国_阿伟科技-油管 17
       - 美国_阿伟科技-油管 18
       - 美国_阿伟科技-油管 19
       - 美国_阿伟科技-油管 20
-      - 中国_阿伟科技-油管 8
       - 美国_阿伟科技-油管 21
       - 美国_阿伟科技-油管 22
+      - 美国阿伟科技-新年快乐 8
       - 美国_阿伟科技-油管 23
-      - 捷克_阿伟科技-油管
       - 美国_阿伟科技-油管 24
       - 美国_阿伟科技-油管 25
       - 美国_阿伟科技-油管 26
       - 美国_阿伟科技-油管 27
-      - 新加坡阿伟科技-油管 2
+      - 英国_阿伟科技-油管
       - 美国_阿伟科技-油管 28
+      - 中国_阿伟科技-油管 10
+      - 中国_阿伟科技-油管 11
       - 美国_阿伟科技-油管 29
-      - 中国_阿伟科技-油管 9
       - 美国_阿伟科技-油管 30
       - 美国_阿伟科技-油管 31
       - 美国_阿伟科技-油管 32
+      - 中国_阿伟科技-油管 12
       - 美国_阿伟科技-油管 33
+      - 阿伟科技-油管 2
       - 美国_阿伟科技-油管 34
       - 美国_阿伟科技-油管 35
+      - 英国_阿伟科技-油管 2
+      - 马来西亚阿伟科技-新年快乐
+      - 英国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 36
       - 美国_阿伟科技-油管 37
-      - 日本阿伟科技-油管
       - 美国_阿伟科技-油管 38
       - 美国_阿伟科技-油管 39
+      - 美国阿伟科技-新年快乐 9
       - 美国_阿伟科技-油管 40
       - 美国_阿伟科技-油管 41
       - 美国_阿伟科技-油管 42
       - 美国_阿伟科技-油管 43
       - 美国_阿伟科技-油管 44
+      - 美国阿伟科技-新年快乐 10
       - 美国_阿伟科技-油管 45
+      - 美国阿伟科技-新年快乐 11
       - 美国_阿伟科技-油管 46
       - 美国_阿伟科技-油管 47
       - 美国_阿伟科技-油管 48
+      - 法国阿伟科技-新年快乐
       - 美国_阿伟科技-油管 49
+      - 阿伟科技-油管 3
+      - 香港阿伟科技-新年快乐 3
       - 美国_阿伟科技-油管 50
       - 美国_阿伟科技-油管 51
+      - 越南阿伟科技-新年快乐
       - 美国_阿伟科技-油管 52
       - 美国_阿伟科技-油管 53
-      - 台湾阿伟科技-油管 2
-      - 美国阿伟科技-油管 5
       - 美国_阿伟科技-油管 54
       - 美国_阿伟科技-油管 55
       - 美国_阿伟科技-油管 56
       - 美国_阿伟科技-油管 57
       - 美国_阿伟科技-油管 58
       - 美国_阿伟科技-油管 59
+      - 美国阿伟科技-新年快乐 12
       - 美国_阿伟科技-油管 60
       - 美国_阿伟科技-油管 61
-      - 阿伟科技-油管 3
+      - 英国_阿伟科技-油管 4
+      - 俄罗斯阿伟科技-新年快乐
+      - 美国阿伟科技-新年快乐 13
       - 美国_阿伟科技-油管 62
+      - 韩国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 63
       - 美国_阿伟科技-油管 64
+      - 美国阿伟科技-新年快乐 14
+      - 法国_阿伟科技-油管
+      - 法国_阿伟科技-油管 2
       - 美国_阿伟科技-油管 65
-      - 美国阿伟科技-油管 6
-      - 美国阿伟科技-油管 7
-      - 美国阿伟科技-油管 8
-      - 美国阿伟科技-油管 9
-      - 台湾阿伟科技-油管 3
-      - 捷克_阿伟科技-油管 2
+      - 阿伟科技-油管 4
+      - 韩国_阿伟科技-油管 3
       - 美国_阿伟科技-油管 66
-      - 美国阿伟科技-油管 10
       - 美国_阿伟科技-油管 67
       - 美国_阿伟科技-油管 68
+      - 美国阿伟科技-新年快乐 15
       - 美国_阿伟科技-油管 69
       - 美国_阿伟科技-油管 70
       - 美国_阿伟科技-油管 71
       - 美国_阿伟科技-油管 72
       - 美国_阿伟科技-油管 73
-      - 香港阿伟科技-油管 2
-      - 美国阿伟科技-油管 11
       - 美国_阿伟科技-油管 74
+      - 日本阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 75
+      - 香港阿伟科技-新年快乐 4
+      - 美国阿伟科技-新年快乐 16
       - 美国_阿伟科技-油管 76
+      - 美国阿伟科技-新年快乐 17
       - 美国_阿伟科技-油管 77
       - 美国_阿伟科技-油管 78
+      - 台湾阿伟科技-新年快乐 2
       - 美国_阿伟科技-油管 79
       - 美国_阿伟科技-油管 80
-      - 美国阿伟科技-油管 12
       - 美国_阿伟科技-油管 81
       - 美国_阿伟科技-油管 82
+      - 法国_阿伟科技-油管 3
+      - 英国_阿伟科技-油管 5
       - 美国_阿伟科技-油管 83
+      - 加拿大_阿伟科技-油管
+      - 阿伟科技-油管 5
       - 美国_阿伟科技-油管 84
       - 美国_阿伟科技-油管 85
+      - 英国_阿伟科技-油管 6
+      - 澳大利亚_阿伟科技-油管
+      - 日本_阿伟科技-油管
+      - 美国阿伟科技-新年快乐 18
+      - 美国阿伟科技-新年快乐 19
       - 美国_阿伟科技-油管 86
       - 美国_阿伟科技-油管 87
       - 美国_阿伟科技-油管 88
       - 美国_阿伟科技-油管 89
-      - 美国_阿伟科技-油管 90
-      - 美国_阿伟科技-油管 91
-      - 美国_阿伟科技-油管 92
-      - 美国阿伟科技-油管 13
-      - 美国_阿伟科技-油管 93
-      - 美国_阿伟科技-油管 94
-      - 美国_阿伟科技-油管 95
-      - 美国_阿伟科技-油管 96
-      - 美国_阿伟科技-油管 97
-      - 美国_阿伟科技-油管 98
-      - 美国_阿伟科技-油管 99
-      - 美国_阿伟科技-油管 100
-      - 美国_阿伟科技-油管 101
-      - 美国_阿伟科技-油管 102
-      - 美国_阿伟科技-油管 103
-      - 美国_阿伟科技-油管 104
-      - 美国_阿伟科技-油管 105
-      - 美国_阿伟科技-油管 106
-      - 美国_阿伟科技-油管 107
-      - 美国_阿伟科技-油管 108
-      - 美国阿伟科技-油管 14
-      - 美国_阿伟科技-油管 109
-      - 美国_阿伟科技-油管 110
-      - 美国_阿伟科技-油管 111
-      - 美国_阿伟科技-油管 112
-      - 美国阿伟科技-油管 15
-      - 美国_阿伟科技-油管 113
-      - 美国_阿伟科技-油管 114
-      - 美国_阿伟科技-油管 115
-      - 美国_阿伟科技-油管 116
-      - 美国_阿伟科技-油管 117
-      - 美国_阿伟科技-油管 118
-      - 美国_阿伟科技-油管 119
-      - 美国_阿伟科技-油管 120
-      - 美国_阿伟科技-油管 121
-      - 英国阿伟科技-油管 2
-      - 英国阿伟科技-油管 3
-      - 美国阿伟科技-油管 16
-      - 美国_阿伟科技-油管 122
-      - 美国_阿伟科技-油管 123
-      - 美国_阿伟科技-油管 124
-      - 美国_阿伟科技-油管 125
-      - 美国_阿伟科技-油管 126
-      - 美国_阿伟科技-油管 127
-      - 美国_阿伟科技-油管 128
-      - 美国_阿伟科技-油管 129
-      - 美国_阿伟科技-油管 130
-      - 美国_阿伟科技-油管 131
-      - 美国阿伟科技-油管 17
-      - 美国_阿伟科技-油管 132
-      - 美国_阿伟科技-油管 133
-      - 美国_阿伟科技-油管 134
-      - 台湾阿伟科技-油管 4
-      - 美国_阿伟科技-油管 135
-      - 日本_阿伟科技-油管
-      - 英国阿伟科技-油管 4
-      - 美国_阿伟科技-油管 136
-      - 美国_阿伟科技-油管 137
-      - 美国_阿伟科技-油管 138
-      - 美国_阿伟科技-油管 139
-      - 美国_阿伟科技-油管 140
-      - 英国_阿伟科技-油管
-      - 美国_阿伟科技-油管 141
-      - 美国_阿伟科技-油管 142
-      - 美国_阿伟科技-油管 143
-      - 中国_阿伟科技-油管 10
-      - 美国_阿伟科技-油管 144
-      - 英国_阿伟科技-油管 2
-      - 美国_阿伟科技-油管 145
-      - 美国_阿伟科技-油管 146
-      - 美国_阿伟科技-油管 147
-      - 美国_阿伟科技-油管 148
-      - 美国_阿伟科技-油管 149
-      - 美国_阿伟科技-油管 150
-      - 美国_阿伟科技-油管 151
-      - 美国_阿伟科技-油管 152
-      - 美国_阿伟科技-油管 153
-      - 美国_阿伟科技-油管 154
-      - 美国_阿伟科技-油管 155
-      - 香港阿伟科技-油管 3
-      - 美国阿伟科技-油管 18
-      - 加拿大阿伟科技-油管
-      - 美国_阿伟科技-油管 156
-      - 美国_阿伟科技-油管 157
-      - 美国_阿伟科技-油管 158
-      - 英国_阿伟科技-油管 3
-      - 美国_阿伟科技-油管 159
-      - 美国阿伟科技-油管 19
-      - 美国_阿伟科技-油管 160
-      - 日本阿伟科技-油管 2
-      - 美国_阿伟科技-油管 161
-      - 英国_阿伟科技-油管 4
-      - 美国_阿伟科技-油管 162
-      - 台湾阿伟科技-油管 5
-      - 美国_阿伟科技-油管 163
-      - 阿伟科技-油管 4
-      - 美国_阿伟科技-油管 164
-      - 美国_阿伟科技-油管 165
-      - 美国_阿伟科技-油管 166
-      - 台湾阿伟科技-油管 6
-      - 美国_阿伟科技-油管 167
-      - 美国_阿伟科技-油管 168
-      - 美国_阿伟科技-油管 169
-      - 美国_阿伟科技-油管 170
-      - 美国_阿伟科技-油管 171
-      - 美国_阿伟科技-油管 172
-      - 美国_阿伟科技-油管 173
-      - 美国_阿伟科技-油管 174
-      - 美国阿伟科技-油管 20
-      - 美国_阿伟科技-油管 175
-      - 美国_阿伟科技-油管 176
-      - 阿伟科技-油管 5
-      - 法国_阿伟科技-油管
-      - 美国_阿伟科技-油管 177
-      - 美国_阿伟科技-油管 178
-      - 美国_阿伟科技-油管 179
-      - 中国_阿伟科技-油管 11
-      - 美国_阿伟科技-油管 180
-      - 美国阿伟科技-油管 21
-      - 阿伟科技-油管 6
-      - 英国_阿伟科技-油管 5
-      - 美国_阿伟科技-油管 181
-      - 中国_阿伟科技-油管 12
-      - 美国_阿伟科技-油管 182
-      - 美国_阿伟科技-油管 183
-      - 美国_阿伟科技-油管 184
-      - 美国_阿伟科技-油管 185
-      - 英国_阿伟科技-油管 6
-      - 美国_阿伟科技-油管 186
-      - 美国阿伟科技-油管 22
-      - 美国阿伟科技-油管 23
-      - 美国_阿伟科技-油管 187
-      - 台湾阿伟科技-油管 7
-      - 加拿大_阿伟科技-油管
-      - 美国_阿伟科技-油管 188
-      - 美国_阿伟科技-油管 189
-      - 美国_阿伟科技-油管 190
-      - 英国阿伟科技-油管 5
-      - 美国_阿伟科技-油管 191
-      - 美国_阿伟科技-油管 192
-      - 美国_阿伟科技-油管 193
-      - 美国_阿伟科技-油管 194
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
