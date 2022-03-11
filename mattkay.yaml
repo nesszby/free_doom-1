@@ -5,415 +5,571 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_wmt(3.8)_1, server: gz1.52168.xyz, port: 1109, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
-  - {name: _CN_wmt(3.8)_2, server: gz1.52168.xyz, port: 1107, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
-  - {name: _FR_wmt(3.8)_3, server: fr-am1-1.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: gVWc0WaJn, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: _US_wmt(3.8)_4, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_wmt(3.8)_5, server: 134.195.196.81, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _JP_wmt(3.8)_6, server: 172.105.222.98, port: 80, type: vmess, uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 172.105.222.98}, udp: true}
-  - {name: _CN_wmt(3.8)_7, server: 183.232.56.161, port: 1302, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
-  - {name: _US_wmt(3.8)_8, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_wmt(3.8)_9, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_wmt(3.8)_10, server: 134.195.196.81, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_wmt(3.8)_11, server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_wmt(3.8)_12, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_wmt(3.8)_13, server: 134.195.196.81, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_wmt(3.8)_14, server: 134.195.196.81, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CA_wmt(3.8)_15, server: 134.195.196.81, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _GB_wmt(3.8)_16, server: 172.99.190.92, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_wmt(3.8)_17, server: 134.195.196.81, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_wmt(3.8)_18, server: 134.195.196.81, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_wmt(3.8)_19, server: 134.195.196.81, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_wmt(3.8)_20, server: 134.195.196.81, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_wmt(3.8)_21, server: 134.195.196.81, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _JP_wmt(3.8)_22, server: 153.127.13.203, port: 18899, type: vmess, uuid: 3cc23eed-b3f9-4366-c085-76117f92268b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 153.127.13.203}, udp: true}
-  - {name: _CA_wmt(3.8)_23, server: 134.195.196.81, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _AU_wmt(3.8)_24, server: 185.148.14.58, port: 53514, type: trojan, password: 3r90JDGBYA, skip-cert-verify: true, udp: true}
-  - {name: _CA_wmt(3.8)_25, server: 134.195.196.81, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CN_wmt(3.8)_26, server: gz1.52168.xyz, port: 1105, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
-  - {name: _GB_wmt(3.8)_27, server: 172.99.190.92, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _GB_wmt(3.8)_28, server: 172.99.190.92, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_wmt(3.8)_29, server: 134.195.196.81, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: wmt(3.8)_30, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: a413b1be-ae8c-40a3-afd6-25fd152cd45f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bi.oracleusa.ml}, udp: true}
-  - {name: _CA_wmt(3.8)_31, server: 134.195.196.81, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _JP_wmt(3.8)_32, server: 172.104.82.126, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_wmt(3.8)_33, server: 134.195.196.81, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_wmt(3.8)_34, server: 134.195.196.81, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_wmt(3.8)_35, server: 134.195.196.3, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_wmt(3.8)_36, server: 134.195.196.81, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_wmt(3.8)_37, server: 134.195.196.3, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CN_wmt(3.8)_38, server: 117.28.243.220, port: 8076, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CA_wmt(3.8)_39, server: 134.195.196.81, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_wmt(3.8)_40, server: 134.195.196.81, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_wmt(3.8)_41, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_wmt(3.8)_42, server: 134.195.196.3, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_wmt(3.8)_43, server: 134.195.196.187, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_wmt(3.8)_44, server: 134.195.196.81, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_wmt(3.8)_45, server: 134.195.196.81, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_wmt(3.8)_46, server: 134.195.196.81, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_wmt(3.8)_47, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_wmt(3.8)_48, server: 134.195.196.81, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CA_wmt(3.8)_49, server: 134.195.196.81, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_wmt(3.8)_50, server: 134.195.196.187, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_wmt(3.8)_51, server: 134.195.196.81, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_wmt(3.8)_52, server: 134.195.196.187, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CN_wmt(3.8)_53, server: 101.91.121.247, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
-  - {name: _CA_wmt(3.8)_54, server: 134.195.196.187, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_wmt(3.8)_55, server: 134.195.196.187, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_wmt(3.8)_56, server: 134.195.196.187, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_wmt(3.8)_57, server: 169.197.142.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_wmt(3.8)_58, server: 169.197.142.187, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_wmt(3.8)_59, server: 169.197.142.187, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_wmt(3.8)_60, server: 169.197.142.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_wmt(3.8)_61, server: 169.197.142.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _US_wmt(3.8)_62, server: 169.197.142.187, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_wmt(3.8)_63, server: 134.195.196.187, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_wmt(3.8)_64, server: 134.195.196.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_wmt(3.8)_65, server: 169.197.142.187, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_wmt(3.8)_66, server: 134.195.196.187, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_wmt(3.8)_67, server: 134.195.196.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _US_wmt(3.8)_68, server: 169.197.142.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_wmt(3.8)_69, server: 134.195.196.81, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _CA_wmt(3.8)_70, server: 134.195.196.3, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_wmt(3.8)_71, server: 134.195.196.81, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CN_wmt(3.8)_72, server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CA_wmt(3.8)_73, server: 134.195.196.3, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_wmt(3.8)_74, server: 134.195.196.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _US_wmt(3.8)_75, server: 169.197.142.187, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CA_wmt(3.8)_76, server: 134.195.196.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_wmt(3.8)_77, server: 169.197.142.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_wmt(3.8)_78, server: 169.197.142.187, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_wmt(3.8)_79, server: 134.195.196.3, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_wmt(3.8)_80, server: 134.195.196.187, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _US_wmt(3.8)_81, server: 169.197.142.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_wmt(3.8)_82, server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CA_wmt(3.8)_83, server: 134.195.196.68, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CA_wmt(3.8)_84, server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _GB_wmt(3.8)_85, server: 172.99.190.92, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_wmt(3.8)_86, server: 134.195.196.187, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CA_wmt(3.8)_87, server: 134.195.196.187, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CN_wmt(3.8)_88, server: 183.232.56.161, port: 1202, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
-  - {name: _JP_wmt(3.8)_89, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: _CA_wmt(3.8)_90, server: 134.195.196.187, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_wmt(3.8)_91, server: 134.195.196.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CN_wmt(3.8)_92, server: gz2.52168.xyz, port: 2101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
-  - {name: _US_wmt(3.8)_93, server: 169.197.142.187, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _CA_wmt(3.8)_94, server: 134.195.196.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CN_wmt(3.8)_95, server: 117.28.243.141, port: 6149, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: _CN_wmt(3.8)_96, server: s1.upyun.online, port: 12340, type: trojan, password: 4809af3e-b8f2-4f07-9cfb-79d0a7bb1219, sni: s1.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: _CA_wmt(3.8)_97, server: 134.195.196.68, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: _CA_wmt(3.8)_98, server: 134.195.196.187, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CN_wmt(3.11)_1, server: cm.chashao.buzz, port: 21205, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CN_wmt(3.11)_2, server: 117.185.229.24, port: 21223, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_3, server: cm.chashao.buzz, port: 21211, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _JP_wmt(3.11)_4, server: 154.31.114.97, port: 15590, type: vmess, uuid: b5ebd866-9aa8-45ce-e85e-ef6a6799ba97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_5, server: cu.chashao.buzz, port: 21206, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CN_wmt(3.11)_6, server: cm.chashao.buzz, port: 21208, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CN_wmt(3.11)_7, server: 116.129.253.227, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_8, server: gz2.52168.xyz, port: 2105, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: _CN_wmt(3.11)_9, server: 183.240.132.27, port: 21228, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_10, server: g3.gs1024.com, port: 21228, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g3.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_11, server: cu.chashao.buzz, port: 21207, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CN_wmt(3.11)_12, server: 117.185.229.24, port: 20227, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_13, server: 112.15.9.146, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_14, server: 116.129.253.201, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_15, server: 116.129.253.201, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_16, server: 117.185.229.24, port: 61233, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_17, server: 116.129.253.227, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(3.11)_18, server: 20.89.238.230, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_19, server: 106.75.233.91, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_20, server: g9.gs1024.com, port: 21223, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g9.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(3.11)_21, server: 104.208.112.171, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_22, server: 123.59.72.193, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_23, server: 117.185.229.24, port: 21230, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_24, server: 183.240.132.27, port: 20227, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_25, server: 120.232.192.115, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(3.11)_26, server: 211.72.35.153, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_27, server: g6.gs1024.com, port: 61232, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g6.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_28, server: 106.75.154.24, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_29, server: 117.185.229.24, port: 21231, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_30, server: 112.15.9.146, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_31, server: 106.75.233.91, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(3.11)_32, server: 13.70.31.16, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_33, server: gz1.52168.xyz, port: 1103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: _CN_wmt(3.11)_34, server: 116.129.253.187, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(3.11)_35, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(3.11)_36, server: 20.89.238.230, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(3.11)_37, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_38, server: cu.chashao.buzz, port: 21213, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _US_wmt(3.11)_39, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(3.11)_40, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_41, server: cu.chashao.buzz, port: 21216, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CN_wmt(3.11)_42, server: cm.chashao.buzz, port: 21213, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _US_wmt(3.11)_43, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(3.11)_44, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_45, server: 123.59.72.193, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(3.11)_46, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_47, server: gz2.52168.xyz, port: 2101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: _CN_wmt(3.11)_48, server: cm.chashao.buzz, port: 21214, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CN_wmt(3.11)_49, server: 116.129.253.191, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_50, server: cu.chashao.buzz, port: 21214, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _AE_wmt(3.11)_51, server: uae.oracleusa.ml, port: 2053, type: vmess, uuid: 810a7deb-4fcf-4e21-93bd-3d7685bb8cb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: uae.oracleusa.ml}, udp: true}
+  - {name: _AE_wmt(3.11)_52, server: bi.oracleusa.ml, port: 2053, type: vmess, uuid: 810a7deb-4fcf-4e21-93bd-3d7685bb8cb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: bi.oracleusa.ml}, udp: true}
+  - {name: _CN_wmt(3.11)_53, server: 116.129.253.191, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_54, server: 116.129.253.134, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_55, server: 116.129.253.134, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_56, server: g3.gs1024.com, port: 21224, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g3.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(3.11)_57, server: www.nyc3000.ga, port: 443, type: trojan, password: 10fd99c2-c26d-42e2-b73c-601ed051e5f3, sni: www.nyc3000.ga, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_58, server: jp.gs1024.com, port: 21230, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: jp.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_59, server: 117.50.106.86, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_60, server: 117.185.229.24, port: 21224, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_61, server: gz2.52168.xyz, port: 2104, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: _CN_wmt(3.11)_62, server: 106.75.154.24, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: wmt(3.11)_63, server: gongyica1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyica1.yigeweizhuang.com}, udp: true}
+  - {name: _CN_wmt(3.11)_64, server: 117.185.229.24, port: 21225, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_65, server: 123.59.87.29, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_66, server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: _CN_wmt(3.11)_67, server: g3.gs1024.com, port: 21225, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g3.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_68, server: 123.59.87.29, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_69, server: 116.129.253.245, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: wmt(3.11)_70, server: gongyide1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyide1.yigeweizhuang.com}, udp: true}
+  - {name: _US_wmt(3.11)_71, server: gongyijp2.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyijp2.yigeweizhuang.com}, udp: true}
+  - {name: _TW_wmt(3.11)_72, server: 60.249.3.125, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: wmt(3.11)_73, server: nl.oracleusa.ml, port: 2053, type: vmess, uuid: d176bc78-9bf9-4ab3-9af9-a1e412d95c53, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: nl.oracleusa.ml}, udp: true}
+  - {name: _CN_wmt(3.11)_74, server: cm1.chashao.buzz, port: 21202, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CN_wmt(3.11)_75, server: cm1.chashao.buzz, port: 21209, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CN_wmt(3.11)_76, server: cu.chashao.buzz, port: 21205, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CN_wmt(3.11)_77, server: cm.chashao.buzz, port: 21203, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CN_wmt(3.11)_78, server: cu.chashao.buzz, port: 21211, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CN_wmt(3.11)_79, server: 101.67.8.178, port: 61232, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, skip-cert-verify: true, udp: true}
+  - {name: wmt(3.11)_80, server: gongyisg1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyisg1.yigeweizhuang.com}, udp: true}
+  - {name: wmt(3.11)_81, server: gongyius1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyius1.yigeweizhuang.com}, udp: true}
+  - {name: _JP_wmt(3.11)_82, server: 172.105.222.98, port: 80, type: vmess, uuid: 4e1d0b12-25f0-363f-8659-9c6a3ca1fcda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 172.105.222.98}, udp: true}
+  - {name: _CN_wmt(3.11)_83, server: www.tokyo2021.ga, port: 443, type: trojan, password: 7a990132-cf76-4ac2-8a3c-681743fa8627, sni: www.tokyo2021.ga, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(3.11)_84, server: 211.72.35.153, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(3.11)_85, server: 134.195.196.81, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _JP_wmt(3.11)_86, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: _FR_wmt(3.11)_87, server: fr-am1-1.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: gVWc0WaJn, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: _CN_wmt(3.11)_88, server: 112.15.9.129, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(3.11)_89, server: 134.195.196.81, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CN_wmt(3.11)_90, server: cm1.chashao.buzz, port: 21203, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _TW_wmt(3.11)_91, server: 60.249.3.231, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_92, server: cm.chashao.buzz, port: 21209, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CN_wmt(3.11)_93, server: 117.28.243.220, port: 8076, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: _SG_wmt(3.11)_94, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(3.11)_95, server: 169.197.142.99, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CA_wmt(3.11)_96, server: 134.195.196.3, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CN_wmt(3.11)_97, server: g9.gs1024.com, port: 61233, type: trojan, password: 1b693eb3-3241-362a-9001-5b503789cfbe, sni: g9.gs1024.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(3.11)_98, server: cm.chashao.buzz, port: 21207, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: wmt(3.11)_99, server: 103.172.116.113, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(3.11)_100, server: 134.195.196.68, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CN_wmt(3.11)_101, server: cm1.chashao.buzz, port: 21201, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CA_wmt(3.11)_102, server: 134.195.196.81, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_wmt(3.11)_103, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _CN_wmt(3.11)_104, server: cm.chashao.buzz, port: 21216, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CA_wmt(3.11)_105, server: 134.195.196.68, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CN_wmt(3.11)_106, server: cm.chashao.buzz, port: 21210, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CN_wmt(3.11)_107, server: cm.chashao.buzz, port: 21202, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: wmt(3.11)_108, server: gongyiau1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyiau1.yigeweizhuang.com}, udp: true}
+  - {name: _US_wmt(3.11)_109, server: usaarm1.oracleusa.ml, port: 980, type: vmess, uuid: 810a7deb-4fcf-4e21-93bd-3d7685bb8cb4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: usaarm1.oracleusa.ml}, udp: true}
+  - {name: _CN_wmt(3.11)_110, server: cm.chashao.buzz, port: 21206, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _US_wmt(3.11)_111, server: gongyiin1.yigeweizhuang.com, port: 2096, type: vmess, uuid: a94446e3-be9c-4240-9bdf-9b88155a7eb4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: gongyiin1.yigeweizhuang.com}, udp: true}
+  - {name: _CA_wmt(3.11)_112, server: 134.195.196.3, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _CA_wmt(3.11)_113, server: 134.195.196.81, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CA_wmt(3.11)_114, server: 134.195.196.68, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _CA_wmt(3.11)_115, server: 134.195.196.187, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_wmt(3.11)_116, server: 134.195.196.3, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CA_wmt(3.11)_117, server: 134.195.196.81, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_wmt(3.11)_118, server: 134.195.196.3, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_wmt(3.11)_119, server: 134.195.196.3, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_wmt(3.11)_120, server: 134.195.196.81, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CA_wmt(3.11)_121, server: 134.195.196.187, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _CA_wmt(3.11)_122, server: 134.195.196.68, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _JP_wmt(3.11)_123, server: ss-node-1.gfwairport.net, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: 122b9200-c5e0-4003-836c-973eef59b6b2, udp: true}
+  - {name: _CA_wmt(3.11)_124, server: 134.195.196.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _CA_wmt(3.11)_125, server: 134.195.196.187, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CN_wmt(3.11)_126, server: cm.chashao.buzz, port: 21215, type: ss, cipher: chacha20-ietf-poly1305, password: a0bd91e1-1e8f-41c6-8a68-baf8e94fa467, udp: true}
+  - {name: _CA_wmt(3.11)_127, server: 134.195.196.187, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _CA_wmt(3.11)_128, server: 134.195.196.81, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CA_wmt(3.11)_129, server: 134.195.196.68, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _CA_wmt(3.11)_130, server: 134.195.196.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _CA_wmt(3.11)_131, server: 134.195.196.81, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: wmt(3.11)_132, server: 103.172.116.113, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(3.11)_133, server: 134.195.196.187, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_wmt(3.11)_134, server: 134.195.196.3, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _CA_wmt(3.11)_135, server: 134.195.196.68, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _CA_wmt(3.11)_136, server: 134.195.196.81, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _CA_wmt(3.11)_137, server: 134.195.196.3, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(3.8)_1
-      - _CN_wmt(3.8)_2
-      - _FR_wmt(3.8)_3
-      - _US_wmt(3.8)_4
-      - _CA_wmt(3.8)_5
-      - _JP_wmt(3.8)_6
-      - _CN_wmt(3.8)_7
-      - _US_wmt(3.8)_8
-      - _CA_wmt(3.8)_9
-      - _CA_wmt(3.8)_10
-      - _CA_wmt(3.8)_11
-      - _US_wmt(3.8)_12
-      - _CA_wmt(3.8)_13
-      - _CA_wmt(3.8)_14
-      - _CA_wmt(3.8)_15
-      - _GB_wmt(3.8)_16
-      - _CA_wmt(3.8)_17
-      - _CA_wmt(3.8)_18
-      - _CA_wmt(3.8)_19
-      - _CA_wmt(3.8)_20
-      - _CA_wmt(3.8)_21
-      - _JP_wmt(3.8)_22
-      - _CA_wmt(3.8)_23
-      - _AU_wmt(3.8)_24
-      - _CA_wmt(3.8)_25
-      - _CN_wmt(3.8)_26
-      - _GB_wmt(3.8)_27
-      - _GB_wmt(3.8)_28
-      - _CA_wmt(3.8)_29
-      - wmt(3.8)_30
-      - _CA_wmt(3.8)_31
-      - _JP_wmt(3.8)_32
-      - _CA_wmt(3.8)_33
-      - _CA_wmt(3.8)_34
-      - _CA_wmt(3.8)_35
-      - _CA_wmt(3.8)_36
-      - _CA_wmt(3.8)_37
-      - _CN_wmt(3.8)_38
-      - _CA_wmt(3.8)_39
-      - _CA_wmt(3.8)_40
-      - _CA_wmt(3.8)_41
-      - _CA_wmt(3.8)_42
-      - _CA_wmt(3.8)_43
-      - _CA_wmt(3.8)_44
-      - _CA_wmt(3.8)_45
-      - _CA_wmt(3.8)_46
-      - _CA_wmt(3.8)_47
-      - _CA_wmt(3.8)_48
-      - _CA_wmt(3.8)_49
-      - _CA_wmt(3.8)_50
-      - _CA_wmt(3.8)_51
-      - _CA_wmt(3.8)_52
-      - _CN_wmt(3.8)_53
-      - _CA_wmt(3.8)_54
-      - _CA_wmt(3.8)_55
-      - _CA_wmt(3.8)_56
-      - _US_wmt(3.8)_57
-      - _US_wmt(3.8)_58
-      - _US_wmt(3.8)_59
-      - _US_wmt(3.8)_60
-      - _US_wmt(3.8)_61
-      - _US_wmt(3.8)_62
-      - _CA_wmt(3.8)_63
-      - _CA_wmt(3.8)_64
-      - _US_wmt(3.8)_65
-      - _CA_wmt(3.8)_66
-      - _CA_wmt(3.8)_67
-      - _US_wmt(3.8)_68
-      - _CA_wmt(3.8)_69
-      - _CA_wmt(3.8)_70
-      - _CA_wmt(3.8)_71
-      - _CN_wmt(3.8)_72
-      - _CA_wmt(3.8)_73
-      - _CA_wmt(3.8)_74
-      - _US_wmt(3.8)_75
-      - _CA_wmt(3.8)_76
-      - _US_wmt(3.8)_77
-      - _US_wmt(3.8)_78
-      - _CA_wmt(3.8)_79
-      - _CA_wmt(3.8)_80
-      - _US_wmt(3.8)_81
-      - _CA_wmt(3.8)_82
-      - _CA_wmt(3.8)_83
-      - _CA_wmt(3.8)_84
-      - _GB_wmt(3.8)_85
-      - _CA_wmt(3.8)_86
-      - _CA_wmt(3.8)_87
-      - _CN_wmt(3.8)_88
-      - _JP_wmt(3.8)_89
-      - _CA_wmt(3.8)_90
-      - _CA_wmt(3.8)_91
-      - _CN_wmt(3.8)_92
-      - _US_wmt(3.8)_93
-      - _CA_wmt(3.8)_94
-      - _CN_wmt(3.8)_95
-      - _CN_wmt(3.8)_96
-      - _CA_wmt(3.8)_97
-      - _CA_wmt(3.8)_98
+      - _CN_wmt(3.11)_1
+      - _CN_wmt(3.11)_2
+      - _CN_wmt(3.11)_3
+      - _JP_wmt(3.11)_4
+      - _CN_wmt(3.11)_5
+      - _CN_wmt(3.11)_6
+      - _CN_wmt(3.11)_7
+      - _CN_wmt(3.11)_8
+      - _CN_wmt(3.11)_9
+      - _CN_wmt(3.11)_10
+      - _CN_wmt(3.11)_11
+      - _CN_wmt(3.11)_12
+      - _CN_wmt(3.11)_13
+      - _CN_wmt(3.11)_14
+      - _CN_wmt(3.11)_15
+      - _CN_wmt(3.11)_16
+      - _CN_wmt(3.11)_17
+      - _US_wmt(3.11)_18
+      - _CN_wmt(3.11)_19
+      - _CN_wmt(3.11)_20
+      - _HK_wmt(3.11)_21
+      - _CN_wmt(3.11)_22
+      - _CN_wmt(3.11)_23
+      - _CN_wmt(3.11)_24
+      - _CN_wmt(3.11)_25
+      - _TW_wmt(3.11)_26
+      - _CN_wmt(3.11)_27
+      - _CN_wmt(3.11)_28
+      - _CN_wmt(3.11)_29
+      - _CN_wmt(3.11)_30
+      - _CN_wmt(3.11)_31
+      - _HK_wmt(3.11)_32
+      - _CN_wmt(3.11)_33
+      - _CN_wmt(3.11)_34
+      - _US_wmt(3.11)_35
+      - _US_wmt(3.11)_36
+      - _US_wmt(3.11)_37
+      - _CN_wmt(3.11)_38
+      - _US_wmt(3.11)_39
+      - _US_wmt(3.11)_40
+      - _CN_wmt(3.11)_41
+      - _CN_wmt(3.11)_42
+      - _US_wmt(3.11)_43
+      - _US_wmt(3.11)_44
+      - _CN_wmt(3.11)_45
+      - _US_wmt(3.11)_46
+      - _CN_wmt(3.11)_47
+      - _CN_wmt(3.11)_48
+      - _CN_wmt(3.11)_49
+      - _CN_wmt(3.11)_50
+      - _AE_wmt(3.11)_51
+      - _AE_wmt(3.11)_52
+      - _CN_wmt(3.11)_53
+      - _CN_wmt(3.11)_54
+      - _CN_wmt(3.11)_55
+      - _CN_wmt(3.11)_56
+      - _US_wmt(3.11)_57
+      - _CN_wmt(3.11)_58
+      - _CN_wmt(3.11)_59
+      - _CN_wmt(3.11)_60
+      - _CN_wmt(3.11)_61
+      - _CN_wmt(3.11)_62
+      - wmt(3.11)_63
+      - _CN_wmt(3.11)_64
+      - _CN_wmt(3.11)_65
+      - _CN_wmt(3.11)_66
+      - _CN_wmt(3.11)_67
+      - _CN_wmt(3.11)_68
+      - _CN_wmt(3.11)_69
+      - wmt(3.11)_70
+      - _US_wmt(3.11)_71
+      - _TW_wmt(3.11)_72
+      - wmt(3.11)_73
+      - _CN_wmt(3.11)_74
+      - _CN_wmt(3.11)_75
+      - _CN_wmt(3.11)_76
+      - _CN_wmt(3.11)_77
+      - _CN_wmt(3.11)_78
+      - _CN_wmt(3.11)_79
+      - wmt(3.11)_80
+      - wmt(3.11)_81
+      - _JP_wmt(3.11)_82
+      - _CN_wmt(3.11)_83
+      - _TW_wmt(3.11)_84
+      - _CA_wmt(3.11)_85
+      - _JP_wmt(3.11)_86
+      - _FR_wmt(3.11)_87
+      - _CN_wmt(3.11)_88
+      - _CA_wmt(3.11)_89
+      - _CN_wmt(3.11)_90
+      - _TW_wmt(3.11)_91
+      - _CN_wmt(3.11)_92
+      - _CN_wmt(3.11)_93
+      - _SG_wmt(3.11)_94
+      - _US_wmt(3.11)_95
+      - _CA_wmt(3.11)_96
+      - _CN_wmt(3.11)_97
+      - _CN_wmt(3.11)_98
+      - wmt(3.11)_99
+      - _CA_wmt(3.11)_100
+      - _CN_wmt(3.11)_101
+      - _CA_wmt(3.11)_102
+      - _US_wmt(3.11)_103
+      - _CN_wmt(3.11)_104
+      - _CA_wmt(3.11)_105
+      - _CN_wmt(3.11)_106
+      - _CN_wmt(3.11)_107
+      - wmt(3.11)_108
+      - _US_wmt(3.11)_109
+      - _CN_wmt(3.11)_110
+      - _US_wmt(3.11)_111
+      - _CA_wmt(3.11)_112
+      - _CA_wmt(3.11)_113
+      - _CA_wmt(3.11)_114
+      - _CA_wmt(3.11)_115
+      - _CA_wmt(3.11)_116
+      - _CA_wmt(3.11)_117
+      - _CA_wmt(3.11)_118
+      - _CA_wmt(3.11)_119
+      - _CA_wmt(3.11)_120
+      - _CA_wmt(3.11)_121
+      - _CA_wmt(3.11)_122
+      - _JP_wmt(3.11)_123
+      - _CA_wmt(3.11)_124
+      - _CA_wmt(3.11)_125
+      - _CN_wmt(3.11)_126
+      - _CA_wmt(3.11)_127
+      - _CA_wmt(3.11)_128
+      - _CA_wmt(3.11)_129
+      - _CA_wmt(3.11)_130
+      - _CA_wmt(3.11)_131
+      - wmt(3.11)_132
+      - _CA_wmt(3.11)_133
+      - _CA_wmt(3.11)_134
+      - _CA_wmt(3.11)_135
+      - _CA_wmt(3.11)_136
+      - _CA_wmt(3.11)_137
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_wmt(3.8)_1
-      - _CN_wmt(3.8)_2
-      - _FR_wmt(3.8)_3
-      - _US_wmt(3.8)_4
-      - _CA_wmt(3.8)_5
-      - _JP_wmt(3.8)_6
-      - _CN_wmt(3.8)_7
-      - _US_wmt(3.8)_8
-      - _CA_wmt(3.8)_9
-      - _CA_wmt(3.8)_10
-      - _CA_wmt(3.8)_11
-      - _US_wmt(3.8)_12
-      - _CA_wmt(3.8)_13
-      - _CA_wmt(3.8)_14
-      - _CA_wmt(3.8)_15
-      - _GB_wmt(3.8)_16
-      - _CA_wmt(3.8)_17
-      - _CA_wmt(3.8)_18
-      - _CA_wmt(3.8)_19
-      - _CA_wmt(3.8)_20
-      - _CA_wmt(3.8)_21
-      - _JP_wmt(3.8)_22
-      - _CA_wmt(3.8)_23
-      - _AU_wmt(3.8)_24
-      - _CA_wmt(3.8)_25
-      - _CN_wmt(3.8)_26
-      - _GB_wmt(3.8)_27
-      - _GB_wmt(3.8)_28
-      - _CA_wmt(3.8)_29
-      - wmt(3.8)_30
-      - _CA_wmt(3.8)_31
-      - _JP_wmt(3.8)_32
-      - _CA_wmt(3.8)_33
-      - _CA_wmt(3.8)_34
-      - _CA_wmt(3.8)_35
-      - _CA_wmt(3.8)_36
-      - _CA_wmt(3.8)_37
-      - _CN_wmt(3.8)_38
-      - _CA_wmt(3.8)_39
-      - _CA_wmt(3.8)_40
-      - _CA_wmt(3.8)_41
-      - _CA_wmt(3.8)_42
-      - _CA_wmt(3.8)_43
-      - _CA_wmt(3.8)_44
-      - _CA_wmt(3.8)_45
-      - _CA_wmt(3.8)_46
-      - _CA_wmt(3.8)_47
-      - _CA_wmt(3.8)_48
-      - _CA_wmt(3.8)_49
-      - _CA_wmt(3.8)_50
-      - _CA_wmt(3.8)_51
-      - _CA_wmt(3.8)_52
-      - _CN_wmt(3.8)_53
-      - _CA_wmt(3.8)_54
-      - _CA_wmt(3.8)_55
-      - _CA_wmt(3.8)_56
-      - _US_wmt(3.8)_57
-      - _US_wmt(3.8)_58
-      - _US_wmt(3.8)_59
-      - _US_wmt(3.8)_60
-      - _US_wmt(3.8)_61
-      - _US_wmt(3.8)_62
-      - _CA_wmt(3.8)_63
-      - _CA_wmt(3.8)_64
-      - _US_wmt(3.8)_65
-      - _CA_wmt(3.8)_66
-      - _CA_wmt(3.8)_67
-      - _US_wmt(3.8)_68
-      - _CA_wmt(3.8)_69
-      - _CA_wmt(3.8)_70
-      - _CA_wmt(3.8)_71
-      - _CN_wmt(3.8)_72
-      - _CA_wmt(3.8)_73
-      - _CA_wmt(3.8)_74
-      - _US_wmt(3.8)_75
-      - _CA_wmt(3.8)_76
-      - _US_wmt(3.8)_77
-      - _US_wmt(3.8)_78
-      - _CA_wmt(3.8)_79
-      - _CA_wmt(3.8)_80
-      - _US_wmt(3.8)_81
-      - _CA_wmt(3.8)_82
-      - _CA_wmt(3.8)_83
-      - _CA_wmt(3.8)_84
-      - _GB_wmt(3.8)_85
-      - _CA_wmt(3.8)_86
-      - _CA_wmt(3.8)_87
-      - _CN_wmt(3.8)_88
-      - _JP_wmt(3.8)_89
-      - _CA_wmt(3.8)_90
-      - _CA_wmt(3.8)_91
-      - _CN_wmt(3.8)_92
-      - _US_wmt(3.8)_93
-      - _CA_wmt(3.8)_94
-      - _CN_wmt(3.8)_95
-      - _CN_wmt(3.8)_96
-      - _CA_wmt(3.8)_97
-      - _CA_wmt(3.8)_98
+      - _CN_wmt(3.11)_1
+      - _CN_wmt(3.11)_2
+      - _CN_wmt(3.11)_3
+      - _JP_wmt(3.11)_4
+      - _CN_wmt(3.11)_5
+      - _CN_wmt(3.11)_6
+      - _CN_wmt(3.11)_7
+      - _CN_wmt(3.11)_8
+      - _CN_wmt(3.11)_9
+      - _CN_wmt(3.11)_10
+      - _CN_wmt(3.11)_11
+      - _CN_wmt(3.11)_12
+      - _CN_wmt(3.11)_13
+      - _CN_wmt(3.11)_14
+      - _CN_wmt(3.11)_15
+      - _CN_wmt(3.11)_16
+      - _CN_wmt(3.11)_17
+      - _US_wmt(3.11)_18
+      - _CN_wmt(3.11)_19
+      - _CN_wmt(3.11)_20
+      - _HK_wmt(3.11)_21
+      - _CN_wmt(3.11)_22
+      - _CN_wmt(3.11)_23
+      - _CN_wmt(3.11)_24
+      - _CN_wmt(3.11)_25
+      - _TW_wmt(3.11)_26
+      - _CN_wmt(3.11)_27
+      - _CN_wmt(3.11)_28
+      - _CN_wmt(3.11)_29
+      - _CN_wmt(3.11)_30
+      - _CN_wmt(3.11)_31
+      - _HK_wmt(3.11)_32
+      - _CN_wmt(3.11)_33
+      - _CN_wmt(3.11)_34
+      - _US_wmt(3.11)_35
+      - _US_wmt(3.11)_36
+      - _US_wmt(3.11)_37
+      - _CN_wmt(3.11)_38
+      - _US_wmt(3.11)_39
+      - _US_wmt(3.11)_40
+      - _CN_wmt(3.11)_41
+      - _CN_wmt(3.11)_42
+      - _US_wmt(3.11)_43
+      - _US_wmt(3.11)_44
+      - _CN_wmt(3.11)_45
+      - _US_wmt(3.11)_46
+      - _CN_wmt(3.11)_47
+      - _CN_wmt(3.11)_48
+      - _CN_wmt(3.11)_49
+      - _CN_wmt(3.11)_50
+      - _AE_wmt(3.11)_51
+      - _AE_wmt(3.11)_52
+      - _CN_wmt(3.11)_53
+      - _CN_wmt(3.11)_54
+      - _CN_wmt(3.11)_55
+      - _CN_wmt(3.11)_56
+      - _US_wmt(3.11)_57
+      - _CN_wmt(3.11)_58
+      - _CN_wmt(3.11)_59
+      - _CN_wmt(3.11)_60
+      - _CN_wmt(3.11)_61
+      - _CN_wmt(3.11)_62
+      - wmt(3.11)_63
+      - _CN_wmt(3.11)_64
+      - _CN_wmt(3.11)_65
+      - _CN_wmt(3.11)_66
+      - _CN_wmt(3.11)_67
+      - _CN_wmt(3.11)_68
+      - _CN_wmt(3.11)_69
+      - wmt(3.11)_70
+      - _US_wmt(3.11)_71
+      - _TW_wmt(3.11)_72
+      - wmt(3.11)_73
+      - _CN_wmt(3.11)_74
+      - _CN_wmt(3.11)_75
+      - _CN_wmt(3.11)_76
+      - _CN_wmt(3.11)_77
+      - _CN_wmt(3.11)_78
+      - _CN_wmt(3.11)_79
+      - wmt(3.11)_80
+      - wmt(3.11)_81
+      - _JP_wmt(3.11)_82
+      - _CN_wmt(3.11)_83
+      - _TW_wmt(3.11)_84
+      - _CA_wmt(3.11)_85
+      - _JP_wmt(3.11)_86
+      - _FR_wmt(3.11)_87
+      - _CN_wmt(3.11)_88
+      - _CA_wmt(3.11)_89
+      - _CN_wmt(3.11)_90
+      - _TW_wmt(3.11)_91
+      - _CN_wmt(3.11)_92
+      - _CN_wmt(3.11)_93
+      - _SG_wmt(3.11)_94
+      - _US_wmt(3.11)_95
+      - _CA_wmt(3.11)_96
+      - _CN_wmt(3.11)_97
+      - _CN_wmt(3.11)_98
+      - wmt(3.11)_99
+      - _CA_wmt(3.11)_100
+      - _CN_wmt(3.11)_101
+      - _CA_wmt(3.11)_102
+      - _US_wmt(3.11)_103
+      - _CN_wmt(3.11)_104
+      - _CA_wmt(3.11)_105
+      - _CN_wmt(3.11)_106
+      - _CN_wmt(3.11)_107
+      - wmt(3.11)_108
+      - _US_wmt(3.11)_109
+      - _CN_wmt(3.11)_110
+      - _US_wmt(3.11)_111
+      - _CA_wmt(3.11)_112
+      - _CA_wmt(3.11)_113
+      - _CA_wmt(3.11)_114
+      - _CA_wmt(3.11)_115
+      - _CA_wmt(3.11)_116
+      - _CA_wmt(3.11)_117
+      - _CA_wmt(3.11)_118
+      - _CA_wmt(3.11)_119
+      - _CA_wmt(3.11)_120
+      - _CA_wmt(3.11)_121
+      - _CA_wmt(3.11)_122
+      - _JP_wmt(3.11)_123
+      - _CA_wmt(3.11)_124
+      - _CA_wmt(3.11)_125
+      - _CN_wmt(3.11)_126
+      - _CA_wmt(3.11)_127
+      - _CA_wmt(3.11)_128
+      - _CA_wmt(3.11)_129
+      - _CA_wmt(3.11)_130
+      - _CA_wmt(3.11)_131
+      - wmt(3.11)_132
+      - _CA_wmt(3.11)_133
+      - _CA_wmt(3.11)_134
+      - _CA_wmt(3.11)_135
+      - _CA_wmt(3.11)_136
+      - _CA_wmt(3.11)_137
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(3.8)_1
-      - _CN_wmt(3.8)_2
-      - _FR_wmt(3.8)_3
-      - _US_wmt(3.8)_4
-      - _CA_wmt(3.8)_5
-      - _JP_wmt(3.8)_6
-      - _CN_wmt(3.8)_7
-      - _US_wmt(3.8)_8
-      - _CA_wmt(3.8)_9
-      - _CA_wmt(3.8)_10
-      - _CA_wmt(3.8)_11
-      - _US_wmt(3.8)_12
-      - _CA_wmt(3.8)_13
-      - _CA_wmt(3.8)_14
-      - _CA_wmt(3.8)_15
-      - _GB_wmt(3.8)_16
-      - _CA_wmt(3.8)_17
-      - _CA_wmt(3.8)_18
-      - _CA_wmt(3.8)_19
-      - _CA_wmt(3.8)_20
-      - _CA_wmt(3.8)_21
-      - _JP_wmt(3.8)_22
-      - _CA_wmt(3.8)_23
-      - _AU_wmt(3.8)_24
-      - _CA_wmt(3.8)_25
-      - _CN_wmt(3.8)_26
-      - _GB_wmt(3.8)_27
-      - _GB_wmt(3.8)_28
-      - _CA_wmt(3.8)_29
-      - wmt(3.8)_30
-      - _CA_wmt(3.8)_31
-      - _JP_wmt(3.8)_32
-      - _CA_wmt(3.8)_33
-      - _CA_wmt(3.8)_34
-      - _CA_wmt(3.8)_35
-      - _CA_wmt(3.8)_36
-      - _CA_wmt(3.8)_37
-      - _CN_wmt(3.8)_38
-      - _CA_wmt(3.8)_39
-      - _CA_wmt(3.8)_40
-      - _CA_wmt(3.8)_41
-      - _CA_wmt(3.8)_42
-      - _CA_wmt(3.8)_43
-      - _CA_wmt(3.8)_44
-      - _CA_wmt(3.8)_45
-      - _CA_wmt(3.8)_46
-      - _CA_wmt(3.8)_47
-      - _CA_wmt(3.8)_48
-      - _CA_wmt(3.8)_49
-      - _CA_wmt(3.8)_50
-      - _CA_wmt(3.8)_51
-      - _CA_wmt(3.8)_52
-      - _CN_wmt(3.8)_53
-      - _CA_wmt(3.8)_54
-      - _CA_wmt(3.8)_55
-      - _CA_wmt(3.8)_56
-      - _US_wmt(3.8)_57
-      - _US_wmt(3.8)_58
-      - _US_wmt(3.8)_59
-      - _US_wmt(3.8)_60
-      - _US_wmt(3.8)_61
-      - _US_wmt(3.8)_62
-      - _CA_wmt(3.8)_63
-      - _CA_wmt(3.8)_64
-      - _US_wmt(3.8)_65
-      - _CA_wmt(3.8)_66
-      - _CA_wmt(3.8)_67
-      - _US_wmt(3.8)_68
-      - _CA_wmt(3.8)_69
-      - _CA_wmt(3.8)_70
-      - _CA_wmt(3.8)_71
-      - _CN_wmt(3.8)_72
-      - _CA_wmt(3.8)_73
-      - _CA_wmt(3.8)_74
-      - _US_wmt(3.8)_75
-      - _CA_wmt(3.8)_76
-      - _US_wmt(3.8)_77
-      - _US_wmt(3.8)_78
-      - _CA_wmt(3.8)_79
-      - _CA_wmt(3.8)_80
-      - _US_wmt(3.8)_81
-      - _CA_wmt(3.8)_82
-      - _CA_wmt(3.8)_83
-      - _CA_wmt(3.8)_84
-      - _GB_wmt(3.8)_85
-      - _CA_wmt(3.8)_86
-      - _CA_wmt(3.8)_87
-      - _CN_wmt(3.8)_88
-      - _JP_wmt(3.8)_89
-      - _CA_wmt(3.8)_90
-      - _CA_wmt(3.8)_91
-      - _CN_wmt(3.8)_92
-      - _US_wmt(3.8)_93
-      - _CA_wmt(3.8)_94
-      - _CN_wmt(3.8)_95
-      - _CN_wmt(3.8)_96
-      - _CA_wmt(3.8)_97
-      - _CA_wmt(3.8)_98
+      - _CN_wmt(3.11)_1
+      - _CN_wmt(3.11)_2
+      - _CN_wmt(3.11)_3
+      - _JP_wmt(3.11)_4
+      - _CN_wmt(3.11)_5
+      - _CN_wmt(3.11)_6
+      - _CN_wmt(3.11)_7
+      - _CN_wmt(3.11)_8
+      - _CN_wmt(3.11)_9
+      - _CN_wmt(3.11)_10
+      - _CN_wmt(3.11)_11
+      - _CN_wmt(3.11)_12
+      - _CN_wmt(3.11)_13
+      - _CN_wmt(3.11)_14
+      - _CN_wmt(3.11)_15
+      - _CN_wmt(3.11)_16
+      - _CN_wmt(3.11)_17
+      - _US_wmt(3.11)_18
+      - _CN_wmt(3.11)_19
+      - _CN_wmt(3.11)_20
+      - _HK_wmt(3.11)_21
+      - _CN_wmt(3.11)_22
+      - _CN_wmt(3.11)_23
+      - _CN_wmt(3.11)_24
+      - _CN_wmt(3.11)_25
+      - _TW_wmt(3.11)_26
+      - _CN_wmt(3.11)_27
+      - _CN_wmt(3.11)_28
+      - _CN_wmt(3.11)_29
+      - _CN_wmt(3.11)_30
+      - _CN_wmt(3.11)_31
+      - _HK_wmt(3.11)_32
+      - _CN_wmt(3.11)_33
+      - _CN_wmt(3.11)_34
+      - _US_wmt(3.11)_35
+      - _US_wmt(3.11)_36
+      - _US_wmt(3.11)_37
+      - _CN_wmt(3.11)_38
+      - _US_wmt(3.11)_39
+      - _US_wmt(3.11)_40
+      - _CN_wmt(3.11)_41
+      - _CN_wmt(3.11)_42
+      - _US_wmt(3.11)_43
+      - _US_wmt(3.11)_44
+      - _CN_wmt(3.11)_45
+      - _US_wmt(3.11)_46
+      - _CN_wmt(3.11)_47
+      - _CN_wmt(3.11)_48
+      - _CN_wmt(3.11)_49
+      - _CN_wmt(3.11)_50
+      - _AE_wmt(3.11)_51
+      - _AE_wmt(3.11)_52
+      - _CN_wmt(3.11)_53
+      - _CN_wmt(3.11)_54
+      - _CN_wmt(3.11)_55
+      - _CN_wmt(3.11)_56
+      - _US_wmt(3.11)_57
+      - _CN_wmt(3.11)_58
+      - _CN_wmt(3.11)_59
+      - _CN_wmt(3.11)_60
+      - _CN_wmt(3.11)_61
+      - _CN_wmt(3.11)_62
+      - wmt(3.11)_63
+      - _CN_wmt(3.11)_64
+      - _CN_wmt(3.11)_65
+      - _CN_wmt(3.11)_66
+      - _CN_wmt(3.11)_67
+      - _CN_wmt(3.11)_68
+      - _CN_wmt(3.11)_69
+      - wmt(3.11)_70
+      - _US_wmt(3.11)_71
+      - _TW_wmt(3.11)_72
+      - wmt(3.11)_73
+      - _CN_wmt(3.11)_74
+      - _CN_wmt(3.11)_75
+      - _CN_wmt(3.11)_76
+      - _CN_wmt(3.11)_77
+      - _CN_wmt(3.11)_78
+      - _CN_wmt(3.11)_79
+      - wmt(3.11)_80
+      - wmt(3.11)_81
+      - _JP_wmt(3.11)_82
+      - _CN_wmt(3.11)_83
+      - _TW_wmt(3.11)_84
+      - _CA_wmt(3.11)_85
+      - _JP_wmt(3.11)_86
+      - _FR_wmt(3.11)_87
+      - _CN_wmt(3.11)_88
+      - _CA_wmt(3.11)_89
+      - _CN_wmt(3.11)_90
+      - _TW_wmt(3.11)_91
+      - _CN_wmt(3.11)_92
+      - _CN_wmt(3.11)_93
+      - _SG_wmt(3.11)_94
+      - _US_wmt(3.11)_95
+      - _CA_wmt(3.11)_96
+      - _CN_wmt(3.11)_97
+      - _CN_wmt(3.11)_98
+      - wmt(3.11)_99
+      - _CA_wmt(3.11)_100
+      - _CN_wmt(3.11)_101
+      - _CA_wmt(3.11)_102
+      - _US_wmt(3.11)_103
+      - _CN_wmt(3.11)_104
+      - _CA_wmt(3.11)_105
+      - _CN_wmt(3.11)_106
+      - _CN_wmt(3.11)_107
+      - wmt(3.11)_108
+      - _US_wmt(3.11)_109
+      - _CN_wmt(3.11)_110
+      - _US_wmt(3.11)_111
+      - _CA_wmt(3.11)_112
+      - _CA_wmt(3.11)_113
+      - _CA_wmt(3.11)_114
+      - _CA_wmt(3.11)_115
+      - _CA_wmt(3.11)_116
+      - _CA_wmt(3.11)_117
+      - _CA_wmt(3.11)_118
+      - _CA_wmt(3.11)_119
+      - _CA_wmt(3.11)_120
+      - _CA_wmt(3.11)_121
+      - _CA_wmt(3.11)_122
+      - _JP_wmt(3.11)_123
+      - _CA_wmt(3.11)_124
+      - _CA_wmt(3.11)_125
+      - _CN_wmt(3.11)_126
+      - _CA_wmt(3.11)_127
+      - _CA_wmt(3.11)_128
+      - _CA_wmt(3.11)_129
+      - _CA_wmt(3.11)_130
+      - _CA_wmt(3.11)_131
+      - wmt(3.11)_132
+      - _CA_wmt(3.11)_133
+      - _CA_wmt(3.11)_134
+      - _CA_wmt(3.11)_135
+      - _CA_wmt(3.11)_136
+      - _CA_wmt(3.11)_137
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -432,104 +588,143 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(3.8)_1
-      - _CN_wmt(3.8)_2
-      - _FR_wmt(3.8)_3
-      - _US_wmt(3.8)_4
-      - _CA_wmt(3.8)_5
-      - _JP_wmt(3.8)_6
-      - _CN_wmt(3.8)_7
-      - _US_wmt(3.8)_8
-      - _CA_wmt(3.8)_9
-      - _CA_wmt(3.8)_10
-      - _CA_wmt(3.8)_11
-      - _US_wmt(3.8)_12
-      - _CA_wmt(3.8)_13
-      - _CA_wmt(3.8)_14
-      - _CA_wmt(3.8)_15
-      - _GB_wmt(3.8)_16
-      - _CA_wmt(3.8)_17
-      - _CA_wmt(3.8)_18
-      - _CA_wmt(3.8)_19
-      - _CA_wmt(3.8)_20
-      - _CA_wmt(3.8)_21
-      - _JP_wmt(3.8)_22
-      - _CA_wmt(3.8)_23
-      - _AU_wmt(3.8)_24
-      - _CA_wmt(3.8)_25
-      - _CN_wmt(3.8)_26
-      - _GB_wmt(3.8)_27
-      - _GB_wmt(3.8)_28
-      - _CA_wmt(3.8)_29
-      - wmt(3.8)_30
-      - _CA_wmt(3.8)_31
-      - _JP_wmt(3.8)_32
-      - _CA_wmt(3.8)_33
-      - _CA_wmt(3.8)_34
-      - _CA_wmt(3.8)_35
-      - _CA_wmt(3.8)_36
-      - _CA_wmt(3.8)_37
-      - _CN_wmt(3.8)_38
-      - _CA_wmt(3.8)_39
-      - _CA_wmt(3.8)_40
-      - _CA_wmt(3.8)_41
-      - _CA_wmt(3.8)_42
-      - _CA_wmt(3.8)_43
-      - _CA_wmt(3.8)_44
-      - _CA_wmt(3.8)_45
-      - _CA_wmt(3.8)_46
-      - _CA_wmt(3.8)_47
-      - _CA_wmt(3.8)_48
-      - _CA_wmt(3.8)_49
-      - _CA_wmt(3.8)_50
-      - _CA_wmt(3.8)_51
-      - _CA_wmt(3.8)_52
-      - _CN_wmt(3.8)_53
-      - _CA_wmt(3.8)_54
-      - _CA_wmt(3.8)_55
-      - _CA_wmt(3.8)_56
-      - _US_wmt(3.8)_57
-      - _US_wmt(3.8)_58
-      - _US_wmt(3.8)_59
-      - _US_wmt(3.8)_60
-      - _US_wmt(3.8)_61
-      - _US_wmt(3.8)_62
-      - _CA_wmt(3.8)_63
-      - _CA_wmt(3.8)_64
-      - _US_wmt(3.8)_65
-      - _CA_wmt(3.8)_66
-      - _CA_wmt(3.8)_67
-      - _US_wmt(3.8)_68
-      - _CA_wmt(3.8)_69
-      - _CA_wmt(3.8)_70
-      - _CA_wmt(3.8)_71
-      - _CN_wmt(3.8)_72
-      - _CA_wmt(3.8)_73
-      - _CA_wmt(3.8)_74
-      - _US_wmt(3.8)_75
-      - _CA_wmt(3.8)_76
-      - _US_wmt(3.8)_77
-      - _US_wmt(3.8)_78
-      - _CA_wmt(3.8)_79
-      - _CA_wmt(3.8)_80
-      - _US_wmt(3.8)_81
-      - _CA_wmt(3.8)_82
-      - _CA_wmt(3.8)_83
-      - _CA_wmt(3.8)_84
-      - _GB_wmt(3.8)_85
-      - _CA_wmt(3.8)_86
-      - _CA_wmt(3.8)_87
-      - _CN_wmt(3.8)_88
-      - _JP_wmt(3.8)_89
-      - _CA_wmt(3.8)_90
-      - _CA_wmt(3.8)_91
-      - _CN_wmt(3.8)_92
-      - _US_wmt(3.8)_93
-      - _CA_wmt(3.8)_94
-      - _CN_wmt(3.8)_95
-      - _CN_wmt(3.8)_96
-      - _CA_wmt(3.8)_97
-      - _CA_wmt(3.8)_98
+      - _CN_wmt(3.11)_1
+      - _CN_wmt(3.11)_2
+      - _CN_wmt(3.11)_3
+      - _JP_wmt(3.11)_4
+      - _CN_wmt(3.11)_5
+      - _CN_wmt(3.11)_6
+      - _CN_wmt(3.11)_7
+      - _CN_wmt(3.11)_8
+      - _CN_wmt(3.11)_9
+      - _CN_wmt(3.11)_10
+      - _CN_wmt(3.11)_11
+      - _CN_wmt(3.11)_12
+      - _CN_wmt(3.11)_13
+      - _CN_wmt(3.11)_14
+      - _CN_wmt(3.11)_15
+      - _CN_wmt(3.11)_16
+      - _CN_wmt(3.11)_17
+      - _US_wmt(3.11)_18
+      - _CN_wmt(3.11)_19
+      - _CN_wmt(3.11)_20
+      - _HK_wmt(3.11)_21
+      - _CN_wmt(3.11)_22
+      - _CN_wmt(3.11)_23
+      - _CN_wmt(3.11)_24
+      - _CN_wmt(3.11)_25
+      - _TW_wmt(3.11)_26
+      - _CN_wmt(3.11)_27
+      - _CN_wmt(3.11)_28
+      - _CN_wmt(3.11)_29
+      - _CN_wmt(3.11)_30
+      - _CN_wmt(3.11)_31
+      - _HK_wmt(3.11)_32
+      - _CN_wmt(3.11)_33
+      - _CN_wmt(3.11)_34
+      - _US_wmt(3.11)_35
+      - _US_wmt(3.11)_36
+      - _US_wmt(3.11)_37
+      - _CN_wmt(3.11)_38
+      - _US_wmt(3.11)_39
+      - _US_wmt(3.11)_40
+      - _CN_wmt(3.11)_41
+      - _CN_wmt(3.11)_42
+      - _US_wmt(3.11)_43
+      - _US_wmt(3.11)_44
+      - _CN_wmt(3.11)_45
+      - _US_wmt(3.11)_46
+      - _CN_wmt(3.11)_47
+      - _CN_wmt(3.11)_48
+      - _CN_wmt(3.11)_49
+      - _CN_wmt(3.11)_50
+      - _AE_wmt(3.11)_51
+      - _AE_wmt(3.11)_52
+      - _CN_wmt(3.11)_53
+      - _CN_wmt(3.11)_54
+      - _CN_wmt(3.11)_55
+      - _CN_wmt(3.11)_56
+      - _US_wmt(3.11)_57
+      - _CN_wmt(3.11)_58
+      - _CN_wmt(3.11)_59
+      - _CN_wmt(3.11)_60
+      - _CN_wmt(3.11)_61
+      - _CN_wmt(3.11)_62
+      - wmt(3.11)_63
+      - _CN_wmt(3.11)_64
+      - _CN_wmt(3.11)_65
+      - _CN_wmt(3.11)_66
+      - _CN_wmt(3.11)_67
+      - _CN_wmt(3.11)_68
+      - _CN_wmt(3.11)_69
+      - wmt(3.11)_70
+      - _US_wmt(3.11)_71
+      - _TW_wmt(3.11)_72
+      - wmt(3.11)_73
+      - _CN_wmt(3.11)_74
+      - _CN_wmt(3.11)_75
+      - _CN_wmt(3.11)_76
+      - _CN_wmt(3.11)_77
+      - _CN_wmt(3.11)_78
+      - _CN_wmt(3.11)_79
+      - wmt(3.11)_80
+      - wmt(3.11)_81
+      - _JP_wmt(3.11)_82
+      - _CN_wmt(3.11)_83
+      - _TW_wmt(3.11)_84
+      - _CA_wmt(3.11)_85
+      - _JP_wmt(3.11)_86
+      - _FR_wmt(3.11)_87
+      - _CN_wmt(3.11)_88
+      - _CA_wmt(3.11)_89
+      - _CN_wmt(3.11)_90
+      - _TW_wmt(3.11)_91
+      - _CN_wmt(3.11)_92
+      - _CN_wmt(3.11)_93
+      - _SG_wmt(3.11)_94
+      - _US_wmt(3.11)_95
+      - _CA_wmt(3.11)_96
+      - _CN_wmt(3.11)_97
+      - _CN_wmt(3.11)_98
+      - wmt(3.11)_99
+      - _CA_wmt(3.11)_100
+      - _CN_wmt(3.11)_101
+      - _CA_wmt(3.11)_102
+      - _US_wmt(3.11)_103
+      - _CN_wmt(3.11)_104
+      - _CA_wmt(3.11)_105
+      - _CN_wmt(3.11)_106
+      - _CN_wmt(3.11)_107
+      - wmt(3.11)_108
+      - _US_wmt(3.11)_109
+      - _CN_wmt(3.11)_110
+      - _US_wmt(3.11)_111
+      - _CA_wmt(3.11)_112
+      - _CA_wmt(3.11)_113
+      - _CA_wmt(3.11)_114
+      - _CA_wmt(3.11)_115
+      - _CA_wmt(3.11)_116
+      - _CA_wmt(3.11)_117
+      - _CA_wmt(3.11)_118
+      - _CA_wmt(3.11)_119
+      - _CA_wmt(3.11)_120
+      - _CA_wmt(3.11)_121
+      - _CA_wmt(3.11)_122
+      - _JP_wmt(3.11)_123
+      - _CA_wmt(3.11)_124
+      - _CA_wmt(3.11)_125
+      - _CN_wmt(3.11)_126
+      - _CA_wmt(3.11)_127
+      - _CA_wmt(3.11)_128
+      - _CA_wmt(3.11)_129
+      - _CA_wmt(3.11)_130
+      - _CA_wmt(3.11)_131
+      - wmt(3.11)_132
+      - _CA_wmt(3.11)_133
+      - _CA_wmt(3.11)_134
+      - _CA_wmt(3.11)_135
+      - _CA_wmt(3.11)_136
+      - _CA_wmt(3.11)_137
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -540,311 +735,428 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_wmt(3.8)_1
-      - _CN_wmt(3.8)_2
-      - _FR_wmt(3.8)_3
-      - _US_wmt(3.8)_4
-      - _CA_wmt(3.8)_5
-      - _JP_wmt(3.8)_6
-      - _CN_wmt(3.8)_7
-      - _US_wmt(3.8)_8
-      - _CA_wmt(3.8)_9
-      - _CA_wmt(3.8)_10
-      - _CA_wmt(3.8)_11
-      - _US_wmt(3.8)_12
-      - _CA_wmt(3.8)_13
-      - _CA_wmt(3.8)_14
-      - _CA_wmt(3.8)_15
-      - _GB_wmt(3.8)_16
-      - _CA_wmt(3.8)_17
-      - _CA_wmt(3.8)_18
-      - _CA_wmt(3.8)_19
-      - _CA_wmt(3.8)_20
-      - _CA_wmt(3.8)_21
-      - _JP_wmt(3.8)_22
-      - _CA_wmt(3.8)_23
-      - _AU_wmt(3.8)_24
-      - _CA_wmt(3.8)_25
-      - _CN_wmt(3.8)_26
-      - _GB_wmt(3.8)_27
-      - _GB_wmt(3.8)_28
-      - _CA_wmt(3.8)_29
-      - wmt(3.8)_30
-      - _CA_wmt(3.8)_31
-      - _JP_wmt(3.8)_32
-      - _CA_wmt(3.8)_33
-      - _CA_wmt(3.8)_34
-      - _CA_wmt(3.8)_35
-      - _CA_wmt(3.8)_36
-      - _CA_wmt(3.8)_37
-      - _CN_wmt(3.8)_38
-      - _CA_wmt(3.8)_39
-      - _CA_wmt(3.8)_40
-      - _CA_wmt(3.8)_41
-      - _CA_wmt(3.8)_42
-      - _CA_wmt(3.8)_43
-      - _CA_wmt(3.8)_44
-      - _CA_wmt(3.8)_45
-      - _CA_wmt(3.8)_46
-      - _CA_wmt(3.8)_47
-      - _CA_wmt(3.8)_48
-      - _CA_wmt(3.8)_49
-      - _CA_wmt(3.8)_50
-      - _CA_wmt(3.8)_51
-      - _CA_wmt(3.8)_52
-      - _CN_wmt(3.8)_53
-      - _CA_wmt(3.8)_54
-      - _CA_wmt(3.8)_55
-      - _CA_wmt(3.8)_56
-      - _US_wmt(3.8)_57
-      - _US_wmt(3.8)_58
-      - _US_wmt(3.8)_59
-      - _US_wmt(3.8)_60
-      - _US_wmt(3.8)_61
-      - _US_wmt(3.8)_62
-      - _CA_wmt(3.8)_63
-      - _CA_wmt(3.8)_64
-      - _US_wmt(3.8)_65
-      - _CA_wmt(3.8)_66
-      - _CA_wmt(3.8)_67
-      - _US_wmt(3.8)_68
-      - _CA_wmt(3.8)_69
-      - _CA_wmt(3.8)_70
-      - _CA_wmt(3.8)_71
-      - _CN_wmt(3.8)_72
-      - _CA_wmt(3.8)_73
-      - _CA_wmt(3.8)_74
-      - _US_wmt(3.8)_75
-      - _CA_wmt(3.8)_76
-      - _US_wmt(3.8)_77
-      - _US_wmt(3.8)_78
-      - _CA_wmt(3.8)_79
-      - _CA_wmt(3.8)_80
-      - _US_wmt(3.8)_81
-      - _CA_wmt(3.8)_82
-      - _CA_wmt(3.8)_83
-      - _CA_wmt(3.8)_84
-      - _GB_wmt(3.8)_85
-      - _CA_wmt(3.8)_86
-      - _CA_wmt(3.8)_87
-      - _CN_wmt(3.8)_88
-      - _JP_wmt(3.8)_89
-      - _CA_wmt(3.8)_90
-      - _CA_wmt(3.8)_91
-      - _CN_wmt(3.8)_92
-      - _US_wmt(3.8)_93
-      - _CA_wmt(3.8)_94
-      - _CN_wmt(3.8)_95
-      - _CN_wmt(3.8)_96
-      - _CA_wmt(3.8)_97
-      - _CA_wmt(3.8)_98
+      - _CN_wmt(3.11)_1
+      - _CN_wmt(3.11)_2
+      - _CN_wmt(3.11)_3
+      - _JP_wmt(3.11)_4
+      - _CN_wmt(3.11)_5
+      - _CN_wmt(3.11)_6
+      - _CN_wmt(3.11)_7
+      - _CN_wmt(3.11)_8
+      - _CN_wmt(3.11)_9
+      - _CN_wmt(3.11)_10
+      - _CN_wmt(3.11)_11
+      - _CN_wmt(3.11)_12
+      - _CN_wmt(3.11)_13
+      - _CN_wmt(3.11)_14
+      - _CN_wmt(3.11)_15
+      - _CN_wmt(3.11)_16
+      - _CN_wmt(3.11)_17
+      - _US_wmt(3.11)_18
+      - _CN_wmt(3.11)_19
+      - _CN_wmt(3.11)_20
+      - _HK_wmt(3.11)_21
+      - _CN_wmt(3.11)_22
+      - _CN_wmt(3.11)_23
+      - _CN_wmt(3.11)_24
+      - _CN_wmt(3.11)_25
+      - _TW_wmt(3.11)_26
+      - _CN_wmt(3.11)_27
+      - _CN_wmt(3.11)_28
+      - _CN_wmt(3.11)_29
+      - _CN_wmt(3.11)_30
+      - _CN_wmt(3.11)_31
+      - _HK_wmt(3.11)_32
+      - _CN_wmt(3.11)_33
+      - _CN_wmt(3.11)_34
+      - _US_wmt(3.11)_35
+      - _US_wmt(3.11)_36
+      - _US_wmt(3.11)_37
+      - _CN_wmt(3.11)_38
+      - _US_wmt(3.11)_39
+      - _US_wmt(3.11)_40
+      - _CN_wmt(3.11)_41
+      - _CN_wmt(3.11)_42
+      - _US_wmt(3.11)_43
+      - _US_wmt(3.11)_44
+      - _CN_wmt(3.11)_45
+      - _US_wmt(3.11)_46
+      - _CN_wmt(3.11)_47
+      - _CN_wmt(3.11)_48
+      - _CN_wmt(3.11)_49
+      - _CN_wmt(3.11)_50
+      - _AE_wmt(3.11)_51
+      - _AE_wmt(3.11)_52
+      - _CN_wmt(3.11)_53
+      - _CN_wmt(3.11)_54
+      - _CN_wmt(3.11)_55
+      - _CN_wmt(3.11)_56
+      - _US_wmt(3.11)_57
+      - _CN_wmt(3.11)_58
+      - _CN_wmt(3.11)_59
+      - _CN_wmt(3.11)_60
+      - _CN_wmt(3.11)_61
+      - _CN_wmt(3.11)_62
+      - wmt(3.11)_63
+      - _CN_wmt(3.11)_64
+      - _CN_wmt(3.11)_65
+      - _CN_wmt(3.11)_66
+      - _CN_wmt(3.11)_67
+      - _CN_wmt(3.11)_68
+      - _CN_wmt(3.11)_69
+      - wmt(3.11)_70
+      - _US_wmt(3.11)_71
+      - _TW_wmt(3.11)_72
+      - wmt(3.11)_73
+      - _CN_wmt(3.11)_74
+      - _CN_wmt(3.11)_75
+      - _CN_wmt(3.11)_76
+      - _CN_wmt(3.11)_77
+      - _CN_wmt(3.11)_78
+      - _CN_wmt(3.11)_79
+      - wmt(3.11)_80
+      - wmt(3.11)_81
+      - _JP_wmt(3.11)_82
+      - _CN_wmt(3.11)_83
+      - _TW_wmt(3.11)_84
+      - _CA_wmt(3.11)_85
+      - _JP_wmt(3.11)_86
+      - _FR_wmt(3.11)_87
+      - _CN_wmt(3.11)_88
+      - _CA_wmt(3.11)_89
+      - _CN_wmt(3.11)_90
+      - _TW_wmt(3.11)_91
+      - _CN_wmt(3.11)_92
+      - _CN_wmt(3.11)_93
+      - _SG_wmt(3.11)_94
+      - _US_wmt(3.11)_95
+      - _CA_wmt(3.11)_96
+      - _CN_wmt(3.11)_97
+      - _CN_wmt(3.11)_98
+      - wmt(3.11)_99
+      - _CA_wmt(3.11)_100
+      - _CN_wmt(3.11)_101
+      - _CA_wmt(3.11)_102
+      - _US_wmt(3.11)_103
+      - _CN_wmt(3.11)_104
+      - _CA_wmt(3.11)_105
+      - _CN_wmt(3.11)_106
+      - _CN_wmt(3.11)_107
+      - wmt(3.11)_108
+      - _US_wmt(3.11)_109
+      - _CN_wmt(3.11)_110
+      - _US_wmt(3.11)_111
+      - _CA_wmt(3.11)_112
+      - _CA_wmt(3.11)_113
+      - _CA_wmt(3.11)_114
+      - _CA_wmt(3.11)_115
+      - _CA_wmt(3.11)_116
+      - _CA_wmt(3.11)_117
+      - _CA_wmt(3.11)_118
+      - _CA_wmt(3.11)_119
+      - _CA_wmt(3.11)_120
+      - _CA_wmt(3.11)_121
+      - _CA_wmt(3.11)_122
+      - _JP_wmt(3.11)_123
+      - _CA_wmt(3.11)_124
+      - _CA_wmt(3.11)_125
+      - _CN_wmt(3.11)_126
+      - _CA_wmt(3.11)_127
+      - _CA_wmt(3.11)_128
+      - _CA_wmt(3.11)_129
+      - _CA_wmt(3.11)_130
+      - _CA_wmt(3.11)_131
+      - wmt(3.11)_132
+      - _CA_wmt(3.11)_133
+      - _CA_wmt(3.11)_134
+      - _CA_wmt(3.11)_135
+      - _CA_wmt(3.11)_136
+      - _CA_wmt(3.11)_137
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_wmt(3.8)_1
-      - _CN_wmt(3.8)_2
-      - _FR_wmt(3.8)_3
-      - _US_wmt(3.8)_4
-      - _CA_wmt(3.8)_5
-      - _JP_wmt(3.8)_6
-      - _CN_wmt(3.8)_7
-      - _US_wmt(3.8)_8
-      - _CA_wmt(3.8)_9
-      - _CA_wmt(3.8)_10
-      - _CA_wmt(3.8)_11
-      - _US_wmt(3.8)_12
-      - _CA_wmt(3.8)_13
-      - _CA_wmt(3.8)_14
-      - _CA_wmt(3.8)_15
-      - _GB_wmt(3.8)_16
-      - _CA_wmt(3.8)_17
-      - _CA_wmt(3.8)_18
-      - _CA_wmt(3.8)_19
-      - _CA_wmt(3.8)_20
-      - _CA_wmt(3.8)_21
-      - _JP_wmt(3.8)_22
-      - _CA_wmt(3.8)_23
-      - _AU_wmt(3.8)_24
-      - _CA_wmt(3.8)_25
-      - _CN_wmt(3.8)_26
-      - _GB_wmt(3.8)_27
-      - _GB_wmt(3.8)_28
-      - _CA_wmt(3.8)_29
-      - wmt(3.8)_30
-      - _CA_wmt(3.8)_31
-      - _JP_wmt(3.8)_32
-      - _CA_wmt(3.8)_33
-      - _CA_wmt(3.8)_34
-      - _CA_wmt(3.8)_35
-      - _CA_wmt(3.8)_36
-      - _CA_wmt(3.8)_37
-      - _CN_wmt(3.8)_38
-      - _CA_wmt(3.8)_39
-      - _CA_wmt(3.8)_40
-      - _CA_wmt(3.8)_41
-      - _CA_wmt(3.8)_42
-      - _CA_wmt(3.8)_43
-      - _CA_wmt(3.8)_44
-      - _CA_wmt(3.8)_45
-      - _CA_wmt(3.8)_46
-      - _CA_wmt(3.8)_47
-      - _CA_wmt(3.8)_48
-      - _CA_wmt(3.8)_49
-      - _CA_wmt(3.8)_50
-      - _CA_wmt(3.8)_51
-      - _CA_wmt(3.8)_52
-      - _CN_wmt(3.8)_53
-      - _CA_wmt(3.8)_54
-      - _CA_wmt(3.8)_55
-      - _CA_wmt(3.8)_56
-      - _US_wmt(3.8)_57
-      - _US_wmt(3.8)_58
-      - _US_wmt(3.8)_59
-      - _US_wmt(3.8)_60
-      - _US_wmt(3.8)_61
-      - _US_wmt(3.8)_62
-      - _CA_wmt(3.8)_63
-      - _CA_wmt(3.8)_64
-      - _US_wmt(3.8)_65
-      - _CA_wmt(3.8)_66
-      - _CA_wmt(3.8)_67
-      - _US_wmt(3.8)_68
-      - _CA_wmt(3.8)_69
-      - _CA_wmt(3.8)_70
-      - _CA_wmt(3.8)_71
-      - _CN_wmt(3.8)_72
-      - _CA_wmt(3.8)_73
-      - _CA_wmt(3.8)_74
-      - _US_wmt(3.8)_75
-      - _CA_wmt(3.8)_76
-      - _US_wmt(3.8)_77
-      - _US_wmt(3.8)_78
-      - _CA_wmt(3.8)_79
-      - _CA_wmt(3.8)_80
-      - _US_wmt(3.8)_81
-      - _CA_wmt(3.8)_82
-      - _CA_wmt(3.8)_83
-      - _CA_wmt(3.8)_84
-      - _GB_wmt(3.8)_85
-      - _CA_wmt(3.8)_86
-      - _CA_wmt(3.8)_87
-      - _CN_wmt(3.8)_88
-      - _JP_wmt(3.8)_89
-      - _CA_wmt(3.8)_90
-      - _CA_wmt(3.8)_91
-      - _CN_wmt(3.8)_92
-      - _US_wmt(3.8)_93
-      - _CA_wmt(3.8)_94
-      - _CN_wmt(3.8)_95
-      - _CN_wmt(3.8)_96
-      - _CA_wmt(3.8)_97
-      - _CA_wmt(3.8)_98
+      - _CN_wmt(3.11)_1
+      - _CN_wmt(3.11)_2
+      - _CN_wmt(3.11)_3
+      - _JP_wmt(3.11)_4
+      - _CN_wmt(3.11)_5
+      - _CN_wmt(3.11)_6
+      - _CN_wmt(3.11)_7
+      - _CN_wmt(3.11)_8
+      - _CN_wmt(3.11)_9
+      - _CN_wmt(3.11)_10
+      - _CN_wmt(3.11)_11
+      - _CN_wmt(3.11)_12
+      - _CN_wmt(3.11)_13
+      - _CN_wmt(3.11)_14
+      - _CN_wmt(3.11)_15
+      - _CN_wmt(3.11)_16
+      - _CN_wmt(3.11)_17
+      - _US_wmt(3.11)_18
+      - _CN_wmt(3.11)_19
+      - _CN_wmt(3.11)_20
+      - _HK_wmt(3.11)_21
+      - _CN_wmt(3.11)_22
+      - _CN_wmt(3.11)_23
+      - _CN_wmt(3.11)_24
+      - _CN_wmt(3.11)_25
+      - _TW_wmt(3.11)_26
+      - _CN_wmt(3.11)_27
+      - _CN_wmt(3.11)_28
+      - _CN_wmt(3.11)_29
+      - _CN_wmt(3.11)_30
+      - _CN_wmt(3.11)_31
+      - _HK_wmt(3.11)_32
+      - _CN_wmt(3.11)_33
+      - _CN_wmt(3.11)_34
+      - _US_wmt(3.11)_35
+      - _US_wmt(3.11)_36
+      - _US_wmt(3.11)_37
+      - _CN_wmt(3.11)_38
+      - _US_wmt(3.11)_39
+      - _US_wmt(3.11)_40
+      - _CN_wmt(3.11)_41
+      - _CN_wmt(3.11)_42
+      - _US_wmt(3.11)_43
+      - _US_wmt(3.11)_44
+      - _CN_wmt(3.11)_45
+      - _US_wmt(3.11)_46
+      - _CN_wmt(3.11)_47
+      - _CN_wmt(3.11)_48
+      - _CN_wmt(3.11)_49
+      - _CN_wmt(3.11)_50
+      - _AE_wmt(3.11)_51
+      - _AE_wmt(3.11)_52
+      - _CN_wmt(3.11)_53
+      - _CN_wmt(3.11)_54
+      - _CN_wmt(3.11)_55
+      - _CN_wmt(3.11)_56
+      - _US_wmt(3.11)_57
+      - _CN_wmt(3.11)_58
+      - _CN_wmt(3.11)_59
+      - _CN_wmt(3.11)_60
+      - _CN_wmt(3.11)_61
+      - _CN_wmt(3.11)_62
+      - wmt(3.11)_63
+      - _CN_wmt(3.11)_64
+      - _CN_wmt(3.11)_65
+      - _CN_wmt(3.11)_66
+      - _CN_wmt(3.11)_67
+      - _CN_wmt(3.11)_68
+      - _CN_wmt(3.11)_69
+      - wmt(3.11)_70
+      - _US_wmt(3.11)_71
+      - _TW_wmt(3.11)_72
+      - wmt(3.11)_73
+      - _CN_wmt(3.11)_74
+      - _CN_wmt(3.11)_75
+      - _CN_wmt(3.11)_76
+      - _CN_wmt(3.11)_77
+      - _CN_wmt(3.11)_78
+      - _CN_wmt(3.11)_79
+      - wmt(3.11)_80
+      - wmt(3.11)_81
+      - _JP_wmt(3.11)_82
+      - _CN_wmt(3.11)_83
+      - _TW_wmt(3.11)_84
+      - _CA_wmt(3.11)_85
+      - _JP_wmt(3.11)_86
+      - _FR_wmt(3.11)_87
+      - _CN_wmt(3.11)_88
+      - _CA_wmt(3.11)_89
+      - _CN_wmt(3.11)_90
+      - _TW_wmt(3.11)_91
+      - _CN_wmt(3.11)_92
+      - _CN_wmt(3.11)_93
+      - _SG_wmt(3.11)_94
+      - _US_wmt(3.11)_95
+      - _CA_wmt(3.11)_96
+      - _CN_wmt(3.11)_97
+      - _CN_wmt(3.11)_98
+      - wmt(3.11)_99
+      - _CA_wmt(3.11)_100
+      - _CN_wmt(3.11)_101
+      - _CA_wmt(3.11)_102
+      - _US_wmt(3.11)_103
+      - _CN_wmt(3.11)_104
+      - _CA_wmt(3.11)_105
+      - _CN_wmt(3.11)_106
+      - _CN_wmt(3.11)_107
+      - wmt(3.11)_108
+      - _US_wmt(3.11)_109
+      - _CN_wmt(3.11)_110
+      - _US_wmt(3.11)_111
+      - _CA_wmt(3.11)_112
+      - _CA_wmt(3.11)_113
+      - _CA_wmt(3.11)_114
+      - _CA_wmt(3.11)_115
+      - _CA_wmt(3.11)_116
+      - _CA_wmt(3.11)_117
+      - _CA_wmt(3.11)_118
+      - _CA_wmt(3.11)_119
+      - _CA_wmt(3.11)_120
+      - _CA_wmt(3.11)_121
+      - _CA_wmt(3.11)_122
+      - _JP_wmt(3.11)_123
+      - _CA_wmt(3.11)_124
+      - _CA_wmt(3.11)_125
+      - _CN_wmt(3.11)_126
+      - _CA_wmt(3.11)_127
+      - _CA_wmt(3.11)_128
+      - _CA_wmt(3.11)_129
+      - _CA_wmt(3.11)_130
+      - _CA_wmt(3.11)_131
+      - wmt(3.11)_132
+      - _CA_wmt(3.11)_133
+      - _CA_wmt(3.11)_134
+      - _CA_wmt(3.11)_135
+      - _CA_wmt(3.11)_136
+      - _CA_wmt(3.11)_137
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_wmt(3.8)_1
-      - _CN_wmt(3.8)_2
-      - _FR_wmt(3.8)_3
-      - _US_wmt(3.8)_4
-      - _CA_wmt(3.8)_5
-      - _JP_wmt(3.8)_6
-      - _CN_wmt(3.8)_7
-      - _US_wmt(3.8)_8
-      - _CA_wmt(3.8)_9
-      - _CA_wmt(3.8)_10
-      - _CA_wmt(3.8)_11
-      - _US_wmt(3.8)_12
-      - _CA_wmt(3.8)_13
-      - _CA_wmt(3.8)_14
-      - _CA_wmt(3.8)_15
-      - _GB_wmt(3.8)_16
-      - _CA_wmt(3.8)_17
-      - _CA_wmt(3.8)_18
-      - _CA_wmt(3.8)_19
-      - _CA_wmt(3.8)_20
-      - _CA_wmt(3.8)_21
-      - _JP_wmt(3.8)_22
-      - _CA_wmt(3.8)_23
-      - _AU_wmt(3.8)_24
-      - _CA_wmt(3.8)_25
-      - _CN_wmt(3.8)_26
-      - _GB_wmt(3.8)_27
-      - _GB_wmt(3.8)_28
-      - _CA_wmt(3.8)_29
-      - wmt(3.8)_30
-      - _CA_wmt(3.8)_31
-      - _JP_wmt(3.8)_32
-      - _CA_wmt(3.8)_33
-      - _CA_wmt(3.8)_34
-      - _CA_wmt(3.8)_35
-      - _CA_wmt(3.8)_36
-      - _CA_wmt(3.8)_37
-      - _CN_wmt(3.8)_38
-      - _CA_wmt(3.8)_39
-      - _CA_wmt(3.8)_40
-      - _CA_wmt(3.8)_41
-      - _CA_wmt(3.8)_42
-      - _CA_wmt(3.8)_43
-      - _CA_wmt(3.8)_44
-      - _CA_wmt(3.8)_45
-      - _CA_wmt(3.8)_46
-      - _CA_wmt(3.8)_47
-      - _CA_wmt(3.8)_48
-      - _CA_wmt(3.8)_49
-      - _CA_wmt(3.8)_50
-      - _CA_wmt(3.8)_51
-      - _CA_wmt(3.8)_52
-      - _CN_wmt(3.8)_53
-      - _CA_wmt(3.8)_54
-      - _CA_wmt(3.8)_55
-      - _CA_wmt(3.8)_56
-      - _US_wmt(3.8)_57
-      - _US_wmt(3.8)_58
-      - _US_wmt(3.8)_59
-      - _US_wmt(3.8)_60
-      - _US_wmt(3.8)_61
-      - _US_wmt(3.8)_62
-      - _CA_wmt(3.8)_63
-      - _CA_wmt(3.8)_64
-      - _US_wmt(3.8)_65
-      - _CA_wmt(3.8)_66
-      - _CA_wmt(3.8)_67
-      - _US_wmt(3.8)_68
-      - _CA_wmt(3.8)_69
-      - _CA_wmt(3.8)_70
-      - _CA_wmt(3.8)_71
-      - _CN_wmt(3.8)_72
-      - _CA_wmt(3.8)_73
-      - _CA_wmt(3.8)_74
-      - _US_wmt(3.8)_75
-      - _CA_wmt(3.8)_76
-      - _US_wmt(3.8)_77
-      - _US_wmt(3.8)_78
-      - _CA_wmt(3.8)_79
-      - _CA_wmt(3.8)_80
-      - _US_wmt(3.8)_81
-      - _CA_wmt(3.8)_82
-      - _CA_wmt(3.8)_83
-      - _CA_wmt(3.8)_84
-      - _GB_wmt(3.8)_85
-      - _CA_wmt(3.8)_86
-      - _CA_wmt(3.8)_87
-      - _CN_wmt(3.8)_88
-      - _JP_wmt(3.8)_89
-      - _CA_wmt(3.8)_90
-      - _CA_wmt(3.8)_91
-      - _CN_wmt(3.8)_92
-      - _US_wmt(3.8)_93
-      - _CA_wmt(3.8)_94
-      - _CN_wmt(3.8)_95
-      - _CN_wmt(3.8)_96
-      - _CA_wmt(3.8)_97
-      - _CA_wmt(3.8)_98
+      - _CN_wmt(3.11)_1
+      - _CN_wmt(3.11)_2
+      - _CN_wmt(3.11)_3
+      - _JP_wmt(3.11)_4
+      - _CN_wmt(3.11)_5
+      - _CN_wmt(3.11)_6
+      - _CN_wmt(3.11)_7
+      - _CN_wmt(3.11)_8
+      - _CN_wmt(3.11)_9
+      - _CN_wmt(3.11)_10
+      - _CN_wmt(3.11)_11
+      - _CN_wmt(3.11)_12
+      - _CN_wmt(3.11)_13
+      - _CN_wmt(3.11)_14
+      - _CN_wmt(3.11)_15
+      - _CN_wmt(3.11)_16
+      - _CN_wmt(3.11)_17
+      - _US_wmt(3.11)_18
+      - _CN_wmt(3.11)_19
+      - _CN_wmt(3.11)_20
+      - _HK_wmt(3.11)_21
+      - _CN_wmt(3.11)_22
+      - _CN_wmt(3.11)_23
+      - _CN_wmt(3.11)_24
+      - _CN_wmt(3.11)_25
+      - _TW_wmt(3.11)_26
+      - _CN_wmt(3.11)_27
+      - _CN_wmt(3.11)_28
+      - _CN_wmt(3.11)_29
+      - _CN_wmt(3.11)_30
+      - _CN_wmt(3.11)_31
+      - _HK_wmt(3.11)_32
+      - _CN_wmt(3.11)_33
+      - _CN_wmt(3.11)_34
+      - _US_wmt(3.11)_35
+      - _US_wmt(3.11)_36
+      - _US_wmt(3.11)_37
+      - _CN_wmt(3.11)_38
+      - _US_wmt(3.11)_39
+      - _US_wmt(3.11)_40
+      - _CN_wmt(3.11)_41
+      - _CN_wmt(3.11)_42
+      - _US_wmt(3.11)_43
+      - _US_wmt(3.11)_44
+      - _CN_wmt(3.11)_45
+      - _US_wmt(3.11)_46
+      - _CN_wmt(3.11)_47
+      - _CN_wmt(3.11)_48
+      - _CN_wmt(3.11)_49
+      - _CN_wmt(3.11)_50
+      - _AE_wmt(3.11)_51
+      - _AE_wmt(3.11)_52
+      - _CN_wmt(3.11)_53
+      - _CN_wmt(3.11)_54
+      - _CN_wmt(3.11)_55
+      - _CN_wmt(3.11)_56
+      - _US_wmt(3.11)_57
+      - _CN_wmt(3.11)_58
+      - _CN_wmt(3.11)_59
+      - _CN_wmt(3.11)_60
+      - _CN_wmt(3.11)_61
+      - _CN_wmt(3.11)_62
+      - wmt(3.11)_63
+      - _CN_wmt(3.11)_64
+      - _CN_wmt(3.11)_65
+      - _CN_wmt(3.11)_66
+      - _CN_wmt(3.11)_67
+      - _CN_wmt(3.11)_68
+      - _CN_wmt(3.11)_69
+      - wmt(3.11)_70
+      - _US_wmt(3.11)_71
+      - _TW_wmt(3.11)_72
+      - wmt(3.11)_73
+      - _CN_wmt(3.11)_74
+      - _CN_wmt(3.11)_75
+      - _CN_wmt(3.11)_76
+      - _CN_wmt(3.11)_77
+      - _CN_wmt(3.11)_78
+      - _CN_wmt(3.11)_79
+      - wmt(3.11)_80
+      - wmt(3.11)_81
+      - _JP_wmt(3.11)_82
+      - _CN_wmt(3.11)_83
+      - _TW_wmt(3.11)_84
+      - _CA_wmt(3.11)_85
+      - _JP_wmt(3.11)_86
+      - _FR_wmt(3.11)_87
+      - _CN_wmt(3.11)_88
+      - _CA_wmt(3.11)_89
+      - _CN_wmt(3.11)_90
+      - _TW_wmt(3.11)_91
+      - _CN_wmt(3.11)_92
+      - _CN_wmt(3.11)_93
+      - _SG_wmt(3.11)_94
+      - _US_wmt(3.11)_95
+      - _CA_wmt(3.11)_96
+      - _CN_wmt(3.11)_97
+      - _CN_wmt(3.11)_98
+      - wmt(3.11)_99
+      - _CA_wmt(3.11)_100
+      - _CN_wmt(3.11)_101
+      - _CA_wmt(3.11)_102
+      - _US_wmt(3.11)_103
+      - _CN_wmt(3.11)_104
+      - _CA_wmt(3.11)_105
+      - _CN_wmt(3.11)_106
+      - _CN_wmt(3.11)_107
+      - wmt(3.11)_108
+      - _US_wmt(3.11)_109
+      - _CN_wmt(3.11)_110
+      - _US_wmt(3.11)_111
+      - _CA_wmt(3.11)_112
+      - _CA_wmt(3.11)_113
+      - _CA_wmt(3.11)_114
+      - _CA_wmt(3.11)_115
+      - _CA_wmt(3.11)_116
+      - _CA_wmt(3.11)_117
+      - _CA_wmt(3.11)_118
+      - _CA_wmt(3.11)_119
+      - _CA_wmt(3.11)_120
+      - _CA_wmt(3.11)_121
+      - _CA_wmt(3.11)_122
+      - _JP_wmt(3.11)_123
+      - _CA_wmt(3.11)_124
+      - _CA_wmt(3.11)_125
+      - _CN_wmt(3.11)_126
+      - _CA_wmt(3.11)_127
+      - _CA_wmt(3.11)_128
+      - _CA_wmt(3.11)_129
+      - _CA_wmt(3.11)_130
+      - _CA_wmt(3.11)_131
+      - wmt(3.11)_132
+      - _CA_wmt(3.11)_133
+      - _CA_wmt(3.11)_134
+      - _CA_wmt(3.11)_135
+      - _CA_wmt(3.11)_136
+      - _CA_wmt(3.11)_137
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -860,104 +1172,143 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_wmt(3.8)_1
-      - _CN_wmt(3.8)_2
-      - _FR_wmt(3.8)_3
-      - _US_wmt(3.8)_4
-      - _CA_wmt(3.8)_5
-      - _JP_wmt(3.8)_6
-      - _CN_wmt(3.8)_7
-      - _US_wmt(3.8)_8
-      - _CA_wmt(3.8)_9
-      - _CA_wmt(3.8)_10
-      - _CA_wmt(3.8)_11
-      - _US_wmt(3.8)_12
-      - _CA_wmt(3.8)_13
-      - _CA_wmt(3.8)_14
-      - _CA_wmt(3.8)_15
-      - _GB_wmt(3.8)_16
-      - _CA_wmt(3.8)_17
-      - _CA_wmt(3.8)_18
-      - _CA_wmt(3.8)_19
-      - _CA_wmt(3.8)_20
-      - _CA_wmt(3.8)_21
-      - _JP_wmt(3.8)_22
-      - _CA_wmt(3.8)_23
-      - _AU_wmt(3.8)_24
-      - _CA_wmt(3.8)_25
-      - _CN_wmt(3.8)_26
-      - _GB_wmt(3.8)_27
-      - _GB_wmt(3.8)_28
-      - _CA_wmt(3.8)_29
-      - wmt(3.8)_30
-      - _CA_wmt(3.8)_31
-      - _JP_wmt(3.8)_32
-      - _CA_wmt(3.8)_33
-      - _CA_wmt(3.8)_34
-      - _CA_wmt(3.8)_35
-      - _CA_wmt(3.8)_36
-      - _CA_wmt(3.8)_37
-      - _CN_wmt(3.8)_38
-      - _CA_wmt(3.8)_39
-      - _CA_wmt(3.8)_40
-      - _CA_wmt(3.8)_41
-      - _CA_wmt(3.8)_42
-      - _CA_wmt(3.8)_43
-      - _CA_wmt(3.8)_44
-      - _CA_wmt(3.8)_45
-      - _CA_wmt(3.8)_46
-      - _CA_wmt(3.8)_47
-      - _CA_wmt(3.8)_48
-      - _CA_wmt(3.8)_49
-      - _CA_wmt(3.8)_50
-      - _CA_wmt(3.8)_51
-      - _CA_wmt(3.8)_52
-      - _CN_wmt(3.8)_53
-      - _CA_wmt(3.8)_54
-      - _CA_wmt(3.8)_55
-      - _CA_wmt(3.8)_56
-      - _US_wmt(3.8)_57
-      - _US_wmt(3.8)_58
-      - _US_wmt(3.8)_59
-      - _US_wmt(3.8)_60
-      - _US_wmt(3.8)_61
-      - _US_wmt(3.8)_62
-      - _CA_wmt(3.8)_63
-      - _CA_wmt(3.8)_64
-      - _US_wmt(3.8)_65
-      - _CA_wmt(3.8)_66
-      - _CA_wmt(3.8)_67
-      - _US_wmt(3.8)_68
-      - _CA_wmt(3.8)_69
-      - _CA_wmt(3.8)_70
-      - _CA_wmt(3.8)_71
-      - _CN_wmt(3.8)_72
-      - _CA_wmt(3.8)_73
-      - _CA_wmt(3.8)_74
-      - _US_wmt(3.8)_75
-      - _CA_wmt(3.8)_76
-      - _US_wmt(3.8)_77
-      - _US_wmt(3.8)_78
-      - _CA_wmt(3.8)_79
-      - _CA_wmt(3.8)_80
-      - _US_wmt(3.8)_81
-      - _CA_wmt(3.8)_82
-      - _CA_wmt(3.8)_83
-      - _CA_wmt(3.8)_84
-      - _GB_wmt(3.8)_85
-      - _CA_wmt(3.8)_86
-      - _CA_wmt(3.8)_87
-      - _CN_wmt(3.8)_88
-      - _JP_wmt(3.8)_89
-      - _CA_wmt(3.8)_90
-      - _CA_wmt(3.8)_91
-      - _CN_wmt(3.8)_92
-      - _US_wmt(3.8)_93
-      - _CA_wmt(3.8)_94
-      - _CN_wmt(3.8)_95
-      - _CN_wmt(3.8)_96
-      - _CA_wmt(3.8)_97
-      - _CA_wmt(3.8)_98
+      - _CN_wmt(3.11)_1
+      - _CN_wmt(3.11)_2
+      - _CN_wmt(3.11)_3
+      - _JP_wmt(3.11)_4
+      - _CN_wmt(3.11)_5
+      - _CN_wmt(3.11)_6
+      - _CN_wmt(3.11)_7
+      - _CN_wmt(3.11)_8
+      - _CN_wmt(3.11)_9
+      - _CN_wmt(3.11)_10
+      - _CN_wmt(3.11)_11
+      - _CN_wmt(3.11)_12
+      - _CN_wmt(3.11)_13
+      - _CN_wmt(3.11)_14
+      - _CN_wmt(3.11)_15
+      - _CN_wmt(3.11)_16
+      - _CN_wmt(3.11)_17
+      - _US_wmt(3.11)_18
+      - _CN_wmt(3.11)_19
+      - _CN_wmt(3.11)_20
+      - _HK_wmt(3.11)_21
+      - _CN_wmt(3.11)_22
+      - _CN_wmt(3.11)_23
+      - _CN_wmt(3.11)_24
+      - _CN_wmt(3.11)_25
+      - _TW_wmt(3.11)_26
+      - _CN_wmt(3.11)_27
+      - _CN_wmt(3.11)_28
+      - _CN_wmt(3.11)_29
+      - _CN_wmt(3.11)_30
+      - _CN_wmt(3.11)_31
+      - _HK_wmt(3.11)_32
+      - _CN_wmt(3.11)_33
+      - _CN_wmt(3.11)_34
+      - _US_wmt(3.11)_35
+      - _US_wmt(3.11)_36
+      - _US_wmt(3.11)_37
+      - _CN_wmt(3.11)_38
+      - _US_wmt(3.11)_39
+      - _US_wmt(3.11)_40
+      - _CN_wmt(3.11)_41
+      - _CN_wmt(3.11)_42
+      - _US_wmt(3.11)_43
+      - _US_wmt(3.11)_44
+      - _CN_wmt(3.11)_45
+      - _US_wmt(3.11)_46
+      - _CN_wmt(3.11)_47
+      - _CN_wmt(3.11)_48
+      - _CN_wmt(3.11)_49
+      - _CN_wmt(3.11)_50
+      - _AE_wmt(3.11)_51
+      - _AE_wmt(3.11)_52
+      - _CN_wmt(3.11)_53
+      - _CN_wmt(3.11)_54
+      - _CN_wmt(3.11)_55
+      - _CN_wmt(3.11)_56
+      - _US_wmt(3.11)_57
+      - _CN_wmt(3.11)_58
+      - _CN_wmt(3.11)_59
+      - _CN_wmt(3.11)_60
+      - _CN_wmt(3.11)_61
+      - _CN_wmt(3.11)_62
+      - wmt(3.11)_63
+      - _CN_wmt(3.11)_64
+      - _CN_wmt(3.11)_65
+      - _CN_wmt(3.11)_66
+      - _CN_wmt(3.11)_67
+      - _CN_wmt(3.11)_68
+      - _CN_wmt(3.11)_69
+      - wmt(3.11)_70
+      - _US_wmt(3.11)_71
+      - _TW_wmt(3.11)_72
+      - wmt(3.11)_73
+      - _CN_wmt(3.11)_74
+      - _CN_wmt(3.11)_75
+      - _CN_wmt(3.11)_76
+      - _CN_wmt(3.11)_77
+      - _CN_wmt(3.11)_78
+      - _CN_wmt(3.11)_79
+      - wmt(3.11)_80
+      - wmt(3.11)_81
+      - _JP_wmt(3.11)_82
+      - _CN_wmt(3.11)_83
+      - _TW_wmt(3.11)_84
+      - _CA_wmt(3.11)_85
+      - _JP_wmt(3.11)_86
+      - _FR_wmt(3.11)_87
+      - _CN_wmt(3.11)_88
+      - _CA_wmt(3.11)_89
+      - _CN_wmt(3.11)_90
+      - _TW_wmt(3.11)_91
+      - _CN_wmt(3.11)_92
+      - _CN_wmt(3.11)_93
+      - _SG_wmt(3.11)_94
+      - _US_wmt(3.11)_95
+      - _CA_wmt(3.11)_96
+      - _CN_wmt(3.11)_97
+      - _CN_wmt(3.11)_98
+      - wmt(3.11)_99
+      - _CA_wmt(3.11)_100
+      - _CN_wmt(3.11)_101
+      - _CA_wmt(3.11)_102
+      - _US_wmt(3.11)_103
+      - _CN_wmt(3.11)_104
+      - _CA_wmt(3.11)_105
+      - _CN_wmt(3.11)_106
+      - _CN_wmt(3.11)_107
+      - wmt(3.11)_108
+      - _US_wmt(3.11)_109
+      - _CN_wmt(3.11)_110
+      - _US_wmt(3.11)_111
+      - _CA_wmt(3.11)_112
+      - _CA_wmt(3.11)_113
+      - _CA_wmt(3.11)_114
+      - _CA_wmt(3.11)_115
+      - _CA_wmt(3.11)_116
+      - _CA_wmt(3.11)_117
+      - _CA_wmt(3.11)_118
+      - _CA_wmt(3.11)_119
+      - _CA_wmt(3.11)_120
+      - _CA_wmt(3.11)_121
+      - _CA_wmt(3.11)_122
+      - _JP_wmt(3.11)_123
+      - _CA_wmt(3.11)_124
+      - _CA_wmt(3.11)_125
+      - _CN_wmt(3.11)_126
+      - _CA_wmt(3.11)_127
+      - _CA_wmt(3.11)_128
+      - _CA_wmt(3.11)_129
+      - _CA_wmt(3.11)_130
+      - _CA_wmt(3.11)_131
+      - wmt(3.11)_132
+      - _CA_wmt(3.11)_133
+      - _CA_wmt(3.11)_134
+      - _CA_wmt(3.11)_135
+      - _CA_wmt(3.11)_136
+      - _CA_wmt(3.11)_137
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
