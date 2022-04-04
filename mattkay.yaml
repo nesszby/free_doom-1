@@ -5,955 +5,303 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_wmt(4.2)PM_1, server: 139.227.222.202, port: 60020, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.222.202}, udp: true}
-  - {name: _CN_wmt(4.2)PM_2, server: 139.227.222.202, port: 60009, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.222.202}, udp: true}
-  - {name: _CN_wmt(4.2)PM_3, server: 139.227.222.202, port: 60004, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.222.202}, udp: true}
-  - {name: _CN_wmt(4.2)PM_4, server: 223.166.157.192, port: 60011, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.192}, udp: true}
-  - {name: _CN_wmt(4.2)PM_5, server: 139.227.222.202, port: 60003, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.222.202}, udp: true}
-  - {name: _CN_wmt(4.2)PM_6, server: 139.227.222.202, port: 60022, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.222.202}, udp: true}
-  - {name: _CN_wmt(4.2)PM_7, server: 223.166.157.192, port: 60009, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.192}, udp: true}
-  - {name: _CN_wmt(4.2)PM_8, server: 223.166.157.41, port: 60020, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.41}, udp: true}
-  - {name: _CN_wmt(4.2)PM_9, server: 223.166.157.192, port: 60010, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.192}, udp: true}
-  - {name: _CN_wmt(4.2)PM_10, server: 211.99.115.24, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_11, server: 139.227.222.202, port: 60019, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.222.202}, udp: true}
-  - {name: _CN_wmt(4.2)PM_12, server: 223.166.157.192, port: 60020, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.192}, udp: true}
-  - {name: _CN_wmt(4.2)PM_13, server: 139.227.223.3, port: 60017, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.223.3}, udp: true}
-  - {name: _CN_wmt(4.2)PM_14, server: 223.166.157.41, port: 60010, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.41}, udp: true}
-  - {name: _CN_wmt(4.2)PM_15, server: 223.166.157.41, port: 60022, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.41}, udp: true}
-  - {name: _CN_wmt(4.2)PM_16, server: 139.227.223.3, port: 60019, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.223.3}, udp: true}
-  - {name: _CN_wmt(4.2)PM_17, server: 211.99.115.24, port: 11118, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_18, server: 139.227.223.3, port: 60022, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.223.3}, udp: true}
-  - {name: _CN_wmt(4.2)PM_19, server: 211.99.115.19, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_20, server: 211.99.115.25, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_21, server: 139.227.223.3, port: 60004, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.223.3}, udp: true}
-  - {name: _CN_wmt(4.2)PM_22, server: 42.157.161.43, port: 11152, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_23, server: 139.227.222.202, port: 60016, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.222.202}, udp: true}
-  - {name: _CN_wmt(4.2)PM_24, server: 211.99.115.23, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_25, server: 139.227.222.202, port: 60015, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.222.202}, udp: true}
-  - {name: _CN_wmt(4.2)PM_26, server: 139.227.222.202, port: 60014, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.222.202}, udp: true}
-  - {name: _CN_wmt(4.2)PM_27, server: 223.166.157.41, port: 60016, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.41}, udp: true}
-  - {name: _CN_wmt(4.2)PM_28, server: 139.227.222.202, port: 60013, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.222.202}, udp: true}
-  - {name: _CN_wmt(4.2)PM_29, server: 223.166.157.192, port: 60016, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.192}, udp: true}
-  - {name: _CN_wmt(4.2)PM_30, server: 223.166.157.192, port: 60022, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.192}, udp: true}
-  - {name: _CN_wmt(4.2)PM_31, server: 211.99.115.24, port: 11906, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_32, server: 211.99.115.24, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_33, server: 42.157.161.40, port: 11802, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_34, server: 42.157.161.53, port: 11802, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_35, server: 211.99.115.4, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_36, server: 211.99.115.10, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_37, server: 139.227.223.3, port: 60013, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.223.3}, udp: true}
-  - {name: _CN_wmt(4.2)PM_38, server: 211.99.115.18, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_39, server: 42.157.161.51, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_40, server: 42.157.161.43, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_41, server: 223.166.157.41, port: 60003, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.41}, udp: true}
-  - {name: _CN_wmt(4.2)PM_42, server: 211.99.115.24, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_43, server: 211.99.115.16, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_44, server: 223.166.157.41, port: 60004, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.41}, udp: true}
-  - {name: _CN_wmt(4.2)PM_45, server: 42.157.161.40, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_46, server: 211.99.115.23, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_47, server: 42.157.161.49, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_48, server: 211.99.115.3, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_49, server: 211.99.115.15, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_50, server: 211.99.115.22, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_51, server: 211.99.115.17, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_52, server: 211.99.115.24, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_53, server: 211.99.115.18, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_54, server: 211.99.115.25, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_55, server: 223.166.157.192, port: 60003, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.192}, udp: true}
-  - {name: _CN_wmt(4.2)PM_56, server: 211.99.115.14, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_57, server: 211.99.115.15, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_58, server: 211.99.115.14, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_59, server: 211.99.115.9, port: 11006, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_60, server: 211.99.115.17, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_61, server: 211.99.115.17, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_62, server: 211.99.115.25, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_63, server: 211.99.115.14, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_64, server: 211.99.115.15, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_65, server: 211.99.115.15, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_66, server: 211.99.115.21, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_67, server: 211.99.115.4, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_68, server: 211.99.115.22, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_69, server: 211.99.115.16, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_70, server: 42.157.161.42, port: 11152, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_71, server: 211.99.115.15, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_72, server: 211.99.115.16, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_73, server: 211.99.115.17, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_74, server: 211.99.115.22, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_75, server: 223.166.157.192, port: 60005, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 223.166.157.192}, udp: true}
-  - {name: _CN_wmt(4.2)PM_76, server: 211.99.115.24, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_77, server: 139.227.223.3, port: 60014, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.223.3}, udp: true}
-  - {name: _CN_wmt(4.2)PM_78, server: 42.157.161.47, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_79, server: 211.99.115.17, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_80, server: 139.227.223.3, port: 60016, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.223.3}, udp: true}
-  - {name: _CN_wmt(4.2)PM_81, server: 211.99.115.19, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_82, server: 211.99.115.17, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_83, server: 211.99.115.16, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_84, server: 211.99.115.20, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_85, server: 211.99.115.17, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_86, server: 211.99.115.24, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_87, server: 211.99.115.20, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_88, server: 211.99.115.18, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_89, server: 211.99.115.21, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_90, server: 211.99.115.25, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_91, server: 211.99.115.20, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_92, server: 211.99.115.21, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_93, server: 211.99.115.17, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_94, server: 211.99.115.18, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_95, server: 211.99.115.19, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_96, server: 211.99.115.22, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_97, server: 211.99.115.16, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_98, server: 211.99.115.14, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_99, server: 211.99.115.14, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_100, server: 211.99.115.20, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_101, server: 211.99.115.23, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_102, server: 211.99.115.23, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_103, server: 211.99.115.21, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_104, server: 211.99.115.24, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_105, server: 211.99.115.23, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_106, server: 211.99.115.15, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_107, server: 42.157.161.51, port: 11802, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_108, server: 211.99.115.24, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_109, server: 211.99.115.7, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_110, server: 42.157.161.45, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_111, server: 211.99.115.24, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_112, server: 211.99.115.21, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_113, server: 211.99.115.21, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_114, server: 211.99.115.22, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_115, server: 211.99.115.23, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_116, server: 211.99.115.25, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_117, server: 139.227.223.3, port: 60015, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.223.3}, udp: true}
-  - {name: _CN_wmt(4.2)PM_118, server: 42.157.161.44, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_119, server: 211.99.115.17, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_120, server: 211.99.115.24, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_121, server: 211.99.115.19, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_122, server: 42.157.161.50, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_123, server: 211.99.115.11, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_124, server: 211.99.115.14, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_125, server: 211.99.115.25, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_126, server: 211.99.115.5, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_127, server: 211.99.115.24, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_128, server: 211.99.115.22, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_129, server: 211.99.115.25, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_130, server: 139.227.222.202, port: 60011, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.222.202}, udp: true}
-  - {name: _CN_wmt(4.2)PM_131, server: 139.227.222.202, port: 60010, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.222.202}, udp: true}
-  - {name: _CN_wmt(4.2)PM_132, server: 211.99.115.21, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_133, server: 211.99.115.10, port: 11351, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_134, server: 211.99.115.25, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_135, server: 42.157.161.42, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_136, server: 211.99.115.15, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_137, server: 211.99.115.18, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_138, server: 211.99.115.8, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_139, server: 211.99.115.19, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_140, server: 211.99.115.25, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_141, server: 42.157.161.38, port: 11802, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_142, server: 139.227.223.3, port: 60010, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.223.3}, udp: true}
-  - {name: _CN_wmt(4.2)PM_143, server: 211.99.115.20, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_144, server: 211.99.115.19, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_145, server: 211.99.115.15, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_146, server: 211.99.115.11, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_147, server: 211.99.115.2, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_148, server: 139.227.223.3, port: 60006, type: vmess, uuid: e487b139-f286-3593-b763-d740c2096a0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 139.227.223.3}, udp: true}
-  - {name: _CN_wmt(4.2)PM_149, server: 211.99.115.24, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_150, server: 211.99.115.12, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_151, server: 211.99.115.11, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_152, server: 42.157.161.38, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_153, server: 211.99.115.24, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_154, server: 211.99.115.5, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_155, server: 211.99.115.23, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_156, server: 211.99.115.16, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_157, server: 211.99.115.5, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_158, server: 211.99.115.7, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_159, server: 211.99.115.6, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_160, server: 211.99.115.24, port: 11111, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_161, server: 211.99.115.12, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_162, server: 211.99.115.10, port: 11301, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_163, server: 211.99.115.9, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_164, server: 211.99.115.21, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_165, server: 211.99.115.23, port: 11010, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_166, server: 211.99.115.10, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_167, server: 42.157.161.39, port: 11801, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_168, server: 211.99.115.16, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_169, server: 211.99.115.4, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_170, server: 211.99.115.10, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _IN_wmt(4.2)PM_171, server: 45.79.121.117, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CN_wmt(4.2)PM_172, server: 211.99.115.12, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_173, server: 211.99.115.13, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_174, server: 211.99.115.3, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_175, server: 211.99.115.2, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_176, server: 211.99.115.20, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_177, server: 211.99.115.20, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_178, server: 211.99.115.14, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_179, server: 211.99.115.11, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_180, server: 211.99.115.11, port: 11018, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_181, server: 42.157.161.52, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_182, server: 211.99.115.22, port: 11701, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_183, server: 211.99.115.12, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_184, server: 211.99.115.24, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_185, server: 211.99.115.3, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_186, server: 211.99.115.16, port: 11701, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_187, server: 211.99.115.10, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_188, server: 42.157.161.46, port: 11802, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_189, server: 42.157.161.48, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_190, server: 211.99.115.24, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_191, server: 211.99.115.24, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_192, server: 211.99.115.6, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_193, server: 211.99.115.2, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_194, server: 211.99.115.7, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_195, server: 211.99.115.8, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_196, server: 211.99.115.9, port: 11551, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_197, server: 211.99.115.16, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_198, server: 211.99.115.15, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_199, server: 211.99.115.5, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_200, server: 211.99.115.19, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_201, server: 211.99.115.12, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_202, server: 211.99.115.11, port: 11405, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_203, server: 211.99.115.3, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_204, server: 211.99.115.9, port: 11651, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_205, server: 211.99.115.25, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_206, server: 42.157.161.50, port: 11217, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_207, server: 211.99.115.9, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_208, server: 211.99.115.20, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_209, server: 211.99.115.23, port: 11553, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_210, server: 211.99.115.15, port: 11852, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_211, server: 211.99.115.9, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_212, server: 211.99.115.2, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_213, server: 211.99.115.20, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_214, server: 211.99.115.17, port: 11751, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_215, server: 211.99.115.15, port: 11406, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_216, server: 211.99.115.19, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_217, server: 211.99.115.2, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_218, server: iepl1.ggboynextdoor.best, port: 65115, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
-  - {name: _CN_wmt(4.2)PM_219, server: 211.99.115.21, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_220, server: 211.99.115.8, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_221, server: 211.99.115.17, port: 11302, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_222, server: 42.157.161.45, port: 11152, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_223, server: 211.99.115.3, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_224, server: 211.99.115.17, port: 11853, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_225, server: 42.157.161.52, port: 11802, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_226, server: 211.99.115.12, port: 11601, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_227, server: 211.99.115.14, port: 11552, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_228, server: 211.99.115.16, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_229, server: 211.99.115.11, port: 11652, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_230, server: 211.99.115.6, port: 11854, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_231, server: 211.99.115.18, port: 11851, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_232, server: 211.99.115.17, port: 11501, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
-  - {name: _CN_wmt(4.2)PM_233, server: 211.99.115.11, port: 11451, type: ss, cipher: aes-256-gcm, password: zAdhDSabeh, udp: true}
+  - {name: _CN_wmt_4.4_AM_1, server: shcn2tohkt44.ggboynextdoor.best, port: 49042, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: _CN_wmt_4.4_AM_2, server: shcu.mimon.cc, port: 32072, type: trojan, password: 6d3e5694-d909-422e-96f2-57df94abe28e, sni: shcu.mimon.cc, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt_4.4_AM_3, server: shcu.mimon.cc, port: 26133, type: trojan, password: 6d3e5694-d909-422e-96f2-57df94abe28e, sni: shcu.mimon.cc, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt_4.4_AM_4, server: 34.216.75.173, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: _CN_wmt_4.4_AM_5, server: shcn2tohkt66.ggboynextdoor.best, port: 49041, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: _CN_wmt_4.4_AM_6, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_7, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_8, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_9, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_10, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_11, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_12, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_13, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_14, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_15, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_16, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_17, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_18, server: 14.29.124.174, port: 13270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_19, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_20, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_21, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_22, server: 14.29.124.174, port: 13281, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_23, server: 14.29.124.174, port: 13291, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_24, server: 14.29.124.174, port: 13275, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_25, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_26, server: 14.29.124.174, port: 13249, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_27, server: 14.29.124.174, port: 13210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_28, server: 14.29.124.174, port: 13264, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_29, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_30, server: 14.29.124.174, port: 13286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_31, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_32, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_33, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_34, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_35, server: 14.29.124.174, port: 13290, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_36, server: 14.29.124.174, port: 13236, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _US_wmt_4.4_AM_37, server: s162.s2022.xyz, port: 23802, type: trojan, password: 770c9e92-f51b-3e52-b932-eba13fb56801, sni: s162.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt_4.4_AM_38, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_39, server: 14.29.124.174, port: 13243, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_40, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_41, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_42, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_43, server: 14.29.124.174, port: 11031, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_44, server: 14.29.124.174, port: 11032, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_45, server: 14.29.124.174, port: 11003, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_46, server: 14.29.124.174, port: 11004, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_47, server: 14.29.124.174, port: 11010, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_48, server: kriplcnat.ggboynextdoor.best, port: 23401, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: _CN_wmt_4.4_AM_49, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_50, server: 14.29.124.174, port: 13233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_51, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CA_wmt_4.4_AM_52, server: 134.195.196.51, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_wmt_4.4_AM_53, server: 134.195.196.51, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _CN_wmt_4.4_AM_54, server: 14.29.124.174, port: 13222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_55, server: 14.29.124.174, port: 13261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _US_wmt_4.4_AM_56, server: sg.coco233.xyz, port: 35421, type: trojan, password: b687b90f-54e3-4123-8771-3425fde5aff0, sni: sg.coco233.xyz, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt_4.4_AM_57, server: 14.29.124.174, port: 13282, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_58, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CA_wmt_4.4_AM_59, server: 134.195.196.51, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _US_wmt_4.4_AM_60, server: 169.197.142.99, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _US_wmt_4.4_AM_61, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _CN_wmt_4.4_AM_62, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_63, server: bgphk.ggboynextdoor.best, port: 21309, type: ssr, cipher: rc4-md5, password: lGBMNO, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 4173:OrUbgB, obfs-param: 9f7c44173.download.windowsupdate.com, udp: true}
+  - {name: _CN_wmt_4.4_AM_64, server: 14.29.124.174, port: 13225, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CA_wmt_4.4_AM_65, server: 134.195.196.51, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _CA_wmt_4.4_AM_66, server: 134.195.196.51, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _US_wmt_4.4_AM_67, server: 169.197.142.99, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CN_wmt_4.4_AM_68, server: 14.29.124.174, port: 13235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CN_wmt_4.4_AM_69, server: 14.29.124.168, port: 31046, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _CA_wmt_4.4_AM_70, server: 134.195.196.51, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(4.2)PM_1
-      - _CN_wmt(4.2)PM_2
-      - _CN_wmt(4.2)PM_3
-      - _CN_wmt(4.2)PM_4
-      - _CN_wmt(4.2)PM_5
-      - _CN_wmt(4.2)PM_6
-      - _CN_wmt(4.2)PM_7
-      - _CN_wmt(4.2)PM_8
-      - _CN_wmt(4.2)PM_9
-      - _CN_wmt(4.2)PM_10
-      - _CN_wmt(4.2)PM_11
-      - _CN_wmt(4.2)PM_12
-      - _CN_wmt(4.2)PM_13
-      - _CN_wmt(4.2)PM_14
-      - _CN_wmt(4.2)PM_15
-      - _CN_wmt(4.2)PM_16
-      - _CN_wmt(4.2)PM_17
-      - _CN_wmt(4.2)PM_18
-      - _CN_wmt(4.2)PM_19
-      - _CN_wmt(4.2)PM_20
-      - _CN_wmt(4.2)PM_21
-      - _CN_wmt(4.2)PM_22
-      - _CN_wmt(4.2)PM_23
-      - _CN_wmt(4.2)PM_24
-      - _CN_wmt(4.2)PM_25
-      - _CN_wmt(4.2)PM_26
-      - _CN_wmt(4.2)PM_27
-      - _CN_wmt(4.2)PM_28
-      - _CN_wmt(4.2)PM_29
-      - _CN_wmt(4.2)PM_30
-      - _CN_wmt(4.2)PM_31
-      - _CN_wmt(4.2)PM_32
-      - _CN_wmt(4.2)PM_33
-      - _CN_wmt(4.2)PM_34
-      - _CN_wmt(4.2)PM_35
-      - _CN_wmt(4.2)PM_36
-      - _CN_wmt(4.2)PM_37
-      - _CN_wmt(4.2)PM_38
-      - _CN_wmt(4.2)PM_39
-      - _CN_wmt(4.2)PM_40
-      - _CN_wmt(4.2)PM_41
-      - _CN_wmt(4.2)PM_42
-      - _CN_wmt(4.2)PM_43
-      - _CN_wmt(4.2)PM_44
-      - _CN_wmt(4.2)PM_45
-      - _CN_wmt(4.2)PM_46
-      - _CN_wmt(4.2)PM_47
-      - _CN_wmt(4.2)PM_48
-      - _CN_wmt(4.2)PM_49
-      - _CN_wmt(4.2)PM_50
-      - _CN_wmt(4.2)PM_51
-      - _CN_wmt(4.2)PM_52
-      - _CN_wmt(4.2)PM_53
-      - _CN_wmt(4.2)PM_54
-      - _CN_wmt(4.2)PM_55
-      - _CN_wmt(4.2)PM_56
-      - _CN_wmt(4.2)PM_57
-      - _CN_wmt(4.2)PM_58
-      - _CN_wmt(4.2)PM_59
-      - _CN_wmt(4.2)PM_60
-      - _CN_wmt(4.2)PM_61
-      - _CN_wmt(4.2)PM_62
-      - _CN_wmt(4.2)PM_63
-      - _CN_wmt(4.2)PM_64
-      - _CN_wmt(4.2)PM_65
-      - _CN_wmt(4.2)PM_66
-      - _CN_wmt(4.2)PM_67
-      - _CN_wmt(4.2)PM_68
-      - _CN_wmt(4.2)PM_69
-      - _CN_wmt(4.2)PM_70
-      - _CN_wmt(4.2)PM_71
-      - _CN_wmt(4.2)PM_72
-      - _CN_wmt(4.2)PM_73
-      - _CN_wmt(4.2)PM_74
-      - _CN_wmt(4.2)PM_75
-      - _CN_wmt(4.2)PM_76
-      - _CN_wmt(4.2)PM_77
-      - _CN_wmt(4.2)PM_78
-      - _CN_wmt(4.2)PM_79
-      - _CN_wmt(4.2)PM_80
-      - _CN_wmt(4.2)PM_81
-      - _CN_wmt(4.2)PM_82
-      - _CN_wmt(4.2)PM_83
-      - _CN_wmt(4.2)PM_84
-      - _CN_wmt(4.2)PM_85
-      - _CN_wmt(4.2)PM_86
-      - _CN_wmt(4.2)PM_87
-      - _CN_wmt(4.2)PM_88
-      - _CN_wmt(4.2)PM_89
-      - _CN_wmt(4.2)PM_90
-      - _CN_wmt(4.2)PM_91
-      - _CN_wmt(4.2)PM_92
-      - _CN_wmt(4.2)PM_93
-      - _CN_wmt(4.2)PM_94
-      - _CN_wmt(4.2)PM_95
-      - _CN_wmt(4.2)PM_96
-      - _CN_wmt(4.2)PM_97
-      - _CN_wmt(4.2)PM_98
-      - _CN_wmt(4.2)PM_99
-      - _CN_wmt(4.2)PM_100
-      - _CN_wmt(4.2)PM_101
-      - _CN_wmt(4.2)PM_102
-      - _CN_wmt(4.2)PM_103
-      - _CN_wmt(4.2)PM_104
-      - _CN_wmt(4.2)PM_105
-      - _CN_wmt(4.2)PM_106
-      - _CN_wmt(4.2)PM_107
-      - _CN_wmt(4.2)PM_108
-      - _CN_wmt(4.2)PM_109
-      - _CN_wmt(4.2)PM_110
-      - _CN_wmt(4.2)PM_111
-      - _CN_wmt(4.2)PM_112
-      - _CN_wmt(4.2)PM_113
-      - _CN_wmt(4.2)PM_114
-      - _CN_wmt(4.2)PM_115
-      - _CN_wmt(4.2)PM_116
-      - _CN_wmt(4.2)PM_117
-      - _CN_wmt(4.2)PM_118
-      - _CN_wmt(4.2)PM_119
-      - _CN_wmt(4.2)PM_120
-      - _CN_wmt(4.2)PM_121
-      - _CN_wmt(4.2)PM_122
-      - _CN_wmt(4.2)PM_123
-      - _CN_wmt(4.2)PM_124
-      - _CN_wmt(4.2)PM_125
-      - _CN_wmt(4.2)PM_126
-      - _CN_wmt(4.2)PM_127
-      - _CN_wmt(4.2)PM_128
-      - _CN_wmt(4.2)PM_129
-      - _CN_wmt(4.2)PM_130
-      - _CN_wmt(4.2)PM_131
-      - _CN_wmt(4.2)PM_132
-      - _CN_wmt(4.2)PM_133
-      - _CN_wmt(4.2)PM_134
-      - _CN_wmt(4.2)PM_135
-      - _CN_wmt(4.2)PM_136
-      - _CN_wmt(4.2)PM_137
-      - _CN_wmt(4.2)PM_138
-      - _CN_wmt(4.2)PM_139
-      - _CN_wmt(4.2)PM_140
-      - _CN_wmt(4.2)PM_141
-      - _CN_wmt(4.2)PM_142
-      - _CN_wmt(4.2)PM_143
-      - _CN_wmt(4.2)PM_144
-      - _CN_wmt(4.2)PM_145
-      - _CN_wmt(4.2)PM_146
-      - _CN_wmt(4.2)PM_147
-      - _CN_wmt(4.2)PM_148
-      - _CN_wmt(4.2)PM_149
-      - _CN_wmt(4.2)PM_150
-      - _CN_wmt(4.2)PM_151
-      - _CN_wmt(4.2)PM_152
-      - _CN_wmt(4.2)PM_153
-      - _CN_wmt(4.2)PM_154
-      - _CN_wmt(4.2)PM_155
-      - _CN_wmt(4.2)PM_156
-      - _CN_wmt(4.2)PM_157
-      - _CN_wmt(4.2)PM_158
-      - _CN_wmt(4.2)PM_159
-      - _CN_wmt(4.2)PM_160
-      - _CN_wmt(4.2)PM_161
-      - _CN_wmt(4.2)PM_162
-      - _CN_wmt(4.2)PM_163
-      - _CN_wmt(4.2)PM_164
-      - _CN_wmt(4.2)PM_165
-      - _CN_wmt(4.2)PM_166
-      - _CN_wmt(4.2)PM_167
-      - _CN_wmt(4.2)PM_168
-      - _CN_wmt(4.2)PM_169
-      - _CN_wmt(4.2)PM_170
-      - _IN_wmt(4.2)PM_171
-      - _CN_wmt(4.2)PM_172
-      - _CN_wmt(4.2)PM_173
-      - _CN_wmt(4.2)PM_174
-      - _CN_wmt(4.2)PM_175
-      - _CN_wmt(4.2)PM_176
-      - _CN_wmt(4.2)PM_177
-      - _CN_wmt(4.2)PM_178
-      - _CN_wmt(4.2)PM_179
-      - _CN_wmt(4.2)PM_180
-      - _CN_wmt(4.2)PM_181
-      - _CN_wmt(4.2)PM_182
-      - _CN_wmt(4.2)PM_183
-      - _CN_wmt(4.2)PM_184
-      - _CN_wmt(4.2)PM_185
-      - _CN_wmt(4.2)PM_186
-      - _CN_wmt(4.2)PM_187
-      - _CN_wmt(4.2)PM_188
-      - _CN_wmt(4.2)PM_189
-      - _CN_wmt(4.2)PM_190
-      - _CN_wmt(4.2)PM_191
-      - _CN_wmt(4.2)PM_192
-      - _CN_wmt(4.2)PM_193
-      - _CN_wmt(4.2)PM_194
-      - _CN_wmt(4.2)PM_195
-      - _CN_wmt(4.2)PM_196
-      - _CN_wmt(4.2)PM_197
-      - _CN_wmt(4.2)PM_198
-      - _CN_wmt(4.2)PM_199
-      - _CN_wmt(4.2)PM_200
-      - _CN_wmt(4.2)PM_201
-      - _CN_wmt(4.2)PM_202
-      - _CN_wmt(4.2)PM_203
-      - _CN_wmt(4.2)PM_204
-      - _CN_wmt(4.2)PM_205
-      - _CN_wmt(4.2)PM_206
-      - _CN_wmt(4.2)PM_207
-      - _CN_wmt(4.2)PM_208
-      - _CN_wmt(4.2)PM_209
-      - _CN_wmt(4.2)PM_210
-      - _CN_wmt(4.2)PM_211
-      - _CN_wmt(4.2)PM_212
-      - _CN_wmt(4.2)PM_213
-      - _CN_wmt(4.2)PM_214
-      - _CN_wmt(4.2)PM_215
-      - _CN_wmt(4.2)PM_216
-      - _CN_wmt(4.2)PM_217
-      - _CN_wmt(4.2)PM_218
-      - _CN_wmt(4.2)PM_219
-      - _CN_wmt(4.2)PM_220
-      - _CN_wmt(4.2)PM_221
-      - _CN_wmt(4.2)PM_222
-      - _CN_wmt(4.2)PM_223
-      - _CN_wmt(4.2)PM_224
-      - _CN_wmt(4.2)PM_225
-      - _CN_wmt(4.2)PM_226
-      - _CN_wmt(4.2)PM_227
-      - _CN_wmt(4.2)PM_228
-      - _CN_wmt(4.2)PM_229
-      - _CN_wmt(4.2)PM_230
-      - _CN_wmt(4.2)PM_231
-      - _CN_wmt(4.2)PM_232
-      - _CN_wmt(4.2)PM_233
+      - _CN_wmt_4.4_AM_1
+      - _CN_wmt_4.4_AM_2
+      - _CN_wmt_4.4_AM_3
+      - _US_wmt_4.4_AM_4
+      - _CN_wmt_4.4_AM_5
+      - _CN_wmt_4.4_AM_6
+      - _CN_wmt_4.4_AM_7
+      - _CN_wmt_4.4_AM_8
+      - _CN_wmt_4.4_AM_9
+      - _CN_wmt_4.4_AM_10
+      - _CN_wmt_4.4_AM_11
+      - _CN_wmt_4.4_AM_12
+      - _CN_wmt_4.4_AM_13
+      - _CN_wmt_4.4_AM_14
+      - _CN_wmt_4.4_AM_15
+      - _CN_wmt_4.4_AM_16
+      - _CN_wmt_4.4_AM_17
+      - _CN_wmt_4.4_AM_18
+      - _CN_wmt_4.4_AM_19
+      - _CN_wmt_4.4_AM_20
+      - _CN_wmt_4.4_AM_21
+      - _CN_wmt_4.4_AM_22
+      - _CN_wmt_4.4_AM_23
+      - _CN_wmt_4.4_AM_24
+      - _CN_wmt_4.4_AM_25
+      - _CN_wmt_4.4_AM_26
+      - _CN_wmt_4.4_AM_27
+      - _CN_wmt_4.4_AM_28
+      - _CN_wmt_4.4_AM_29
+      - _CN_wmt_4.4_AM_30
+      - _CN_wmt_4.4_AM_31
+      - _CN_wmt_4.4_AM_32
+      - _CN_wmt_4.4_AM_33
+      - _CN_wmt_4.4_AM_34
+      - _CN_wmt_4.4_AM_35
+      - _CN_wmt_4.4_AM_36
+      - _US_wmt_4.4_AM_37
+      - _CN_wmt_4.4_AM_38
+      - _CN_wmt_4.4_AM_39
+      - _CN_wmt_4.4_AM_40
+      - _CN_wmt_4.4_AM_41
+      - _CN_wmt_4.4_AM_42
+      - _CN_wmt_4.4_AM_43
+      - _CN_wmt_4.4_AM_44
+      - _CN_wmt_4.4_AM_45
+      - _CN_wmt_4.4_AM_46
+      - _CN_wmt_4.4_AM_47
+      - _CN_wmt_4.4_AM_48
+      - _CN_wmt_4.4_AM_49
+      - _CN_wmt_4.4_AM_50
+      - _CN_wmt_4.4_AM_51
+      - _CA_wmt_4.4_AM_52
+      - _CA_wmt_4.4_AM_53
+      - _CN_wmt_4.4_AM_54
+      - _CN_wmt_4.4_AM_55
+      - _US_wmt_4.4_AM_56
+      - _CN_wmt_4.4_AM_57
+      - _CN_wmt_4.4_AM_58
+      - _CA_wmt_4.4_AM_59
+      - _US_wmt_4.4_AM_60
+      - _US_wmt_4.4_AM_61
+      - _CN_wmt_4.4_AM_62
+      - _CN_wmt_4.4_AM_63
+      - _CN_wmt_4.4_AM_64
+      - _CA_wmt_4.4_AM_65
+      - _CA_wmt_4.4_AM_66
+      - _US_wmt_4.4_AM_67
+      - _CN_wmt_4.4_AM_68
+      - _CN_wmt_4.4_AM_69
+      - _CA_wmt_4.4_AM_70
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_wmt(4.2)PM_1
-      - _CN_wmt(4.2)PM_2
-      - _CN_wmt(4.2)PM_3
-      - _CN_wmt(4.2)PM_4
-      - _CN_wmt(4.2)PM_5
-      - _CN_wmt(4.2)PM_6
-      - _CN_wmt(4.2)PM_7
-      - _CN_wmt(4.2)PM_8
-      - _CN_wmt(4.2)PM_9
-      - _CN_wmt(4.2)PM_10
-      - _CN_wmt(4.2)PM_11
-      - _CN_wmt(4.2)PM_12
-      - _CN_wmt(4.2)PM_13
-      - _CN_wmt(4.2)PM_14
-      - _CN_wmt(4.2)PM_15
-      - _CN_wmt(4.2)PM_16
-      - _CN_wmt(4.2)PM_17
-      - _CN_wmt(4.2)PM_18
-      - _CN_wmt(4.2)PM_19
-      - _CN_wmt(4.2)PM_20
-      - _CN_wmt(4.2)PM_21
-      - _CN_wmt(4.2)PM_22
-      - _CN_wmt(4.2)PM_23
-      - _CN_wmt(4.2)PM_24
-      - _CN_wmt(4.2)PM_25
-      - _CN_wmt(4.2)PM_26
-      - _CN_wmt(4.2)PM_27
-      - _CN_wmt(4.2)PM_28
-      - _CN_wmt(4.2)PM_29
-      - _CN_wmt(4.2)PM_30
-      - _CN_wmt(4.2)PM_31
-      - _CN_wmt(4.2)PM_32
-      - _CN_wmt(4.2)PM_33
-      - _CN_wmt(4.2)PM_34
-      - _CN_wmt(4.2)PM_35
-      - _CN_wmt(4.2)PM_36
-      - _CN_wmt(4.2)PM_37
-      - _CN_wmt(4.2)PM_38
-      - _CN_wmt(4.2)PM_39
-      - _CN_wmt(4.2)PM_40
-      - _CN_wmt(4.2)PM_41
-      - _CN_wmt(4.2)PM_42
-      - _CN_wmt(4.2)PM_43
-      - _CN_wmt(4.2)PM_44
-      - _CN_wmt(4.2)PM_45
-      - _CN_wmt(4.2)PM_46
-      - _CN_wmt(4.2)PM_47
-      - _CN_wmt(4.2)PM_48
-      - _CN_wmt(4.2)PM_49
-      - _CN_wmt(4.2)PM_50
-      - _CN_wmt(4.2)PM_51
-      - _CN_wmt(4.2)PM_52
-      - _CN_wmt(4.2)PM_53
-      - _CN_wmt(4.2)PM_54
-      - _CN_wmt(4.2)PM_55
-      - _CN_wmt(4.2)PM_56
-      - _CN_wmt(4.2)PM_57
-      - _CN_wmt(4.2)PM_58
-      - _CN_wmt(4.2)PM_59
-      - _CN_wmt(4.2)PM_60
-      - _CN_wmt(4.2)PM_61
-      - _CN_wmt(4.2)PM_62
-      - _CN_wmt(4.2)PM_63
-      - _CN_wmt(4.2)PM_64
-      - _CN_wmt(4.2)PM_65
-      - _CN_wmt(4.2)PM_66
-      - _CN_wmt(4.2)PM_67
-      - _CN_wmt(4.2)PM_68
-      - _CN_wmt(4.2)PM_69
-      - _CN_wmt(4.2)PM_70
-      - _CN_wmt(4.2)PM_71
-      - _CN_wmt(4.2)PM_72
-      - _CN_wmt(4.2)PM_73
-      - _CN_wmt(4.2)PM_74
-      - _CN_wmt(4.2)PM_75
-      - _CN_wmt(4.2)PM_76
-      - _CN_wmt(4.2)PM_77
-      - _CN_wmt(4.2)PM_78
-      - _CN_wmt(4.2)PM_79
-      - _CN_wmt(4.2)PM_80
-      - _CN_wmt(4.2)PM_81
-      - _CN_wmt(4.2)PM_82
-      - _CN_wmt(4.2)PM_83
-      - _CN_wmt(4.2)PM_84
-      - _CN_wmt(4.2)PM_85
-      - _CN_wmt(4.2)PM_86
-      - _CN_wmt(4.2)PM_87
-      - _CN_wmt(4.2)PM_88
-      - _CN_wmt(4.2)PM_89
-      - _CN_wmt(4.2)PM_90
-      - _CN_wmt(4.2)PM_91
-      - _CN_wmt(4.2)PM_92
-      - _CN_wmt(4.2)PM_93
-      - _CN_wmt(4.2)PM_94
-      - _CN_wmt(4.2)PM_95
-      - _CN_wmt(4.2)PM_96
-      - _CN_wmt(4.2)PM_97
-      - _CN_wmt(4.2)PM_98
-      - _CN_wmt(4.2)PM_99
-      - _CN_wmt(4.2)PM_100
-      - _CN_wmt(4.2)PM_101
-      - _CN_wmt(4.2)PM_102
-      - _CN_wmt(4.2)PM_103
-      - _CN_wmt(4.2)PM_104
-      - _CN_wmt(4.2)PM_105
-      - _CN_wmt(4.2)PM_106
-      - _CN_wmt(4.2)PM_107
-      - _CN_wmt(4.2)PM_108
-      - _CN_wmt(4.2)PM_109
-      - _CN_wmt(4.2)PM_110
-      - _CN_wmt(4.2)PM_111
-      - _CN_wmt(4.2)PM_112
-      - _CN_wmt(4.2)PM_113
-      - _CN_wmt(4.2)PM_114
-      - _CN_wmt(4.2)PM_115
-      - _CN_wmt(4.2)PM_116
-      - _CN_wmt(4.2)PM_117
-      - _CN_wmt(4.2)PM_118
-      - _CN_wmt(4.2)PM_119
-      - _CN_wmt(4.2)PM_120
-      - _CN_wmt(4.2)PM_121
-      - _CN_wmt(4.2)PM_122
-      - _CN_wmt(4.2)PM_123
-      - _CN_wmt(4.2)PM_124
-      - _CN_wmt(4.2)PM_125
-      - _CN_wmt(4.2)PM_126
-      - _CN_wmt(4.2)PM_127
-      - _CN_wmt(4.2)PM_128
-      - _CN_wmt(4.2)PM_129
-      - _CN_wmt(4.2)PM_130
-      - _CN_wmt(4.2)PM_131
-      - _CN_wmt(4.2)PM_132
-      - _CN_wmt(4.2)PM_133
-      - _CN_wmt(4.2)PM_134
-      - _CN_wmt(4.2)PM_135
-      - _CN_wmt(4.2)PM_136
-      - _CN_wmt(4.2)PM_137
-      - _CN_wmt(4.2)PM_138
-      - _CN_wmt(4.2)PM_139
-      - _CN_wmt(4.2)PM_140
-      - _CN_wmt(4.2)PM_141
-      - _CN_wmt(4.2)PM_142
-      - _CN_wmt(4.2)PM_143
-      - _CN_wmt(4.2)PM_144
-      - _CN_wmt(4.2)PM_145
-      - _CN_wmt(4.2)PM_146
-      - _CN_wmt(4.2)PM_147
-      - _CN_wmt(4.2)PM_148
-      - _CN_wmt(4.2)PM_149
-      - _CN_wmt(4.2)PM_150
-      - _CN_wmt(4.2)PM_151
-      - _CN_wmt(4.2)PM_152
-      - _CN_wmt(4.2)PM_153
-      - _CN_wmt(4.2)PM_154
-      - _CN_wmt(4.2)PM_155
-      - _CN_wmt(4.2)PM_156
-      - _CN_wmt(4.2)PM_157
-      - _CN_wmt(4.2)PM_158
-      - _CN_wmt(4.2)PM_159
-      - _CN_wmt(4.2)PM_160
-      - _CN_wmt(4.2)PM_161
-      - _CN_wmt(4.2)PM_162
-      - _CN_wmt(4.2)PM_163
-      - _CN_wmt(4.2)PM_164
-      - _CN_wmt(4.2)PM_165
-      - _CN_wmt(4.2)PM_166
-      - _CN_wmt(4.2)PM_167
-      - _CN_wmt(4.2)PM_168
-      - _CN_wmt(4.2)PM_169
-      - _CN_wmt(4.2)PM_170
-      - _IN_wmt(4.2)PM_171
-      - _CN_wmt(4.2)PM_172
-      - _CN_wmt(4.2)PM_173
-      - _CN_wmt(4.2)PM_174
-      - _CN_wmt(4.2)PM_175
-      - _CN_wmt(4.2)PM_176
-      - _CN_wmt(4.2)PM_177
-      - _CN_wmt(4.2)PM_178
-      - _CN_wmt(4.2)PM_179
-      - _CN_wmt(4.2)PM_180
-      - _CN_wmt(4.2)PM_181
-      - _CN_wmt(4.2)PM_182
-      - _CN_wmt(4.2)PM_183
-      - _CN_wmt(4.2)PM_184
-      - _CN_wmt(4.2)PM_185
-      - _CN_wmt(4.2)PM_186
-      - _CN_wmt(4.2)PM_187
-      - _CN_wmt(4.2)PM_188
-      - _CN_wmt(4.2)PM_189
-      - _CN_wmt(4.2)PM_190
-      - _CN_wmt(4.2)PM_191
-      - _CN_wmt(4.2)PM_192
-      - _CN_wmt(4.2)PM_193
-      - _CN_wmt(4.2)PM_194
-      - _CN_wmt(4.2)PM_195
-      - _CN_wmt(4.2)PM_196
-      - _CN_wmt(4.2)PM_197
-      - _CN_wmt(4.2)PM_198
-      - _CN_wmt(4.2)PM_199
-      - _CN_wmt(4.2)PM_200
-      - _CN_wmt(4.2)PM_201
-      - _CN_wmt(4.2)PM_202
-      - _CN_wmt(4.2)PM_203
-      - _CN_wmt(4.2)PM_204
-      - _CN_wmt(4.2)PM_205
-      - _CN_wmt(4.2)PM_206
-      - _CN_wmt(4.2)PM_207
-      - _CN_wmt(4.2)PM_208
-      - _CN_wmt(4.2)PM_209
-      - _CN_wmt(4.2)PM_210
-      - _CN_wmt(4.2)PM_211
-      - _CN_wmt(4.2)PM_212
-      - _CN_wmt(4.2)PM_213
-      - _CN_wmt(4.2)PM_214
-      - _CN_wmt(4.2)PM_215
-      - _CN_wmt(4.2)PM_216
-      - _CN_wmt(4.2)PM_217
-      - _CN_wmt(4.2)PM_218
-      - _CN_wmt(4.2)PM_219
-      - _CN_wmt(4.2)PM_220
-      - _CN_wmt(4.2)PM_221
-      - _CN_wmt(4.2)PM_222
-      - _CN_wmt(4.2)PM_223
-      - _CN_wmt(4.2)PM_224
-      - _CN_wmt(4.2)PM_225
-      - _CN_wmt(4.2)PM_226
-      - _CN_wmt(4.2)PM_227
-      - _CN_wmt(4.2)PM_228
-      - _CN_wmt(4.2)PM_229
-      - _CN_wmt(4.2)PM_230
-      - _CN_wmt(4.2)PM_231
-      - _CN_wmt(4.2)PM_232
-      - _CN_wmt(4.2)PM_233
+      - _CN_wmt_4.4_AM_1
+      - _CN_wmt_4.4_AM_2
+      - _CN_wmt_4.4_AM_3
+      - _US_wmt_4.4_AM_4
+      - _CN_wmt_4.4_AM_5
+      - _CN_wmt_4.4_AM_6
+      - _CN_wmt_4.4_AM_7
+      - _CN_wmt_4.4_AM_8
+      - _CN_wmt_4.4_AM_9
+      - _CN_wmt_4.4_AM_10
+      - _CN_wmt_4.4_AM_11
+      - _CN_wmt_4.4_AM_12
+      - _CN_wmt_4.4_AM_13
+      - _CN_wmt_4.4_AM_14
+      - _CN_wmt_4.4_AM_15
+      - _CN_wmt_4.4_AM_16
+      - _CN_wmt_4.4_AM_17
+      - _CN_wmt_4.4_AM_18
+      - _CN_wmt_4.4_AM_19
+      - _CN_wmt_4.4_AM_20
+      - _CN_wmt_4.4_AM_21
+      - _CN_wmt_4.4_AM_22
+      - _CN_wmt_4.4_AM_23
+      - _CN_wmt_4.4_AM_24
+      - _CN_wmt_4.4_AM_25
+      - _CN_wmt_4.4_AM_26
+      - _CN_wmt_4.4_AM_27
+      - _CN_wmt_4.4_AM_28
+      - _CN_wmt_4.4_AM_29
+      - _CN_wmt_4.4_AM_30
+      - _CN_wmt_4.4_AM_31
+      - _CN_wmt_4.4_AM_32
+      - _CN_wmt_4.4_AM_33
+      - _CN_wmt_4.4_AM_34
+      - _CN_wmt_4.4_AM_35
+      - _CN_wmt_4.4_AM_36
+      - _US_wmt_4.4_AM_37
+      - _CN_wmt_4.4_AM_38
+      - _CN_wmt_4.4_AM_39
+      - _CN_wmt_4.4_AM_40
+      - _CN_wmt_4.4_AM_41
+      - _CN_wmt_4.4_AM_42
+      - _CN_wmt_4.4_AM_43
+      - _CN_wmt_4.4_AM_44
+      - _CN_wmt_4.4_AM_45
+      - _CN_wmt_4.4_AM_46
+      - _CN_wmt_4.4_AM_47
+      - _CN_wmt_4.4_AM_48
+      - _CN_wmt_4.4_AM_49
+      - _CN_wmt_4.4_AM_50
+      - _CN_wmt_4.4_AM_51
+      - _CA_wmt_4.4_AM_52
+      - _CA_wmt_4.4_AM_53
+      - _CN_wmt_4.4_AM_54
+      - _CN_wmt_4.4_AM_55
+      - _US_wmt_4.4_AM_56
+      - _CN_wmt_4.4_AM_57
+      - _CN_wmt_4.4_AM_58
+      - _CA_wmt_4.4_AM_59
+      - _US_wmt_4.4_AM_60
+      - _US_wmt_4.4_AM_61
+      - _CN_wmt_4.4_AM_62
+      - _CN_wmt_4.4_AM_63
+      - _CN_wmt_4.4_AM_64
+      - _CA_wmt_4.4_AM_65
+      - _CA_wmt_4.4_AM_66
+      - _US_wmt_4.4_AM_67
+      - _CN_wmt_4.4_AM_68
+      - _CN_wmt_4.4_AM_69
+      - _CA_wmt_4.4_AM_70
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(4.2)PM_1
-      - _CN_wmt(4.2)PM_2
-      - _CN_wmt(4.2)PM_3
-      - _CN_wmt(4.2)PM_4
-      - _CN_wmt(4.2)PM_5
-      - _CN_wmt(4.2)PM_6
-      - _CN_wmt(4.2)PM_7
-      - _CN_wmt(4.2)PM_8
-      - _CN_wmt(4.2)PM_9
-      - _CN_wmt(4.2)PM_10
-      - _CN_wmt(4.2)PM_11
-      - _CN_wmt(4.2)PM_12
-      - _CN_wmt(4.2)PM_13
-      - _CN_wmt(4.2)PM_14
-      - _CN_wmt(4.2)PM_15
-      - _CN_wmt(4.2)PM_16
-      - _CN_wmt(4.2)PM_17
-      - _CN_wmt(4.2)PM_18
-      - _CN_wmt(4.2)PM_19
-      - _CN_wmt(4.2)PM_20
-      - _CN_wmt(4.2)PM_21
-      - _CN_wmt(4.2)PM_22
-      - _CN_wmt(4.2)PM_23
-      - _CN_wmt(4.2)PM_24
-      - _CN_wmt(4.2)PM_25
-      - _CN_wmt(4.2)PM_26
-      - _CN_wmt(4.2)PM_27
-      - _CN_wmt(4.2)PM_28
-      - _CN_wmt(4.2)PM_29
-      - _CN_wmt(4.2)PM_30
-      - _CN_wmt(4.2)PM_31
-      - _CN_wmt(4.2)PM_32
-      - _CN_wmt(4.2)PM_33
-      - _CN_wmt(4.2)PM_34
-      - _CN_wmt(4.2)PM_35
-      - _CN_wmt(4.2)PM_36
-      - _CN_wmt(4.2)PM_37
-      - _CN_wmt(4.2)PM_38
-      - _CN_wmt(4.2)PM_39
-      - _CN_wmt(4.2)PM_40
-      - _CN_wmt(4.2)PM_41
-      - _CN_wmt(4.2)PM_42
-      - _CN_wmt(4.2)PM_43
-      - _CN_wmt(4.2)PM_44
-      - _CN_wmt(4.2)PM_45
-      - _CN_wmt(4.2)PM_46
-      - _CN_wmt(4.2)PM_47
-      - _CN_wmt(4.2)PM_48
-      - _CN_wmt(4.2)PM_49
-      - _CN_wmt(4.2)PM_50
-      - _CN_wmt(4.2)PM_51
-      - _CN_wmt(4.2)PM_52
-      - _CN_wmt(4.2)PM_53
-      - _CN_wmt(4.2)PM_54
-      - _CN_wmt(4.2)PM_55
-      - _CN_wmt(4.2)PM_56
-      - _CN_wmt(4.2)PM_57
-      - _CN_wmt(4.2)PM_58
-      - _CN_wmt(4.2)PM_59
-      - _CN_wmt(4.2)PM_60
-      - _CN_wmt(4.2)PM_61
-      - _CN_wmt(4.2)PM_62
-      - _CN_wmt(4.2)PM_63
-      - _CN_wmt(4.2)PM_64
-      - _CN_wmt(4.2)PM_65
-      - _CN_wmt(4.2)PM_66
-      - _CN_wmt(4.2)PM_67
-      - _CN_wmt(4.2)PM_68
-      - _CN_wmt(4.2)PM_69
-      - _CN_wmt(4.2)PM_70
-      - _CN_wmt(4.2)PM_71
-      - _CN_wmt(4.2)PM_72
-      - _CN_wmt(4.2)PM_73
-      - _CN_wmt(4.2)PM_74
-      - _CN_wmt(4.2)PM_75
-      - _CN_wmt(4.2)PM_76
-      - _CN_wmt(4.2)PM_77
-      - _CN_wmt(4.2)PM_78
-      - _CN_wmt(4.2)PM_79
-      - _CN_wmt(4.2)PM_80
-      - _CN_wmt(4.2)PM_81
-      - _CN_wmt(4.2)PM_82
-      - _CN_wmt(4.2)PM_83
-      - _CN_wmt(4.2)PM_84
-      - _CN_wmt(4.2)PM_85
-      - _CN_wmt(4.2)PM_86
-      - _CN_wmt(4.2)PM_87
-      - _CN_wmt(4.2)PM_88
-      - _CN_wmt(4.2)PM_89
-      - _CN_wmt(4.2)PM_90
-      - _CN_wmt(4.2)PM_91
-      - _CN_wmt(4.2)PM_92
-      - _CN_wmt(4.2)PM_93
-      - _CN_wmt(4.2)PM_94
-      - _CN_wmt(4.2)PM_95
-      - _CN_wmt(4.2)PM_96
-      - _CN_wmt(4.2)PM_97
-      - _CN_wmt(4.2)PM_98
-      - _CN_wmt(4.2)PM_99
-      - _CN_wmt(4.2)PM_100
-      - _CN_wmt(4.2)PM_101
-      - _CN_wmt(4.2)PM_102
-      - _CN_wmt(4.2)PM_103
-      - _CN_wmt(4.2)PM_104
-      - _CN_wmt(4.2)PM_105
-      - _CN_wmt(4.2)PM_106
-      - _CN_wmt(4.2)PM_107
-      - _CN_wmt(4.2)PM_108
-      - _CN_wmt(4.2)PM_109
-      - _CN_wmt(4.2)PM_110
-      - _CN_wmt(4.2)PM_111
-      - _CN_wmt(4.2)PM_112
-      - _CN_wmt(4.2)PM_113
-      - _CN_wmt(4.2)PM_114
-      - _CN_wmt(4.2)PM_115
-      - _CN_wmt(4.2)PM_116
-      - _CN_wmt(4.2)PM_117
-      - _CN_wmt(4.2)PM_118
-      - _CN_wmt(4.2)PM_119
-      - _CN_wmt(4.2)PM_120
-      - _CN_wmt(4.2)PM_121
-      - _CN_wmt(4.2)PM_122
-      - _CN_wmt(4.2)PM_123
-      - _CN_wmt(4.2)PM_124
-      - _CN_wmt(4.2)PM_125
-      - _CN_wmt(4.2)PM_126
-      - _CN_wmt(4.2)PM_127
-      - _CN_wmt(4.2)PM_128
-      - _CN_wmt(4.2)PM_129
-      - _CN_wmt(4.2)PM_130
-      - _CN_wmt(4.2)PM_131
-      - _CN_wmt(4.2)PM_132
-      - _CN_wmt(4.2)PM_133
-      - _CN_wmt(4.2)PM_134
-      - _CN_wmt(4.2)PM_135
-      - _CN_wmt(4.2)PM_136
-      - _CN_wmt(4.2)PM_137
-      - _CN_wmt(4.2)PM_138
-      - _CN_wmt(4.2)PM_139
-      - _CN_wmt(4.2)PM_140
-      - _CN_wmt(4.2)PM_141
-      - _CN_wmt(4.2)PM_142
-      - _CN_wmt(4.2)PM_143
-      - _CN_wmt(4.2)PM_144
-      - _CN_wmt(4.2)PM_145
-      - _CN_wmt(4.2)PM_146
-      - _CN_wmt(4.2)PM_147
-      - _CN_wmt(4.2)PM_148
-      - _CN_wmt(4.2)PM_149
-      - _CN_wmt(4.2)PM_150
-      - _CN_wmt(4.2)PM_151
-      - _CN_wmt(4.2)PM_152
-      - _CN_wmt(4.2)PM_153
-      - _CN_wmt(4.2)PM_154
-      - _CN_wmt(4.2)PM_155
-      - _CN_wmt(4.2)PM_156
-      - _CN_wmt(4.2)PM_157
-      - _CN_wmt(4.2)PM_158
-      - _CN_wmt(4.2)PM_159
-      - _CN_wmt(4.2)PM_160
-      - _CN_wmt(4.2)PM_161
-      - _CN_wmt(4.2)PM_162
-      - _CN_wmt(4.2)PM_163
-      - _CN_wmt(4.2)PM_164
-      - _CN_wmt(4.2)PM_165
-      - _CN_wmt(4.2)PM_166
-      - _CN_wmt(4.2)PM_167
-      - _CN_wmt(4.2)PM_168
-      - _CN_wmt(4.2)PM_169
-      - _CN_wmt(4.2)PM_170
-      - _IN_wmt(4.2)PM_171
-      - _CN_wmt(4.2)PM_172
-      - _CN_wmt(4.2)PM_173
-      - _CN_wmt(4.2)PM_174
-      - _CN_wmt(4.2)PM_175
-      - _CN_wmt(4.2)PM_176
-      - _CN_wmt(4.2)PM_177
-      - _CN_wmt(4.2)PM_178
-      - _CN_wmt(4.2)PM_179
-      - _CN_wmt(4.2)PM_180
-      - _CN_wmt(4.2)PM_181
-      - _CN_wmt(4.2)PM_182
-      - _CN_wmt(4.2)PM_183
-      - _CN_wmt(4.2)PM_184
-      - _CN_wmt(4.2)PM_185
-      - _CN_wmt(4.2)PM_186
-      - _CN_wmt(4.2)PM_187
-      - _CN_wmt(4.2)PM_188
-      - _CN_wmt(4.2)PM_189
-      - _CN_wmt(4.2)PM_190
-      - _CN_wmt(4.2)PM_191
-      - _CN_wmt(4.2)PM_192
-      - _CN_wmt(4.2)PM_193
-      - _CN_wmt(4.2)PM_194
-      - _CN_wmt(4.2)PM_195
-      - _CN_wmt(4.2)PM_196
-      - _CN_wmt(4.2)PM_197
-      - _CN_wmt(4.2)PM_198
-      - _CN_wmt(4.2)PM_199
-      - _CN_wmt(4.2)PM_200
-      - _CN_wmt(4.2)PM_201
-      - _CN_wmt(4.2)PM_202
-      - _CN_wmt(4.2)PM_203
-      - _CN_wmt(4.2)PM_204
-      - _CN_wmt(4.2)PM_205
-      - _CN_wmt(4.2)PM_206
-      - _CN_wmt(4.2)PM_207
-      - _CN_wmt(4.2)PM_208
-      - _CN_wmt(4.2)PM_209
-      - _CN_wmt(4.2)PM_210
-      - _CN_wmt(4.2)PM_211
-      - _CN_wmt(4.2)PM_212
-      - _CN_wmt(4.2)PM_213
-      - _CN_wmt(4.2)PM_214
-      - _CN_wmt(4.2)PM_215
-      - _CN_wmt(4.2)PM_216
-      - _CN_wmt(4.2)PM_217
-      - _CN_wmt(4.2)PM_218
-      - _CN_wmt(4.2)PM_219
-      - _CN_wmt(4.2)PM_220
-      - _CN_wmt(4.2)PM_221
-      - _CN_wmt(4.2)PM_222
-      - _CN_wmt(4.2)PM_223
-      - _CN_wmt(4.2)PM_224
-      - _CN_wmt(4.2)PM_225
-      - _CN_wmt(4.2)PM_226
-      - _CN_wmt(4.2)PM_227
-      - _CN_wmt(4.2)PM_228
-      - _CN_wmt(4.2)PM_229
-      - _CN_wmt(4.2)PM_230
-      - _CN_wmt(4.2)PM_231
-      - _CN_wmt(4.2)PM_232
-      - _CN_wmt(4.2)PM_233
+      - _CN_wmt_4.4_AM_1
+      - _CN_wmt_4.4_AM_2
+      - _CN_wmt_4.4_AM_3
+      - _US_wmt_4.4_AM_4
+      - _CN_wmt_4.4_AM_5
+      - _CN_wmt_4.4_AM_6
+      - _CN_wmt_4.4_AM_7
+      - _CN_wmt_4.4_AM_8
+      - _CN_wmt_4.4_AM_9
+      - _CN_wmt_4.4_AM_10
+      - _CN_wmt_4.4_AM_11
+      - _CN_wmt_4.4_AM_12
+      - _CN_wmt_4.4_AM_13
+      - _CN_wmt_4.4_AM_14
+      - _CN_wmt_4.4_AM_15
+      - _CN_wmt_4.4_AM_16
+      - _CN_wmt_4.4_AM_17
+      - _CN_wmt_4.4_AM_18
+      - _CN_wmt_4.4_AM_19
+      - _CN_wmt_4.4_AM_20
+      - _CN_wmt_4.4_AM_21
+      - _CN_wmt_4.4_AM_22
+      - _CN_wmt_4.4_AM_23
+      - _CN_wmt_4.4_AM_24
+      - _CN_wmt_4.4_AM_25
+      - _CN_wmt_4.4_AM_26
+      - _CN_wmt_4.4_AM_27
+      - _CN_wmt_4.4_AM_28
+      - _CN_wmt_4.4_AM_29
+      - _CN_wmt_4.4_AM_30
+      - _CN_wmt_4.4_AM_31
+      - _CN_wmt_4.4_AM_32
+      - _CN_wmt_4.4_AM_33
+      - _CN_wmt_4.4_AM_34
+      - _CN_wmt_4.4_AM_35
+      - _CN_wmt_4.4_AM_36
+      - _US_wmt_4.4_AM_37
+      - _CN_wmt_4.4_AM_38
+      - _CN_wmt_4.4_AM_39
+      - _CN_wmt_4.4_AM_40
+      - _CN_wmt_4.4_AM_41
+      - _CN_wmt_4.4_AM_42
+      - _CN_wmt_4.4_AM_43
+      - _CN_wmt_4.4_AM_44
+      - _CN_wmt_4.4_AM_45
+      - _CN_wmt_4.4_AM_46
+      - _CN_wmt_4.4_AM_47
+      - _CN_wmt_4.4_AM_48
+      - _CN_wmt_4.4_AM_49
+      - _CN_wmt_4.4_AM_50
+      - _CN_wmt_4.4_AM_51
+      - _CA_wmt_4.4_AM_52
+      - _CA_wmt_4.4_AM_53
+      - _CN_wmt_4.4_AM_54
+      - _CN_wmt_4.4_AM_55
+      - _US_wmt_4.4_AM_56
+      - _CN_wmt_4.4_AM_57
+      - _CN_wmt_4.4_AM_58
+      - _CA_wmt_4.4_AM_59
+      - _US_wmt_4.4_AM_60
+      - _US_wmt_4.4_AM_61
+      - _CN_wmt_4.4_AM_62
+      - _CN_wmt_4.4_AM_63
+      - _CN_wmt_4.4_AM_64
+      - _CA_wmt_4.4_AM_65
+      - _CA_wmt_4.4_AM_66
+      - _US_wmt_4.4_AM_67
+      - _CN_wmt_4.4_AM_68
+      - _CN_wmt_4.4_AM_69
+      - _CA_wmt_4.4_AM_70
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -972,239 +320,76 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(4.2)PM_1
-      - _CN_wmt(4.2)PM_2
-      - _CN_wmt(4.2)PM_3
-      - _CN_wmt(4.2)PM_4
-      - _CN_wmt(4.2)PM_5
-      - _CN_wmt(4.2)PM_6
-      - _CN_wmt(4.2)PM_7
-      - _CN_wmt(4.2)PM_8
-      - _CN_wmt(4.2)PM_9
-      - _CN_wmt(4.2)PM_10
-      - _CN_wmt(4.2)PM_11
-      - _CN_wmt(4.2)PM_12
-      - _CN_wmt(4.2)PM_13
-      - _CN_wmt(4.2)PM_14
-      - _CN_wmt(4.2)PM_15
-      - _CN_wmt(4.2)PM_16
-      - _CN_wmt(4.2)PM_17
-      - _CN_wmt(4.2)PM_18
-      - _CN_wmt(4.2)PM_19
-      - _CN_wmt(4.2)PM_20
-      - _CN_wmt(4.2)PM_21
-      - _CN_wmt(4.2)PM_22
-      - _CN_wmt(4.2)PM_23
-      - _CN_wmt(4.2)PM_24
-      - _CN_wmt(4.2)PM_25
-      - _CN_wmt(4.2)PM_26
-      - _CN_wmt(4.2)PM_27
-      - _CN_wmt(4.2)PM_28
-      - _CN_wmt(4.2)PM_29
-      - _CN_wmt(4.2)PM_30
-      - _CN_wmt(4.2)PM_31
-      - _CN_wmt(4.2)PM_32
-      - _CN_wmt(4.2)PM_33
-      - _CN_wmt(4.2)PM_34
-      - _CN_wmt(4.2)PM_35
-      - _CN_wmt(4.2)PM_36
-      - _CN_wmt(4.2)PM_37
-      - _CN_wmt(4.2)PM_38
-      - _CN_wmt(4.2)PM_39
-      - _CN_wmt(4.2)PM_40
-      - _CN_wmt(4.2)PM_41
-      - _CN_wmt(4.2)PM_42
-      - _CN_wmt(4.2)PM_43
-      - _CN_wmt(4.2)PM_44
-      - _CN_wmt(4.2)PM_45
-      - _CN_wmt(4.2)PM_46
-      - _CN_wmt(4.2)PM_47
-      - _CN_wmt(4.2)PM_48
-      - _CN_wmt(4.2)PM_49
-      - _CN_wmt(4.2)PM_50
-      - _CN_wmt(4.2)PM_51
-      - _CN_wmt(4.2)PM_52
-      - _CN_wmt(4.2)PM_53
-      - _CN_wmt(4.2)PM_54
-      - _CN_wmt(4.2)PM_55
-      - _CN_wmt(4.2)PM_56
-      - _CN_wmt(4.2)PM_57
-      - _CN_wmt(4.2)PM_58
-      - _CN_wmt(4.2)PM_59
-      - _CN_wmt(4.2)PM_60
-      - _CN_wmt(4.2)PM_61
-      - _CN_wmt(4.2)PM_62
-      - _CN_wmt(4.2)PM_63
-      - _CN_wmt(4.2)PM_64
-      - _CN_wmt(4.2)PM_65
-      - _CN_wmt(4.2)PM_66
-      - _CN_wmt(4.2)PM_67
-      - _CN_wmt(4.2)PM_68
-      - _CN_wmt(4.2)PM_69
-      - _CN_wmt(4.2)PM_70
-      - _CN_wmt(4.2)PM_71
-      - _CN_wmt(4.2)PM_72
-      - _CN_wmt(4.2)PM_73
-      - _CN_wmt(4.2)PM_74
-      - _CN_wmt(4.2)PM_75
-      - _CN_wmt(4.2)PM_76
-      - _CN_wmt(4.2)PM_77
-      - _CN_wmt(4.2)PM_78
-      - _CN_wmt(4.2)PM_79
-      - _CN_wmt(4.2)PM_80
-      - _CN_wmt(4.2)PM_81
-      - _CN_wmt(4.2)PM_82
-      - _CN_wmt(4.2)PM_83
-      - _CN_wmt(4.2)PM_84
-      - _CN_wmt(4.2)PM_85
-      - _CN_wmt(4.2)PM_86
-      - _CN_wmt(4.2)PM_87
-      - _CN_wmt(4.2)PM_88
-      - _CN_wmt(4.2)PM_89
-      - _CN_wmt(4.2)PM_90
-      - _CN_wmt(4.2)PM_91
-      - _CN_wmt(4.2)PM_92
-      - _CN_wmt(4.2)PM_93
-      - _CN_wmt(4.2)PM_94
-      - _CN_wmt(4.2)PM_95
-      - _CN_wmt(4.2)PM_96
-      - _CN_wmt(4.2)PM_97
-      - _CN_wmt(4.2)PM_98
-      - _CN_wmt(4.2)PM_99
-      - _CN_wmt(4.2)PM_100
-      - _CN_wmt(4.2)PM_101
-      - _CN_wmt(4.2)PM_102
-      - _CN_wmt(4.2)PM_103
-      - _CN_wmt(4.2)PM_104
-      - _CN_wmt(4.2)PM_105
-      - _CN_wmt(4.2)PM_106
-      - _CN_wmt(4.2)PM_107
-      - _CN_wmt(4.2)PM_108
-      - _CN_wmt(4.2)PM_109
-      - _CN_wmt(4.2)PM_110
-      - _CN_wmt(4.2)PM_111
-      - _CN_wmt(4.2)PM_112
-      - _CN_wmt(4.2)PM_113
-      - _CN_wmt(4.2)PM_114
-      - _CN_wmt(4.2)PM_115
-      - _CN_wmt(4.2)PM_116
-      - _CN_wmt(4.2)PM_117
-      - _CN_wmt(4.2)PM_118
-      - _CN_wmt(4.2)PM_119
-      - _CN_wmt(4.2)PM_120
-      - _CN_wmt(4.2)PM_121
-      - _CN_wmt(4.2)PM_122
-      - _CN_wmt(4.2)PM_123
-      - _CN_wmt(4.2)PM_124
-      - _CN_wmt(4.2)PM_125
-      - _CN_wmt(4.2)PM_126
-      - _CN_wmt(4.2)PM_127
-      - _CN_wmt(4.2)PM_128
-      - _CN_wmt(4.2)PM_129
-      - _CN_wmt(4.2)PM_130
-      - _CN_wmt(4.2)PM_131
-      - _CN_wmt(4.2)PM_132
-      - _CN_wmt(4.2)PM_133
-      - _CN_wmt(4.2)PM_134
-      - _CN_wmt(4.2)PM_135
-      - _CN_wmt(4.2)PM_136
-      - _CN_wmt(4.2)PM_137
-      - _CN_wmt(4.2)PM_138
-      - _CN_wmt(4.2)PM_139
-      - _CN_wmt(4.2)PM_140
-      - _CN_wmt(4.2)PM_141
-      - _CN_wmt(4.2)PM_142
-      - _CN_wmt(4.2)PM_143
-      - _CN_wmt(4.2)PM_144
-      - _CN_wmt(4.2)PM_145
-      - _CN_wmt(4.2)PM_146
-      - _CN_wmt(4.2)PM_147
-      - _CN_wmt(4.2)PM_148
-      - _CN_wmt(4.2)PM_149
-      - _CN_wmt(4.2)PM_150
-      - _CN_wmt(4.2)PM_151
-      - _CN_wmt(4.2)PM_152
-      - _CN_wmt(4.2)PM_153
-      - _CN_wmt(4.2)PM_154
-      - _CN_wmt(4.2)PM_155
-      - _CN_wmt(4.2)PM_156
-      - _CN_wmt(4.2)PM_157
-      - _CN_wmt(4.2)PM_158
-      - _CN_wmt(4.2)PM_159
-      - _CN_wmt(4.2)PM_160
-      - _CN_wmt(4.2)PM_161
-      - _CN_wmt(4.2)PM_162
-      - _CN_wmt(4.2)PM_163
-      - _CN_wmt(4.2)PM_164
-      - _CN_wmt(4.2)PM_165
-      - _CN_wmt(4.2)PM_166
-      - _CN_wmt(4.2)PM_167
-      - _CN_wmt(4.2)PM_168
-      - _CN_wmt(4.2)PM_169
-      - _CN_wmt(4.2)PM_170
-      - _IN_wmt(4.2)PM_171
-      - _CN_wmt(4.2)PM_172
-      - _CN_wmt(4.2)PM_173
-      - _CN_wmt(4.2)PM_174
-      - _CN_wmt(4.2)PM_175
-      - _CN_wmt(4.2)PM_176
-      - _CN_wmt(4.2)PM_177
-      - _CN_wmt(4.2)PM_178
-      - _CN_wmt(4.2)PM_179
-      - _CN_wmt(4.2)PM_180
-      - _CN_wmt(4.2)PM_181
-      - _CN_wmt(4.2)PM_182
-      - _CN_wmt(4.2)PM_183
-      - _CN_wmt(4.2)PM_184
-      - _CN_wmt(4.2)PM_185
-      - _CN_wmt(4.2)PM_186
-      - _CN_wmt(4.2)PM_187
-      - _CN_wmt(4.2)PM_188
-      - _CN_wmt(4.2)PM_189
-      - _CN_wmt(4.2)PM_190
-      - _CN_wmt(4.2)PM_191
-      - _CN_wmt(4.2)PM_192
-      - _CN_wmt(4.2)PM_193
-      - _CN_wmt(4.2)PM_194
-      - _CN_wmt(4.2)PM_195
-      - _CN_wmt(4.2)PM_196
-      - _CN_wmt(4.2)PM_197
-      - _CN_wmt(4.2)PM_198
-      - _CN_wmt(4.2)PM_199
-      - _CN_wmt(4.2)PM_200
-      - _CN_wmt(4.2)PM_201
-      - _CN_wmt(4.2)PM_202
-      - _CN_wmt(4.2)PM_203
-      - _CN_wmt(4.2)PM_204
-      - _CN_wmt(4.2)PM_205
-      - _CN_wmt(4.2)PM_206
-      - _CN_wmt(4.2)PM_207
-      - _CN_wmt(4.2)PM_208
-      - _CN_wmt(4.2)PM_209
-      - _CN_wmt(4.2)PM_210
-      - _CN_wmt(4.2)PM_211
-      - _CN_wmt(4.2)PM_212
-      - _CN_wmt(4.2)PM_213
-      - _CN_wmt(4.2)PM_214
-      - _CN_wmt(4.2)PM_215
-      - _CN_wmt(4.2)PM_216
-      - _CN_wmt(4.2)PM_217
-      - _CN_wmt(4.2)PM_218
-      - _CN_wmt(4.2)PM_219
-      - _CN_wmt(4.2)PM_220
-      - _CN_wmt(4.2)PM_221
-      - _CN_wmt(4.2)PM_222
-      - _CN_wmt(4.2)PM_223
-      - _CN_wmt(4.2)PM_224
-      - _CN_wmt(4.2)PM_225
-      - _CN_wmt(4.2)PM_226
-      - _CN_wmt(4.2)PM_227
-      - _CN_wmt(4.2)PM_228
-      - _CN_wmt(4.2)PM_229
-      - _CN_wmt(4.2)PM_230
-      - _CN_wmt(4.2)PM_231
-      - _CN_wmt(4.2)PM_232
-      - _CN_wmt(4.2)PM_233
+      - _CN_wmt_4.4_AM_1
+      - _CN_wmt_4.4_AM_2
+      - _CN_wmt_4.4_AM_3
+      - _US_wmt_4.4_AM_4
+      - _CN_wmt_4.4_AM_5
+      - _CN_wmt_4.4_AM_6
+      - _CN_wmt_4.4_AM_7
+      - _CN_wmt_4.4_AM_8
+      - _CN_wmt_4.4_AM_9
+      - _CN_wmt_4.4_AM_10
+      - _CN_wmt_4.4_AM_11
+      - _CN_wmt_4.4_AM_12
+      - _CN_wmt_4.4_AM_13
+      - _CN_wmt_4.4_AM_14
+      - _CN_wmt_4.4_AM_15
+      - _CN_wmt_4.4_AM_16
+      - _CN_wmt_4.4_AM_17
+      - _CN_wmt_4.4_AM_18
+      - _CN_wmt_4.4_AM_19
+      - _CN_wmt_4.4_AM_20
+      - _CN_wmt_4.4_AM_21
+      - _CN_wmt_4.4_AM_22
+      - _CN_wmt_4.4_AM_23
+      - _CN_wmt_4.4_AM_24
+      - _CN_wmt_4.4_AM_25
+      - _CN_wmt_4.4_AM_26
+      - _CN_wmt_4.4_AM_27
+      - _CN_wmt_4.4_AM_28
+      - _CN_wmt_4.4_AM_29
+      - _CN_wmt_4.4_AM_30
+      - _CN_wmt_4.4_AM_31
+      - _CN_wmt_4.4_AM_32
+      - _CN_wmt_4.4_AM_33
+      - _CN_wmt_4.4_AM_34
+      - _CN_wmt_4.4_AM_35
+      - _CN_wmt_4.4_AM_36
+      - _US_wmt_4.4_AM_37
+      - _CN_wmt_4.4_AM_38
+      - _CN_wmt_4.4_AM_39
+      - _CN_wmt_4.4_AM_40
+      - _CN_wmt_4.4_AM_41
+      - _CN_wmt_4.4_AM_42
+      - _CN_wmt_4.4_AM_43
+      - _CN_wmt_4.4_AM_44
+      - _CN_wmt_4.4_AM_45
+      - _CN_wmt_4.4_AM_46
+      - _CN_wmt_4.4_AM_47
+      - _CN_wmt_4.4_AM_48
+      - _CN_wmt_4.4_AM_49
+      - _CN_wmt_4.4_AM_50
+      - _CN_wmt_4.4_AM_51
+      - _CA_wmt_4.4_AM_52
+      - _CA_wmt_4.4_AM_53
+      - _CN_wmt_4.4_AM_54
+      - _CN_wmt_4.4_AM_55
+      - _US_wmt_4.4_AM_56
+      - _CN_wmt_4.4_AM_57
+      - _CN_wmt_4.4_AM_58
+      - _CA_wmt_4.4_AM_59
+      - _US_wmt_4.4_AM_60
+      - _US_wmt_4.4_AM_61
+      - _CN_wmt_4.4_AM_62
+      - _CN_wmt_4.4_AM_63
+      - _CN_wmt_4.4_AM_64
+      - _CA_wmt_4.4_AM_65
+      - _CA_wmt_4.4_AM_66
+      - _US_wmt_4.4_AM_67
+      - _CN_wmt_4.4_AM_68
+      - _CN_wmt_4.4_AM_69
+      - _CA_wmt_4.4_AM_70
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -1215,716 +400,227 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_wmt(4.2)PM_1
-      - _CN_wmt(4.2)PM_2
-      - _CN_wmt(4.2)PM_3
-      - _CN_wmt(4.2)PM_4
-      - _CN_wmt(4.2)PM_5
-      - _CN_wmt(4.2)PM_6
-      - _CN_wmt(4.2)PM_7
-      - _CN_wmt(4.2)PM_8
-      - _CN_wmt(4.2)PM_9
-      - _CN_wmt(4.2)PM_10
-      - _CN_wmt(4.2)PM_11
-      - _CN_wmt(4.2)PM_12
-      - _CN_wmt(4.2)PM_13
-      - _CN_wmt(4.2)PM_14
-      - _CN_wmt(4.2)PM_15
-      - _CN_wmt(4.2)PM_16
-      - _CN_wmt(4.2)PM_17
-      - _CN_wmt(4.2)PM_18
-      - _CN_wmt(4.2)PM_19
-      - _CN_wmt(4.2)PM_20
-      - _CN_wmt(4.2)PM_21
-      - _CN_wmt(4.2)PM_22
-      - _CN_wmt(4.2)PM_23
-      - _CN_wmt(4.2)PM_24
-      - _CN_wmt(4.2)PM_25
-      - _CN_wmt(4.2)PM_26
-      - _CN_wmt(4.2)PM_27
-      - _CN_wmt(4.2)PM_28
-      - _CN_wmt(4.2)PM_29
-      - _CN_wmt(4.2)PM_30
-      - _CN_wmt(4.2)PM_31
-      - _CN_wmt(4.2)PM_32
-      - _CN_wmt(4.2)PM_33
-      - _CN_wmt(4.2)PM_34
-      - _CN_wmt(4.2)PM_35
-      - _CN_wmt(4.2)PM_36
-      - _CN_wmt(4.2)PM_37
-      - _CN_wmt(4.2)PM_38
-      - _CN_wmt(4.2)PM_39
-      - _CN_wmt(4.2)PM_40
-      - _CN_wmt(4.2)PM_41
-      - _CN_wmt(4.2)PM_42
-      - _CN_wmt(4.2)PM_43
-      - _CN_wmt(4.2)PM_44
-      - _CN_wmt(4.2)PM_45
-      - _CN_wmt(4.2)PM_46
-      - _CN_wmt(4.2)PM_47
-      - _CN_wmt(4.2)PM_48
-      - _CN_wmt(4.2)PM_49
-      - _CN_wmt(4.2)PM_50
-      - _CN_wmt(4.2)PM_51
-      - _CN_wmt(4.2)PM_52
-      - _CN_wmt(4.2)PM_53
-      - _CN_wmt(4.2)PM_54
-      - _CN_wmt(4.2)PM_55
-      - _CN_wmt(4.2)PM_56
-      - _CN_wmt(4.2)PM_57
-      - _CN_wmt(4.2)PM_58
-      - _CN_wmt(4.2)PM_59
-      - _CN_wmt(4.2)PM_60
-      - _CN_wmt(4.2)PM_61
-      - _CN_wmt(4.2)PM_62
-      - _CN_wmt(4.2)PM_63
-      - _CN_wmt(4.2)PM_64
-      - _CN_wmt(4.2)PM_65
-      - _CN_wmt(4.2)PM_66
-      - _CN_wmt(4.2)PM_67
-      - _CN_wmt(4.2)PM_68
-      - _CN_wmt(4.2)PM_69
-      - _CN_wmt(4.2)PM_70
-      - _CN_wmt(4.2)PM_71
-      - _CN_wmt(4.2)PM_72
-      - _CN_wmt(4.2)PM_73
-      - _CN_wmt(4.2)PM_74
-      - _CN_wmt(4.2)PM_75
-      - _CN_wmt(4.2)PM_76
-      - _CN_wmt(4.2)PM_77
-      - _CN_wmt(4.2)PM_78
-      - _CN_wmt(4.2)PM_79
-      - _CN_wmt(4.2)PM_80
-      - _CN_wmt(4.2)PM_81
-      - _CN_wmt(4.2)PM_82
-      - _CN_wmt(4.2)PM_83
-      - _CN_wmt(4.2)PM_84
-      - _CN_wmt(4.2)PM_85
-      - _CN_wmt(4.2)PM_86
-      - _CN_wmt(4.2)PM_87
-      - _CN_wmt(4.2)PM_88
-      - _CN_wmt(4.2)PM_89
-      - _CN_wmt(4.2)PM_90
-      - _CN_wmt(4.2)PM_91
-      - _CN_wmt(4.2)PM_92
-      - _CN_wmt(4.2)PM_93
-      - _CN_wmt(4.2)PM_94
-      - _CN_wmt(4.2)PM_95
-      - _CN_wmt(4.2)PM_96
-      - _CN_wmt(4.2)PM_97
-      - _CN_wmt(4.2)PM_98
-      - _CN_wmt(4.2)PM_99
-      - _CN_wmt(4.2)PM_100
-      - _CN_wmt(4.2)PM_101
-      - _CN_wmt(4.2)PM_102
-      - _CN_wmt(4.2)PM_103
-      - _CN_wmt(4.2)PM_104
-      - _CN_wmt(4.2)PM_105
-      - _CN_wmt(4.2)PM_106
-      - _CN_wmt(4.2)PM_107
-      - _CN_wmt(4.2)PM_108
-      - _CN_wmt(4.2)PM_109
-      - _CN_wmt(4.2)PM_110
-      - _CN_wmt(4.2)PM_111
-      - _CN_wmt(4.2)PM_112
-      - _CN_wmt(4.2)PM_113
-      - _CN_wmt(4.2)PM_114
-      - _CN_wmt(4.2)PM_115
-      - _CN_wmt(4.2)PM_116
-      - _CN_wmt(4.2)PM_117
-      - _CN_wmt(4.2)PM_118
-      - _CN_wmt(4.2)PM_119
-      - _CN_wmt(4.2)PM_120
-      - _CN_wmt(4.2)PM_121
-      - _CN_wmt(4.2)PM_122
-      - _CN_wmt(4.2)PM_123
-      - _CN_wmt(4.2)PM_124
-      - _CN_wmt(4.2)PM_125
-      - _CN_wmt(4.2)PM_126
-      - _CN_wmt(4.2)PM_127
-      - _CN_wmt(4.2)PM_128
-      - _CN_wmt(4.2)PM_129
-      - _CN_wmt(4.2)PM_130
-      - _CN_wmt(4.2)PM_131
-      - _CN_wmt(4.2)PM_132
-      - _CN_wmt(4.2)PM_133
-      - _CN_wmt(4.2)PM_134
-      - _CN_wmt(4.2)PM_135
-      - _CN_wmt(4.2)PM_136
-      - _CN_wmt(4.2)PM_137
-      - _CN_wmt(4.2)PM_138
-      - _CN_wmt(4.2)PM_139
-      - _CN_wmt(4.2)PM_140
-      - _CN_wmt(4.2)PM_141
-      - _CN_wmt(4.2)PM_142
-      - _CN_wmt(4.2)PM_143
-      - _CN_wmt(4.2)PM_144
-      - _CN_wmt(4.2)PM_145
-      - _CN_wmt(4.2)PM_146
-      - _CN_wmt(4.2)PM_147
-      - _CN_wmt(4.2)PM_148
-      - _CN_wmt(4.2)PM_149
-      - _CN_wmt(4.2)PM_150
-      - _CN_wmt(4.2)PM_151
-      - _CN_wmt(4.2)PM_152
-      - _CN_wmt(4.2)PM_153
-      - _CN_wmt(4.2)PM_154
-      - _CN_wmt(4.2)PM_155
-      - _CN_wmt(4.2)PM_156
-      - _CN_wmt(4.2)PM_157
-      - _CN_wmt(4.2)PM_158
-      - _CN_wmt(4.2)PM_159
-      - _CN_wmt(4.2)PM_160
-      - _CN_wmt(4.2)PM_161
-      - _CN_wmt(4.2)PM_162
-      - _CN_wmt(4.2)PM_163
-      - _CN_wmt(4.2)PM_164
-      - _CN_wmt(4.2)PM_165
-      - _CN_wmt(4.2)PM_166
-      - _CN_wmt(4.2)PM_167
-      - _CN_wmt(4.2)PM_168
-      - _CN_wmt(4.2)PM_169
-      - _CN_wmt(4.2)PM_170
-      - _IN_wmt(4.2)PM_171
-      - _CN_wmt(4.2)PM_172
-      - _CN_wmt(4.2)PM_173
-      - _CN_wmt(4.2)PM_174
-      - _CN_wmt(4.2)PM_175
-      - _CN_wmt(4.2)PM_176
-      - _CN_wmt(4.2)PM_177
-      - _CN_wmt(4.2)PM_178
-      - _CN_wmt(4.2)PM_179
-      - _CN_wmt(4.2)PM_180
-      - _CN_wmt(4.2)PM_181
-      - _CN_wmt(4.2)PM_182
-      - _CN_wmt(4.2)PM_183
-      - _CN_wmt(4.2)PM_184
-      - _CN_wmt(4.2)PM_185
-      - _CN_wmt(4.2)PM_186
-      - _CN_wmt(4.2)PM_187
-      - _CN_wmt(4.2)PM_188
-      - _CN_wmt(4.2)PM_189
-      - _CN_wmt(4.2)PM_190
-      - _CN_wmt(4.2)PM_191
-      - _CN_wmt(4.2)PM_192
-      - _CN_wmt(4.2)PM_193
-      - _CN_wmt(4.2)PM_194
-      - _CN_wmt(4.2)PM_195
-      - _CN_wmt(4.2)PM_196
-      - _CN_wmt(4.2)PM_197
-      - _CN_wmt(4.2)PM_198
-      - _CN_wmt(4.2)PM_199
-      - _CN_wmt(4.2)PM_200
-      - _CN_wmt(4.2)PM_201
-      - _CN_wmt(4.2)PM_202
-      - _CN_wmt(4.2)PM_203
-      - _CN_wmt(4.2)PM_204
-      - _CN_wmt(4.2)PM_205
-      - _CN_wmt(4.2)PM_206
-      - _CN_wmt(4.2)PM_207
-      - _CN_wmt(4.2)PM_208
-      - _CN_wmt(4.2)PM_209
-      - _CN_wmt(4.2)PM_210
-      - _CN_wmt(4.2)PM_211
-      - _CN_wmt(4.2)PM_212
-      - _CN_wmt(4.2)PM_213
-      - _CN_wmt(4.2)PM_214
-      - _CN_wmt(4.2)PM_215
-      - _CN_wmt(4.2)PM_216
-      - _CN_wmt(4.2)PM_217
-      - _CN_wmt(4.2)PM_218
-      - _CN_wmt(4.2)PM_219
-      - _CN_wmt(4.2)PM_220
-      - _CN_wmt(4.2)PM_221
-      - _CN_wmt(4.2)PM_222
-      - _CN_wmt(4.2)PM_223
-      - _CN_wmt(4.2)PM_224
-      - _CN_wmt(4.2)PM_225
-      - _CN_wmt(4.2)PM_226
-      - _CN_wmt(4.2)PM_227
-      - _CN_wmt(4.2)PM_228
-      - _CN_wmt(4.2)PM_229
-      - _CN_wmt(4.2)PM_230
-      - _CN_wmt(4.2)PM_231
-      - _CN_wmt(4.2)PM_232
-      - _CN_wmt(4.2)PM_233
+      - _CN_wmt_4.4_AM_1
+      - _CN_wmt_4.4_AM_2
+      - _CN_wmt_4.4_AM_3
+      - _US_wmt_4.4_AM_4
+      - _CN_wmt_4.4_AM_5
+      - _CN_wmt_4.4_AM_6
+      - _CN_wmt_4.4_AM_7
+      - _CN_wmt_4.4_AM_8
+      - _CN_wmt_4.4_AM_9
+      - _CN_wmt_4.4_AM_10
+      - _CN_wmt_4.4_AM_11
+      - _CN_wmt_4.4_AM_12
+      - _CN_wmt_4.4_AM_13
+      - _CN_wmt_4.4_AM_14
+      - _CN_wmt_4.4_AM_15
+      - _CN_wmt_4.4_AM_16
+      - _CN_wmt_4.4_AM_17
+      - _CN_wmt_4.4_AM_18
+      - _CN_wmt_4.4_AM_19
+      - _CN_wmt_4.4_AM_20
+      - _CN_wmt_4.4_AM_21
+      - _CN_wmt_4.4_AM_22
+      - _CN_wmt_4.4_AM_23
+      - _CN_wmt_4.4_AM_24
+      - _CN_wmt_4.4_AM_25
+      - _CN_wmt_4.4_AM_26
+      - _CN_wmt_4.4_AM_27
+      - _CN_wmt_4.4_AM_28
+      - _CN_wmt_4.4_AM_29
+      - _CN_wmt_4.4_AM_30
+      - _CN_wmt_4.4_AM_31
+      - _CN_wmt_4.4_AM_32
+      - _CN_wmt_4.4_AM_33
+      - _CN_wmt_4.4_AM_34
+      - _CN_wmt_4.4_AM_35
+      - _CN_wmt_4.4_AM_36
+      - _US_wmt_4.4_AM_37
+      - _CN_wmt_4.4_AM_38
+      - _CN_wmt_4.4_AM_39
+      - _CN_wmt_4.4_AM_40
+      - _CN_wmt_4.4_AM_41
+      - _CN_wmt_4.4_AM_42
+      - _CN_wmt_4.4_AM_43
+      - _CN_wmt_4.4_AM_44
+      - _CN_wmt_4.4_AM_45
+      - _CN_wmt_4.4_AM_46
+      - _CN_wmt_4.4_AM_47
+      - _CN_wmt_4.4_AM_48
+      - _CN_wmt_4.4_AM_49
+      - _CN_wmt_4.4_AM_50
+      - _CN_wmt_4.4_AM_51
+      - _CA_wmt_4.4_AM_52
+      - _CA_wmt_4.4_AM_53
+      - _CN_wmt_4.4_AM_54
+      - _CN_wmt_4.4_AM_55
+      - _US_wmt_4.4_AM_56
+      - _CN_wmt_4.4_AM_57
+      - _CN_wmt_4.4_AM_58
+      - _CA_wmt_4.4_AM_59
+      - _US_wmt_4.4_AM_60
+      - _US_wmt_4.4_AM_61
+      - _CN_wmt_4.4_AM_62
+      - _CN_wmt_4.4_AM_63
+      - _CN_wmt_4.4_AM_64
+      - _CA_wmt_4.4_AM_65
+      - _CA_wmt_4.4_AM_66
+      - _US_wmt_4.4_AM_67
+      - _CN_wmt_4.4_AM_68
+      - _CN_wmt_4.4_AM_69
+      - _CA_wmt_4.4_AM_70
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_wmt(4.2)PM_1
-      - _CN_wmt(4.2)PM_2
-      - _CN_wmt(4.2)PM_3
-      - _CN_wmt(4.2)PM_4
-      - _CN_wmt(4.2)PM_5
-      - _CN_wmt(4.2)PM_6
-      - _CN_wmt(4.2)PM_7
-      - _CN_wmt(4.2)PM_8
-      - _CN_wmt(4.2)PM_9
-      - _CN_wmt(4.2)PM_10
-      - _CN_wmt(4.2)PM_11
-      - _CN_wmt(4.2)PM_12
-      - _CN_wmt(4.2)PM_13
-      - _CN_wmt(4.2)PM_14
-      - _CN_wmt(4.2)PM_15
-      - _CN_wmt(4.2)PM_16
-      - _CN_wmt(4.2)PM_17
-      - _CN_wmt(4.2)PM_18
-      - _CN_wmt(4.2)PM_19
-      - _CN_wmt(4.2)PM_20
-      - _CN_wmt(4.2)PM_21
-      - _CN_wmt(4.2)PM_22
-      - _CN_wmt(4.2)PM_23
-      - _CN_wmt(4.2)PM_24
-      - _CN_wmt(4.2)PM_25
-      - _CN_wmt(4.2)PM_26
-      - _CN_wmt(4.2)PM_27
-      - _CN_wmt(4.2)PM_28
-      - _CN_wmt(4.2)PM_29
-      - _CN_wmt(4.2)PM_30
-      - _CN_wmt(4.2)PM_31
-      - _CN_wmt(4.2)PM_32
-      - _CN_wmt(4.2)PM_33
-      - _CN_wmt(4.2)PM_34
-      - _CN_wmt(4.2)PM_35
-      - _CN_wmt(4.2)PM_36
-      - _CN_wmt(4.2)PM_37
-      - _CN_wmt(4.2)PM_38
-      - _CN_wmt(4.2)PM_39
-      - _CN_wmt(4.2)PM_40
-      - _CN_wmt(4.2)PM_41
-      - _CN_wmt(4.2)PM_42
-      - _CN_wmt(4.2)PM_43
-      - _CN_wmt(4.2)PM_44
-      - _CN_wmt(4.2)PM_45
-      - _CN_wmt(4.2)PM_46
-      - _CN_wmt(4.2)PM_47
-      - _CN_wmt(4.2)PM_48
-      - _CN_wmt(4.2)PM_49
-      - _CN_wmt(4.2)PM_50
-      - _CN_wmt(4.2)PM_51
-      - _CN_wmt(4.2)PM_52
-      - _CN_wmt(4.2)PM_53
-      - _CN_wmt(4.2)PM_54
-      - _CN_wmt(4.2)PM_55
-      - _CN_wmt(4.2)PM_56
-      - _CN_wmt(4.2)PM_57
-      - _CN_wmt(4.2)PM_58
-      - _CN_wmt(4.2)PM_59
-      - _CN_wmt(4.2)PM_60
-      - _CN_wmt(4.2)PM_61
-      - _CN_wmt(4.2)PM_62
-      - _CN_wmt(4.2)PM_63
-      - _CN_wmt(4.2)PM_64
-      - _CN_wmt(4.2)PM_65
-      - _CN_wmt(4.2)PM_66
-      - _CN_wmt(4.2)PM_67
-      - _CN_wmt(4.2)PM_68
-      - _CN_wmt(4.2)PM_69
-      - _CN_wmt(4.2)PM_70
-      - _CN_wmt(4.2)PM_71
-      - _CN_wmt(4.2)PM_72
-      - _CN_wmt(4.2)PM_73
-      - _CN_wmt(4.2)PM_74
-      - _CN_wmt(4.2)PM_75
-      - _CN_wmt(4.2)PM_76
-      - _CN_wmt(4.2)PM_77
-      - _CN_wmt(4.2)PM_78
-      - _CN_wmt(4.2)PM_79
-      - _CN_wmt(4.2)PM_80
-      - _CN_wmt(4.2)PM_81
-      - _CN_wmt(4.2)PM_82
-      - _CN_wmt(4.2)PM_83
-      - _CN_wmt(4.2)PM_84
-      - _CN_wmt(4.2)PM_85
-      - _CN_wmt(4.2)PM_86
-      - _CN_wmt(4.2)PM_87
-      - _CN_wmt(4.2)PM_88
-      - _CN_wmt(4.2)PM_89
-      - _CN_wmt(4.2)PM_90
-      - _CN_wmt(4.2)PM_91
-      - _CN_wmt(4.2)PM_92
-      - _CN_wmt(4.2)PM_93
-      - _CN_wmt(4.2)PM_94
-      - _CN_wmt(4.2)PM_95
-      - _CN_wmt(4.2)PM_96
-      - _CN_wmt(4.2)PM_97
-      - _CN_wmt(4.2)PM_98
-      - _CN_wmt(4.2)PM_99
-      - _CN_wmt(4.2)PM_100
-      - _CN_wmt(4.2)PM_101
-      - _CN_wmt(4.2)PM_102
-      - _CN_wmt(4.2)PM_103
-      - _CN_wmt(4.2)PM_104
-      - _CN_wmt(4.2)PM_105
-      - _CN_wmt(4.2)PM_106
-      - _CN_wmt(4.2)PM_107
-      - _CN_wmt(4.2)PM_108
-      - _CN_wmt(4.2)PM_109
-      - _CN_wmt(4.2)PM_110
-      - _CN_wmt(4.2)PM_111
-      - _CN_wmt(4.2)PM_112
-      - _CN_wmt(4.2)PM_113
-      - _CN_wmt(4.2)PM_114
-      - _CN_wmt(4.2)PM_115
-      - _CN_wmt(4.2)PM_116
-      - _CN_wmt(4.2)PM_117
-      - _CN_wmt(4.2)PM_118
-      - _CN_wmt(4.2)PM_119
-      - _CN_wmt(4.2)PM_120
-      - _CN_wmt(4.2)PM_121
-      - _CN_wmt(4.2)PM_122
-      - _CN_wmt(4.2)PM_123
-      - _CN_wmt(4.2)PM_124
-      - _CN_wmt(4.2)PM_125
-      - _CN_wmt(4.2)PM_126
-      - _CN_wmt(4.2)PM_127
-      - _CN_wmt(4.2)PM_128
-      - _CN_wmt(4.2)PM_129
-      - _CN_wmt(4.2)PM_130
-      - _CN_wmt(4.2)PM_131
-      - _CN_wmt(4.2)PM_132
-      - _CN_wmt(4.2)PM_133
-      - _CN_wmt(4.2)PM_134
-      - _CN_wmt(4.2)PM_135
-      - _CN_wmt(4.2)PM_136
-      - _CN_wmt(4.2)PM_137
-      - _CN_wmt(4.2)PM_138
-      - _CN_wmt(4.2)PM_139
-      - _CN_wmt(4.2)PM_140
-      - _CN_wmt(4.2)PM_141
-      - _CN_wmt(4.2)PM_142
-      - _CN_wmt(4.2)PM_143
-      - _CN_wmt(4.2)PM_144
-      - _CN_wmt(4.2)PM_145
-      - _CN_wmt(4.2)PM_146
-      - _CN_wmt(4.2)PM_147
-      - _CN_wmt(4.2)PM_148
-      - _CN_wmt(4.2)PM_149
-      - _CN_wmt(4.2)PM_150
-      - _CN_wmt(4.2)PM_151
-      - _CN_wmt(4.2)PM_152
-      - _CN_wmt(4.2)PM_153
-      - _CN_wmt(4.2)PM_154
-      - _CN_wmt(4.2)PM_155
-      - _CN_wmt(4.2)PM_156
-      - _CN_wmt(4.2)PM_157
-      - _CN_wmt(4.2)PM_158
-      - _CN_wmt(4.2)PM_159
-      - _CN_wmt(4.2)PM_160
-      - _CN_wmt(4.2)PM_161
-      - _CN_wmt(4.2)PM_162
-      - _CN_wmt(4.2)PM_163
-      - _CN_wmt(4.2)PM_164
-      - _CN_wmt(4.2)PM_165
-      - _CN_wmt(4.2)PM_166
-      - _CN_wmt(4.2)PM_167
-      - _CN_wmt(4.2)PM_168
-      - _CN_wmt(4.2)PM_169
-      - _CN_wmt(4.2)PM_170
-      - _IN_wmt(4.2)PM_171
-      - _CN_wmt(4.2)PM_172
-      - _CN_wmt(4.2)PM_173
-      - _CN_wmt(4.2)PM_174
-      - _CN_wmt(4.2)PM_175
-      - _CN_wmt(4.2)PM_176
-      - _CN_wmt(4.2)PM_177
-      - _CN_wmt(4.2)PM_178
-      - _CN_wmt(4.2)PM_179
-      - _CN_wmt(4.2)PM_180
-      - _CN_wmt(4.2)PM_181
-      - _CN_wmt(4.2)PM_182
-      - _CN_wmt(4.2)PM_183
-      - _CN_wmt(4.2)PM_184
-      - _CN_wmt(4.2)PM_185
-      - _CN_wmt(4.2)PM_186
-      - _CN_wmt(4.2)PM_187
-      - _CN_wmt(4.2)PM_188
-      - _CN_wmt(4.2)PM_189
-      - _CN_wmt(4.2)PM_190
-      - _CN_wmt(4.2)PM_191
-      - _CN_wmt(4.2)PM_192
-      - _CN_wmt(4.2)PM_193
-      - _CN_wmt(4.2)PM_194
-      - _CN_wmt(4.2)PM_195
-      - _CN_wmt(4.2)PM_196
-      - _CN_wmt(4.2)PM_197
-      - _CN_wmt(4.2)PM_198
-      - _CN_wmt(4.2)PM_199
-      - _CN_wmt(4.2)PM_200
-      - _CN_wmt(4.2)PM_201
-      - _CN_wmt(4.2)PM_202
-      - _CN_wmt(4.2)PM_203
-      - _CN_wmt(4.2)PM_204
-      - _CN_wmt(4.2)PM_205
-      - _CN_wmt(4.2)PM_206
-      - _CN_wmt(4.2)PM_207
-      - _CN_wmt(4.2)PM_208
-      - _CN_wmt(4.2)PM_209
-      - _CN_wmt(4.2)PM_210
-      - _CN_wmt(4.2)PM_211
-      - _CN_wmt(4.2)PM_212
-      - _CN_wmt(4.2)PM_213
-      - _CN_wmt(4.2)PM_214
-      - _CN_wmt(4.2)PM_215
-      - _CN_wmt(4.2)PM_216
-      - _CN_wmt(4.2)PM_217
-      - _CN_wmt(4.2)PM_218
-      - _CN_wmt(4.2)PM_219
-      - _CN_wmt(4.2)PM_220
-      - _CN_wmt(4.2)PM_221
-      - _CN_wmt(4.2)PM_222
-      - _CN_wmt(4.2)PM_223
-      - _CN_wmt(4.2)PM_224
-      - _CN_wmt(4.2)PM_225
-      - _CN_wmt(4.2)PM_226
-      - _CN_wmt(4.2)PM_227
-      - _CN_wmt(4.2)PM_228
-      - _CN_wmt(4.2)PM_229
-      - _CN_wmt(4.2)PM_230
-      - _CN_wmt(4.2)PM_231
-      - _CN_wmt(4.2)PM_232
-      - _CN_wmt(4.2)PM_233
+      - _CN_wmt_4.4_AM_1
+      - _CN_wmt_4.4_AM_2
+      - _CN_wmt_4.4_AM_3
+      - _US_wmt_4.4_AM_4
+      - _CN_wmt_4.4_AM_5
+      - _CN_wmt_4.4_AM_6
+      - _CN_wmt_4.4_AM_7
+      - _CN_wmt_4.4_AM_8
+      - _CN_wmt_4.4_AM_9
+      - _CN_wmt_4.4_AM_10
+      - _CN_wmt_4.4_AM_11
+      - _CN_wmt_4.4_AM_12
+      - _CN_wmt_4.4_AM_13
+      - _CN_wmt_4.4_AM_14
+      - _CN_wmt_4.4_AM_15
+      - _CN_wmt_4.4_AM_16
+      - _CN_wmt_4.4_AM_17
+      - _CN_wmt_4.4_AM_18
+      - _CN_wmt_4.4_AM_19
+      - _CN_wmt_4.4_AM_20
+      - _CN_wmt_4.4_AM_21
+      - _CN_wmt_4.4_AM_22
+      - _CN_wmt_4.4_AM_23
+      - _CN_wmt_4.4_AM_24
+      - _CN_wmt_4.4_AM_25
+      - _CN_wmt_4.4_AM_26
+      - _CN_wmt_4.4_AM_27
+      - _CN_wmt_4.4_AM_28
+      - _CN_wmt_4.4_AM_29
+      - _CN_wmt_4.4_AM_30
+      - _CN_wmt_4.4_AM_31
+      - _CN_wmt_4.4_AM_32
+      - _CN_wmt_4.4_AM_33
+      - _CN_wmt_4.4_AM_34
+      - _CN_wmt_4.4_AM_35
+      - _CN_wmt_4.4_AM_36
+      - _US_wmt_4.4_AM_37
+      - _CN_wmt_4.4_AM_38
+      - _CN_wmt_4.4_AM_39
+      - _CN_wmt_4.4_AM_40
+      - _CN_wmt_4.4_AM_41
+      - _CN_wmt_4.4_AM_42
+      - _CN_wmt_4.4_AM_43
+      - _CN_wmt_4.4_AM_44
+      - _CN_wmt_4.4_AM_45
+      - _CN_wmt_4.4_AM_46
+      - _CN_wmt_4.4_AM_47
+      - _CN_wmt_4.4_AM_48
+      - _CN_wmt_4.4_AM_49
+      - _CN_wmt_4.4_AM_50
+      - _CN_wmt_4.4_AM_51
+      - _CA_wmt_4.4_AM_52
+      - _CA_wmt_4.4_AM_53
+      - _CN_wmt_4.4_AM_54
+      - _CN_wmt_4.4_AM_55
+      - _US_wmt_4.4_AM_56
+      - _CN_wmt_4.4_AM_57
+      - _CN_wmt_4.4_AM_58
+      - _CA_wmt_4.4_AM_59
+      - _US_wmt_4.4_AM_60
+      - _US_wmt_4.4_AM_61
+      - _CN_wmt_4.4_AM_62
+      - _CN_wmt_4.4_AM_63
+      - _CN_wmt_4.4_AM_64
+      - _CA_wmt_4.4_AM_65
+      - _CA_wmt_4.4_AM_66
+      - _US_wmt_4.4_AM_67
+      - _CN_wmt_4.4_AM_68
+      - _CN_wmt_4.4_AM_69
+      - _CA_wmt_4.4_AM_70
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_wmt(4.2)PM_1
-      - _CN_wmt(4.2)PM_2
-      - _CN_wmt(4.2)PM_3
-      - _CN_wmt(4.2)PM_4
-      - _CN_wmt(4.2)PM_5
-      - _CN_wmt(4.2)PM_6
-      - _CN_wmt(4.2)PM_7
-      - _CN_wmt(4.2)PM_8
-      - _CN_wmt(4.2)PM_9
-      - _CN_wmt(4.2)PM_10
-      - _CN_wmt(4.2)PM_11
-      - _CN_wmt(4.2)PM_12
-      - _CN_wmt(4.2)PM_13
-      - _CN_wmt(4.2)PM_14
-      - _CN_wmt(4.2)PM_15
-      - _CN_wmt(4.2)PM_16
-      - _CN_wmt(4.2)PM_17
-      - _CN_wmt(4.2)PM_18
-      - _CN_wmt(4.2)PM_19
-      - _CN_wmt(4.2)PM_20
-      - _CN_wmt(4.2)PM_21
-      - _CN_wmt(4.2)PM_22
-      - _CN_wmt(4.2)PM_23
-      - _CN_wmt(4.2)PM_24
-      - _CN_wmt(4.2)PM_25
-      - _CN_wmt(4.2)PM_26
-      - _CN_wmt(4.2)PM_27
-      - _CN_wmt(4.2)PM_28
-      - _CN_wmt(4.2)PM_29
-      - _CN_wmt(4.2)PM_30
-      - _CN_wmt(4.2)PM_31
-      - _CN_wmt(4.2)PM_32
-      - _CN_wmt(4.2)PM_33
-      - _CN_wmt(4.2)PM_34
-      - _CN_wmt(4.2)PM_35
-      - _CN_wmt(4.2)PM_36
-      - _CN_wmt(4.2)PM_37
-      - _CN_wmt(4.2)PM_38
-      - _CN_wmt(4.2)PM_39
-      - _CN_wmt(4.2)PM_40
-      - _CN_wmt(4.2)PM_41
-      - _CN_wmt(4.2)PM_42
-      - _CN_wmt(4.2)PM_43
-      - _CN_wmt(4.2)PM_44
-      - _CN_wmt(4.2)PM_45
-      - _CN_wmt(4.2)PM_46
-      - _CN_wmt(4.2)PM_47
-      - _CN_wmt(4.2)PM_48
-      - _CN_wmt(4.2)PM_49
-      - _CN_wmt(4.2)PM_50
-      - _CN_wmt(4.2)PM_51
-      - _CN_wmt(4.2)PM_52
-      - _CN_wmt(4.2)PM_53
-      - _CN_wmt(4.2)PM_54
-      - _CN_wmt(4.2)PM_55
-      - _CN_wmt(4.2)PM_56
-      - _CN_wmt(4.2)PM_57
-      - _CN_wmt(4.2)PM_58
-      - _CN_wmt(4.2)PM_59
-      - _CN_wmt(4.2)PM_60
-      - _CN_wmt(4.2)PM_61
-      - _CN_wmt(4.2)PM_62
-      - _CN_wmt(4.2)PM_63
-      - _CN_wmt(4.2)PM_64
-      - _CN_wmt(4.2)PM_65
-      - _CN_wmt(4.2)PM_66
-      - _CN_wmt(4.2)PM_67
-      - _CN_wmt(4.2)PM_68
-      - _CN_wmt(4.2)PM_69
-      - _CN_wmt(4.2)PM_70
-      - _CN_wmt(4.2)PM_71
-      - _CN_wmt(4.2)PM_72
-      - _CN_wmt(4.2)PM_73
-      - _CN_wmt(4.2)PM_74
-      - _CN_wmt(4.2)PM_75
-      - _CN_wmt(4.2)PM_76
-      - _CN_wmt(4.2)PM_77
-      - _CN_wmt(4.2)PM_78
-      - _CN_wmt(4.2)PM_79
-      - _CN_wmt(4.2)PM_80
-      - _CN_wmt(4.2)PM_81
-      - _CN_wmt(4.2)PM_82
-      - _CN_wmt(4.2)PM_83
-      - _CN_wmt(4.2)PM_84
-      - _CN_wmt(4.2)PM_85
-      - _CN_wmt(4.2)PM_86
-      - _CN_wmt(4.2)PM_87
-      - _CN_wmt(4.2)PM_88
-      - _CN_wmt(4.2)PM_89
-      - _CN_wmt(4.2)PM_90
-      - _CN_wmt(4.2)PM_91
-      - _CN_wmt(4.2)PM_92
-      - _CN_wmt(4.2)PM_93
-      - _CN_wmt(4.2)PM_94
-      - _CN_wmt(4.2)PM_95
-      - _CN_wmt(4.2)PM_96
-      - _CN_wmt(4.2)PM_97
-      - _CN_wmt(4.2)PM_98
-      - _CN_wmt(4.2)PM_99
-      - _CN_wmt(4.2)PM_100
-      - _CN_wmt(4.2)PM_101
-      - _CN_wmt(4.2)PM_102
-      - _CN_wmt(4.2)PM_103
-      - _CN_wmt(4.2)PM_104
-      - _CN_wmt(4.2)PM_105
-      - _CN_wmt(4.2)PM_106
-      - _CN_wmt(4.2)PM_107
-      - _CN_wmt(4.2)PM_108
-      - _CN_wmt(4.2)PM_109
-      - _CN_wmt(4.2)PM_110
-      - _CN_wmt(4.2)PM_111
-      - _CN_wmt(4.2)PM_112
-      - _CN_wmt(4.2)PM_113
-      - _CN_wmt(4.2)PM_114
-      - _CN_wmt(4.2)PM_115
-      - _CN_wmt(4.2)PM_116
-      - _CN_wmt(4.2)PM_117
-      - _CN_wmt(4.2)PM_118
-      - _CN_wmt(4.2)PM_119
-      - _CN_wmt(4.2)PM_120
-      - _CN_wmt(4.2)PM_121
-      - _CN_wmt(4.2)PM_122
-      - _CN_wmt(4.2)PM_123
-      - _CN_wmt(4.2)PM_124
-      - _CN_wmt(4.2)PM_125
-      - _CN_wmt(4.2)PM_126
-      - _CN_wmt(4.2)PM_127
-      - _CN_wmt(4.2)PM_128
-      - _CN_wmt(4.2)PM_129
-      - _CN_wmt(4.2)PM_130
-      - _CN_wmt(4.2)PM_131
-      - _CN_wmt(4.2)PM_132
-      - _CN_wmt(4.2)PM_133
-      - _CN_wmt(4.2)PM_134
-      - _CN_wmt(4.2)PM_135
-      - _CN_wmt(4.2)PM_136
-      - _CN_wmt(4.2)PM_137
-      - _CN_wmt(4.2)PM_138
-      - _CN_wmt(4.2)PM_139
-      - _CN_wmt(4.2)PM_140
-      - _CN_wmt(4.2)PM_141
-      - _CN_wmt(4.2)PM_142
-      - _CN_wmt(4.2)PM_143
-      - _CN_wmt(4.2)PM_144
-      - _CN_wmt(4.2)PM_145
-      - _CN_wmt(4.2)PM_146
-      - _CN_wmt(4.2)PM_147
-      - _CN_wmt(4.2)PM_148
-      - _CN_wmt(4.2)PM_149
-      - _CN_wmt(4.2)PM_150
-      - _CN_wmt(4.2)PM_151
-      - _CN_wmt(4.2)PM_152
-      - _CN_wmt(4.2)PM_153
-      - _CN_wmt(4.2)PM_154
-      - _CN_wmt(4.2)PM_155
-      - _CN_wmt(4.2)PM_156
-      - _CN_wmt(4.2)PM_157
-      - _CN_wmt(4.2)PM_158
-      - _CN_wmt(4.2)PM_159
-      - _CN_wmt(4.2)PM_160
-      - _CN_wmt(4.2)PM_161
-      - _CN_wmt(4.2)PM_162
-      - _CN_wmt(4.2)PM_163
-      - _CN_wmt(4.2)PM_164
-      - _CN_wmt(4.2)PM_165
-      - _CN_wmt(4.2)PM_166
-      - _CN_wmt(4.2)PM_167
-      - _CN_wmt(4.2)PM_168
-      - _CN_wmt(4.2)PM_169
-      - _CN_wmt(4.2)PM_170
-      - _IN_wmt(4.2)PM_171
-      - _CN_wmt(4.2)PM_172
-      - _CN_wmt(4.2)PM_173
-      - _CN_wmt(4.2)PM_174
-      - _CN_wmt(4.2)PM_175
-      - _CN_wmt(4.2)PM_176
-      - _CN_wmt(4.2)PM_177
-      - _CN_wmt(4.2)PM_178
-      - _CN_wmt(4.2)PM_179
-      - _CN_wmt(4.2)PM_180
-      - _CN_wmt(4.2)PM_181
-      - _CN_wmt(4.2)PM_182
-      - _CN_wmt(4.2)PM_183
-      - _CN_wmt(4.2)PM_184
-      - _CN_wmt(4.2)PM_185
-      - _CN_wmt(4.2)PM_186
-      - _CN_wmt(4.2)PM_187
-      - _CN_wmt(4.2)PM_188
-      - _CN_wmt(4.2)PM_189
-      - _CN_wmt(4.2)PM_190
-      - _CN_wmt(4.2)PM_191
-      - _CN_wmt(4.2)PM_192
-      - _CN_wmt(4.2)PM_193
-      - _CN_wmt(4.2)PM_194
-      - _CN_wmt(4.2)PM_195
-      - _CN_wmt(4.2)PM_196
-      - _CN_wmt(4.2)PM_197
-      - _CN_wmt(4.2)PM_198
-      - _CN_wmt(4.2)PM_199
-      - _CN_wmt(4.2)PM_200
-      - _CN_wmt(4.2)PM_201
-      - _CN_wmt(4.2)PM_202
-      - _CN_wmt(4.2)PM_203
-      - _CN_wmt(4.2)PM_204
-      - _CN_wmt(4.2)PM_205
-      - _CN_wmt(4.2)PM_206
-      - _CN_wmt(4.2)PM_207
-      - _CN_wmt(4.2)PM_208
-      - _CN_wmt(4.2)PM_209
-      - _CN_wmt(4.2)PM_210
-      - _CN_wmt(4.2)PM_211
-      - _CN_wmt(4.2)PM_212
-      - _CN_wmt(4.2)PM_213
-      - _CN_wmt(4.2)PM_214
-      - _CN_wmt(4.2)PM_215
-      - _CN_wmt(4.2)PM_216
-      - _CN_wmt(4.2)PM_217
-      - _CN_wmt(4.2)PM_218
-      - _CN_wmt(4.2)PM_219
-      - _CN_wmt(4.2)PM_220
-      - _CN_wmt(4.2)PM_221
-      - _CN_wmt(4.2)PM_222
-      - _CN_wmt(4.2)PM_223
-      - _CN_wmt(4.2)PM_224
-      - _CN_wmt(4.2)PM_225
-      - _CN_wmt(4.2)PM_226
-      - _CN_wmt(4.2)PM_227
-      - _CN_wmt(4.2)PM_228
-      - _CN_wmt(4.2)PM_229
-      - _CN_wmt(4.2)PM_230
-      - _CN_wmt(4.2)PM_231
-      - _CN_wmt(4.2)PM_232
-      - _CN_wmt(4.2)PM_233
+      - _CN_wmt_4.4_AM_1
+      - _CN_wmt_4.4_AM_2
+      - _CN_wmt_4.4_AM_3
+      - _US_wmt_4.4_AM_4
+      - _CN_wmt_4.4_AM_5
+      - _CN_wmt_4.4_AM_6
+      - _CN_wmt_4.4_AM_7
+      - _CN_wmt_4.4_AM_8
+      - _CN_wmt_4.4_AM_9
+      - _CN_wmt_4.4_AM_10
+      - _CN_wmt_4.4_AM_11
+      - _CN_wmt_4.4_AM_12
+      - _CN_wmt_4.4_AM_13
+      - _CN_wmt_4.4_AM_14
+      - _CN_wmt_4.4_AM_15
+      - _CN_wmt_4.4_AM_16
+      - _CN_wmt_4.4_AM_17
+      - _CN_wmt_4.4_AM_18
+      - _CN_wmt_4.4_AM_19
+      - _CN_wmt_4.4_AM_20
+      - _CN_wmt_4.4_AM_21
+      - _CN_wmt_4.4_AM_22
+      - _CN_wmt_4.4_AM_23
+      - _CN_wmt_4.4_AM_24
+      - _CN_wmt_4.4_AM_25
+      - _CN_wmt_4.4_AM_26
+      - _CN_wmt_4.4_AM_27
+      - _CN_wmt_4.4_AM_28
+      - _CN_wmt_4.4_AM_29
+      - _CN_wmt_4.4_AM_30
+      - _CN_wmt_4.4_AM_31
+      - _CN_wmt_4.4_AM_32
+      - _CN_wmt_4.4_AM_33
+      - _CN_wmt_4.4_AM_34
+      - _CN_wmt_4.4_AM_35
+      - _CN_wmt_4.4_AM_36
+      - _US_wmt_4.4_AM_37
+      - _CN_wmt_4.4_AM_38
+      - _CN_wmt_4.4_AM_39
+      - _CN_wmt_4.4_AM_40
+      - _CN_wmt_4.4_AM_41
+      - _CN_wmt_4.4_AM_42
+      - _CN_wmt_4.4_AM_43
+      - _CN_wmt_4.4_AM_44
+      - _CN_wmt_4.4_AM_45
+      - _CN_wmt_4.4_AM_46
+      - _CN_wmt_4.4_AM_47
+      - _CN_wmt_4.4_AM_48
+      - _CN_wmt_4.4_AM_49
+      - _CN_wmt_4.4_AM_50
+      - _CN_wmt_4.4_AM_51
+      - _CA_wmt_4.4_AM_52
+      - _CA_wmt_4.4_AM_53
+      - _CN_wmt_4.4_AM_54
+      - _CN_wmt_4.4_AM_55
+      - _US_wmt_4.4_AM_56
+      - _CN_wmt_4.4_AM_57
+      - _CN_wmt_4.4_AM_58
+      - _CA_wmt_4.4_AM_59
+      - _US_wmt_4.4_AM_60
+      - _US_wmt_4.4_AM_61
+      - _CN_wmt_4.4_AM_62
+      - _CN_wmt_4.4_AM_63
+      - _CN_wmt_4.4_AM_64
+      - _CA_wmt_4.4_AM_65
+      - _CA_wmt_4.4_AM_66
+      - _US_wmt_4.4_AM_67
+      - _CN_wmt_4.4_AM_68
+      - _CN_wmt_4.4_AM_69
+      - _CA_wmt_4.4_AM_70
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1940,239 +636,76 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_wmt(4.2)PM_1
-      - _CN_wmt(4.2)PM_2
-      - _CN_wmt(4.2)PM_3
-      - _CN_wmt(4.2)PM_4
-      - _CN_wmt(4.2)PM_5
-      - _CN_wmt(4.2)PM_6
-      - _CN_wmt(4.2)PM_7
-      - _CN_wmt(4.2)PM_8
-      - _CN_wmt(4.2)PM_9
-      - _CN_wmt(4.2)PM_10
-      - _CN_wmt(4.2)PM_11
-      - _CN_wmt(4.2)PM_12
-      - _CN_wmt(4.2)PM_13
-      - _CN_wmt(4.2)PM_14
-      - _CN_wmt(4.2)PM_15
-      - _CN_wmt(4.2)PM_16
-      - _CN_wmt(4.2)PM_17
-      - _CN_wmt(4.2)PM_18
-      - _CN_wmt(4.2)PM_19
-      - _CN_wmt(4.2)PM_20
-      - _CN_wmt(4.2)PM_21
-      - _CN_wmt(4.2)PM_22
-      - _CN_wmt(4.2)PM_23
-      - _CN_wmt(4.2)PM_24
-      - _CN_wmt(4.2)PM_25
-      - _CN_wmt(4.2)PM_26
-      - _CN_wmt(4.2)PM_27
-      - _CN_wmt(4.2)PM_28
-      - _CN_wmt(4.2)PM_29
-      - _CN_wmt(4.2)PM_30
-      - _CN_wmt(4.2)PM_31
-      - _CN_wmt(4.2)PM_32
-      - _CN_wmt(4.2)PM_33
-      - _CN_wmt(4.2)PM_34
-      - _CN_wmt(4.2)PM_35
-      - _CN_wmt(4.2)PM_36
-      - _CN_wmt(4.2)PM_37
-      - _CN_wmt(4.2)PM_38
-      - _CN_wmt(4.2)PM_39
-      - _CN_wmt(4.2)PM_40
-      - _CN_wmt(4.2)PM_41
-      - _CN_wmt(4.2)PM_42
-      - _CN_wmt(4.2)PM_43
-      - _CN_wmt(4.2)PM_44
-      - _CN_wmt(4.2)PM_45
-      - _CN_wmt(4.2)PM_46
-      - _CN_wmt(4.2)PM_47
-      - _CN_wmt(4.2)PM_48
-      - _CN_wmt(4.2)PM_49
-      - _CN_wmt(4.2)PM_50
-      - _CN_wmt(4.2)PM_51
-      - _CN_wmt(4.2)PM_52
-      - _CN_wmt(4.2)PM_53
-      - _CN_wmt(4.2)PM_54
-      - _CN_wmt(4.2)PM_55
-      - _CN_wmt(4.2)PM_56
-      - _CN_wmt(4.2)PM_57
-      - _CN_wmt(4.2)PM_58
-      - _CN_wmt(4.2)PM_59
-      - _CN_wmt(4.2)PM_60
-      - _CN_wmt(4.2)PM_61
-      - _CN_wmt(4.2)PM_62
-      - _CN_wmt(4.2)PM_63
-      - _CN_wmt(4.2)PM_64
-      - _CN_wmt(4.2)PM_65
-      - _CN_wmt(4.2)PM_66
-      - _CN_wmt(4.2)PM_67
-      - _CN_wmt(4.2)PM_68
-      - _CN_wmt(4.2)PM_69
-      - _CN_wmt(4.2)PM_70
-      - _CN_wmt(4.2)PM_71
-      - _CN_wmt(4.2)PM_72
-      - _CN_wmt(4.2)PM_73
-      - _CN_wmt(4.2)PM_74
-      - _CN_wmt(4.2)PM_75
-      - _CN_wmt(4.2)PM_76
-      - _CN_wmt(4.2)PM_77
-      - _CN_wmt(4.2)PM_78
-      - _CN_wmt(4.2)PM_79
-      - _CN_wmt(4.2)PM_80
-      - _CN_wmt(4.2)PM_81
-      - _CN_wmt(4.2)PM_82
-      - _CN_wmt(4.2)PM_83
-      - _CN_wmt(4.2)PM_84
-      - _CN_wmt(4.2)PM_85
-      - _CN_wmt(4.2)PM_86
-      - _CN_wmt(4.2)PM_87
-      - _CN_wmt(4.2)PM_88
-      - _CN_wmt(4.2)PM_89
-      - _CN_wmt(4.2)PM_90
-      - _CN_wmt(4.2)PM_91
-      - _CN_wmt(4.2)PM_92
-      - _CN_wmt(4.2)PM_93
-      - _CN_wmt(4.2)PM_94
-      - _CN_wmt(4.2)PM_95
-      - _CN_wmt(4.2)PM_96
-      - _CN_wmt(4.2)PM_97
-      - _CN_wmt(4.2)PM_98
-      - _CN_wmt(4.2)PM_99
-      - _CN_wmt(4.2)PM_100
-      - _CN_wmt(4.2)PM_101
-      - _CN_wmt(4.2)PM_102
-      - _CN_wmt(4.2)PM_103
-      - _CN_wmt(4.2)PM_104
-      - _CN_wmt(4.2)PM_105
-      - _CN_wmt(4.2)PM_106
-      - _CN_wmt(4.2)PM_107
-      - _CN_wmt(4.2)PM_108
-      - _CN_wmt(4.2)PM_109
-      - _CN_wmt(4.2)PM_110
-      - _CN_wmt(4.2)PM_111
-      - _CN_wmt(4.2)PM_112
-      - _CN_wmt(4.2)PM_113
-      - _CN_wmt(4.2)PM_114
-      - _CN_wmt(4.2)PM_115
-      - _CN_wmt(4.2)PM_116
-      - _CN_wmt(4.2)PM_117
-      - _CN_wmt(4.2)PM_118
-      - _CN_wmt(4.2)PM_119
-      - _CN_wmt(4.2)PM_120
-      - _CN_wmt(4.2)PM_121
-      - _CN_wmt(4.2)PM_122
-      - _CN_wmt(4.2)PM_123
-      - _CN_wmt(4.2)PM_124
-      - _CN_wmt(4.2)PM_125
-      - _CN_wmt(4.2)PM_126
-      - _CN_wmt(4.2)PM_127
-      - _CN_wmt(4.2)PM_128
-      - _CN_wmt(4.2)PM_129
-      - _CN_wmt(4.2)PM_130
-      - _CN_wmt(4.2)PM_131
-      - _CN_wmt(4.2)PM_132
-      - _CN_wmt(4.2)PM_133
-      - _CN_wmt(4.2)PM_134
-      - _CN_wmt(4.2)PM_135
-      - _CN_wmt(4.2)PM_136
-      - _CN_wmt(4.2)PM_137
-      - _CN_wmt(4.2)PM_138
-      - _CN_wmt(4.2)PM_139
-      - _CN_wmt(4.2)PM_140
-      - _CN_wmt(4.2)PM_141
-      - _CN_wmt(4.2)PM_142
-      - _CN_wmt(4.2)PM_143
-      - _CN_wmt(4.2)PM_144
-      - _CN_wmt(4.2)PM_145
-      - _CN_wmt(4.2)PM_146
-      - _CN_wmt(4.2)PM_147
-      - _CN_wmt(4.2)PM_148
-      - _CN_wmt(4.2)PM_149
-      - _CN_wmt(4.2)PM_150
-      - _CN_wmt(4.2)PM_151
-      - _CN_wmt(4.2)PM_152
-      - _CN_wmt(4.2)PM_153
-      - _CN_wmt(4.2)PM_154
-      - _CN_wmt(4.2)PM_155
-      - _CN_wmt(4.2)PM_156
-      - _CN_wmt(4.2)PM_157
-      - _CN_wmt(4.2)PM_158
-      - _CN_wmt(4.2)PM_159
-      - _CN_wmt(4.2)PM_160
-      - _CN_wmt(4.2)PM_161
-      - _CN_wmt(4.2)PM_162
-      - _CN_wmt(4.2)PM_163
-      - _CN_wmt(4.2)PM_164
-      - _CN_wmt(4.2)PM_165
-      - _CN_wmt(4.2)PM_166
-      - _CN_wmt(4.2)PM_167
-      - _CN_wmt(4.2)PM_168
-      - _CN_wmt(4.2)PM_169
-      - _CN_wmt(4.2)PM_170
-      - _IN_wmt(4.2)PM_171
-      - _CN_wmt(4.2)PM_172
-      - _CN_wmt(4.2)PM_173
-      - _CN_wmt(4.2)PM_174
-      - _CN_wmt(4.2)PM_175
-      - _CN_wmt(4.2)PM_176
-      - _CN_wmt(4.2)PM_177
-      - _CN_wmt(4.2)PM_178
-      - _CN_wmt(4.2)PM_179
-      - _CN_wmt(4.2)PM_180
-      - _CN_wmt(4.2)PM_181
-      - _CN_wmt(4.2)PM_182
-      - _CN_wmt(4.2)PM_183
-      - _CN_wmt(4.2)PM_184
-      - _CN_wmt(4.2)PM_185
-      - _CN_wmt(4.2)PM_186
-      - _CN_wmt(4.2)PM_187
-      - _CN_wmt(4.2)PM_188
-      - _CN_wmt(4.2)PM_189
-      - _CN_wmt(4.2)PM_190
-      - _CN_wmt(4.2)PM_191
-      - _CN_wmt(4.2)PM_192
-      - _CN_wmt(4.2)PM_193
-      - _CN_wmt(4.2)PM_194
-      - _CN_wmt(4.2)PM_195
-      - _CN_wmt(4.2)PM_196
-      - _CN_wmt(4.2)PM_197
-      - _CN_wmt(4.2)PM_198
-      - _CN_wmt(4.2)PM_199
-      - _CN_wmt(4.2)PM_200
-      - _CN_wmt(4.2)PM_201
-      - _CN_wmt(4.2)PM_202
-      - _CN_wmt(4.2)PM_203
-      - _CN_wmt(4.2)PM_204
-      - _CN_wmt(4.2)PM_205
-      - _CN_wmt(4.2)PM_206
-      - _CN_wmt(4.2)PM_207
-      - _CN_wmt(4.2)PM_208
-      - _CN_wmt(4.2)PM_209
-      - _CN_wmt(4.2)PM_210
-      - _CN_wmt(4.2)PM_211
-      - _CN_wmt(4.2)PM_212
-      - _CN_wmt(4.2)PM_213
-      - _CN_wmt(4.2)PM_214
-      - _CN_wmt(4.2)PM_215
-      - _CN_wmt(4.2)PM_216
-      - _CN_wmt(4.2)PM_217
-      - _CN_wmt(4.2)PM_218
-      - _CN_wmt(4.2)PM_219
-      - _CN_wmt(4.2)PM_220
-      - _CN_wmt(4.2)PM_221
-      - _CN_wmt(4.2)PM_222
-      - _CN_wmt(4.2)PM_223
-      - _CN_wmt(4.2)PM_224
-      - _CN_wmt(4.2)PM_225
-      - _CN_wmt(4.2)PM_226
-      - _CN_wmt(4.2)PM_227
-      - _CN_wmt(4.2)PM_228
-      - _CN_wmt(4.2)PM_229
-      - _CN_wmt(4.2)PM_230
-      - _CN_wmt(4.2)PM_231
-      - _CN_wmt(4.2)PM_232
-      - _CN_wmt(4.2)PM_233
+      - _CN_wmt_4.4_AM_1
+      - _CN_wmt_4.4_AM_2
+      - _CN_wmt_4.4_AM_3
+      - _US_wmt_4.4_AM_4
+      - _CN_wmt_4.4_AM_5
+      - _CN_wmt_4.4_AM_6
+      - _CN_wmt_4.4_AM_7
+      - _CN_wmt_4.4_AM_8
+      - _CN_wmt_4.4_AM_9
+      - _CN_wmt_4.4_AM_10
+      - _CN_wmt_4.4_AM_11
+      - _CN_wmt_4.4_AM_12
+      - _CN_wmt_4.4_AM_13
+      - _CN_wmt_4.4_AM_14
+      - _CN_wmt_4.4_AM_15
+      - _CN_wmt_4.4_AM_16
+      - _CN_wmt_4.4_AM_17
+      - _CN_wmt_4.4_AM_18
+      - _CN_wmt_4.4_AM_19
+      - _CN_wmt_4.4_AM_20
+      - _CN_wmt_4.4_AM_21
+      - _CN_wmt_4.4_AM_22
+      - _CN_wmt_4.4_AM_23
+      - _CN_wmt_4.4_AM_24
+      - _CN_wmt_4.4_AM_25
+      - _CN_wmt_4.4_AM_26
+      - _CN_wmt_4.4_AM_27
+      - _CN_wmt_4.4_AM_28
+      - _CN_wmt_4.4_AM_29
+      - _CN_wmt_4.4_AM_30
+      - _CN_wmt_4.4_AM_31
+      - _CN_wmt_4.4_AM_32
+      - _CN_wmt_4.4_AM_33
+      - _CN_wmt_4.4_AM_34
+      - _CN_wmt_4.4_AM_35
+      - _CN_wmt_4.4_AM_36
+      - _US_wmt_4.4_AM_37
+      - _CN_wmt_4.4_AM_38
+      - _CN_wmt_4.4_AM_39
+      - _CN_wmt_4.4_AM_40
+      - _CN_wmt_4.4_AM_41
+      - _CN_wmt_4.4_AM_42
+      - _CN_wmt_4.4_AM_43
+      - _CN_wmt_4.4_AM_44
+      - _CN_wmt_4.4_AM_45
+      - _CN_wmt_4.4_AM_46
+      - _CN_wmt_4.4_AM_47
+      - _CN_wmt_4.4_AM_48
+      - _CN_wmt_4.4_AM_49
+      - _CN_wmt_4.4_AM_50
+      - _CN_wmt_4.4_AM_51
+      - _CA_wmt_4.4_AM_52
+      - _CA_wmt_4.4_AM_53
+      - _CN_wmt_4.4_AM_54
+      - _CN_wmt_4.4_AM_55
+      - _US_wmt_4.4_AM_56
+      - _CN_wmt_4.4_AM_57
+      - _CN_wmt_4.4_AM_58
+      - _CA_wmt_4.4_AM_59
+      - _US_wmt_4.4_AM_60
+      - _US_wmt_4.4_AM_61
+      - _CN_wmt_4.4_AM_62
+      - _CN_wmt_4.4_AM_63
+      - _CN_wmt_4.4_AM_64
+      - _CA_wmt_4.4_AM_65
+      - _CA_wmt_4.4_AM_66
+      - _US_wmt_4.4_AM_67
+      - _CN_wmt_4.4_AM_68
+      - _CN_wmt_4.4_AM_69
+      - _CA_wmt_4.4_AM_70
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
