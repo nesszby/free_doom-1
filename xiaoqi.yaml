@@ -5,219 +5,367 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_recheck_4.4_1, server: cm.xrayport.one, port: 36006, type: ss, cipher: aes-128-gcm, password: b79055de-c1f7-4e9b-8c04-54b4299b78c4, udp: true}
-  - {name: _HK_recheck_4.4_2, server: hk2.qingyun123.xyz, port: 10050, type: trojan, password: f7ff045b-5aa3-435c-94ec-a473f6b080ea, sni: hk2.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: _HK_recheck_4.4_3, server: hk2.qingyun123.xyz, port: 10050, type: trojan, password: 173ada09-6d94-4cae-96db-17da3b840a2d, sni: hk2.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_recheck_4.4_4, server: cm.xrayport.one, port: 36009, type: ss, cipher: aes-128-gcm, password: b79055de-c1f7-4e9b-8c04-54b4299b78c4, udp: true}
-  - {name: _CN_recheck_4.4_5, server: cm.xrayport.one, port: 11226, type: ss, cipher: aes-128-gcm, password: b79055de-c1f7-4e9b-8c04-54b4299b78c4, udp: true}
-  - {name: _CN_recheck_4.4_6, server: cm.xrayport.one, port: 61000, type: ss, cipher: aes-128-gcm, password: b79055de-c1f7-4e9b-8c04-54b4299b78c4, udp: true}
-  - {name: _US_recheck_4.4_7, server: kr2.qingyun123.xyz, port: 10050, type: trojan, password: f7ff045b-5aa3-435c-94ec-a473f6b080ea, sni: kr2.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_recheck_4.4_8, server: cm.xrayport.one, port: 11111, type: ss, cipher: aes-128-gcm, password: b79055de-c1f7-4e9b-8c04-54b4299b78c4, udp: true}
-  - {name: _CN_recheck_4.4_9, server: cm.xrayport.one, port: 64000, type: ss, cipher: aes-128-gcm, password: b79055de-c1f7-4e9b-8c04-54b4299b78c4, udp: true}
-  - {name: _CN_recheck_4.4_10, server: cm.xrayport.one, port: 33896, type: ss, cipher: aes-128-gcm, password: b79055de-c1f7-4e9b-8c04-54b4299b78c4, udp: true}
-  - {name: _CN_recheck_4.4_11, server: cm.xrayport.one, port: 16302, type: ss, cipher: aes-128-gcm, password: b79055de-c1f7-4e9b-8c04-54b4299b78c4, udp: true}
-  - {name: _CN_recheck_4.4_12, server: cm.xrayport.one, port: 12222, type: ss, cipher: aes-128-gcm, password: b79055de-c1f7-4e9b-8c04-54b4299b78c4, udp: true}
-  - {name: _US_recheck_4.4_13, server: sg.coco233.xyz, port: 35421, type: trojan, password: b687b90f-54e3-4123-8771-3425fde5aff0, sni: sg.coco233.xyz, skip-cert-verify: true, udp: true}
-  - {name: recheck_4.4_14, server: 103.172.116.7, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: _CN_recheck_4.4_15, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_16, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_17, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_18, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_19, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_20, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_21, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_22, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_23, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_24, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_25, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_26, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_27, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_28, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_29, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_30, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_31, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_32, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_33, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_34, server: 14.29.124.168, port: 25293, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_35, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_36, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: recheck_4.4_37, server: 103.172.116.7, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: _CN_recheck_4.4_38, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_39, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: recheck_4.4_40, server: 103.172.116.9, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: _CN_recheck_4.4_41, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_42, server: 14.29.124.168, port: 31011, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_recheck_4.4_43, server: 14.29.124.168, port: 31054, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _US_recheck_4.4_44, server: au1.qingyun123.xyz, port: 10050, type: trojan, password: f7ff045b-5aa3-435c-94ec-a473f6b080ea, sni: au1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_recheck_4.4_45, server: cm.xrayport.one, port: 10966, type: ss, cipher: aes-128-gcm, password: b2e37e3b-d651-46d1-81a8-bb61246de20a, udp: true}
-  - {name: _CN_recheck_4.4_46, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _JP_recheck_4.4_47, server: tj-node-1-b.gfwairport.net, port: 50001, type: trojan, password: aebdbdce-5933-45fb-b017-caef3f723204, sni: tj-node-1-b.gfwairport.net, skip-cert-verify: true, udp: true}
-  - {name: _CN_recheck_4.4_48, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CA_recheck_4.4_49, server: 134.195.196.51, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: TG群https://t.me/aweikeji, server: xjp.dadiangan.xyz, port: 45980, type: trojan, password: 85887b46-8c28-4a27-b1d8-2e342dfb1459, sni: xjp.dadiangan.xyz, skip-cert-verify: true, udp: true}
+  - {name: 澳洲（TG@阿伟科技/油管）, server: 183.232.56.161, port: 1212, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 183.232.56.161}}, udp: true}
+  - {name: 澳洲（TG@阿伟科技/油管） 2, server: hk17.nb818.xyz, port: 22189, type: vmess, uuid: 3e58fd56-8569-4fee-b7c3-6573d57e67fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk17.nb818.xyz}}, udp: true}
+  - {name: 丹麦（TG@阿伟科技/油管）, server: ak.iplck.com, port: 23121, type: vmess, uuid: 2a9c8f87-1678-4144-983c-da6458812806, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ak.iplck.com}}, udp: true}
+  - {name: 丹麦（TG@阿伟科技/油管） 2, server: ak.iplck.com, port: 23121, type: vmess, uuid: 2a9c8f87-1678-4144-983c-da6458812806, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ak.iplck.com}}, udp: true}
+  - {name: 德国阿伟科技@TG*油管, server: v6d1.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v6d1.moonfree.top}}, udp: true}
+  - {name: 法国（TG@阿伟科技/油管）, server: fr.dadiangan.xyz, port: 24534, type: vmess, uuid: 85887b46-8c28-4a27-b1d8-2e342dfb1459, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dadiangan, headers: {Host: fr.dadiangan.xyz}}, udp: true}
+  - {name: 法国阿伟科技@TG*油管, server: fr.dadiangan.xyz, port: 24534, type: vmess, uuid: 0cf399e1-8459-4370-a8c5-89aa03e09ebc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dadiangan, headers: {Host: fr.dadiangan.xyz}}, udp: true}
+  - {name: 韩国（TG@阿伟科技/油管）, server: 58.32.2.139, port: 38601, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 58.32.2.139}}, udp: true}
+  - {name: 韩国（TG@阿伟科技/油管） 2, server: 150.230.249.169, port: 8888, type: vmess, uuid: f836d00e-73e0-4eb5-a0ac-18a8e9ee61ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国（TG@阿伟科技/油管） 3, server: 144.24.87.208, port: 22100, type: vmess, uuid: 211096e2-05bf-4e5f-d8b2-4d270d2cdec8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国（TG@阿伟科技/油管） 4, server: aead.tls.sksupersususu.dnsfree.top, port: 12346, type: trojan, password: 2ea9b608-c9dd-404a-8a9f-f3df9dd6c6eb, skip-cert-verify: true, udp: true}
+  - {name: 韩国（TG@阿伟科技/油管） 5, server: aead.tls.sksupersususu.dnsfree.top, port: 12345, type: trojan, password: 2ea9b608-c9dd-404a-8a9f-f3df9dd6c6eb, sni: aead.tls.sksupersususu.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 韩国（TG@阿伟科技/油管） 6, server: krnf2.qingyun123.xyz, port: 10050, type: trojan, password: 61be480a-eaa6-4ec6-aa39-ddb7f765b1d4, sni: krnf2.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 韩国阿伟科技@TG*油管, server: 150.230.249.169, port: 8888, type: vmess, uuid: f836d00e-73e0-4eb5-a0ac-18a8e9ee61ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国阿伟科技@TG*油管 2, server: 150.230.249.169, port: 8888, type: vmess, uuid: f836d00e-73e0-4eb5-a0ac-18a8e9ee61ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 卢森堡（TG@阿伟科技/油管）, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: free.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: 卢森堡（TG@阿伟科技/油管） 2, server: s2.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: free.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: 卢森堡（TG@阿伟科技/油管） 3, server: s1.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: free.upyun.online, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管）, server: 104.16.162.16, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxus.fovi.tk}}, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 2, server: usa02.kchai.xyz, port: 42292, type: vmess, uuid: 2a9c8f87-1678-4144-983c-da6458812806, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: usa02.kchai.xyz}}, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 3, server: 4.ezydfdd.com, port: 443, type: vmess, uuid: c0cb6988-5967-447d-ea34-b4b0aa70b9f7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qwe, headers: {Host: 4.ezydfdd.com}}, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 4, server: 192.18.134.27, port: 50134, type: vmess, uuid: 76f7ba25-bc7a-47b8-9a08-30010edd54de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 5, server: 95.179.198.22, port: 233, type: vmess, uuid: ee9e6945-97b8-4a2b-9ff8-8b0b2666b3bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 6, server: 192.18.134.27, port: 50134, type: vmess, uuid: 76f7ba25-bc7a-47b8-9a08-30010edd54de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 7, server: 148.100.109.124, port: 2564, type: vmess, uuid: c8654590-5f9d-4b73-a5f3-847a27cdd40d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 8, server: 45.32.79.166, port: 61773, type: vmess, uuid: a6debf98-b538-11ec-8a79-560003ef5c62, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /bsxuIOFJ/, headers: {Host: 45.32.79.166}}, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 9, server: 216.240.140.240, port: 36381, type: vmess, uuid: 8fd08113-5422-40fb-b762-923a83fd089a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 10, server: 150.230.249.169, port: 8888, type: vmess, uuid: f836d00e-73e0-4eb5-a0ac-18a8e9ee61ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 11, server: 192.18.134.27, port: 50134, type: vmess, uuid: 76f7ba25-bc7a-47b8-9a08-30010edd54de, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 12, server: usa02.kchai.xyz, port: 42292, type: vmess, uuid: 2a9c8f87-1678-4144-983c-da6458812806, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: usa02.kchai.xyz}}, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 13, server: 56c918c15a09403d93c037772a69dwd.jkcloud.xyz, port: 6270, type: ss, cipher: chacha20-ietf-poly1305, password: 998630ea-9e28-4ae9-b177-1ea5f278febf, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 14, server: 198.41.212.1, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 15, server: 198.41.212.6, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 16, server: 198.41.212.234, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: 2022-world-1.a-yu.xyz}}, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 17, server: 148.100.109.124, port: 2564, type: vmess, uuid: c8654590-5f9d-4b73-a5f3-847a27cdd40d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 18, server: c23s3.jamjams.net, port: 61173, type: vmess, uuid: 9d1043a6-e87e-4bb7-8858-c1185e9c0c3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 19, server: 104.225.239.41, port: 53528, type: vmess, uuid: f90f4cb7-d345-4c8b-be17-dfa016994855, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 20, server: 104.225.239.41, port: 53528, type: vmess, uuid: f90f4cb7-d345-4c8b-be17-dfa016994855, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国（TG@阿伟科技/油管） 21, server: 216.240.140.240, port: 36381, type: vmess, uuid: 8fd08113-5422-40fb-b762-923a83fd089a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧洲阿伟科技@TG*油管, server: oz.moonfree.top, port: 443, type: vmess, uuid: aa5dd703-195d-4682-8c35-ea0083ea1a74, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oz.moonfree.top}}, udp: true}
+  - {name: 日本（TG@阿伟科技/油管）, server: jp1.qingyun123.xyz, port: 10100, type: trojan, password: a2a7d3ec-639a-41a8-a81b-5e5606f9a869, sni: jp1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本（TG@阿伟科技/油管） 2, server: 183.232.56.161, port: 1202, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 183.232.56.161}}, udp: true}
+  - {name: 日本（TG@阿伟科技/油管） 3, server: 146.56.105.192, port: 52660, type: vmess, uuid: b4e44960-44ed-4c5e-9577-e945b93e41fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本（TG@阿伟科技/油管） 4, server: 146.56.105.192, port: 52660, type: vmess, uuid: b4e44960-44ed-4c5e-9577-e945b93e41fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本（TG@阿伟科技/油管） 5, server: superjapan1111.dnsfree.top, port: 12389, type: trojan, password: 2ea9b608-c9dd-404a-8a9f-f3df9dd6c6eb, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 日本（TG@阿伟科技/油管） 6, server: superjapan1111.dnsfree.top, port: 12390, type: trojan, password: 2ea9b608-c9dd-404a-8a9f-f3df9dd6c6eb, sni: superjapan1111.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 日本（TG@阿伟科技/油管） 7, server: jpp.dadiangan.xyz, port: 23412, type: trojan, password: 85887b46-8c28-4a27-b1d8-2e342dfb1459, sni: jpp.dadiangan.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本TG@阿伟科技/油管）, server: 152.70.106.35, port: 39033, type: vmess, uuid: ed6e41e8-1803-4af7-d65a-0581a5e9220a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾（TG@阿伟科技/油管）, server: tw.iplck.com, port: 20642, type: vmess, uuid: 2a9c8f87-1678-4144-983c-da6458812806, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /c, headers: {Host: tw.iplck.com}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管）, server: 183.232.56.161, port: 1611, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 183.232.56.161}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 2, server: aead.tls.hongkongazace.dnsfree.top, port: 12387, type: trojan, password: 2ea9b608-c9dd-404a-8a9f-f3df9dd6c6eb, sni: aead.tls.hongkongazace.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 3, server: 58.32.2.139, port: 38104, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 58.32.2.139}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 4, server: 58.32.2.139, port: 38101, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: 58.32.2.139}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 5, server: m.jedaii.win, port: 443, type: vmess, uuid: d73b2dbb-9e28-4ad0-848a-5fbcea5e0ad2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /report, headers: {Host: m.jedaii.win}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 6, server: hk12.nb818.xyz, port: 22135, type: vmess, uuid: 3e58fd56-8569-4fee-b7c3-6573d57e67fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk12.nb818.xyz}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 7, server: 52.175.12.141, port: 24396, type: vmess, uuid: c4b30765-3dbc-422e-93c4-3591b1debb6a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 8, server: hk.gtss.tk, port: 443, type: vmess, uuid: 2cea6c11-a79d-4d7d-d31e-cd8c2b5e445a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk.gtss.tk}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 9, server: 120.232.150.110, port: 443, type: vmess, uuid: 2cea6c11-a79d-4d7d-d31e-cd8c2b5e445a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk.gtss.tk}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 10, server: 120.232.150.100, port: 443, type: vmess, uuid: 2cea6c11-a79d-4d7d-d31e-cd8c2b5e445a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk.gtss.tk}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 11, server: 13.75.44.200, port: 40903, type: vmess, uuid: 6d1f4a41-f79e-45f5-8268-460e4f9f5d63, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 12, server: 13.75.44.200, port: 40903, type: vmess, uuid: 6d1f4a41-f79e-45f5-8268-460e4f9f5d63, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 13, server: 13.70.61.248, port: 21568, type: vmess, uuid: 4e70526f-3e97-49c2-8576-e08b730e0c03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 14, server: aead.tls.hongkongazsuper.dnsfree.top, port: 50003, type: vmess, uuid: 2ea9b608-c9dd-404a-8a9f-f3df9dd6c6eb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tiebapic.baidu.com}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 15, server: aead.tls.hongkongazace.dnsfree.top, port: 12347, type: trojan, password: 2ea9b608-c9dd-404a-8a9f-f3df9dd6c6eb, sni: aead.tls.hongkongazace.dnsfree.top, skip-cert-verify: true, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 16, server: aead.tls.hongkongazsuper.dnsfree.top, port: 50005, type: vmess, uuid: 2ea9b608-c9dd-404a-8a9f-f3df9dd6c6eb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tiebapic.baidu.com}}, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 17, server: hk1.qingyun123.xyz, port: 10050, type: trojan, password: 61be480a-eaa6-4ec6-aa39-ddb7f765b1d4, sni: hk1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港（TG@阿伟科技/油管） 18, server: xxg.dadiangan.xyz, port: 23415, type: vmess, uuid: 85887b46-8c28-4a27-b1d8-2e342dfb1459, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dadiangan, headers: {Host: xxg.dadiangan.xyz}}, udp: true}
+  - {name: 香港阿伟科技@TG*油管, server: hk1.qingyun123.xyz, port: 10050, type: trojan, password: a2a7d3ec-639a-41a8-a81b-5e5606f9a869, sni: hk1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡（TG@阿伟科技/油管）, server: sg1.jjzgy.live, port: 443, type: vmess, uuid: 1356a099-dee8-39fb-aafc-246189f77172, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cocksucker, headers: {Host: sg1.jjzgy.live}}, udp: true}
+  - {name: 新加坡（TG@阿伟科技/油管） 2, server: sg2.jjzgy.live, port: 443, type: vmess, uuid: 1356a099-dee8-39fb-aafc-246189f77172, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cocksucker, headers: {Host: sg2.jjzgy.live}}, udp: true}
+  - {name: 新加坡（TG@阿伟科技/油管） 3, server: sg3.jjzgy.live, port: 443, type: vmess, uuid: 1356a099-dee8-39fb-aafc-246189f77172, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cocksucker, headers: {Host: sg3.jjzgy.live}}, udp: true}
+  - {name: 新加坡（TG@阿伟科技/油管） 4, server: sg4.jjzgy.live, port: 443, type: vmess, uuid: 1356a099-dee8-39fb-aafc-246189f77172, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cocksucker, headers: {Host: sg4.jjzgy.live}}, udp: true}
+  - {name: 新加坡（TG@阿伟科技/油管） 5, server: sg4.jjzgy.live, port: 443, type: vmess, uuid: 1356a099-dee8-39fb-aafc-246189f77172, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cocksucker, headers: {Host: sg4.jjzgy.live}}, udp: true}
+  - {name: 新加坡（TG@阿伟科技/油管） 6, server: sg3.jjzgy.live, port: 443, type: vmess, uuid: 1356a099-dee8-39fb-aafc-246189f77172, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cocksucker, headers: {Host: sg3.jjzgy.live}}, udp: true}
+  - {name: 印尼（TG@阿伟科技/油管）, server: 183.232.56.161, port: 1952, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 183.232.56.161}}, udp: true}
+  - {name: 印尼阿伟科技@TG*油管, server: 183.232.56.161, port: 1951, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: 183.232.56.161}}, udp: true}
+  - {name: 英国（TG@阿伟科技/油管）, server: cn2.node.zeroteam.top, port: 50211, type: vmess, uuid: 2a9c8f87-1678-4144-983c-da6458812806, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /c, headers: {Host: uk.iplck.com}}, udp: true}
+  - {name: 英国（TG@阿伟科技/油管） 2, server: cn2.node.zeroteam.top, port: 59960, type: vmess, uuid: 2a9c8f87-1678-4144-983c-da6458812806, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /c, headers: {Host: uk2.iplck.com}}, udp: true}
+  - {name: 英国（TG@阿伟科技/油管） 3, server: 144.24.87.208, port: 22100, type: vmess, uuid: 211096e2-05bf-4e5f-d8b2-4d270d2cdec8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国（TG@阿伟科技/油管） 4, server: 144.24.87.208, port: 22100, type: vmess, uuid: 211096e2-05bf-4e5f-d8b2-4d270d2cdec8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国（TG@阿伟科技/油管） 5, server: 95.179.198.22, port: 233, type: vmess, uuid: ee9e6945-97b8-4a2b-9ff8-8b0b2666b3bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国（TG@阿伟科技/油管） 6, server: 95.179.198.22, port: 233, type: vmess, uuid: ee9e6945-97b8-4a2b-9ff8-8b0b2666b3bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国（TG@阿伟科技/油管） 7, server: yg.dadiangan.xyz, port: 19890, type: vmess, uuid: 85887b46-8c28-4a27-b1d8-2e342dfb1459, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dadiangan, headers: {Host: yg.dadiangan.xyz}}, udp: true}
+  - {name: 英国（TG@阿伟科技/油管） 8, server: uk.dadiangan.xyz, port: 34231, type: ss, cipher: chacha20-ietf-poly1305, password: 85887b46-8c28-4a27-b1d8-2e342dfb1459, udp: true}
+  - {name: 越南（TG@阿伟科技/油管）, server: hn4.quoctai.xyz, port: 80, type: vmess, uuid: caf12d12-e017-44fe-b741-f8727e2fecd9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /quoctai, headers: {Host: hn4.quoctai.xyz}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_recheck_4.4_1
-      - _HK_recheck_4.4_2
-      - _HK_recheck_4.4_3
-      - _CN_recheck_4.4_4
-      - _CN_recheck_4.4_5
-      - _CN_recheck_4.4_6
-      - _US_recheck_4.4_7
-      - _CN_recheck_4.4_8
-      - _CN_recheck_4.4_9
-      - _CN_recheck_4.4_10
-      - _CN_recheck_4.4_11
-      - _CN_recheck_4.4_12
-      - _US_recheck_4.4_13
-      - recheck_4.4_14
-      - _CN_recheck_4.4_15
-      - _CN_recheck_4.4_16
-      - _CN_recheck_4.4_17
-      - _CN_recheck_4.4_18
-      - _CN_recheck_4.4_19
-      - _CN_recheck_4.4_20
-      - _CN_recheck_4.4_21
-      - _CN_recheck_4.4_22
-      - _CN_recheck_4.4_23
-      - _CN_recheck_4.4_24
-      - _CN_recheck_4.4_25
-      - _CN_recheck_4.4_26
-      - _CN_recheck_4.4_27
-      - _CN_recheck_4.4_28
-      - _CN_recheck_4.4_29
-      - _CN_recheck_4.4_30
-      - _CN_recheck_4.4_31
-      - _CN_recheck_4.4_32
-      - _CN_recheck_4.4_33
-      - _CN_recheck_4.4_34
-      - _CN_recheck_4.4_35
-      - _CN_recheck_4.4_36
-      - recheck_4.4_37
-      - _CN_recheck_4.4_38
-      - _CN_recheck_4.4_39
-      - recheck_4.4_40
-      - _CN_recheck_4.4_41
-      - _CN_recheck_4.4_42
-      - _CN_recheck_4.4_43
-      - _US_recheck_4.4_44
-      - _CN_recheck_4.4_45
-      - _CN_recheck_4.4_46
-      - _JP_recheck_4.4_47
-      - _CN_recheck_4.4_48
-      - _CA_recheck_4.4_49
+      - TG群https://t.me/aweikeji
+      - 澳洲（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - 丹麦（TG@阿伟科技/油管）
+      - 丹麦（TG@阿伟科技/油管） 2
+      - 德国阿伟科技@TG*油管
+      - 法国（TG@阿伟科技/油管）
+      - 法国阿伟科技@TG*油管
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管） 2
+      - 韩国（TG@阿伟科技/油管） 3
+      - 韩国（TG@阿伟科技/油管） 4
+      - 韩国（TG@阿伟科技/油管） 5
+      - 韩国（TG@阿伟科技/油管） 6
+      - 韩国阿伟科技@TG*油管
+      - 韩国阿伟科技@TG*油管 2
+      - 卢森堡（TG@阿伟科技/油管）
+      - 卢森堡（TG@阿伟科技/油管） 2
+      - 卢森堡（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 美国（TG@阿伟科技/油管） 10
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
+      - 美国（TG@阿伟科技/油管） 13
+      - 美国（TG@阿伟科技/油管） 14
+      - 美国（TG@阿伟科技/油管） 15
+      - 美国（TG@阿伟科技/油管） 16
+      - 美国（TG@阿伟科技/油管） 17
+      - 美国（TG@阿伟科技/油管） 18
+      - 美国（TG@阿伟科技/油管） 19
+      - 美国（TG@阿伟科技/油管） 20
+      - 美国（TG@阿伟科技/油管） 21
+      - 欧洲阿伟科技@TG*油管
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - 日本（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管） 5
+      - 日本（TG@阿伟科技/油管） 6
+      - 日本（TG@阿伟科技/油管） 7
+      - 日本TG@阿伟科技/油管）
+      - 台湾（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 2
+      - 香港（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 4
+      - 香港（TG@阿伟科技/油管） 5
+      - 香港（TG@阿伟科技/油管） 6
+      - 香港（TG@阿伟科技/油管） 7
+      - 香港（TG@阿伟科技/油管） 8
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 10
+      - 香港（TG@阿伟科技/油管） 11
+      - 香港（TG@阿伟科技/油管） 12
+      - 香港（TG@阿伟科技/油管） 13
+      - 香港（TG@阿伟科技/油管） 14
+      - 香港（TG@阿伟科技/油管） 15
+      - 香港（TG@阿伟科技/油管） 16
+      - 香港（TG@阿伟科技/油管） 17
+      - 香港（TG@阿伟科技/油管） 18
+      - 香港阿伟科技@TG*油管
+      - 新加坡（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 新加坡（TG@阿伟科技/油管） 3
+      - 新加坡（TG@阿伟科技/油管） 4
+      - 新加坡（TG@阿伟科技/油管） 5
+      - 新加坡（TG@阿伟科技/油管） 6
+      - 印尼（TG@阿伟科技/油管）
+      - 印尼阿伟科技@TG*油管
+      - 英国（TG@阿伟科技/油管）
+      - 英国（TG@阿伟科技/油管） 2
+      - 英国（TG@阿伟科技/油管） 3
+      - 英国（TG@阿伟科技/油管） 4
+      - 英国（TG@阿伟科技/油管） 5
+      - 英国（TG@阿伟科技/油管） 6
+      - 英国（TG@阿伟科技/油管） 7
+      - 英国（TG@阿伟科技/油管） 8
+      - 越南（TG@阿伟科技/油管）
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_recheck_4.4_1
-      - _HK_recheck_4.4_2
-      - _HK_recheck_4.4_3
-      - _CN_recheck_4.4_4
-      - _CN_recheck_4.4_5
-      - _CN_recheck_4.4_6
-      - _US_recheck_4.4_7
-      - _CN_recheck_4.4_8
-      - _CN_recheck_4.4_9
-      - _CN_recheck_4.4_10
-      - _CN_recheck_4.4_11
-      - _CN_recheck_4.4_12
-      - _US_recheck_4.4_13
-      - recheck_4.4_14
-      - _CN_recheck_4.4_15
-      - _CN_recheck_4.4_16
-      - _CN_recheck_4.4_17
-      - _CN_recheck_4.4_18
-      - _CN_recheck_4.4_19
-      - _CN_recheck_4.4_20
-      - _CN_recheck_4.4_21
-      - _CN_recheck_4.4_22
-      - _CN_recheck_4.4_23
-      - _CN_recheck_4.4_24
-      - _CN_recheck_4.4_25
-      - _CN_recheck_4.4_26
-      - _CN_recheck_4.4_27
-      - _CN_recheck_4.4_28
-      - _CN_recheck_4.4_29
-      - _CN_recheck_4.4_30
-      - _CN_recheck_4.4_31
-      - _CN_recheck_4.4_32
-      - _CN_recheck_4.4_33
-      - _CN_recheck_4.4_34
-      - _CN_recheck_4.4_35
-      - _CN_recheck_4.4_36
-      - recheck_4.4_37
-      - _CN_recheck_4.4_38
-      - _CN_recheck_4.4_39
-      - recheck_4.4_40
-      - _CN_recheck_4.4_41
-      - _CN_recheck_4.4_42
-      - _CN_recheck_4.4_43
-      - _US_recheck_4.4_44
-      - _CN_recheck_4.4_45
-      - _CN_recheck_4.4_46
-      - _JP_recheck_4.4_47
-      - _CN_recheck_4.4_48
-      - _CA_recheck_4.4_49
+      - TG群https://t.me/aweikeji
+      - 澳洲（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - 丹麦（TG@阿伟科技/油管）
+      - 丹麦（TG@阿伟科技/油管） 2
+      - 德国阿伟科技@TG*油管
+      - 法国（TG@阿伟科技/油管）
+      - 法国阿伟科技@TG*油管
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管） 2
+      - 韩国（TG@阿伟科技/油管） 3
+      - 韩国（TG@阿伟科技/油管） 4
+      - 韩国（TG@阿伟科技/油管） 5
+      - 韩国（TG@阿伟科技/油管） 6
+      - 韩国阿伟科技@TG*油管
+      - 韩国阿伟科技@TG*油管 2
+      - 卢森堡（TG@阿伟科技/油管）
+      - 卢森堡（TG@阿伟科技/油管） 2
+      - 卢森堡（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 美国（TG@阿伟科技/油管） 10
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
+      - 美国（TG@阿伟科技/油管） 13
+      - 美国（TG@阿伟科技/油管） 14
+      - 美国（TG@阿伟科技/油管） 15
+      - 美国（TG@阿伟科技/油管） 16
+      - 美国（TG@阿伟科技/油管） 17
+      - 美国（TG@阿伟科技/油管） 18
+      - 美国（TG@阿伟科技/油管） 19
+      - 美国（TG@阿伟科技/油管） 20
+      - 美国（TG@阿伟科技/油管） 21
+      - 欧洲阿伟科技@TG*油管
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - 日本（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管） 5
+      - 日本（TG@阿伟科技/油管） 6
+      - 日本（TG@阿伟科技/油管） 7
+      - 日本TG@阿伟科技/油管）
+      - 台湾（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 2
+      - 香港（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 4
+      - 香港（TG@阿伟科技/油管） 5
+      - 香港（TG@阿伟科技/油管） 6
+      - 香港（TG@阿伟科技/油管） 7
+      - 香港（TG@阿伟科技/油管） 8
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 10
+      - 香港（TG@阿伟科技/油管） 11
+      - 香港（TG@阿伟科技/油管） 12
+      - 香港（TG@阿伟科技/油管） 13
+      - 香港（TG@阿伟科技/油管） 14
+      - 香港（TG@阿伟科技/油管） 15
+      - 香港（TG@阿伟科技/油管） 16
+      - 香港（TG@阿伟科技/油管） 17
+      - 香港（TG@阿伟科技/油管） 18
+      - 香港阿伟科技@TG*油管
+      - 新加坡（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 新加坡（TG@阿伟科技/油管） 3
+      - 新加坡（TG@阿伟科技/油管） 4
+      - 新加坡（TG@阿伟科技/油管） 5
+      - 新加坡（TG@阿伟科技/油管） 6
+      - 印尼（TG@阿伟科技/油管）
+      - 印尼阿伟科技@TG*油管
+      - 英国（TG@阿伟科技/油管）
+      - 英国（TG@阿伟科技/油管） 2
+      - 英国（TG@阿伟科技/油管） 3
+      - 英国（TG@阿伟科技/油管） 4
+      - 英国（TG@阿伟科技/油管） 5
+      - 英国（TG@阿伟科技/油管） 6
+      - 英国（TG@阿伟科技/油管） 7
+      - 英国（TG@阿伟科技/油管） 8
+      - 越南（TG@阿伟科技/油管）
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_recheck_4.4_1
-      - _HK_recheck_4.4_2
-      - _HK_recheck_4.4_3
-      - _CN_recheck_4.4_4
-      - _CN_recheck_4.4_5
-      - _CN_recheck_4.4_6
-      - _US_recheck_4.4_7
-      - _CN_recheck_4.4_8
-      - _CN_recheck_4.4_9
-      - _CN_recheck_4.4_10
-      - _CN_recheck_4.4_11
-      - _CN_recheck_4.4_12
-      - _US_recheck_4.4_13
-      - recheck_4.4_14
-      - _CN_recheck_4.4_15
-      - _CN_recheck_4.4_16
-      - _CN_recheck_4.4_17
-      - _CN_recheck_4.4_18
-      - _CN_recheck_4.4_19
-      - _CN_recheck_4.4_20
-      - _CN_recheck_4.4_21
-      - _CN_recheck_4.4_22
-      - _CN_recheck_4.4_23
-      - _CN_recheck_4.4_24
-      - _CN_recheck_4.4_25
-      - _CN_recheck_4.4_26
-      - _CN_recheck_4.4_27
-      - _CN_recheck_4.4_28
-      - _CN_recheck_4.4_29
-      - _CN_recheck_4.4_30
-      - _CN_recheck_4.4_31
-      - _CN_recheck_4.4_32
-      - _CN_recheck_4.4_33
-      - _CN_recheck_4.4_34
-      - _CN_recheck_4.4_35
-      - _CN_recheck_4.4_36
-      - recheck_4.4_37
-      - _CN_recheck_4.4_38
-      - _CN_recheck_4.4_39
-      - recheck_4.4_40
-      - _CN_recheck_4.4_41
-      - _CN_recheck_4.4_42
-      - _CN_recheck_4.4_43
-      - _US_recheck_4.4_44
-      - _CN_recheck_4.4_45
-      - _CN_recheck_4.4_46
-      - _JP_recheck_4.4_47
-      - _CN_recheck_4.4_48
-      - _CA_recheck_4.4_49
+      - TG群https://t.me/aweikeji
+      - 澳洲（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - 丹麦（TG@阿伟科技/油管）
+      - 丹麦（TG@阿伟科技/油管） 2
+      - 德国阿伟科技@TG*油管
+      - 法国（TG@阿伟科技/油管）
+      - 法国阿伟科技@TG*油管
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管） 2
+      - 韩国（TG@阿伟科技/油管） 3
+      - 韩国（TG@阿伟科技/油管） 4
+      - 韩国（TG@阿伟科技/油管） 5
+      - 韩国（TG@阿伟科技/油管） 6
+      - 韩国阿伟科技@TG*油管
+      - 韩国阿伟科技@TG*油管 2
+      - 卢森堡（TG@阿伟科技/油管）
+      - 卢森堡（TG@阿伟科技/油管） 2
+      - 卢森堡（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 美国（TG@阿伟科技/油管） 10
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
+      - 美国（TG@阿伟科技/油管） 13
+      - 美国（TG@阿伟科技/油管） 14
+      - 美国（TG@阿伟科技/油管） 15
+      - 美国（TG@阿伟科技/油管） 16
+      - 美国（TG@阿伟科技/油管） 17
+      - 美国（TG@阿伟科技/油管） 18
+      - 美国（TG@阿伟科技/油管） 19
+      - 美国（TG@阿伟科技/油管） 20
+      - 美国（TG@阿伟科技/油管） 21
+      - 欧洲阿伟科技@TG*油管
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - 日本（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管） 5
+      - 日本（TG@阿伟科技/油管） 6
+      - 日本（TG@阿伟科技/油管） 7
+      - 日本TG@阿伟科技/油管）
+      - 台湾（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 2
+      - 香港（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 4
+      - 香港（TG@阿伟科技/油管） 5
+      - 香港（TG@阿伟科技/油管） 6
+      - 香港（TG@阿伟科技/油管） 7
+      - 香港（TG@阿伟科技/油管） 8
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 10
+      - 香港（TG@阿伟科技/油管） 11
+      - 香港（TG@阿伟科技/油管） 12
+      - 香港（TG@阿伟科技/油管） 13
+      - 香港（TG@阿伟科技/油管） 14
+      - 香港（TG@阿伟科技/油管） 15
+      - 香港（TG@阿伟科技/油管） 16
+      - 香港（TG@阿伟科技/油管） 17
+      - 香港（TG@阿伟科技/油管） 18
+      - 香港阿伟科技@TG*油管
+      - 新加坡（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 新加坡（TG@阿伟科技/油管） 3
+      - 新加坡（TG@阿伟科技/油管） 4
+      - 新加坡（TG@阿伟科技/油管） 5
+      - 新加坡（TG@阿伟科技/油管） 6
+      - 印尼（TG@阿伟科技/油管）
+      - 印尼阿伟科技@TG*油管
+      - 英国（TG@阿伟科技/油管）
+      - 英国（TG@阿伟科技/油管） 2
+      - 英国（TG@阿伟科技/油管） 3
+      - 英国（TG@阿伟科技/油管） 4
+      - 英国（TG@阿伟科技/油管） 5
+      - 英国（TG@阿伟科技/油管） 6
+      - 英国（TG@阿伟科技/油管） 7
+      - 英国（TG@阿伟科技/油管） 8
+      - 越南（TG@阿伟科技/油管）
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -236,223 +384,391 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_recheck_4.4_1
-      - _HK_recheck_4.4_2
-      - _HK_recheck_4.4_3
-      - _CN_recheck_4.4_4
-      - _CN_recheck_4.4_5
-      - _CN_recheck_4.4_6
-      - _US_recheck_4.4_7
-      - _CN_recheck_4.4_8
-      - _CN_recheck_4.4_9
-      - _CN_recheck_4.4_10
-      - _CN_recheck_4.4_11
-      - _CN_recheck_4.4_12
-      - _US_recheck_4.4_13
-      - recheck_4.4_14
-      - _CN_recheck_4.4_15
-      - _CN_recheck_4.4_16
-      - _CN_recheck_4.4_17
-      - _CN_recheck_4.4_18
-      - _CN_recheck_4.4_19
-      - _CN_recheck_4.4_20
-      - _CN_recheck_4.4_21
-      - _CN_recheck_4.4_22
-      - _CN_recheck_4.4_23
-      - _CN_recheck_4.4_24
-      - _CN_recheck_4.4_25
-      - _CN_recheck_4.4_26
-      - _CN_recheck_4.4_27
-      - _CN_recheck_4.4_28
-      - _CN_recheck_4.4_29
-      - _CN_recheck_4.4_30
-      - _CN_recheck_4.4_31
-      - _CN_recheck_4.4_32
-      - _CN_recheck_4.4_33
-      - _CN_recheck_4.4_34
-      - _CN_recheck_4.4_35
-      - _CN_recheck_4.4_36
-      - recheck_4.4_37
-      - _CN_recheck_4.4_38
-      - _CN_recheck_4.4_39
-      - recheck_4.4_40
-      - _CN_recheck_4.4_41
-      - _CN_recheck_4.4_42
-      - _CN_recheck_4.4_43
-      - _US_recheck_4.4_44
-      - _CN_recheck_4.4_45
-      - _CN_recheck_4.4_46
-      - _JP_recheck_4.4_47
-      - _CN_recheck_4.4_48
-      - _CA_recheck_4.4_49
+      - TG群https://t.me/aweikeji
+      - 澳洲（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - 丹麦（TG@阿伟科技/油管）
+      - 丹麦（TG@阿伟科技/油管） 2
+      - 德国阿伟科技@TG*油管
+      - 法国（TG@阿伟科技/油管）
+      - 法国阿伟科技@TG*油管
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管） 2
+      - 韩国（TG@阿伟科技/油管） 3
+      - 韩国（TG@阿伟科技/油管） 4
+      - 韩国（TG@阿伟科技/油管） 5
+      - 韩国（TG@阿伟科技/油管） 6
+      - 韩国阿伟科技@TG*油管
+      - 韩国阿伟科技@TG*油管 2
+      - 卢森堡（TG@阿伟科技/油管）
+      - 卢森堡（TG@阿伟科技/油管） 2
+      - 卢森堡（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 美国（TG@阿伟科技/油管） 10
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
+      - 美国（TG@阿伟科技/油管） 13
+      - 美国（TG@阿伟科技/油管） 14
+      - 美国（TG@阿伟科技/油管） 15
+      - 美国（TG@阿伟科技/油管） 16
+      - 美国（TG@阿伟科技/油管） 17
+      - 美国（TG@阿伟科技/油管） 18
+      - 美国（TG@阿伟科技/油管） 19
+      - 美国（TG@阿伟科技/油管） 20
+      - 美国（TG@阿伟科技/油管） 21
+      - 欧洲阿伟科技@TG*油管
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - 日本（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管） 5
+      - 日本（TG@阿伟科技/油管） 6
+      - 日本（TG@阿伟科技/油管） 7
+      - 日本TG@阿伟科技/油管）
+      - 台湾（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 2
+      - 香港（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 4
+      - 香港（TG@阿伟科技/油管） 5
+      - 香港（TG@阿伟科技/油管） 6
+      - 香港（TG@阿伟科技/油管） 7
+      - 香港（TG@阿伟科技/油管） 8
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 10
+      - 香港（TG@阿伟科技/油管） 11
+      - 香港（TG@阿伟科技/油管） 12
+      - 香港（TG@阿伟科技/油管） 13
+      - 香港（TG@阿伟科技/油管） 14
+      - 香港（TG@阿伟科技/油管） 15
+      - 香港（TG@阿伟科技/油管） 16
+      - 香港（TG@阿伟科技/油管） 17
+      - 香港（TG@阿伟科技/油管） 18
+      - 香港阿伟科技@TG*油管
+      - 新加坡（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 新加坡（TG@阿伟科技/油管） 3
+      - 新加坡（TG@阿伟科技/油管） 4
+      - 新加坡（TG@阿伟科技/油管） 5
+      - 新加坡（TG@阿伟科技/油管） 6
+      - 印尼（TG@阿伟科技/油管）
+      - 印尼阿伟科技@TG*油管
+      - 英国（TG@阿伟科技/油管）
+      - 英国（TG@阿伟科技/油管） 2
+      - 英国（TG@阿伟科技/油管） 3
+      - 英国（TG@阿伟科技/油管） 4
+      - 英国（TG@阿伟科技/油管） 5
+      - 英国（TG@阿伟科技/油管） 6
+      - 英国（TG@阿伟科技/油管） 7
+      - 英国（TG@阿伟科技/油管） 8
+      - 越南（TG@阿伟科技/油管）
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 2
+      - 香港（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 4
+      - 香港（TG@阿伟科技/油管） 5
+      - 香港（TG@阿伟科技/油管） 6
+      - 香港（TG@阿伟科技/油管） 7
+      - 香港（TG@阿伟科技/油管） 8
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 10
+      - 香港（TG@阿伟科技/油管） 11
+      - 香港（TG@阿伟科技/油管） 12
+      - 香港（TG@阿伟科技/油管） 13
+      - 香港（TG@阿伟科技/油管） 14
+      - 香港（TG@阿伟科技/油管） 15
+      - 香港（TG@阿伟科技/油管） 16
+      - 香港（TG@阿伟科技/油管） 17
+      - 香港（TG@阿伟科技/油管） 18
+      - 香港阿伟科技@TG*油管
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_recheck_4.4_1
-      - _HK_recheck_4.4_2
-      - _HK_recheck_4.4_3
-      - _CN_recheck_4.4_4
-      - _CN_recheck_4.4_5
-      - _CN_recheck_4.4_6
-      - _US_recheck_4.4_7
-      - _CN_recheck_4.4_8
-      - _CN_recheck_4.4_9
-      - _CN_recheck_4.4_10
-      - _CN_recheck_4.4_11
-      - _CN_recheck_4.4_12
-      - _US_recheck_4.4_13
-      - recheck_4.4_14
-      - _CN_recheck_4.4_15
-      - _CN_recheck_4.4_16
-      - _CN_recheck_4.4_17
-      - _CN_recheck_4.4_18
-      - _CN_recheck_4.4_19
-      - _CN_recheck_4.4_20
-      - _CN_recheck_4.4_21
-      - _CN_recheck_4.4_22
-      - _CN_recheck_4.4_23
-      - _CN_recheck_4.4_24
-      - _CN_recheck_4.4_25
-      - _CN_recheck_4.4_26
-      - _CN_recheck_4.4_27
-      - _CN_recheck_4.4_28
-      - _CN_recheck_4.4_29
-      - _CN_recheck_4.4_30
-      - _CN_recheck_4.4_31
-      - _CN_recheck_4.4_32
-      - _CN_recheck_4.4_33
-      - _CN_recheck_4.4_34
-      - _CN_recheck_4.4_35
-      - _CN_recheck_4.4_36
-      - recheck_4.4_37
-      - _CN_recheck_4.4_38
-      - _CN_recheck_4.4_39
-      - recheck_4.4_40
-      - _CN_recheck_4.4_41
-      - _CN_recheck_4.4_42
-      - _CN_recheck_4.4_43
-      - _US_recheck_4.4_44
-      - _CN_recheck_4.4_45
-      - _CN_recheck_4.4_46
-      - _JP_recheck_4.4_47
-      - _CN_recheck_4.4_48
-      - _CA_recheck_4.4_49
+      - TG群https://t.me/aweikeji
+      - 澳洲（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - 丹麦（TG@阿伟科技/油管）
+      - 丹麦（TG@阿伟科技/油管） 2
+      - 德国阿伟科技@TG*油管
+      - 法国（TG@阿伟科技/油管）
+      - 法国阿伟科技@TG*油管
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管） 2
+      - 韩国（TG@阿伟科技/油管） 3
+      - 韩国（TG@阿伟科技/油管） 4
+      - 韩国（TG@阿伟科技/油管） 5
+      - 韩国（TG@阿伟科技/油管） 6
+      - 韩国阿伟科技@TG*油管
+      - 韩国阿伟科技@TG*油管 2
+      - 卢森堡（TG@阿伟科技/油管）
+      - 卢森堡（TG@阿伟科技/油管） 2
+      - 卢森堡（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 美国（TG@阿伟科技/油管） 10
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
+      - 美国（TG@阿伟科技/油管） 13
+      - 美国（TG@阿伟科技/油管） 14
+      - 美国（TG@阿伟科技/油管） 15
+      - 美国（TG@阿伟科技/油管） 16
+      - 美国（TG@阿伟科技/油管） 17
+      - 美国（TG@阿伟科技/油管） 18
+      - 美国（TG@阿伟科技/油管） 19
+      - 美国（TG@阿伟科技/油管） 20
+      - 美国（TG@阿伟科技/油管） 21
+      - 欧洲阿伟科技@TG*油管
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - 日本（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管） 5
+      - 日本（TG@阿伟科技/油管） 6
+      - 日本（TG@阿伟科技/油管） 7
+      - 日本TG@阿伟科技/油管）
+      - 台湾（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 2
+      - 香港（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 4
+      - 香港（TG@阿伟科技/油管） 5
+      - 香港（TG@阿伟科技/油管） 6
+      - 香港（TG@阿伟科技/油管） 7
+      - 香港（TG@阿伟科技/油管） 8
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 10
+      - 香港（TG@阿伟科技/油管） 11
+      - 香港（TG@阿伟科技/油管） 12
+      - 香港（TG@阿伟科技/油管） 13
+      - 香港（TG@阿伟科技/油管） 14
+      - 香港（TG@阿伟科技/油管） 15
+      - 香港（TG@阿伟科技/油管） 16
+      - 香港（TG@阿伟科技/油管） 17
+      - 香港（TG@阿伟科技/油管） 18
+      - 香港阿伟科技@TG*油管
+      - 新加坡（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 新加坡（TG@阿伟科技/油管） 3
+      - 新加坡（TG@阿伟科技/油管） 4
+      - 新加坡（TG@阿伟科技/油管） 5
+      - 新加坡（TG@阿伟科技/油管） 6
+      - 印尼（TG@阿伟科技/油管）
+      - 印尼阿伟科技@TG*油管
+      - 英国（TG@阿伟科技/油管）
+      - 英国（TG@阿伟科技/油管） 2
+      - 英国（TG@阿伟科技/油管） 3
+      - 英国（TG@阿伟科技/油管） 4
+      - 英国（TG@阿伟科技/油管） 5
+      - 英国（TG@阿伟科技/油管） 6
+      - 英国（TG@阿伟科技/油管） 7
+      - 英国（TG@阿伟科技/油管） 8
+      - 越南（TG@阿伟科技/油管）
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_recheck_4.4_1
-      - _HK_recheck_4.4_2
-      - _HK_recheck_4.4_3
-      - _CN_recheck_4.4_4
-      - _CN_recheck_4.4_5
-      - _CN_recheck_4.4_6
-      - _US_recheck_4.4_7
-      - _CN_recheck_4.4_8
-      - _CN_recheck_4.4_9
-      - _CN_recheck_4.4_10
-      - _CN_recheck_4.4_11
-      - _CN_recheck_4.4_12
-      - _US_recheck_4.4_13
-      - recheck_4.4_14
-      - _CN_recheck_4.4_15
-      - _CN_recheck_4.4_16
-      - _CN_recheck_4.4_17
-      - _CN_recheck_4.4_18
-      - _CN_recheck_4.4_19
-      - _CN_recheck_4.4_20
-      - _CN_recheck_4.4_21
-      - _CN_recheck_4.4_22
-      - _CN_recheck_4.4_23
-      - _CN_recheck_4.4_24
-      - _CN_recheck_4.4_25
-      - _CN_recheck_4.4_26
-      - _CN_recheck_4.4_27
-      - _CN_recheck_4.4_28
-      - _CN_recheck_4.4_29
-      - _CN_recheck_4.4_30
-      - _CN_recheck_4.4_31
-      - _CN_recheck_4.4_32
-      - _CN_recheck_4.4_33
-      - _CN_recheck_4.4_34
-      - _CN_recheck_4.4_35
-      - _CN_recheck_4.4_36
-      - recheck_4.4_37
-      - _CN_recheck_4.4_38
-      - _CN_recheck_4.4_39
-      - recheck_4.4_40
-      - _CN_recheck_4.4_41
-      - _CN_recheck_4.4_42
-      - _CN_recheck_4.4_43
-      - _US_recheck_4.4_44
-      - _CN_recheck_4.4_45
-      - _CN_recheck_4.4_46
-      - _JP_recheck_4.4_47
-      - _CN_recheck_4.4_48
-      - _CA_recheck_4.4_49
+      - TG群https://t.me/aweikeji
+      - 澳洲（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - 丹麦（TG@阿伟科技/油管）
+      - 丹麦（TG@阿伟科技/油管） 2
+      - 德国阿伟科技@TG*油管
+      - 法国（TG@阿伟科技/油管）
+      - 法国阿伟科技@TG*油管
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管） 2
+      - 韩国（TG@阿伟科技/油管） 3
+      - 韩国（TG@阿伟科技/油管） 4
+      - 韩国（TG@阿伟科技/油管） 5
+      - 韩国（TG@阿伟科技/油管） 6
+      - 韩国阿伟科技@TG*油管
+      - 韩国阿伟科技@TG*油管 2
+      - 卢森堡（TG@阿伟科技/油管）
+      - 卢森堡（TG@阿伟科技/油管） 2
+      - 卢森堡（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 美国（TG@阿伟科技/油管） 10
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
+      - 美国（TG@阿伟科技/油管） 13
+      - 美国（TG@阿伟科技/油管） 14
+      - 美国（TG@阿伟科技/油管） 15
+      - 美国（TG@阿伟科技/油管） 16
+      - 美国（TG@阿伟科技/油管） 17
+      - 美国（TG@阿伟科技/油管） 18
+      - 美国（TG@阿伟科技/油管） 19
+      - 美国（TG@阿伟科技/油管） 20
+      - 美国（TG@阿伟科技/油管） 21
+      - 欧洲阿伟科技@TG*油管
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - 日本（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管） 5
+      - 日本（TG@阿伟科技/油管） 6
+      - 日本（TG@阿伟科技/油管） 7
+      - 日本TG@阿伟科技/油管）
+      - 台湾（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 2
+      - 香港（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 4
+      - 香港（TG@阿伟科技/油管） 5
+      - 香港（TG@阿伟科技/油管） 6
+      - 香港（TG@阿伟科技/油管） 7
+      - 香港（TG@阿伟科技/油管） 8
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 10
+      - 香港（TG@阿伟科技/油管） 11
+      - 香港（TG@阿伟科技/油管） 12
+      - 香港（TG@阿伟科技/油管） 13
+      - 香港（TG@阿伟科技/油管） 14
+      - 香港（TG@阿伟科技/油管） 15
+      - 香港（TG@阿伟科技/油管） 16
+      - 香港（TG@阿伟科技/油管） 17
+      - 香港（TG@阿伟科技/油管） 18
+      - 香港阿伟科技@TG*油管
+      - 新加坡（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 新加坡（TG@阿伟科技/油管） 3
+      - 新加坡（TG@阿伟科技/油管） 4
+      - 新加坡（TG@阿伟科技/油管） 5
+      - 新加坡（TG@阿伟科技/油管） 6
+      - 印尼（TG@阿伟科技/油管）
+      - 印尼阿伟科技@TG*油管
+      - 英国（TG@阿伟科技/油管）
+      - 英国（TG@阿伟科技/油管） 2
+      - 英国（TG@阿伟科技/油管） 3
+      - 英国（TG@阿伟科技/油管） 4
+      - 英国（TG@阿伟科技/油管） 5
+      - 英国（TG@阿伟科技/油管） 6
+      - 英国（TG@阿伟科技/油管） 7
+      - 英国（TG@阿伟科技/油管） 8
+      - 越南（TG@阿伟科技/油管）
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_recheck_4.4_1
-      - _HK_recheck_4.4_2
-      - _HK_recheck_4.4_3
-      - _CN_recheck_4.4_4
-      - _CN_recheck_4.4_5
-      - _CN_recheck_4.4_6
-      - _US_recheck_4.4_7
-      - _CN_recheck_4.4_8
-      - _CN_recheck_4.4_9
-      - _CN_recheck_4.4_10
-      - _CN_recheck_4.4_11
-      - _CN_recheck_4.4_12
-      - _US_recheck_4.4_13
-      - recheck_4.4_14
-      - _CN_recheck_4.4_15
-      - _CN_recheck_4.4_16
-      - _CN_recheck_4.4_17
-      - _CN_recheck_4.4_18
-      - _CN_recheck_4.4_19
-      - _CN_recheck_4.4_20
-      - _CN_recheck_4.4_21
-      - _CN_recheck_4.4_22
-      - _CN_recheck_4.4_23
-      - _CN_recheck_4.4_24
-      - _CN_recheck_4.4_25
-      - _CN_recheck_4.4_26
-      - _CN_recheck_4.4_27
-      - _CN_recheck_4.4_28
-      - _CN_recheck_4.4_29
-      - _CN_recheck_4.4_30
-      - _CN_recheck_4.4_31
-      - _CN_recheck_4.4_32
-      - _CN_recheck_4.4_33
-      - _CN_recheck_4.4_34
-      - _CN_recheck_4.4_35
-      - _CN_recheck_4.4_36
-      - recheck_4.4_37
-      - _CN_recheck_4.4_38
-      - _CN_recheck_4.4_39
-      - recheck_4.4_40
-      - _CN_recheck_4.4_41
-      - _CN_recheck_4.4_42
-      - _CN_recheck_4.4_43
-      - _US_recheck_4.4_44
-      - _CN_recheck_4.4_45
-      - _CN_recheck_4.4_46
-      - _JP_recheck_4.4_47
-      - _CN_recheck_4.4_48
-      - _CA_recheck_4.4_49
+      - TG群https://t.me/aweikeji
+      - 澳洲（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - 丹麦（TG@阿伟科技/油管）
+      - 丹麦（TG@阿伟科技/油管） 2
+      - 德国阿伟科技@TG*油管
+      - 法国（TG@阿伟科技/油管）
+      - 法国阿伟科技@TG*油管
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管） 2
+      - 韩国（TG@阿伟科技/油管） 3
+      - 韩国（TG@阿伟科技/油管） 4
+      - 韩国（TG@阿伟科技/油管） 5
+      - 韩国（TG@阿伟科技/油管） 6
+      - 韩国阿伟科技@TG*油管
+      - 韩国阿伟科技@TG*油管 2
+      - 卢森堡（TG@阿伟科技/油管）
+      - 卢森堡（TG@阿伟科技/油管） 2
+      - 卢森堡（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 美国（TG@阿伟科技/油管） 10
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
+      - 美国（TG@阿伟科技/油管） 13
+      - 美国（TG@阿伟科技/油管） 14
+      - 美国（TG@阿伟科技/油管） 15
+      - 美国（TG@阿伟科技/油管） 16
+      - 美国（TG@阿伟科技/油管） 17
+      - 美国（TG@阿伟科技/油管） 18
+      - 美国（TG@阿伟科技/油管） 19
+      - 美国（TG@阿伟科技/油管） 20
+      - 美国（TG@阿伟科技/油管） 21
+      - 欧洲阿伟科技@TG*油管
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - 日本（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管） 5
+      - 日本（TG@阿伟科技/油管） 6
+      - 日本（TG@阿伟科技/油管） 7
+      - 日本TG@阿伟科技/油管）
+      - 台湾（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 2
+      - 香港（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 4
+      - 香港（TG@阿伟科技/油管） 5
+      - 香港（TG@阿伟科技/油管） 6
+      - 香港（TG@阿伟科技/油管） 7
+      - 香港（TG@阿伟科技/油管） 8
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 10
+      - 香港（TG@阿伟科技/油管） 11
+      - 香港（TG@阿伟科技/油管） 12
+      - 香港（TG@阿伟科技/油管） 13
+      - 香港（TG@阿伟科技/油管） 14
+      - 香港（TG@阿伟科技/油管） 15
+      - 香港（TG@阿伟科技/油管） 16
+      - 香港（TG@阿伟科技/油管） 17
+      - 香港（TG@阿伟科技/油管） 18
+      - 香港阿伟科技@TG*油管
+      - 新加坡（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 新加坡（TG@阿伟科技/油管） 3
+      - 新加坡（TG@阿伟科技/油管） 4
+      - 新加坡（TG@阿伟科技/油管） 5
+      - 新加坡（TG@阿伟科技/油管） 6
+      - 印尼（TG@阿伟科技/油管）
+      - 印尼阿伟科技@TG*油管
+      - 英国（TG@阿伟科技/油管）
+      - 英国（TG@阿伟科技/油管） 2
+      - 英国（TG@阿伟科技/油管） 3
+      - 英国（TG@阿伟科技/油管） 4
+      - 英国（TG@阿伟科技/油管） 5
+      - 英国（TG@阿伟科技/油管） 6
+      - 英国（TG@阿伟科技/油管） 7
+      - 英国（TG@阿伟科技/油管） 8
+      - 越南（TG@阿伟科技/油管）
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -468,55 +784,92 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_recheck_4.4_1
-      - _HK_recheck_4.4_2
-      - _HK_recheck_4.4_3
-      - _CN_recheck_4.4_4
-      - _CN_recheck_4.4_5
-      - _CN_recheck_4.4_6
-      - _US_recheck_4.4_7
-      - _CN_recheck_4.4_8
-      - _CN_recheck_4.4_9
-      - _CN_recheck_4.4_10
-      - _CN_recheck_4.4_11
-      - _CN_recheck_4.4_12
-      - _US_recheck_4.4_13
-      - recheck_4.4_14
-      - _CN_recheck_4.4_15
-      - _CN_recheck_4.4_16
-      - _CN_recheck_4.4_17
-      - _CN_recheck_4.4_18
-      - _CN_recheck_4.4_19
-      - _CN_recheck_4.4_20
-      - _CN_recheck_4.4_21
-      - _CN_recheck_4.4_22
-      - _CN_recheck_4.4_23
-      - _CN_recheck_4.4_24
-      - _CN_recheck_4.4_25
-      - _CN_recheck_4.4_26
-      - _CN_recheck_4.4_27
-      - _CN_recheck_4.4_28
-      - _CN_recheck_4.4_29
-      - _CN_recheck_4.4_30
-      - _CN_recheck_4.4_31
-      - _CN_recheck_4.4_32
-      - _CN_recheck_4.4_33
-      - _CN_recheck_4.4_34
-      - _CN_recheck_4.4_35
-      - _CN_recheck_4.4_36
-      - recheck_4.4_37
-      - _CN_recheck_4.4_38
-      - _CN_recheck_4.4_39
-      - recheck_4.4_40
-      - _CN_recheck_4.4_41
-      - _CN_recheck_4.4_42
-      - _CN_recheck_4.4_43
-      - _US_recheck_4.4_44
-      - _CN_recheck_4.4_45
-      - _CN_recheck_4.4_46
-      - _JP_recheck_4.4_47
-      - _CN_recheck_4.4_48
-      - _CA_recheck_4.4_49
+      - TG群https://t.me/aweikeji
+      - 澳洲（TG@阿伟科技/油管）
+      - 澳洲（TG@阿伟科技/油管） 2
+      - 丹麦（TG@阿伟科技/油管）
+      - 丹麦（TG@阿伟科技/油管） 2
+      - 德国阿伟科技@TG*油管
+      - 法国（TG@阿伟科技/油管）
+      - 法国阿伟科技@TG*油管
+      - 韩国（TG@阿伟科技/油管）
+      - 韩国（TG@阿伟科技/油管） 2
+      - 韩国（TG@阿伟科技/油管） 3
+      - 韩国（TG@阿伟科技/油管） 4
+      - 韩国（TG@阿伟科技/油管） 5
+      - 韩国（TG@阿伟科技/油管） 6
+      - 韩国阿伟科技@TG*油管
+      - 韩国阿伟科技@TG*油管 2
+      - 卢森堡（TG@阿伟科技/油管）
+      - 卢森堡（TG@阿伟科技/油管） 2
+      - 卢森堡（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管）
+      - 美国（TG@阿伟科技/油管） 2
+      - 美国（TG@阿伟科技/油管） 3
+      - 美国（TG@阿伟科技/油管） 4
+      - 美国（TG@阿伟科技/油管） 5
+      - 美国（TG@阿伟科技/油管） 6
+      - 美国（TG@阿伟科技/油管） 7
+      - 美国（TG@阿伟科技/油管） 8
+      - 美国（TG@阿伟科技/油管） 9
+      - 美国（TG@阿伟科技/油管） 10
+      - 美国（TG@阿伟科技/油管） 11
+      - 美国（TG@阿伟科技/油管） 12
+      - 美国（TG@阿伟科技/油管） 13
+      - 美国（TG@阿伟科技/油管） 14
+      - 美国（TG@阿伟科技/油管） 15
+      - 美国（TG@阿伟科技/油管） 16
+      - 美国（TG@阿伟科技/油管） 17
+      - 美国（TG@阿伟科技/油管） 18
+      - 美国（TG@阿伟科技/油管） 19
+      - 美国（TG@阿伟科技/油管） 20
+      - 美国（TG@阿伟科技/油管） 21
+      - 欧洲阿伟科技@TG*油管
+      - 日本（TG@阿伟科技/油管）
+      - 日本（TG@阿伟科技/油管） 2
+      - 日本（TG@阿伟科技/油管） 3
+      - 日本（TG@阿伟科技/油管） 4
+      - 日本（TG@阿伟科技/油管） 5
+      - 日本（TG@阿伟科技/油管） 6
+      - 日本（TG@阿伟科技/油管） 7
+      - 日本TG@阿伟科技/油管）
+      - 台湾（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管）
+      - 香港（TG@阿伟科技/油管） 2
+      - 香港（TG@阿伟科技/油管） 3
+      - 香港（TG@阿伟科技/油管） 4
+      - 香港（TG@阿伟科技/油管） 5
+      - 香港（TG@阿伟科技/油管） 6
+      - 香港（TG@阿伟科技/油管） 7
+      - 香港（TG@阿伟科技/油管） 8
+      - 香港（TG@阿伟科技/油管） 9
+      - 香港（TG@阿伟科技/油管） 10
+      - 香港（TG@阿伟科技/油管） 11
+      - 香港（TG@阿伟科技/油管） 12
+      - 香港（TG@阿伟科技/油管） 13
+      - 香港（TG@阿伟科技/油管） 14
+      - 香港（TG@阿伟科技/油管） 15
+      - 香港（TG@阿伟科技/油管） 16
+      - 香港（TG@阿伟科技/油管） 17
+      - 香港（TG@阿伟科技/油管） 18
+      - 香港阿伟科技@TG*油管
+      - 新加坡（TG@阿伟科技/油管）
+      - 新加坡（TG@阿伟科技/油管） 2
+      - 新加坡（TG@阿伟科技/油管） 3
+      - 新加坡（TG@阿伟科技/油管） 4
+      - 新加坡（TG@阿伟科技/油管） 5
+      - 新加坡（TG@阿伟科技/油管） 6
+      - 印尼（TG@阿伟科技/油管）
+      - 印尼阿伟科技@TG*油管
+      - 英国（TG@阿伟科技/油管）
+      - 英国（TG@阿伟科技/油管） 2
+      - 英国（TG@阿伟科技/油管） 3
+      - 英国（TG@阿伟科技/油管） 4
+      - 英国（TG@阿伟科技/油管） 5
+      - 英国（TG@阿伟科技/油管） 6
+      - 英国（TG@阿伟科技/油管） 7
+      - 英国（TG@阿伟科技/油管） 8
+      - 越南（TG@阿伟科技/油管）
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -9473,6 +9826,8 @@ rules:
  - DOMAIN-SUFFIX,hypeapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hypersnap.net,🛑 全球拦截
  - DOMAIN-SUFFIX,iconworkshop.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,idmchina.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,imazingchina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imindmap.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,jihehuaban.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,keyshot.cc,🛑 全球拦截
@@ -9542,6 +9897,8 @@ rules:
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+ - DOMAIN,radio.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,tv.applemusic.com,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
@@ -9586,6 +9943,7 @@ rules:
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
  - DOMAIN,linear.tv.apple.com,🌍 国外媒体
  - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,uts-api.itunes.apple.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
@@ -9672,6 +10030,7 @@ rules:
  - IP-CIDR,203.74.95.153/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,210.71.227.200/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.71.227.202/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
@@ -9772,15 +10131,14 @@ rules:
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,b23.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
  - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,bilibili.tv,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
  - DOMAIN-SUFFIX,bilivideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
- - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
- - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
+ - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
+ - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
  - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
  - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
  - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
@@ -9798,6 +10156,7 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
@@ -9811,11 +10170,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.20.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.56.0/22,📲 电报信息,no-resolve
- - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,91.105.192.0/23,📲 电报信息,no-resolve
  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,185.76.151.0/24,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
  - DOMAIN,payments-jp.amazon.com,🔰 节点选择
@@ -9824,16 +10186,36 @@ rules:
  - DOMAIN,a248.e.akamai.net,🔰 节点选择
  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
  - DOMAIN,testflight.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
+ - DOMAIN,clubhouse.pubnubapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,aex.com,🔰 节点选择
  - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
  - DOMAIN-SUFFIX,binance.com,🔰 节点选择
+ - DOMAIN-SUFFIX,binance.us,🔰 节点选择
  - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
  - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bithumb.com,🔰 节点选择
  - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bitstamp.net,🔰 节点选择
+ - DOMAIN-SUFFIX,bittrex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bybit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinbase.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coincheck.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coingecko.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinmarketcap.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinone.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,ftx.com,🔰 节点选择
  - DOMAIN-SUFFIX,gate.io,🔰 节点选择
+ - DOMAIN-SUFFIX,gemini.com,🔰 节点选择
  - DOMAIN-SUFFIX,huobi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,korbit.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,kraken.com,🔰 节点选择
+ - DOMAIN-SUFFIX,kucoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,liquid.com,🔰 节点选择
  - DOMAIN-SUFFIX,okex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,poloniex.com,🔰 节点选择
  - DOMAIN-SUFFIX,uniswap.org,🔰 节点选择
  - DOMAIN-SUFFIX,zb.com,🔰 节点选择
  - DOMAIN-SUFFIX,discord.com,🔰 节点选择
@@ -9866,6 +10248,7 @@ rules:
  - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
  - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
  - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
+ - DOMAIN-SUFFIX,gvt1.com,🔰 节点选择
  - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
  - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
@@ -9916,11 +10299,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.20.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,95.161.64.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,91.105.192.0/23,🔰 节点选择,no-resolve
  - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,185.76.151.0/24,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,🔰 节点选择,no-resolve
  - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
  - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
  - DOMAIN-SUFFIX,t.co,🔰 节点选择
@@ -9989,7 +10375,6 @@ rules:
  - DOMAIN-SUFFIX,ck101.com,🔰 节点选择
  - DOMAIN-SUFFIX,clarionproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🔰 节点选择
- - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,clyp.it,🔰 节点选择
  - DOMAIN-SUFFIX,cna.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,comparitech.com,🔰 节点选择
@@ -10083,7 +10468,6 @@ rules:
  - DOMAIN-SUFFIX,jiji.com,🔰 节点选择
  - DOMAIN-SUFFIX,jinx.com,🔰 节点选择
  - DOMAIN-SUFFIX,jkforum.net,🔰 节点选择
- - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
  - DOMAIN-SUFFIX,joinmastodon.org,🔰 节点选择
  - DOMAIN-SUFFIX,justmysocks.net,🔰 节点选择
  - DOMAIN-SUFFIX,justpaste.it,🔰 节点选择
@@ -10109,6 +10493,7 @@ rules:
  - DOMAIN-SUFFIX,marc.info,🔰 节点选择
  - DOMAIN-SUFFIX,matters.news,🔰 节点选择
  - DOMAIN-SUFFIX,maying.co,🔰 节点选择
+ - DOMAIN-SUFFIX,medibang.com,🔰 节点选择
  - DOMAIN-SUFFIX,medium.com,🔰 节点选择
  - DOMAIN-SUFFIX,mega.nz,🔰 节点选择
  - DOMAIN-SUFFIX,mergersandinquisitions.com,🔰 节点选择
@@ -10198,6 +10583,7 @@ rules:
  - DOMAIN-SUFFIX,streamable.com,🔰 节点选择
  - DOMAIN-SUFFIX,streema.com,🔰 节点选择
  - DOMAIN-SUFFIX,substack.com,🔰 节点选择
+ - DOMAIN-SUFFIX,substack.com,🔰 节点选择
  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
@@ -10213,6 +10599,7 @@ rules:
  - DOMAIN-SUFFIX,tiny.cc,🔰 节点选择
  - DOMAIN-SUFFIX,tinyurl.com,🔰 节点选择
  - DOMAIN-SUFFIX,torproject.org,🔰 节点选择
+ - DOMAIN-SUFFIX,tradingview.com,🔰 节点选择
  - DOMAIN-SUFFIX,tumblr.com,🔰 节点选择
  - DOMAIN-SUFFIX,turbobit.net,🔰 节点选择
  - DOMAIN-SUFFIX,tutanota.com,🔰 节点选择
@@ -10329,20 +10716,33 @@ rules:
  - DOMAIN-SUFFIX,twitter.jp,🔰 节点选择
  - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
  - DOMAIN,books.itunes.apple.com,🔰 节点选择
- - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
- - DOMAIN,beta.music.apple.com,🔰 节点选择
- - DOMAIN,tv.apple.com,🔰 节点选择
- - DOMAIN,apps.apple.com,🔰 节点选择
- - DOMAIN,itunes.apple.com,🔰 节点选择
  - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,beta.music.apple.com,🔰 节点选择
  - DOMAIN,lookup-api.apple.com,🔰 节点选择
+ - DOMAIN,apps.apple.com,🔰 节点选择
+ - DOMAIN,books.apple.com,🔰 节点选择
+ - DOMAIN,itunes.apple.com,🔰 节点选择
+ - DOMAIN,tv.apple.com,🔰 节点选择
+ - DOMAIN,amp-api.podcasts.apple.com,🔰 节点选择
+ - DOMAIN,bookkeeper.itunes.apple.com,🔰 节点选择
+ - DOMAIN,gateway.icloud.com,🔰 节点选择
+ - DOMAIN-SUFFIX,apple.news,🔰 节点选择
+ - DOMAIN,news-assets.apple.com,🔰 节点选择
+ - DOMAIN,news-client.apple.com,🔰 节点选择
+ - DOMAIN,news-client-search.apple.com,🔰 节点选择
+ - DOMAIN,news-edge.apple.com,🔰 节点选择
+ - DOMAIN,news-events.apple.com,🔰 节点选择
+ - DOMAIN,apple.comscoreresearch.com,🔰 节点选择
  - DOMAIN-SUFFIX,go.dev,🔰 节点选择
  - DOMAIN-SUFFIX,golang.org,🔰 节点选择
+ - DOMAIN-SUFFIX,aicoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,aimoon.com,🔰 节点选择
  - DOMAIN-SUFFIX,bing.com,🔰 节点选择
  - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
  - DOMAIN-SUFFIX,dubox.com,🔰 节点选择
  - DOMAIN-SUFFIX,duboxcdn.com,🔰 节点选择
  - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,linkedin.com,🔰 节点选择
  - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
  - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
@@ -10350,12 +10750,10 @@ rules:
  - DOMAIN,developer.apple.com,🔰 节点选择
  - DOMAIN,www.icloud.com,🔰 节点选择
  - DOMAIN,ocsp.apple.com,🔰 节点选择
- - DOMAIN,xp.apple.com,🔰 节点选择
  - DOMAIN,cacerts.digicert.com,🔰 节点选择
  - DOMAIN,crl3.digicert.com,🔰 节点选择
  - DOMAIN,crl4.digicert.com,🔰 节点选择
  - DOMAIN,ocsp.digicert.com,🔰 节点选择
- - DOMAIN-SUFFIX,cloudcone.com.cn,🔰 节点选择
  - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
  - DOMAIN-SUFFIX,metapix.net,🔰 节点选择
  - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
@@ -10511,19 +10909,11 @@ rules:
  - DOMAIN-SUFFIX,qqmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,servicewechat.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tencent-cloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent-cloud.net,🎯 全球直连
  - DOMAIN-SUFFIX,tenpay.com,🎯 全球直连
  - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
  - DOMAIN,file-igamecj.akamaized.net,🎯 全球直连
- - IP-CIDR,101.32.104.4/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.41/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.56/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.118.25/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.16/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.53/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.209/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.3.47/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.107.244/32,🎯 全球直连,no-resolve
  - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,ccgslb.com,🎯 全球直连
@@ -10603,6 +10993,7 @@ rules:
  - DOMAIN-SUFFIX,chinaso.com,🎯 全球直连
  - DOMAIN-SUFFIX,chuimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,chunyu.mobi,🎯 全球直连
+ - DOMAIN-SUFFIX,cibntv.net,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,coolapk.com,🎯 全球直连
@@ -10647,8 +11038,6 @@ rules:
  - DOMAIN-SUFFIX,keepcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,kkmh.com,🎯 全球直连
  - DOMAIN-SUFFIX,lanzous.com,🎯 全球直连
- - DOMAIN-SUFFIX,licdn.com,🎯 全球直连
- - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
  - DOMAIN-SUFFIX,luojilab.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyan.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyun.tv,🎯 全球直连
@@ -10671,6 +11060,7 @@ rules:
  - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
  - DOMAIN-SUFFIX,scomper.me,🎯 全球直连
+ - DOMAIN-SUFFIX,shouqianba.com,🎯 全球直连
  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
  - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
