@@ -5,343 +5,155 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _US_wmt(4.13)_1, server: kr1.qingyun123.xyz, port: 10050, type: trojan, password: 4f278153-2043-412e-a5eb-ea730d5978e1, sni: kr1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(4.13)_2, server: hk1.qingyun123.xyz, port: 10050, type: trojan, password: 4f278153-2043-412e-a5eb-ea730d5978e1, sni: hk1.qingyun123.xyz, skip-cert-verify: true, udp: true}
-  - {name: _DE_wmt(4.13)_3, server: 5.183.179.140, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: _CN_wmt(4.13)_4, server: 180.163.62.91, port: 10064, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _HK_wmt(4.13)_5, server: azhk.fenglingcloud.com, port: 28004, type: trojan, password: f2102f6b-431d-4760-8b1c-c43a1a7ed77a, sni: azhk.fenglingcloud.com, skip-cert-verify: true, udp: true}
-  - {name: _DE_wmt(4.13)_6, server: 5.183.179.141, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: _DE_wmt(4.13)_7, server: 5.183.179.167, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: _CN_wmt(4.13)_8, server: 120.233.10.230, port: 50300, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: _BG_wmt(4.13)_9, server: 213.183.63.221, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: _BG_wmt(4.13)_10, server: 213.183.63.221, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: _CN_wmt(4.13)_11, server: 120.233.10.230, port: 50600, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: _DE_wmt(4.13)_12, server: 5.183.179.148, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: _CN_wmt(4.13)_13, server: cn1.iepl.starlink.st, port: 50300, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: _DE_wmt(4.13)_14, server: 5.183.179.141, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: _DE_wmt(4.13)_15, server: 5.183.179.167, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: _DE_wmt(4.13)_16, server: 5.183.179.146, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: _GB_wmt(4.13)_17, server: 152.89.210.105, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: _DE_wmt(4.13)_18, server: 5.183.179.148, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: _DE_wmt(4.13)_19, server: 5.183.179.166, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: _DE_wmt(4.13)_20, server: 5.183.179.140, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: _BG_wmt(4.13)_21, server: 213.183.63.221, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: _DE_wmt(4.13)_22, server: 5.183.179.167, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: _DE_wmt(4.13)_23, server: 5.183.179.146, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: _BG_wmt(4.13)_24, server: 213.183.63.217, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: _DE_wmt(4.13)_25, server: 5.183.179.170, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: _DE_wmt(4.13)_26, server: 5.183.179.148, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: _BG_wmt(4.13)_27, server: 213.183.63.221, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: _NL_wmt(4.13)_28, server: 213.183.59.218, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: _DE_wmt(4.13)_29, server: 5.183.179.141, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: _DE_wmt(4.13)_30, server: 5.183.179.140, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: _DE_wmt(4.13)_31, server: 5.183.179.167, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: _DE_wmt(4.13)_32, server: 5.183.179.170, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: _DE_wmt(4.13)_33, server: 5.183.179.141, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: _DE_wmt(4.13)_34, server: 5.183.179.145, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: _DE_wmt(4.13)_35, server: 5.183.179.170, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: _CN_wmt(4.13)_36, server: cn1.iepl.starlink.st, port: 50600, type: ss, cipher: aes-128-gcm, password: ced52354-bec2-4209-9121-b57d3dfb59e9, udp: true}
-  - {name: _DE_wmt(4.13)_37, server: 5.183.179.146, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: _CN_wmt(4.13)_38, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_wmt(4.13)_39, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _DE_wmt(4.13)_40, server: 5.183.179.166, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: _DE_wmt(4.13)_41, server: 5.183.179.140, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: _DE_wmt(4.13)_42, server: 5.183.179.140, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: _CN_wmt(4.13)_43, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_wmt(4.13)_44, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_wmt(4.13)_45, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _AU_wmt(4.13)_46, server: 185.167.116.38, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: _GB_wmt(4.13)_47, server: 152.89.210.105, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: _CN_wmt(4.13)_48, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CH_wmt(4.13)_49, server: 185.126.116.124, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: _CN_wmt(4.13)_50, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _BG_wmt(4.13)_51, server: 213.183.63.217, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: _DE_wmt(4.13)_52, server: 5.183.179.148, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: _DE_wmt(4.13)_53, server: 5.183.179.146, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: _DE_wmt(4.13)_54, server: 5.183.179.146, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: _GB_wmt(4.13)_55, server: 152.89.210.105, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: _BG_wmt(4.13)_56, server: 213.183.63.218, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: _GB_wmt(4.13)_57, server: 152.89.210.105, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: _CN_wmt(4.13)_58, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _DE_wmt(4.13)_59, server: 5.183.179.141, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: _DE_wmt(4.13)_60, server: 5.183.179.148, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: _CN_wmt(4.13)_61, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_wmt(4.13)_62, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _BG_wmt(4.13)_63, server: 213.183.63.218, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: _NL_wmt(4.13)_64, server: 213.183.59.185, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: _BG_wmt(4.13)_65, server: 213.183.63.218, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: _DE_wmt(4.13)_66, server: 5.183.179.148, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: _CN_wmt(4.13)_67, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _GB_wmt(4.13)_68, server: 152.89.210.105, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: _BG_wmt(4.13)_69, server: 213.183.63.217, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: _DE_wmt(4.13)_70, server: 5.183.179.148, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: _DE_wmt(4.13)_71, server: 5.183.179.148, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: _DE_wmt(4.13)_72, server: 5.183.179.148, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: _DE_wmt(4.13)_73, server: 5.183.179.148, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: _DE_wmt(4.13)_74, server: 5.183.179.166, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: _NL_wmt(4.13)_75, server: 213.183.59.185, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: _CH_wmt(4.13)_76, server: 185.126.116.124, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: _DE_wmt(4.13)_77, server: 5.183.179.146, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: _GB_wmt(4.13)_78, server: 152.89.210.105, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: _DE_wmt(4.13)_79, server: 5.183.179.148, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: _CN_wmt(4.13)_80, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: US_2674_22.90Mb, server: 20.222.84.185, port: 443, type: trojan, password: b345dea8-d232-4aa5-8bec-517f78f986e3, skip-cert-verify: true, udp: true}
+  - {name: US_56 |75.09Mb, server: kr1.qingyun123.xyz, port: 10050, type: trojan, password: d7ff202a-7f5b-4190-93cb-92e086d2ebdc, sni: kr1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_2673_22.78Mb, server: 20.212.197.126, port: 443, type: trojan, password: b345dea8-d232-4aa5-8bec-517f78f986e3, skip-cert-verify: true, udp: true}
+  - {name: CN_396_ 8.69Mb, server: c106d6z2q.mczu62b33.95bvz0g12.soabgo.com, port: 25006, type: vmess, uuid: 1AD7CB74-F19E-22E0-F5A6-C227CE5EE440, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_55 |389.20Mb, server: hknf1.qingyun123.xyz, port: 10050, type: trojan, password: d7ff202a-7f5b-4190-93cb-92e086d2ebdc, sni: hknf1.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_554, server: bgp.kuli888.xyz, port: 52008, type: trojan, password: 0e4fb858-8b9b-3520-8910-310cac25e475, sni: bgp.kuli888.xyz, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇷🇺RU_3738, server: oz.moonfree.top, port: 443, type: vmess, uuid: 861e9cd0-cd1d-4f8c-b7d9-b47409dda333, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: oz.moonfree.top}, udp: true}
+  - {name: JP_39 |79.59Mb, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇷🇺RU_536, server: gz2.52168.xyz, port: 2103, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:gt9img0d2jp, obfs-param: ee821149.baidu.com, udp: true}
+  - {name: CN_388_10.43Mb, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_15 | 8.54Mb, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_373_11.22Mb, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_31 | 7.24Mb, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_417, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_380_10.20Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_33 | 7.78Mb, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_27 |24.13Mb, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _ 9.88Mb, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_390_10.74Mb, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_363_ 8.86Mb, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_376_10.73Mb, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_41 | 9.37Mb, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_367_12.95Mb, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: US_57 |10.60Mb, server: asd1v.baozipay.top, port: 443, type: trojan, password: rYA8dFQI6R2qTwP0, sni: asd1v.baozipay.top, skip-cert-verify: true, udp: true}
+  - {name: CN_31 TG@peekfun, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_22 | 7.37Mb, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_24 |10.80Mb, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_28 |12.08Mb, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_382_ 9.92Mb, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: "", server: vs.mumi.bid, port: 10124, type: vmess, uuid: 0748a567-ca97-4fc8-9d9c-9ca18f2b9ff4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: vs.mumi.bid}, udp: true}
+  - {name: FR_825, server: 92.243.24.236, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: LE6Ee6PELhVu, udp: true}
+  - {name: GB_978, server: 144.24.88.101, port: 16833, type: vmess, uuid: f5425ccf-3946-4fb4-eb24-5393d78a392f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_552_17.40Mb, server: 139.162.122.205, port: 3845, type: vmess, uuid: 76d5c6e3-c74c-3406-b9e8-9859d0a71c56, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_wmt(4.13)_1
-      - _US_wmt(4.13)_2
-      - _DE_wmt(4.13)_3
-      - _CN_wmt(4.13)_4
-      - _HK_wmt(4.13)_5
-      - _DE_wmt(4.13)_6
-      - _DE_wmt(4.13)_7
-      - _CN_wmt(4.13)_8
-      - _BG_wmt(4.13)_9
-      - _BG_wmt(4.13)_10
-      - _CN_wmt(4.13)_11
-      - _DE_wmt(4.13)_12
-      - _CN_wmt(4.13)_13
-      - _DE_wmt(4.13)_14
-      - _DE_wmt(4.13)_15
-      - _DE_wmt(4.13)_16
-      - _GB_wmt(4.13)_17
-      - _DE_wmt(4.13)_18
-      - _DE_wmt(4.13)_19
-      - _DE_wmt(4.13)_20
-      - _BG_wmt(4.13)_21
-      - _DE_wmt(4.13)_22
-      - _DE_wmt(4.13)_23
-      - _BG_wmt(4.13)_24
-      - _DE_wmt(4.13)_25
-      - _DE_wmt(4.13)_26
-      - _BG_wmt(4.13)_27
-      - _NL_wmt(4.13)_28
-      - _DE_wmt(4.13)_29
-      - _DE_wmt(4.13)_30
-      - _DE_wmt(4.13)_31
-      - _DE_wmt(4.13)_32
-      - _DE_wmt(4.13)_33
-      - _DE_wmt(4.13)_34
-      - _DE_wmt(4.13)_35
-      - _CN_wmt(4.13)_36
-      - _DE_wmt(4.13)_37
-      - _CN_wmt(4.13)_38
-      - _CN_wmt(4.13)_39
-      - _DE_wmt(4.13)_40
-      - _DE_wmt(4.13)_41
-      - _DE_wmt(4.13)_42
-      - _CN_wmt(4.13)_43
-      - _CN_wmt(4.13)_44
-      - _CN_wmt(4.13)_45
-      - _AU_wmt(4.13)_46
-      - _GB_wmt(4.13)_47
-      - _CN_wmt(4.13)_48
-      - _CH_wmt(4.13)_49
-      - _CN_wmt(4.13)_50
-      - _BG_wmt(4.13)_51
-      - _DE_wmt(4.13)_52
-      - _DE_wmt(4.13)_53
-      - _DE_wmt(4.13)_54
-      - _GB_wmt(4.13)_55
-      - _BG_wmt(4.13)_56
-      - _GB_wmt(4.13)_57
-      - _CN_wmt(4.13)_58
-      - _DE_wmt(4.13)_59
-      - _DE_wmt(4.13)_60
-      - _CN_wmt(4.13)_61
-      - _CN_wmt(4.13)_62
-      - _BG_wmt(4.13)_63
-      - _NL_wmt(4.13)_64
-      - _BG_wmt(4.13)_65
-      - _DE_wmt(4.13)_66
-      - _CN_wmt(4.13)_67
-      - _GB_wmt(4.13)_68
-      - _BG_wmt(4.13)_69
-      - _DE_wmt(4.13)_70
-      - _DE_wmt(4.13)_71
-      - _DE_wmt(4.13)_72
-      - _DE_wmt(4.13)_73
-      - _DE_wmt(4.13)_74
-      - _NL_wmt(4.13)_75
-      - _CH_wmt(4.13)_76
-      - _DE_wmt(4.13)_77
-      - _GB_wmt(4.13)_78
-      - _DE_wmt(4.13)_79
-      - _CN_wmt(4.13)_80
+      - US_2674_22.90Mb
+      - US_56 |75.09Mb
+      - US_2673_22.78Mb
+      - CN_396_ 8.69Mb
+      - US_55 |389.20Mb
+      - Relay_🇨🇳CN-🇺🇸US_554
+      - Relay_🇺🇸US-🇷🇺RU_3738
+      - JP_39 |79.59Mb
+      - Relay_🇨🇳CN-🇷🇺RU_536
+      - CN_388_10.43Mb
+      - CN_15 | 8.54Mb
+      - CN_373_11.22Mb
+      - CN_31 | 7.24Mb
+      - CN_417
+      - CN_380_10.20Mb
+      - CN_33 | 7.78Mb
+      - CN_27 |24.13Mb
+      - _ 9.88Mb
+      - CN_390_10.74Mb
+      - CN_363_ 8.86Mb
+      - CN_376_10.73Mb
+      - CN_41 | 9.37Mb
+      - CN_367_12.95Mb
+      - US_57 |10.60Mb
+      - CN_31 TG@peekfun
+      - CN_22 | 7.37Mb
+      - CN_24 |10.80Mb
+      - CN_28 |12.08Mb
+      - CN_382_ 9.92Mb
+      - ""
+      - FR_825
+      - GB_978
+      - JP_552_17.40Mb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _US_wmt(4.13)_1
-      - _US_wmt(4.13)_2
-      - _DE_wmt(4.13)_3
-      - _CN_wmt(4.13)_4
-      - _HK_wmt(4.13)_5
-      - _DE_wmt(4.13)_6
-      - _DE_wmt(4.13)_7
-      - _CN_wmt(4.13)_8
-      - _BG_wmt(4.13)_9
-      - _BG_wmt(4.13)_10
-      - _CN_wmt(4.13)_11
-      - _DE_wmt(4.13)_12
-      - _CN_wmt(4.13)_13
-      - _DE_wmt(4.13)_14
-      - _DE_wmt(4.13)_15
-      - _DE_wmt(4.13)_16
-      - _GB_wmt(4.13)_17
-      - _DE_wmt(4.13)_18
-      - _DE_wmt(4.13)_19
-      - _DE_wmt(4.13)_20
-      - _BG_wmt(4.13)_21
-      - _DE_wmt(4.13)_22
-      - _DE_wmt(4.13)_23
-      - _BG_wmt(4.13)_24
-      - _DE_wmt(4.13)_25
-      - _DE_wmt(4.13)_26
-      - _BG_wmt(4.13)_27
-      - _NL_wmt(4.13)_28
-      - _DE_wmt(4.13)_29
-      - _DE_wmt(4.13)_30
-      - _DE_wmt(4.13)_31
-      - _DE_wmt(4.13)_32
-      - _DE_wmt(4.13)_33
-      - _DE_wmt(4.13)_34
-      - _DE_wmt(4.13)_35
-      - _CN_wmt(4.13)_36
-      - _DE_wmt(4.13)_37
-      - _CN_wmt(4.13)_38
-      - _CN_wmt(4.13)_39
-      - _DE_wmt(4.13)_40
-      - _DE_wmt(4.13)_41
-      - _DE_wmt(4.13)_42
-      - _CN_wmt(4.13)_43
-      - _CN_wmt(4.13)_44
-      - _CN_wmt(4.13)_45
-      - _AU_wmt(4.13)_46
-      - _GB_wmt(4.13)_47
-      - _CN_wmt(4.13)_48
-      - _CH_wmt(4.13)_49
-      - _CN_wmt(4.13)_50
-      - _BG_wmt(4.13)_51
-      - _DE_wmt(4.13)_52
-      - _DE_wmt(4.13)_53
-      - _DE_wmt(4.13)_54
-      - _GB_wmt(4.13)_55
-      - _BG_wmt(4.13)_56
-      - _GB_wmt(4.13)_57
-      - _CN_wmt(4.13)_58
-      - _DE_wmt(4.13)_59
-      - _DE_wmt(4.13)_60
-      - _CN_wmt(4.13)_61
-      - _CN_wmt(4.13)_62
-      - _BG_wmt(4.13)_63
-      - _NL_wmt(4.13)_64
-      - _BG_wmt(4.13)_65
-      - _DE_wmt(4.13)_66
-      - _CN_wmt(4.13)_67
-      - _GB_wmt(4.13)_68
-      - _BG_wmt(4.13)_69
-      - _DE_wmt(4.13)_70
-      - _DE_wmt(4.13)_71
-      - _DE_wmt(4.13)_72
-      - _DE_wmt(4.13)_73
-      - _DE_wmt(4.13)_74
-      - _NL_wmt(4.13)_75
-      - _CH_wmt(4.13)_76
-      - _DE_wmt(4.13)_77
-      - _GB_wmt(4.13)_78
-      - _DE_wmt(4.13)_79
-      - _CN_wmt(4.13)_80
+      - US_2674_22.90Mb
+      - US_56 |75.09Mb
+      - US_2673_22.78Mb
+      - CN_396_ 8.69Mb
+      - US_55 |389.20Mb
+      - Relay_🇨🇳CN-🇺🇸US_554
+      - Relay_🇺🇸US-🇷🇺RU_3738
+      - JP_39 |79.59Mb
+      - Relay_🇨🇳CN-🇷🇺RU_536
+      - CN_388_10.43Mb
+      - CN_15 | 8.54Mb
+      - CN_373_11.22Mb
+      - CN_31 | 7.24Mb
+      - CN_417
+      - CN_380_10.20Mb
+      - CN_33 | 7.78Mb
+      - CN_27 |24.13Mb
+      - _ 9.88Mb
+      - CN_390_10.74Mb
+      - CN_363_ 8.86Mb
+      - CN_376_10.73Mb
+      - CN_41 | 9.37Mb
+      - CN_367_12.95Mb
+      - US_57 |10.60Mb
+      - CN_31 TG@peekfun
+      - CN_22 | 7.37Mb
+      - CN_24 |10.80Mb
+      - CN_28 |12.08Mb
+      - CN_382_ 9.92Mb
+      - ""
+      - FR_825
+      - GB_978
+      - JP_552_17.40Mb
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_wmt(4.13)_1
-      - _US_wmt(4.13)_2
-      - _DE_wmt(4.13)_3
-      - _CN_wmt(4.13)_4
-      - _HK_wmt(4.13)_5
-      - _DE_wmt(4.13)_6
-      - _DE_wmt(4.13)_7
-      - _CN_wmt(4.13)_8
-      - _BG_wmt(4.13)_9
-      - _BG_wmt(4.13)_10
-      - _CN_wmt(4.13)_11
-      - _DE_wmt(4.13)_12
-      - _CN_wmt(4.13)_13
-      - _DE_wmt(4.13)_14
-      - _DE_wmt(4.13)_15
-      - _DE_wmt(4.13)_16
-      - _GB_wmt(4.13)_17
-      - _DE_wmt(4.13)_18
-      - _DE_wmt(4.13)_19
-      - _DE_wmt(4.13)_20
-      - _BG_wmt(4.13)_21
-      - _DE_wmt(4.13)_22
-      - _DE_wmt(4.13)_23
-      - _BG_wmt(4.13)_24
-      - _DE_wmt(4.13)_25
-      - _DE_wmt(4.13)_26
-      - _BG_wmt(4.13)_27
-      - _NL_wmt(4.13)_28
-      - _DE_wmt(4.13)_29
-      - _DE_wmt(4.13)_30
-      - _DE_wmt(4.13)_31
-      - _DE_wmt(4.13)_32
-      - _DE_wmt(4.13)_33
-      - _DE_wmt(4.13)_34
-      - _DE_wmt(4.13)_35
-      - _CN_wmt(4.13)_36
-      - _DE_wmt(4.13)_37
-      - _CN_wmt(4.13)_38
-      - _CN_wmt(4.13)_39
-      - _DE_wmt(4.13)_40
-      - _DE_wmt(4.13)_41
-      - _DE_wmt(4.13)_42
-      - _CN_wmt(4.13)_43
-      - _CN_wmt(4.13)_44
-      - _CN_wmt(4.13)_45
-      - _AU_wmt(4.13)_46
-      - _GB_wmt(4.13)_47
-      - _CN_wmt(4.13)_48
-      - _CH_wmt(4.13)_49
-      - _CN_wmt(4.13)_50
-      - _BG_wmt(4.13)_51
-      - _DE_wmt(4.13)_52
-      - _DE_wmt(4.13)_53
-      - _DE_wmt(4.13)_54
-      - _GB_wmt(4.13)_55
-      - _BG_wmt(4.13)_56
-      - _GB_wmt(4.13)_57
-      - _CN_wmt(4.13)_58
-      - _DE_wmt(4.13)_59
-      - _DE_wmt(4.13)_60
-      - _CN_wmt(4.13)_61
-      - _CN_wmt(4.13)_62
-      - _BG_wmt(4.13)_63
-      - _NL_wmt(4.13)_64
-      - _BG_wmt(4.13)_65
-      - _DE_wmt(4.13)_66
-      - _CN_wmt(4.13)_67
-      - _GB_wmt(4.13)_68
-      - _BG_wmt(4.13)_69
-      - _DE_wmt(4.13)_70
-      - _DE_wmt(4.13)_71
-      - _DE_wmt(4.13)_72
-      - _DE_wmt(4.13)_73
-      - _DE_wmt(4.13)_74
-      - _NL_wmt(4.13)_75
-      - _CH_wmt(4.13)_76
-      - _DE_wmt(4.13)_77
-      - _GB_wmt(4.13)_78
-      - _DE_wmt(4.13)_79
-      - _CN_wmt(4.13)_80
+      - US_2674_22.90Mb
+      - US_56 |75.09Mb
+      - US_2673_22.78Mb
+      - CN_396_ 8.69Mb
+      - US_55 |389.20Mb
+      - Relay_🇨🇳CN-🇺🇸US_554
+      - Relay_🇺🇸US-🇷🇺RU_3738
+      - JP_39 |79.59Mb
+      - Relay_🇨🇳CN-🇷🇺RU_536
+      - CN_388_10.43Mb
+      - CN_15 | 8.54Mb
+      - CN_373_11.22Mb
+      - CN_31 | 7.24Mb
+      - CN_417
+      - CN_380_10.20Mb
+      - CN_33 | 7.78Mb
+      - CN_27 |24.13Mb
+      - _ 9.88Mb
+      - CN_390_10.74Mb
+      - CN_363_ 8.86Mb
+      - CN_376_10.73Mb
+      - CN_41 | 9.37Mb
+      - CN_367_12.95Mb
+      - US_57 |10.60Mb
+      - CN_31 TG@peekfun
+      - CN_22 | 7.37Mb
+      - CN_24 |10.80Mb
+      - CN_28 |12.08Mb
+      - CN_382_ 9.92Mb
+      - ""
+      - FR_825
+      - GB_978
+      - JP_552_17.40Mb
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -360,86 +172,39 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_wmt(4.13)_1
-      - _US_wmt(4.13)_2
-      - _DE_wmt(4.13)_3
-      - _CN_wmt(4.13)_4
-      - _HK_wmt(4.13)_5
-      - _DE_wmt(4.13)_6
-      - _DE_wmt(4.13)_7
-      - _CN_wmt(4.13)_8
-      - _BG_wmt(4.13)_9
-      - _BG_wmt(4.13)_10
-      - _CN_wmt(4.13)_11
-      - _DE_wmt(4.13)_12
-      - _CN_wmt(4.13)_13
-      - _DE_wmt(4.13)_14
-      - _DE_wmt(4.13)_15
-      - _DE_wmt(4.13)_16
-      - _GB_wmt(4.13)_17
-      - _DE_wmt(4.13)_18
-      - _DE_wmt(4.13)_19
-      - _DE_wmt(4.13)_20
-      - _BG_wmt(4.13)_21
-      - _DE_wmt(4.13)_22
-      - _DE_wmt(4.13)_23
-      - _BG_wmt(4.13)_24
-      - _DE_wmt(4.13)_25
-      - _DE_wmt(4.13)_26
-      - _BG_wmt(4.13)_27
-      - _NL_wmt(4.13)_28
-      - _DE_wmt(4.13)_29
-      - _DE_wmt(4.13)_30
-      - _DE_wmt(4.13)_31
-      - _DE_wmt(4.13)_32
-      - _DE_wmt(4.13)_33
-      - _DE_wmt(4.13)_34
-      - _DE_wmt(4.13)_35
-      - _CN_wmt(4.13)_36
-      - _DE_wmt(4.13)_37
-      - _CN_wmt(4.13)_38
-      - _CN_wmt(4.13)_39
-      - _DE_wmt(4.13)_40
-      - _DE_wmt(4.13)_41
-      - _DE_wmt(4.13)_42
-      - _CN_wmt(4.13)_43
-      - _CN_wmt(4.13)_44
-      - _CN_wmt(4.13)_45
-      - _AU_wmt(4.13)_46
-      - _GB_wmt(4.13)_47
-      - _CN_wmt(4.13)_48
-      - _CH_wmt(4.13)_49
-      - _CN_wmt(4.13)_50
-      - _BG_wmt(4.13)_51
-      - _DE_wmt(4.13)_52
-      - _DE_wmt(4.13)_53
-      - _DE_wmt(4.13)_54
-      - _GB_wmt(4.13)_55
-      - _BG_wmt(4.13)_56
-      - _GB_wmt(4.13)_57
-      - _CN_wmt(4.13)_58
-      - _DE_wmt(4.13)_59
-      - _DE_wmt(4.13)_60
-      - _CN_wmt(4.13)_61
-      - _CN_wmt(4.13)_62
-      - _BG_wmt(4.13)_63
-      - _NL_wmt(4.13)_64
-      - _BG_wmt(4.13)_65
-      - _DE_wmt(4.13)_66
-      - _CN_wmt(4.13)_67
-      - _GB_wmt(4.13)_68
-      - _BG_wmt(4.13)_69
-      - _DE_wmt(4.13)_70
-      - _DE_wmt(4.13)_71
-      - _DE_wmt(4.13)_72
-      - _DE_wmt(4.13)_73
-      - _DE_wmt(4.13)_74
-      - _NL_wmt(4.13)_75
-      - _CH_wmt(4.13)_76
-      - _DE_wmt(4.13)_77
-      - _GB_wmt(4.13)_78
-      - _DE_wmt(4.13)_79
-      - _CN_wmt(4.13)_80
+      - US_2674_22.90Mb
+      - US_56 |75.09Mb
+      - US_2673_22.78Mb
+      - CN_396_ 8.69Mb
+      - US_55 |389.20Mb
+      - Relay_🇨🇳CN-🇺🇸US_554
+      - Relay_🇺🇸US-🇷🇺RU_3738
+      - JP_39 |79.59Mb
+      - Relay_🇨🇳CN-🇷🇺RU_536
+      - CN_388_10.43Mb
+      - CN_15 | 8.54Mb
+      - CN_373_11.22Mb
+      - CN_31 | 7.24Mb
+      - CN_417
+      - CN_380_10.20Mb
+      - CN_33 | 7.78Mb
+      - CN_27 |24.13Mb
+      - _ 9.88Mb
+      - CN_390_10.74Mb
+      - CN_363_ 8.86Mb
+      - CN_376_10.73Mb
+      - CN_41 | 9.37Mb
+      - CN_367_12.95Mb
+      - US_57 |10.60Mb
+      - CN_31 TG@peekfun
+      - CN_22 | 7.37Mb
+      - CN_24 |10.80Mb
+      - CN_28 |12.08Mb
+      - CN_382_ 9.92Mb
+      - ""
+      - FR_825
+      - GB_978
+      - JP_552_17.40Mb
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -450,257 +215,116 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _US_wmt(4.13)_1
-      - _US_wmt(4.13)_2
-      - _DE_wmt(4.13)_3
-      - _CN_wmt(4.13)_4
-      - _HK_wmt(4.13)_5
-      - _DE_wmt(4.13)_6
-      - _DE_wmt(4.13)_7
-      - _CN_wmt(4.13)_8
-      - _BG_wmt(4.13)_9
-      - _BG_wmt(4.13)_10
-      - _CN_wmt(4.13)_11
-      - _DE_wmt(4.13)_12
-      - _CN_wmt(4.13)_13
-      - _DE_wmt(4.13)_14
-      - _DE_wmt(4.13)_15
-      - _DE_wmt(4.13)_16
-      - _GB_wmt(4.13)_17
-      - _DE_wmt(4.13)_18
-      - _DE_wmt(4.13)_19
-      - _DE_wmt(4.13)_20
-      - _BG_wmt(4.13)_21
-      - _DE_wmt(4.13)_22
-      - _DE_wmt(4.13)_23
-      - _BG_wmt(4.13)_24
-      - _DE_wmt(4.13)_25
-      - _DE_wmt(4.13)_26
-      - _BG_wmt(4.13)_27
-      - _NL_wmt(4.13)_28
-      - _DE_wmt(4.13)_29
-      - _DE_wmt(4.13)_30
-      - _DE_wmt(4.13)_31
-      - _DE_wmt(4.13)_32
-      - _DE_wmt(4.13)_33
-      - _DE_wmt(4.13)_34
-      - _DE_wmt(4.13)_35
-      - _CN_wmt(4.13)_36
-      - _DE_wmt(4.13)_37
-      - _CN_wmt(4.13)_38
-      - _CN_wmt(4.13)_39
-      - _DE_wmt(4.13)_40
-      - _DE_wmt(4.13)_41
-      - _DE_wmt(4.13)_42
-      - _CN_wmt(4.13)_43
-      - _CN_wmt(4.13)_44
-      - _CN_wmt(4.13)_45
-      - _AU_wmt(4.13)_46
-      - _GB_wmt(4.13)_47
-      - _CN_wmt(4.13)_48
-      - _CH_wmt(4.13)_49
-      - _CN_wmt(4.13)_50
-      - _BG_wmt(4.13)_51
-      - _DE_wmt(4.13)_52
-      - _DE_wmt(4.13)_53
-      - _DE_wmt(4.13)_54
-      - _GB_wmt(4.13)_55
-      - _BG_wmt(4.13)_56
-      - _GB_wmt(4.13)_57
-      - _CN_wmt(4.13)_58
-      - _DE_wmt(4.13)_59
-      - _DE_wmt(4.13)_60
-      - _CN_wmt(4.13)_61
-      - _CN_wmt(4.13)_62
-      - _BG_wmt(4.13)_63
-      - _NL_wmt(4.13)_64
-      - _BG_wmt(4.13)_65
-      - _DE_wmt(4.13)_66
-      - _CN_wmt(4.13)_67
-      - _GB_wmt(4.13)_68
-      - _BG_wmt(4.13)_69
-      - _DE_wmt(4.13)_70
-      - _DE_wmt(4.13)_71
-      - _DE_wmt(4.13)_72
-      - _DE_wmt(4.13)_73
-      - _DE_wmt(4.13)_74
-      - _NL_wmt(4.13)_75
-      - _CH_wmt(4.13)_76
-      - _DE_wmt(4.13)_77
-      - _GB_wmt(4.13)_78
-      - _DE_wmt(4.13)_79
-      - _CN_wmt(4.13)_80
+      - US_2674_22.90Mb
+      - US_56 |75.09Mb
+      - US_2673_22.78Mb
+      - CN_396_ 8.69Mb
+      - US_55 |389.20Mb
+      - Relay_🇨🇳CN-🇺🇸US_554
+      - Relay_🇺🇸US-🇷🇺RU_3738
+      - JP_39 |79.59Mb
+      - Relay_🇨🇳CN-🇷🇺RU_536
+      - CN_388_10.43Mb
+      - CN_15 | 8.54Mb
+      - CN_373_11.22Mb
+      - CN_31 | 7.24Mb
+      - CN_417
+      - CN_380_10.20Mb
+      - CN_33 | 7.78Mb
+      - CN_27 |24.13Mb
+      - _ 9.88Mb
+      - CN_390_10.74Mb
+      - CN_363_ 8.86Mb
+      - CN_376_10.73Mb
+      - CN_41 | 9.37Mb
+      - CN_367_12.95Mb
+      - US_57 |10.60Mb
+      - CN_31 TG@peekfun
+      - CN_22 | 7.37Mb
+      - CN_24 |10.80Mb
+      - CN_28 |12.08Mb
+      - CN_382_ 9.92Mb
+      - ""
+      - FR_825
+      - GB_978
+      - JP_552_17.40Mb
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _US_wmt(4.13)_1
-      - _US_wmt(4.13)_2
-      - _DE_wmt(4.13)_3
-      - _CN_wmt(4.13)_4
-      - _HK_wmt(4.13)_5
-      - _DE_wmt(4.13)_6
-      - _DE_wmt(4.13)_7
-      - _CN_wmt(4.13)_8
-      - _BG_wmt(4.13)_9
-      - _BG_wmt(4.13)_10
-      - _CN_wmt(4.13)_11
-      - _DE_wmt(4.13)_12
-      - _CN_wmt(4.13)_13
-      - _DE_wmt(4.13)_14
-      - _DE_wmt(4.13)_15
-      - _DE_wmt(4.13)_16
-      - _GB_wmt(4.13)_17
-      - _DE_wmt(4.13)_18
-      - _DE_wmt(4.13)_19
-      - _DE_wmt(4.13)_20
-      - _BG_wmt(4.13)_21
-      - _DE_wmt(4.13)_22
-      - _DE_wmt(4.13)_23
-      - _BG_wmt(4.13)_24
-      - _DE_wmt(4.13)_25
-      - _DE_wmt(4.13)_26
-      - _BG_wmt(4.13)_27
-      - _NL_wmt(4.13)_28
-      - _DE_wmt(4.13)_29
-      - _DE_wmt(4.13)_30
-      - _DE_wmt(4.13)_31
-      - _DE_wmt(4.13)_32
-      - _DE_wmt(4.13)_33
-      - _DE_wmt(4.13)_34
-      - _DE_wmt(4.13)_35
-      - _CN_wmt(4.13)_36
-      - _DE_wmt(4.13)_37
-      - _CN_wmt(4.13)_38
-      - _CN_wmt(4.13)_39
-      - _DE_wmt(4.13)_40
-      - _DE_wmt(4.13)_41
-      - _DE_wmt(4.13)_42
-      - _CN_wmt(4.13)_43
-      - _CN_wmt(4.13)_44
-      - _CN_wmt(4.13)_45
-      - _AU_wmt(4.13)_46
-      - _GB_wmt(4.13)_47
-      - _CN_wmt(4.13)_48
-      - _CH_wmt(4.13)_49
-      - _CN_wmt(4.13)_50
-      - _BG_wmt(4.13)_51
-      - _DE_wmt(4.13)_52
-      - _DE_wmt(4.13)_53
-      - _DE_wmt(4.13)_54
-      - _GB_wmt(4.13)_55
-      - _BG_wmt(4.13)_56
-      - _GB_wmt(4.13)_57
-      - _CN_wmt(4.13)_58
-      - _DE_wmt(4.13)_59
-      - _DE_wmt(4.13)_60
-      - _CN_wmt(4.13)_61
-      - _CN_wmt(4.13)_62
-      - _BG_wmt(4.13)_63
-      - _NL_wmt(4.13)_64
-      - _BG_wmt(4.13)_65
-      - _DE_wmt(4.13)_66
-      - _CN_wmt(4.13)_67
-      - _GB_wmt(4.13)_68
-      - _BG_wmt(4.13)_69
-      - _DE_wmt(4.13)_70
-      - _DE_wmt(4.13)_71
-      - _DE_wmt(4.13)_72
-      - _DE_wmt(4.13)_73
-      - _DE_wmt(4.13)_74
-      - _NL_wmt(4.13)_75
-      - _CH_wmt(4.13)_76
-      - _DE_wmt(4.13)_77
-      - _GB_wmt(4.13)_78
-      - _DE_wmt(4.13)_79
-      - _CN_wmt(4.13)_80
+      - US_2674_22.90Mb
+      - US_56 |75.09Mb
+      - US_2673_22.78Mb
+      - CN_396_ 8.69Mb
+      - US_55 |389.20Mb
+      - Relay_🇨🇳CN-🇺🇸US_554
+      - Relay_🇺🇸US-🇷🇺RU_3738
+      - JP_39 |79.59Mb
+      - Relay_🇨🇳CN-🇷🇺RU_536
+      - CN_388_10.43Mb
+      - CN_15 | 8.54Mb
+      - CN_373_11.22Mb
+      - CN_31 | 7.24Mb
+      - CN_417
+      - CN_380_10.20Mb
+      - CN_33 | 7.78Mb
+      - CN_27 |24.13Mb
+      - _ 9.88Mb
+      - CN_390_10.74Mb
+      - CN_363_ 8.86Mb
+      - CN_376_10.73Mb
+      - CN_41 | 9.37Mb
+      - CN_367_12.95Mb
+      - US_57 |10.60Mb
+      - CN_31 TG@peekfun
+      - CN_22 | 7.37Mb
+      - CN_24 |10.80Mb
+      - CN_28 |12.08Mb
+      - CN_382_ 9.92Mb
+      - ""
+      - FR_825
+      - GB_978
+      - JP_552_17.40Mb
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_wmt(4.13)_1
-      - _US_wmt(4.13)_2
-      - _DE_wmt(4.13)_3
-      - _CN_wmt(4.13)_4
-      - _HK_wmt(4.13)_5
-      - _DE_wmt(4.13)_6
-      - _DE_wmt(4.13)_7
-      - _CN_wmt(4.13)_8
-      - _BG_wmt(4.13)_9
-      - _BG_wmt(4.13)_10
-      - _CN_wmt(4.13)_11
-      - _DE_wmt(4.13)_12
-      - _CN_wmt(4.13)_13
-      - _DE_wmt(4.13)_14
-      - _DE_wmt(4.13)_15
-      - _DE_wmt(4.13)_16
-      - _GB_wmt(4.13)_17
-      - _DE_wmt(4.13)_18
-      - _DE_wmt(4.13)_19
-      - _DE_wmt(4.13)_20
-      - _BG_wmt(4.13)_21
-      - _DE_wmt(4.13)_22
-      - _DE_wmt(4.13)_23
-      - _BG_wmt(4.13)_24
-      - _DE_wmt(4.13)_25
-      - _DE_wmt(4.13)_26
-      - _BG_wmt(4.13)_27
-      - _NL_wmt(4.13)_28
-      - _DE_wmt(4.13)_29
-      - _DE_wmt(4.13)_30
-      - _DE_wmt(4.13)_31
-      - _DE_wmt(4.13)_32
-      - _DE_wmt(4.13)_33
-      - _DE_wmt(4.13)_34
-      - _DE_wmt(4.13)_35
-      - _CN_wmt(4.13)_36
-      - _DE_wmt(4.13)_37
-      - _CN_wmt(4.13)_38
-      - _CN_wmt(4.13)_39
-      - _DE_wmt(4.13)_40
-      - _DE_wmt(4.13)_41
-      - _DE_wmt(4.13)_42
-      - _CN_wmt(4.13)_43
-      - _CN_wmt(4.13)_44
-      - _CN_wmt(4.13)_45
-      - _AU_wmt(4.13)_46
-      - _GB_wmt(4.13)_47
-      - _CN_wmt(4.13)_48
-      - _CH_wmt(4.13)_49
-      - _CN_wmt(4.13)_50
-      - _BG_wmt(4.13)_51
-      - _DE_wmt(4.13)_52
-      - _DE_wmt(4.13)_53
-      - _DE_wmt(4.13)_54
-      - _GB_wmt(4.13)_55
-      - _BG_wmt(4.13)_56
-      - _GB_wmt(4.13)_57
-      - _CN_wmt(4.13)_58
-      - _DE_wmt(4.13)_59
-      - _DE_wmt(4.13)_60
-      - _CN_wmt(4.13)_61
-      - _CN_wmt(4.13)_62
-      - _BG_wmt(4.13)_63
-      - _NL_wmt(4.13)_64
-      - _BG_wmt(4.13)_65
-      - _DE_wmt(4.13)_66
-      - _CN_wmt(4.13)_67
-      - _GB_wmt(4.13)_68
-      - _BG_wmt(4.13)_69
-      - _DE_wmt(4.13)_70
-      - _DE_wmt(4.13)_71
-      - _DE_wmt(4.13)_72
-      - _DE_wmt(4.13)_73
-      - _DE_wmt(4.13)_74
-      - _NL_wmt(4.13)_75
-      - _CH_wmt(4.13)_76
-      - _DE_wmt(4.13)_77
-      - _GB_wmt(4.13)_78
-      - _DE_wmt(4.13)_79
-      - _CN_wmt(4.13)_80
+      - US_2674_22.90Mb
+      - US_56 |75.09Mb
+      - US_2673_22.78Mb
+      - CN_396_ 8.69Mb
+      - US_55 |389.20Mb
+      - Relay_🇨🇳CN-🇺🇸US_554
+      - Relay_🇺🇸US-🇷🇺RU_3738
+      - JP_39 |79.59Mb
+      - Relay_🇨🇳CN-🇷🇺RU_536
+      - CN_388_10.43Mb
+      - CN_15 | 8.54Mb
+      - CN_373_11.22Mb
+      - CN_31 | 7.24Mb
+      - CN_417
+      - CN_380_10.20Mb
+      - CN_33 | 7.78Mb
+      - CN_27 |24.13Mb
+      - _ 9.88Mb
+      - CN_390_10.74Mb
+      - CN_363_ 8.86Mb
+      - CN_376_10.73Mb
+      - CN_41 | 9.37Mb
+      - CN_367_12.95Mb
+      - US_57 |10.60Mb
+      - CN_31 TG@peekfun
+      - CN_22 | 7.37Mb
+      - CN_24 |10.80Mb
+      - CN_28 |12.08Mb
+      - CN_382_ 9.92Mb
+      - ""
+      - FR_825
+      - GB_978
+      - JP_552_17.40Mb
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -716,86 +340,39 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_wmt(4.13)_1
-      - _US_wmt(4.13)_2
-      - _DE_wmt(4.13)_3
-      - _CN_wmt(4.13)_4
-      - _HK_wmt(4.13)_5
-      - _DE_wmt(4.13)_6
-      - _DE_wmt(4.13)_7
-      - _CN_wmt(4.13)_8
-      - _BG_wmt(4.13)_9
-      - _BG_wmt(4.13)_10
-      - _CN_wmt(4.13)_11
-      - _DE_wmt(4.13)_12
-      - _CN_wmt(4.13)_13
-      - _DE_wmt(4.13)_14
-      - _DE_wmt(4.13)_15
-      - _DE_wmt(4.13)_16
-      - _GB_wmt(4.13)_17
-      - _DE_wmt(4.13)_18
-      - _DE_wmt(4.13)_19
-      - _DE_wmt(4.13)_20
-      - _BG_wmt(4.13)_21
-      - _DE_wmt(4.13)_22
-      - _DE_wmt(4.13)_23
-      - _BG_wmt(4.13)_24
-      - _DE_wmt(4.13)_25
-      - _DE_wmt(4.13)_26
-      - _BG_wmt(4.13)_27
-      - _NL_wmt(4.13)_28
-      - _DE_wmt(4.13)_29
-      - _DE_wmt(4.13)_30
-      - _DE_wmt(4.13)_31
-      - _DE_wmt(4.13)_32
-      - _DE_wmt(4.13)_33
-      - _DE_wmt(4.13)_34
-      - _DE_wmt(4.13)_35
-      - _CN_wmt(4.13)_36
-      - _DE_wmt(4.13)_37
-      - _CN_wmt(4.13)_38
-      - _CN_wmt(4.13)_39
-      - _DE_wmt(4.13)_40
-      - _DE_wmt(4.13)_41
-      - _DE_wmt(4.13)_42
-      - _CN_wmt(4.13)_43
-      - _CN_wmt(4.13)_44
-      - _CN_wmt(4.13)_45
-      - _AU_wmt(4.13)_46
-      - _GB_wmt(4.13)_47
-      - _CN_wmt(4.13)_48
-      - _CH_wmt(4.13)_49
-      - _CN_wmt(4.13)_50
-      - _BG_wmt(4.13)_51
-      - _DE_wmt(4.13)_52
-      - _DE_wmt(4.13)_53
-      - _DE_wmt(4.13)_54
-      - _GB_wmt(4.13)_55
-      - _BG_wmt(4.13)_56
-      - _GB_wmt(4.13)_57
-      - _CN_wmt(4.13)_58
-      - _DE_wmt(4.13)_59
-      - _DE_wmt(4.13)_60
-      - _CN_wmt(4.13)_61
-      - _CN_wmt(4.13)_62
-      - _BG_wmt(4.13)_63
-      - _NL_wmt(4.13)_64
-      - _BG_wmt(4.13)_65
-      - _DE_wmt(4.13)_66
-      - _CN_wmt(4.13)_67
-      - _GB_wmt(4.13)_68
-      - _BG_wmt(4.13)_69
-      - _DE_wmt(4.13)_70
-      - _DE_wmt(4.13)_71
-      - _DE_wmt(4.13)_72
-      - _DE_wmt(4.13)_73
-      - _DE_wmt(4.13)_74
-      - _NL_wmt(4.13)_75
-      - _CH_wmt(4.13)_76
-      - _DE_wmt(4.13)_77
-      - _GB_wmt(4.13)_78
-      - _DE_wmt(4.13)_79
-      - _CN_wmt(4.13)_80
+      - US_2674_22.90Mb
+      - US_56 |75.09Mb
+      - US_2673_22.78Mb
+      - CN_396_ 8.69Mb
+      - US_55 |389.20Mb
+      - Relay_🇨🇳CN-🇺🇸US_554
+      - Relay_🇺🇸US-🇷🇺RU_3738
+      - JP_39 |79.59Mb
+      - Relay_🇨🇳CN-🇷🇺RU_536
+      - CN_388_10.43Mb
+      - CN_15 | 8.54Mb
+      - CN_373_11.22Mb
+      - CN_31 | 7.24Mb
+      - CN_417
+      - CN_380_10.20Mb
+      - CN_33 | 7.78Mb
+      - CN_27 |24.13Mb
+      - _ 9.88Mb
+      - CN_390_10.74Mb
+      - CN_363_ 8.86Mb
+      - CN_376_10.73Mb
+      - CN_41 | 9.37Mb
+      - CN_367_12.95Mb
+      - US_57 |10.60Mb
+      - CN_31 TG@peekfun
+      - CN_22 | 7.37Mb
+      - CN_24 |10.80Mb
+      - CN_28 |12.08Mb
+      - CN_382_ 9.92Mb
+      - ""
+      - FR_825
+      - GB_978
+      - JP_552_17.40Mb
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
