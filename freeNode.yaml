@@ -5,223 +5,639 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_wmt(5.4)_1, server: 120.233.10.230, port: 50600, type: ss, cipher: aes-128-gcm, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, udp: true}
-  - {name: _DE_wmt(5.4)_2, server: 5.183.179.145, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: _DE_wmt(5.4)_3, server: 5.183.179.146, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: _CN_wmt(5.4)_4, server: n04.boom.party, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 312545:qazqaz00, obfs-param: download.windowsupdate.com, udp: true}
-  - {name: _NL_wmt(5.4)_5, server: 213.183.51.172, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: _CN_wmt(5.4)_6, server: cn1.relay.iepl.pw, port: 50300, type: ss, cipher: aes-128-gcm, password: df87f3f2-f2a7-4fae-ae7d-507cea790c95, udp: true}
-  - {name: _SG_wmt(5.4)_7, server: 184.168.127.50, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: _DE_wmt(5.4)_8, server: 5.183.179.170, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: _DE_wmt(5.4)_9, server: 5.183.179.146, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: _CN_wmt(5.4)_10, server: h890361.droplet.today, port: 13545, type: trojan, password: 26bae9b023, sni: h890361.droplet.today, skip-cert-verify: true, udp: true}
-  - {name: _CH_wmt(5.4)_11, server: 185.126.116.117, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: _GB_wmt(5.4)_12, server: 152.89.210.105, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: _GB_wmt(5.4)_13, server: 152.89.210.105, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: _CH_wmt(5.4)_14, server: 185.126.116.117, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
-  - {name: _CH_wmt(5.4)_15, server: 185.126.116.117, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: _PL_wmt(5.4)_16, server: 217.30.10.66, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: _DE_wmt(5.4)_17, server: 5.183.179.166, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: _HK_wmt(5.4)_18, server: azhk.f2s.bp2022.top, port: 443, type: trojan, password: d8c36e7c-8fd5-4671-9603-d689784547db, sni: azhk.f2s.bp2022.top, skip-cert-verify: true, udp: true}
-  - {name: _DE_wmt(5.4)_19, server: 5.183.179.166, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: _HK_wmt(5.4)_20, server: 43.129.227.60, port: 27727, type: vmess, uuid: d00f5ea9-4658-4f0a-a6c3-e29ef711cf3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [43.129.227.60]}}, udp: true}
-  - {name: _RU_wmt(5.4)_21, server: 213.183.53.200, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: _BG_wmt(5.4)_22, server: 213.183.63.219, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
-  - {name: _PL_wmt(5.4)_23, server: 217.30.10.65, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: _DE_wmt(5.4)_24, server: 5.183.179.140, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: _GB_wmt(5.4)_25, server: 152.89.210.105, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: _PL_wmt(5.4)_26, server: 217.30.10.66, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: _DE_wmt(5.4)_27, server: 5.183.179.140, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: _DE_wmt(5.4)_28, server: 5.183.179.140, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: _GB_wmt(5.4)_29, server: 152.89.210.105, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: _CH_wmt(5.4)_30, server: 185.126.116.117, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: _DE_wmt(5.4)_31, server: 5.183.179.146, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: _CH_wmt(5.4)_32, server: 185.126.116.117, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: _DE_wmt(5.4)_33, server: 5.183.179.140, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: _BG_wmt(5.4)_34, server: 213.183.63.219, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
-  - {name: _DE_wmt(5.4)_35, server: 5.183.179.167, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: _GB_wmt(5.4)_36, server: 152.89.210.84, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: _PL_wmt(5.4)_37, server: 217.30.10.65, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: _DE_wmt(5.4)_38, server: 5.183.179.140, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: _CH_wmt(5.4)_39, server: 185.126.116.117, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: _DE_wmt(5.4)_40, server: 5.183.179.140, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: _CH_wmt(5.4)_41, server: 185.126.116.117, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: _CH_wmt(5.4)_42, server: 185.126.116.117, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: _CH_wmt(5.4)_43, server: 185.126.116.117, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: _DE_wmt(5.4)_44, server: 5.183.179.140, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: _CN_wmt(5.4)_45, server: 180.163.62.91, port: 10064, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _DE_wmt(5.4)_46, server: 5.183.179.146, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
-  - {name: _DE_wmt(5.4)_47, server: 5.183.179.146, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: _DE_wmt(5.4)_48, server: 5.183.179.167, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: _DE_wmt(5.4)_49, server: 5.183.179.167, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: _DE_wmt(5.4)_50, server: 5.183.179.140, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: YouTube@阿阳AYANG, server: nfsg.qingyun123.xyz, port: 10050, type: trojan, password: 42284c52-736f-4ed2-a0dc-bc746dbaefa7, sni: nfsg.qingyun123.xyz, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 2, server: sxqxj.cn, port: 2164, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: sxqxj.cn}, udp: true}
+  - {name: YouTube@阿阳AYANG 3, server: 47.91.153.45, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /free, ws-headers: {Host: jp.sayuri.cf}, udp: true}
+  - {name: YouTube@阿阳AYANG 4, server: vfly5.xyz, port: 443, type: vmess, uuid: 825136bb-fc0a-4f43-8307-dc2e36f27e2d, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /myblog, ws-headers: {Host: vfly5.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 5, server: 45.76.71.233, port: 46983, type: vmess, uuid: 69099258-1476-46dd-a51b-84e915e941be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /1tGK82lU/, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: YouTube@阿阳AYANG 6, server: gx.mayiyun.vip, port: 10014, type: ss, cipher: aes-256-gcm, password: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, udp: true}
+  - {name: YouTube@阿阳AYANG 7, server: 150.109.147.14, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /free, ws-headers: {Host: jp.sayuri.cf}, udp: true}
+  - {name: YouTube@阿阳AYANG 8, server: ru1.lolvps.xyz, port: 40040, type: vmess, uuid: 2b8e4fc6-0112-4b26-8c17-1bfef9a3ff99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /6129CFHR, ws-headers: {Host: ru1.lolvps.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 9, server: 152.70.80.107, port: 53950, type: vmess, uuid: e1553fe3-73a6-431e-b507-c21659de2c76, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 10, server: kr.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: YouTube@阿阳AYANG 11, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
+  - {name: YouTube@阿阳AYANG 12, server: v1.ssrsub.com, port: 8443, type: vmess, uuid: b7c70df3-f92f-4800-a8e1-67e6dc833256, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v1.ssrsub.com}, udp: true}
+  - {name: YouTube@阿阳AYANG 13, server: can6.mayiyun.vip, port: 10010, type: ss, cipher: aes-256-gcm, password: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, udp: true}
+  - {name: YouTube@阿阳AYANG 14, server: can6.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: shoutingtoutiao3.10010.com}, udp: true}
+  - {name: YouTube@阿阳AYANG 15, server: 1.ezydfdd.com, port: 443, type: vmess, uuid: 4ee48ad8-178c-40a2-9c52-a14e90a06e49, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nmsl, ws-headers: {Host: 1.ezydfdd.com}, udp: true}
+  - {name: YouTube@阿阳AYANG 16, server: 152.70.80.107, port: 53950, type: vmess, uuid: e1553fe3-73a6-431e-b507-c21659de2c76, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 17, server: can6.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: YouTube@阿阳AYANG 18, server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: efaeb7b2-bd81-37d7-b3af-5c633570f423, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 331tw.fans8.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 19, server: can6.mayiyun.vip, port: 10010, type: ss, cipher: aes-256-gcm, password: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, udp: true}
+  - {name: YouTube@阿阳AYANG 20, server: 45.12.110.8, port: 31432, type: vmess, uuid: d7729364-2135-4af5-aa4f-e1f565a5c23e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 21, server: ruvds.testx.eu.org, port: 443, type: vmess, uuid: 0e7036c1-6de1-4a83-ef4f-e0d56c67fa10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/vmess-share/?ed=2048", ws-headers: {Host: ruvds.testx.eu.org}, udp: true}
+  - {name: YouTube@阿阳AYANG 22, server: can4.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: YouTube@阿阳AYANG 23, server: v2ray.788644.xyz, port: 443, type: vmess, uuid: 000fe881-b655-4212-b804-b00f9970d5aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /happy, ws-headers: {Host: v2ray.788644.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 24, server: cp-asus.ml, port: 50275, type: trojan, password: 7Z29DRr1ts, sni: cp-asus.ml, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 25, server: 47.241.13.35, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /free, ws-headers: {Host: jp.sayuri.cf}, udp: true}
+  - {name: YouTube@阿阳AYANG 26, server: 47.52.57.57, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /free, ws-headers: {Host: jp.sayuri.cf}, udp: true}
+  - {name: YouTube@阿阳AYANG 27, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, sni: jgwld3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 28, server: 43.129.221.110, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /free, ws-headers: {Host: jp.sayuri.cf}, udp: true}
+  - {name: YouTube@阿阳AYANG 29, server: 1.ezydfdd.com, port: 443, type: vmess, uuid: 4ee48ad8-178c-40a2-9c52-a14e90a06e49, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /nmsl, ws-headers: {Host: 1.ezydfdd.com}, udp: true}
+  - {name: YouTube@阿阳AYANG 30, server: jp4.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: YouTube@阿阳AYANG 31, server: 43.154.55.155, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /free, ws-headers: {Host: jp.sayuri.cf}, udp: true}
+  - {name: YouTube@阿阳AYANG 32, server: 198.57.27.225, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: YouTube@阿阳AYANG 33, server: 198.57.27.225, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: TG/YouTube AYANG*科技大师, server: gzbgp.gia.wiki, port: 30033, type: trojan, password: a10710ae-f05b-40f3-acd8-85899f3c75b8, sni: gzbgp.gia.wiki, skip-cert-verify: true, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 2, server: kr5.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: shoutingtoutiao3.10010.com}, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师, server: 198.57.27.225, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 3, server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: efaeb7b2-bd81-37d7-b3af-5c633570f423, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 331tw.fans8.xyz}, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 2, server: 198.57.27.225, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 3, server: 198.57.27.225, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 4, server: 198.57.27.225, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 4, server: 47.56.143.21, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /free, ws-headers: {Host: jp.sayuri.cf}, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 5, server: 198.57.27.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 6, server: 198.57.27.225, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 5, server: gx.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ll, ws-headers: {Host: open.dingtalk.com}, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 6, server: can5.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: shoutingtoutiao3.10010.com}, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 7, server: 198.57.27.225, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 8, server: 198.57.27.225, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 7, server: 47.241.187.250, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /free, ws-headers: {Host: jp.sayuri.cf}, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 9, server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 8, server: 36.110.215.68, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /free, ws-headers: {Host: jp.sayuri.cf}, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 10, server: 198.57.27.225, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 11, server: 198.57.27.225, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 9, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: jgwdb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 12, server: 198.57.27.225, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 13, server: 198.57.27.225, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 10, server: can3.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 14, server: 198.57.27.225, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 15, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 16, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 11, server: gzbgp.gia.wiki, port: 30220, type: trojan, password: a10710ae-f05b-40f3-acd8-85899f3c75b8, sni: gzbgp.gia.wiki, skip-cert-verify: true, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 17, server: 198.57.27.225, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 18, server: 169.197.142.99, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 12, server: azhk5.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 13, server: ger4.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 19, server: 198.57.27.225, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 20, server: 198.57.27.225, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 21, server: 198.57.27.225, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 22, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 23, server: 38.68.135.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 14, server: gx.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ll, ws-headers: {Host: a.189.cn}, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 24, server: kr6.mayiyun.vip, port: 10014, type: ss, cipher: aes-256-gcm, password: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 25, server: 38.68.135.19, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 26, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 27, server: 198.57.27.225, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 28, server: 198.57.27.225, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 15, server: 8.ezydfdd.com, port: 443, type: vmess, uuid: dc0887b9-4c05-428c-adce-4235d1636341, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /qwe, ws-headers: {Host: 8.ezydfdd.com}, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 29, server: 198.57.27.225, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 16, server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: efaeb7b2-bd81-37d7-b3af-5c633570f423, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: 331tw.fans8.xyz}, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 30, server: 169.197.142.99, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 17, server: 8.210.51.190, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /free, ws-headers: {Host: jp.sayuri.cf}, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 31, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 32, server: 169.197.142.99, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 33, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: TG/YouTube AYANG*科技大师 18, server: sg-sr-116.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, sni: sg-sr-116.mitoption.com, skip-cert-verify: true, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 34, server: 38.68.135.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: TG/YouTube+AYANG*科技大师 35, server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: YouTube@阿阳AYANG 34, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 35, server: 38.68.135.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: YouTube@阿阳AYANG 36, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: YouTube@阿阳AYANG 37, server: 169.197.142.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: YouTube@阿阳AYANG 38, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: YouTube@阿阳AYANG 39, server: 59.44.17.230, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /free, ws-headers: {Host: jp.sayuri.cf}, udp: true}
+  - {name: YouTube@阿阳AYANG 40, server: 198.57.27.225, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: YouTube@阿阳AYANG 41, server: 198.57.27.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: YouTube@阿阳AYANG 42, server: 38.68.135.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 43, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: YouTube@阿阳AYANG 44, server: 169.197.142.99, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: YouTube@阿阳AYANG 45, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: YouTube@阿阳AYANG 46, server: 38.68.135.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: YouTube@阿阳AYANG 47, server: azhk5.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: vali-dns.cp31.ott.cibntv.net}, udp: true}
+  - {name: YouTube@阿阳AYANG 48, server: 198.57.27.225, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: YouTube@阿阳AYANG 49, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: YouTube@阿阳AYANG 50, server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: YouTube@阿阳AYANG 51, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: YouTube@阿阳AYANG 52, server: 198.57.27.225, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 53, server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: YouTube@阿阳AYANG 54, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: YouTube@阿阳AYANG 55, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: YouTube@阿阳AYANG 56, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: YouTube@阿阳AYANG 57, server: 38.68.135.19, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 58, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: YouTube@阿阳AYANG 59, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: YouTube@阿阳AYANG 60, server: 198.57.27.225, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: YouTube@阿阳AYANG 61, server: kr.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: shoutingtoutiao3.10010.com}, udp: true}
+  - {name: YouTube@阿阳AYANG 62, server: 38.68.135.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 63, server: kr5.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: YouTube@阿阳AYANG 64, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 65, server: can5.mayiyun.vip, port: 80, type: vmess, uuid: 50f684d5-4ed7-4c89-aeff-e7d26024b98c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: YouTube@阿阳AYANG 66, server: 20.211.32.62, port: 6666, type: vmess, uuid: 95ea233c-5044-4771-bee6-53fe0ea38727, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: aweikeji-YouTube-TG}, udp: true}
+  - {name: YouTube@阿阳AYANG 67, server: 45.141.102.51, port: 33689, type: vmess, uuid: 5bff6f03-1d6f-4ef0-8320-3a4dd7eb4cc8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 68, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: YouTube@阿阳AYANG 69, server: 169.197.142.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 70, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: YouTube@阿阳AYANG 71, server: us02.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /go, ws-headers: {Host: us02.gogogoo.cyou}, udp: true}
+  - {name: YouTube@阿阳AYANG 72, server: 198.57.27.225, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: YouTube@阿阳AYANG 73, server: 38.68.135.19, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: YouTube@阿阳AYANG 74, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: YouTube@阿阳AYANG 75, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: YouTube@阿阳AYANG 76, server: 169.197.142.99, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: YouTube@阿阳AYANG 77, server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: YouTube@阿阳AYANG 78, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: YouTube@阿阳AYANG 79, server: 169.197.142.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: YouTube@阿阳AYANG 80, server: 169.197.142.99, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: YouTube@阿阳AYANG 81, server: 169.197.142.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 82, server: 169.197.142.99, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: YouTube@阿阳AYANG 83, server: 38.68.135.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: YouTube@阿阳AYANG 84, server: 198.57.27.225, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: YouTube@阿阳AYANG 85, server: 169.197.142.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: YouTube@阿阳AYANG 86, server: 198.57.27.225, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 87, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: YouTube@阿阳AYANG 88, server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: YouTube@阿阳AYANG 89, server: 198.57.27.225, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: YouTube@阿阳AYANG 90, server: 169.197.142.99, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: YouTube@阿阳AYANG 91, server: 38.68.135.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 92, server: 120.240.48.20, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: t.me/vpnhat}, udp: true}
+  - {name: YouTube@阿阳AYANG 93, server: 198.57.27.225, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: YouTube@阿阳AYANG 94, server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: YouTube@阿阳AYANG 95, server: 38.68.135.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 96, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: YouTube@阿阳AYANG 97, server: 198.57.27.225, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: YouTube@阿阳AYANG 98, server: 198.57.27.225, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 99, server: 169.197.142.99, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: YouTube@阿阳AYANG 100, server: 169.197.142.99, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: YouTube@阿阳AYANG 101, server: 169.197.142.99, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(5.4)_1
-      - _DE_wmt(5.4)_2
-      - _DE_wmt(5.4)_3
-      - _CN_wmt(5.4)_4
-      - _NL_wmt(5.4)_5
-      - _CN_wmt(5.4)_6
-      - _SG_wmt(5.4)_7
-      - _DE_wmt(5.4)_8
-      - _DE_wmt(5.4)_9
-      - _CN_wmt(5.4)_10
-      - _CH_wmt(5.4)_11
-      - _GB_wmt(5.4)_12
-      - _GB_wmt(5.4)_13
-      - _CH_wmt(5.4)_14
-      - _CH_wmt(5.4)_15
-      - _PL_wmt(5.4)_16
-      - _DE_wmt(5.4)_17
-      - _HK_wmt(5.4)_18
-      - _DE_wmt(5.4)_19
-      - _HK_wmt(5.4)_20
-      - _RU_wmt(5.4)_21
-      - _BG_wmt(5.4)_22
-      - _PL_wmt(5.4)_23
-      - _DE_wmt(5.4)_24
-      - _GB_wmt(5.4)_25
-      - _PL_wmt(5.4)_26
-      - _DE_wmt(5.4)_27
-      - _DE_wmt(5.4)_28
-      - _GB_wmt(5.4)_29
-      - _CH_wmt(5.4)_30
-      - _DE_wmt(5.4)_31
-      - _CH_wmt(5.4)_32
-      - _DE_wmt(5.4)_33
-      - _BG_wmt(5.4)_34
-      - _DE_wmt(5.4)_35
-      - _GB_wmt(5.4)_36
-      - _PL_wmt(5.4)_37
-      - _DE_wmt(5.4)_38
-      - _CH_wmt(5.4)_39
-      - _DE_wmt(5.4)_40
-      - _CH_wmt(5.4)_41
-      - _CH_wmt(5.4)_42
-      - _CH_wmt(5.4)_43
-      - _DE_wmt(5.4)_44
-      - _CN_wmt(5.4)_45
-      - _DE_wmt(5.4)_46
-      - _DE_wmt(5.4)_47
-      - _DE_wmt(5.4)_48
-      - _DE_wmt(5.4)_49
-      - _DE_wmt(5.4)_50
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - TG/YouTube AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 4
+      - TG/YouTube AYANG*科技大师 4
+      - TG/YouTube+AYANG*科技大师 5
+      - TG/YouTube+AYANG*科技大师 6
+      - TG/YouTube AYANG*科技大师 5
+      - TG/YouTube AYANG*科技大师 6
+      - TG/YouTube+AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 8
+      - TG/YouTube AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 9
+      - TG/YouTube AYANG*科技大师 8
+      - TG/YouTube+AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 11
+      - TG/YouTube AYANG*科技大师 9
+      - TG/YouTube+AYANG*科技大师 12
+      - TG/YouTube+AYANG*科技大师 13
+      - TG/YouTube AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 16
+      - TG/YouTube AYANG*科技大师 11
+      - TG/YouTube+AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 18
+      - TG/YouTube AYANG*科技大师 12
+      - TG/YouTube AYANG*科技大师 13
+      - TG/YouTube+AYANG*科技大师 19
+      - TG/YouTube+AYANG*科技大师 20
+      - TG/YouTube+AYANG*科技大师 21
+      - TG/YouTube+AYANG*科技大师 22
+      - TG/YouTube+AYANG*科技大师 23
+      - TG/YouTube AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 24
+      - TG/YouTube+AYANG*科技大师 25
+      - TG/YouTube+AYANG*科技大师 26
+      - TG/YouTube+AYANG*科技大师 27
+      - TG/YouTube+AYANG*科技大师 28
+      - TG/YouTube AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 29
+      - TG/YouTube AYANG*科技大师 16
+      - TG/YouTube+AYANG*科技大师 30
+      - TG/YouTube AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 31
+      - TG/YouTube+AYANG*科技大师 32
+      - TG/YouTube+AYANG*科技大师 33
+      - TG/YouTube AYANG*科技大师 18
+      - TG/YouTube+AYANG*科技大师 34
+      - TG/YouTube+AYANG*科技大师 35
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
+      - YouTube@阿阳AYANG 80
+      - YouTube@阿阳AYANG 81
+      - YouTube@阿阳AYANG 82
+      - YouTube@阿阳AYANG 83
+      - YouTube@阿阳AYANG 84
+      - YouTube@阿阳AYANG 85
+      - YouTube@阿阳AYANG 86
+      - YouTube@阿阳AYANG 87
+      - YouTube@阿阳AYANG 88
+      - YouTube@阿阳AYANG 89
+      - YouTube@阿阳AYANG 90
+      - YouTube@阿阳AYANG 91
+      - YouTube@阿阳AYANG 92
+      - YouTube@阿阳AYANG 93
+      - YouTube@阿阳AYANG 94
+      - YouTube@阿阳AYANG 95
+      - YouTube@阿阳AYANG 96
+      - YouTube@阿阳AYANG 97
+      - YouTube@阿阳AYANG 98
+      - YouTube@阿阳AYANG 99
+      - YouTube@阿阳AYANG 100
+      - YouTube@阿阳AYANG 101
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_wmt(5.4)_1
-      - _DE_wmt(5.4)_2
-      - _DE_wmt(5.4)_3
-      - _CN_wmt(5.4)_4
-      - _NL_wmt(5.4)_5
-      - _CN_wmt(5.4)_6
-      - _SG_wmt(5.4)_7
-      - _DE_wmt(5.4)_8
-      - _DE_wmt(5.4)_9
-      - _CN_wmt(5.4)_10
-      - _CH_wmt(5.4)_11
-      - _GB_wmt(5.4)_12
-      - _GB_wmt(5.4)_13
-      - _CH_wmt(5.4)_14
-      - _CH_wmt(5.4)_15
-      - _PL_wmt(5.4)_16
-      - _DE_wmt(5.4)_17
-      - _HK_wmt(5.4)_18
-      - _DE_wmt(5.4)_19
-      - _HK_wmt(5.4)_20
-      - _RU_wmt(5.4)_21
-      - _BG_wmt(5.4)_22
-      - _PL_wmt(5.4)_23
-      - _DE_wmt(5.4)_24
-      - _GB_wmt(5.4)_25
-      - _PL_wmt(5.4)_26
-      - _DE_wmt(5.4)_27
-      - _DE_wmt(5.4)_28
-      - _GB_wmt(5.4)_29
-      - _CH_wmt(5.4)_30
-      - _DE_wmt(5.4)_31
-      - _CH_wmt(5.4)_32
-      - _DE_wmt(5.4)_33
-      - _BG_wmt(5.4)_34
-      - _DE_wmt(5.4)_35
-      - _GB_wmt(5.4)_36
-      - _PL_wmt(5.4)_37
-      - _DE_wmt(5.4)_38
-      - _CH_wmt(5.4)_39
-      - _DE_wmt(5.4)_40
-      - _CH_wmt(5.4)_41
-      - _CH_wmt(5.4)_42
-      - _CH_wmt(5.4)_43
-      - _DE_wmt(5.4)_44
-      - _CN_wmt(5.4)_45
-      - _DE_wmt(5.4)_46
-      - _DE_wmt(5.4)_47
-      - _DE_wmt(5.4)_48
-      - _DE_wmt(5.4)_49
-      - _DE_wmt(5.4)_50
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - TG/YouTube AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 4
+      - TG/YouTube AYANG*科技大师 4
+      - TG/YouTube+AYANG*科技大师 5
+      - TG/YouTube+AYANG*科技大师 6
+      - TG/YouTube AYANG*科技大师 5
+      - TG/YouTube AYANG*科技大师 6
+      - TG/YouTube+AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 8
+      - TG/YouTube AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 9
+      - TG/YouTube AYANG*科技大师 8
+      - TG/YouTube+AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 11
+      - TG/YouTube AYANG*科技大师 9
+      - TG/YouTube+AYANG*科技大师 12
+      - TG/YouTube+AYANG*科技大师 13
+      - TG/YouTube AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 16
+      - TG/YouTube AYANG*科技大师 11
+      - TG/YouTube+AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 18
+      - TG/YouTube AYANG*科技大师 12
+      - TG/YouTube AYANG*科技大师 13
+      - TG/YouTube+AYANG*科技大师 19
+      - TG/YouTube+AYANG*科技大师 20
+      - TG/YouTube+AYANG*科技大师 21
+      - TG/YouTube+AYANG*科技大师 22
+      - TG/YouTube+AYANG*科技大师 23
+      - TG/YouTube AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 24
+      - TG/YouTube+AYANG*科技大师 25
+      - TG/YouTube+AYANG*科技大师 26
+      - TG/YouTube+AYANG*科技大师 27
+      - TG/YouTube+AYANG*科技大师 28
+      - TG/YouTube AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 29
+      - TG/YouTube AYANG*科技大师 16
+      - TG/YouTube+AYANG*科技大师 30
+      - TG/YouTube AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 31
+      - TG/YouTube+AYANG*科技大师 32
+      - TG/YouTube+AYANG*科技大师 33
+      - TG/YouTube AYANG*科技大师 18
+      - TG/YouTube+AYANG*科技大师 34
+      - TG/YouTube+AYANG*科技大师 35
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
+      - YouTube@阿阳AYANG 80
+      - YouTube@阿阳AYANG 81
+      - YouTube@阿阳AYANG 82
+      - YouTube@阿阳AYANG 83
+      - YouTube@阿阳AYANG 84
+      - YouTube@阿阳AYANG 85
+      - YouTube@阿阳AYANG 86
+      - YouTube@阿阳AYANG 87
+      - YouTube@阿阳AYANG 88
+      - YouTube@阿阳AYANG 89
+      - YouTube@阿阳AYANG 90
+      - YouTube@阿阳AYANG 91
+      - YouTube@阿阳AYANG 92
+      - YouTube@阿阳AYANG 93
+      - YouTube@阿阳AYANG 94
+      - YouTube@阿阳AYANG 95
+      - YouTube@阿阳AYANG 96
+      - YouTube@阿阳AYANG 97
+      - YouTube@阿阳AYANG 98
+      - YouTube@阿阳AYANG 99
+      - YouTube@阿阳AYANG 100
+      - YouTube@阿阳AYANG 101
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(5.4)_1
-      - _DE_wmt(5.4)_2
-      - _DE_wmt(5.4)_3
-      - _CN_wmt(5.4)_4
-      - _NL_wmt(5.4)_5
-      - _CN_wmt(5.4)_6
-      - _SG_wmt(5.4)_7
-      - _DE_wmt(5.4)_8
-      - _DE_wmt(5.4)_9
-      - _CN_wmt(5.4)_10
-      - _CH_wmt(5.4)_11
-      - _GB_wmt(5.4)_12
-      - _GB_wmt(5.4)_13
-      - _CH_wmt(5.4)_14
-      - _CH_wmt(5.4)_15
-      - _PL_wmt(5.4)_16
-      - _DE_wmt(5.4)_17
-      - _HK_wmt(5.4)_18
-      - _DE_wmt(5.4)_19
-      - _HK_wmt(5.4)_20
-      - _RU_wmt(5.4)_21
-      - _BG_wmt(5.4)_22
-      - _PL_wmt(5.4)_23
-      - _DE_wmt(5.4)_24
-      - _GB_wmt(5.4)_25
-      - _PL_wmt(5.4)_26
-      - _DE_wmt(5.4)_27
-      - _DE_wmt(5.4)_28
-      - _GB_wmt(5.4)_29
-      - _CH_wmt(5.4)_30
-      - _DE_wmt(5.4)_31
-      - _CH_wmt(5.4)_32
-      - _DE_wmt(5.4)_33
-      - _BG_wmt(5.4)_34
-      - _DE_wmt(5.4)_35
-      - _GB_wmt(5.4)_36
-      - _PL_wmt(5.4)_37
-      - _DE_wmt(5.4)_38
-      - _CH_wmt(5.4)_39
-      - _DE_wmt(5.4)_40
-      - _CH_wmt(5.4)_41
-      - _CH_wmt(5.4)_42
-      - _CH_wmt(5.4)_43
-      - _DE_wmt(5.4)_44
-      - _CN_wmt(5.4)_45
-      - _DE_wmt(5.4)_46
-      - _DE_wmt(5.4)_47
-      - _DE_wmt(5.4)_48
-      - _DE_wmt(5.4)_49
-      - _DE_wmt(5.4)_50
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - TG/YouTube AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 4
+      - TG/YouTube AYANG*科技大师 4
+      - TG/YouTube+AYANG*科技大师 5
+      - TG/YouTube+AYANG*科技大师 6
+      - TG/YouTube AYANG*科技大师 5
+      - TG/YouTube AYANG*科技大师 6
+      - TG/YouTube+AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 8
+      - TG/YouTube AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 9
+      - TG/YouTube AYANG*科技大师 8
+      - TG/YouTube+AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 11
+      - TG/YouTube AYANG*科技大师 9
+      - TG/YouTube+AYANG*科技大师 12
+      - TG/YouTube+AYANG*科技大师 13
+      - TG/YouTube AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 16
+      - TG/YouTube AYANG*科技大师 11
+      - TG/YouTube+AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 18
+      - TG/YouTube AYANG*科技大师 12
+      - TG/YouTube AYANG*科技大师 13
+      - TG/YouTube+AYANG*科技大师 19
+      - TG/YouTube+AYANG*科技大师 20
+      - TG/YouTube+AYANG*科技大师 21
+      - TG/YouTube+AYANG*科技大师 22
+      - TG/YouTube+AYANG*科技大师 23
+      - TG/YouTube AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 24
+      - TG/YouTube+AYANG*科技大师 25
+      - TG/YouTube+AYANG*科技大师 26
+      - TG/YouTube+AYANG*科技大师 27
+      - TG/YouTube+AYANG*科技大师 28
+      - TG/YouTube AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 29
+      - TG/YouTube AYANG*科技大师 16
+      - TG/YouTube+AYANG*科技大师 30
+      - TG/YouTube AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 31
+      - TG/YouTube+AYANG*科技大师 32
+      - TG/YouTube+AYANG*科技大师 33
+      - TG/YouTube AYANG*科技大师 18
+      - TG/YouTube+AYANG*科技大师 34
+      - TG/YouTube+AYANG*科技大师 35
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
+      - YouTube@阿阳AYANG 80
+      - YouTube@阿阳AYANG 81
+      - YouTube@阿阳AYANG 82
+      - YouTube@阿阳AYANG 83
+      - YouTube@阿阳AYANG 84
+      - YouTube@阿阳AYANG 85
+      - YouTube@阿阳AYANG 86
+      - YouTube@阿阳AYANG 87
+      - YouTube@阿阳AYANG 88
+      - YouTube@阿阳AYANG 89
+      - YouTube@阿阳AYANG 90
+      - YouTube@阿阳AYANG 91
+      - YouTube@阿阳AYANG 92
+      - YouTube@阿阳AYANG 93
+      - YouTube@阿阳AYANG 94
+      - YouTube@阿阳AYANG 95
+      - YouTube@阿阳AYANG 96
+      - YouTube@阿阳AYANG 97
+      - YouTube@阿阳AYANG 98
+      - YouTube@阿阳AYANG 99
+      - YouTube@阿阳AYANG 100
+      - YouTube@阿阳AYANG 101
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -240,56 +656,160 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(5.4)_1
-      - _DE_wmt(5.4)_2
-      - _DE_wmt(5.4)_3
-      - _CN_wmt(5.4)_4
-      - _NL_wmt(5.4)_5
-      - _CN_wmt(5.4)_6
-      - _SG_wmt(5.4)_7
-      - _DE_wmt(5.4)_8
-      - _DE_wmt(5.4)_9
-      - _CN_wmt(5.4)_10
-      - _CH_wmt(5.4)_11
-      - _GB_wmt(5.4)_12
-      - _GB_wmt(5.4)_13
-      - _CH_wmt(5.4)_14
-      - _CH_wmt(5.4)_15
-      - _PL_wmt(5.4)_16
-      - _DE_wmt(5.4)_17
-      - _HK_wmt(5.4)_18
-      - _DE_wmt(5.4)_19
-      - _HK_wmt(5.4)_20
-      - _RU_wmt(5.4)_21
-      - _BG_wmt(5.4)_22
-      - _PL_wmt(5.4)_23
-      - _DE_wmt(5.4)_24
-      - _GB_wmt(5.4)_25
-      - _PL_wmt(5.4)_26
-      - _DE_wmt(5.4)_27
-      - _DE_wmt(5.4)_28
-      - _GB_wmt(5.4)_29
-      - _CH_wmt(5.4)_30
-      - _DE_wmt(5.4)_31
-      - _CH_wmt(5.4)_32
-      - _DE_wmt(5.4)_33
-      - _BG_wmt(5.4)_34
-      - _DE_wmt(5.4)_35
-      - _GB_wmt(5.4)_36
-      - _PL_wmt(5.4)_37
-      - _DE_wmt(5.4)_38
-      - _CH_wmt(5.4)_39
-      - _DE_wmt(5.4)_40
-      - _CH_wmt(5.4)_41
-      - _CH_wmt(5.4)_42
-      - _CH_wmt(5.4)_43
-      - _DE_wmt(5.4)_44
-      - _CN_wmt(5.4)_45
-      - _DE_wmt(5.4)_46
-      - _DE_wmt(5.4)_47
-      - _DE_wmt(5.4)_48
-      - _DE_wmt(5.4)_49
-      - _DE_wmt(5.4)_50
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - TG/YouTube AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 4
+      - TG/YouTube AYANG*科技大师 4
+      - TG/YouTube+AYANG*科技大师 5
+      - TG/YouTube+AYANG*科技大师 6
+      - TG/YouTube AYANG*科技大师 5
+      - TG/YouTube AYANG*科技大师 6
+      - TG/YouTube+AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 8
+      - TG/YouTube AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 9
+      - TG/YouTube AYANG*科技大师 8
+      - TG/YouTube+AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 11
+      - TG/YouTube AYANG*科技大师 9
+      - TG/YouTube+AYANG*科技大师 12
+      - TG/YouTube+AYANG*科技大师 13
+      - TG/YouTube AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 16
+      - TG/YouTube AYANG*科技大师 11
+      - TG/YouTube+AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 18
+      - TG/YouTube AYANG*科技大师 12
+      - TG/YouTube AYANG*科技大师 13
+      - TG/YouTube+AYANG*科技大师 19
+      - TG/YouTube+AYANG*科技大师 20
+      - TG/YouTube+AYANG*科技大师 21
+      - TG/YouTube+AYANG*科技大师 22
+      - TG/YouTube+AYANG*科技大师 23
+      - TG/YouTube AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 24
+      - TG/YouTube+AYANG*科技大师 25
+      - TG/YouTube+AYANG*科技大师 26
+      - TG/YouTube+AYANG*科技大师 27
+      - TG/YouTube+AYANG*科技大师 28
+      - TG/YouTube AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 29
+      - TG/YouTube AYANG*科技大师 16
+      - TG/YouTube+AYANG*科技大师 30
+      - TG/YouTube AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 31
+      - TG/YouTube+AYANG*科技大师 32
+      - TG/YouTube+AYANG*科技大师 33
+      - TG/YouTube AYANG*科技大师 18
+      - TG/YouTube+AYANG*科技大师 34
+      - TG/YouTube+AYANG*科技大师 35
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
+      - YouTube@阿阳AYANG 80
+      - YouTube@阿阳AYANG 81
+      - YouTube@阿阳AYANG 82
+      - YouTube@阿阳AYANG 83
+      - YouTube@阿阳AYANG 84
+      - YouTube@阿阳AYANG 85
+      - YouTube@阿阳AYANG 86
+      - YouTube@阿阳AYANG 87
+      - YouTube@阿阳AYANG 88
+      - YouTube@阿阳AYANG 89
+      - YouTube@阿阳AYANG 90
+      - YouTube@阿阳AYANG 91
+      - YouTube@阿阳AYANG 92
+      - YouTube@阿阳AYANG 93
+      - YouTube@阿阳AYANG 94
+      - YouTube@阿阳AYANG 95
+      - YouTube@阿阳AYANG 96
+      - YouTube@阿阳AYANG 97
+      - YouTube@阿阳AYANG 98
+      - YouTube@阿阳AYANG 99
+      - YouTube@阿阳AYANG 100
+      - YouTube@阿阳AYANG 101
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -300,167 +820,479 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_wmt(5.4)_1
-      - _DE_wmt(5.4)_2
-      - _DE_wmt(5.4)_3
-      - _CN_wmt(5.4)_4
-      - _NL_wmt(5.4)_5
-      - _CN_wmt(5.4)_6
-      - _SG_wmt(5.4)_7
-      - _DE_wmt(5.4)_8
-      - _DE_wmt(5.4)_9
-      - _CN_wmt(5.4)_10
-      - _CH_wmt(5.4)_11
-      - _GB_wmt(5.4)_12
-      - _GB_wmt(5.4)_13
-      - _CH_wmt(5.4)_14
-      - _CH_wmt(5.4)_15
-      - _PL_wmt(5.4)_16
-      - _DE_wmt(5.4)_17
-      - _HK_wmt(5.4)_18
-      - _DE_wmt(5.4)_19
-      - _HK_wmt(5.4)_20
-      - _RU_wmt(5.4)_21
-      - _BG_wmt(5.4)_22
-      - _PL_wmt(5.4)_23
-      - _DE_wmt(5.4)_24
-      - _GB_wmt(5.4)_25
-      - _PL_wmt(5.4)_26
-      - _DE_wmt(5.4)_27
-      - _DE_wmt(5.4)_28
-      - _GB_wmt(5.4)_29
-      - _CH_wmt(5.4)_30
-      - _DE_wmt(5.4)_31
-      - _CH_wmt(5.4)_32
-      - _DE_wmt(5.4)_33
-      - _BG_wmt(5.4)_34
-      - _DE_wmt(5.4)_35
-      - _GB_wmt(5.4)_36
-      - _PL_wmt(5.4)_37
-      - _DE_wmt(5.4)_38
-      - _CH_wmt(5.4)_39
-      - _DE_wmt(5.4)_40
-      - _CH_wmt(5.4)_41
-      - _CH_wmt(5.4)_42
-      - _CH_wmt(5.4)_43
-      - _DE_wmt(5.4)_44
-      - _CN_wmt(5.4)_45
-      - _DE_wmt(5.4)_46
-      - _DE_wmt(5.4)_47
-      - _DE_wmt(5.4)_48
-      - _DE_wmt(5.4)_49
-      - _DE_wmt(5.4)_50
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - TG/YouTube AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 4
+      - TG/YouTube AYANG*科技大师 4
+      - TG/YouTube+AYANG*科技大师 5
+      - TG/YouTube+AYANG*科技大师 6
+      - TG/YouTube AYANG*科技大师 5
+      - TG/YouTube AYANG*科技大师 6
+      - TG/YouTube+AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 8
+      - TG/YouTube AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 9
+      - TG/YouTube AYANG*科技大师 8
+      - TG/YouTube+AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 11
+      - TG/YouTube AYANG*科技大师 9
+      - TG/YouTube+AYANG*科技大师 12
+      - TG/YouTube+AYANG*科技大师 13
+      - TG/YouTube AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 16
+      - TG/YouTube AYANG*科技大师 11
+      - TG/YouTube+AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 18
+      - TG/YouTube AYANG*科技大师 12
+      - TG/YouTube AYANG*科技大师 13
+      - TG/YouTube+AYANG*科技大师 19
+      - TG/YouTube+AYANG*科技大师 20
+      - TG/YouTube+AYANG*科技大师 21
+      - TG/YouTube+AYANG*科技大师 22
+      - TG/YouTube+AYANG*科技大师 23
+      - TG/YouTube AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 24
+      - TG/YouTube+AYANG*科技大师 25
+      - TG/YouTube+AYANG*科技大师 26
+      - TG/YouTube+AYANG*科技大师 27
+      - TG/YouTube+AYANG*科技大师 28
+      - TG/YouTube AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 29
+      - TG/YouTube AYANG*科技大师 16
+      - TG/YouTube+AYANG*科技大师 30
+      - TG/YouTube AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 31
+      - TG/YouTube+AYANG*科技大师 32
+      - TG/YouTube+AYANG*科技大师 33
+      - TG/YouTube AYANG*科技大师 18
+      - TG/YouTube+AYANG*科技大师 34
+      - TG/YouTube+AYANG*科技大师 35
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
+      - YouTube@阿阳AYANG 80
+      - YouTube@阿阳AYANG 81
+      - YouTube@阿阳AYANG 82
+      - YouTube@阿阳AYANG 83
+      - YouTube@阿阳AYANG 84
+      - YouTube@阿阳AYANG 85
+      - YouTube@阿阳AYANG 86
+      - YouTube@阿阳AYANG 87
+      - YouTube@阿阳AYANG 88
+      - YouTube@阿阳AYANG 89
+      - YouTube@阿阳AYANG 90
+      - YouTube@阿阳AYANG 91
+      - YouTube@阿阳AYANG 92
+      - YouTube@阿阳AYANG 93
+      - YouTube@阿阳AYANG 94
+      - YouTube@阿阳AYANG 95
+      - YouTube@阿阳AYANG 96
+      - YouTube@阿阳AYANG 97
+      - YouTube@阿阳AYANG 98
+      - YouTube@阿阳AYANG 99
+      - YouTube@阿阳AYANG 100
+      - YouTube@阿阳AYANG 101
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_wmt(5.4)_1
-      - _DE_wmt(5.4)_2
-      - _DE_wmt(5.4)_3
-      - _CN_wmt(5.4)_4
-      - _NL_wmt(5.4)_5
-      - _CN_wmt(5.4)_6
-      - _SG_wmt(5.4)_7
-      - _DE_wmt(5.4)_8
-      - _DE_wmt(5.4)_9
-      - _CN_wmt(5.4)_10
-      - _CH_wmt(5.4)_11
-      - _GB_wmt(5.4)_12
-      - _GB_wmt(5.4)_13
-      - _CH_wmt(5.4)_14
-      - _CH_wmt(5.4)_15
-      - _PL_wmt(5.4)_16
-      - _DE_wmt(5.4)_17
-      - _HK_wmt(5.4)_18
-      - _DE_wmt(5.4)_19
-      - _HK_wmt(5.4)_20
-      - _RU_wmt(5.4)_21
-      - _BG_wmt(5.4)_22
-      - _PL_wmt(5.4)_23
-      - _DE_wmt(5.4)_24
-      - _GB_wmt(5.4)_25
-      - _PL_wmt(5.4)_26
-      - _DE_wmt(5.4)_27
-      - _DE_wmt(5.4)_28
-      - _GB_wmt(5.4)_29
-      - _CH_wmt(5.4)_30
-      - _DE_wmt(5.4)_31
-      - _CH_wmt(5.4)_32
-      - _DE_wmt(5.4)_33
-      - _BG_wmt(5.4)_34
-      - _DE_wmt(5.4)_35
-      - _GB_wmt(5.4)_36
-      - _PL_wmt(5.4)_37
-      - _DE_wmt(5.4)_38
-      - _CH_wmt(5.4)_39
-      - _DE_wmt(5.4)_40
-      - _CH_wmt(5.4)_41
-      - _CH_wmt(5.4)_42
-      - _CH_wmt(5.4)_43
-      - _DE_wmt(5.4)_44
-      - _CN_wmt(5.4)_45
-      - _DE_wmt(5.4)_46
-      - _DE_wmt(5.4)_47
-      - _DE_wmt(5.4)_48
-      - _DE_wmt(5.4)_49
-      - _DE_wmt(5.4)_50
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - TG/YouTube AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 4
+      - TG/YouTube AYANG*科技大师 4
+      - TG/YouTube+AYANG*科技大师 5
+      - TG/YouTube+AYANG*科技大师 6
+      - TG/YouTube AYANG*科技大师 5
+      - TG/YouTube AYANG*科技大师 6
+      - TG/YouTube+AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 8
+      - TG/YouTube AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 9
+      - TG/YouTube AYANG*科技大师 8
+      - TG/YouTube+AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 11
+      - TG/YouTube AYANG*科技大师 9
+      - TG/YouTube+AYANG*科技大师 12
+      - TG/YouTube+AYANG*科技大师 13
+      - TG/YouTube AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 16
+      - TG/YouTube AYANG*科技大师 11
+      - TG/YouTube+AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 18
+      - TG/YouTube AYANG*科技大师 12
+      - TG/YouTube AYANG*科技大师 13
+      - TG/YouTube+AYANG*科技大师 19
+      - TG/YouTube+AYANG*科技大师 20
+      - TG/YouTube+AYANG*科技大师 21
+      - TG/YouTube+AYANG*科技大师 22
+      - TG/YouTube+AYANG*科技大师 23
+      - TG/YouTube AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 24
+      - TG/YouTube+AYANG*科技大师 25
+      - TG/YouTube+AYANG*科技大师 26
+      - TG/YouTube+AYANG*科技大师 27
+      - TG/YouTube+AYANG*科技大师 28
+      - TG/YouTube AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 29
+      - TG/YouTube AYANG*科技大师 16
+      - TG/YouTube+AYANG*科技大师 30
+      - TG/YouTube AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 31
+      - TG/YouTube+AYANG*科技大师 32
+      - TG/YouTube+AYANG*科技大师 33
+      - TG/YouTube AYANG*科技大师 18
+      - TG/YouTube+AYANG*科技大师 34
+      - TG/YouTube+AYANG*科技大师 35
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
+      - YouTube@阿阳AYANG 80
+      - YouTube@阿阳AYANG 81
+      - YouTube@阿阳AYANG 82
+      - YouTube@阿阳AYANG 83
+      - YouTube@阿阳AYANG 84
+      - YouTube@阿阳AYANG 85
+      - YouTube@阿阳AYANG 86
+      - YouTube@阿阳AYANG 87
+      - YouTube@阿阳AYANG 88
+      - YouTube@阿阳AYANG 89
+      - YouTube@阿阳AYANG 90
+      - YouTube@阿阳AYANG 91
+      - YouTube@阿阳AYANG 92
+      - YouTube@阿阳AYANG 93
+      - YouTube@阿阳AYANG 94
+      - YouTube@阿阳AYANG 95
+      - YouTube@阿阳AYANG 96
+      - YouTube@阿阳AYANG 97
+      - YouTube@阿阳AYANG 98
+      - YouTube@阿阳AYANG 99
+      - YouTube@阿阳AYANG 100
+      - YouTube@阿阳AYANG 101
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_wmt(5.4)_1
-      - _DE_wmt(5.4)_2
-      - _DE_wmt(5.4)_3
-      - _CN_wmt(5.4)_4
-      - _NL_wmt(5.4)_5
-      - _CN_wmt(5.4)_6
-      - _SG_wmt(5.4)_7
-      - _DE_wmt(5.4)_8
-      - _DE_wmt(5.4)_9
-      - _CN_wmt(5.4)_10
-      - _CH_wmt(5.4)_11
-      - _GB_wmt(5.4)_12
-      - _GB_wmt(5.4)_13
-      - _CH_wmt(5.4)_14
-      - _CH_wmt(5.4)_15
-      - _PL_wmt(5.4)_16
-      - _DE_wmt(5.4)_17
-      - _HK_wmt(5.4)_18
-      - _DE_wmt(5.4)_19
-      - _HK_wmt(5.4)_20
-      - _RU_wmt(5.4)_21
-      - _BG_wmt(5.4)_22
-      - _PL_wmt(5.4)_23
-      - _DE_wmt(5.4)_24
-      - _GB_wmt(5.4)_25
-      - _PL_wmt(5.4)_26
-      - _DE_wmt(5.4)_27
-      - _DE_wmt(5.4)_28
-      - _GB_wmt(5.4)_29
-      - _CH_wmt(5.4)_30
-      - _DE_wmt(5.4)_31
-      - _CH_wmt(5.4)_32
-      - _DE_wmt(5.4)_33
-      - _BG_wmt(5.4)_34
-      - _DE_wmt(5.4)_35
-      - _GB_wmt(5.4)_36
-      - _PL_wmt(5.4)_37
-      - _DE_wmt(5.4)_38
-      - _CH_wmt(5.4)_39
-      - _DE_wmt(5.4)_40
-      - _CH_wmt(5.4)_41
-      - _CH_wmt(5.4)_42
-      - _CH_wmt(5.4)_43
-      - _DE_wmt(5.4)_44
-      - _CN_wmt(5.4)_45
-      - _DE_wmt(5.4)_46
-      - _DE_wmt(5.4)_47
-      - _DE_wmt(5.4)_48
-      - _DE_wmt(5.4)_49
-      - _DE_wmt(5.4)_50
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - TG/YouTube AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 4
+      - TG/YouTube AYANG*科技大师 4
+      - TG/YouTube+AYANG*科技大师 5
+      - TG/YouTube+AYANG*科技大师 6
+      - TG/YouTube AYANG*科技大师 5
+      - TG/YouTube AYANG*科技大师 6
+      - TG/YouTube+AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 8
+      - TG/YouTube AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 9
+      - TG/YouTube AYANG*科技大师 8
+      - TG/YouTube+AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 11
+      - TG/YouTube AYANG*科技大师 9
+      - TG/YouTube+AYANG*科技大师 12
+      - TG/YouTube+AYANG*科技大师 13
+      - TG/YouTube AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 16
+      - TG/YouTube AYANG*科技大师 11
+      - TG/YouTube+AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 18
+      - TG/YouTube AYANG*科技大师 12
+      - TG/YouTube AYANG*科技大师 13
+      - TG/YouTube+AYANG*科技大师 19
+      - TG/YouTube+AYANG*科技大师 20
+      - TG/YouTube+AYANG*科技大师 21
+      - TG/YouTube+AYANG*科技大师 22
+      - TG/YouTube+AYANG*科技大师 23
+      - TG/YouTube AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 24
+      - TG/YouTube+AYANG*科技大师 25
+      - TG/YouTube+AYANG*科技大师 26
+      - TG/YouTube+AYANG*科技大师 27
+      - TG/YouTube+AYANG*科技大师 28
+      - TG/YouTube AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 29
+      - TG/YouTube AYANG*科技大师 16
+      - TG/YouTube+AYANG*科技大师 30
+      - TG/YouTube AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 31
+      - TG/YouTube+AYANG*科技大师 32
+      - TG/YouTube+AYANG*科技大师 33
+      - TG/YouTube AYANG*科技大师 18
+      - TG/YouTube+AYANG*科技大师 34
+      - TG/YouTube+AYANG*科技大师 35
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
+      - YouTube@阿阳AYANG 80
+      - YouTube@阿阳AYANG 81
+      - YouTube@阿阳AYANG 82
+      - YouTube@阿阳AYANG 83
+      - YouTube@阿阳AYANG 84
+      - YouTube@阿阳AYANG 85
+      - YouTube@阿阳AYANG 86
+      - YouTube@阿阳AYANG 87
+      - YouTube@阿阳AYANG 88
+      - YouTube@阿阳AYANG 89
+      - YouTube@阿阳AYANG 90
+      - YouTube@阿阳AYANG 91
+      - YouTube@阿阳AYANG 92
+      - YouTube@阿阳AYANG 93
+      - YouTube@阿阳AYANG 94
+      - YouTube@阿阳AYANG 95
+      - YouTube@阿阳AYANG 96
+      - YouTube@阿阳AYANG 97
+      - YouTube@阿阳AYANG 98
+      - YouTube@阿阳AYANG 99
+      - YouTube@阿阳AYANG 100
+      - YouTube@阿阳AYANG 101
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -476,56 +1308,160 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_wmt(5.4)_1
-      - _DE_wmt(5.4)_2
-      - _DE_wmt(5.4)_3
-      - _CN_wmt(5.4)_4
-      - _NL_wmt(5.4)_5
-      - _CN_wmt(5.4)_6
-      - _SG_wmt(5.4)_7
-      - _DE_wmt(5.4)_8
-      - _DE_wmt(5.4)_9
-      - _CN_wmt(5.4)_10
-      - _CH_wmt(5.4)_11
-      - _GB_wmt(5.4)_12
-      - _GB_wmt(5.4)_13
-      - _CH_wmt(5.4)_14
-      - _CH_wmt(5.4)_15
-      - _PL_wmt(5.4)_16
-      - _DE_wmt(5.4)_17
-      - _HK_wmt(5.4)_18
-      - _DE_wmt(5.4)_19
-      - _HK_wmt(5.4)_20
-      - _RU_wmt(5.4)_21
-      - _BG_wmt(5.4)_22
-      - _PL_wmt(5.4)_23
-      - _DE_wmt(5.4)_24
-      - _GB_wmt(5.4)_25
-      - _PL_wmt(5.4)_26
-      - _DE_wmt(5.4)_27
-      - _DE_wmt(5.4)_28
-      - _GB_wmt(5.4)_29
-      - _CH_wmt(5.4)_30
-      - _DE_wmt(5.4)_31
-      - _CH_wmt(5.4)_32
-      - _DE_wmt(5.4)_33
-      - _BG_wmt(5.4)_34
-      - _DE_wmt(5.4)_35
-      - _GB_wmt(5.4)_36
-      - _PL_wmt(5.4)_37
-      - _DE_wmt(5.4)_38
-      - _CH_wmt(5.4)_39
-      - _DE_wmt(5.4)_40
-      - _CH_wmt(5.4)_41
-      - _CH_wmt(5.4)_42
-      - _CH_wmt(5.4)_43
-      - _DE_wmt(5.4)_44
-      - _CN_wmt(5.4)_45
-      - _DE_wmt(5.4)_46
-      - _DE_wmt(5.4)_47
-      - _DE_wmt(5.4)_48
-      - _DE_wmt(5.4)_49
-      - _DE_wmt(5.4)_50
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - TG/YouTube AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师
+      - TG/YouTube AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 2
+      - TG/YouTube+AYANG*科技大师 3
+      - TG/YouTube+AYANG*科技大师 4
+      - TG/YouTube AYANG*科技大师 4
+      - TG/YouTube+AYANG*科技大师 5
+      - TG/YouTube+AYANG*科技大师 6
+      - TG/YouTube AYANG*科技大师 5
+      - TG/YouTube AYANG*科技大师 6
+      - TG/YouTube+AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 8
+      - TG/YouTube AYANG*科技大师 7
+      - TG/YouTube+AYANG*科技大师 9
+      - TG/YouTube AYANG*科技大师 8
+      - TG/YouTube+AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 11
+      - TG/YouTube AYANG*科技大师 9
+      - TG/YouTube+AYANG*科技大师 12
+      - TG/YouTube+AYANG*科技大师 13
+      - TG/YouTube AYANG*科技大师 10
+      - TG/YouTube+AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 16
+      - TG/YouTube AYANG*科技大师 11
+      - TG/YouTube+AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 18
+      - TG/YouTube AYANG*科技大师 12
+      - TG/YouTube AYANG*科技大师 13
+      - TG/YouTube+AYANG*科技大师 19
+      - TG/YouTube+AYANG*科技大师 20
+      - TG/YouTube+AYANG*科技大师 21
+      - TG/YouTube+AYANG*科技大师 22
+      - TG/YouTube+AYANG*科技大师 23
+      - TG/YouTube AYANG*科技大师 14
+      - TG/YouTube+AYANG*科技大师 24
+      - TG/YouTube+AYANG*科技大师 25
+      - TG/YouTube+AYANG*科技大师 26
+      - TG/YouTube+AYANG*科技大师 27
+      - TG/YouTube+AYANG*科技大师 28
+      - TG/YouTube AYANG*科技大师 15
+      - TG/YouTube+AYANG*科技大师 29
+      - TG/YouTube AYANG*科技大师 16
+      - TG/YouTube+AYANG*科技大师 30
+      - TG/YouTube AYANG*科技大师 17
+      - TG/YouTube+AYANG*科技大师 31
+      - TG/YouTube+AYANG*科技大师 32
+      - TG/YouTube+AYANG*科技大师 33
+      - TG/YouTube AYANG*科技大师 18
+      - TG/YouTube+AYANG*科技大师 34
+      - TG/YouTube+AYANG*科技大师 35
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
+      - YouTube@阿阳AYANG 80
+      - YouTube@阿阳AYANG 81
+      - YouTube@阿阳AYANG 82
+      - YouTube@阿阳AYANG 83
+      - YouTube@阿阳AYANG 84
+      - YouTube@阿阳AYANG 85
+      - YouTube@阿阳AYANG 86
+      - YouTube@阿阳AYANG 87
+      - YouTube@阿阳AYANG 88
+      - YouTube@阿阳AYANG 89
+      - YouTube@阿阳AYANG 90
+      - YouTube@阿阳AYANG 91
+      - YouTube@阿阳AYANG 92
+      - YouTube@阿阳AYANG 93
+      - YouTube@阿阳AYANG 94
+      - YouTube@阿阳AYANG 95
+      - YouTube@阿阳AYANG 96
+      - YouTube@阿阳AYANG 97
+      - YouTube@阿阳AYANG 98
+      - YouTube@阿阳AYANG 99
+      - YouTube@阿阳AYANG 100
+      - YouTube@阿阳AYANG 101
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
