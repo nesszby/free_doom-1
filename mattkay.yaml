@@ -5,223 +5,503 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_wmt(5.3)_1, server: cm-jm.okvpn.xyz, port: 20005, type: trojan, password: 4ea642c6-ca67-4025-aed6-f743f13d0e20, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.3)_2, server: cm-jm.okvpn.xyz, port: 20000, type: trojan, password: 4ea642c6-ca67-4025-aed6-f743f13d0e20, sni: cm-jm.okvpn.xyz, skip-cert-verify: true, udp: true}
-  - {name: _BG_wmt(5.3)_3, server: 213.183.63.219, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: _JP_wmt(5.3)_4, server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _NL_wmt(5.3)_5, server: 213.183.51.172, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: _GB_wmt(5.3)_6, server: 152.89.210.105, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: _DE_wmt(5.3)_7, server: 5.183.179.140, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: _CA_wmt(5.3)_8, server: 198.57.27.225, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_wmt(5.3)_9, server: 65.49.214.185, port: 30658, type: vmess, uuid: 351c64c1-2f7d-4900-a2d2-8f09a6501603, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _GB_wmt(5.3)_10, server: 152.89.210.84, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: _PL_wmt(5.3)_11, server: 217.30.10.65, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: _CN_wmt(5.3)_12, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _PL_wmt(5.3)_13, server: 217.30.10.65, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: _CN_wmt(5.3)_14, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _US_wmt(5.3)_15, server: 65.49.214.185, port: 30658, type: vmess, uuid: 351c64c1-2f7d-4900-a2d2-8f09a6501603, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.3)_16, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_wmt(5.3)_17, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_wmt(5.3)_18, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_wmt(5.3)_19, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_wmt(5.3)_20, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_wmt(5.3)_21, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _NL_wmt(5.3)_22, server: 213.183.51.172, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: _CN_wmt(5.3)_23, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _NL_wmt(5.3)_24, server: 213.183.51.172, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: _CN_wmt(5.3)_25, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_wmt(5.3)_26, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_wmt(5.3)_27, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _DE_wmt(5.3)_28, server: 5.183.179.167, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: _CN_wmt(5.3)_29, server: 14.29.124.168, port: 25217, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_wmt(5.3)_30, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _DE_wmt(5.3)_31, server: 5.183.179.167, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: _CN_wmt(5.3)_32, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_wmt(5.3)_33, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _DE_wmt(5.3)_34, server: 5.183.179.167, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: _NL_wmt(5.3)_35, server: 213.183.51.172, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: _DE_wmt(5.3)_36, server: 5.183.179.137, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
-  - {name: _PL_wmt(5.3)_37, server: 217.30.10.66, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: _GB_wmt(5.3)_38, server: 152.89.210.84, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: _GB_wmt(5.3)_39, server: 185.167.117.171, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: _HK_wmt(5.3)_40, server: tj-01.t8737.shop, port: 11223, type: trojan, password: 253aff4e-09a7-4817-830c-a26ca5cfd612, sni: tj-01.t8737.shop, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(5.3)_41, server: 65.49.214.185, port: 30658, type: vmess, uuid: 351c64c1-2f7d-4900-a2d2-8f09a6501603, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _PL_wmt(5.3)_42, server: 217.30.10.67, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: _PL_wmt(5.3)_43, server: 217.30.10.65, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: _CA_wmt(5.3)_44, server: 198.57.27.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _US_wmt(5.3)_45, server: streaming-1-route.teacher2050.com, port: 31222, type: vmess, uuid: B8AAA6E1-F0B3-B9EC-3DFC-BB226C167B33, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(5.3)_46, server: streaming-1-route.teacher2050.com, port: 31222, type: vmess, uuid: B8AAA6E1-F0B3-B9EC-3DFC-BB226C167B33, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _PL_wmt(5.3)_47, server: 217.30.10.66, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: _BG_wmt(5.3)_48, server: 213.183.63.219, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: _CH_wmt(5.3)_49, server: 185.126.116.117, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: _GB_wmt(5.3)_50, server: 185.167.117.171, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: _NL_wmt(5.5)_1, server: 213.183.51.172, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: _NL_wmt(5.5)_2, server: 213.183.59.229, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: _CH_wmt(5.5)_3, server: 185.126.116.117, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: _PL_wmt(5.5)_4, server: 217.30.10.65, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: _RU_wmt(5.5)_5, server: 213.183.53.177, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
+  - {name: _GB_wmt(5.5)_6, server: 152.89.210.84, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: _DE_wmt(5.5)_7, server: 5.183.179.146, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
+  - {name: _PL_wmt(5.5)_8, server: 217.30.10.67, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
+  - {name: _RU_wmt(5.5)_9, server: 213.183.53.177, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: _RU_wmt(5.5)_10, server: 213.183.53.177, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: _GB_wmt(5.5)_11, server: 152.89.210.105, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: _CN_wmt(5.5)_12, server: shonlinesandcu03.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 50252:123321Ddd, obfs-param: "", udp: true}
+  - {name: _BG_wmt(5.5)_13, server: 213.183.63.218, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: _US_wmt(5.5)_14, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _CN_wmt(5.5)_15, server: 211.91.243.241, port: 60007, type: trojan, password: ed407b65-ffdf-3eff-87c8-01f094d355e7, skip-cert-verify: true, udp: true}
+  - {name: _PL_wmt(5.5)_16, server: 217.30.10.65, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: _CN_wmt(5.5)_17, server: t2.doggogogo.top, port: 50207, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: t2.doggogogo.top, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(5.5)_18, server: us-02.pickaxe.sh, port: 443, type: trojan, password: Tp1ALMlfUBdkDmkW, sni: us-02.pickaxe.sh, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(5.5)_19, server: 211.91.243.241, port: 60013, type: trojan, password: ed407b65-ffdf-3eff-87c8-01f094d355e7, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(5.5)_20, server: cscu.wecanfly.top, port: 50207, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: cscu.wecanfly.top, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_21, server: 5.183.179.167, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: _US_wmt(5.5)_22, server: v2losdmit1.doubledou.win, port: 6674, type: trojan, password: d9c94f17-e38f-35f6-aa11-d42b68b0dcc0, sni: v2losdmit1.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_23, server: 5.183.179.166, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: _GB_wmt(5.5)_24, server: 152.89.210.84, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: _DE_wmt(5.5)_25, server: 5.183.179.166, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: _US_wmt(5.5)_26, server: meet-two.defun.us, port: 443, type: trojan, password: U8s25pwKISqVxHNO, sni: meet-two.defun.us, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_27, server: 5.183.179.170, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: _NL_wmt(5.5)_28, server: 213.183.51.172, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: _US_wmt(5.5)_29, server: v2losdmit1.doubledou.win, port: 6674, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: v2losdmit1.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_30, server: 5.183.179.166, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: _DE_wmt(5.5)_31, server: 5.183.179.170, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
+  - {name: _DE_wmt(5.5)_32, server: 5.183.179.170, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
+  - {name: _US_wmt(5.5)_33, server: 173.82.192.61, port: 443, type: trojan, password: 7NzqVeVxSEsrdvgsdvsdsafcsdgvdfbgSDGFVDGVDSG, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(5.5)_34, server: 72.167.45.6, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_35, server: 5.183.179.146, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: _DE_wmt(5.5)_36, server: 5.183.179.166, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: _DE_wmt(5.5)_37, server: 5.183.179.166, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
+  - {name: _PL_wmt(5.5)_38, server: 217.30.10.65, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: _DE_wmt(5.5)_39, server: 5.183.179.166, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: _DE_wmt(5.5)_40, server: 5.183.179.170, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: _US_wmt(5.5)_41, server: 38.68.135.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _DE_wmt(5.5)_42, server: 5.183.179.166, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: _DE_wmt(5.5)_43, server: 5.183.179.146, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: _HK_wmt(5.5)_44, server: api.tcpbbr.net, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf-f23c91cfbbc9, sni: api.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: _NL_wmt(5.5)_45, server: 213.183.51.172, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: _NL_wmt(5.5)_46, server: 213.183.51.171, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
+  - {name: _DE_wmt(5.5)_47, server: 5.183.179.166, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
+  - {name: _CH_wmt(5.5)_48, server: 185.126.116.125, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: _SG_wmt(5.5)_49, server: s296.s2022.xyz, port: 41716, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, sni: s296.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(5.5)_50, server: sg2.bcyituan.xyz, port: 443, type: trojan, password: bd03979c-a3d0-46e0-956f-f7b031ee8ad1, sni: sg2.bcyituan.xyz, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(5.5)_51, server: hinet.xxcv.cc, port: 38443, type: trojan, password: 486dd7e4-24bc-498a-b4f0-ecd704f8d8cd, sni: hinet.xxcv.cc, skip-cert-verify: true, udp: true}
+  - {name: _RU_wmt(5.5)_52, server: 213.183.53.200, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
+  - {name: _HK_wmt(5.5)_53, server: s250.s2022.xyz, port: 27073, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, sni: s250.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(5.5)_54, server: api.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, sni: api.mjj-home.com, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_55, server: 5.183.179.167, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: _HK_wmt(5.5)_56, server: s228.s2022.xyz, port: 42406, type: trojan, password: 3b43ffda-8b5c-3480-87f9-d4b069d7457a, sni: s228.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(5.5)_57, server: s238.s2022.xyz, port: 37826, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, sni: s238.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(5.5)_58, server: v.9051246.xyz, port: 443, type: trojan, password: !<str> 18825786, sni: v.9051246.xyz, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(5.5)_59, server: s233.s2022.xyz, port: 39747, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, sni: s233.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_60, server: 5.183.179.140, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: _SG_wmt(5.5)_61, server: sg1-trojan.bonds.id, port: 443, type: trojan, password: 5c5ceb40-902b-11eb-945a-1239d0255272, sni: sg1-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _PL_wmt(5.5)_62, server: 217.30.10.67, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: _DE_wmt(5.5)_63, server: 5.183.179.146, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
+  - {name: _US_wmt(5.5)_64, server: 72.167.45.6, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_65, server: 5.183.179.167, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY, udp: true}
+  - {name: _TW_wmt(5.5)_66, server: tw.tcpbbr.net, port: 443, type: trojan, password: 5c7b33c6-6d83-11eb-b77b-f23c913c8d2b, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_67, server: 5.183.179.146, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: _DE_wmt(5.5)_68, server: 5.183.179.166, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: _DE_wmt(5.5)_69, server: 5.183.179.140, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
+  - {name: _PL_wmt(5.5)_70, server: 217.30.10.65, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: _ZA_wmt(5.5)_71, server: cera.doubledou.win, port: 4586, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: cera.doubledou.win, skip-cert-verify: true, udp: true}
+  - {name: _JP_wmt(5.5)_72, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 23115_5a451f03, sni: tky3.ssgnode.ga, skip-cert-verify: true, udp: true}
+  - {name: _CH_wmt(5.5)_73, server: 185.126.116.117, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: _DE_wmt(5.5)_74, server: 5.183.179.170, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: _RO_wmt(5.5)_75, server: jp.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: jp.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_76, server: 5.183.179.166, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: _DE_wmt(5.5)_77, server: 5.183.179.170, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: _US_wmt(5.5)_78, server: a2.centaur.network, port: 8081, type: trojan, password: cdcf03f6-5326-4496-a1d1-03bb098ad56f, sni: a2.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: _CH_wmt(5.5)_79, server: 185.126.116.125, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: _RU_wmt(5.5)_80, server: 213.183.53.177, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: _NL_wmt(5.5)_81, server: 213.183.51.171, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: _NL_wmt(5.5)_82, server: 213.183.51.172, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: _NL_wmt(5.5)_83, server: 213.183.51.172, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: _RU_wmt(5.5)_84, server: 213.183.53.177, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
+  - {name: _NL_wmt(5.5)_85, server: 213.183.51.171, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: _CH_wmt(5.5)_86, server: 185.126.116.117, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: _SG_wmt(5.5)_87, server: sg3-trojan.bonds.id, port: 443, type: trojan, password: 97fdf760-7bbf-11eb-8e14-1239d0255272, sni: sg3-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_88, server: 5.183.179.167, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: _DE_wmt(5.5)_89, server: 5.183.179.167, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: _DE_wmt(5.5)_90, server: 5.183.179.140, port: 9027, type: ss, cipher: aes-256-cfb, password: EXN3S3eQpjE7EJu8, udp: true}
+  - {name: _DE_wmt(5.5)_91, server: 5.183.179.140, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
+  - {name: _DE_wmt(5.5)_92, server: 5.183.179.166, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: _US_wmt(5.5)_93, server: s162.s2022.xyz, port: 23802, type: trojan, password: 770c9e92-f51b-3e52-b932-eba13fb56801, sni: s162.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_94, server: 5.183.179.146, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
+  - {name: _CH_wmt(5.5)_95, server: 185.126.116.117, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: _US_wmt(5.5)_96, server: 72.167.45.6, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_97, server: 5.183.179.170, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: _SG_wmt(5.5)_98, server: s315.s2022.xyz, port: 40385, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, sni: s315.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_99, server: 5.183.179.146, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: _DE_wmt(5.5)_100, server: 5.183.179.146, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: _DE_wmt(5.5)_101, server: 5.183.179.146, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
+  - {name: _DE_wmt(5.5)_102, server: 5.183.179.140, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
+  - {name: _DE_wmt(5.5)_103, server: 5.183.179.167, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: _DE_wmt(5.5)_104, server: 5.183.179.146, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: _DE_wmt(5.5)_105, server: 5.183.179.146, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: _CH_wmt(5.5)_106, server: 185.126.116.117, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: _DE_wmt(5.5)_107, server: 5.183.179.170, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: _CN_wmt(5.5)_108, server: music.desperadoj.com, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m, udp: true}
+  - {name: _DE_wmt(5.5)_109, server: 5.183.179.140, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: _DE_wmt(5.5)_110, server: 5.183.179.170, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
+  - {name: _DE_wmt(5.5)_111, server: 5.183.179.170, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: _CN_wmt(5.5)_112, server: hk-hkg-shhk-001-tr.cdn.savoy.click, port: 20089, type: trojan, password: SfobRIcergHchqBFzzua, sni: hk-hkg-shhk-001-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_113, server: 5.183.179.166, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
+  - {name: _DE_wmt(5.5)_114, server: 5.183.179.140, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: _DE_wmt(5.5)_115, server: 5.183.179.170, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: _SG_wmt(5.5)_116, server: s285.s2022.xyz, port: 35798, type: trojan, password: 8140f380-9ac5-3731-a689-3e0f0c386634, sni: s285.s2022.xyz, skip-cert-verify: true, udp: true}
+  - {name: _DE_wmt(5.5)_117, server: 5.183.179.170, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
+  - {name: _RO_wmt(5.5)_118, server: jp.tcpbbr.net, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf-f23c91cfbbc9, sni: jp.tcpbbr.net, skip-cert-verify: true, udp: true}
+  - {name: _JP_wmt(5.5)_119, server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _GB_wmt(5.5)_120, server: 152.89.210.84, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(5.3)_1
-      - _CN_wmt(5.3)_2
-      - _BG_wmt(5.3)_3
-      - _JP_wmt(5.3)_4
-      - _NL_wmt(5.3)_5
-      - _GB_wmt(5.3)_6
-      - _DE_wmt(5.3)_7
-      - _CA_wmt(5.3)_8
-      - _US_wmt(5.3)_9
-      - _GB_wmt(5.3)_10
-      - _PL_wmt(5.3)_11
-      - _CN_wmt(5.3)_12
-      - _PL_wmt(5.3)_13
-      - _CN_wmt(5.3)_14
-      - _US_wmt(5.3)_15
-      - _CN_wmt(5.3)_16
-      - _CN_wmt(5.3)_17
-      - _CN_wmt(5.3)_18
-      - _CN_wmt(5.3)_19
-      - _CN_wmt(5.3)_20
-      - _CN_wmt(5.3)_21
-      - _NL_wmt(5.3)_22
-      - _CN_wmt(5.3)_23
-      - _NL_wmt(5.3)_24
-      - _CN_wmt(5.3)_25
-      - _CN_wmt(5.3)_26
-      - _CN_wmt(5.3)_27
-      - _DE_wmt(5.3)_28
-      - _CN_wmt(5.3)_29
-      - _CN_wmt(5.3)_30
-      - _DE_wmt(5.3)_31
-      - _CN_wmt(5.3)_32
-      - _CN_wmt(5.3)_33
-      - _DE_wmt(5.3)_34
-      - _NL_wmt(5.3)_35
-      - _DE_wmt(5.3)_36
-      - _PL_wmt(5.3)_37
-      - _GB_wmt(5.3)_38
-      - _GB_wmt(5.3)_39
-      - _HK_wmt(5.3)_40
-      - _US_wmt(5.3)_41
-      - _PL_wmt(5.3)_42
-      - _PL_wmt(5.3)_43
-      - _CA_wmt(5.3)_44
-      - _US_wmt(5.3)_45
-      - _US_wmt(5.3)_46
-      - _PL_wmt(5.3)_47
-      - _BG_wmt(5.3)_48
-      - _CH_wmt(5.3)_49
-      - _GB_wmt(5.3)_50
+      - _NL_wmt(5.5)_1
+      - _NL_wmt(5.5)_2
+      - _CH_wmt(5.5)_3
+      - _PL_wmt(5.5)_4
+      - _RU_wmt(5.5)_5
+      - _GB_wmt(5.5)_6
+      - _DE_wmt(5.5)_7
+      - _PL_wmt(5.5)_8
+      - _RU_wmt(5.5)_9
+      - _RU_wmt(5.5)_10
+      - _GB_wmt(5.5)_11
+      - _CN_wmt(5.5)_12
+      - _BG_wmt(5.5)_13
+      - _US_wmt(5.5)_14
+      - _CN_wmt(5.5)_15
+      - _PL_wmt(5.5)_16
+      - _CN_wmt(5.5)_17
+      - _US_wmt(5.5)_18
+      - _CN_wmt(5.5)_19
+      - _CN_wmt(5.5)_20
+      - _DE_wmt(5.5)_21
+      - _US_wmt(5.5)_22
+      - _DE_wmt(5.5)_23
+      - _GB_wmt(5.5)_24
+      - _DE_wmt(5.5)_25
+      - _US_wmt(5.5)_26
+      - _DE_wmt(5.5)_27
+      - _NL_wmt(5.5)_28
+      - _US_wmt(5.5)_29
+      - _DE_wmt(5.5)_30
+      - _DE_wmt(5.5)_31
+      - _DE_wmt(5.5)_32
+      - _US_wmt(5.5)_33
+      - _US_wmt(5.5)_34
+      - _DE_wmt(5.5)_35
+      - _DE_wmt(5.5)_36
+      - _DE_wmt(5.5)_37
+      - _PL_wmt(5.5)_38
+      - _DE_wmt(5.5)_39
+      - _DE_wmt(5.5)_40
+      - _US_wmt(5.5)_41
+      - _DE_wmt(5.5)_42
+      - _DE_wmt(5.5)_43
+      - _HK_wmt(5.5)_44
+      - _NL_wmt(5.5)_45
+      - _NL_wmt(5.5)_46
+      - _DE_wmt(5.5)_47
+      - _CH_wmt(5.5)_48
+      - _SG_wmt(5.5)_49
+      - _SG_wmt(5.5)_50
+      - _TW_wmt(5.5)_51
+      - _RU_wmt(5.5)_52
+      - _HK_wmt(5.5)_53
+      - _US_wmt(5.5)_54
+      - _DE_wmt(5.5)_55
+      - _HK_wmt(5.5)_56
+      - _HK_wmt(5.5)_57
+      - _US_wmt(5.5)_58
+      - _HK_wmt(5.5)_59
+      - _DE_wmt(5.5)_60
+      - _SG_wmt(5.5)_61
+      - _PL_wmt(5.5)_62
+      - _DE_wmt(5.5)_63
+      - _US_wmt(5.5)_64
+      - _DE_wmt(5.5)_65
+      - _TW_wmt(5.5)_66
+      - _DE_wmt(5.5)_67
+      - _DE_wmt(5.5)_68
+      - _DE_wmt(5.5)_69
+      - _PL_wmt(5.5)_70
+      - _ZA_wmt(5.5)_71
+      - _JP_wmt(5.5)_72
+      - _CH_wmt(5.5)_73
+      - _DE_wmt(5.5)_74
+      - _RO_wmt(5.5)_75
+      - _DE_wmt(5.5)_76
+      - _DE_wmt(5.5)_77
+      - _US_wmt(5.5)_78
+      - _CH_wmt(5.5)_79
+      - _RU_wmt(5.5)_80
+      - _NL_wmt(5.5)_81
+      - _NL_wmt(5.5)_82
+      - _NL_wmt(5.5)_83
+      - _RU_wmt(5.5)_84
+      - _NL_wmt(5.5)_85
+      - _CH_wmt(5.5)_86
+      - _SG_wmt(5.5)_87
+      - _DE_wmt(5.5)_88
+      - _DE_wmt(5.5)_89
+      - _DE_wmt(5.5)_90
+      - _DE_wmt(5.5)_91
+      - _DE_wmt(5.5)_92
+      - _US_wmt(5.5)_93
+      - _DE_wmt(5.5)_94
+      - _CH_wmt(5.5)_95
+      - _US_wmt(5.5)_96
+      - _DE_wmt(5.5)_97
+      - _SG_wmt(5.5)_98
+      - _DE_wmt(5.5)_99
+      - _DE_wmt(5.5)_100
+      - _DE_wmt(5.5)_101
+      - _DE_wmt(5.5)_102
+      - _DE_wmt(5.5)_103
+      - _DE_wmt(5.5)_104
+      - _DE_wmt(5.5)_105
+      - _CH_wmt(5.5)_106
+      - _DE_wmt(5.5)_107
+      - _CN_wmt(5.5)_108
+      - _DE_wmt(5.5)_109
+      - _DE_wmt(5.5)_110
+      - _DE_wmt(5.5)_111
+      - _CN_wmt(5.5)_112
+      - _DE_wmt(5.5)_113
+      - _DE_wmt(5.5)_114
+      - _DE_wmt(5.5)_115
+      - _SG_wmt(5.5)_116
+      - _DE_wmt(5.5)_117
+      - _RO_wmt(5.5)_118
+      - _JP_wmt(5.5)_119
+      - _GB_wmt(5.5)_120
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_wmt(5.3)_1
-      - _CN_wmt(5.3)_2
-      - _BG_wmt(5.3)_3
-      - _JP_wmt(5.3)_4
-      - _NL_wmt(5.3)_5
-      - _GB_wmt(5.3)_6
-      - _DE_wmt(5.3)_7
-      - _CA_wmt(5.3)_8
-      - _US_wmt(5.3)_9
-      - _GB_wmt(5.3)_10
-      - _PL_wmt(5.3)_11
-      - _CN_wmt(5.3)_12
-      - _PL_wmt(5.3)_13
-      - _CN_wmt(5.3)_14
-      - _US_wmt(5.3)_15
-      - _CN_wmt(5.3)_16
-      - _CN_wmt(5.3)_17
-      - _CN_wmt(5.3)_18
-      - _CN_wmt(5.3)_19
-      - _CN_wmt(5.3)_20
-      - _CN_wmt(5.3)_21
-      - _NL_wmt(5.3)_22
-      - _CN_wmt(5.3)_23
-      - _NL_wmt(5.3)_24
-      - _CN_wmt(5.3)_25
-      - _CN_wmt(5.3)_26
-      - _CN_wmt(5.3)_27
-      - _DE_wmt(5.3)_28
-      - _CN_wmt(5.3)_29
-      - _CN_wmt(5.3)_30
-      - _DE_wmt(5.3)_31
-      - _CN_wmt(5.3)_32
-      - _CN_wmt(5.3)_33
-      - _DE_wmt(5.3)_34
-      - _NL_wmt(5.3)_35
-      - _DE_wmt(5.3)_36
-      - _PL_wmt(5.3)_37
-      - _GB_wmt(5.3)_38
-      - _GB_wmt(5.3)_39
-      - _HK_wmt(5.3)_40
-      - _US_wmt(5.3)_41
-      - _PL_wmt(5.3)_42
-      - _PL_wmt(5.3)_43
-      - _CA_wmt(5.3)_44
-      - _US_wmt(5.3)_45
-      - _US_wmt(5.3)_46
-      - _PL_wmt(5.3)_47
-      - _BG_wmt(5.3)_48
-      - _CH_wmt(5.3)_49
-      - _GB_wmt(5.3)_50
+      - _NL_wmt(5.5)_1
+      - _NL_wmt(5.5)_2
+      - _CH_wmt(5.5)_3
+      - _PL_wmt(5.5)_4
+      - _RU_wmt(5.5)_5
+      - _GB_wmt(5.5)_6
+      - _DE_wmt(5.5)_7
+      - _PL_wmt(5.5)_8
+      - _RU_wmt(5.5)_9
+      - _RU_wmt(5.5)_10
+      - _GB_wmt(5.5)_11
+      - _CN_wmt(5.5)_12
+      - _BG_wmt(5.5)_13
+      - _US_wmt(5.5)_14
+      - _CN_wmt(5.5)_15
+      - _PL_wmt(5.5)_16
+      - _CN_wmt(5.5)_17
+      - _US_wmt(5.5)_18
+      - _CN_wmt(5.5)_19
+      - _CN_wmt(5.5)_20
+      - _DE_wmt(5.5)_21
+      - _US_wmt(5.5)_22
+      - _DE_wmt(5.5)_23
+      - _GB_wmt(5.5)_24
+      - _DE_wmt(5.5)_25
+      - _US_wmt(5.5)_26
+      - _DE_wmt(5.5)_27
+      - _NL_wmt(5.5)_28
+      - _US_wmt(5.5)_29
+      - _DE_wmt(5.5)_30
+      - _DE_wmt(5.5)_31
+      - _DE_wmt(5.5)_32
+      - _US_wmt(5.5)_33
+      - _US_wmt(5.5)_34
+      - _DE_wmt(5.5)_35
+      - _DE_wmt(5.5)_36
+      - _DE_wmt(5.5)_37
+      - _PL_wmt(5.5)_38
+      - _DE_wmt(5.5)_39
+      - _DE_wmt(5.5)_40
+      - _US_wmt(5.5)_41
+      - _DE_wmt(5.5)_42
+      - _DE_wmt(5.5)_43
+      - _HK_wmt(5.5)_44
+      - _NL_wmt(5.5)_45
+      - _NL_wmt(5.5)_46
+      - _DE_wmt(5.5)_47
+      - _CH_wmt(5.5)_48
+      - _SG_wmt(5.5)_49
+      - _SG_wmt(5.5)_50
+      - _TW_wmt(5.5)_51
+      - _RU_wmt(5.5)_52
+      - _HK_wmt(5.5)_53
+      - _US_wmt(5.5)_54
+      - _DE_wmt(5.5)_55
+      - _HK_wmt(5.5)_56
+      - _HK_wmt(5.5)_57
+      - _US_wmt(5.5)_58
+      - _HK_wmt(5.5)_59
+      - _DE_wmt(5.5)_60
+      - _SG_wmt(5.5)_61
+      - _PL_wmt(5.5)_62
+      - _DE_wmt(5.5)_63
+      - _US_wmt(5.5)_64
+      - _DE_wmt(5.5)_65
+      - _TW_wmt(5.5)_66
+      - _DE_wmt(5.5)_67
+      - _DE_wmt(5.5)_68
+      - _DE_wmt(5.5)_69
+      - _PL_wmt(5.5)_70
+      - _ZA_wmt(5.5)_71
+      - _JP_wmt(5.5)_72
+      - _CH_wmt(5.5)_73
+      - _DE_wmt(5.5)_74
+      - _RO_wmt(5.5)_75
+      - _DE_wmt(5.5)_76
+      - _DE_wmt(5.5)_77
+      - _US_wmt(5.5)_78
+      - _CH_wmt(5.5)_79
+      - _RU_wmt(5.5)_80
+      - _NL_wmt(5.5)_81
+      - _NL_wmt(5.5)_82
+      - _NL_wmt(5.5)_83
+      - _RU_wmt(5.5)_84
+      - _NL_wmt(5.5)_85
+      - _CH_wmt(5.5)_86
+      - _SG_wmt(5.5)_87
+      - _DE_wmt(5.5)_88
+      - _DE_wmt(5.5)_89
+      - _DE_wmt(5.5)_90
+      - _DE_wmt(5.5)_91
+      - _DE_wmt(5.5)_92
+      - _US_wmt(5.5)_93
+      - _DE_wmt(5.5)_94
+      - _CH_wmt(5.5)_95
+      - _US_wmt(5.5)_96
+      - _DE_wmt(5.5)_97
+      - _SG_wmt(5.5)_98
+      - _DE_wmt(5.5)_99
+      - _DE_wmt(5.5)_100
+      - _DE_wmt(5.5)_101
+      - _DE_wmt(5.5)_102
+      - _DE_wmt(5.5)_103
+      - _DE_wmt(5.5)_104
+      - _DE_wmt(5.5)_105
+      - _CH_wmt(5.5)_106
+      - _DE_wmt(5.5)_107
+      - _CN_wmt(5.5)_108
+      - _DE_wmt(5.5)_109
+      - _DE_wmt(5.5)_110
+      - _DE_wmt(5.5)_111
+      - _CN_wmt(5.5)_112
+      - _DE_wmt(5.5)_113
+      - _DE_wmt(5.5)_114
+      - _DE_wmt(5.5)_115
+      - _SG_wmt(5.5)_116
+      - _DE_wmt(5.5)_117
+      - _RO_wmt(5.5)_118
+      - _JP_wmt(5.5)_119
+      - _GB_wmt(5.5)_120
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(5.3)_1
-      - _CN_wmt(5.3)_2
-      - _BG_wmt(5.3)_3
-      - _JP_wmt(5.3)_4
-      - _NL_wmt(5.3)_5
-      - _GB_wmt(5.3)_6
-      - _DE_wmt(5.3)_7
-      - _CA_wmt(5.3)_8
-      - _US_wmt(5.3)_9
-      - _GB_wmt(5.3)_10
-      - _PL_wmt(5.3)_11
-      - _CN_wmt(5.3)_12
-      - _PL_wmt(5.3)_13
-      - _CN_wmt(5.3)_14
-      - _US_wmt(5.3)_15
-      - _CN_wmt(5.3)_16
-      - _CN_wmt(5.3)_17
-      - _CN_wmt(5.3)_18
-      - _CN_wmt(5.3)_19
-      - _CN_wmt(5.3)_20
-      - _CN_wmt(5.3)_21
-      - _NL_wmt(5.3)_22
-      - _CN_wmt(5.3)_23
-      - _NL_wmt(5.3)_24
-      - _CN_wmt(5.3)_25
-      - _CN_wmt(5.3)_26
-      - _CN_wmt(5.3)_27
-      - _DE_wmt(5.3)_28
-      - _CN_wmt(5.3)_29
-      - _CN_wmt(5.3)_30
-      - _DE_wmt(5.3)_31
-      - _CN_wmt(5.3)_32
-      - _CN_wmt(5.3)_33
-      - _DE_wmt(5.3)_34
-      - _NL_wmt(5.3)_35
-      - _DE_wmt(5.3)_36
-      - _PL_wmt(5.3)_37
-      - _GB_wmt(5.3)_38
-      - _GB_wmt(5.3)_39
-      - _HK_wmt(5.3)_40
-      - _US_wmt(5.3)_41
-      - _PL_wmt(5.3)_42
-      - _PL_wmt(5.3)_43
-      - _CA_wmt(5.3)_44
-      - _US_wmt(5.3)_45
-      - _US_wmt(5.3)_46
-      - _PL_wmt(5.3)_47
-      - _BG_wmt(5.3)_48
-      - _CH_wmt(5.3)_49
-      - _GB_wmt(5.3)_50
+      - _NL_wmt(5.5)_1
+      - _NL_wmt(5.5)_2
+      - _CH_wmt(5.5)_3
+      - _PL_wmt(5.5)_4
+      - _RU_wmt(5.5)_5
+      - _GB_wmt(5.5)_6
+      - _DE_wmt(5.5)_7
+      - _PL_wmt(5.5)_8
+      - _RU_wmt(5.5)_9
+      - _RU_wmt(5.5)_10
+      - _GB_wmt(5.5)_11
+      - _CN_wmt(5.5)_12
+      - _BG_wmt(5.5)_13
+      - _US_wmt(5.5)_14
+      - _CN_wmt(5.5)_15
+      - _PL_wmt(5.5)_16
+      - _CN_wmt(5.5)_17
+      - _US_wmt(5.5)_18
+      - _CN_wmt(5.5)_19
+      - _CN_wmt(5.5)_20
+      - _DE_wmt(5.5)_21
+      - _US_wmt(5.5)_22
+      - _DE_wmt(5.5)_23
+      - _GB_wmt(5.5)_24
+      - _DE_wmt(5.5)_25
+      - _US_wmt(5.5)_26
+      - _DE_wmt(5.5)_27
+      - _NL_wmt(5.5)_28
+      - _US_wmt(5.5)_29
+      - _DE_wmt(5.5)_30
+      - _DE_wmt(5.5)_31
+      - _DE_wmt(5.5)_32
+      - _US_wmt(5.5)_33
+      - _US_wmt(5.5)_34
+      - _DE_wmt(5.5)_35
+      - _DE_wmt(5.5)_36
+      - _DE_wmt(5.5)_37
+      - _PL_wmt(5.5)_38
+      - _DE_wmt(5.5)_39
+      - _DE_wmt(5.5)_40
+      - _US_wmt(5.5)_41
+      - _DE_wmt(5.5)_42
+      - _DE_wmt(5.5)_43
+      - _HK_wmt(5.5)_44
+      - _NL_wmt(5.5)_45
+      - _NL_wmt(5.5)_46
+      - _DE_wmt(5.5)_47
+      - _CH_wmt(5.5)_48
+      - _SG_wmt(5.5)_49
+      - _SG_wmt(5.5)_50
+      - _TW_wmt(5.5)_51
+      - _RU_wmt(5.5)_52
+      - _HK_wmt(5.5)_53
+      - _US_wmt(5.5)_54
+      - _DE_wmt(5.5)_55
+      - _HK_wmt(5.5)_56
+      - _HK_wmt(5.5)_57
+      - _US_wmt(5.5)_58
+      - _HK_wmt(5.5)_59
+      - _DE_wmt(5.5)_60
+      - _SG_wmt(5.5)_61
+      - _PL_wmt(5.5)_62
+      - _DE_wmt(5.5)_63
+      - _US_wmt(5.5)_64
+      - _DE_wmt(5.5)_65
+      - _TW_wmt(5.5)_66
+      - _DE_wmt(5.5)_67
+      - _DE_wmt(5.5)_68
+      - _DE_wmt(5.5)_69
+      - _PL_wmt(5.5)_70
+      - _ZA_wmt(5.5)_71
+      - _JP_wmt(5.5)_72
+      - _CH_wmt(5.5)_73
+      - _DE_wmt(5.5)_74
+      - _RO_wmt(5.5)_75
+      - _DE_wmt(5.5)_76
+      - _DE_wmt(5.5)_77
+      - _US_wmt(5.5)_78
+      - _CH_wmt(5.5)_79
+      - _RU_wmt(5.5)_80
+      - _NL_wmt(5.5)_81
+      - _NL_wmt(5.5)_82
+      - _NL_wmt(5.5)_83
+      - _RU_wmt(5.5)_84
+      - _NL_wmt(5.5)_85
+      - _CH_wmt(5.5)_86
+      - _SG_wmt(5.5)_87
+      - _DE_wmt(5.5)_88
+      - _DE_wmt(5.5)_89
+      - _DE_wmt(5.5)_90
+      - _DE_wmt(5.5)_91
+      - _DE_wmt(5.5)_92
+      - _US_wmt(5.5)_93
+      - _DE_wmt(5.5)_94
+      - _CH_wmt(5.5)_95
+      - _US_wmt(5.5)_96
+      - _DE_wmt(5.5)_97
+      - _SG_wmt(5.5)_98
+      - _DE_wmt(5.5)_99
+      - _DE_wmt(5.5)_100
+      - _DE_wmt(5.5)_101
+      - _DE_wmt(5.5)_102
+      - _DE_wmt(5.5)_103
+      - _DE_wmt(5.5)_104
+      - _DE_wmt(5.5)_105
+      - _CH_wmt(5.5)_106
+      - _DE_wmt(5.5)_107
+      - _CN_wmt(5.5)_108
+      - _DE_wmt(5.5)_109
+      - _DE_wmt(5.5)_110
+      - _DE_wmt(5.5)_111
+      - _CN_wmt(5.5)_112
+      - _DE_wmt(5.5)_113
+      - _DE_wmt(5.5)_114
+      - _DE_wmt(5.5)_115
+      - _SG_wmt(5.5)_116
+      - _DE_wmt(5.5)_117
+      - _RO_wmt(5.5)_118
+      - _JP_wmt(5.5)_119
+      - _GB_wmt(5.5)_120
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -240,56 +520,126 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(5.3)_1
-      - _CN_wmt(5.3)_2
-      - _BG_wmt(5.3)_3
-      - _JP_wmt(5.3)_4
-      - _NL_wmt(5.3)_5
-      - _GB_wmt(5.3)_6
-      - _DE_wmt(5.3)_7
-      - _CA_wmt(5.3)_8
-      - _US_wmt(5.3)_9
-      - _GB_wmt(5.3)_10
-      - _PL_wmt(5.3)_11
-      - _CN_wmt(5.3)_12
-      - _PL_wmt(5.3)_13
-      - _CN_wmt(5.3)_14
-      - _US_wmt(5.3)_15
-      - _CN_wmt(5.3)_16
-      - _CN_wmt(5.3)_17
-      - _CN_wmt(5.3)_18
-      - _CN_wmt(5.3)_19
-      - _CN_wmt(5.3)_20
-      - _CN_wmt(5.3)_21
-      - _NL_wmt(5.3)_22
-      - _CN_wmt(5.3)_23
-      - _NL_wmt(5.3)_24
-      - _CN_wmt(5.3)_25
-      - _CN_wmt(5.3)_26
-      - _CN_wmt(5.3)_27
-      - _DE_wmt(5.3)_28
-      - _CN_wmt(5.3)_29
-      - _CN_wmt(5.3)_30
-      - _DE_wmt(5.3)_31
-      - _CN_wmt(5.3)_32
-      - _CN_wmt(5.3)_33
-      - _DE_wmt(5.3)_34
-      - _NL_wmt(5.3)_35
-      - _DE_wmt(5.3)_36
-      - _PL_wmt(5.3)_37
-      - _GB_wmt(5.3)_38
-      - _GB_wmt(5.3)_39
-      - _HK_wmt(5.3)_40
-      - _US_wmt(5.3)_41
-      - _PL_wmt(5.3)_42
-      - _PL_wmt(5.3)_43
-      - _CA_wmt(5.3)_44
-      - _US_wmt(5.3)_45
-      - _US_wmt(5.3)_46
-      - _PL_wmt(5.3)_47
-      - _BG_wmt(5.3)_48
-      - _CH_wmt(5.3)_49
-      - _GB_wmt(5.3)_50
+      - _NL_wmt(5.5)_1
+      - _NL_wmt(5.5)_2
+      - _CH_wmt(5.5)_3
+      - _PL_wmt(5.5)_4
+      - _RU_wmt(5.5)_5
+      - _GB_wmt(5.5)_6
+      - _DE_wmt(5.5)_7
+      - _PL_wmt(5.5)_8
+      - _RU_wmt(5.5)_9
+      - _RU_wmt(5.5)_10
+      - _GB_wmt(5.5)_11
+      - _CN_wmt(5.5)_12
+      - _BG_wmt(5.5)_13
+      - _US_wmt(5.5)_14
+      - _CN_wmt(5.5)_15
+      - _PL_wmt(5.5)_16
+      - _CN_wmt(5.5)_17
+      - _US_wmt(5.5)_18
+      - _CN_wmt(5.5)_19
+      - _CN_wmt(5.5)_20
+      - _DE_wmt(5.5)_21
+      - _US_wmt(5.5)_22
+      - _DE_wmt(5.5)_23
+      - _GB_wmt(5.5)_24
+      - _DE_wmt(5.5)_25
+      - _US_wmt(5.5)_26
+      - _DE_wmt(5.5)_27
+      - _NL_wmt(5.5)_28
+      - _US_wmt(5.5)_29
+      - _DE_wmt(5.5)_30
+      - _DE_wmt(5.5)_31
+      - _DE_wmt(5.5)_32
+      - _US_wmt(5.5)_33
+      - _US_wmt(5.5)_34
+      - _DE_wmt(5.5)_35
+      - _DE_wmt(5.5)_36
+      - _DE_wmt(5.5)_37
+      - _PL_wmt(5.5)_38
+      - _DE_wmt(5.5)_39
+      - _DE_wmt(5.5)_40
+      - _US_wmt(5.5)_41
+      - _DE_wmt(5.5)_42
+      - _DE_wmt(5.5)_43
+      - _HK_wmt(5.5)_44
+      - _NL_wmt(5.5)_45
+      - _NL_wmt(5.5)_46
+      - _DE_wmt(5.5)_47
+      - _CH_wmt(5.5)_48
+      - _SG_wmt(5.5)_49
+      - _SG_wmt(5.5)_50
+      - _TW_wmt(5.5)_51
+      - _RU_wmt(5.5)_52
+      - _HK_wmt(5.5)_53
+      - _US_wmt(5.5)_54
+      - _DE_wmt(5.5)_55
+      - _HK_wmt(5.5)_56
+      - _HK_wmt(5.5)_57
+      - _US_wmt(5.5)_58
+      - _HK_wmt(5.5)_59
+      - _DE_wmt(5.5)_60
+      - _SG_wmt(5.5)_61
+      - _PL_wmt(5.5)_62
+      - _DE_wmt(5.5)_63
+      - _US_wmt(5.5)_64
+      - _DE_wmt(5.5)_65
+      - _TW_wmt(5.5)_66
+      - _DE_wmt(5.5)_67
+      - _DE_wmt(5.5)_68
+      - _DE_wmt(5.5)_69
+      - _PL_wmt(5.5)_70
+      - _ZA_wmt(5.5)_71
+      - _JP_wmt(5.5)_72
+      - _CH_wmt(5.5)_73
+      - _DE_wmt(5.5)_74
+      - _RO_wmt(5.5)_75
+      - _DE_wmt(5.5)_76
+      - _DE_wmt(5.5)_77
+      - _US_wmt(5.5)_78
+      - _CH_wmt(5.5)_79
+      - _RU_wmt(5.5)_80
+      - _NL_wmt(5.5)_81
+      - _NL_wmt(5.5)_82
+      - _NL_wmt(5.5)_83
+      - _RU_wmt(5.5)_84
+      - _NL_wmt(5.5)_85
+      - _CH_wmt(5.5)_86
+      - _SG_wmt(5.5)_87
+      - _DE_wmt(5.5)_88
+      - _DE_wmt(5.5)_89
+      - _DE_wmt(5.5)_90
+      - _DE_wmt(5.5)_91
+      - _DE_wmt(5.5)_92
+      - _US_wmt(5.5)_93
+      - _DE_wmt(5.5)_94
+      - _CH_wmt(5.5)_95
+      - _US_wmt(5.5)_96
+      - _DE_wmt(5.5)_97
+      - _SG_wmt(5.5)_98
+      - _DE_wmt(5.5)_99
+      - _DE_wmt(5.5)_100
+      - _DE_wmt(5.5)_101
+      - _DE_wmt(5.5)_102
+      - _DE_wmt(5.5)_103
+      - _DE_wmt(5.5)_104
+      - _DE_wmt(5.5)_105
+      - _CH_wmt(5.5)_106
+      - _DE_wmt(5.5)_107
+      - _CN_wmt(5.5)_108
+      - _DE_wmt(5.5)_109
+      - _DE_wmt(5.5)_110
+      - _DE_wmt(5.5)_111
+      - _CN_wmt(5.5)_112
+      - _DE_wmt(5.5)_113
+      - _DE_wmt(5.5)_114
+      - _DE_wmt(5.5)_115
+      - _SG_wmt(5.5)_116
+      - _DE_wmt(5.5)_117
+      - _RO_wmt(5.5)_118
+      - _JP_wmt(5.5)_119
+      - _GB_wmt(5.5)_120
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -300,167 +650,377 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_wmt(5.3)_1
-      - _CN_wmt(5.3)_2
-      - _BG_wmt(5.3)_3
-      - _JP_wmt(5.3)_4
-      - _NL_wmt(5.3)_5
-      - _GB_wmt(5.3)_6
-      - _DE_wmt(5.3)_7
-      - _CA_wmt(5.3)_8
-      - _US_wmt(5.3)_9
-      - _GB_wmt(5.3)_10
-      - _PL_wmt(5.3)_11
-      - _CN_wmt(5.3)_12
-      - _PL_wmt(5.3)_13
-      - _CN_wmt(5.3)_14
-      - _US_wmt(5.3)_15
-      - _CN_wmt(5.3)_16
-      - _CN_wmt(5.3)_17
-      - _CN_wmt(5.3)_18
-      - _CN_wmt(5.3)_19
-      - _CN_wmt(5.3)_20
-      - _CN_wmt(5.3)_21
-      - _NL_wmt(5.3)_22
-      - _CN_wmt(5.3)_23
-      - _NL_wmt(5.3)_24
-      - _CN_wmt(5.3)_25
-      - _CN_wmt(5.3)_26
-      - _CN_wmt(5.3)_27
-      - _DE_wmt(5.3)_28
-      - _CN_wmt(5.3)_29
-      - _CN_wmt(5.3)_30
-      - _DE_wmt(5.3)_31
-      - _CN_wmt(5.3)_32
-      - _CN_wmt(5.3)_33
-      - _DE_wmt(5.3)_34
-      - _NL_wmt(5.3)_35
-      - _DE_wmt(5.3)_36
-      - _PL_wmt(5.3)_37
-      - _GB_wmt(5.3)_38
-      - _GB_wmt(5.3)_39
-      - _HK_wmt(5.3)_40
-      - _US_wmt(5.3)_41
-      - _PL_wmt(5.3)_42
-      - _PL_wmt(5.3)_43
-      - _CA_wmt(5.3)_44
-      - _US_wmt(5.3)_45
-      - _US_wmt(5.3)_46
-      - _PL_wmt(5.3)_47
-      - _BG_wmt(5.3)_48
-      - _CH_wmt(5.3)_49
-      - _GB_wmt(5.3)_50
+      - _NL_wmt(5.5)_1
+      - _NL_wmt(5.5)_2
+      - _CH_wmt(5.5)_3
+      - _PL_wmt(5.5)_4
+      - _RU_wmt(5.5)_5
+      - _GB_wmt(5.5)_6
+      - _DE_wmt(5.5)_7
+      - _PL_wmt(5.5)_8
+      - _RU_wmt(5.5)_9
+      - _RU_wmt(5.5)_10
+      - _GB_wmt(5.5)_11
+      - _CN_wmt(5.5)_12
+      - _BG_wmt(5.5)_13
+      - _US_wmt(5.5)_14
+      - _CN_wmt(5.5)_15
+      - _PL_wmt(5.5)_16
+      - _CN_wmt(5.5)_17
+      - _US_wmt(5.5)_18
+      - _CN_wmt(5.5)_19
+      - _CN_wmt(5.5)_20
+      - _DE_wmt(5.5)_21
+      - _US_wmt(5.5)_22
+      - _DE_wmt(5.5)_23
+      - _GB_wmt(5.5)_24
+      - _DE_wmt(5.5)_25
+      - _US_wmt(5.5)_26
+      - _DE_wmt(5.5)_27
+      - _NL_wmt(5.5)_28
+      - _US_wmt(5.5)_29
+      - _DE_wmt(5.5)_30
+      - _DE_wmt(5.5)_31
+      - _DE_wmt(5.5)_32
+      - _US_wmt(5.5)_33
+      - _US_wmt(5.5)_34
+      - _DE_wmt(5.5)_35
+      - _DE_wmt(5.5)_36
+      - _DE_wmt(5.5)_37
+      - _PL_wmt(5.5)_38
+      - _DE_wmt(5.5)_39
+      - _DE_wmt(5.5)_40
+      - _US_wmt(5.5)_41
+      - _DE_wmt(5.5)_42
+      - _DE_wmt(5.5)_43
+      - _HK_wmt(5.5)_44
+      - _NL_wmt(5.5)_45
+      - _NL_wmt(5.5)_46
+      - _DE_wmt(5.5)_47
+      - _CH_wmt(5.5)_48
+      - _SG_wmt(5.5)_49
+      - _SG_wmt(5.5)_50
+      - _TW_wmt(5.5)_51
+      - _RU_wmt(5.5)_52
+      - _HK_wmt(5.5)_53
+      - _US_wmt(5.5)_54
+      - _DE_wmt(5.5)_55
+      - _HK_wmt(5.5)_56
+      - _HK_wmt(5.5)_57
+      - _US_wmt(5.5)_58
+      - _HK_wmt(5.5)_59
+      - _DE_wmt(5.5)_60
+      - _SG_wmt(5.5)_61
+      - _PL_wmt(5.5)_62
+      - _DE_wmt(5.5)_63
+      - _US_wmt(5.5)_64
+      - _DE_wmt(5.5)_65
+      - _TW_wmt(5.5)_66
+      - _DE_wmt(5.5)_67
+      - _DE_wmt(5.5)_68
+      - _DE_wmt(5.5)_69
+      - _PL_wmt(5.5)_70
+      - _ZA_wmt(5.5)_71
+      - _JP_wmt(5.5)_72
+      - _CH_wmt(5.5)_73
+      - _DE_wmt(5.5)_74
+      - _RO_wmt(5.5)_75
+      - _DE_wmt(5.5)_76
+      - _DE_wmt(5.5)_77
+      - _US_wmt(5.5)_78
+      - _CH_wmt(5.5)_79
+      - _RU_wmt(5.5)_80
+      - _NL_wmt(5.5)_81
+      - _NL_wmt(5.5)_82
+      - _NL_wmt(5.5)_83
+      - _RU_wmt(5.5)_84
+      - _NL_wmt(5.5)_85
+      - _CH_wmt(5.5)_86
+      - _SG_wmt(5.5)_87
+      - _DE_wmt(5.5)_88
+      - _DE_wmt(5.5)_89
+      - _DE_wmt(5.5)_90
+      - _DE_wmt(5.5)_91
+      - _DE_wmt(5.5)_92
+      - _US_wmt(5.5)_93
+      - _DE_wmt(5.5)_94
+      - _CH_wmt(5.5)_95
+      - _US_wmt(5.5)_96
+      - _DE_wmt(5.5)_97
+      - _SG_wmt(5.5)_98
+      - _DE_wmt(5.5)_99
+      - _DE_wmt(5.5)_100
+      - _DE_wmt(5.5)_101
+      - _DE_wmt(5.5)_102
+      - _DE_wmt(5.5)_103
+      - _DE_wmt(5.5)_104
+      - _DE_wmt(5.5)_105
+      - _CH_wmt(5.5)_106
+      - _DE_wmt(5.5)_107
+      - _CN_wmt(5.5)_108
+      - _DE_wmt(5.5)_109
+      - _DE_wmt(5.5)_110
+      - _DE_wmt(5.5)_111
+      - _CN_wmt(5.5)_112
+      - _DE_wmt(5.5)_113
+      - _DE_wmt(5.5)_114
+      - _DE_wmt(5.5)_115
+      - _SG_wmt(5.5)_116
+      - _DE_wmt(5.5)_117
+      - _RO_wmt(5.5)_118
+      - _JP_wmt(5.5)_119
+      - _GB_wmt(5.5)_120
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_wmt(5.3)_1
-      - _CN_wmt(5.3)_2
-      - _BG_wmt(5.3)_3
-      - _JP_wmt(5.3)_4
-      - _NL_wmt(5.3)_5
-      - _GB_wmt(5.3)_6
-      - _DE_wmt(5.3)_7
-      - _CA_wmt(5.3)_8
-      - _US_wmt(5.3)_9
-      - _GB_wmt(5.3)_10
-      - _PL_wmt(5.3)_11
-      - _CN_wmt(5.3)_12
-      - _PL_wmt(5.3)_13
-      - _CN_wmt(5.3)_14
-      - _US_wmt(5.3)_15
-      - _CN_wmt(5.3)_16
-      - _CN_wmt(5.3)_17
-      - _CN_wmt(5.3)_18
-      - _CN_wmt(5.3)_19
-      - _CN_wmt(5.3)_20
-      - _CN_wmt(5.3)_21
-      - _NL_wmt(5.3)_22
-      - _CN_wmt(5.3)_23
-      - _NL_wmt(5.3)_24
-      - _CN_wmt(5.3)_25
-      - _CN_wmt(5.3)_26
-      - _CN_wmt(5.3)_27
-      - _DE_wmt(5.3)_28
-      - _CN_wmt(5.3)_29
-      - _CN_wmt(5.3)_30
-      - _DE_wmt(5.3)_31
-      - _CN_wmt(5.3)_32
-      - _CN_wmt(5.3)_33
-      - _DE_wmt(5.3)_34
-      - _NL_wmt(5.3)_35
-      - _DE_wmt(5.3)_36
-      - _PL_wmt(5.3)_37
-      - _GB_wmt(5.3)_38
-      - _GB_wmt(5.3)_39
-      - _HK_wmt(5.3)_40
-      - _US_wmt(5.3)_41
-      - _PL_wmt(5.3)_42
-      - _PL_wmt(5.3)_43
-      - _CA_wmt(5.3)_44
-      - _US_wmt(5.3)_45
-      - _US_wmt(5.3)_46
-      - _PL_wmt(5.3)_47
-      - _BG_wmt(5.3)_48
-      - _CH_wmt(5.3)_49
-      - _GB_wmt(5.3)_50
+      - _NL_wmt(5.5)_1
+      - _NL_wmt(5.5)_2
+      - _CH_wmt(5.5)_3
+      - _PL_wmt(5.5)_4
+      - _RU_wmt(5.5)_5
+      - _GB_wmt(5.5)_6
+      - _DE_wmt(5.5)_7
+      - _PL_wmt(5.5)_8
+      - _RU_wmt(5.5)_9
+      - _RU_wmt(5.5)_10
+      - _GB_wmt(5.5)_11
+      - _CN_wmt(5.5)_12
+      - _BG_wmt(5.5)_13
+      - _US_wmt(5.5)_14
+      - _CN_wmt(5.5)_15
+      - _PL_wmt(5.5)_16
+      - _CN_wmt(5.5)_17
+      - _US_wmt(5.5)_18
+      - _CN_wmt(5.5)_19
+      - _CN_wmt(5.5)_20
+      - _DE_wmt(5.5)_21
+      - _US_wmt(5.5)_22
+      - _DE_wmt(5.5)_23
+      - _GB_wmt(5.5)_24
+      - _DE_wmt(5.5)_25
+      - _US_wmt(5.5)_26
+      - _DE_wmt(5.5)_27
+      - _NL_wmt(5.5)_28
+      - _US_wmt(5.5)_29
+      - _DE_wmt(5.5)_30
+      - _DE_wmt(5.5)_31
+      - _DE_wmt(5.5)_32
+      - _US_wmt(5.5)_33
+      - _US_wmt(5.5)_34
+      - _DE_wmt(5.5)_35
+      - _DE_wmt(5.5)_36
+      - _DE_wmt(5.5)_37
+      - _PL_wmt(5.5)_38
+      - _DE_wmt(5.5)_39
+      - _DE_wmt(5.5)_40
+      - _US_wmt(5.5)_41
+      - _DE_wmt(5.5)_42
+      - _DE_wmt(5.5)_43
+      - _HK_wmt(5.5)_44
+      - _NL_wmt(5.5)_45
+      - _NL_wmt(5.5)_46
+      - _DE_wmt(5.5)_47
+      - _CH_wmt(5.5)_48
+      - _SG_wmt(5.5)_49
+      - _SG_wmt(5.5)_50
+      - _TW_wmt(5.5)_51
+      - _RU_wmt(5.5)_52
+      - _HK_wmt(5.5)_53
+      - _US_wmt(5.5)_54
+      - _DE_wmt(5.5)_55
+      - _HK_wmt(5.5)_56
+      - _HK_wmt(5.5)_57
+      - _US_wmt(5.5)_58
+      - _HK_wmt(5.5)_59
+      - _DE_wmt(5.5)_60
+      - _SG_wmt(5.5)_61
+      - _PL_wmt(5.5)_62
+      - _DE_wmt(5.5)_63
+      - _US_wmt(5.5)_64
+      - _DE_wmt(5.5)_65
+      - _TW_wmt(5.5)_66
+      - _DE_wmt(5.5)_67
+      - _DE_wmt(5.5)_68
+      - _DE_wmt(5.5)_69
+      - _PL_wmt(5.5)_70
+      - _ZA_wmt(5.5)_71
+      - _JP_wmt(5.5)_72
+      - _CH_wmt(5.5)_73
+      - _DE_wmt(5.5)_74
+      - _RO_wmt(5.5)_75
+      - _DE_wmt(5.5)_76
+      - _DE_wmt(5.5)_77
+      - _US_wmt(5.5)_78
+      - _CH_wmt(5.5)_79
+      - _RU_wmt(5.5)_80
+      - _NL_wmt(5.5)_81
+      - _NL_wmt(5.5)_82
+      - _NL_wmt(5.5)_83
+      - _RU_wmt(5.5)_84
+      - _NL_wmt(5.5)_85
+      - _CH_wmt(5.5)_86
+      - _SG_wmt(5.5)_87
+      - _DE_wmt(5.5)_88
+      - _DE_wmt(5.5)_89
+      - _DE_wmt(5.5)_90
+      - _DE_wmt(5.5)_91
+      - _DE_wmt(5.5)_92
+      - _US_wmt(5.5)_93
+      - _DE_wmt(5.5)_94
+      - _CH_wmt(5.5)_95
+      - _US_wmt(5.5)_96
+      - _DE_wmt(5.5)_97
+      - _SG_wmt(5.5)_98
+      - _DE_wmt(5.5)_99
+      - _DE_wmt(5.5)_100
+      - _DE_wmt(5.5)_101
+      - _DE_wmt(5.5)_102
+      - _DE_wmt(5.5)_103
+      - _DE_wmt(5.5)_104
+      - _DE_wmt(5.5)_105
+      - _CH_wmt(5.5)_106
+      - _DE_wmt(5.5)_107
+      - _CN_wmt(5.5)_108
+      - _DE_wmt(5.5)_109
+      - _DE_wmt(5.5)_110
+      - _DE_wmt(5.5)_111
+      - _CN_wmt(5.5)_112
+      - _DE_wmt(5.5)_113
+      - _DE_wmt(5.5)_114
+      - _DE_wmt(5.5)_115
+      - _SG_wmt(5.5)_116
+      - _DE_wmt(5.5)_117
+      - _RO_wmt(5.5)_118
+      - _JP_wmt(5.5)_119
+      - _GB_wmt(5.5)_120
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_wmt(5.3)_1
-      - _CN_wmt(5.3)_2
-      - _BG_wmt(5.3)_3
-      - _JP_wmt(5.3)_4
-      - _NL_wmt(5.3)_5
-      - _GB_wmt(5.3)_6
-      - _DE_wmt(5.3)_7
-      - _CA_wmt(5.3)_8
-      - _US_wmt(5.3)_9
-      - _GB_wmt(5.3)_10
-      - _PL_wmt(5.3)_11
-      - _CN_wmt(5.3)_12
-      - _PL_wmt(5.3)_13
-      - _CN_wmt(5.3)_14
-      - _US_wmt(5.3)_15
-      - _CN_wmt(5.3)_16
-      - _CN_wmt(5.3)_17
-      - _CN_wmt(5.3)_18
-      - _CN_wmt(5.3)_19
-      - _CN_wmt(5.3)_20
-      - _CN_wmt(5.3)_21
-      - _NL_wmt(5.3)_22
-      - _CN_wmt(5.3)_23
-      - _NL_wmt(5.3)_24
-      - _CN_wmt(5.3)_25
-      - _CN_wmt(5.3)_26
-      - _CN_wmt(5.3)_27
-      - _DE_wmt(5.3)_28
-      - _CN_wmt(5.3)_29
-      - _CN_wmt(5.3)_30
-      - _DE_wmt(5.3)_31
-      - _CN_wmt(5.3)_32
-      - _CN_wmt(5.3)_33
-      - _DE_wmt(5.3)_34
-      - _NL_wmt(5.3)_35
-      - _DE_wmt(5.3)_36
-      - _PL_wmt(5.3)_37
-      - _GB_wmt(5.3)_38
-      - _GB_wmt(5.3)_39
-      - _HK_wmt(5.3)_40
-      - _US_wmt(5.3)_41
-      - _PL_wmt(5.3)_42
-      - _PL_wmt(5.3)_43
-      - _CA_wmt(5.3)_44
-      - _US_wmt(5.3)_45
-      - _US_wmt(5.3)_46
-      - _PL_wmt(5.3)_47
-      - _BG_wmt(5.3)_48
-      - _CH_wmt(5.3)_49
-      - _GB_wmt(5.3)_50
+      - _NL_wmt(5.5)_1
+      - _NL_wmt(5.5)_2
+      - _CH_wmt(5.5)_3
+      - _PL_wmt(5.5)_4
+      - _RU_wmt(5.5)_5
+      - _GB_wmt(5.5)_6
+      - _DE_wmt(5.5)_7
+      - _PL_wmt(5.5)_8
+      - _RU_wmt(5.5)_9
+      - _RU_wmt(5.5)_10
+      - _GB_wmt(5.5)_11
+      - _CN_wmt(5.5)_12
+      - _BG_wmt(5.5)_13
+      - _US_wmt(5.5)_14
+      - _CN_wmt(5.5)_15
+      - _PL_wmt(5.5)_16
+      - _CN_wmt(5.5)_17
+      - _US_wmt(5.5)_18
+      - _CN_wmt(5.5)_19
+      - _CN_wmt(5.5)_20
+      - _DE_wmt(5.5)_21
+      - _US_wmt(5.5)_22
+      - _DE_wmt(5.5)_23
+      - _GB_wmt(5.5)_24
+      - _DE_wmt(5.5)_25
+      - _US_wmt(5.5)_26
+      - _DE_wmt(5.5)_27
+      - _NL_wmt(5.5)_28
+      - _US_wmt(5.5)_29
+      - _DE_wmt(5.5)_30
+      - _DE_wmt(5.5)_31
+      - _DE_wmt(5.5)_32
+      - _US_wmt(5.5)_33
+      - _US_wmt(5.5)_34
+      - _DE_wmt(5.5)_35
+      - _DE_wmt(5.5)_36
+      - _DE_wmt(5.5)_37
+      - _PL_wmt(5.5)_38
+      - _DE_wmt(5.5)_39
+      - _DE_wmt(5.5)_40
+      - _US_wmt(5.5)_41
+      - _DE_wmt(5.5)_42
+      - _DE_wmt(5.5)_43
+      - _HK_wmt(5.5)_44
+      - _NL_wmt(5.5)_45
+      - _NL_wmt(5.5)_46
+      - _DE_wmt(5.5)_47
+      - _CH_wmt(5.5)_48
+      - _SG_wmt(5.5)_49
+      - _SG_wmt(5.5)_50
+      - _TW_wmt(5.5)_51
+      - _RU_wmt(5.5)_52
+      - _HK_wmt(5.5)_53
+      - _US_wmt(5.5)_54
+      - _DE_wmt(5.5)_55
+      - _HK_wmt(5.5)_56
+      - _HK_wmt(5.5)_57
+      - _US_wmt(5.5)_58
+      - _HK_wmt(5.5)_59
+      - _DE_wmt(5.5)_60
+      - _SG_wmt(5.5)_61
+      - _PL_wmt(5.5)_62
+      - _DE_wmt(5.5)_63
+      - _US_wmt(5.5)_64
+      - _DE_wmt(5.5)_65
+      - _TW_wmt(5.5)_66
+      - _DE_wmt(5.5)_67
+      - _DE_wmt(5.5)_68
+      - _DE_wmt(5.5)_69
+      - _PL_wmt(5.5)_70
+      - _ZA_wmt(5.5)_71
+      - _JP_wmt(5.5)_72
+      - _CH_wmt(5.5)_73
+      - _DE_wmt(5.5)_74
+      - _RO_wmt(5.5)_75
+      - _DE_wmt(5.5)_76
+      - _DE_wmt(5.5)_77
+      - _US_wmt(5.5)_78
+      - _CH_wmt(5.5)_79
+      - _RU_wmt(5.5)_80
+      - _NL_wmt(5.5)_81
+      - _NL_wmt(5.5)_82
+      - _NL_wmt(5.5)_83
+      - _RU_wmt(5.5)_84
+      - _NL_wmt(5.5)_85
+      - _CH_wmt(5.5)_86
+      - _SG_wmt(5.5)_87
+      - _DE_wmt(5.5)_88
+      - _DE_wmt(5.5)_89
+      - _DE_wmt(5.5)_90
+      - _DE_wmt(5.5)_91
+      - _DE_wmt(5.5)_92
+      - _US_wmt(5.5)_93
+      - _DE_wmt(5.5)_94
+      - _CH_wmt(5.5)_95
+      - _US_wmt(5.5)_96
+      - _DE_wmt(5.5)_97
+      - _SG_wmt(5.5)_98
+      - _DE_wmt(5.5)_99
+      - _DE_wmt(5.5)_100
+      - _DE_wmt(5.5)_101
+      - _DE_wmt(5.5)_102
+      - _DE_wmt(5.5)_103
+      - _DE_wmt(5.5)_104
+      - _DE_wmt(5.5)_105
+      - _CH_wmt(5.5)_106
+      - _DE_wmt(5.5)_107
+      - _CN_wmt(5.5)_108
+      - _DE_wmt(5.5)_109
+      - _DE_wmt(5.5)_110
+      - _DE_wmt(5.5)_111
+      - _CN_wmt(5.5)_112
+      - _DE_wmt(5.5)_113
+      - _DE_wmt(5.5)_114
+      - _DE_wmt(5.5)_115
+      - _SG_wmt(5.5)_116
+      - _DE_wmt(5.5)_117
+      - _RO_wmt(5.5)_118
+      - _JP_wmt(5.5)_119
+      - _GB_wmt(5.5)_120
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -476,56 +1036,126 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_wmt(5.3)_1
-      - _CN_wmt(5.3)_2
-      - _BG_wmt(5.3)_3
-      - _JP_wmt(5.3)_4
-      - _NL_wmt(5.3)_5
-      - _GB_wmt(5.3)_6
-      - _DE_wmt(5.3)_7
-      - _CA_wmt(5.3)_8
-      - _US_wmt(5.3)_9
-      - _GB_wmt(5.3)_10
-      - _PL_wmt(5.3)_11
-      - _CN_wmt(5.3)_12
-      - _PL_wmt(5.3)_13
-      - _CN_wmt(5.3)_14
-      - _US_wmt(5.3)_15
-      - _CN_wmt(5.3)_16
-      - _CN_wmt(5.3)_17
-      - _CN_wmt(5.3)_18
-      - _CN_wmt(5.3)_19
-      - _CN_wmt(5.3)_20
-      - _CN_wmt(5.3)_21
-      - _NL_wmt(5.3)_22
-      - _CN_wmt(5.3)_23
-      - _NL_wmt(5.3)_24
-      - _CN_wmt(5.3)_25
-      - _CN_wmt(5.3)_26
-      - _CN_wmt(5.3)_27
-      - _DE_wmt(5.3)_28
-      - _CN_wmt(5.3)_29
-      - _CN_wmt(5.3)_30
-      - _DE_wmt(5.3)_31
-      - _CN_wmt(5.3)_32
-      - _CN_wmt(5.3)_33
-      - _DE_wmt(5.3)_34
-      - _NL_wmt(5.3)_35
-      - _DE_wmt(5.3)_36
-      - _PL_wmt(5.3)_37
-      - _GB_wmt(5.3)_38
-      - _GB_wmt(5.3)_39
-      - _HK_wmt(5.3)_40
-      - _US_wmt(5.3)_41
-      - _PL_wmt(5.3)_42
-      - _PL_wmt(5.3)_43
-      - _CA_wmt(5.3)_44
-      - _US_wmt(5.3)_45
-      - _US_wmt(5.3)_46
-      - _PL_wmt(5.3)_47
-      - _BG_wmt(5.3)_48
-      - _CH_wmt(5.3)_49
-      - _GB_wmt(5.3)_50
+      - _NL_wmt(5.5)_1
+      - _NL_wmt(5.5)_2
+      - _CH_wmt(5.5)_3
+      - _PL_wmt(5.5)_4
+      - _RU_wmt(5.5)_5
+      - _GB_wmt(5.5)_6
+      - _DE_wmt(5.5)_7
+      - _PL_wmt(5.5)_8
+      - _RU_wmt(5.5)_9
+      - _RU_wmt(5.5)_10
+      - _GB_wmt(5.5)_11
+      - _CN_wmt(5.5)_12
+      - _BG_wmt(5.5)_13
+      - _US_wmt(5.5)_14
+      - _CN_wmt(5.5)_15
+      - _PL_wmt(5.5)_16
+      - _CN_wmt(5.5)_17
+      - _US_wmt(5.5)_18
+      - _CN_wmt(5.5)_19
+      - _CN_wmt(5.5)_20
+      - _DE_wmt(5.5)_21
+      - _US_wmt(5.5)_22
+      - _DE_wmt(5.5)_23
+      - _GB_wmt(5.5)_24
+      - _DE_wmt(5.5)_25
+      - _US_wmt(5.5)_26
+      - _DE_wmt(5.5)_27
+      - _NL_wmt(5.5)_28
+      - _US_wmt(5.5)_29
+      - _DE_wmt(5.5)_30
+      - _DE_wmt(5.5)_31
+      - _DE_wmt(5.5)_32
+      - _US_wmt(5.5)_33
+      - _US_wmt(5.5)_34
+      - _DE_wmt(5.5)_35
+      - _DE_wmt(5.5)_36
+      - _DE_wmt(5.5)_37
+      - _PL_wmt(5.5)_38
+      - _DE_wmt(5.5)_39
+      - _DE_wmt(5.5)_40
+      - _US_wmt(5.5)_41
+      - _DE_wmt(5.5)_42
+      - _DE_wmt(5.5)_43
+      - _HK_wmt(5.5)_44
+      - _NL_wmt(5.5)_45
+      - _NL_wmt(5.5)_46
+      - _DE_wmt(5.5)_47
+      - _CH_wmt(5.5)_48
+      - _SG_wmt(5.5)_49
+      - _SG_wmt(5.5)_50
+      - _TW_wmt(5.5)_51
+      - _RU_wmt(5.5)_52
+      - _HK_wmt(5.5)_53
+      - _US_wmt(5.5)_54
+      - _DE_wmt(5.5)_55
+      - _HK_wmt(5.5)_56
+      - _HK_wmt(5.5)_57
+      - _US_wmt(5.5)_58
+      - _HK_wmt(5.5)_59
+      - _DE_wmt(5.5)_60
+      - _SG_wmt(5.5)_61
+      - _PL_wmt(5.5)_62
+      - _DE_wmt(5.5)_63
+      - _US_wmt(5.5)_64
+      - _DE_wmt(5.5)_65
+      - _TW_wmt(5.5)_66
+      - _DE_wmt(5.5)_67
+      - _DE_wmt(5.5)_68
+      - _DE_wmt(5.5)_69
+      - _PL_wmt(5.5)_70
+      - _ZA_wmt(5.5)_71
+      - _JP_wmt(5.5)_72
+      - _CH_wmt(5.5)_73
+      - _DE_wmt(5.5)_74
+      - _RO_wmt(5.5)_75
+      - _DE_wmt(5.5)_76
+      - _DE_wmt(5.5)_77
+      - _US_wmt(5.5)_78
+      - _CH_wmt(5.5)_79
+      - _RU_wmt(5.5)_80
+      - _NL_wmt(5.5)_81
+      - _NL_wmt(5.5)_82
+      - _NL_wmt(5.5)_83
+      - _RU_wmt(5.5)_84
+      - _NL_wmt(5.5)_85
+      - _CH_wmt(5.5)_86
+      - _SG_wmt(5.5)_87
+      - _DE_wmt(5.5)_88
+      - _DE_wmt(5.5)_89
+      - _DE_wmt(5.5)_90
+      - _DE_wmt(5.5)_91
+      - _DE_wmt(5.5)_92
+      - _US_wmt(5.5)_93
+      - _DE_wmt(5.5)_94
+      - _CH_wmt(5.5)_95
+      - _US_wmt(5.5)_96
+      - _DE_wmt(5.5)_97
+      - _SG_wmt(5.5)_98
+      - _DE_wmt(5.5)_99
+      - _DE_wmt(5.5)_100
+      - _DE_wmt(5.5)_101
+      - _DE_wmt(5.5)_102
+      - _DE_wmt(5.5)_103
+      - _DE_wmt(5.5)_104
+      - _DE_wmt(5.5)_105
+      - _CH_wmt(5.5)_106
+      - _DE_wmt(5.5)_107
+      - _CN_wmt(5.5)_108
+      - _DE_wmt(5.5)_109
+      - _DE_wmt(5.5)_110
+      - _DE_wmt(5.5)_111
+      - _CN_wmt(5.5)_112
+      - _DE_wmt(5.5)_113
+      - _DE_wmt(5.5)_114
+      - _DE_wmt(5.5)_115
+      - _SG_wmt(5.5)_116
+      - _DE_wmt(5.5)_117
+      - _RO_wmt(5.5)_118
+      - _JP_wmt(5.5)_119
+      - _GB_wmt(5.5)_120
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
