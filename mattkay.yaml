@@ -5,463 +5,339 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_wmt(5.11)_1, server: hl1.liuliangzhuanfa.xyz, port: 45379, type: trojan, password: 830debf5-b6a5-47b7-ba6d-12d6227f3df3, sni: hl1.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_2, server: 116.129.253.191, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_3, server: 116.129.253.134, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_4, server: 116.129.253.191, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_5, server: hl1.liuliangzhuanfa.xyz, port: 47718, type: trojan, password: 830debf5-b6a5-47b7-ba6d-12d6227f3df3, sni: hl1.liuliangzhuanfa.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_6, server: h961359.droplet.today, port: 13445, type: trojan, password: 26bae9b023, sni: h961359.droplet.today, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_7, server: h961684.droplet.today, port: 13445, type: trojan, password: 26bae9b023, sni: h961684.droplet.today, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_8, server: trojan.linkdns.xyz, port: 40207, type: trojan, password: 12f73569-a856-3896-a798-aab097a89432, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_9, server: h890361.droplet.today, port: 13445, type: trojan, password: 26bae9b023, sni: h890361.droplet.today, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_10, server: 116.129.253.134, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_11, server: trojan.linkdns.xyz, port: 40212, type: trojan, password: 12f73569-a856-3896-a798-aab097a89432, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_12, server: h961684.droplet.today, port: 13245, type: trojan, password: 26bae9b023, sni: h961684.droplet.today, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_13, server: 116.129.253.134, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: _PL_wmt(5.11)_14, server: 217.30.10.63, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
-  - {name: _PL_wmt(5.11)_15, server: 217.30.10.64, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
-  - {name: _CN_wmt(5.11)_16, server: trojan.linkdns.xyz, port: 40213, type: trojan, password: 12f73569-a856-3896-a798-aab097a89432, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_17, server: h961359.droplet.today, port: 13245, type: trojan, password: 26bae9b023, sni: h961359.droplet.today, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(5.11)_18, server: az1.chuangshi999.xyz, port: 39675, type: trojan, password: 830debf5-b6a5-47b7-ba6d-12d6227f3df3, sni: az1.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(5.11)_19, server: az1.chuangshi999.xyz, port: 41535, type: trojan, password: 830debf5-b6a5-47b7-ba6d-12d6227f3df3, sni: az1.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_20, server: trojan.linkdns.xyz, port: 40221, type: trojan, password: 12f73569-a856-3896-a798-aab097a89432, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(5.11)_21, server: az1.chuangshi999.xyz, port: 22818, type: trojan, password: 830debf5-b6a5-47b7-ba6d-12d6227f3df3, sni: az1.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_22, server: trojan.linkdns.xyz, port: 40229, type: trojan, password: 12f73569-a856-3896-a798-aab097a89432, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: _DE_wmt(5.11)_23, server: 5.183.179.139, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: _US_wmt(5.11)_24, server: 38.114.114.67, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _NL_wmt(5.11)_25, server: 213.183.59.229, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: _DE_wmt(5.11)_26, server: de-01.fireplay.io, port: 443, type: trojan, password: lo3TmsNaLWUXpuoE, sni: de-01.fireplay.io, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_27, server: trojan.linkdns.xyz, port: 40219, type: trojan, password: 12f73569-a856-3896-a798-aab097a89432, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(5.11)_28, server: az1.chuangshi999.xyz, port: 33346, type: trojan, password: 830debf5-b6a5-47b7-ba6d-12d6227f3df3, sni: az1.chuangshi999.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CA_wmt(5.11)_29, server: 134.195.196.16, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 185.126.116.125:9043, server: 185.126.116.125, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: _CN_wmt(5.11)_31, server: trojan.linkdns.xyz, port: 40230, type: trojan, password: 12f73569-a856-3896-a798-aab097a89432, sni: trojan.linkdns.xyz, skip-cert-verify: true, udp: true}
-  - {name: _PL_wmt(5.11)_32, server: 217.30.10.65, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: _CA_wmt(5.11)_33, server: 134.195.196.205, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _US_wmt(5.11)_34, server: 38.91.100.134, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _NL_wmt(5.11)_35, server: 213.183.59.229, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: _BG_wmt(5.11)_36, server: 213.183.63.217, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: _US_wmt(5.11)_37, server: 38.75.136.102, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _DE_wmt(5.11)_38, server: 5.183.179.139, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: _BG_wmt(5.11)_39, server: 213.183.63.217, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: _PL_wmt(5.11)_40, server: 217.30.10.63, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: _US_wmt(5.11)_41, server: 104.168.13.8, port: 41342, type: vmess, uuid: 3aa90670-6d21-4287-eec5-0cd0b21d579a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 104.168.13.8}, udp: true}
-  - {name: _PL_wmt(5.11)_42, server: 217.30.10.64, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: _CA_wmt(5.11)_43, server: 134.195.196.205, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _BG_wmt(5.11)_44, server: 213.183.63.217, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
-  - {name: _US_wmt(5.11)_45, server: 38.114.114.67, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CA_wmt(5.11)_46, server: 134.195.196.187, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_wmt(5.11)_47, server: 134.195.196.187, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _PL_wmt(5.11)_48, server: 217.30.10.63, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: _US_wmt(5.11)_49, server: 38.75.136.102, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: _CA_wmt(5.11)_50, server: 134.195.196.205, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _PL_wmt(5.11)_51, server: 217.30.10.65, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: _BG_wmt(5.11)_52, server: 213.183.63.217, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: _CA_wmt(5.11)_53, server: 134.195.196.205, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_wmt(5.11)_54, server: 38.75.136.102, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_wmt(5.11)_55, server: 167.172.135.97, port: 25453, type: ss, cipher: aes-256-cfb, password: a40ff797db5c4b948cfe5a5234a0e74c, udp: true}
-  - {name: _PL_wmt(5.11)_56, server: 217.30.10.65, port: 9026, type: ss, cipher: aes-256-cfb, password: QWDDvVE9npNurQfA, udp: true}
-  - {name: _PL_wmt(5.11)_57, server: 217.30.10.63, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: _US_wmt(5.11)_58, server: 38.75.136.102, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _PL_wmt(5.11)_59, server: 217.30.10.65, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: _AU_wmt(5.11)_60, server: 192.53.168.189, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _US_wmt(5.11)_61, server: 38.75.136.102, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _BG_wmt(5.11)_62, server: 213.183.63.217, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: _US_wmt(5.11)_63, server: 38.75.136.102, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _DE_wmt(5.11)_64, server: 5.183.179.139, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: _PL_wmt(5.11)_65, server: 217.30.10.65, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: _PL_wmt(5.11)_66, server: 217.30.10.63, port: 9073, type: ss, cipher: aes-256-cfb, password: daFYagqDdBdA6VTX, udp: true}
-  - {name: _US_wmt(5.11)_67, server: 38.114.114.67, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _PL_wmt(5.11)_68, server: 217.30.10.65, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: _NL_wmt(5.11)_69, server: 213.183.59.229, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: _PL_wmt(5.11)_70, server: 217.30.10.65, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: _DE_wmt(5.11)_71, server: 5.183.179.139, port: 9046, type: ss, cipher: aes-256-cfb, password: NvS8N4Vf8qAGPSCL, udp: true}
-  - {name: _PL_wmt(5.11)_72, server: 217.30.10.63, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: _PL_wmt(5.11)_73, server: 217.30.10.65, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: _US_wmt(5.11)_74, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _CA_wmt(5.11)_75, server: 134.195.196.205, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _CA_wmt(5.11)_76, server: 134.195.196.64, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _PL_wmt(5.11)_77, server: 217.30.10.63, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: _PL_wmt(5.11)_78, server: 217.30.10.65, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: _US_wmt(5.11)_79, server: 167.88.63.59, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _GB_wmt(5.11)_80, server: 172.99.190.35, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _PL_wmt(5.11)_81, server: 217.30.10.65, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
-  - {name: _BG_wmt(5.11)_82, server: 213.183.63.217, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ, udp: true}
-  - {name: _PL_wmt(5.11)_83, server: 217.30.10.63, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: _PL_wmt(5.11)_84, server: 217.30.10.63, port: 9031, type: ss, cipher: aes-256-cfb, password: BwcAUZk8hUFAkDGN, udp: true}
-  - {name: _CA_wmt(5.11)_85, server: 134.195.196.64, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _PL_wmt(5.11)_86, server: 217.30.10.63, port: 9093, type: ss, cipher: aes-256-cfb, password: wfLC2y7rzZyCmuyt, udp: true}
-  - {name: _PL_wmt(5.11)_87, server: 217.30.10.64, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP, udp: true}
-  - {name: _CA_wmt(5.11)_88, server: 134.195.196.187, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CN_wmt(5.11)_89, server: h890361.droplet.today, port: 13545, type: trojan, password: 26bae9b023, sni: h890361.droplet.today, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.11)_90, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN_wmt(5.11)_91, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _PL_wmt(5.11)_92, server: 217.30.10.64, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: _PL_wmt(5.11)_93, server: 217.30.10.63, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
-  - {name: _AU_wmt(5.11)_94, server: 192.53.168.189, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_wmt(5.11)_95, server: 38.114.114.67, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _US_wmt(5.11)_96, server: 38.91.100.134, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CN_wmt(5.11)_97, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _RU_wmt(5.11)_98, server: 213.183.53.202, port: 9097, type: ss, cipher: aes-256-cfb, password: Sn5B7jTqr76aCJT8, udp: true}
-  - {name: _US_wmt(5.11)_99, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CN_wmt(5.11)_100, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _US_wmt(5.11)_101, server: 38.75.136.102, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _CN_wmt(5.11)_102, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _PL_wmt(5.11)_103, server: 217.30.10.65, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: _PL_wmt(5.11)_104, server: 217.30.10.63, port: 9053, type: ss, cipher: aes-256-cfb, password: SBM7R883jBmnqe6C, udp: true}
-  - {name: _PL_wmt(5.11)_105, server: 217.30.10.63, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
-  - {name: _PL_wmt(5.11)_106, server: 217.30.10.63, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: _US_wmt(5.11)_107, server: 38.114.114.67, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _CN_wmt(5.11)_108, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _US_wmt(5.11)_109, server: 38.75.136.102, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _US_wmt(5.11)_110, server: 38.68.134.9, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: YouTube@阿阳AYANG, server: v2-2.godlight.xyz, port: 30541, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /54f634fs, ws-headers: {Host: v2-2.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 2, server: v2.godlight.xyz, port: 26941, type: vmess, uuid: 1a059eff-ad8a-42ad-921c-465c5b31f183, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dajdklw231f, ws-headers: {Host: v2.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 3, server: v2-3.godlight.xyz, port: 39241, type: vmess, uuid: 6a52f259-4367-468c-a828-7b8283c2f059, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /f45361465j175, ws-headers: {Host: v2-3.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 4, server: v2-1.godlight.xyz, port: 12241, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /j75g1461x, ws-headers: {Host: v2-1.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 5, server: v2-2.godlight.xyz, port: 30541, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /54f634fs, ws-headers: {Host: v2-2.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 6, server: v2-2.godlight.xyz, port: 30541, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /54f634fs, ws-headers: {Host: v2-2.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 7, server: 146.56.112.141, port: 17776, type: vmess, uuid: aa990962-a99b-4aa7-fdb8-bdbd19f61a79, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 8, server: 20.89.98.239, port: 80, type: vmess, uuid: ff02bc2f-dcc5-4be1-f7ed-886345c89ab2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 9, server: v2-4.godlight.xyz, port: 50441, type: vmess, uuid: 07ea283e-bbe8-466f-a268-c5819763a9bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /g1641hvx, ws-headers: {Host: v2-4.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 10, server: v2-4.godlight.xyz, port: 50441, type: vmess, uuid: 07ea283e-bbe8-466f-a268-c5819763a9bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /g1641hvx, ws-headers: {Host: v2-4.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 11, server: v2-4.godlight.xyz, port: 50441, type: vmess, uuid: 07ea283e-bbe8-466f-a268-c5819763a9bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /g1641hvx, ws-headers: {Host: v2-4.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 12, server: v2-4.godlight.xyz, port: 50441, type: vmess, uuid: 07ea283e-bbe8-466f-a268-c5819763a9bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /g1641hvx, ws-headers: {Host: v2-4.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 13, server: v2-4.godlight.xyz, port: 50441, type: vmess, uuid: 07ea283e-bbe8-466f-a268-c5819763a9bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /g1641hvx, ws-headers: {Host: v2-4.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 14, server: v2-3.godlight.xyz, port: 39241, type: vmess, uuid: 6a52f259-4367-468c-a828-7b8283c2f059, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /f45361465j175, ws-headers: {Host: v2-3.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 15, server: 167.88.61.236, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: YouTube@阿阳AYANG 16, server: v2-1.godlight.xyz, port: 12241, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /j75g1461x, ws-headers: {Host: v2-1.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 17, server: v2-1.godlight.xyz, port: 12241, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /j75g1461x, ws-headers: {Host: v2-1.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 18, server: v2-4.godlight.xyz, port: 50441, type: vmess, uuid: 07ea283e-bbe8-466f-a268-c5819763a9bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /g1641hvx, ws-headers: {Host: v2-4.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 19, server: v2-4.godlight.xyz, port: 50441, type: vmess, uuid: 07ea283e-bbe8-466f-a268-c5819763a9bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /g1641hvx, ws-headers: {Host: v2-4.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 20, server: v2-1.godlight.xyz, port: 12241, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /j75g1461x, ws-headers: {Host: v2-1.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 21, server: zz.vip341.xyz, port: 48003, type: vmess, uuid: a034f88e-9abc-3ee4-b4c5-ef295cdd2571, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ny, ws-headers: {Host: t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 22, server: zz.vip341.xyz, port: 48008, type: vmess, uuid: a034f88e-9abc-3ee4-b4c5-ef295cdd2571, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /ny, ws-headers: {Host: t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 23, server: gdcm-2.onescloud.top, port: 22025, type: vmess, uuid: ff7e299d-1a8f-3b71-a424-ad97cc2289fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: YouTube@阿阳AYANG 24, server: 43.154.5.144, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /free, ws-headers: {Host: jp.sayuri.cf}, udp: true}
+  - {name: YouTube@阿阳AYANG 25, server: 43.154.5.144, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /free, ws-headers: {Host: jp.sayuri.cf}, udp: true}
+  - {name: YouTube@阿阳AYANG 26, server: v2-5.godlight.xyz, port: 39741, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 27, server: bai-piao-wang-zhe.98848.xyz, port: 56273, type: vmess, uuid: 9eb31a28-897d-4443-8f6f-9e8e0e7f4347, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /bit.ly/36b6iJh, ws-headers: {Host: bai-piao-wang-zhe.98848.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 28, server: 183.240.124.200, port: 44819, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
+  - {name: YouTube@阿阳AYANG 29, server: v2-5.godlight.xyz, port: 39741, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 30, server: 183.240.124.200, port: 44826, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
+  - {name: YouTube@阿阳AYANG 31, server: jgwcc3.gaox.ml, port: 443, type: trojan, password: b291d129-ee55-4801-a9b8-b5316e5c37b7, sni: jgwcc3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 32, server: 183.240.124.200, port: 44817, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
+  - {name: YouTube@阿阳AYANG 33, server: 146.56.112.141, port: 17776, type: vmess, uuid: aa990962-a99b-4aa7-fdb8-bdbd19f61a79, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 34, server: 183.240.124.200, port: 44814, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
+  - {name: YouTube@阿阳AYANG 35, server: v2-5.godlight.xyz, port: 39741, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 36, server: 183.240.124.200, port: 44822, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
+  - {name: YouTube@阿阳AYANG 37, server: kr-direct-cdn.node001.xyz, port: 2086, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 38, server: kr-direct-cdn.node001.xyz, port: 2086, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 39, server: fr-direct-cdn.node001.xyz, port: 2086, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: fr-direct-cdn.node001.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 40, server: kr-direct-cdn.node001.xyz, port: 2086, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 41, server: 183.240.124.200, port: 44827, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
+  - {name: YouTube@阿阳AYANG 42, server: 183.240.124.200, port: 25600, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
+  - {name: YouTube@阿阳AYANG 43, server: fr-direct-cdn.node001.xyz, port: 2086, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: fr-direct-cdn.node001.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 44, server: fr-direct-cdn.node001.xyz, port: 2086, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: fr-direct-cdn.node001.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 45, server: 183.240.124.200, port: 44825, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
+  - {name: YouTube@阿阳AYANG 46, server: azhk2.mayiyun.vip, port: 10015, type: ss, cipher: aes-256-gcm, password: 18bde4f8-782a-4883-a959-b5f6af0af984, udp: true}
+  - {name: YouTube@阿阳AYANG 47, server: 183.240.124.200, port: 44818, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
+  - {name: YouTube@阿阳AYANG 48, server: 183.240.124.200, port: 25600, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
+  - {name: YouTube@阿阳AYANG 49, server: 183.240.124.200, port: 44828, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
+  - {name: YouTube@阿阳AYANG 50, server: 183.240.124.200, port: 44816, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
+  - {name: YouTube@阿阳AYANG 51, server: gg02.nfeng6.pp.ua, port: 63087, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 52, server: v2-5.godlight.xyz, port: 39741, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 53, server: gg02.nfeng6.pp.ua, port: 63051, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 54, server: 116.129.254.65, port: 63051, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 55, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 56, server: krr1.liuwei01.tk, port: 443, type: vmess, uuid: d965d82e-b325-44e8-a472-84721a3ab07c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /liuwei, ws-headers: {Host: krr1.liuwei01.tk}, udp: true}
+  - {name: YouTube@阿阳AYANG 57, server: gg02.nfeng6.pp.ua, port: 63086, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 58, server: gg02.nfeng6.pp.ua, port: 63004, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 59, server: gg02.nfeng6.pp.ua, port: 63078, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 60, server: gg02.nfeng6.pp.ua, port: 63069, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 61, server: gg02.nfeng6.pp.ua, port: 63028, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 62, server: gg02.nfeng6.pp.ua, port: 63041, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 63, server: gg02.nfeng6.pp.ua, port: 63088, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 64, server: an010.oioav.com, port: 25123, type: vmess, uuid: 55af954a-7634-4f28-8acf-8a64ca9fc4cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /oioav, ws-headers: {Host: t.me/mengge88888888}, udp: true}
+  - {name: YouTube@阿阳AYANG 65, server: v2-3.godlight.xyz, port: 39241, type: vmess, uuid: 6a52f259-4367-468c-a828-7b8283c2f059, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /f45361465j175, ws-headers: {Host: v2-3.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 66, server: kr-direct-cdn.node001.xyz, port: 2086, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: kr-direct-cdn.node001.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 67, server: free.spcloud.us, port: 20009, type: trojan, password: 118fc04e-fb8c-4154-9092-352cf1958fcd, sni: free.spcloud.us, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 68, server: v2-5.godlight.xyz, port: 39741, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 69, server: v2-5.godlight.xyz, port: 39741, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 70, server: v2-5.godlight.xyz, port: 39741, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /71h4b3s1f53, ws-headers: {Host: v2-5.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 71, server: v2-4.godlight.xyz, port: 50441, type: vmess, uuid: 07ea283e-bbe8-466f-a268-c5819763a9bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /g1641hvx, ws-headers: {Host: v2-4.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 72, server: v2-1.godlight.xyz, port: 12241, type: vmess, uuid: 719d4cec-82a8-4a65-ad01-32cf08f2c988, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /j75g1461x, ws-headers: {Host: v2-1.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 73, server: 146.56.112.141, port: 17776, type: vmess, uuid: aa990962-a99b-4aa7-fdb8-bdbd19f61a79, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 74, server: 146.56.112.141, port: 17776, type: vmess, uuid: aa990962-a99b-4aa7-fdb8-bdbd19f61a79, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: YouTube@阿阳AYANG 75, server: v2-2.godlight.xyz, port: 30541, type: vmess, uuid: 43308d27-94ec-408e-a8f6-d682cfb99ca9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /54f634fs, ws-headers: {Host: v2-2.godlight.xyz}, udp: true}
+  - {name: YouTube@阿阳AYANG 76, server: 43.154.5.144, port: 443, type: vmess, uuid: 1ab2ba2c-1b6e-41a2-e03f-dbf75dc3f782, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /free, ws-headers: {Host: jp.sayuri.cf}, udp: true}
+  - {name: YouTube@阿阳AYANG 77, server: 183.240.124.200, port: 44811, type: ss, cipher: aes-128-gcm, password: fcae85b5-baf0-4c5a-ba80-5f513e70512a, udp: true}
+  - {name: YouTube@阿阳AYANG 78, server: gdcm-2.onescloud.top, port: 22017, type: vmess, uuid: ff7e299d-1a8f-3b71-a424-ad97cc2289fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: microsoft.com}, udp: true}
+  - {name: YouTube@阿阳AYANG 79, server: gg04.nfeng6.pp.ua, port: 63078, type: vmess, uuid: a1f3e867-8f8d-3763-bb80-21da561e6714, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: /t.me/mengge88888888}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(5.11)_1
-      - _CN_wmt(5.11)_2
-      - _CN_wmt(5.11)_3
-      - _CN_wmt(5.11)_4
-      - _CN_wmt(5.11)_5
-      - _CN_wmt(5.11)_6
-      - _CN_wmt(5.11)_7
-      - _CN_wmt(5.11)_8
-      - _CN_wmt(5.11)_9
-      - _CN_wmt(5.11)_10
-      - _CN_wmt(5.11)_11
-      - _CN_wmt(5.11)_12
-      - _CN_wmt(5.11)_13
-      - _PL_wmt(5.11)_14
-      - _PL_wmt(5.11)_15
-      - _CN_wmt(5.11)_16
-      - _CN_wmt(5.11)_17
-      - _US_wmt(5.11)_18
-      - _US_wmt(5.11)_19
-      - _CN_wmt(5.11)_20
-      - _US_wmt(5.11)_21
-      - _CN_wmt(5.11)_22
-      - _DE_wmt(5.11)_23
-      - _US_wmt(5.11)_24
-      - _NL_wmt(5.11)_25
-      - _DE_wmt(5.11)_26
-      - _CN_wmt(5.11)_27
-      - _US_wmt(5.11)_28
-      - _CA_wmt(5.11)_29
-      - 185.126.116.125:9043
-      - _CN_wmt(5.11)_31
-      - _PL_wmt(5.11)_32
-      - _CA_wmt(5.11)_33
-      - _US_wmt(5.11)_34
-      - _NL_wmt(5.11)_35
-      - _BG_wmt(5.11)_36
-      - _US_wmt(5.11)_37
-      - _DE_wmt(5.11)_38
-      - _BG_wmt(5.11)_39
-      - _PL_wmt(5.11)_40
-      - _US_wmt(5.11)_41
-      - _PL_wmt(5.11)_42
-      - _CA_wmt(5.11)_43
-      - _BG_wmt(5.11)_44
-      - _US_wmt(5.11)_45
-      - _CA_wmt(5.11)_46
-      - _CA_wmt(5.11)_47
-      - _PL_wmt(5.11)_48
-      - _US_wmt(5.11)_49
-      - _CA_wmt(5.11)_50
-      - _PL_wmt(5.11)_51
-      - _BG_wmt(5.11)_52
-      - _CA_wmt(5.11)_53
-      - _US_wmt(5.11)_54
-      - _US_wmt(5.11)_55
-      - _PL_wmt(5.11)_56
-      - _PL_wmt(5.11)_57
-      - _US_wmt(5.11)_58
-      - _PL_wmt(5.11)_59
-      - _AU_wmt(5.11)_60
-      - _US_wmt(5.11)_61
-      - _BG_wmt(5.11)_62
-      - _US_wmt(5.11)_63
-      - _DE_wmt(5.11)_64
-      - _PL_wmt(5.11)_65
-      - _PL_wmt(5.11)_66
-      - _US_wmt(5.11)_67
-      - _PL_wmt(5.11)_68
-      - _NL_wmt(5.11)_69
-      - _PL_wmt(5.11)_70
-      - _DE_wmt(5.11)_71
-      - _PL_wmt(5.11)_72
-      - _PL_wmt(5.11)_73
-      - _US_wmt(5.11)_74
-      - _CA_wmt(5.11)_75
-      - _CA_wmt(5.11)_76
-      - _PL_wmt(5.11)_77
-      - _PL_wmt(5.11)_78
-      - _US_wmt(5.11)_79
-      - _GB_wmt(5.11)_80
-      - _PL_wmt(5.11)_81
-      - _BG_wmt(5.11)_82
-      - _PL_wmt(5.11)_83
-      - _PL_wmt(5.11)_84
-      - _CA_wmt(5.11)_85
-      - _PL_wmt(5.11)_86
-      - _PL_wmt(5.11)_87
-      - _CA_wmt(5.11)_88
-      - _CN_wmt(5.11)_89
-      - _CN_wmt(5.11)_90
-      - _CN_wmt(5.11)_91
-      - _PL_wmt(5.11)_92
-      - _PL_wmt(5.11)_93
-      - _AU_wmt(5.11)_94
-      - _US_wmt(5.11)_95
-      - _US_wmt(5.11)_96
-      - _CN_wmt(5.11)_97
-      - _RU_wmt(5.11)_98
-      - _US_wmt(5.11)_99
-      - _CN_wmt(5.11)_100
-      - _US_wmt(5.11)_101
-      - _CN_wmt(5.11)_102
-      - _PL_wmt(5.11)_103
-      - _PL_wmt(5.11)_104
-      - _PL_wmt(5.11)_105
-      - _PL_wmt(5.11)_106
-      - _US_wmt(5.11)_107
-      - _CN_wmt(5.11)_108
-      - _US_wmt(5.11)_109
-      - _US_wmt(5.11)_110
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_wmt(5.11)_1
-      - _CN_wmt(5.11)_2
-      - _CN_wmt(5.11)_3
-      - _CN_wmt(5.11)_4
-      - _CN_wmt(5.11)_5
-      - _CN_wmt(5.11)_6
-      - _CN_wmt(5.11)_7
-      - _CN_wmt(5.11)_8
-      - _CN_wmt(5.11)_9
-      - _CN_wmt(5.11)_10
-      - _CN_wmt(5.11)_11
-      - _CN_wmt(5.11)_12
-      - _CN_wmt(5.11)_13
-      - _PL_wmt(5.11)_14
-      - _PL_wmt(5.11)_15
-      - _CN_wmt(5.11)_16
-      - _CN_wmt(5.11)_17
-      - _US_wmt(5.11)_18
-      - _US_wmt(5.11)_19
-      - _CN_wmt(5.11)_20
-      - _US_wmt(5.11)_21
-      - _CN_wmt(5.11)_22
-      - _DE_wmt(5.11)_23
-      - _US_wmt(5.11)_24
-      - _NL_wmt(5.11)_25
-      - _DE_wmt(5.11)_26
-      - _CN_wmt(5.11)_27
-      - _US_wmt(5.11)_28
-      - _CA_wmt(5.11)_29
-      - 185.126.116.125:9043
-      - _CN_wmt(5.11)_31
-      - _PL_wmt(5.11)_32
-      - _CA_wmt(5.11)_33
-      - _US_wmt(5.11)_34
-      - _NL_wmt(5.11)_35
-      - _BG_wmt(5.11)_36
-      - _US_wmt(5.11)_37
-      - _DE_wmt(5.11)_38
-      - _BG_wmt(5.11)_39
-      - _PL_wmt(5.11)_40
-      - _US_wmt(5.11)_41
-      - _PL_wmt(5.11)_42
-      - _CA_wmt(5.11)_43
-      - _BG_wmt(5.11)_44
-      - _US_wmt(5.11)_45
-      - _CA_wmt(5.11)_46
-      - _CA_wmt(5.11)_47
-      - _PL_wmt(5.11)_48
-      - _US_wmt(5.11)_49
-      - _CA_wmt(5.11)_50
-      - _PL_wmt(5.11)_51
-      - _BG_wmt(5.11)_52
-      - _CA_wmt(5.11)_53
-      - _US_wmt(5.11)_54
-      - _US_wmt(5.11)_55
-      - _PL_wmt(5.11)_56
-      - _PL_wmt(5.11)_57
-      - _US_wmt(5.11)_58
-      - _PL_wmt(5.11)_59
-      - _AU_wmt(5.11)_60
-      - _US_wmt(5.11)_61
-      - _BG_wmt(5.11)_62
-      - _US_wmt(5.11)_63
-      - _DE_wmt(5.11)_64
-      - _PL_wmt(5.11)_65
-      - _PL_wmt(5.11)_66
-      - _US_wmt(5.11)_67
-      - _PL_wmt(5.11)_68
-      - _NL_wmt(5.11)_69
-      - _PL_wmt(5.11)_70
-      - _DE_wmt(5.11)_71
-      - _PL_wmt(5.11)_72
-      - _PL_wmt(5.11)_73
-      - _US_wmt(5.11)_74
-      - _CA_wmt(5.11)_75
-      - _CA_wmt(5.11)_76
-      - _PL_wmt(5.11)_77
-      - _PL_wmt(5.11)_78
-      - _US_wmt(5.11)_79
-      - _GB_wmt(5.11)_80
-      - _PL_wmt(5.11)_81
-      - _BG_wmt(5.11)_82
-      - _PL_wmt(5.11)_83
-      - _PL_wmt(5.11)_84
-      - _CA_wmt(5.11)_85
-      - _PL_wmt(5.11)_86
-      - _PL_wmt(5.11)_87
-      - _CA_wmt(5.11)_88
-      - _CN_wmt(5.11)_89
-      - _CN_wmt(5.11)_90
-      - _CN_wmt(5.11)_91
-      - _PL_wmt(5.11)_92
-      - _PL_wmt(5.11)_93
-      - _AU_wmt(5.11)_94
-      - _US_wmt(5.11)_95
-      - _US_wmt(5.11)_96
-      - _CN_wmt(5.11)_97
-      - _RU_wmt(5.11)_98
-      - _US_wmt(5.11)_99
-      - _CN_wmt(5.11)_100
-      - _US_wmt(5.11)_101
-      - _CN_wmt(5.11)_102
-      - _PL_wmt(5.11)_103
-      - _PL_wmt(5.11)_104
-      - _PL_wmt(5.11)_105
-      - _PL_wmt(5.11)_106
-      - _US_wmt(5.11)_107
-      - _CN_wmt(5.11)_108
-      - _US_wmt(5.11)_109
-      - _US_wmt(5.11)_110
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(5.11)_1
-      - _CN_wmt(5.11)_2
-      - _CN_wmt(5.11)_3
-      - _CN_wmt(5.11)_4
-      - _CN_wmt(5.11)_5
-      - _CN_wmt(5.11)_6
-      - _CN_wmt(5.11)_7
-      - _CN_wmt(5.11)_8
-      - _CN_wmt(5.11)_9
-      - _CN_wmt(5.11)_10
-      - _CN_wmt(5.11)_11
-      - _CN_wmt(5.11)_12
-      - _CN_wmt(5.11)_13
-      - _PL_wmt(5.11)_14
-      - _PL_wmt(5.11)_15
-      - _CN_wmt(5.11)_16
-      - _CN_wmt(5.11)_17
-      - _US_wmt(5.11)_18
-      - _US_wmt(5.11)_19
-      - _CN_wmt(5.11)_20
-      - _US_wmt(5.11)_21
-      - _CN_wmt(5.11)_22
-      - _DE_wmt(5.11)_23
-      - _US_wmt(5.11)_24
-      - _NL_wmt(5.11)_25
-      - _DE_wmt(5.11)_26
-      - _CN_wmt(5.11)_27
-      - _US_wmt(5.11)_28
-      - _CA_wmt(5.11)_29
-      - 185.126.116.125:9043
-      - _CN_wmt(5.11)_31
-      - _PL_wmt(5.11)_32
-      - _CA_wmt(5.11)_33
-      - _US_wmt(5.11)_34
-      - _NL_wmt(5.11)_35
-      - _BG_wmt(5.11)_36
-      - _US_wmt(5.11)_37
-      - _DE_wmt(5.11)_38
-      - _BG_wmt(5.11)_39
-      - _PL_wmt(5.11)_40
-      - _US_wmt(5.11)_41
-      - _PL_wmt(5.11)_42
-      - _CA_wmt(5.11)_43
-      - _BG_wmt(5.11)_44
-      - _US_wmt(5.11)_45
-      - _CA_wmt(5.11)_46
-      - _CA_wmt(5.11)_47
-      - _PL_wmt(5.11)_48
-      - _US_wmt(5.11)_49
-      - _CA_wmt(5.11)_50
-      - _PL_wmt(5.11)_51
-      - _BG_wmt(5.11)_52
-      - _CA_wmt(5.11)_53
-      - _US_wmt(5.11)_54
-      - _US_wmt(5.11)_55
-      - _PL_wmt(5.11)_56
-      - _PL_wmt(5.11)_57
-      - _US_wmt(5.11)_58
-      - _PL_wmt(5.11)_59
-      - _AU_wmt(5.11)_60
-      - _US_wmt(5.11)_61
-      - _BG_wmt(5.11)_62
-      - _US_wmt(5.11)_63
-      - _DE_wmt(5.11)_64
-      - _PL_wmt(5.11)_65
-      - _PL_wmt(5.11)_66
-      - _US_wmt(5.11)_67
-      - _PL_wmt(5.11)_68
-      - _NL_wmt(5.11)_69
-      - _PL_wmt(5.11)_70
-      - _DE_wmt(5.11)_71
-      - _PL_wmt(5.11)_72
-      - _PL_wmt(5.11)_73
-      - _US_wmt(5.11)_74
-      - _CA_wmt(5.11)_75
-      - _CA_wmt(5.11)_76
-      - _PL_wmt(5.11)_77
-      - _PL_wmt(5.11)_78
-      - _US_wmt(5.11)_79
-      - _GB_wmt(5.11)_80
-      - _PL_wmt(5.11)_81
-      - _BG_wmt(5.11)_82
-      - _PL_wmt(5.11)_83
-      - _PL_wmt(5.11)_84
-      - _CA_wmt(5.11)_85
-      - _PL_wmt(5.11)_86
-      - _PL_wmt(5.11)_87
-      - _CA_wmt(5.11)_88
-      - _CN_wmt(5.11)_89
-      - _CN_wmt(5.11)_90
-      - _CN_wmt(5.11)_91
-      - _PL_wmt(5.11)_92
-      - _PL_wmt(5.11)_93
-      - _AU_wmt(5.11)_94
-      - _US_wmt(5.11)_95
-      - _US_wmt(5.11)_96
-      - _CN_wmt(5.11)_97
-      - _RU_wmt(5.11)_98
-      - _US_wmt(5.11)_99
-      - _CN_wmt(5.11)_100
-      - _US_wmt(5.11)_101
-      - _CN_wmt(5.11)_102
-      - _PL_wmt(5.11)_103
-      - _PL_wmt(5.11)_104
-      - _PL_wmt(5.11)_105
-      - _PL_wmt(5.11)_106
-      - _US_wmt(5.11)_107
-      - _CN_wmt(5.11)_108
-      - _US_wmt(5.11)_109
-      - _US_wmt(5.11)_110
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -480,116 +356,85 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(5.11)_1
-      - _CN_wmt(5.11)_2
-      - _CN_wmt(5.11)_3
-      - _CN_wmt(5.11)_4
-      - _CN_wmt(5.11)_5
-      - _CN_wmt(5.11)_6
-      - _CN_wmt(5.11)_7
-      - _CN_wmt(5.11)_8
-      - _CN_wmt(5.11)_9
-      - _CN_wmt(5.11)_10
-      - _CN_wmt(5.11)_11
-      - _CN_wmt(5.11)_12
-      - _CN_wmt(5.11)_13
-      - _PL_wmt(5.11)_14
-      - _PL_wmt(5.11)_15
-      - _CN_wmt(5.11)_16
-      - _CN_wmt(5.11)_17
-      - _US_wmt(5.11)_18
-      - _US_wmt(5.11)_19
-      - _CN_wmt(5.11)_20
-      - _US_wmt(5.11)_21
-      - _CN_wmt(5.11)_22
-      - _DE_wmt(5.11)_23
-      - _US_wmt(5.11)_24
-      - _NL_wmt(5.11)_25
-      - _DE_wmt(5.11)_26
-      - _CN_wmt(5.11)_27
-      - _US_wmt(5.11)_28
-      - _CA_wmt(5.11)_29
-      - 185.126.116.125:9043
-      - _CN_wmt(5.11)_31
-      - _PL_wmt(5.11)_32
-      - _CA_wmt(5.11)_33
-      - _US_wmt(5.11)_34
-      - _NL_wmt(5.11)_35
-      - _BG_wmt(5.11)_36
-      - _US_wmt(5.11)_37
-      - _DE_wmt(5.11)_38
-      - _BG_wmt(5.11)_39
-      - _PL_wmt(5.11)_40
-      - _US_wmt(5.11)_41
-      - _PL_wmt(5.11)_42
-      - _CA_wmt(5.11)_43
-      - _BG_wmt(5.11)_44
-      - _US_wmt(5.11)_45
-      - _CA_wmt(5.11)_46
-      - _CA_wmt(5.11)_47
-      - _PL_wmt(5.11)_48
-      - _US_wmt(5.11)_49
-      - _CA_wmt(5.11)_50
-      - _PL_wmt(5.11)_51
-      - _BG_wmt(5.11)_52
-      - _CA_wmt(5.11)_53
-      - _US_wmt(5.11)_54
-      - _US_wmt(5.11)_55
-      - _PL_wmt(5.11)_56
-      - _PL_wmt(5.11)_57
-      - _US_wmt(5.11)_58
-      - _PL_wmt(5.11)_59
-      - _AU_wmt(5.11)_60
-      - _US_wmt(5.11)_61
-      - _BG_wmt(5.11)_62
-      - _US_wmt(5.11)_63
-      - _DE_wmt(5.11)_64
-      - _PL_wmt(5.11)_65
-      - _PL_wmt(5.11)_66
-      - _US_wmt(5.11)_67
-      - _PL_wmt(5.11)_68
-      - _NL_wmt(5.11)_69
-      - _PL_wmt(5.11)_70
-      - _DE_wmt(5.11)_71
-      - _PL_wmt(5.11)_72
-      - _PL_wmt(5.11)_73
-      - _US_wmt(5.11)_74
-      - _CA_wmt(5.11)_75
-      - _CA_wmt(5.11)_76
-      - _PL_wmt(5.11)_77
-      - _PL_wmt(5.11)_78
-      - _US_wmt(5.11)_79
-      - _GB_wmt(5.11)_80
-      - _PL_wmt(5.11)_81
-      - _BG_wmt(5.11)_82
-      - _PL_wmt(5.11)_83
-      - _PL_wmt(5.11)_84
-      - _CA_wmt(5.11)_85
-      - _PL_wmt(5.11)_86
-      - _PL_wmt(5.11)_87
-      - _CA_wmt(5.11)_88
-      - _CN_wmt(5.11)_89
-      - _CN_wmt(5.11)_90
-      - _CN_wmt(5.11)_91
-      - _PL_wmt(5.11)_92
-      - _PL_wmt(5.11)_93
-      - _AU_wmt(5.11)_94
-      - _US_wmt(5.11)_95
-      - _US_wmt(5.11)_96
-      - _CN_wmt(5.11)_97
-      - _RU_wmt(5.11)_98
-      - _US_wmt(5.11)_99
-      - _CN_wmt(5.11)_100
-      - _US_wmt(5.11)_101
-      - _CN_wmt(5.11)_102
-      - _PL_wmt(5.11)_103
-      - _PL_wmt(5.11)_104
-      - _PL_wmt(5.11)_105
-      - _PL_wmt(5.11)_106
-      - _US_wmt(5.11)_107
-      - _CN_wmt(5.11)_108
-      - _US_wmt(5.11)_109
-      - _US_wmt(5.11)_110
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -600,347 +445,254 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_wmt(5.11)_1
-      - _CN_wmt(5.11)_2
-      - _CN_wmt(5.11)_3
-      - _CN_wmt(5.11)_4
-      - _CN_wmt(5.11)_5
-      - _CN_wmt(5.11)_6
-      - _CN_wmt(5.11)_7
-      - _CN_wmt(5.11)_8
-      - _CN_wmt(5.11)_9
-      - _CN_wmt(5.11)_10
-      - _CN_wmt(5.11)_11
-      - _CN_wmt(5.11)_12
-      - _CN_wmt(5.11)_13
-      - _PL_wmt(5.11)_14
-      - _PL_wmt(5.11)_15
-      - _CN_wmt(5.11)_16
-      - _CN_wmt(5.11)_17
-      - _US_wmt(5.11)_18
-      - _US_wmt(5.11)_19
-      - _CN_wmt(5.11)_20
-      - _US_wmt(5.11)_21
-      - _CN_wmt(5.11)_22
-      - _DE_wmt(5.11)_23
-      - _US_wmt(5.11)_24
-      - _NL_wmt(5.11)_25
-      - _DE_wmt(5.11)_26
-      - _CN_wmt(5.11)_27
-      - _US_wmt(5.11)_28
-      - _CA_wmt(5.11)_29
-      - 185.126.116.125:9043
-      - _CN_wmt(5.11)_31
-      - _PL_wmt(5.11)_32
-      - _CA_wmt(5.11)_33
-      - _US_wmt(5.11)_34
-      - _NL_wmt(5.11)_35
-      - _BG_wmt(5.11)_36
-      - _US_wmt(5.11)_37
-      - _DE_wmt(5.11)_38
-      - _BG_wmt(5.11)_39
-      - _PL_wmt(5.11)_40
-      - _US_wmt(5.11)_41
-      - _PL_wmt(5.11)_42
-      - _CA_wmt(5.11)_43
-      - _BG_wmt(5.11)_44
-      - _US_wmt(5.11)_45
-      - _CA_wmt(5.11)_46
-      - _CA_wmt(5.11)_47
-      - _PL_wmt(5.11)_48
-      - _US_wmt(5.11)_49
-      - _CA_wmt(5.11)_50
-      - _PL_wmt(5.11)_51
-      - _BG_wmt(5.11)_52
-      - _CA_wmt(5.11)_53
-      - _US_wmt(5.11)_54
-      - _US_wmt(5.11)_55
-      - _PL_wmt(5.11)_56
-      - _PL_wmt(5.11)_57
-      - _US_wmt(5.11)_58
-      - _PL_wmt(5.11)_59
-      - _AU_wmt(5.11)_60
-      - _US_wmt(5.11)_61
-      - _BG_wmt(5.11)_62
-      - _US_wmt(5.11)_63
-      - _DE_wmt(5.11)_64
-      - _PL_wmt(5.11)_65
-      - _PL_wmt(5.11)_66
-      - _US_wmt(5.11)_67
-      - _PL_wmt(5.11)_68
-      - _NL_wmt(5.11)_69
-      - _PL_wmt(5.11)_70
-      - _DE_wmt(5.11)_71
-      - _PL_wmt(5.11)_72
-      - _PL_wmt(5.11)_73
-      - _US_wmt(5.11)_74
-      - _CA_wmt(5.11)_75
-      - _CA_wmt(5.11)_76
-      - _PL_wmt(5.11)_77
-      - _PL_wmt(5.11)_78
-      - _US_wmt(5.11)_79
-      - _GB_wmt(5.11)_80
-      - _PL_wmt(5.11)_81
-      - _BG_wmt(5.11)_82
-      - _PL_wmt(5.11)_83
-      - _PL_wmt(5.11)_84
-      - _CA_wmt(5.11)_85
-      - _PL_wmt(5.11)_86
-      - _PL_wmt(5.11)_87
-      - _CA_wmt(5.11)_88
-      - _CN_wmt(5.11)_89
-      - _CN_wmt(5.11)_90
-      - _CN_wmt(5.11)_91
-      - _PL_wmt(5.11)_92
-      - _PL_wmt(5.11)_93
-      - _AU_wmt(5.11)_94
-      - _US_wmt(5.11)_95
-      - _US_wmt(5.11)_96
-      - _CN_wmt(5.11)_97
-      - _RU_wmt(5.11)_98
-      - _US_wmt(5.11)_99
-      - _CN_wmt(5.11)_100
-      - _US_wmt(5.11)_101
-      - _CN_wmt(5.11)_102
-      - _PL_wmt(5.11)_103
-      - _PL_wmt(5.11)_104
-      - _PL_wmt(5.11)_105
-      - _PL_wmt(5.11)_106
-      - _US_wmt(5.11)_107
-      - _CN_wmt(5.11)_108
-      - _US_wmt(5.11)_109
-      - _US_wmt(5.11)_110
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_wmt(5.11)_1
-      - _CN_wmt(5.11)_2
-      - _CN_wmt(5.11)_3
-      - _CN_wmt(5.11)_4
-      - _CN_wmt(5.11)_5
-      - _CN_wmt(5.11)_6
-      - _CN_wmt(5.11)_7
-      - _CN_wmt(5.11)_8
-      - _CN_wmt(5.11)_9
-      - _CN_wmt(5.11)_10
-      - _CN_wmt(5.11)_11
-      - _CN_wmt(5.11)_12
-      - _CN_wmt(5.11)_13
-      - _PL_wmt(5.11)_14
-      - _PL_wmt(5.11)_15
-      - _CN_wmt(5.11)_16
-      - _CN_wmt(5.11)_17
-      - _US_wmt(5.11)_18
-      - _US_wmt(5.11)_19
-      - _CN_wmt(5.11)_20
-      - _US_wmt(5.11)_21
-      - _CN_wmt(5.11)_22
-      - _DE_wmt(5.11)_23
-      - _US_wmt(5.11)_24
-      - _NL_wmt(5.11)_25
-      - _DE_wmt(5.11)_26
-      - _CN_wmt(5.11)_27
-      - _US_wmt(5.11)_28
-      - _CA_wmt(5.11)_29
-      - 185.126.116.125:9043
-      - _CN_wmt(5.11)_31
-      - _PL_wmt(5.11)_32
-      - _CA_wmt(5.11)_33
-      - _US_wmt(5.11)_34
-      - _NL_wmt(5.11)_35
-      - _BG_wmt(5.11)_36
-      - _US_wmt(5.11)_37
-      - _DE_wmt(5.11)_38
-      - _BG_wmt(5.11)_39
-      - _PL_wmt(5.11)_40
-      - _US_wmt(5.11)_41
-      - _PL_wmt(5.11)_42
-      - _CA_wmt(5.11)_43
-      - _BG_wmt(5.11)_44
-      - _US_wmt(5.11)_45
-      - _CA_wmt(5.11)_46
-      - _CA_wmt(5.11)_47
-      - _PL_wmt(5.11)_48
-      - _US_wmt(5.11)_49
-      - _CA_wmt(5.11)_50
-      - _PL_wmt(5.11)_51
-      - _BG_wmt(5.11)_52
-      - _CA_wmt(5.11)_53
-      - _US_wmt(5.11)_54
-      - _US_wmt(5.11)_55
-      - _PL_wmt(5.11)_56
-      - _PL_wmt(5.11)_57
-      - _US_wmt(5.11)_58
-      - _PL_wmt(5.11)_59
-      - _AU_wmt(5.11)_60
-      - _US_wmt(5.11)_61
-      - _BG_wmt(5.11)_62
-      - _US_wmt(5.11)_63
-      - _DE_wmt(5.11)_64
-      - _PL_wmt(5.11)_65
-      - _PL_wmt(5.11)_66
-      - _US_wmt(5.11)_67
-      - _PL_wmt(5.11)_68
-      - _NL_wmt(5.11)_69
-      - _PL_wmt(5.11)_70
-      - _DE_wmt(5.11)_71
-      - _PL_wmt(5.11)_72
-      - _PL_wmt(5.11)_73
-      - _US_wmt(5.11)_74
-      - _CA_wmt(5.11)_75
-      - _CA_wmt(5.11)_76
-      - _PL_wmt(5.11)_77
-      - _PL_wmt(5.11)_78
-      - _US_wmt(5.11)_79
-      - _GB_wmt(5.11)_80
-      - _PL_wmt(5.11)_81
-      - _BG_wmt(5.11)_82
-      - _PL_wmt(5.11)_83
-      - _PL_wmt(5.11)_84
-      - _CA_wmt(5.11)_85
-      - _PL_wmt(5.11)_86
-      - _PL_wmt(5.11)_87
-      - _CA_wmt(5.11)_88
-      - _CN_wmt(5.11)_89
-      - _CN_wmt(5.11)_90
-      - _CN_wmt(5.11)_91
-      - _PL_wmt(5.11)_92
-      - _PL_wmt(5.11)_93
-      - _AU_wmt(5.11)_94
-      - _US_wmt(5.11)_95
-      - _US_wmt(5.11)_96
-      - _CN_wmt(5.11)_97
-      - _RU_wmt(5.11)_98
-      - _US_wmt(5.11)_99
-      - _CN_wmt(5.11)_100
-      - _US_wmt(5.11)_101
-      - _CN_wmt(5.11)_102
-      - _PL_wmt(5.11)_103
-      - _PL_wmt(5.11)_104
-      - _PL_wmt(5.11)_105
-      - _PL_wmt(5.11)_106
-      - _US_wmt(5.11)_107
-      - _CN_wmt(5.11)_108
-      - _US_wmt(5.11)_109
-      - _US_wmt(5.11)_110
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_wmt(5.11)_1
-      - _CN_wmt(5.11)_2
-      - _CN_wmt(5.11)_3
-      - _CN_wmt(5.11)_4
-      - _CN_wmt(5.11)_5
-      - _CN_wmt(5.11)_6
-      - _CN_wmt(5.11)_7
-      - _CN_wmt(5.11)_8
-      - _CN_wmt(5.11)_9
-      - _CN_wmt(5.11)_10
-      - _CN_wmt(5.11)_11
-      - _CN_wmt(5.11)_12
-      - _CN_wmt(5.11)_13
-      - _PL_wmt(5.11)_14
-      - _PL_wmt(5.11)_15
-      - _CN_wmt(5.11)_16
-      - _CN_wmt(5.11)_17
-      - _US_wmt(5.11)_18
-      - _US_wmt(5.11)_19
-      - _CN_wmt(5.11)_20
-      - _US_wmt(5.11)_21
-      - _CN_wmt(5.11)_22
-      - _DE_wmt(5.11)_23
-      - _US_wmt(5.11)_24
-      - _NL_wmt(5.11)_25
-      - _DE_wmt(5.11)_26
-      - _CN_wmt(5.11)_27
-      - _US_wmt(5.11)_28
-      - _CA_wmt(5.11)_29
-      - 185.126.116.125:9043
-      - _CN_wmt(5.11)_31
-      - _PL_wmt(5.11)_32
-      - _CA_wmt(5.11)_33
-      - _US_wmt(5.11)_34
-      - _NL_wmt(5.11)_35
-      - _BG_wmt(5.11)_36
-      - _US_wmt(5.11)_37
-      - _DE_wmt(5.11)_38
-      - _BG_wmt(5.11)_39
-      - _PL_wmt(5.11)_40
-      - _US_wmt(5.11)_41
-      - _PL_wmt(5.11)_42
-      - _CA_wmt(5.11)_43
-      - _BG_wmt(5.11)_44
-      - _US_wmt(5.11)_45
-      - _CA_wmt(5.11)_46
-      - _CA_wmt(5.11)_47
-      - _PL_wmt(5.11)_48
-      - _US_wmt(5.11)_49
-      - _CA_wmt(5.11)_50
-      - _PL_wmt(5.11)_51
-      - _BG_wmt(5.11)_52
-      - _CA_wmt(5.11)_53
-      - _US_wmt(5.11)_54
-      - _US_wmt(5.11)_55
-      - _PL_wmt(5.11)_56
-      - _PL_wmt(5.11)_57
-      - _US_wmt(5.11)_58
-      - _PL_wmt(5.11)_59
-      - _AU_wmt(5.11)_60
-      - _US_wmt(5.11)_61
-      - _BG_wmt(5.11)_62
-      - _US_wmt(5.11)_63
-      - _DE_wmt(5.11)_64
-      - _PL_wmt(5.11)_65
-      - _PL_wmt(5.11)_66
-      - _US_wmt(5.11)_67
-      - _PL_wmt(5.11)_68
-      - _NL_wmt(5.11)_69
-      - _PL_wmt(5.11)_70
-      - _DE_wmt(5.11)_71
-      - _PL_wmt(5.11)_72
-      - _PL_wmt(5.11)_73
-      - _US_wmt(5.11)_74
-      - _CA_wmt(5.11)_75
-      - _CA_wmt(5.11)_76
-      - _PL_wmt(5.11)_77
-      - _PL_wmt(5.11)_78
-      - _US_wmt(5.11)_79
-      - _GB_wmt(5.11)_80
-      - _PL_wmt(5.11)_81
-      - _BG_wmt(5.11)_82
-      - _PL_wmt(5.11)_83
-      - _PL_wmt(5.11)_84
-      - _CA_wmt(5.11)_85
-      - _PL_wmt(5.11)_86
-      - _PL_wmt(5.11)_87
-      - _CA_wmt(5.11)_88
-      - _CN_wmt(5.11)_89
-      - _CN_wmt(5.11)_90
-      - _CN_wmt(5.11)_91
-      - _PL_wmt(5.11)_92
-      - _PL_wmt(5.11)_93
-      - _AU_wmt(5.11)_94
-      - _US_wmt(5.11)_95
-      - _US_wmt(5.11)_96
-      - _CN_wmt(5.11)_97
-      - _RU_wmt(5.11)_98
-      - _US_wmt(5.11)_99
-      - _CN_wmt(5.11)_100
-      - _US_wmt(5.11)_101
-      - _CN_wmt(5.11)_102
-      - _PL_wmt(5.11)_103
-      - _PL_wmt(5.11)_104
-      - _PL_wmt(5.11)_105
-      - _PL_wmt(5.11)_106
-      - _US_wmt(5.11)_107
-      - _CN_wmt(5.11)_108
-      - _US_wmt(5.11)_109
-      - _US_wmt(5.11)_110
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -956,116 +708,85 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_wmt(5.11)_1
-      - _CN_wmt(5.11)_2
-      - _CN_wmt(5.11)_3
-      - _CN_wmt(5.11)_4
-      - _CN_wmt(5.11)_5
-      - _CN_wmt(5.11)_6
-      - _CN_wmt(5.11)_7
-      - _CN_wmt(5.11)_8
-      - _CN_wmt(5.11)_9
-      - _CN_wmt(5.11)_10
-      - _CN_wmt(5.11)_11
-      - _CN_wmt(5.11)_12
-      - _CN_wmt(5.11)_13
-      - _PL_wmt(5.11)_14
-      - _PL_wmt(5.11)_15
-      - _CN_wmt(5.11)_16
-      - _CN_wmt(5.11)_17
-      - _US_wmt(5.11)_18
-      - _US_wmt(5.11)_19
-      - _CN_wmt(5.11)_20
-      - _US_wmt(5.11)_21
-      - _CN_wmt(5.11)_22
-      - _DE_wmt(5.11)_23
-      - _US_wmt(5.11)_24
-      - _NL_wmt(5.11)_25
-      - _DE_wmt(5.11)_26
-      - _CN_wmt(5.11)_27
-      - _US_wmt(5.11)_28
-      - _CA_wmt(5.11)_29
-      - 185.126.116.125:9043
-      - _CN_wmt(5.11)_31
-      - _PL_wmt(5.11)_32
-      - _CA_wmt(5.11)_33
-      - _US_wmt(5.11)_34
-      - _NL_wmt(5.11)_35
-      - _BG_wmt(5.11)_36
-      - _US_wmt(5.11)_37
-      - _DE_wmt(5.11)_38
-      - _BG_wmt(5.11)_39
-      - _PL_wmt(5.11)_40
-      - _US_wmt(5.11)_41
-      - _PL_wmt(5.11)_42
-      - _CA_wmt(5.11)_43
-      - _BG_wmt(5.11)_44
-      - _US_wmt(5.11)_45
-      - _CA_wmt(5.11)_46
-      - _CA_wmt(5.11)_47
-      - _PL_wmt(5.11)_48
-      - _US_wmt(5.11)_49
-      - _CA_wmt(5.11)_50
-      - _PL_wmt(5.11)_51
-      - _BG_wmt(5.11)_52
-      - _CA_wmt(5.11)_53
-      - _US_wmt(5.11)_54
-      - _US_wmt(5.11)_55
-      - _PL_wmt(5.11)_56
-      - _PL_wmt(5.11)_57
-      - _US_wmt(5.11)_58
-      - _PL_wmt(5.11)_59
-      - _AU_wmt(5.11)_60
-      - _US_wmt(5.11)_61
-      - _BG_wmt(5.11)_62
-      - _US_wmt(5.11)_63
-      - _DE_wmt(5.11)_64
-      - _PL_wmt(5.11)_65
-      - _PL_wmt(5.11)_66
-      - _US_wmt(5.11)_67
-      - _PL_wmt(5.11)_68
-      - _NL_wmt(5.11)_69
-      - _PL_wmt(5.11)_70
-      - _DE_wmt(5.11)_71
-      - _PL_wmt(5.11)_72
-      - _PL_wmt(5.11)_73
-      - _US_wmt(5.11)_74
-      - _CA_wmt(5.11)_75
-      - _CA_wmt(5.11)_76
-      - _PL_wmt(5.11)_77
-      - _PL_wmt(5.11)_78
-      - _US_wmt(5.11)_79
-      - _GB_wmt(5.11)_80
-      - _PL_wmt(5.11)_81
-      - _BG_wmt(5.11)_82
-      - _PL_wmt(5.11)_83
-      - _PL_wmt(5.11)_84
-      - _CA_wmt(5.11)_85
-      - _PL_wmt(5.11)_86
-      - _PL_wmt(5.11)_87
-      - _CA_wmt(5.11)_88
-      - _CN_wmt(5.11)_89
-      - _CN_wmt(5.11)_90
-      - _CN_wmt(5.11)_91
-      - _PL_wmt(5.11)_92
-      - _PL_wmt(5.11)_93
-      - _AU_wmt(5.11)_94
-      - _US_wmt(5.11)_95
-      - _US_wmt(5.11)_96
-      - _CN_wmt(5.11)_97
-      - _RU_wmt(5.11)_98
-      - _US_wmt(5.11)_99
-      - _CN_wmt(5.11)_100
-      - _US_wmt(5.11)_101
-      - _CN_wmt(5.11)_102
-      - _PL_wmt(5.11)_103
-      - _PL_wmt(5.11)_104
-      - _PL_wmt(5.11)_105
-      - _PL_wmt(5.11)_106
-      - _US_wmt(5.11)_107
-      - _CN_wmt(5.11)_108
-      - _US_wmt(5.11)_109
-      - _US_wmt(5.11)_110
+      - YouTube@阿阳AYANG
+      - YouTube@阿阳AYANG 2
+      - YouTube@阿阳AYANG 3
+      - YouTube@阿阳AYANG 4
+      - YouTube@阿阳AYANG 5
+      - YouTube@阿阳AYANG 6
+      - YouTube@阿阳AYANG 7
+      - YouTube@阿阳AYANG 8
+      - YouTube@阿阳AYANG 9
+      - YouTube@阿阳AYANG 10
+      - YouTube@阿阳AYANG 11
+      - YouTube@阿阳AYANG 12
+      - YouTube@阿阳AYANG 13
+      - YouTube@阿阳AYANG 14
+      - YouTube@阿阳AYANG 15
+      - YouTube@阿阳AYANG 16
+      - YouTube@阿阳AYANG 17
+      - YouTube@阿阳AYANG 18
+      - YouTube@阿阳AYANG 19
+      - YouTube@阿阳AYANG 20
+      - YouTube@阿阳AYANG 21
+      - YouTube@阿阳AYANG 22
+      - YouTube@阿阳AYANG 23
+      - YouTube@阿阳AYANG 24
+      - YouTube@阿阳AYANG 25
+      - YouTube@阿阳AYANG 26
+      - YouTube@阿阳AYANG 27
+      - YouTube@阿阳AYANG 28
+      - YouTube@阿阳AYANG 29
+      - YouTube@阿阳AYANG 30
+      - YouTube@阿阳AYANG 31
+      - YouTube@阿阳AYANG 32
+      - YouTube@阿阳AYANG 33
+      - YouTube@阿阳AYANG 34
+      - YouTube@阿阳AYANG 35
+      - YouTube@阿阳AYANG 36
+      - YouTube@阿阳AYANG 37
+      - YouTube@阿阳AYANG 38
+      - YouTube@阿阳AYANG 39
+      - YouTube@阿阳AYANG 40
+      - YouTube@阿阳AYANG 41
+      - YouTube@阿阳AYANG 42
+      - YouTube@阿阳AYANG 43
+      - YouTube@阿阳AYANG 44
+      - YouTube@阿阳AYANG 45
+      - YouTube@阿阳AYANG 46
+      - YouTube@阿阳AYANG 47
+      - YouTube@阿阳AYANG 48
+      - YouTube@阿阳AYANG 49
+      - YouTube@阿阳AYANG 50
+      - YouTube@阿阳AYANG 51
+      - YouTube@阿阳AYANG 52
+      - YouTube@阿阳AYANG 53
+      - YouTube@阿阳AYANG 54
+      - YouTube@阿阳AYANG 55
+      - YouTube@阿阳AYANG 56
+      - YouTube@阿阳AYANG 57
+      - YouTube@阿阳AYANG 58
+      - YouTube@阿阳AYANG 59
+      - YouTube@阿阳AYANG 60
+      - YouTube@阿阳AYANG 61
+      - YouTube@阿阳AYANG 62
+      - YouTube@阿阳AYANG 63
+      - YouTube@阿阳AYANG 64
+      - YouTube@阿阳AYANG 65
+      - YouTube@阿阳AYANG 66
+      - YouTube@阿阳AYANG 67
+      - YouTube@阿阳AYANG 68
+      - YouTube@阿阳AYANG 69
+      - YouTube@阿阳AYANG 70
+      - YouTube@阿阳AYANG 71
+      - YouTube@阿阳AYANG 72
+      - YouTube@阿阳AYANG 73
+      - YouTube@阿阳AYANG 74
+      - YouTube@阿阳AYANG 75
+      - YouTube@阿阳AYANG 76
+      - YouTube@阿阳AYANG 77
+      - YouTube@阿阳AYANG 78
+      - YouTube@阿阳AYANG 79
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
