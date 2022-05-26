@@ -5,159 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_wmt(5.26)_1, server: 116.129.254.29, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(5.26)_2, server: 65.49.210.47, port: 10895, type: vmess, uuid: 51a66487-e65e-47cb-8c6d-6054bb29a5f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.26)_3, server: 116.129.254.47, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.26)_4, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.26)_5, server: 116.129.254.29, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.26)_6, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.26)_7, server: 116.129.254.29, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.26)_8, server: 116.129.253.177, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.26)_9, server: 116.129.253.177, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.26)_10, server: 116.129.253.177, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.26)_11, server: 116.129.253.177, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
-  - {name: _JP_wmt(5.26)_12, server: 52.194.147.44, port: 11114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: NjIzOjliazJpMnI0ZHdt, obfs-param: NzhmYjY2MjMuYmFpZHUuY29t, udp: true}
-  - {name: _CN_wmt(5.26)_13, server: cm.pikap.one, port: 10075, type: vmess, uuid: 8ae0ab4a-455b-4e31-a00b-f8a8054f9277, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.26)_14, server: cmrelay01.yiyorelay.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: NjcyNDk6b2paVTQ0, obfs-param: bWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: _CN_wmt(5.26)_15, server: cmrelay01.yiyorelay.xyz, port: 7709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: NjcyNDk6b2paVTQ0, obfs-param: bWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: _CN_wmt(5.26)_16, server: cm.pikap.one, port: 10075, type: vmess, uuid: 8ae0ab4a-455b-4e31-a00b-f8a8054f9277, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.26)_17, server: cm.pikap.one, port: 10075, type: vmess, uuid: 8ae0ab4a-455b-4e31-a00b-f8a8054f9277, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _JP_wmt(5.26)_18, server: 13.230.172.77, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _CN_wmt(5.26)_19, server: momuz.sulink.cn, port: 19016, type: ss, cipher: aes-256-cfb, password: z20010608, udp: true}
-  - {name: _US_wmt(5.26)_20, server: 43.200.6.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _JP_wmt(5.26)_21, server: jp1.trojan.tel, port: 443, type: trojan, password: f736834f-1fc8-4738-9884-9afe0eb0d818, sni: jp1.trojan.tel, skip-cert-verify: true, udp: true}
-  - {name: _GB_wmt(5.26)_22, server: s3.upyun.online, port: 12340, type: trojan, password: c0276440-f163-4f40-a08c-78b158ce6c4f, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(5.26)_23, server: cmrelay01.yiyorelay.xyz, port: 6707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: NjcyNDk6b2paVTQ0, obfs-param: bWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: _KR_wmt(5.26)_24, server: 3.38.253.198, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _JP_wmt(5.26)_25, server: jgwdb1.gaox.ml, port: 443, type: trojan, password: a580d839-ee41-4df1-bf03-6789dca32e30, sni: jgwdb1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: _SG_wmt(5.26)_26, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(5.26)_27, server: 54.69.24.178, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _KR_wmt(5.26)_28, server: 15.165.18.17, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _NL_wmt(5.26)_29, server: 213.183.59.214, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: _NL_wmt(5.26)_30, server: 213.183.59.206, port: 9058, type: ss, cipher: aes-256-cfb, password: dML2sfhbVwvtfNPe, udp: true}
-  - {name: _NL_wmt(5.26)_31, server: 213.183.59.206, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: _GB_wmt(5.26)_32, server: s3.upyun.online, port: 12340, type: trojan, password: 316b40c0-0dab-4ea1-9666-ac1658b033b2, sni: s3.upyun.online, skip-cert-verify: true, udp: true}
-  - {name: _NL_wmt(5.26)_33, server: 213.183.59.211, port: 9098, type: ss, cipher: aes-256-cfb, password: aLpQtfEZe445QyHk, udp: true}
-  - {name: _CN_wmt(5.26)_34, server: 183.31.9.149, port: 19016, type: ss, cipher: aes-256-cfb, password: z20010608, udp: true}
+  - {name: _CN_wmt(5.26a)_1, server: 116.129.253.177, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(5.26a)_2, server: 116.129.253.177, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(5.26a)_3, server: 116.129.253.177, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(5.26a)_4, server: momuz.sulink.cn, port: 19016, type: ss, cipher: aes-256-cfb, password: z20010608, udp: true}
+  - {name: _CN_wmt(5.26a)_5, server: 183.31.9.149, port: 19016, type: ss, cipher: aes-256-cfb, password: z20010608, udp: true}
+  - {name: _CN_wmt(5.26a)_6, server: cmrelay01.yiyorelay.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: NjcyNDk6b2paVTQ0, obfs-param: bWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: _CN_wmt(5.26a)_7, server: 116.129.253.177, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: _JP_wmt(5.26a)_8, server: 52.194.147.44, port: 11114, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: NjIzOjliazJpMnI0ZHdt, obfs-param: NzhmYjY2MjMuYmFpZHUuY29t, udp: true}
+  - {name: _CN_wmt(5.26a)_9, server: 120.233.187.199, port: 20014, type: trojan, password: 59845c5b-bf53-3fcf-acbd-f0c16986df73, skip-cert-verify: true, udp: true}
+  - {name: _NL_wmt(5.26a)_10, server: 213.183.59.206, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y, udp: true}
+  - {name: _NL_wmt(5.26a)_11, server: 213.183.59.206, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: _NL_wmt(5.26a)_12, server: 213.183.59.206, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: _NL_wmt(5.26a)_13, server: 213.183.59.206, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: _KR_wmt(5.26a)_14, server: hk13.nb818.xyz, port: 21890, type: vmess, uuid: 2aa5c66b-467b-40da-aae1-a994881045aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hk13.nb818.xyz}, udp: true}
+  - {name: _NL_wmt(5.26a)_15, server: 213.183.59.206, port: 9038, type: ss, cipher: aes-256-cfb, password: gYCYXfkUQEs2TaJQ, udp: true}
+  - {name: _NL_wmt(5.26a)_16, server: 213.183.59.206, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: _NL_wmt(5.26a)_17, server: 213.183.59.206, port: 9006, type: ss, cipher: aes-256-cfb, password: FAdUvMJUq5vDgKEq, udp: true}
+  - {name: _NL_wmt(5.26a)_18, server: 213.183.59.206, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(5.26)_1
-      - _US_wmt(5.26)_2
-      - _CN_wmt(5.26)_3
-      - _CN_wmt(5.26)_4
-      - _CN_wmt(5.26)_5
-      - _CN_wmt(5.26)_6
-      - _CN_wmt(5.26)_7
-      - _CN_wmt(5.26)_8
-      - _CN_wmt(5.26)_9
-      - _CN_wmt(5.26)_10
-      - _CN_wmt(5.26)_11
-      - _JP_wmt(5.26)_12
-      - _CN_wmt(5.26)_13
-      - _CN_wmt(5.26)_14
-      - _CN_wmt(5.26)_15
-      - _CN_wmt(5.26)_16
-      - _CN_wmt(5.26)_17
-      - _JP_wmt(5.26)_18
-      - _CN_wmt(5.26)_19
-      - _US_wmt(5.26)_20
-      - _JP_wmt(5.26)_21
-      - _GB_wmt(5.26)_22
-      - _CN_wmt(5.26)_23
-      - _KR_wmt(5.26)_24
-      - _JP_wmt(5.26)_25
-      - _SG_wmt(5.26)_26
-      - _US_wmt(5.26)_27
-      - _KR_wmt(5.26)_28
-      - _NL_wmt(5.26)_29
-      - _NL_wmt(5.26)_30
-      - _NL_wmt(5.26)_31
-      - _GB_wmt(5.26)_32
-      - _NL_wmt(5.26)_33
-      - _CN_wmt(5.26)_34
+      - _CN_wmt(5.26a)_1
+      - _CN_wmt(5.26a)_2
+      - _CN_wmt(5.26a)_3
+      - _CN_wmt(5.26a)_4
+      - _CN_wmt(5.26a)_5
+      - _CN_wmt(5.26a)_6
+      - _CN_wmt(5.26a)_7
+      - _JP_wmt(5.26a)_8
+      - _CN_wmt(5.26a)_9
+      - _NL_wmt(5.26a)_10
+      - _NL_wmt(5.26a)_11
+      - _NL_wmt(5.26a)_12
+      - _NL_wmt(5.26a)_13
+      - _KR_wmt(5.26a)_14
+      - _NL_wmt(5.26a)_15
+      - _NL_wmt(5.26a)_16
+      - _NL_wmt(5.26a)_17
+      - _NL_wmt(5.26a)_18
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _CN_wmt(5.26)_1
-      - _US_wmt(5.26)_2
-      - _CN_wmt(5.26)_3
-      - _CN_wmt(5.26)_4
-      - _CN_wmt(5.26)_5
-      - _CN_wmt(5.26)_6
-      - _CN_wmt(5.26)_7
-      - _CN_wmt(5.26)_8
-      - _CN_wmt(5.26)_9
-      - _CN_wmt(5.26)_10
-      - _CN_wmt(5.26)_11
-      - _JP_wmt(5.26)_12
-      - _CN_wmt(5.26)_13
-      - _CN_wmt(5.26)_14
-      - _CN_wmt(5.26)_15
-      - _CN_wmt(5.26)_16
-      - _CN_wmt(5.26)_17
-      - _JP_wmt(5.26)_18
-      - _CN_wmt(5.26)_19
-      - _US_wmt(5.26)_20
-      - _JP_wmt(5.26)_21
-      - _GB_wmt(5.26)_22
-      - _CN_wmt(5.26)_23
-      - _KR_wmt(5.26)_24
-      - _JP_wmt(5.26)_25
-      - _SG_wmt(5.26)_26
-      - _US_wmt(5.26)_27
-      - _KR_wmt(5.26)_28
-      - _NL_wmt(5.26)_29
-      - _NL_wmt(5.26)_30
-      - _NL_wmt(5.26)_31
-      - _GB_wmt(5.26)_32
-      - _NL_wmt(5.26)_33
-      - _CN_wmt(5.26)_34
+      - _CN_wmt(5.26a)_1
+      - _CN_wmt(5.26a)_2
+      - _CN_wmt(5.26a)_3
+      - _CN_wmt(5.26a)_4
+      - _CN_wmt(5.26a)_5
+      - _CN_wmt(5.26a)_6
+      - _CN_wmt(5.26a)_7
+      - _JP_wmt(5.26a)_8
+      - _CN_wmt(5.26a)_9
+      - _NL_wmt(5.26a)_10
+      - _NL_wmt(5.26a)_11
+      - _NL_wmt(5.26a)_12
+      - _NL_wmt(5.26a)_13
+      - _KR_wmt(5.26a)_14
+      - _NL_wmt(5.26a)_15
+      - _NL_wmt(5.26a)_16
+      - _NL_wmt(5.26a)_17
+      - _NL_wmt(5.26a)_18
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(5.26)_1
-      - _US_wmt(5.26)_2
-      - _CN_wmt(5.26)_3
-      - _CN_wmt(5.26)_4
-      - _CN_wmt(5.26)_5
-      - _CN_wmt(5.26)_6
-      - _CN_wmt(5.26)_7
-      - _CN_wmt(5.26)_8
-      - _CN_wmt(5.26)_9
-      - _CN_wmt(5.26)_10
-      - _CN_wmt(5.26)_11
-      - _JP_wmt(5.26)_12
-      - _CN_wmt(5.26)_13
-      - _CN_wmt(5.26)_14
-      - _CN_wmt(5.26)_15
-      - _CN_wmt(5.26)_16
-      - _CN_wmt(5.26)_17
-      - _JP_wmt(5.26)_18
-      - _CN_wmt(5.26)_19
-      - _US_wmt(5.26)_20
-      - _JP_wmt(5.26)_21
-      - _GB_wmt(5.26)_22
-      - _CN_wmt(5.26)_23
-      - _KR_wmt(5.26)_24
-      - _JP_wmt(5.26)_25
-      - _SG_wmt(5.26)_26
-      - _US_wmt(5.26)_27
-      - _KR_wmt(5.26)_28
-      - _NL_wmt(5.26)_29
-      - _NL_wmt(5.26)_30
-      - _NL_wmt(5.26)_31
-      - _GB_wmt(5.26)_32
-      - _NL_wmt(5.26)_33
-      - _CN_wmt(5.26)_34
+      - _CN_wmt(5.26a)_1
+      - _CN_wmt(5.26a)_2
+      - _CN_wmt(5.26a)_3
+      - _CN_wmt(5.26a)_4
+      - _CN_wmt(5.26a)_5
+      - _CN_wmt(5.26a)_6
+      - _CN_wmt(5.26a)_7
+      - _JP_wmt(5.26a)_8
+      - _CN_wmt(5.26a)_9
+      - _NL_wmt(5.26a)_10
+      - _NL_wmt(5.26a)_11
+      - _NL_wmt(5.26a)_12
+      - _NL_wmt(5.26a)_13
+      - _KR_wmt(5.26a)_14
+      - _NL_wmt(5.26a)_15
+      - _NL_wmt(5.26a)_16
+      - _NL_wmt(5.26a)_17
+      - _NL_wmt(5.26a)_18
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -176,40 +112,24 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _CN_wmt(5.26)_1
-      - _US_wmt(5.26)_2
-      - _CN_wmt(5.26)_3
-      - _CN_wmt(5.26)_4
-      - _CN_wmt(5.26)_5
-      - _CN_wmt(5.26)_6
-      - _CN_wmt(5.26)_7
-      - _CN_wmt(5.26)_8
-      - _CN_wmt(5.26)_9
-      - _CN_wmt(5.26)_10
-      - _CN_wmt(5.26)_11
-      - _JP_wmt(5.26)_12
-      - _CN_wmt(5.26)_13
-      - _CN_wmt(5.26)_14
-      - _CN_wmt(5.26)_15
-      - _CN_wmt(5.26)_16
-      - _CN_wmt(5.26)_17
-      - _JP_wmt(5.26)_18
-      - _CN_wmt(5.26)_19
-      - _US_wmt(5.26)_20
-      - _JP_wmt(5.26)_21
-      - _GB_wmt(5.26)_22
-      - _CN_wmt(5.26)_23
-      - _KR_wmt(5.26)_24
-      - _JP_wmt(5.26)_25
-      - _SG_wmt(5.26)_26
-      - _US_wmt(5.26)_27
-      - _KR_wmt(5.26)_28
-      - _NL_wmt(5.26)_29
-      - _NL_wmt(5.26)_30
-      - _NL_wmt(5.26)_31
-      - _GB_wmt(5.26)_32
-      - _NL_wmt(5.26)_33
-      - _CN_wmt(5.26)_34
+      - _CN_wmt(5.26a)_1
+      - _CN_wmt(5.26a)_2
+      - _CN_wmt(5.26a)_3
+      - _CN_wmt(5.26a)_4
+      - _CN_wmt(5.26a)_5
+      - _CN_wmt(5.26a)_6
+      - _CN_wmt(5.26a)_7
+      - _JP_wmt(5.26a)_8
+      - _CN_wmt(5.26a)_9
+      - _NL_wmt(5.26a)_10
+      - _NL_wmt(5.26a)_11
+      - _NL_wmt(5.26a)_12
+      - _NL_wmt(5.26a)_13
+      - _KR_wmt(5.26a)_14
+      - _NL_wmt(5.26a)_15
+      - _NL_wmt(5.26a)_16
+      - _NL_wmt(5.26a)_17
+      - _NL_wmt(5.26a)_18
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -220,119 +140,71 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _CN_wmt(5.26)_1
-      - _US_wmt(5.26)_2
-      - _CN_wmt(5.26)_3
-      - _CN_wmt(5.26)_4
-      - _CN_wmt(5.26)_5
-      - _CN_wmt(5.26)_6
-      - _CN_wmt(5.26)_7
-      - _CN_wmt(5.26)_8
-      - _CN_wmt(5.26)_9
-      - _CN_wmt(5.26)_10
-      - _CN_wmt(5.26)_11
-      - _JP_wmt(5.26)_12
-      - _CN_wmt(5.26)_13
-      - _CN_wmt(5.26)_14
-      - _CN_wmt(5.26)_15
-      - _CN_wmt(5.26)_16
-      - _CN_wmt(5.26)_17
-      - _JP_wmt(5.26)_18
-      - _CN_wmt(5.26)_19
-      - _US_wmt(5.26)_20
-      - _JP_wmt(5.26)_21
-      - _GB_wmt(5.26)_22
-      - _CN_wmt(5.26)_23
-      - _KR_wmt(5.26)_24
-      - _JP_wmt(5.26)_25
-      - _SG_wmt(5.26)_26
-      - _US_wmt(5.26)_27
-      - _KR_wmt(5.26)_28
-      - _NL_wmt(5.26)_29
-      - _NL_wmt(5.26)_30
-      - _NL_wmt(5.26)_31
-      - _GB_wmt(5.26)_32
-      - _NL_wmt(5.26)_33
-      - _CN_wmt(5.26)_34
+      - _CN_wmt(5.26a)_1
+      - _CN_wmt(5.26a)_2
+      - _CN_wmt(5.26a)_3
+      - _CN_wmt(5.26a)_4
+      - _CN_wmt(5.26a)_5
+      - _CN_wmt(5.26a)_6
+      - _CN_wmt(5.26a)_7
+      - _JP_wmt(5.26a)_8
+      - _CN_wmt(5.26a)_9
+      - _NL_wmt(5.26a)_10
+      - _NL_wmt(5.26a)_11
+      - _NL_wmt(5.26a)_12
+      - _NL_wmt(5.26a)_13
+      - _KR_wmt(5.26a)_14
+      - _NL_wmt(5.26a)_15
+      - _NL_wmt(5.26a)_16
+      - _NL_wmt(5.26a)_17
+      - _NL_wmt(5.26a)_18
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _CN_wmt(5.26)_1
-      - _US_wmt(5.26)_2
-      - _CN_wmt(5.26)_3
-      - _CN_wmt(5.26)_4
-      - _CN_wmt(5.26)_5
-      - _CN_wmt(5.26)_6
-      - _CN_wmt(5.26)_7
-      - _CN_wmt(5.26)_8
-      - _CN_wmt(5.26)_9
-      - _CN_wmt(5.26)_10
-      - _CN_wmt(5.26)_11
-      - _JP_wmt(5.26)_12
-      - _CN_wmt(5.26)_13
-      - _CN_wmt(5.26)_14
-      - _CN_wmt(5.26)_15
-      - _CN_wmt(5.26)_16
-      - _CN_wmt(5.26)_17
-      - _JP_wmt(5.26)_18
-      - _CN_wmt(5.26)_19
-      - _US_wmt(5.26)_20
-      - _JP_wmt(5.26)_21
-      - _GB_wmt(5.26)_22
-      - _CN_wmt(5.26)_23
-      - _KR_wmt(5.26)_24
-      - _JP_wmt(5.26)_25
-      - _SG_wmt(5.26)_26
-      - _US_wmt(5.26)_27
-      - _KR_wmt(5.26)_28
-      - _NL_wmt(5.26)_29
-      - _NL_wmt(5.26)_30
-      - _NL_wmt(5.26)_31
-      - _GB_wmt(5.26)_32
-      - _NL_wmt(5.26)_33
-      - _CN_wmt(5.26)_34
+      - _CN_wmt(5.26a)_1
+      - _CN_wmt(5.26a)_2
+      - _CN_wmt(5.26a)_3
+      - _CN_wmt(5.26a)_4
+      - _CN_wmt(5.26a)_5
+      - _CN_wmt(5.26a)_6
+      - _CN_wmt(5.26a)_7
+      - _JP_wmt(5.26a)_8
+      - _CN_wmt(5.26a)_9
+      - _NL_wmt(5.26a)_10
+      - _NL_wmt(5.26a)_11
+      - _NL_wmt(5.26a)_12
+      - _NL_wmt(5.26a)_13
+      - _KR_wmt(5.26a)_14
+      - _NL_wmt(5.26a)_15
+      - _NL_wmt(5.26a)_16
+      - _NL_wmt(5.26a)_17
+      - _NL_wmt(5.26a)_18
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_wmt(5.26)_1
-      - _US_wmt(5.26)_2
-      - _CN_wmt(5.26)_3
-      - _CN_wmt(5.26)_4
-      - _CN_wmt(5.26)_5
-      - _CN_wmt(5.26)_6
-      - _CN_wmt(5.26)_7
-      - _CN_wmt(5.26)_8
-      - _CN_wmt(5.26)_9
-      - _CN_wmt(5.26)_10
-      - _CN_wmt(5.26)_11
-      - _JP_wmt(5.26)_12
-      - _CN_wmt(5.26)_13
-      - _CN_wmt(5.26)_14
-      - _CN_wmt(5.26)_15
-      - _CN_wmt(5.26)_16
-      - _CN_wmt(5.26)_17
-      - _JP_wmt(5.26)_18
-      - _CN_wmt(5.26)_19
-      - _US_wmt(5.26)_20
-      - _JP_wmt(5.26)_21
-      - _GB_wmt(5.26)_22
-      - _CN_wmt(5.26)_23
-      - _KR_wmt(5.26)_24
-      - _JP_wmt(5.26)_25
-      - _SG_wmt(5.26)_26
-      - _US_wmt(5.26)_27
-      - _KR_wmt(5.26)_28
-      - _NL_wmt(5.26)_29
-      - _NL_wmt(5.26)_30
-      - _NL_wmt(5.26)_31
-      - _GB_wmt(5.26)_32
-      - _NL_wmt(5.26)_33
-      - _CN_wmt(5.26)_34
+      - _CN_wmt(5.26a)_1
+      - _CN_wmt(5.26a)_2
+      - _CN_wmt(5.26a)_3
+      - _CN_wmt(5.26a)_4
+      - _CN_wmt(5.26a)_5
+      - _CN_wmt(5.26a)_6
+      - _CN_wmt(5.26a)_7
+      - _JP_wmt(5.26a)_8
+      - _CN_wmt(5.26a)_9
+      - _NL_wmt(5.26a)_10
+      - _NL_wmt(5.26a)_11
+      - _NL_wmt(5.26a)_12
+      - _NL_wmt(5.26a)_13
+      - _KR_wmt(5.26a)_14
+      - _NL_wmt(5.26a)_15
+      - _NL_wmt(5.26a)_16
+      - _NL_wmt(5.26a)_17
+      - _NL_wmt(5.26a)_18
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -348,40 +220,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _CN_wmt(5.26)_1
-      - _US_wmt(5.26)_2
-      - _CN_wmt(5.26)_3
-      - _CN_wmt(5.26)_4
-      - _CN_wmt(5.26)_5
-      - _CN_wmt(5.26)_6
-      - _CN_wmt(5.26)_7
-      - _CN_wmt(5.26)_8
-      - _CN_wmt(5.26)_9
-      - _CN_wmt(5.26)_10
-      - _CN_wmt(5.26)_11
-      - _JP_wmt(5.26)_12
-      - _CN_wmt(5.26)_13
-      - _CN_wmt(5.26)_14
-      - _CN_wmt(5.26)_15
-      - _CN_wmt(5.26)_16
-      - _CN_wmt(5.26)_17
-      - _JP_wmt(5.26)_18
-      - _CN_wmt(5.26)_19
-      - _US_wmt(5.26)_20
-      - _JP_wmt(5.26)_21
-      - _GB_wmt(5.26)_22
-      - _CN_wmt(5.26)_23
-      - _KR_wmt(5.26)_24
-      - _JP_wmt(5.26)_25
-      - _SG_wmt(5.26)_26
-      - _US_wmt(5.26)_27
-      - _KR_wmt(5.26)_28
-      - _NL_wmt(5.26)_29
-      - _NL_wmt(5.26)_30
-      - _NL_wmt(5.26)_31
-      - _GB_wmt(5.26)_32
-      - _NL_wmt(5.26)_33
-      - _CN_wmt(5.26)_34
+      - _CN_wmt(5.26a)_1
+      - _CN_wmt(5.26a)_2
+      - _CN_wmt(5.26a)_3
+      - _CN_wmt(5.26a)_4
+      - _CN_wmt(5.26a)_5
+      - _CN_wmt(5.26a)_6
+      - _CN_wmt(5.26a)_7
+      - _JP_wmt(5.26a)_8
+      - _CN_wmt(5.26a)_9
+      - _NL_wmt(5.26a)_10
+      - _NL_wmt(5.26a)_11
+      - _NL_wmt(5.26a)_12
+      - _NL_wmt(5.26a)_13
+      - _KR_wmt(5.26a)_14
+      - _NL_wmt(5.26a)_15
+      - _NL_wmt(5.26a)_16
+      - _NL_wmt(5.26a)_17
+      - _NL_wmt(5.26a)_18
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
