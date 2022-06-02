@@ -5,269 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: YouTube频道-阿伟科技5.31, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true, udp: true}
-  - {name: 加拿大(youtube阿伟科技), server: 198.57.27.225, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 2, server: 198.57.27.225, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 3, server: 198.57.27.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 4, server: 198.57.27.225, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 5, server: 198.57.27.225, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 6, server: 198.57.27.225, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 7, server: 198.57.27.225, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 8, server: 198.57.27.225, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 9, server: 198.57.27.225, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 捷克(youtube阿伟科技), server: v2cross.com.03.v2ce.com, port: 443, type: trojan, password: ZD4dLSBXiMrmzdLd, skip-cert-verify: true, udp: true}
-  - {name: 法国(youtube阿伟科技), server: fr1t.moonfree.top, port: 8443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fr1t.moonfree.top}}, udp: true}
-  - {name: 英国(youtube阿伟科技), server: lu1.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /go, headers: {Host: lu1.gogogoo.cyou}}, udp: true}
-  - {name: 英国(youtube阿伟科技) 2, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技), server: gz.bgp.rx.naiun.pw, port: 45250, type: vmess, uuid: e1bff6e4-5adf-4bdf-9863-5b2318b96017, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
-  - {name: 香港(youtube阿伟科技) 2, server: s163.s2022.xyz, port: 2053, type: vmess, uuid: cc505b7c-a0ab-353f-a2d2-ecdae472601d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /panelmyadmin, headers: {Host: s163.s2022.xyz}}, udp: true}
-  - {name: 香港(youtube阿伟科技) 3, server: 20.239.162.124, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 香港(youtube阿伟科技) 4, server: 0315.vipnode-08.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: 0315.vipnode-08.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 5, server: 0315.vipnode-09.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: 0315.vipnode-09.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 6, server: 523hk2.fans8.xyz, port: 443, type: trojan, password: c6799a1d-4a74-4683-919f-98b0a5046591, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 7, server: 5cy-hkys08.vipnode501.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: 5cy-hkys08.vipnode501.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 8, server: dongdogn-hk18.click, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: dongdogn-hk18.click, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 9, server: dongtai-hkys11.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: dongtai-hkys11.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 10, server: hk22.com.vipnode2503.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: hk22.com.vipnode2503.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 11, server: hk24.vipnode-05.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: hk24.vipnode-05.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 12, server: hk31.vipnodetw03.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: hk31.vipnodetw03.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 13, server: hkys21.vipnode-06.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: hkys21.vipnode-06.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 14, server: s69.s2022.xyz, port: 30661, type: trojan, password: 993408c4-cb5a-3fe4-9736-0dc66af26306, sni: s69.s2022.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 15, server: sxdx-nf.jiashumao.net, port: 35401, type: trojan, password: bfaf0f2b-c727-32ea-ab28-25e438fda91f, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 16, server: testhk05.4cloud.click, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: testhk05.4cloud.click, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 17, server: vipnode809.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: vipnode809.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 18, server: zq-hkys02.1cooldns.com, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: zq-hkys02.1cooldns.com, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 19, server: zq-hkys22.vipnode-02.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: zq-hkys22.vipnode-02.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技)netflix, server: hkys25.click, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: hkys25.click, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技)netflix 2, server: s256.s2022.xyz, port: 38209, type: trojan, password: 95548a85-e567-364b-8fbe-e845e6ec8371, sni: s256.s2022.xyz, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技)netflix 3, server: s256.s2022.xyz, port: 38209, type: trojan, password: c8054dfc-513e-3558-9d2a-bccd10494898, sni: s256.s2022.xyz, skip-cert-verify: true, udp: true}
-  - {name: 印度(youtube阿伟科技), server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, skip-cert-verify: true, udp: true}
-  - {name: 日本(youtube阿伟科技), server: 150.230.4.136, port: 11151, type: vmess, uuid: 18ef8b86-5dfe-48a9-b4e4-b5f595f7e555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本(youtube阿伟科技) 2, server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
-  - {name: 日本(youtube阿伟科技) 3, server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
-  - {name: 日本(youtube阿伟科技) 4, server: ocrb1.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocrb1.moonfree.top}}, udp: true}
-  - {name: 日本(youtube阿伟科技) 5, server: sh.moonfree.top, port: 11263, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ocrb1.moonfree.top}}, udp: true}
-  - {name: 日本(youtube阿伟科技) 6, server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 日本(youtube阿伟科技) 7, server: gz.bgp.rx.naiun.pw, port: 45183, type: ss, cipher: chacha20-ietf-poly1305, password: e1bff6e4-5adf-4bdf-9863-5b2318b96017, udp: true}
-  - {name: 日本(youtube阿伟科技) 8, server: zh01lv5jp01.feiguayun.xyz, port: 32087, type: ss, cipher: aes-256-gcm, password: 90a7d86e-6f6a-4230-b89b-03cfd7fe70dc, udp: true}
-  - {name: 日本(youtube阿伟科技) 9, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, skip-cert-verify: true, udp: true}
-  - {name: 日本(youtube阿伟科技) 10, server: zk518.tk, port: 8443, type: trojan, password: zhang1990, skip-cert-verify: true, udp: true}
-  - {name: 韩国(youtube阿伟科技), server: 130.162.146.158, port: 33258, type: vmess, uuid: 51440370-bd7c-45bb-ffd9-77540e467941, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 韩国(youtube阿伟科技) 2, server: v2-5.godlight.xyz, port: 250, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /71h4b3s1f53, headers: {Host: v2-5.godlight.xyz}}, udp: true}
-  - {name: 韩国(youtube阿伟科技) 3, server: cc.tianxiedaiweige.tk, port: 443, type: trojan, password: 662dde24-c50c-4011-82b0-5c306afc56f2, sni: cc.tianxiedaiweige.tk, skip-cert-verify: true, udp: true}
-  - {name: 韩国(youtube阿伟科技) 4, server: moack09.vipnodekr01.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: moack09.vipnodekr01.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国(youtube阿伟科技) 5, server: vipnodekr03.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: vipnodekr03.xyz, skip-cert-verify: true, udp: true}
-  - {name: 荷兰(youtube阿伟科技), server: au2-1.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: 荷兰(youtube阿伟科技) 2, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: 荷兰(youtube阿伟科技) 3, server: au2-4.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
-  - {name: 波兰(youtube阿伟科技), server: 54.36.174.181, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 波兰(youtube阿伟科技) 2, server: 54.36.174.181, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 波兰(youtube阿伟科技) 3, server: 54.36.174.181, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 波兰(youtube阿伟科技) 4, server: 54.36.174.181, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 波兰(youtube阿伟科技) 5, server: 54.36.174.181, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 波兰(youtube阿伟科技) 6, server: 54.36.174.181, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 波兰(youtube阿伟科技) 7, server: 54.36.174.181, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 波兰(youtube阿伟科技) 8, server: 54.36.174.181, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 波兰(youtube阿伟科技) 9, server: 54.36.174.181, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 波兰(youtube阿伟科技) 10, server: 54.36.174.181, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 波兰(youtube阿伟科技) 11, server: 54.36.174.181, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 波兰(youtube阿伟科技) 12, server: 54.36.174.181, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 波兰(youtube阿伟科技) 13, server: 54.36.174.181, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 波兰(youtube阿伟科技) 14, server: 54.36.174.181, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 波兰(youtube阿伟科技) 15, server: 54.36.174.181, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 波兰(youtube阿伟科技) 16, server: bl.zzk8.me, port: 40555, type: trojan, password: b9aeaaa9-8817-40d6-8936-84fa5581fe14, sni: bl.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯(youtube阿伟科技), server: v4.ssrsub.com, port: 443, type: vmess, uuid: 620d82a8-22ba-4945-90ba-a2bed1cde1d2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: v4.ssrsub.com}}, udp: true}
-  - {name: 新加坡(youtube阿伟科技), server: 129.226.216.4, port: 35562, type: vmess, uuid: 48409bbd-a9ee-4d9e-f725-4c81cc0d5009, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡(youtube阿伟科技) 2, server: 129.226.93.161, port: 40236, type: vmess, uuid: 931416fe-98f2-4098-c8e7-3634e27ce6f4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡(youtube阿伟科技) 3, server: 129.226.93.161, port: 40236, type: vmess, uuid: 931416fe-98f2-4098-c8e7-3634e27ce6f4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 新加坡(youtube阿伟科技) 4, server: cf.fullcloud.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxsg.fovi.tk}}, udp: true}
-  - {name: 新加坡(youtube阿伟科技) 5, server: zh01lv5sgp02.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: 90a7d86e-6f6a-4230-b89b-03cfd7fe70dc, udp: true}
-  - {name: 台湾(youtube阿伟科技), server: bgp.keaiyun.top, port: 47519, type: vmess, uuid: 2b41ef2c-a339-3142-ae7b-9f5f6b531e16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾(youtube阿伟科技) 2, server: 0319tw05.fans8.xyz, port: 443, type: trojan, password: c6799a1d-4a74-4683-919f-98b0a5046591, sni: 0319tw05.fans8.xyz, skip-cert-verify: true, udp: true}
-  - {name: 台湾(youtube阿伟科技) 3, server: dongtai-09.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: dongtai-09.xyz, skip-cert-verify: true, udp: true}
-  - {name: 台湾(youtube阿伟科技) 4, server: hk2.zzk8.me, port: 40026, type: trojan, password: b9aeaaa9-8817-40d6-8936-84fa5581fe14, sni: hk2.zzk8.me, skip-cert-verify: true, udp: true}
-  - {name: 台湾(youtube阿伟科技) 5, server: taiwan05.ddnsgeek.com, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: taiwan05.ddnsgeek.com, skip-cert-verify: true, udp: true}
-  - {name: 台湾(youtube阿伟科技) 6, server: taiwan13-1g.4cloud.click, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: taiwan13-1g.4cloud.click, skip-cert-verify: true, udp: true}
-  - {name: 台湾(youtube阿伟科技) 7, server: zqtaiwan06.ddnsgeek.com, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: zqtaiwan06.ddnsgeek.com, skip-cert-verify: true, udp: true}
-  - {name: 台湾(youtube阿伟科技) 8, server: zqtw07.dynuddns.net, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: zqtw07.dynuddns.net, skip-cert-verify: true, udp: true}
-  - {name: 台湾(youtube阿伟科技) 9, server: zq-tw12.4cloud.click, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: zq-tw12.4cloud.click, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技), server: 150.230.4.136, port: 11151, type: vmess, uuid: 18ef8b86-5dfe-48a9-b4e4-b5f595f7e555, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 2, server: 172.67.140.112, port: 443, type: vmess, uuid: 4ac06183-feca-48f8-9f7d-3355bd950e2a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yzjd01-ublubeu.koyeb.app}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 3, server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 4, server: 20.222.106.239, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 5, server: 20.243.69.62, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 6, server: 20.243.69.62, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 7, server: 20.243.71.225, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 8, server: 20.243.71.225, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 9, server: 20.243.71.225, port: 80, type: vmess, uuid: 5f405152-88b2-4e5e-9091-b730e65e8983, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 10, server: app.ssfree.ru, port: 443, type: vmess, uuid: 25265ae0-e096-11ec-a339-000017022008, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /getweather, headers: {Host: app.ssfree.ru}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 11, server: nl.102498.eu.org, port: 2053, type: vmess, uuid: 427bcba3-b7d4-3d6d-b334-8b684fa57d72, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /microsoft, headers: {Host: nl.102498.eu.org}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 12, server: streaming-1-route.teacher2050.com, port: 31222, type: vmess, uuid: B8AAA6E1-F0B3-B9EC-3DFC-BB226C167B33, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 13, server: u2.anmu.one, port: 16161, type: vmess, uuid: 919ac815-1776-47fe-8b54-508ef4f39421, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 14, server: u4.anmu.one, port: 16199, type: vmess, uuid: 07ec59da-18ad-4224-8ad9-c5a66b1447a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 15, server: us03.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /go, headers: {Host: us03.gogogoo.cyou}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 16, server: 38.114.114.69, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国(youtube阿伟科技) 17, server: 169.197.142.99, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国(youtube阿伟科技) 18, server: 20.249.59.141, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 美国(youtube阿伟科技) 19, server: 38.114.114.69, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 20, server: 167.88.61.50, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国(youtube阿伟科技) 21, server: 167.88.61.50, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国(youtube阿伟科技) 22, server: 167.88.61.50, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国(youtube阿伟科技) 23, server: 167.88.61.50, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 24, server: 167.88.61.50, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国(youtube阿伟科技) 25, server: 167.88.61.50, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国(youtube阿伟科技) 26, server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国(youtube阿伟科技) 27, server: 167.88.61.50, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国(youtube阿伟科技) 28, server: 167.88.63.59, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国(youtube阿伟科技) 29, server: 167.88.63.59, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国(youtube阿伟科技) 30, server: 167.88.63.59, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国(youtube阿伟科技) 31, server: 167.88.63.59, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国(youtube阿伟科技) 32, server: 167.88.63.59, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国(youtube阿伟科技) 33, server: au2-2.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-2.nigirocloud.com, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 34, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 35, server: rooms.starspace.link, port: 443, type: trojan, password: 5HfENR8nt2PR8reH, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 36, server: ss2.2046.gq, port: 4443, type: trojan, password: 554ba845-2610-4aee-86fc-d2080ff1c4a6, sni: ss2.2046.gq, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 37, server: ss2.2046.gq, port: 4443, type: trojan, password: 71b0d94d-6c22-4354-b9f5-17e81831208e, sni: ss2.2046.gq, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 38, server: storage.starspace.link, port: 443, type: trojan, password: W8gVbKNAZlFzgGPn, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 39, server: us01.vipnode-04.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: us01.vipnode-04.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 40, server: us12.hknode2700.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: us12.hknode2700.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 41, server: us15.vipnode1016.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: us15.vipnode1016.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 42, server: us16.vipnode1018.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: us16.vipnode1018.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 43, server: usdnode08.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: usdnode08.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 44, server: usdnode10.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: usdnode10.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 45, server: usdnode11.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: usdnode11.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 46, server: vipnodetw02.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: vipnodetw02.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国(youtube阿伟科技) 47, server: ysvip.vipnodeus18.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: ysvip.vipnodeus18.xyz, skip-cert-verify: true, udp: true}
-  - {name: 迪拜(youtube阿伟科技), server: 217.138.193.6, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 迪拜(youtube阿伟科技) 2, server: 217.138.193.6, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 柬埔寨(youtube阿伟科技), server: cambodia01.vipnode1019.xyz, port: 443, type: trojan, password: P9azqCxQMAaZcT7F, sni: cambodia01.vipnode1019.xyz, skip-cert-verify: true, udp: true}
-  - {name: 乌克兰(youtube阿伟科技), server: 422wkl.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 422wkl.fans8.xyz}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 48, server: 167.88.63.59, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国(youtube阿伟科技) 49, server: 167.88.63.59, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 50, server: 167.88.63.59, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国(youtube阿伟科技) 51, server: 167.88.63.59, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 52, server: 167.88.63.59, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国(youtube阿伟科技) 53, server: 167.88.63.59, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 54, server: 167.88.63.59, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国(youtube阿伟科技) 55, server: 167.88.63.59, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 56, server: 167.88.63.59, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国(youtube阿伟科技) 57, server: 167.88.63.59, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国(youtube阿伟科技) 58, server: 167.88.63.59, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国(youtube阿伟科技) 59, server: 167.88.63.59, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国(youtube阿伟科技) 60, server: 167.88.63.59, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国(youtube阿伟科技) 61, server: 167.88.63.59, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国(youtube阿伟科技) 62, server: 167.88.63.59, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 63, server: 167.88.63.60, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国(youtube阿伟科技) 64, server: 167.88.63.60, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 65, server: 169.197.141.15, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国(youtube阿伟科技) 66, server: 169.197.141.15, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 67, server: 169.197.141.15, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国(youtube阿伟科技) 68, server: 169.197.141.15, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 69, server: 169.197.141.15, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国(youtube阿伟科技) 70, server: 169.197.141.15, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 71, server: 169.197.141.15, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国(youtube阿伟科技) 72, server: 169.197.141.15, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国(youtube阿伟科技) 73, server: 169.197.141.15, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国(youtube阿伟科技) 74, server: 169.197.141.15, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国(youtube阿伟科技) 75, server: 169.197.141.15, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国(youtube阿伟科技) 76, server: 169.197.141.15, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国(youtube阿伟科技) 77, server: 169.197.142.216, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 78, server: 169.197.142.216, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国(youtube阿伟科技) 79, server: 169.197.142.99, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国(youtube阿伟科技) 80, server: 169.197.142.99, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国(youtube阿伟科技) 81, server: 169.197.142.99, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国(youtube阿伟科技) 82, server: 169.197.142.99, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国(youtube阿伟科技) 83, server: 169.197.142.99, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国(youtube阿伟科技) 84, server: 169.197.142.99, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国(youtube阿伟科技) 85, server: 169.197.142.99, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 86, server: 169.197.142.99, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国(youtube阿伟科技) 87, server: 169.197.142.99, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国(youtube阿伟科技) 88, server: 169.197.142.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国(youtube阿伟科技) 89, server: 169.197.142.99, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国(youtube阿伟科技) 90, server: 169.197.142.99, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国(youtube阿伟科技) 91, server: 169.197.142.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国(youtube阿伟科技) 92, server: 169.197.142.99, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国(youtube阿伟科技) 93, server: 169.197.142.99, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 94, server: 38.114.114.69, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国(youtube阿伟科技) 95, server: 38.114.114.69, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国(youtube阿伟科技) 96, server: 38.114.114.69, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国(youtube阿伟科技) 97, server: 38.114.114.69, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国(youtube阿伟科技) 98, server: 38.114.114.69, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国(youtube阿伟科技) 99, server: 38.114.114.69, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国(youtube阿伟科技) 100, server: 38.114.114.69, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国(youtube阿伟科技) 101, server: 38.114.114.69, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国(youtube阿伟科技) 102, server: 38.114.114.69, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 103, server: 38.114.114.69, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国(youtube阿伟科技) 104, server: 38.114.114.69, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国(youtube阿伟科技) 105, server: 38.114.114.69, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国(youtube阿伟科技) 106, server: 38.114.114.69, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国(youtube阿伟科技) 107, server: 38.114.114.69, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国(youtube阿伟科技) 108, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国(youtube阿伟科技) 109, server: 38.114.114.69, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国(youtube阿伟科技) 110, server: 38.143.66.20, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国(youtube阿伟科技) 111, server: 38.68.134.71, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国(youtube阿伟科技) 112, server: 38.68.134.71, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国(youtube阿伟科技) 113, server: 38.68.134.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国(youtube阿伟科技) 114, server: 38.68.134.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国(youtube阿伟科技) 115, server: 38.68.134.71, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国(youtube阿伟科技) 116, server: 38.68.134.71, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国(youtube阿伟科技) 117, server: 38.68.134.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国(youtube阿伟科技) 118, server: 38.68.134.71, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 119, server: 38.68.134.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国(youtube阿伟科技) 120, server: 38.68.135.18, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国(youtube阿伟科技) 121, server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国(youtube阿伟科技) 122, server: 38.68.135.18, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国(youtube阿伟科技) 123, server: 38.68.135.18, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国(youtube阿伟科技) 124, server: 38.68.135.18, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国(youtube阿伟科技) 125, server: 38.68.135.18, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国(youtube阿伟科技) 126, server: 38.68.135.18, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国(youtube阿伟科技) 127, server: 38.68.135.18, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国(youtube阿伟科技) 128, server: 38.68.135.18, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 129, server: 38.68.135.19, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 130, server: 38.68.135.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 131, server: 38.68.135.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国(youtube阿伟科技) 132, server: 38.68.135.19, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国(youtube阿伟科技) 133, server: 38.68.135.19, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国(youtube阿伟科技) 134, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 美国(youtube阿伟科技) 135, server: 38.68.135.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国(youtube阿伟科技) 136, server: 38.68.135.19, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国(youtube阿伟科技) 137, server: 38.68.135.19, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国(youtube阿伟科技) 138, server: 38.68.135.19, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国(youtube阿伟科技) 139, server: 38.68.135.19, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国(youtube阿伟科技) 140, server: 38.68.135.19, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国(youtube阿伟科技) 141, server: 38.68.135.19, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国(youtube阿伟科技) 142, server: 38.68.135.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 美国(youtube阿伟科技) 143, server: 38.68.135.19, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国(youtube阿伟科技) 144, server: 38.68.135.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国(youtube阿伟科技) 145, server: 38.68.135.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 10, server: 198.57.27.225, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 11, server: 198.57.27.225, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 12, server: 198.57.27.225, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 13, server: 198.57.27.225, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 14, server: 198.57.27.225, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 15, server: 198.57.27.225, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 加拿大(youtube阿伟科技) 16, server: 198.57.27.225, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 1.12|147youtube阿伟科技 6, server: ssrfree10.free4444.xyz, port: 443, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: YouTube频道-阿伟科技-6.2, server: 134.195.196.231, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 澳大利亚(youtube阿伟科技), server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, skip-cert-verify: true, udp: true}
+  - {name: 加拿大(youtube阿伟科技), server: 134.195.196.231, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大(youtube阿伟科技) 2, server: 134.195.196.231, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 加拿大(youtube阿伟科技) 3, server: 134.195.196.231, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 加拿大(youtube阿伟科技) 4, server: 134.195.196.231, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 香港(youtube阿伟科技), server: hk.azure.fnyun.cyou, port: 16443, type: vmess, uuid: 6fa984b6-f341-491a-8f64-2f39ba3e3d36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 香港(youtube阿伟科技) 2, server: 20.247.1.93, port: 1082, type: vmess, uuid: 704a1fa3-dd75-45f8-aa66-0a750e536a1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 香港(youtube阿伟科技) 3, server: 20.247.1.93, port: 46794, type: vmess, uuid: 704a1fa3-dd75-45f8-aa66-0a750e536a1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 香港(youtube阿伟科技) 4, server: 527hk2.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 527hk2.fans8.xyz}}, udp: true}
+  - {name: 香港(youtube阿伟科技) 5, server: cn2.sdhk.pinssr.ml, port: 11318, type: vmess, uuid: bdbc3ed7-4aff-40a5-b5b7-86ea8f2db991, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港(youtube阿伟科技) 6, server: hktx.pinssr.ml, port: 443, type: vmess, uuid: bdbc3ed7-4aff-40a5-b5b7-86ea8f2db991, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /QQ/QUN/614240397, headers: {Host: hktx.jiedian.cyou}}, udp: true}
+  - {name: 香港(youtube阿伟科技) 7, server: cdn2.myuuusss.com, port: 30001, type: ss, cipher: chacha20-ietf-poly1305, password: b195963c-2631-442d-ab3a-6e78df25d904, udp: true}
+  - {name: 香港(youtube阿伟科技) 8, server: hgc.ss200m.pinssr.ml, port: 34659, type: ss, cipher: chacha20-ietf-poly1305, password: bdbc3ed7-4aff-40a5-b5b7-86ea8f2db991, udp: true}
+  - {name: 香港(youtube阿伟科技) 9, server: hk.iepl.pinssr.ml, port: 26549, type: ss, cipher: chacha20-ietf-poly1305, password: bdbc3ed7-4aff-40a5-b5b7-86ea8f2db991, udp: true}
+  - {name: 香港(youtube阿伟科技) 10, server: dong-hkys16.click, port: 443, type: trojan, password: rdhSMG90003FpQTr, sni: dong-hkys16.click, skip-cert-verify: true, udp: true}
+  - {name: 印度(youtube阿伟科技), server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
+  - {name: 日本(youtube阿伟科技), server: jp.azure.fnyun.cyou, port: 26443, type: vmess, uuid: 6fa984b6-f341-491a-8f64-2f39ba3e3d36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 日本(youtube阿伟科技) 2, server: cdn2.myuuusss.com, port: 20021, type: ss, cipher: aes-128-gcm, password: b195963c-2631-442d-ab3a-6e78df25d904, udp: true}
+  - {name: 日本(youtube阿伟科技) 3, server: jp.ss200m.pinssr.ml, port: 12590, type: ss, cipher: chacha20-ietf-poly1305, password: bdbc3ed7-4aff-40a5-b5b7-86ea8f2db991, udp: true}
+  - {name: 韩国(youtube阿伟科技), server: kr.azure.fnyun.cyou, port: 36443, type: vmess, uuid: 6fa984b6-f341-491a-8f64-2f39ba3e3d36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 韩国(youtube阿伟科技) 2, server: kr.xxnmsl.com, port: 80, type: vmess, uuid: f295e664-3c47-4f0a-b337-02ba9cd01bf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 韩国(youtube阿伟科技) 3, server: 129.154.202.176, port: 80, type: vmess, uuid: 19966fba-bfa5-449f-848f-378cc3e65ff6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [aweikeji-YouTube]}}, udp: true}
+  - {name: 韩国(youtube阿伟科技) 4, server: v2-5.godlight.xyz, port: 250, type: vmess, uuid: 767e55a4-43fa-4301-a9c2-ad30eaa9f61a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /71h4b3s1f53, headers: {Host: v2-5.godlight.xyz}}, udp: true}
+  - {name: 荷兰(youtube阿伟科技), server: c69s5.jamjams.net, port: 8288, type: vmess, uuid: 614ee3a3-90ad-4239-8eb0-1661daba6c2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 荷兰(youtube阿伟科技) 2, server: nl.102498.eu.org, port: 2053, type: vmess, uuid: 7d7e6cf9-eac6-3d67-bc8e-a270034ac212, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /microsoft, headers: {Host: nl.102498.eu.org}}, udp: true}
+  - {name: 荷兰(youtube阿伟科技) 3, server: au2-1.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: 荷兰(youtube阿伟科技) 4, server: au2-3.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: 荷兰(youtube阿伟科技) 5, server: au2-4.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(youtube阿伟科技), server: sg.azure.fnyun.cyou, port: 46443, type: vmess, uuid: 6fa984b6-f341-491a-8f64-2f39ba3e3d36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 新加坡(youtube阿伟科技) 2, server: 165.22.57.231, port: 1082, type: vmess, uuid: 704a1fa3-dd75-45f8-aa66-0a750e536a1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TS/recharge/tzUrl.html, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 新加坡(youtube阿伟科技) 3, server: 165.22.57.231, port: 46794, type: vmess, uuid: 704a1fa3-dd75-45f8-aa66-0a750e536a1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 新加坡(youtube阿伟科技) 4, server: 183.232.pinssr.ml, port: 20084, type: vmess, uuid: bdbc3ed7-4aff-40a5-b5b7-86ea8f2db991, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(youtube阿伟科技) 5, server: shanghai_cu.pinssr.ml, port: 12084, type: vmess, uuid: bdbc3ed7-4aff-40a5-b5b7-86ea8f2db991, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 新加坡(youtube阿伟科技) 6, server: best.fovi.tk, port: 54345, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxsg.fovi.tk}}, udp: true}
+  - {name: 新加坡(youtube阿伟科技) 7, server: cf.fullcloud.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxsg.fovi.tk}}, udp: true}
+  - {name: 新加坡(youtube阿伟科技) 8, server: cf.fullcloud.tk, port: 2053, type: vmess, uuid: bf67437e6c9045caabc2c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxsg.fovi.tk}}, udp: true}
+  - {name: 新加坡(youtube阿伟科技) 9, server: sg.ss200m.pinssr.ml, port: 22795, type: ss, cipher: chacha20-ietf-poly1305, password: bdbc3ed7-4aff-40a5-b5b7-86ea8f2db991, udp: true}
+  - {name: 台湾(youtube阿伟科技), server: az.hinet.jiedian.cyou, port: 9867, type: vmess, uuid: bdbc3ed7-4aff-40a5-b5b7-86ea8f2db991, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 台湾(youtube阿伟科技) 2, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+  - {name: 台湾(youtube阿伟科技) 3, server: 330tw.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1c08f35bdafe74a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 330tw.fans8.xyz}}, udp: true}
+  - {name: 台湾(youtube阿伟科技) 4, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1c08f35bdafe74a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+  - {name: 台湾(youtube阿伟科技) 5, server: tw21401.cloudmatrix.xyz, port: 21401, type: vmess, uuid: 58bbd816-c5f2-39e2-8ca1-79e87c2c2b02, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 台湾(youtube阿伟科技) 6, server: 331tw.fans8.xyz, port: 80, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}, udp: true}
+  - {name: 台湾(youtube阿伟科技) 7, server: cdn2.myuuusss.com, port: 20011, type: ss, cipher: aes-128-gcm, password: b195963c-2631-442d-ab3a-6e78df25d904, udp: true}
+  - {name: 台湾(youtube阿伟科技) 8, server: dongtai-09.xyz, port: 443, type: trojan, password: rdhSMG90003FpQTr, sni: dongtai-09.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾(youtube阿伟科技) 9, server: dongtai-tw16.click, port: 443, type: trojan, password: rdhSMG90003FpQTr, sni: dongtai-tw16.click, skip-cert-verify: true, udp: true}
+  - {name: 台湾(youtube阿伟科技) 10, server: moonvm8546889-tw11.bumbleshrimp.com, port: 443, type: trojan, password: rdhSMG90003FpQTr, sni: moonvm8546889-tw11.bumbleshrimp.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾(youtube阿伟科技) 11, server: taiwan13-1g.4cloud.click, port: 443, type: trojan, password: rdhSMG90003FpQTr, sni: taiwan13-1g.4cloud.click, skip-cert-verify: true, udp: true}
+  - {name: 台湾(youtube阿伟科技) 12, server: vipnode806.xyz, port: 443, type: trojan, password: rdhSMG90003FpQTr, sni: vipnode806.xyz, skip-cert-verify: true, udp: true}
+  - {name: 台湾(youtube阿伟科技) 13, server: zq-tw12.4cloud.click, port: 443, type: trojan, password: rdhSMG90003FpQTr, sni: zq-tw12.4cloud.click, skip-cert-verify: true, udp: true}
+  - {name: 美国(youtube阿伟科技), server: 104.166.135.10, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: ahdaeph8.com}}, udp: true}
+  - {name: 美国(youtube阿伟科技) 2, server: app.ssfree.ru, port: 443, type: vmess, uuid: 7a0b2174-e228-11ec-9043-000017022008, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /getweather, headers: {Host: app.ssfree.ru}}, udp: true}
+  - {name: 美国(youtube阿伟科技) 3, server: rn.102498.eu.org, port: 2053, type: vmess, uuid: 7d7e6cf9-eac6-3d67-bc8e-a270034ac212, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /microsoft, headers: {Host: rn.102498.eu.org}}, udp: true}
+  - {name: 美国(youtube阿伟科技) 4, server: a.nmc168.ml, port: 2235, type: vmess, uuid: 8b821eef-40a8-46c9-e3f9-a3b01e671b6d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(youtube阿伟科技) 5, server: ahdaeph8.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ws, headers: {Host: ahdaeph8.com}}, udp: true}
+  - {name: 美国(youtube阿伟科技) 6, server: cn.zzv01.infonode.xyz, port: 17014, type: vmess, uuid: edac1153-eff4-3719-92a3-c7620ea00bd7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 美国(youtube阿伟科技) 7, server: fr1t.moonfree.top, port: 8443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fr1t.moonfree.top}}, udp: true}
+  - {name: 美国(youtube阿伟科技) 8, server: hk.xxnmsl.com, port: 80, type: vmess, uuid: f295e664-3c47-4f0a-b337-02ba9cd01bf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aweikeji-YouTube}}, udp: true}
+  - {name: 美国(youtube阿伟科技) 9, server: oz.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oz.moonfree.top}}, udp: true}
+  - {name: 美国(youtube阿伟科技) 10, server: oz.moonfree.top, port: 443, type: vmess, uuid: 9fbb6122-46e7-413b-b29d-749eef446c8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oz.moonfree.top}}, udp: true}
+  - {name: 美国(youtube阿伟科技) 11, server: u2.anmu.one, port: 16499, type: vmess, uuid: 32b306e1-d5b1-4913-d8d3-56ac23637de7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国(youtube阿伟科技) 12, server: us01.jiedian.cyou, port: 21011, type: vmess, uuid: bdbc3ed7-4aff-40a5-b5b7-86ea8f2db991, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 美国(youtube阿伟科技) 13, server: v2ray.wefuckgfw.ga, port: 2096, type: vmess, uuid: 4b416ebb-53a5-4d72-8bda-345c25934cd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /H8VswtUJ/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
+  - {name: 美国(youtube阿伟科技) 14, server: rk59.moonfree.top, port: 443, type: vmess, uuid: 6e9eeae6-c3d1-439e-9f7a-213fe09b2dbe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rk59.moonfree.top}}, udp: true}
+  - {name: 美国(youtube阿伟科技) 15, server: sea.ss.pinssr.ml, port: 32738, type: ss, cipher: chacha20-ietf-poly1305, password: bdbc3ed7-4aff-40a5-b5b7-86ea8f2db991, udp: true}
+  - {name: 美国(youtube阿伟科技) 16, server: 123456789.158801.xyz, port: 40001, type: trojan, password: 26467dec-9f2b-4114-9c42-c8cc97493690, skip-cert-verify: true, udp: true}
+  - {name: 美国(youtube阿伟科技) 17, server: au2-2.nigirocloud.com, port: 443, type: trojan, password: 3yFq7NCP53mVfpXJz3, sni: au2-2.nigirocloud.com, skip-cert-verify: true, udp: true}
+  - {name: 美国(youtube阿伟科技) 18, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: true, udp: true}
+  - {name: 美国(youtube阿伟科技) 19, server: new.usdnode02.xyz, port: 443, type: trojan, password: rdhSMG90003FpQTr, sni: new.usdnode02.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国(youtube阿伟科技) 20, server: sg-zf.jiashumao.net, port: 29465, type: trojan, password: bfaf0f2b-c727-32ea-ab28-25e438fda91f, skip-cert-verify: true, udp: true}
+  - {name: 美国(youtube阿伟科技) 21, server: usdnode03.xyz, port: 443, type: trojan, password: rdhSMG90003FpQTr, sni: usdnode03.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国(youtube阿伟科技) 22, server: usdnode07.xyz, port: 443, type: trojan, password: rdhSMG90003FpQTr, sni: usdnode07.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国(youtube阿伟科技) 23, server: ussc.scsevers.cf, port: 443, type: trojan, password: sharecentre, skip-cert-verify: true, udp: true}
+  - {name: 美国(youtube阿伟科技) 24, server: vipnodeus19.xyz, port: 443, type: trojan, password: rdhSMG90003FpQTr, sni: vipnodeus19.xyz, skip-cert-verify: true, udp: true}
+  - {name: 瑞士(youtube阿伟科技), server: v2ray.wefuckgfw.ga, port: 2096, type: vmess, uuid: 4b416ebb-53a5-4d72-8bda-345c25934cd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /H8VswtUJ/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
+  - {name: 瑞士(youtube阿伟科技) 2, server: v2ray.wefuckgfw.ga, port: 2096, type: vmess, uuid: 556b20c1-272e-44ec-881b-94f410ac75de, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /H8VswtUJ/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube频道-阿伟科技5.31
+      - YouTube频道-阿伟科技-6.2
+      - 澳大利亚(youtube阿伟科技)
       - 加拿大(youtube阿伟科技)
       - 加拿大(youtube阿伟科技) 2
       - 加拿大(youtube阿伟科技) 3
       - 加拿大(youtube阿伟科技) 4
-      - 加拿大(youtube阿伟科技) 5
-      - 加拿大(youtube阿伟科技) 6
-      - 加拿大(youtube阿伟科技) 7
-      - 加拿大(youtube阿伟科技) 8
-      - 加拿大(youtube阿伟科技) 9
-      - 捷克(youtube阿伟科技)
-      - 法国(youtube阿伟科技)
-      - 英国(youtube阿伟科技)
-      - 英国(youtube阿伟科技) 2
       - 香港(youtube阿伟科技)
       - 香港(youtube阿伟科技) 2
       - 香港(youtube阿伟科技) 3
@@ -278,59 +104,28 @@ proxy-groups:
       - 香港(youtube阿伟科技) 8
       - 香港(youtube阿伟科技) 9
       - 香港(youtube阿伟科技) 10
-      - 香港(youtube阿伟科技) 11
-      - 香港(youtube阿伟科技) 12
-      - 香港(youtube阿伟科技) 13
-      - 香港(youtube阿伟科技) 14
-      - 香港(youtube阿伟科技) 15
-      - 香港(youtube阿伟科技) 16
-      - 香港(youtube阿伟科技) 17
-      - 香港(youtube阿伟科技) 18
-      - 香港(youtube阿伟科技) 19
-      - 香港(youtube阿伟科技)netflix
-      - 香港(youtube阿伟科技)netflix 2
-      - 香港(youtube阿伟科技)netflix 3
       - 印度(youtube阿伟科技)
       - 日本(youtube阿伟科技)
       - 日本(youtube阿伟科技) 2
       - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 日本(youtube阿伟科技) 7
-      - 日本(youtube阿伟科技) 8
-      - 日本(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技) 10
       - 韩国(youtube阿伟科技)
       - 韩国(youtube阿伟科技) 2
       - 韩国(youtube阿伟科技) 3
       - 韩国(youtube阿伟科技) 4
-      - 韩国(youtube阿伟科技) 5
       - 荷兰(youtube阿伟科技)
       - 荷兰(youtube阿伟科技) 2
       - 荷兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技)
-      - 波兰(youtube阿伟科技) 2
-      - 波兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技) 4
-      - 波兰(youtube阿伟科技) 5
-      - 波兰(youtube阿伟科技) 6
-      - 波兰(youtube阿伟科技) 7
-      - 波兰(youtube阿伟科技) 8
-      - 波兰(youtube阿伟科技) 9
-      - 波兰(youtube阿伟科技) 10
-      - 波兰(youtube阿伟科技) 11
-      - 波兰(youtube阿伟科技) 12
-      - 波兰(youtube阿伟科技) 13
-      - 波兰(youtube阿伟科技) 14
-      - 波兰(youtube阿伟科技) 15
-      - 波兰(youtube阿伟科技) 16
-      - 俄罗斯(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技) 4
+      - 荷兰(youtube阿伟科技) 5
       - 新加坡(youtube阿伟科技)
       - 新加坡(youtube阿伟科技) 2
       - 新加坡(youtube阿伟科技) 3
       - 新加坡(youtube阿伟科技) 4
       - 新加坡(youtube阿伟科技) 5
+      - 新加坡(youtube阿伟科技) 6
+      - 新加坡(youtube阿伟科技) 7
+      - 新加坡(youtube阿伟科技) 8
+      - 新加坡(youtube阿伟科技) 9
       - 台湾(youtube阿伟科技)
       - 台湾(youtube阿伟科技) 2
       - 台湾(youtube阿伟科技) 3
@@ -340,6 +135,10 @@ proxy-groups:
       - 台湾(youtube阿伟科技) 7
       - 台湾(youtube阿伟科技) 8
       - 台湾(youtube阿伟科技) 9
+      - 台湾(youtube阿伟科技) 10
+      - 台湾(youtube阿伟科技) 11
+      - 台湾(youtube阿伟科技) 12
+      - 台湾(youtube阿伟科技) 13
       - 美国(youtube阿伟科技)
       - 美国(youtube阿伟科技) 2
       - 美国(youtube阿伟科技) 3
@@ -364,158 +163,19 @@ proxy-groups:
       - 美国(youtube阿伟科技) 22
       - 美国(youtube阿伟科技) 23
       - 美国(youtube阿伟科技) 24
-      - 美国(youtube阿伟科技) 25
-      - 美国(youtube阿伟科技) 26
-      - 美国(youtube阿伟科技) 27
-      - 美国(youtube阿伟科技) 28
-      - 美国(youtube阿伟科技) 29
-      - 美国(youtube阿伟科技) 30
-      - 美国(youtube阿伟科技) 31
-      - 美国(youtube阿伟科技) 32
-      - 美国(youtube阿伟科技) 33
-      - 美国(youtube阿伟科技) 34
-      - 美国(youtube阿伟科技) 35
-      - 美国(youtube阿伟科技) 36
-      - 美国(youtube阿伟科技) 37
-      - 美国(youtube阿伟科技) 38
-      - 美国(youtube阿伟科技) 39
-      - 美国(youtube阿伟科技) 40
-      - 美国(youtube阿伟科技) 41
-      - 美国(youtube阿伟科技) 42
-      - 美国(youtube阿伟科技) 43
-      - 美国(youtube阿伟科技) 44
-      - 美国(youtube阿伟科技) 45
-      - 美国(youtube阿伟科技) 46
-      - 美国(youtube阿伟科技) 47
-      - 迪拜(youtube阿伟科技)
-      - 迪拜(youtube阿伟科技) 2
-      - 柬埔寨(youtube阿伟科技)
-      - 乌克兰(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 48
-      - 美国(youtube阿伟科技) 49
-      - 美国(youtube阿伟科技) 50
-      - 美国(youtube阿伟科技) 51
-      - 美国(youtube阿伟科技) 52
-      - 美国(youtube阿伟科技) 53
-      - 美国(youtube阿伟科技) 54
-      - 美国(youtube阿伟科技) 55
-      - 美国(youtube阿伟科技) 56
-      - 美国(youtube阿伟科技) 57
-      - 美国(youtube阿伟科技) 58
-      - 美国(youtube阿伟科技) 59
-      - 美国(youtube阿伟科技) 60
-      - 美国(youtube阿伟科技) 61
-      - 美国(youtube阿伟科技) 62
-      - 美国(youtube阿伟科技) 63
-      - 美国(youtube阿伟科技) 64
-      - 美国(youtube阿伟科技) 65
-      - 美国(youtube阿伟科技) 66
-      - 美国(youtube阿伟科技) 67
-      - 美国(youtube阿伟科技) 68
-      - 美国(youtube阿伟科技) 69
-      - 美国(youtube阿伟科技) 70
-      - 美国(youtube阿伟科技) 71
-      - 美国(youtube阿伟科技) 72
-      - 美国(youtube阿伟科技) 73
-      - 美国(youtube阿伟科技) 74
-      - 美国(youtube阿伟科技) 75
-      - 美国(youtube阿伟科技) 76
-      - 美国(youtube阿伟科技) 77
-      - 美国(youtube阿伟科技) 78
-      - 美国(youtube阿伟科技) 79
-      - 美国(youtube阿伟科技) 80
-      - 美国(youtube阿伟科技) 81
-      - 美国(youtube阿伟科技) 82
-      - 美国(youtube阿伟科技) 83
-      - 美国(youtube阿伟科技) 84
-      - 美国(youtube阿伟科技) 85
-      - 美国(youtube阿伟科技) 86
-      - 美国(youtube阿伟科技) 87
-      - 美国(youtube阿伟科技) 88
-      - 美国(youtube阿伟科技) 89
-      - 美国(youtube阿伟科技) 90
-      - 美国(youtube阿伟科技) 91
-      - 美国(youtube阿伟科技) 92
-      - 美国(youtube阿伟科技) 93
-      - 美国(youtube阿伟科技) 94
-      - 美国(youtube阿伟科技) 95
-      - 美国(youtube阿伟科技) 96
-      - 美国(youtube阿伟科技) 97
-      - 美国(youtube阿伟科技) 98
-      - 美国(youtube阿伟科技) 99
-      - 美国(youtube阿伟科技) 100
-      - 美国(youtube阿伟科技) 101
-      - 美国(youtube阿伟科技) 102
-      - 美国(youtube阿伟科技) 103
-      - 美国(youtube阿伟科技) 104
-      - 美国(youtube阿伟科技) 105
-      - 美国(youtube阿伟科技) 106
-      - 美国(youtube阿伟科技) 107
-      - 美国(youtube阿伟科技) 108
-      - 美国(youtube阿伟科技) 109
-      - 美国(youtube阿伟科技) 110
-      - 美国(youtube阿伟科技) 111
-      - 美国(youtube阿伟科技) 112
-      - 美国(youtube阿伟科技) 113
-      - 美国(youtube阿伟科技) 114
-      - 美国(youtube阿伟科技) 115
-      - 美国(youtube阿伟科技) 116
-      - 美国(youtube阿伟科技) 117
-      - 美国(youtube阿伟科技) 118
-      - 美国(youtube阿伟科技) 119
-      - 美国(youtube阿伟科技) 120
-      - 美国(youtube阿伟科技) 121
-      - 美国(youtube阿伟科技) 122
-      - 美国(youtube阿伟科技) 123
-      - 美国(youtube阿伟科技) 124
-      - 美国(youtube阿伟科技) 125
-      - 美国(youtube阿伟科技) 126
-      - 美国(youtube阿伟科技) 127
-      - 美国(youtube阿伟科技) 128
-      - 美国(youtube阿伟科技) 129
-      - 美国(youtube阿伟科技) 130
-      - 美国(youtube阿伟科技) 131
-      - 美国(youtube阿伟科技) 132
-      - 美国(youtube阿伟科技) 133
-      - 美国(youtube阿伟科技) 134
-      - 美国(youtube阿伟科技) 135
-      - 美国(youtube阿伟科技) 136
-      - 美国(youtube阿伟科技) 137
-      - 美国(youtube阿伟科技) 138
-      - 美国(youtube阿伟科技) 139
-      - 美国(youtube阿伟科技) 140
-      - 美国(youtube阿伟科技) 141
-      - 美国(youtube阿伟科技) 142
-      - 美国(youtube阿伟科技) 143
-      - 美国(youtube阿伟科技) 144
-      - 美国(youtube阿伟科技) 145
-      - 加拿大(youtube阿伟科技) 10
-      - 加拿大(youtube阿伟科技) 11
-      - 加拿大(youtube阿伟科技) 12
-      - 加拿大(youtube阿伟科技) 13
-      - 加拿大(youtube阿伟科技) 14
-      - 加拿大(youtube阿伟科技) 15
-      - 加拿大(youtube阿伟科技) 16
-      - 1.12|147youtube阿伟科技 6
+      - 瑞士(youtube阿伟科技)
+      - 瑞士(youtube阿伟科技) 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - YouTube频道-阿伟科技5.31
+      - YouTube频道-阿伟科技-6.2
+      - 澳大利亚(youtube阿伟科技)
       - 加拿大(youtube阿伟科技)
       - 加拿大(youtube阿伟科技) 2
       - 加拿大(youtube阿伟科技) 3
       - 加拿大(youtube阿伟科技) 4
-      - 加拿大(youtube阿伟科技) 5
-      - 加拿大(youtube阿伟科技) 6
-      - 加拿大(youtube阿伟科技) 7
-      - 加拿大(youtube阿伟科技) 8
-      - 加拿大(youtube阿伟科技) 9
-      - 捷克(youtube阿伟科技)
-      - 法国(youtube阿伟科技)
-      - 英国(youtube阿伟科技)
-      - 英国(youtube阿伟科技) 2
       - 香港(youtube阿伟科技)
       - 香港(youtube阿伟科技) 2
       - 香港(youtube阿伟科技) 3
@@ -526,59 +186,28 @@ proxy-groups:
       - 香港(youtube阿伟科技) 8
       - 香港(youtube阿伟科技) 9
       - 香港(youtube阿伟科技) 10
-      - 香港(youtube阿伟科技) 11
-      - 香港(youtube阿伟科技) 12
-      - 香港(youtube阿伟科技) 13
-      - 香港(youtube阿伟科技) 14
-      - 香港(youtube阿伟科技) 15
-      - 香港(youtube阿伟科技) 16
-      - 香港(youtube阿伟科技) 17
-      - 香港(youtube阿伟科技) 18
-      - 香港(youtube阿伟科技) 19
-      - 香港(youtube阿伟科技)netflix
-      - 香港(youtube阿伟科技)netflix 2
-      - 香港(youtube阿伟科技)netflix 3
       - 印度(youtube阿伟科技)
       - 日本(youtube阿伟科技)
       - 日本(youtube阿伟科技) 2
       - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 日本(youtube阿伟科技) 7
-      - 日本(youtube阿伟科技) 8
-      - 日本(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技) 10
       - 韩国(youtube阿伟科技)
       - 韩国(youtube阿伟科技) 2
       - 韩国(youtube阿伟科技) 3
       - 韩国(youtube阿伟科技) 4
-      - 韩国(youtube阿伟科技) 5
       - 荷兰(youtube阿伟科技)
       - 荷兰(youtube阿伟科技) 2
       - 荷兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技)
-      - 波兰(youtube阿伟科技) 2
-      - 波兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技) 4
-      - 波兰(youtube阿伟科技) 5
-      - 波兰(youtube阿伟科技) 6
-      - 波兰(youtube阿伟科技) 7
-      - 波兰(youtube阿伟科技) 8
-      - 波兰(youtube阿伟科技) 9
-      - 波兰(youtube阿伟科技) 10
-      - 波兰(youtube阿伟科技) 11
-      - 波兰(youtube阿伟科技) 12
-      - 波兰(youtube阿伟科技) 13
-      - 波兰(youtube阿伟科技) 14
-      - 波兰(youtube阿伟科技) 15
-      - 波兰(youtube阿伟科技) 16
-      - 俄罗斯(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技) 4
+      - 荷兰(youtube阿伟科技) 5
       - 新加坡(youtube阿伟科技)
       - 新加坡(youtube阿伟科技) 2
       - 新加坡(youtube阿伟科技) 3
       - 新加坡(youtube阿伟科技) 4
       - 新加坡(youtube阿伟科技) 5
+      - 新加坡(youtube阿伟科技) 6
+      - 新加坡(youtube阿伟科技) 7
+      - 新加坡(youtube阿伟科技) 8
+      - 新加坡(youtube阿伟科技) 9
       - 台湾(youtube阿伟科技)
       - 台湾(youtube阿伟科技) 2
       - 台湾(youtube阿伟科技) 3
@@ -588,6 +217,10 @@ proxy-groups:
       - 台湾(youtube阿伟科技) 7
       - 台湾(youtube阿伟科技) 8
       - 台湾(youtube阿伟科技) 9
+      - 台湾(youtube阿伟科技) 10
+      - 台湾(youtube阿伟科技) 11
+      - 台湾(youtube阿伟科技) 12
+      - 台湾(youtube阿伟科技) 13
       - 美国(youtube阿伟科技)
       - 美国(youtube阿伟科技) 2
       - 美国(youtube阿伟科技) 3
@@ -612,159 +245,20 @@ proxy-groups:
       - 美国(youtube阿伟科技) 22
       - 美国(youtube阿伟科技) 23
       - 美国(youtube阿伟科技) 24
-      - 美国(youtube阿伟科技) 25
-      - 美国(youtube阿伟科技) 26
-      - 美国(youtube阿伟科技) 27
-      - 美国(youtube阿伟科技) 28
-      - 美国(youtube阿伟科技) 29
-      - 美国(youtube阿伟科技) 30
-      - 美国(youtube阿伟科技) 31
-      - 美国(youtube阿伟科技) 32
-      - 美国(youtube阿伟科技) 33
-      - 美国(youtube阿伟科技) 34
-      - 美国(youtube阿伟科技) 35
-      - 美国(youtube阿伟科技) 36
-      - 美国(youtube阿伟科技) 37
-      - 美国(youtube阿伟科技) 38
-      - 美国(youtube阿伟科技) 39
-      - 美国(youtube阿伟科技) 40
-      - 美国(youtube阿伟科技) 41
-      - 美国(youtube阿伟科技) 42
-      - 美国(youtube阿伟科技) 43
-      - 美国(youtube阿伟科技) 44
-      - 美国(youtube阿伟科技) 45
-      - 美国(youtube阿伟科技) 46
-      - 美国(youtube阿伟科技) 47
-      - 迪拜(youtube阿伟科技)
-      - 迪拜(youtube阿伟科技) 2
-      - 柬埔寨(youtube阿伟科技)
-      - 乌克兰(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 48
-      - 美国(youtube阿伟科技) 49
-      - 美国(youtube阿伟科技) 50
-      - 美国(youtube阿伟科技) 51
-      - 美国(youtube阿伟科技) 52
-      - 美国(youtube阿伟科技) 53
-      - 美国(youtube阿伟科技) 54
-      - 美国(youtube阿伟科技) 55
-      - 美国(youtube阿伟科技) 56
-      - 美国(youtube阿伟科技) 57
-      - 美国(youtube阿伟科技) 58
-      - 美国(youtube阿伟科技) 59
-      - 美国(youtube阿伟科技) 60
-      - 美国(youtube阿伟科技) 61
-      - 美国(youtube阿伟科技) 62
-      - 美国(youtube阿伟科技) 63
-      - 美国(youtube阿伟科技) 64
-      - 美国(youtube阿伟科技) 65
-      - 美国(youtube阿伟科技) 66
-      - 美国(youtube阿伟科技) 67
-      - 美国(youtube阿伟科技) 68
-      - 美国(youtube阿伟科技) 69
-      - 美国(youtube阿伟科技) 70
-      - 美国(youtube阿伟科技) 71
-      - 美国(youtube阿伟科技) 72
-      - 美国(youtube阿伟科技) 73
-      - 美国(youtube阿伟科技) 74
-      - 美国(youtube阿伟科技) 75
-      - 美国(youtube阿伟科技) 76
-      - 美国(youtube阿伟科技) 77
-      - 美国(youtube阿伟科技) 78
-      - 美国(youtube阿伟科技) 79
-      - 美国(youtube阿伟科技) 80
-      - 美国(youtube阿伟科技) 81
-      - 美国(youtube阿伟科技) 82
-      - 美国(youtube阿伟科技) 83
-      - 美国(youtube阿伟科技) 84
-      - 美国(youtube阿伟科技) 85
-      - 美国(youtube阿伟科技) 86
-      - 美国(youtube阿伟科技) 87
-      - 美国(youtube阿伟科技) 88
-      - 美国(youtube阿伟科技) 89
-      - 美国(youtube阿伟科技) 90
-      - 美国(youtube阿伟科技) 91
-      - 美国(youtube阿伟科技) 92
-      - 美国(youtube阿伟科技) 93
-      - 美国(youtube阿伟科技) 94
-      - 美国(youtube阿伟科技) 95
-      - 美国(youtube阿伟科技) 96
-      - 美国(youtube阿伟科技) 97
-      - 美国(youtube阿伟科技) 98
-      - 美国(youtube阿伟科技) 99
-      - 美国(youtube阿伟科技) 100
-      - 美国(youtube阿伟科技) 101
-      - 美国(youtube阿伟科技) 102
-      - 美国(youtube阿伟科技) 103
-      - 美国(youtube阿伟科技) 104
-      - 美国(youtube阿伟科技) 105
-      - 美国(youtube阿伟科技) 106
-      - 美国(youtube阿伟科技) 107
-      - 美国(youtube阿伟科技) 108
-      - 美国(youtube阿伟科技) 109
-      - 美国(youtube阿伟科技) 110
-      - 美国(youtube阿伟科技) 111
-      - 美国(youtube阿伟科技) 112
-      - 美国(youtube阿伟科技) 113
-      - 美国(youtube阿伟科技) 114
-      - 美国(youtube阿伟科技) 115
-      - 美国(youtube阿伟科技) 116
-      - 美国(youtube阿伟科技) 117
-      - 美国(youtube阿伟科技) 118
-      - 美国(youtube阿伟科技) 119
-      - 美国(youtube阿伟科技) 120
-      - 美国(youtube阿伟科技) 121
-      - 美国(youtube阿伟科技) 122
-      - 美国(youtube阿伟科技) 123
-      - 美国(youtube阿伟科技) 124
-      - 美国(youtube阿伟科技) 125
-      - 美国(youtube阿伟科技) 126
-      - 美国(youtube阿伟科技) 127
-      - 美国(youtube阿伟科技) 128
-      - 美国(youtube阿伟科技) 129
-      - 美国(youtube阿伟科技) 130
-      - 美国(youtube阿伟科技) 131
-      - 美国(youtube阿伟科技) 132
-      - 美国(youtube阿伟科技) 133
-      - 美国(youtube阿伟科技) 134
-      - 美国(youtube阿伟科技) 135
-      - 美国(youtube阿伟科技) 136
-      - 美国(youtube阿伟科技) 137
-      - 美国(youtube阿伟科技) 138
-      - 美国(youtube阿伟科技) 139
-      - 美国(youtube阿伟科技) 140
-      - 美国(youtube阿伟科技) 141
-      - 美国(youtube阿伟科技) 142
-      - 美国(youtube阿伟科技) 143
-      - 美国(youtube阿伟科技) 144
-      - 美国(youtube阿伟科技) 145
-      - 加拿大(youtube阿伟科技) 10
-      - 加拿大(youtube阿伟科技) 11
-      - 加拿大(youtube阿伟科技) 12
-      - 加拿大(youtube阿伟科技) 13
-      - 加拿大(youtube阿伟科技) 14
-      - 加拿大(youtube阿伟科技) 15
-      - 加拿大(youtube阿伟科技) 16
-      - 1.12|147youtube阿伟科技 6
+      - 瑞士(youtube阿伟科技)
+      - 瑞士(youtube阿伟科技) 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube频道-阿伟科技5.31
+      - YouTube频道-阿伟科技-6.2
+      - 澳大利亚(youtube阿伟科技)
       - 加拿大(youtube阿伟科技)
       - 加拿大(youtube阿伟科技) 2
       - 加拿大(youtube阿伟科技) 3
       - 加拿大(youtube阿伟科技) 4
-      - 加拿大(youtube阿伟科技) 5
-      - 加拿大(youtube阿伟科技) 6
-      - 加拿大(youtube阿伟科技) 7
-      - 加拿大(youtube阿伟科技) 8
-      - 加拿大(youtube阿伟科技) 9
-      - 捷克(youtube阿伟科技)
-      - 法国(youtube阿伟科技)
-      - 英国(youtube阿伟科技)
-      - 英国(youtube阿伟科技) 2
       - 香港(youtube阿伟科技)
       - 香港(youtube阿伟科技) 2
       - 香港(youtube阿伟科技) 3
@@ -775,59 +269,28 @@ proxy-groups:
       - 香港(youtube阿伟科技) 8
       - 香港(youtube阿伟科技) 9
       - 香港(youtube阿伟科技) 10
-      - 香港(youtube阿伟科技) 11
-      - 香港(youtube阿伟科技) 12
-      - 香港(youtube阿伟科技) 13
-      - 香港(youtube阿伟科技) 14
-      - 香港(youtube阿伟科技) 15
-      - 香港(youtube阿伟科技) 16
-      - 香港(youtube阿伟科技) 17
-      - 香港(youtube阿伟科技) 18
-      - 香港(youtube阿伟科技) 19
-      - 香港(youtube阿伟科技)netflix
-      - 香港(youtube阿伟科技)netflix 2
-      - 香港(youtube阿伟科技)netflix 3
       - 印度(youtube阿伟科技)
       - 日本(youtube阿伟科技)
       - 日本(youtube阿伟科技) 2
       - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 日本(youtube阿伟科技) 7
-      - 日本(youtube阿伟科技) 8
-      - 日本(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技) 10
       - 韩国(youtube阿伟科技)
       - 韩国(youtube阿伟科技) 2
       - 韩国(youtube阿伟科技) 3
       - 韩国(youtube阿伟科技) 4
-      - 韩国(youtube阿伟科技) 5
       - 荷兰(youtube阿伟科技)
       - 荷兰(youtube阿伟科技) 2
       - 荷兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技)
-      - 波兰(youtube阿伟科技) 2
-      - 波兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技) 4
-      - 波兰(youtube阿伟科技) 5
-      - 波兰(youtube阿伟科技) 6
-      - 波兰(youtube阿伟科技) 7
-      - 波兰(youtube阿伟科技) 8
-      - 波兰(youtube阿伟科技) 9
-      - 波兰(youtube阿伟科技) 10
-      - 波兰(youtube阿伟科技) 11
-      - 波兰(youtube阿伟科技) 12
-      - 波兰(youtube阿伟科技) 13
-      - 波兰(youtube阿伟科技) 14
-      - 波兰(youtube阿伟科技) 15
-      - 波兰(youtube阿伟科技) 16
-      - 俄罗斯(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技) 4
+      - 荷兰(youtube阿伟科技) 5
       - 新加坡(youtube阿伟科技)
       - 新加坡(youtube阿伟科技) 2
       - 新加坡(youtube阿伟科技) 3
       - 新加坡(youtube阿伟科技) 4
       - 新加坡(youtube阿伟科技) 5
+      - 新加坡(youtube阿伟科技) 6
+      - 新加坡(youtube阿伟科技) 7
+      - 新加坡(youtube阿伟科技) 8
+      - 新加坡(youtube阿伟科技) 9
       - 台湾(youtube阿伟科技)
       - 台湾(youtube阿伟科技) 2
       - 台湾(youtube阿伟科技) 3
@@ -837,6 +300,10 @@ proxy-groups:
       - 台湾(youtube阿伟科技) 7
       - 台湾(youtube阿伟科技) 8
       - 台湾(youtube阿伟科技) 9
+      - 台湾(youtube阿伟科技) 10
+      - 台湾(youtube阿伟科技) 11
+      - 台湾(youtube阿伟科技) 12
+      - 台湾(youtube阿伟科技) 13
       - 美国(youtube阿伟科技)
       - 美国(youtube阿伟科技) 2
       - 美国(youtube阿伟科技) 3
@@ -861,139 +328,8 @@ proxy-groups:
       - 美国(youtube阿伟科技) 22
       - 美国(youtube阿伟科技) 23
       - 美国(youtube阿伟科技) 24
-      - 美国(youtube阿伟科技) 25
-      - 美国(youtube阿伟科技) 26
-      - 美国(youtube阿伟科技) 27
-      - 美国(youtube阿伟科技) 28
-      - 美国(youtube阿伟科技) 29
-      - 美国(youtube阿伟科技) 30
-      - 美国(youtube阿伟科技) 31
-      - 美国(youtube阿伟科技) 32
-      - 美国(youtube阿伟科技) 33
-      - 美国(youtube阿伟科技) 34
-      - 美国(youtube阿伟科技) 35
-      - 美国(youtube阿伟科技) 36
-      - 美国(youtube阿伟科技) 37
-      - 美国(youtube阿伟科技) 38
-      - 美国(youtube阿伟科技) 39
-      - 美国(youtube阿伟科技) 40
-      - 美国(youtube阿伟科技) 41
-      - 美国(youtube阿伟科技) 42
-      - 美国(youtube阿伟科技) 43
-      - 美国(youtube阿伟科技) 44
-      - 美国(youtube阿伟科技) 45
-      - 美国(youtube阿伟科技) 46
-      - 美国(youtube阿伟科技) 47
-      - 迪拜(youtube阿伟科技)
-      - 迪拜(youtube阿伟科技) 2
-      - 柬埔寨(youtube阿伟科技)
-      - 乌克兰(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 48
-      - 美国(youtube阿伟科技) 49
-      - 美国(youtube阿伟科技) 50
-      - 美国(youtube阿伟科技) 51
-      - 美国(youtube阿伟科技) 52
-      - 美国(youtube阿伟科技) 53
-      - 美国(youtube阿伟科技) 54
-      - 美国(youtube阿伟科技) 55
-      - 美国(youtube阿伟科技) 56
-      - 美国(youtube阿伟科技) 57
-      - 美国(youtube阿伟科技) 58
-      - 美国(youtube阿伟科技) 59
-      - 美国(youtube阿伟科技) 60
-      - 美国(youtube阿伟科技) 61
-      - 美国(youtube阿伟科技) 62
-      - 美国(youtube阿伟科技) 63
-      - 美国(youtube阿伟科技) 64
-      - 美国(youtube阿伟科技) 65
-      - 美国(youtube阿伟科技) 66
-      - 美国(youtube阿伟科技) 67
-      - 美国(youtube阿伟科技) 68
-      - 美国(youtube阿伟科技) 69
-      - 美国(youtube阿伟科技) 70
-      - 美国(youtube阿伟科技) 71
-      - 美国(youtube阿伟科技) 72
-      - 美国(youtube阿伟科技) 73
-      - 美国(youtube阿伟科技) 74
-      - 美国(youtube阿伟科技) 75
-      - 美国(youtube阿伟科技) 76
-      - 美国(youtube阿伟科技) 77
-      - 美国(youtube阿伟科技) 78
-      - 美国(youtube阿伟科技) 79
-      - 美国(youtube阿伟科技) 80
-      - 美国(youtube阿伟科技) 81
-      - 美国(youtube阿伟科技) 82
-      - 美国(youtube阿伟科技) 83
-      - 美国(youtube阿伟科技) 84
-      - 美国(youtube阿伟科技) 85
-      - 美国(youtube阿伟科技) 86
-      - 美国(youtube阿伟科技) 87
-      - 美国(youtube阿伟科技) 88
-      - 美国(youtube阿伟科技) 89
-      - 美国(youtube阿伟科技) 90
-      - 美国(youtube阿伟科技) 91
-      - 美国(youtube阿伟科技) 92
-      - 美国(youtube阿伟科技) 93
-      - 美国(youtube阿伟科技) 94
-      - 美国(youtube阿伟科技) 95
-      - 美国(youtube阿伟科技) 96
-      - 美国(youtube阿伟科技) 97
-      - 美国(youtube阿伟科技) 98
-      - 美国(youtube阿伟科技) 99
-      - 美国(youtube阿伟科技) 100
-      - 美国(youtube阿伟科技) 101
-      - 美国(youtube阿伟科技) 102
-      - 美国(youtube阿伟科技) 103
-      - 美国(youtube阿伟科技) 104
-      - 美国(youtube阿伟科技) 105
-      - 美国(youtube阿伟科技) 106
-      - 美国(youtube阿伟科技) 107
-      - 美国(youtube阿伟科技) 108
-      - 美国(youtube阿伟科技) 109
-      - 美国(youtube阿伟科技) 110
-      - 美国(youtube阿伟科技) 111
-      - 美国(youtube阿伟科技) 112
-      - 美国(youtube阿伟科技) 113
-      - 美国(youtube阿伟科技) 114
-      - 美国(youtube阿伟科技) 115
-      - 美国(youtube阿伟科技) 116
-      - 美国(youtube阿伟科技) 117
-      - 美国(youtube阿伟科技) 118
-      - 美国(youtube阿伟科技) 119
-      - 美国(youtube阿伟科技) 120
-      - 美国(youtube阿伟科技) 121
-      - 美国(youtube阿伟科技) 122
-      - 美国(youtube阿伟科技) 123
-      - 美国(youtube阿伟科技) 124
-      - 美国(youtube阿伟科技) 125
-      - 美国(youtube阿伟科技) 126
-      - 美国(youtube阿伟科技) 127
-      - 美国(youtube阿伟科技) 128
-      - 美国(youtube阿伟科技) 129
-      - 美国(youtube阿伟科技) 130
-      - 美国(youtube阿伟科技) 131
-      - 美国(youtube阿伟科技) 132
-      - 美国(youtube阿伟科技) 133
-      - 美国(youtube阿伟科技) 134
-      - 美国(youtube阿伟科技) 135
-      - 美国(youtube阿伟科技) 136
-      - 美国(youtube阿伟科技) 137
-      - 美国(youtube阿伟科技) 138
-      - 美国(youtube阿伟科技) 139
-      - 美国(youtube阿伟科技) 140
-      - 美国(youtube阿伟科技) 141
-      - 美国(youtube阿伟科技) 142
-      - 美国(youtube阿伟科技) 143
-      - 美国(youtube阿伟科技) 144
-      - 美国(youtube阿伟科技) 145
-      - 加拿大(youtube阿伟科技) 10
-      - 加拿大(youtube阿伟科技) 11
-      - 加拿大(youtube阿伟科技) 12
-      - 加拿大(youtube阿伟科技) 13
-      - 加拿大(youtube阿伟科技) 14
-      - 加拿大(youtube阿伟科技) 15
-      - 加拿大(youtube阿伟科技) 16
-      - 1.12|147youtube阿伟科技 6
+      - 瑞士(youtube阿伟科技)
+      - 瑞士(youtube阿伟科技) 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -1012,20 +348,12 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - YouTube频道-阿伟科技5.31
+      - YouTube频道-阿伟科技-6.2
+      - 澳大利亚(youtube阿伟科技)
       - 加拿大(youtube阿伟科技)
       - 加拿大(youtube阿伟科技) 2
       - 加拿大(youtube阿伟科技) 3
       - 加拿大(youtube阿伟科技) 4
-      - 加拿大(youtube阿伟科技) 5
-      - 加拿大(youtube阿伟科技) 6
-      - 加拿大(youtube阿伟科技) 7
-      - 加拿大(youtube阿伟科技) 8
-      - 加拿大(youtube阿伟科技) 9
-      - 捷克(youtube阿伟科技)
-      - 法国(youtube阿伟科技)
-      - 英国(youtube阿伟科技)
-      - 英国(youtube阿伟科技) 2
       - 香港(youtube阿伟科技)
       - 香港(youtube阿伟科技) 2
       - 香港(youtube阿伟科技) 3
@@ -1036,59 +364,28 @@ proxy-groups:
       - 香港(youtube阿伟科技) 8
       - 香港(youtube阿伟科技) 9
       - 香港(youtube阿伟科技) 10
-      - 香港(youtube阿伟科技) 11
-      - 香港(youtube阿伟科技) 12
-      - 香港(youtube阿伟科技) 13
-      - 香港(youtube阿伟科技) 14
-      - 香港(youtube阿伟科技) 15
-      - 香港(youtube阿伟科技) 16
-      - 香港(youtube阿伟科技) 17
-      - 香港(youtube阿伟科技) 18
-      - 香港(youtube阿伟科技) 19
-      - 香港(youtube阿伟科技)netflix
-      - 香港(youtube阿伟科技)netflix 2
-      - 香港(youtube阿伟科技)netflix 3
       - 印度(youtube阿伟科技)
       - 日本(youtube阿伟科技)
       - 日本(youtube阿伟科技) 2
       - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 日本(youtube阿伟科技) 7
-      - 日本(youtube阿伟科技) 8
-      - 日本(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技) 10
       - 韩国(youtube阿伟科技)
       - 韩国(youtube阿伟科技) 2
       - 韩国(youtube阿伟科技) 3
       - 韩国(youtube阿伟科技) 4
-      - 韩国(youtube阿伟科技) 5
       - 荷兰(youtube阿伟科技)
       - 荷兰(youtube阿伟科技) 2
       - 荷兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技)
-      - 波兰(youtube阿伟科技) 2
-      - 波兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技) 4
-      - 波兰(youtube阿伟科技) 5
-      - 波兰(youtube阿伟科技) 6
-      - 波兰(youtube阿伟科技) 7
-      - 波兰(youtube阿伟科技) 8
-      - 波兰(youtube阿伟科技) 9
-      - 波兰(youtube阿伟科技) 10
-      - 波兰(youtube阿伟科技) 11
-      - 波兰(youtube阿伟科技) 12
-      - 波兰(youtube阿伟科技) 13
-      - 波兰(youtube阿伟科技) 14
-      - 波兰(youtube阿伟科技) 15
-      - 波兰(youtube阿伟科技) 16
-      - 俄罗斯(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技) 4
+      - 荷兰(youtube阿伟科技) 5
       - 新加坡(youtube阿伟科技)
       - 新加坡(youtube阿伟科技) 2
       - 新加坡(youtube阿伟科技) 3
       - 新加坡(youtube阿伟科技) 4
       - 新加坡(youtube阿伟科技) 5
+      - 新加坡(youtube阿伟科技) 6
+      - 新加坡(youtube阿伟科技) 7
+      - 新加坡(youtube阿伟科技) 8
+      - 新加坡(youtube阿伟科技) 9
       - 台湾(youtube阿伟科技)
       - 台湾(youtube阿伟科技) 2
       - 台湾(youtube阿伟科技) 3
@@ -1098,6 +395,10 @@ proxy-groups:
       - 台湾(youtube阿伟科技) 7
       - 台湾(youtube阿伟科技) 8
       - 台湾(youtube阿伟科技) 9
+      - 台湾(youtube阿伟科技) 10
+      - 台湾(youtube阿伟科技) 11
+      - 台湾(youtube阿伟科技) 12
+      - 台湾(youtube阿伟科技) 13
       - 美国(youtube阿伟科技)
       - 美国(youtube阿伟科技) 2
       - 美国(youtube阿伟科技) 3
@@ -1122,139 +423,8 @@ proxy-groups:
       - 美国(youtube阿伟科技) 22
       - 美国(youtube阿伟科技) 23
       - 美国(youtube阿伟科技) 24
-      - 美国(youtube阿伟科技) 25
-      - 美国(youtube阿伟科技) 26
-      - 美国(youtube阿伟科技) 27
-      - 美国(youtube阿伟科技) 28
-      - 美国(youtube阿伟科技) 29
-      - 美国(youtube阿伟科技) 30
-      - 美国(youtube阿伟科技) 31
-      - 美国(youtube阿伟科技) 32
-      - 美国(youtube阿伟科技) 33
-      - 美国(youtube阿伟科技) 34
-      - 美国(youtube阿伟科技) 35
-      - 美国(youtube阿伟科技) 36
-      - 美国(youtube阿伟科技) 37
-      - 美国(youtube阿伟科技) 38
-      - 美国(youtube阿伟科技) 39
-      - 美国(youtube阿伟科技) 40
-      - 美国(youtube阿伟科技) 41
-      - 美国(youtube阿伟科技) 42
-      - 美国(youtube阿伟科技) 43
-      - 美国(youtube阿伟科技) 44
-      - 美国(youtube阿伟科技) 45
-      - 美国(youtube阿伟科技) 46
-      - 美国(youtube阿伟科技) 47
-      - 迪拜(youtube阿伟科技)
-      - 迪拜(youtube阿伟科技) 2
-      - 柬埔寨(youtube阿伟科技)
-      - 乌克兰(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 48
-      - 美国(youtube阿伟科技) 49
-      - 美国(youtube阿伟科技) 50
-      - 美国(youtube阿伟科技) 51
-      - 美国(youtube阿伟科技) 52
-      - 美国(youtube阿伟科技) 53
-      - 美国(youtube阿伟科技) 54
-      - 美国(youtube阿伟科技) 55
-      - 美国(youtube阿伟科技) 56
-      - 美国(youtube阿伟科技) 57
-      - 美国(youtube阿伟科技) 58
-      - 美国(youtube阿伟科技) 59
-      - 美国(youtube阿伟科技) 60
-      - 美国(youtube阿伟科技) 61
-      - 美国(youtube阿伟科技) 62
-      - 美国(youtube阿伟科技) 63
-      - 美国(youtube阿伟科技) 64
-      - 美国(youtube阿伟科技) 65
-      - 美国(youtube阿伟科技) 66
-      - 美国(youtube阿伟科技) 67
-      - 美国(youtube阿伟科技) 68
-      - 美国(youtube阿伟科技) 69
-      - 美国(youtube阿伟科技) 70
-      - 美国(youtube阿伟科技) 71
-      - 美国(youtube阿伟科技) 72
-      - 美国(youtube阿伟科技) 73
-      - 美国(youtube阿伟科技) 74
-      - 美国(youtube阿伟科技) 75
-      - 美国(youtube阿伟科技) 76
-      - 美国(youtube阿伟科技) 77
-      - 美国(youtube阿伟科技) 78
-      - 美国(youtube阿伟科技) 79
-      - 美国(youtube阿伟科技) 80
-      - 美国(youtube阿伟科技) 81
-      - 美国(youtube阿伟科技) 82
-      - 美国(youtube阿伟科技) 83
-      - 美国(youtube阿伟科技) 84
-      - 美国(youtube阿伟科技) 85
-      - 美国(youtube阿伟科技) 86
-      - 美国(youtube阿伟科技) 87
-      - 美国(youtube阿伟科技) 88
-      - 美国(youtube阿伟科技) 89
-      - 美国(youtube阿伟科技) 90
-      - 美国(youtube阿伟科技) 91
-      - 美国(youtube阿伟科技) 92
-      - 美国(youtube阿伟科技) 93
-      - 美国(youtube阿伟科技) 94
-      - 美国(youtube阿伟科技) 95
-      - 美国(youtube阿伟科技) 96
-      - 美国(youtube阿伟科技) 97
-      - 美国(youtube阿伟科技) 98
-      - 美国(youtube阿伟科技) 99
-      - 美国(youtube阿伟科技) 100
-      - 美国(youtube阿伟科技) 101
-      - 美国(youtube阿伟科技) 102
-      - 美国(youtube阿伟科技) 103
-      - 美国(youtube阿伟科技) 104
-      - 美国(youtube阿伟科技) 105
-      - 美国(youtube阿伟科技) 106
-      - 美国(youtube阿伟科技) 107
-      - 美国(youtube阿伟科技) 108
-      - 美国(youtube阿伟科技) 109
-      - 美国(youtube阿伟科技) 110
-      - 美国(youtube阿伟科技) 111
-      - 美国(youtube阿伟科技) 112
-      - 美国(youtube阿伟科技) 113
-      - 美国(youtube阿伟科技) 114
-      - 美国(youtube阿伟科技) 115
-      - 美国(youtube阿伟科技) 116
-      - 美国(youtube阿伟科技) 117
-      - 美国(youtube阿伟科技) 118
-      - 美国(youtube阿伟科技) 119
-      - 美国(youtube阿伟科技) 120
-      - 美国(youtube阿伟科技) 121
-      - 美国(youtube阿伟科技) 122
-      - 美国(youtube阿伟科技) 123
-      - 美国(youtube阿伟科技) 124
-      - 美国(youtube阿伟科技) 125
-      - 美国(youtube阿伟科技) 126
-      - 美国(youtube阿伟科技) 127
-      - 美国(youtube阿伟科技) 128
-      - 美国(youtube阿伟科技) 129
-      - 美国(youtube阿伟科技) 130
-      - 美国(youtube阿伟科技) 131
-      - 美国(youtube阿伟科技) 132
-      - 美国(youtube阿伟科技) 133
-      - 美国(youtube阿伟科技) 134
-      - 美国(youtube阿伟科技) 135
-      - 美国(youtube阿伟科技) 136
-      - 美国(youtube阿伟科技) 137
-      - 美国(youtube阿伟科技) 138
-      - 美国(youtube阿伟科技) 139
-      - 美国(youtube阿伟科技) 140
-      - 美国(youtube阿伟科技) 141
-      - 美国(youtube阿伟科技) 142
-      - 美国(youtube阿伟科技) 143
-      - 美国(youtube阿伟科技) 144
-      - 美国(youtube阿伟科技) 145
-      - 加拿大(youtube阿伟科技) 10
-      - 加拿大(youtube阿伟科技) 11
-      - 加拿大(youtube阿伟科技) 12
-      - 加拿大(youtube阿伟科技) 13
-      - 加拿大(youtube阿伟科技) 14
-      - 加拿大(youtube阿伟科技) 15
-      - 加拿大(youtube阿伟科技) 16
-      - 1.12|147youtube阿伟科技 6
+      - 瑞士(youtube阿伟科技)
+      - 瑞士(youtube阿伟科技) 2
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -1269,18 +439,6 @@ proxy-groups:
       - 香港(youtube阿伟科技) 8
       - 香港(youtube阿伟科技) 9
       - 香港(youtube阿伟科技) 10
-      - 香港(youtube阿伟科技) 11
-      - 香港(youtube阿伟科技) 12
-      - 香港(youtube阿伟科技) 13
-      - 香港(youtube阿伟科技) 14
-      - 香港(youtube阿伟科技) 15
-      - 香港(youtube阿伟科技) 16
-      - 香港(youtube阿伟科技) 17
-      - 香港(youtube阿伟科技) 18
-      - 香港(youtube阿伟科技) 19
-      - 香港(youtube阿伟科技)netflix
-      - 香港(youtube阿伟科技)netflix 2
-      - 香港(youtube阿伟科技)netflix 3
       - 台湾(youtube阿伟科技)
       - 台湾(youtube阿伟科技) 2
       - 台湾(youtube阿伟科技) 3
@@ -1290,26 +448,22 @@ proxy-groups:
       - 台湾(youtube阿伟科技) 7
       - 台湾(youtube阿伟科技) 8
       - 台湾(youtube阿伟科技) 9
+      - 台湾(youtube阿伟科技) 10
+      - 台湾(youtube阿伟科技) 11
+      - 台湾(youtube阿伟科技) 12
+      - 台湾(youtube阿伟科技) 13
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - YouTube频道-阿伟科技5.31
+      - YouTube频道-阿伟科技-6.2
+      - 澳大利亚(youtube阿伟科技)
       - 加拿大(youtube阿伟科技)
       - 加拿大(youtube阿伟科技) 2
       - 加拿大(youtube阿伟科技) 3
       - 加拿大(youtube阿伟科技) 4
-      - 加拿大(youtube阿伟科技) 5
-      - 加拿大(youtube阿伟科技) 6
-      - 加拿大(youtube阿伟科技) 7
-      - 加拿大(youtube阿伟科技) 8
-      - 加拿大(youtube阿伟科技) 9
-      - 捷克(youtube阿伟科技)
-      - 法国(youtube阿伟科技)
-      - 英国(youtube阿伟科技)
-      - 英国(youtube阿伟科技) 2
       - 香港(youtube阿伟科技)
       - 香港(youtube阿伟科技) 2
       - 香港(youtube阿伟科技) 3
@@ -1320,59 +474,28 @@ proxy-groups:
       - 香港(youtube阿伟科技) 8
       - 香港(youtube阿伟科技) 9
       - 香港(youtube阿伟科技) 10
-      - 香港(youtube阿伟科技) 11
-      - 香港(youtube阿伟科技) 12
-      - 香港(youtube阿伟科技) 13
-      - 香港(youtube阿伟科技) 14
-      - 香港(youtube阿伟科技) 15
-      - 香港(youtube阿伟科技) 16
-      - 香港(youtube阿伟科技) 17
-      - 香港(youtube阿伟科技) 18
-      - 香港(youtube阿伟科技) 19
-      - 香港(youtube阿伟科技)netflix
-      - 香港(youtube阿伟科技)netflix 2
-      - 香港(youtube阿伟科技)netflix 3
       - 印度(youtube阿伟科技)
       - 日本(youtube阿伟科技)
       - 日本(youtube阿伟科技) 2
       - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 日本(youtube阿伟科技) 7
-      - 日本(youtube阿伟科技) 8
-      - 日本(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技) 10
       - 韩国(youtube阿伟科技)
       - 韩国(youtube阿伟科技) 2
       - 韩国(youtube阿伟科技) 3
       - 韩国(youtube阿伟科技) 4
-      - 韩国(youtube阿伟科技) 5
       - 荷兰(youtube阿伟科技)
       - 荷兰(youtube阿伟科技) 2
       - 荷兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技)
-      - 波兰(youtube阿伟科技) 2
-      - 波兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技) 4
-      - 波兰(youtube阿伟科技) 5
-      - 波兰(youtube阿伟科技) 6
-      - 波兰(youtube阿伟科技) 7
-      - 波兰(youtube阿伟科技) 8
-      - 波兰(youtube阿伟科技) 9
-      - 波兰(youtube阿伟科技) 10
-      - 波兰(youtube阿伟科技) 11
-      - 波兰(youtube阿伟科技) 12
-      - 波兰(youtube阿伟科技) 13
-      - 波兰(youtube阿伟科技) 14
-      - 波兰(youtube阿伟科技) 15
-      - 波兰(youtube阿伟科技) 16
-      - 俄罗斯(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技) 4
+      - 荷兰(youtube阿伟科技) 5
       - 新加坡(youtube阿伟科技)
       - 新加坡(youtube阿伟科技) 2
       - 新加坡(youtube阿伟科技) 3
       - 新加坡(youtube阿伟科技) 4
       - 新加坡(youtube阿伟科技) 5
+      - 新加坡(youtube阿伟科技) 6
+      - 新加坡(youtube阿伟科技) 7
+      - 新加坡(youtube阿伟科技) 8
+      - 新加坡(youtube阿伟科技) 9
       - 台湾(youtube阿伟科技)
       - 台湾(youtube阿伟科技) 2
       - 台湾(youtube阿伟科技) 3
@@ -1382,6 +505,10 @@ proxy-groups:
       - 台湾(youtube阿伟科技) 7
       - 台湾(youtube阿伟科技) 8
       - 台湾(youtube阿伟科技) 9
+      - 台湾(youtube阿伟科技) 10
+      - 台湾(youtube阿伟科技) 11
+      - 台湾(youtube阿伟科技) 12
+      - 台湾(youtube阿伟科技) 13
       - 美国(youtube阿伟科技)
       - 美国(youtube阿伟科技) 2
       - 美国(youtube阿伟科技) 3
@@ -1406,158 +533,19 @@ proxy-groups:
       - 美国(youtube阿伟科技) 22
       - 美国(youtube阿伟科技) 23
       - 美国(youtube阿伟科技) 24
-      - 美国(youtube阿伟科技) 25
-      - 美国(youtube阿伟科技) 26
-      - 美国(youtube阿伟科技) 27
-      - 美国(youtube阿伟科技) 28
-      - 美国(youtube阿伟科技) 29
-      - 美国(youtube阿伟科技) 30
-      - 美国(youtube阿伟科技) 31
-      - 美国(youtube阿伟科技) 32
-      - 美国(youtube阿伟科技) 33
-      - 美国(youtube阿伟科技) 34
-      - 美国(youtube阿伟科技) 35
-      - 美国(youtube阿伟科技) 36
-      - 美国(youtube阿伟科技) 37
-      - 美国(youtube阿伟科技) 38
-      - 美国(youtube阿伟科技) 39
-      - 美国(youtube阿伟科技) 40
-      - 美国(youtube阿伟科技) 41
-      - 美国(youtube阿伟科技) 42
-      - 美国(youtube阿伟科技) 43
-      - 美国(youtube阿伟科技) 44
-      - 美国(youtube阿伟科技) 45
-      - 美国(youtube阿伟科技) 46
-      - 美国(youtube阿伟科技) 47
-      - 迪拜(youtube阿伟科技)
-      - 迪拜(youtube阿伟科技) 2
-      - 柬埔寨(youtube阿伟科技)
-      - 乌克兰(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 48
-      - 美国(youtube阿伟科技) 49
-      - 美国(youtube阿伟科技) 50
-      - 美国(youtube阿伟科技) 51
-      - 美国(youtube阿伟科技) 52
-      - 美国(youtube阿伟科技) 53
-      - 美国(youtube阿伟科技) 54
-      - 美国(youtube阿伟科技) 55
-      - 美国(youtube阿伟科技) 56
-      - 美国(youtube阿伟科技) 57
-      - 美国(youtube阿伟科技) 58
-      - 美国(youtube阿伟科技) 59
-      - 美国(youtube阿伟科技) 60
-      - 美国(youtube阿伟科技) 61
-      - 美国(youtube阿伟科技) 62
-      - 美国(youtube阿伟科技) 63
-      - 美国(youtube阿伟科技) 64
-      - 美国(youtube阿伟科技) 65
-      - 美国(youtube阿伟科技) 66
-      - 美国(youtube阿伟科技) 67
-      - 美国(youtube阿伟科技) 68
-      - 美国(youtube阿伟科技) 69
-      - 美国(youtube阿伟科技) 70
-      - 美国(youtube阿伟科技) 71
-      - 美国(youtube阿伟科技) 72
-      - 美国(youtube阿伟科技) 73
-      - 美国(youtube阿伟科技) 74
-      - 美国(youtube阿伟科技) 75
-      - 美国(youtube阿伟科技) 76
-      - 美国(youtube阿伟科技) 77
-      - 美国(youtube阿伟科技) 78
-      - 美国(youtube阿伟科技) 79
-      - 美国(youtube阿伟科技) 80
-      - 美国(youtube阿伟科技) 81
-      - 美国(youtube阿伟科技) 82
-      - 美国(youtube阿伟科技) 83
-      - 美国(youtube阿伟科技) 84
-      - 美国(youtube阿伟科技) 85
-      - 美国(youtube阿伟科技) 86
-      - 美国(youtube阿伟科技) 87
-      - 美国(youtube阿伟科技) 88
-      - 美国(youtube阿伟科技) 89
-      - 美国(youtube阿伟科技) 90
-      - 美国(youtube阿伟科技) 91
-      - 美国(youtube阿伟科技) 92
-      - 美国(youtube阿伟科技) 93
-      - 美国(youtube阿伟科技) 94
-      - 美国(youtube阿伟科技) 95
-      - 美国(youtube阿伟科技) 96
-      - 美国(youtube阿伟科技) 97
-      - 美国(youtube阿伟科技) 98
-      - 美国(youtube阿伟科技) 99
-      - 美国(youtube阿伟科技) 100
-      - 美国(youtube阿伟科技) 101
-      - 美国(youtube阿伟科技) 102
-      - 美国(youtube阿伟科技) 103
-      - 美国(youtube阿伟科技) 104
-      - 美国(youtube阿伟科技) 105
-      - 美国(youtube阿伟科技) 106
-      - 美国(youtube阿伟科技) 107
-      - 美国(youtube阿伟科技) 108
-      - 美国(youtube阿伟科技) 109
-      - 美国(youtube阿伟科技) 110
-      - 美国(youtube阿伟科技) 111
-      - 美国(youtube阿伟科技) 112
-      - 美国(youtube阿伟科技) 113
-      - 美国(youtube阿伟科技) 114
-      - 美国(youtube阿伟科技) 115
-      - 美国(youtube阿伟科技) 116
-      - 美国(youtube阿伟科技) 117
-      - 美国(youtube阿伟科技) 118
-      - 美国(youtube阿伟科技) 119
-      - 美国(youtube阿伟科技) 120
-      - 美国(youtube阿伟科技) 121
-      - 美国(youtube阿伟科技) 122
-      - 美国(youtube阿伟科技) 123
-      - 美国(youtube阿伟科技) 124
-      - 美国(youtube阿伟科技) 125
-      - 美国(youtube阿伟科技) 126
-      - 美国(youtube阿伟科技) 127
-      - 美国(youtube阿伟科技) 128
-      - 美国(youtube阿伟科技) 129
-      - 美国(youtube阿伟科技) 130
-      - 美国(youtube阿伟科技) 131
-      - 美国(youtube阿伟科技) 132
-      - 美国(youtube阿伟科技) 133
-      - 美国(youtube阿伟科技) 134
-      - 美国(youtube阿伟科技) 135
-      - 美国(youtube阿伟科技) 136
-      - 美国(youtube阿伟科技) 137
-      - 美国(youtube阿伟科技) 138
-      - 美国(youtube阿伟科技) 139
-      - 美国(youtube阿伟科技) 140
-      - 美国(youtube阿伟科技) 141
-      - 美国(youtube阿伟科技) 142
-      - 美国(youtube阿伟科技) 143
-      - 美国(youtube阿伟科技) 144
-      - 美国(youtube阿伟科技) 145
-      - 加拿大(youtube阿伟科技) 10
-      - 加拿大(youtube阿伟科技) 11
-      - 加拿大(youtube阿伟科技) 12
-      - 加拿大(youtube阿伟科技) 13
-      - 加拿大(youtube阿伟科技) 14
-      - 加拿大(youtube阿伟科技) 15
-      - 加拿大(youtube阿伟科技) 16
-      - 1.12|147youtube阿伟科技 6
+      - 瑞士(youtube阿伟科技)
+      - 瑞士(youtube阿伟科技) 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - YouTube频道-阿伟科技5.31
+      - YouTube频道-阿伟科技-6.2
+      - 澳大利亚(youtube阿伟科技)
       - 加拿大(youtube阿伟科技)
       - 加拿大(youtube阿伟科技) 2
       - 加拿大(youtube阿伟科技) 3
       - 加拿大(youtube阿伟科技) 4
-      - 加拿大(youtube阿伟科技) 5
-      - 加拿大(youtube阿伟科技) 6
-      - 加拿大(youtube阿伟科技) 7
-      - 加拿大(youtube阿伟科技) 8
-      - 加拿大(youtube阿伟科技) 9
-      - 捷克(youtube阿伟科技)
-      - 法国(youtube阿伟科技)
-      - 英国(youtube阿伟科技)
-      - 英国(youtube阿伟科技) 2
       - 香港(youtube阿伟科技)
       - 香港(youtube阿伟科技) 2
       - 香港(youtube阿伟科技) 3
@@ -1568,59 +556,28 @@ proxy-groups:
       - 香港(youtube阿伟科技) 8
       - 香港(youtube阿伟科技) 9
       - 香港(youtube阿伟科技) 10
-      - 香港(youtube阿伟科技) 11
-      - 香港(youtube阿伟科技) 12
-      - 香港(youtube阿伟科技) 13
-      - 香港(youtube阿伟科技) 14
-      - 香港(youtube阿伟科技) 15
-      - 香港(youtube阿伟科技) 16
-      - 香港(youtube阿伟科技) 17
-      - 香港(youtube阿伟科技) 18
-      - 香港(youtube阿伟科技) 19
-      - 香港(youtube阿伟科技)netflix
-      - 香港(youtube阿伟科技)netflix 2
-      - 香港(youtube阿伟科技)netflix 3
       - 印度(youtube阿伟科技)
       - 日本(youtube阿伟科技)
       - 日本(youtube阿伟科技) 2
       - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 日本(youtube阿伟科技) 7
-      - 日本(youtube阿伟科技) 8
-      - 日本(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技) 10
       - 韩国(youtube阿伟科技)
       - 韩国(youtube阿伟科技) 2
       - 韩国(youtube阿伟科技) 3
       - 韩国(youtube阿伟科技) 4
-      - 韩国(youtube阿伟科技) 5
       - 荷兰(youtube阿伟科技)
       - 荷兰(youtube阿伟科技) 2
       - 荷兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技)
-      - 波兰(youtube阿伟科技) 2
-      - 波兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技) 4
-      - 波兰(youtube阿伟科技) 5
-      - 波兰(youtube阿伟科技) 6
-      - 波兰(youtube阿伟科技) 7
-      - 波兰(youtube阿伟科技) 8
-      - 波兰(youtube阿伟科技) 9
-      - 波兰(youtube阿伟科技) 10
-      - 波兰(youtube阿伟科技) 11
-      - 波兰(youtube阿伟科技) 12
-      - 波兰(youtube阿伟科技) 13
-      - 波兰(youtube阿伟科技) 14
-      - 波兰(youtube阿伟科技) 15
-      - 波兰(youtube阿伟科技) 16
-      - 俄罗斯(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技) 4
+      - 荷兰(youtube阿伟科技) 5
       - 新加坡(youtube阿伟科技)
       - 新加坡(youtube阿伟科技) 2
       - 新加坡(youtube阿伟科技) 3
       - 新加坡(youtube阿伟科技) 4
       - 新加坡(youtube阿伟科技) 5
+      - 新加坡(youtube阿伟科技) 6
+      - 新加坡(youtube阿伟科技) 7
+      - 新加坡(youtube阿伟科技) 8
+      - 新加坡(youtube阿伟科技) 9
       - 台湾(youtube阿伟科技)
       - 台湾(youtube阿伟科技) 2
       - 台湾(youtube阿伟科技) 3
@@ -1630,6 +587,10 @@ proxy-groups:
       - 台湾(youtube阿伟科技) 7
       - 台湾(youtube阿伟科技) 8
       - 台湾(youtube阿伟科技) 9
+      - 台湾(youtube阿伟科技) 10
+      - 台湾(youtube阿伟科技) 11
+      - 台湾(youtube阿伟科技) 12
+      - 台湾(youtube阿伟科技) 13
       - 美国(youtube阿伟科技)
       - 美国(youtube阿伟科技) 2
       - 美国(youtube阿伟科技) 3
@@ -1654,159 +615,20 @@ proxy-groups:
       - 美国(youtube阿伟科技) 22
       - 美国(youtube阿伟科技) 23
       - 美国(youtube阿伟科技) 24
-      - 美国(youtube阿伟科技) 25
-      - 美国(youtube阿伟科技) 26
-      - 美国(youtube阿伟科技) 27
-      - 美国(youtube阿伟科技) 28
-      - 美国(youtube阿伟科技) 29
-      - 美国(youtube阿伟科技) 30
-      - 美国(youtube阿伟科技) 31
-      - 美国(youtube阿伟科技) 32
-      - 美国(youtube阿伟科技) 33
-      - 美国(youtube阿伟科技) 34
-      - 美国(youtube阿伟科技) 35
-      - 美国(youtube阿伟科技) 36
-      - 美国(youtube阿伟科技) 37
-      - 美国(youtube阿伟科技) 38
-      - 美国(youtube阿伟科技) 39
-      - 美国(youtube阿伟科技) 40
-      - 美国(youtube阿伟科技) 41
-      - 美国(youtube阿伟科技) 42
-      - 美国(youtube阿伟科技) 43
-      - 美国(youtube阿伟科技) 44
-      - 美国(youtube阿伟科技) 45
-      - 美国(youtube阿伟科技) 46
-      - 美国(youtube阿伟科技) 47
-      - 迪拜(youtube阿伟科技)
-      - 迪拜(youtube阿伟科技) 2
-      - 柬埔寨(youtube阿伟科技)
-      - 乌克兰(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 48
-      - 美国(youtube阿伟科技) 49
-      - 美国(youtube阿伟科技) 50
-      - 美国(youtube阿伟科技) 51
-      - 美国(youtube阿伟科技) 52
-      - 美国(youtube阿伟科技) 53
-      - 美国(youtube阿伟科技) 54
-      - 美国(youtube阿伟科技) 55
-      - 美国(youtube阿伟科技) 56
-      - 美国(youtube阿伟科技) 57
-      - 美国(youtube阿伟科技) 58
-      - 美国(youtube阿伟科技) 59
-      - 美国(youtube阿伟科技) 60
-      - 美国(youtube阿伟科技) 61
-      - 美国(youtube阿伟科技) 62
-      - 美国(youtube阿伟科技) 63
-      - 美国(youtube阿伟科技) 64
-      - 美国(youtube阿伟科技) 65
-      - 美国(youtube阿伟科技) 66
-      - 美国(youtube阿伟科技) 67
-      - 美国(youtube阿伟科技) 68
-      - 美国(youtube阿伟科技) 69
-      - 美国(youtube阿伟科技) 70
-      - 美国(youtube阿伟科技) 71
-      - 美国(youtube阿伟科技) 72
-      - 美国(youtube阿伟科技) 73
-      - 美国(youtube阿伟科技) 74
-      - 美国(youtube阿伟科技) 75
-      - 美国(youtube阿伟科技) 76
-      - 美国(youtube阿伟科技) 77
-      - 美国(youtube阿伟科技) 78
-      - 美国(youtube阿伟科技) 79
-      - 美国(youtube阿伟科技) 80
-      - 美国(youtube阿伟科技) 81
-      - 美国(youtube阿伟科技) 82
-      - 美国(youtube阿伟科技) 83
-      - 美国(youtube阿伟科技) 84
-      - 美国(youtube阿伟科技) 85
-      - 美国(youtube阿伟科技) 86
-      - 美国(youtube阿伟科技) 87
-      - 美国(youtube阿伟科技) 88
-      - 美国(youtube阿伟科技) 89
-      - 美国(youtube阿伟科技) 90
-      - 美国(youtube阿伟科技) 91
-      - 美国(youtube阿伟科技) 92
-      - 美国(youtube阿伟科技) 93
-      - 美国(youtube阿伟科技) 94
-      - 美国(youtube阿伟科技) 95
-      - 美国(youtube阿伟科技) 96
-      - 美国(youtube阿伟科技) 97
-      - 美国(youtube阿伟科技) 98
-      - 美国(youtube阿伟科技) 99
-      - 美国(youtube阿伟科技) 100
-      - 美国(youtube阿伟科技) 101
-      - 美国(youtube阿伟科技) 102
-      - 美国(youtube阿伟科技) 103
-      - 美国(youtube阿伟科技) 104
-      - 美国(youtube阿伟科技) 105
-      - 美国(youtube阿伟科技) 106
-      - 美国(youtube阿伟科技) 107
-      - 美国(youtube阿伟科技) 108
-      - 美国(youtube阿伟科技) 109
-      - 美国(youtube阿伟科技) 110
-      - 美国(youtube阿伟科技) 111
-      - 美国(youtube阿伟科技) 112
-      - 美国(youtube阿伟科技) 113
-      - 美国(youtube阿伟科技) 114
-      - 美国(youtube阿伟科技) 115
-      - 美国(youtube阿伟科技) 116
-      - 美国(youtube阿伟科技) 117
-      - 美国(youtube阿伟科技) 118
-      - 美国(youtube阿伟科技) 119
-      - 美国(youtube阿伟科技) 120
-      - 美国(youtube阿伟科技) 121
-      - 美国(youtube阿伟科技) 122
-      - 美国(youtube阿伟科技) 123
-      - 美国(youtube阿伟科技) 124
-      - 美国(youtube阿伟科技) 125
-      - 美国(youtube阿伟科技) 126
-      - 美国(youtube阿伟科技) 127
-      - 美国(youtube阿伟科技) 128
-      - 美国(youtube阿伟科技) 129
-      - 美国(youtube阿伟科技) 130
-      - 美国(youtube阿伟科技) 131
-      - 美国(youtube阿伟科技) 132
-      - 美国(youtube阿伟科技) 133
-      - 美国(youtube阿伟科技) 134
-      - 美国(youtube阿伟科技) 135
-      - 美国(youtube阿伟科技) 136
-      - 美国(youtube阿伟科技) 137
-      - 美国(youtube阿伟科技) 138
-      - 美国(youtube阿伟科技) 139
-      - 美国(youtube阿伟科技) 140
-      - 美国(youtube阿伟科技) 141
-      - 美国(youtube阿伟科技) 142
-      - 美国(youtube阿伟科技) 143
-      - 美国(youtube阿伟科技) 144
-      - 美国(youtube阿伟科技) 145
-      - 加拿大(youtube阿伟科技) 10
-      - 加拿大(youtube阿伟科技) 11
-      - 加拿大(youtube阿伟科技) 12
-      - 加拿大(youtube阿伟科技) 13
-      - 加拿大(youtube阿伟科技) 14
-      - 加拿大(youtube阿伟科技) 15
-      - 加拿大(youtube阿伟科技) 16
-      - 1.12|147youtube阿伟科技 6
+      - 瑞士(youtube阿伟科技)
+      - 瑞士(youtube阿伟科技) 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube频道-阿伟科技5.31
+      - YouTube频道-阿伟科技-6.2
+      - 澳大利亚(youtube阿伟科技)
       - 加拿大(youtube阿伟科技)
       - 加拿大(youtube阿伟科技) 2
       - 加拿大(youtube阿伟科技) 3
       - 加拿大(youtube阿伟科技) 4
-      - 加拿大(youtube阿伟科技) 5
-      - 加拿大(youtube阿伟科技) 6
-      - 加拿大(youtube阿伟科技) 7
-      - 加拿大(youtube阿伟科技) 8
-      - 加拿大(youtube阿伟科技) 9
-      - 捷克(youtube阿伟科技)
-      - 法国(youtube阿伟科技)
-      - 英国(youtube阿伟科技)
-      - 英国(youtube阿伟科技) 2
       - 香港(youtube阿伟科技)
       - 香港(youtube阿伟科技) 2
       - 香港(youtube阿伟科技) 3
@@ -1817,59 +639,28 @@ proxy-groups:
       - 香港(youtube阿伟科技) 8
       - 香港(youtube阿伟科技) 9
       - 香港(youtube阿伟科技) 10
-      - 香港(youtube阿伟科技) 11
-      - 香港(youtube阿伟科技) 12
-      - 香港(youtube阿伟科技) 13
-      - 香港(youtube阿伟科技) 14
-      - 香港(youtube阿伟科技) 15
-      - 香港(youtube阿伟科技) 16
-      - 香港(youtube阿伟科技) 17
-      - 香港(youtube阿伟科技) 18
-      - 香港(youtube阿伟科技) 19
-      - 香港(youtube阿伟科技)netflix
-      - 香港(youtube阿伟科技)netflix 2
-      - 香港(youtube阿伟科技)netflix 3
       - 印度(youtube阿伟科技)
       - 日本(youtube阿伟科技)
       - 日本(youtube阿伟科技) 2
       - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 日本(youtube阿伟科技) 7
-      - 日本(youtube阿伟科技) 8
-      - 日本(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技) 10
       - 韩国(youtube阿伟科技)
       - 韩国(youtube阿伟科技) 2
       - 韩国(youtube阿伟科技) 3
       - 韩国(youtube阿伟科技) 4
-      - 韩国(youtube阿伟科技) 5
       - 荷兰(youtube阿伟科技)
       - 荷兰(youtube阿伟科技) 2
       - 荷兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技)
-      - 波兰(youtube阿伟科技) 2
-      - 波兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技) 4
-      - 波兰(youtube阿伟科技) 5
-      - 波兰(youtube阿伟科技) 6
-      - 波兰(youtube阿伟科技) 7
-      - 波兰(youtube阿伟科技) 8
-      - 波兰(youtube阿伟科技) 9
-      - 波兰(youtube阿伟科技) 10
-      - 波兰(youtube阿伟科技) 11
-      - 波兰(youtube阿伟科技) 12
-      - 波兰(youtube阿伟科技) 13
-      - 波兰(youtube阿伟科技) 14
-      - 波兰(youtube阿伟科技) 15
-      - 波兰(youtube阿伟科技) 16
-      - 俄罗斯(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技) 4
+      - 荷兰(youtube阿伟科技) 5
       - 新加坡(youtube阿伟科技)
       - 新加坡(youtube阿伟科技) 2
       - 新加坡(youtube阿伟科技) 3
       - 新加坡(youtube阿伟科技) 4
       - 新加坡(youtube阿伟科技) 5
+      - 新加坡(youtube阿伟科技) 6
+      - 新加坡(youtube阿伟科技) 7
+      - 新加坡(youtube阿伟科技) 8
+      - 新加坡(youtube阿伟科技) 9
       - 台湾(youtube阿伟科技)
       - 台湾(youtube阿伟科技) 2
       - 台湾(youtube阿伟科技) 3
@@ -1879,6 +670,10 @@ proxy-groups:
       - 台湾(youtube阿伟科技) 7
       - 台湾(youtube阿伟科技) 8
       - 台湾(youtube阿伟科技) 9
+      - 台湾(youtube阿伟科技) 10
+      - 台湾(youtube阿伟科技) 11
+      - 台湾(youtube阿伟科技) 12
+      - 台湾(youtube阿伟科技) 13
       - 美国(youtube阿伟科技)
       - 美国(youtube阿伟科技) 2
       - 美国(youtube阿伟科技) 3
@@ -1903,139 +698,8 @@ proxy-groups:
       - 美国(youtube阿伟科技) 22
       - 美国(youtube阿伟科技) 23
       - 美国(youtube阿伟科技) 24
-      - 美国(youtube阿伟科技) 25
-      - 美国(youtube阿伟科技) 26
-      - 美国(youtube阿伟科技) 27
-      - 美国(youtube阿伟科技) 28
-      - 美国(youtube阿伟科技) 29
-      - 美国(youtube阿伟科技) 30
-      - 美国(youtube阿伟科技) 31
-      - 美国(youtube阿伟科技) 32
-      - 美国(youtube阿伟科技) 33
-      - 美国(youtube阿伟科技) 34
-      - 美国(youtube阿伟科技) 35
-      - 美国(youtube阿伟科技) 36
-      - 美国(youtube阿伟科技) 37
-      - 美国(youtube阿伟科技) 38
-      - 美国(youtube阿伟科技) 39
-      - 美国(youtube阿伟科技) 40
-      - 美国(youtube阿伟科技) 41
-      - 美国(youtube阿伟科技) 42
-      - 美国(youtube阿伟科技) 43
-      - 美国(youtube阿伟科技) 44
-      - 美国(youtube阿伟科技) 45
-      - 美国(youtube阿伟科技) 46
-      - 美国(youtube阿伟科技) 47
-      - 迪拜(youtube阿伟科技)
-      - 迪拜(youtube阿伟科技) 2
-      - 柬埔寨(youtube阿伟科技)
-      - 乌克兰(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 48
-      - 美国(youtube阿伟科技) 49
-      - 美国(youtube阿伟科技) 50
-      - 美国(youtube阿伟科技) 51
-      - 美国(youtube阿伟科技) 52
-      - 美国(youtube阿伟科技) 53
-      - 美国(youtube阿伟科技) 54
-      - 美国(youtube阿伟科技) 55
-      - 美国(youtube阿伟科技) 56
-      - 美国(youtube阿伟科技) 57
-      - 美国(youtube阿伟科技) 58
-      - 美国(youtube阿伟科技) 59
-      - 美国(youtube阿伟科技) 60
-      - 美国(youtube阿伟科技) 61
-      - 美国(youtube阿伟科技) 62
-      - 美国(youtube阿伟科技) 63
-      - 美国(youtube阿伟科技) 64
-      - 美国(youtube阿伟科技) 65
-      - 美国(youtube阿伟科技) 66
-      - 美国(youtube阿伟科技) 67
-      - 美国(youtube阿伟科技) 68
-      - 美国(youtube阿伟科技) 69
-      - 美国(youtube阿伟科技) 70
-      - 美国(youtube阿伟科技) 71
-      - 美国(youtube阿伟科技) 72
-      - 美国(youtube阿伟科技) 73
-      - 美国(youtube阿伟科技) 74
-      - 美国(youtube阿伟科技) 75
-      - 美国(youtube阿伟科技) 76
-      - 美国(youtube阿伟科技) 77
-      - 美国(youtube阿伟科技) 78
-      - 美国(youtube阿伟科技) 79
-      - 美国(youtube阿伟科技) 80
-      - 美国(youtube阿伟科技) 81
-      - 美国(youtube阿伟科技) 82
-      - 美国(youtube阿伟科技) 83
-      - 美国(youtube阿伟科技) 84
-      - 美国(youtube阿伟科技) 85
-      - 美国(youtube阿伟科技) 86
-      - 美国(youtube阿伟科技) 87
-      - 美国(youtube阿伟科技) 88
-      - 美国(youtube阿伟科技) 89
-      - 美国(youtube阿伟科技) 90
-      - 美国(youtube阿伟科技) 91
-      - 美国(youtube阿伟科技) 92
-      - 美国(youtube阿伟科技) 93
-      - 美国(youtube阿伟科技) 94
-      - 美国(youtube阿伟科技) 95
-      - 美国(youtube阿伟科技) 96
-      - 美国(youtube阿伟科技) 97
-      - 美国(youtube阿伟科技) 98
-      - 美国(youtube阿伟科技) 99
-      - 美国(youtube阿伟科技) 100
-      - 美国(youtube阿伟科技) 101
-      - 美国(youtube阿伟科技) 102
-      - 美国(youtube阿伟科技) 103
-      - 美国(youtube阿伟科技) 104
-      - 美国(youtube阿伟科技) 105
-      - 美国(youtube阿伟科技) 106
-      - 美国(youtube阿伟科技) 107
-      - 美国(youtube阿伟科技) 108
-      - 美国(youtube阿伟科技) 109
-      - 美国(youtube阿伟科技) 110
-      - 美国(youtube阿伟科技) 111
-      - 美国(youtube阿伟科技) 112
-      - 美国(youtube阿伟科技) 113
-      - 美国(youtube阿伟科技) 114
-      - 美国(youtube阿伟科技) 115
-      - 美国(youtube阿伟科技) 116
-      - 美国(youtube阿伟科技) 117
-      - 美国(youtube阿伟科技) 118
-      - 美国(youtube阿伟科技) 119
-      - 美国(youtube阿伟科技) 120
-      - 美国(youtube阿伟科技) 121
-      - 美国(youtube阿伟科技) 122
-      - 美国(youtube阿伟科技) 123
-      - 美国(youtube阿伟科技) 124
-      - 美国(youtube阿伟科技) 125
-      - 美国(youtube阿伟科技) 126
-      - 美国(youtube阿伟科技) 127
-      - 美国(youtube阿伟科技) 128
-      - 美国(youtube阿伟科技) 129
-      - 美国(youtube阿伟科技) 130
-      - 美国(youtube阿伟科技) 131
-      - 美国(youtube阿伟科技) 132
-      - 美国(youtube阿伟科技) 133
-      - 美国(youtube阿伟科技) 134
-      - 美国(youtube阿伟科技) 135
-      - 美国(youtube阿伟科技) 136
-      - 美国(youtube阿伟科技) 137
-      - 美国(youtube阿伟科技) 138
-      - 美国(youtube阿伟科技) 139
-      - 美国(youtube阿伟科技) 140
-      - 美国(youtube阿伟科技) 141
-      - 美国(youtube阿伟科技) 142
-      - 美国(youtube阿伟科技) 143
-      - 美国(youtube阿伟科技) 144
-      - 美国(youtube阿伟科技) 145
-      - 加拿大(youtube阿伟科技) 10
-      - 加拿大(youtube阿伟科技) 11
-      - 加拿大(youtube阿伟科技) 12
-      - 加拿大(youtube阿伟科技) 13
-      - 加拿大(youtube阿伟科技) 14
-      - 加拿大(youtube阿伟科技) 15
-      - 加拿大(youtube阿伟科技) 16
-      - 1.12|147youtube阿伟科技 6
+      - 瑞士(youtube阿伟科技)
+      - 瑞士(youtube阿伟科技) 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2051,20 +715,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YouTube频道-阿伟科技5.31
+      - YouTube频道-阿伟科技-6.2
+      - 澳大利亚(youtube阿伟科技)
       - 加拿大(youtube阿伟科技)
       - 加拿大(youtube阿伟科技) 2
       - 加拿大(youtube阿伟科技) 3
       - 加拿大(youtube阿伟科技) 4
-      - 加拿大(youtube阿伟科技) 5
-      - 加拿大(youtube阿伟科技) 6
-      - 加拿大(youtube阿伟科技) 7
-      - 加拿大(youtube阿伟科技) 8
-      - 加拿大(youtube阿伟科技) 9
-      - 捷克(youtube阿伟科技)
-      - 法国(youtube阿伟科技)
-      - 英国(youtube阿伟科技)
-      - 英国(youtube阿伟科技) 2
       - 香港(youtube阿伟科技)
       - 香港(youtube阿伟科技) 2
       - 香港(youtube阿伟科技) 3
@@ -2075,59 +731,28 @@ proxy-groups:
       - 香港(youtube阿伟科技) 8
       - 香港(youtube阿伟科技) 9
       - 香港(youtube阿伟科技) 10
-      - 香港(youtube阿伟科技) 11
-      - 香港(youtube阿伟科技) 12
-      - 香港(youtube阿伟科技) 13
-      - 香港(youtube阿伟科技) 14
-      - 香港(youtube阿伟科技) 15
-      - 香港(youtube阿伟科技) 16
-      - 香港(youtube阿伟科技) 17
-      - 香港(youtube阿伟科技) 18
-      - 香港(youtube阿伟科技) 19
-      - 香港(youtube阿伟科技)netflix
-      - 香港(youtube阿伟科技)netflix 2
-      - 香港(youtube阿伟科技)netflix 3
       - 印度(youtube阿伟科技)
       - 日本(youtube阿伟科技)
       - 日本(youtube阿伟科技) 2
       - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 日本(youtube阿伟科技) 7
-      - 日本(youtube阿伟科技) 8
-      - 日本(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技) 10
       - 韩国(youtube阿伟科技)
       - 韩国(youtube阿伟科技) 2
       - 韩国(youtube阿伟科技) 3
       - 韩国(youtube阿伟科技) 4
-      - 韩国(youtube阿伟科技) 5
       - 荷兰(youtube阿伟科技)
       - 荷兰(youtube阿伟科技) 2
       - 荷兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技)
-      - 波兰(youtube阿伟科技) 2
-      - 波兰(youtube阿伟科技) 3
-      - 波兰(youtube阿伟科技) 4
-      - 波兰(youtube阿伟科技) 5
-      - 波兰(youtube阿伟科技) 6
-      - 波兰(youtube阿伟科技) 7
-      - 波兰(youtube阿伟科技) 8
-      - 波兰(youtube阿伟科技) 9
-      - 波兰(youtube阿伟科技) 10
-      - 波兰(youtube阿伟科技) 11
-      - 波兰(youtube阿伟科技) 12
-      - 波兰(youtube阿伟科技) 13
-      - 波兰(youtube阿伟科技) 14
-      - 波兰(youtube阿伟科技) 15
-      - 波兰(youtube阿伟科技) 16
-      - 俄罗斯(youtube阿伟科技)
+      - 荷兰(youtube阿伟科技) 4
+      - 荷兰(youtube阿伟科技) 5
       - 新加坡(youtube阿伟科技)
       - 新加坡(youtube阿伟科技) 2
       - 新加坡(youtube阿伟科技) 3
       - 新加坡(youtube阿伟科技) 4
       - 新加坡(youtube阿伟科技) 5
+      - 新加坡(youtube阿伟科技) 6
+      - 新加坡(youtube阿伟科技) 7
+      - 新加坡(youtube阿伟科技) 8
+      - 新加坡(youtube阿伟科技) 9
       - 台湾(youtube阿伟科技)
       - 台湾(youtube阿伟科技) 2
       - 台湾(youtube阿伟科技) 3
@@ -2137,6 +762,10 @@ proxy-groups:
       - 台湾(youtube阿伟科技) 7
       - 台湾(youtube阿伟科技) 8
       - 台湾(youtube阿伟科技) 9
+      - 台湾(youtube阿伟科技) 10
+      - 台湾(youtube阿伟科技) 11
+      - 台湾(youtube阿伟科技) 12
+      - 台湾(youtube阿伟科技) 13
       - 美国(youtube阿伟科技)
       - 美国(youtube阿伟科技) 2
       - 美国(youtube阿伟科技) 3
@@ -2161,139 +790,8 @@ proxy-groups:
       - 美国(youtube阿伟科技) 22
       - 美国(youtube阿伟科技) 23
       - 美国(youtube阿伟科技) 24
-      - 美国(youtube阿伟科技) 25
-      - 美国(youtube阿伟科技) 26
-      - 美国(youtube阿伟科技) 27
-      - 美国(youtube阿伟科技) 28
-      - 美国(youtube阿伟科技) 29
-      - 美国(youtube阿伟科技) 30
-      - 美国(youtube阿伟科技) 31
-      - 美国(youtube阿伟科技) 32
-      - 美国(youtube阿伟科技) 33
-      - 美国(youtube阿伟科技) 34
-      - 美国(youtube阿伟科技) 35
-      - 美国(youtube阿伟科技) 36
-      - 美国(youtube阿伟科技) 37
-      - 美国(youtube阿伟科技) 38
-      - 美国(youtube阿伟科技) 39
-      - 美国(youtube阿伟科技) 40
-      - 美国(youtube阿伟科技) 41
-      - 美国(youtube阿伟科技) 42
-      - 美国(youtube阿伟科技) 43
-      - 美国(youtube阿伟科技) 44
-      - 美国(youtube阿伟科技) 45
-      - 美国(youtube阿伟科技) 46
-      - 美国(youtube阿伟科技) 47
-      - 迪拜(youtube阿伟科技)
-      - 迪拜(youtube阿伟科技) 2
-      - 柬埔寨(youtube阿伟科技)
-      - 乌克兰(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 48
-      - 美国(youtube阿伟科技) 49
-      - 美国(youtube阿伟科技) 50
-      - 美国(youtube阿伟科技) 51
-      - 美国(youtube阿伟科技) 52
-      - 美国(youtube阿伟科技) 53
-      - 美国(youtube阿伟科技) 54
-      - 美国(youtube阿伟科技) 55
-      - 美国(youtube阿伟科技) 56
-      - 美国(youtube阿伟科技) 57
-      - 美国(youtube阿伟科技) 58
-      - 美国(youtube阿伟科技) 59
-      - 美国(youtube阿伟科技) 60
-      - 美国(youtube阿伟科技) 61
-      - 美国(youtube阿伟科技) 62
-      - 美国(youtube阿伟科技) 63
-      - 美国(youtube阿伟科技) 64
-      - 美国(youtube阿伟科技) 65
-      - 美国(youtube阿伟科技) 66
-      - 美国(youtube阿伟科技) 67
-      - 美国(youtube阿伟科技) 68
-      - 美国(youtube阿伟科技) 69
-      - 美国(youtube阿伟科技) 70
-      - 美国(youtube阿伟科技) 71
-      - 美国(youtube阿伟科技) 72
-      - 美国(youtube阿伟科技) 73
-      - 美国(youtube阿伟科技) 74
-      - 美国(youtube阿伟科技) 75
-      - 美国(youtube阿伟科技) 76
-      - 美国(youtube阿伟科技) 77
-      - 美国(youtube阿伟科技) 78
-      - 美国(youtube阿伟科技) 79
-      - 美国(youtube阿伟科技) 80
-      - 美国(youtube阿伟科技) 81
-      - 美国(youtube阿伟科技) 82
-      - 美国(youtube阿伟科技) 83
-      - 美国(youtube阿伟科技) 84
-      - 美国(youtube阿伟科技) 85
-      - 美国(youtube阿伟科技) 86
-      - 美国(youtube阿伟科技) 87
-      - 美国(youtube阿伟科技) 88
-      - 美国(youtube阿伟科技) 89
-      - 美国(youtube阿伟科技) 90
-      - 美国(youtube阿伟科技) 91
-      - 美国(youtube阿伟科技) 92
-      - 美国(youtube阿伟科技) 93
-      - 美国(youtube阿伟科技) 94
-      - 美国(youtube阿伟科技) 95
-      - 美国(youtube阿伟科技) 96
-      - 美国(youtube阿伟科技) 97
-      - 美国(youtube阿伟科技) 98
-      - 美国(youtube阿伟科技) 99
-      - 美国(youtube阿伟科技) 100
-      - 美国(youtube阿伟科技) 101
-      - 美国(youtube阿伟科技) 102
-      - 美国(youtube阿伟科技) 103
-      - 美国(youtube阿伟科技) 104
-      - 美国(youtube阿伟科技) 105
-      - 美国(youtube阿伟科技) 106
-      - 美国(youtube阿伟科技) 107
-      - 美国(youtube阿伟科技) 108
-      - 美国(youtube阿伟科技) 109
-      - 美国(youtube阿伟科技) 110
-      - 美国(youtube阿伟科技) 111
-      - 美国(youtube阿伟科技) 112
-      - 美国(youtube阿伟科技) 113
-      - 美国(youtube阿伟科技) 114
-      - 美国(youtube阿伟科技) 115
-      - 美国(youtube阿伟科技) 116
-      - 美国(youtube阿伟科技) 117
-      - 美国(youtube阿伟科技) 118
-      - 美国(youtube阿伟科技) 119
-      - 美国(youtube阿伟科技) 120
-      - 美国(youtube阿伟科技) 121
-      - 美国(youtube阿伟科技) 122
-      - 美国(youtube阿伟科技) 123
-      - 美国(youtube阿伟科技) 124
-      - 美国(youtube阿伟科技) 125
-      - 美国(youtube阿伟科技) 126
-      - 美国(youtube阿伟科技) 127
-      - 美国(youtube阿伟科技) 128
-      - 美国(youtube阿伟科技) 129
-      - 美国(youtube阿伟科技) 130
-      - 美国(youtube阿伟科技) 131
-      - 美国(youtube阿伟科技) 132
-      - 美国(youtube阿伟科技) 133
-      - 美国(youtube阿伟科技) 134
-      - 美国(youtube阿伟科技) 135
-      - 美国(youtube阿伟科技) 136
-      - 美国(youtube阿伟科技) 137
-      - 美国(youtube阿伟科技) 138
-      - 美国(youtube阿伟科技) 139
-      - 美国(youtube阿伟科技) 140
-      - 美国(youtube阿伟科技) 141
-      - 美国(youtube阿伟科技) 142
-      - 美国(youtube阿伟科技) 143
-      - 美国(youtube阿伟科技) 144
-      - 美国(youtube阿伟科技) 145
-      - 加拿大(youtube阿伟科技) 10
-      - 加拿大(youtube阿伟科技) 11
-      - 加拿大(youtube阿伟科技) 12
-      - 加拿大(youtube阿伟科技) 13
-      - 加拿大(youtube阿伟科技) 14
-      - 加拿大(youtube阿伟科技) 15
-      - 加拿大(youtube阿伟科技) 16
-      - 1.12|147youtube阿伟科技 6
+      - 瑞士(youtube阿伟科技)
+      - 瑞士(youtube阿伟科技) 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
