@@ -5,747 +5,383 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_11, server: 47.94.85.209, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_16, server: 120.79.75.120, port: 4433, type: vmess, uuid: 77a286f4-0a0b-4ef7-aaef-a4fff60872e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NL_325 | 4.34Mb, server: 213.183.51.171, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: _US_美国, server: 154.3.6.5, port: 40089, type: ssr, cipher: dummy, password: YTagavdbzIHGV, protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: CZ_38, server: v2cross.com.01.v2ce.com, port: 443, type: trojan, password: mMQ6qJB9xbhiRvgg, sni: v2cross.com.01.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: GB_67, server: api.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, sni: api.mjj-home.com, skip-cert-verify: true, udp: true}
-  - {name: HK_70, server: 58.177.92.202, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: HK_74, server: usa.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: HK_75, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: HK_76, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: HK_77, server: jp.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: HK_78, server: ca.liangyuandian.top, port: 443, type: trojan, password: b7bc6b1c-610d-4d39-ad29-18a0d6902348, sni: ca.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: HK_79, server: usa.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: JP_81, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: JP_82, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: JP_92, server: 45.66.134.219, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: RO_128, server: 185.126.116.235, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: RO_129, server: 185.126.116.235, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
-  - {name: SG_141, server: 18.141.8.87, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
-  - {name: SG_147, server: sg.liangyuandian.top, port: 443, type: trojan, password: b7bc6b1c-610d-4d39-ad29-18a0d6902348, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: SG_150, server: uk.liangyuandian.top, port: 443, type: trojan, password: 18304160-03d4-4c55-95c1-586c0a5f3a0a, sni: uk.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: SG_152, server: hk31.ssgnode.ga, port: 443, type: trojan, password: 41742_920c8caa, sni: hk31.ssgnode.ga, skip-cert-verify: true, udp: true}
-  - {name: SG_153, server: de.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: de.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: SG_154, server: 81.90.189.85, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: SG_155, server: jp.liangyuandian.top, port: 443, type: trojan, password: 18304160-03d4-4c55-95c1-586c0a5f3a0a, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: SG_156, server: sg.liangyuandian.top, port: 443, type: trojan, password: 2b2b1b4f-3372-47f7-9f90-26097c7683f9, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: SG_157, server: sg.liangyuandian.top, port: 443, type: trojan, password: b341f309-7e2b-45c4-a316-9e23037e3711, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: SG_158, server: ap.liangyuandian.top, port: 443, type: trojan, password: b341f309-7e2b-45c4-a316-9e23037e3711, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: SG_159, server: ap.liangyuandian.top, port: 443, type: trojan, password: 18304160-03d4-4c55-95c1-586c0a5f3a0a, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: SG_160, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, sni: w12.udpgw.com, skip-cert-verify: true, udp: true}
-  - {name: UA_164, server: cz5.v2ce.com, port: 443, type: trojan, password: HTrovQkamDxNfaD5, sni: cz5.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: UA_165, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, sni: v2cross.com.04.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: US_249, server: listener.freetrade.link, port: 443, type: trojan, password: Z9TS0AeB8S5ZlpFNRea3aypDaXISOyzY67xCO33lF4gKq38jw2uDEnDYRCCxAc, sni: listener.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: US_252, server: hgc.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: hgc.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: US_253, server: tw.softbank.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, sni: tw.softbank.mjj-home.com, skip-cert-verify: true, udp: true}
-  - {name: US_254, server: xioix.gq, port: 443, type: trojan, password: 9b7195ba-f029-4d7d-a728-ece6e0fdc363, sni: xioix.gq, skip-cert-verify: true, udp: true}
-  - {name: US_255, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: US_256, server: sg.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: US_262, server: 170.187.182.212, port: 443, type: trojan, password: a1e12464-9208-4583-bd21-ab6889fdd242, skip-cert-verify: true, udp: true}
-  - {name: US_264, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, sni: cd.rutracker-cn.com, skip-cert-verify: true, udp: true}
-  - {name: US_265, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: US_266, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: US_268, server: 72.167.45.6, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: US_270, server: 72.167.45.6, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
-  - {name: US_274, server: 72.167.45.6, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: US_276, server: singapore.anthoncloud.com, port: 3306, type: trojan, password: 6589ce99-9ff7-3c1b-a744-ca3f4abfe386, sni: singapore.anthoncloud.com, skip-cert-verify: true, udp: true}
-  - {name: US_277, server: share.softbank.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, sni: share.softbank.mjj-home.com, skip-cert-verify: true, udp: true}
-  - {name: US_279, server: 184.168.127.50, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: US_284, server: de.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: de.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: US_285, server: 184.168.127.50, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: US_287, server: permissions.freetrade.link, port: 443, type: trojan, password: lCYI0KOB8exTgp736ac3ZR3DnXwaOFS5pACRuZzSyeYy4N3j2D8qAxF9alDSEC, sni: permissions.freetrade.link, skip-cert-verify: true, udp: true}
-  - {name: AU_14, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: CN_67 | 5.91Mb, server: 113.31.109.30, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_68 | 9.49Mb, server: 117.50.106.86, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_69 | 2.27Mb, server: 113.31.155.165, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_70 | 2.31Mb, server: 106.75.168.104, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_71 |13.34Mb, server: 123.59.87.29, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_73 | 6.59Mb, server: 113.31.155.165, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_74 |11.30Mb, server: 116.129.253.191, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_76 | 1.74Mb, server: 106.75.168.104, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_77 | 9.49Mb, server: 106.75.168.104, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_78, server: js04.balala2016.xyz, port: 20261, type: trojan, password: ED177480-E516-11EA-8B44-BBC4E882BA0B, sni: js04.balala2016.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_79 |17.22Mb, server: 117.50.106.86, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_80 | 3.29Mb, server: 113.31.109.30, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_81 | 2.15Mb, server: 113.31.109.30, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_82, server: 120.132.50.158, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: CN_83 | 3.69Mb, server: 120.132.50.158, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_84 |17.30Mb, server: 120.132.50.158, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_87 | 6.29Mb, server: 123.59.87.29, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_88 |12.73Mb, server: 117.50.106.86, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_89 | 7.18Mb, server: 120.132.50.158, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_91 |34.59Mb, server: 116.129.253.191, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: CN_92, server: 120.132.50.158, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_93 | 6.01Mb, server: 106.75.168.104, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_94, server: 113.31.155.165, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: CN_95 | 7.57Mb, server: 113.31.155.165, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: CN_96 |11.03Mb, server: 113.31.109.30, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: CN_97 |35.05Mb, server: 116.129.253.191, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: CN_99 |10.17Mb, server: 106.75.154.24, port: 3389, type: trojan, password: 22e7ebb2dc8ab524, skip-cert-verify: true, udp: true}
-  - {name: CN_100 |14.61Mb, server: 106.75.168.104, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: CN_102 | 2.02Mb, server: 123.59.87.29, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: CN_103, server: 117.50.106.86, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: NL_310 | 2.77Mb, server: 213.183.51.171, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: SG_415 | 1.70Mb, server: w11.udpgw.com, port: 443, type: trojan, password: f64e69c0-e7b7-11ec-ab81-1239d0255272, sni: w11.udpgw.com, skip-cert-verify: true, udp: true}
-  - {name: TW_428, server: 60.249.3.125, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: TW_429, server: 60.249.3.125, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: TW_431, server: tw01.balala2016.xyz, port: 20261, type: trojan, password: ED177480-E516-11EA-8B44-BBC4E882BA0B, sni: tw01.balala2016.xyz, skip-cert-verify: true, udp: true}
-  - {name: TW_432 |42.44Mb, server: 60.249.3.226, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
-  - {name: TW_434 |48.80Mb, server: 60.249.3.229, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
-  - {name: TW_435 |48.82Mb, server: 60.249.3.231, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: TW_436 |15.94Mb, server: 60.249.3.231, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: TW_437 |45.16Mb, server: 60.249.3.125, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: TW_438 |31.88Mb, server: 60.249.3.229, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
-  - {name: TW_439, server: 60.249.3.125, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: TW_441, server: 60.249.3.125, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: TW_444 |59.13Mb, server: 211.72.35.158, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: TW_447 |56.72Mb, server: 60.249.3.125, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: TW_448 |37.58Mb, server: 60.249.3.226, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: TW_450 |22.74Mb, server: 60.249.3.226, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: TW_451 |26.02Mb, server: 60.249.3.231, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: TW_452 |47.35Mb, server: 60.249.3.226, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: TW_453 |47.16Mb, server: 60.249.3.227, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: TW_454, server: 60.249.3.125, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: TW_455 |44.07Mb, server: 60.249.3.227, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: TW_459 |19.33Mb, server: 60.249.3.227, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: TW_460 |38.23Mb, server: 60.249.3.125, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: TW_464 |43.76Mb, server: 211.72.35.158, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: TW_465 |41.07Mb, server: 211.72.35.158, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: US_1022, server: xieyi.jddg.me, port: 443, type: trojan, password: d716e745-62f8-498e-af97-3a1e096d8c84, sni: xieyi.jddg.me, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1110 |55.59Mb, server: 5.44.249.43, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1111 |59.62Mb, server: 5.44.249.43, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1112 |55.16Mb, server: 5.44.249.43, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1115 |51.65Mb, server: 5.44.249.43, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1116 |54.83Mb, server: 5.44.249.43, port: 3389, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1117 |54.47Mb, server: 5.44.249.43, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: KR_256, server: upay.com, port: 443, type: trojan, password: -40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: upay.com, skip-cert-verify: true, udp: true}
-  - {name: TW_546, server: tw-oo-01.click, port: 443, type: trojan, password: q8uTrVmj95aTrFAa, sni: tw-oo-01.click, skip-cert-verify: true, udp: true}
-  - {name: TW_550, server: tw-oo-01.click, port: 443, type: trojan, password: s6rIg1Mkke73fwZU, sni: tw-oo-01.click, skip-cert-verify: true, udp: true}
-  - {name: US_1156, server: hg.053111.xyz, port: 443, type: trojan, password: d4435b69-3d08-d58a-919f-7f1707150ecb, sni: hg.053111.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_1167, server: us-trojan.bonds.id, port: 443, type: trojan, password: fc39ffa0-2040-11ed-a1ff-1239d0255272, sni: us-trojan.bonds.id, skip-cert-verify: true, udp: true}
-  - {name: AU_29, server: zf1.windowsupdate1.com, port: 50020, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
-  - {name: AU_30, server: zf1.windowsupdate1.com, port: 50010, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
-  - {name: AU_31, server: zf1.windowsupdate1.com, port: 50040, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
-  - {name: AU_35, server: zf1.windowsupdate1.com, port: 50030, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
-  - {name: AU_36, server: zf1.windowsupdate1.com, port: 50080, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
-  - {name: AU_37, server: zf1.windowsupdate1.com, port: 50070, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
-  - {name: BH_39, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
-  - {name: CN_53, server: 106.75.239.176, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: true, udp: true}
-  - {name: CN_54, server: 223.111.202.148, port: 30070, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
-  - {name: CN_56, server: 106.75.154.24, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, skip-cert-verify: true, udp: true}
-  - {name: CN_57, server: 120.132.12.22, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: true, udp: true}
-  - {name: CN_58, server: 106.75.173.173, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: CN_59, server: v1r.centaur.network, port: 16805, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: CN_60, server: 106.75.240.227, port: 3389, type: trojan, password: 3c4e10af98c30972, skip-cert-verify: true, udp: true}
-  - {name: CN_61, server: 223.111.202.148, port: 30010, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
-  - {name: CN_62, server: 42.240.131.142, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: true, udp: true}
-  - {name: CN_63, server: 223.111.202.148, port: 30020, type: trojan, password: ae7cc604-d970-4200-9a9b-eb45087b4fc1, skip-cert-verify: true, udp: true}
-  - {name: CN_64, server: 120.132.12.54, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: CN_65, server: 106.75.128.213, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: CN_66, server: 223.111.202.148, port: 30030, type: trojan, password: ae7cc604-d970-4200-9a9b-eb45087b4fc1, skip-cert-verify: true, udp: true}
-  - {name: CN_67, server: 106.75.154.24, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: CN_68, server: p3r.centaur.network, port: 16802, type: trojan, password: e199b516-00f9-469e-9ee5-fe609b4bc34e, sni: p3r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: CN_69, server: 223.111.202.148, port: 30040, type: trojan, password: ae7cc604-d970-4200-9a9b-eb45087b4fc1, skip-cert-verify: true, udp: true}
-  - {name: CN_70, server: v1r.centaur.network, port: 16803, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: CN_71, server: v1r.centaur.network, port: 16801, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: CN_72, server: v1r.centaur.network, port: 16804, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: CN_73, server: v1r.centaur.network, port: 16806, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: CN_74, server: v1r.centaur.network, port: 16802, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
-  - {name: CN_75, server: 223.111.202.148, port: 30020, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
-  - {name: CN_76, server: 223.111.202.148, port: 30100, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
-  - {name: CN_77, server: 116.129.253.191, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, skip-cert-verify: true, udp: true}
-  - {name: CN_78 2, server: 223.111.202.148, port: 30030, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
-  - {name: CZ_79, server: 92.118.149.85, port: 443, type: trojan, password: 3gLlCYBipVwr6Y5F, skip-cert-verify: true, udp: true}
-  - {name: DE_91, server: 89.163.220.99, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
-  - {name: DE_92, server: 89.163.220.99, port: 28443, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
-  - {name: SG_191, server: ap.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: TW_196, server: 60.249.3.125, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: TW_198, server: 60.249.3.231, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: TW_199, server: 60.249.3.230, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: TW_200, server: 60.249.3.125, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: true, udp: true}
-  - {name: TW_201, server: 211.72.35.155, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
-  - {name: TW_202, server: 211.72.35.158, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: TW_203, server: 211.72.35.157, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: TW_205, server: 211.72.35.154, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: TW_206, server: 60.249.3.226, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: true, udp: true}
-  - {name: TW_207, server: 60.249.3.231, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: TW_208, server: 60.249.3.226, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: TW_211, server: 60.249.3.229, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: TW_212, server: 211.72.35.155, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: TW_213, server: 211.72.35.156, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: TW_214, server: 211.72.35.157, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: TW_215, server: 60.249.3.227, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: TW_216, server: 60.249.3.228, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: US_289, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: US_294, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: US_300 |27.67Mb, server: 173.82.212.183, port: 945, type: trojan, password: admin, skip-cert-verify: true, udp: true}
-  - {name: US_301, server: ar.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: ar.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: US_303, server: ap.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: US_308, server: jp.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: US_312, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: US_317, server: 51.81.82.15, port: 443, type: trojan, password: c2b0a060-44b0-11ed-ad2e-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: AR+阿根廷(youtube阿伟科技), server: gy.linghun3.xyz, port: 40063, type: ss, cipher: aes-128-gcm, password: 84d27876-c876-483e-aece-68d2a92d6605, udp: true}
+  - {name: AU 澳大利亚(youtube阿伟科技), server: 139.99.236.163, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
+  - {name: BR 巴西(youtube阿伟科技), server: 20012.purefast2.com, port: 20012, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: CA 加拿大(youtube阿伟科技), server: ca.xlkjjs.top, port: 16268, type: vmess, uuid: 3d69d36c-b54f-37bc-98cb-b45e4ca808eb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca.xlkjjs.top}}, udp: true}
+  - {name: CA 加拿大(youtube阿伟科技) 2, server: ca.xlkjjs.top, port: 16268, type: vmess, uuid: ff40b10a-4f0e-3cba-9123-808c931cbd60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca.xlkjjs.top}}, udp: true}
+  - {name: DE 德国(youtube阿伟科技), server: cdn.chigua.tk, port: 443, type: vmess, uuid: 25c3f31d-f287-4cf4-9271-ec6985cab8e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /25c3f31d, headers: {Host: pendant-de-purposes-alert.trycloudflare.com}}, udp: true}
+  - {name: DE 德国(youtube阿伟科技) 2, server: 20013.purefast2.com, port: 20013, type: trojan, password: b13deccf-70ca-3303-bcee-a13c8266b681, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: FR 法国(youtube阿伟科技), server: 141.101.115.111, port: 443, type: vmess, uuid: f33957e8-372e-4fba-99ed-f4db32cce9e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: fr2.cfcdn4.xyz}}, udp: true}
+  - {name: FR 法国(youtube阿伟科技) 2, server: cdn.chigua.tk, port: 443, type: vmess, uuid: 3d683981-c68c-43ca-a91b-ae71bfcbf365, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /3d683981, headers: {Host: philip-did-disclaimers-bill.trycloudflare.com}}, udp: true}
+  - {name: FR 法国(youtube阿伟科技) 3, server: 20010.purefast2.com, port: 20010, type: trojan, password: b13deccf-70ca-3303-bcee-a13c8266b681, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: HK 香港(youtube阿伟科技), server: 16.162.24.200, port: 20456, type: vmess, uuid: dd5637ac-b9f7-45a8-85ec-dd25ab5e7f35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 16.162.24.200}}, udp: true}
+  - {name: HK+香港(youtube阿伟科技), server: hk1.linghun3.xyz, port: 40000, type: ss, cipher: aes-256-gcm, password: 84d27876-c876-483e-aece-68d2a92d6605, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 2, server: cu.kapoknode.com, port: 25897, type: vmess, uuid: e1a70dd5-2576-4bd9-a2fb-861bc0688c1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 3, server: 20014.purefast2.com, port: 20014, type: trojan, password: b13deccf-70ca-3303-bcee-a13c8266b681, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: ID 印尼(youtube阿伟科技), server: 198.41.203.3, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.cfcdn3.xyz}}, udp: true}
+  - {name: ID 印尼(youtube阿伟科技) 2, server: 141.101.114.25, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
+  - {name: ID 印尼(youtube阿伟科技) 3, server: 198.41.203.5, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技), server: jp02-vm0.entry.srthdw.art, port: 449, type: vmess, uuid: 348f509e-159b-324a-a10f-0db67e4a48c9, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp02-vm0.entry.srthdw.art}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 2, server: jp04-vm0.entry.srthdw.art, port: 449, type: vmess, uuid: d972fe81-103b-3258-94ee-04453f5ef98c, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: bf419d5f59f7d0.windowsupdate.com}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 3, server: 35.78.192.67, port: 40236, type: vmess, uuid: dd5637ac-b9f7-45a8-85ec-dd25ab5e7f35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 35.78.192.67}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 4, server: 20004.purefast2.com, port: 20004, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 5, server: jp06-vm0.entry.srthdw.art, port: 447, type: vmess, uuid: e1b7ab8a-c4a8-3214-a2fe-86441de44d07, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp06-vm0.entry.srthdw.art}}, udp: true}
+  - {name: KR 韩国(youtube阿伟科技), server: 20002.purefast2.com, port: 20002, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: PL 波兰(youtube阿伟科技), server: cdn.chigua.tk, port: 443, type: vmess, uuid: 298026f0-7574-4709-81bb-eae1298b4de1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /298026f0, headers: {Host: buttons-lcd-fa-investment.trycloudflare.com}}, udp: true}
+  - {name: RU 俄罗斯(youtube阿伟科技), server: 6.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 6.72img.xyz}}, udp: true}
+  - {name: SG 新加坡(youtube阿伟科技), server: 20015.purefast2.com, port: 20015, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: SG 新加坡(youtube阿伟科技) 2, server: 20006.purefast2.com, port: 20006, type: trojan, password: b13deccf-70ca-3303-bcee-a13c8266b681, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: TUR 土耳其(youtube阿伟科技), server: 20008.purefast2.com, port: 20008, type: trojan, password: b13deccf-70ca-3303-bcee-a13c8266b681, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: TUR+土耳其(youtube阿伟科技), server: gy.linghun3.xyz, port: 40065, type: ss, cipher: aes-128-gcm, password: 84d27876-c876-483e-aece-68d2a92d6605, udp: true}
+  - {name: TW+台湾(youtube阿伟科技), server: tw2.linghun3.xyz, port: 40005, type: ss, cipher: aes-128-gcm, password: 84d27876-c876-483e-aece-68d2a92d6605, udp: true}
+  - {name: TW 台湾(youtube阿伟科技), server: 20001.purefast2.com, port: 20001, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: UK 英国(youtube阿伟科技), server: 20009.purefast2.com, port: 20009, type: trojan, password: b13deccf-70ca-3303-bcee-a13c8266b681, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: US 美国(youtube阿伟科技), server: 172.64.153.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 2, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 3, server: 141.101.114.120, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.cfcdn3.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 4, server: 104.29.64.25, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 5, server: 141.101.114.200, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 6, server: 141.101.115.100, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /VHONOFZ3, headers: {Host: lg1.cfcdn2.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 7, server: 172.64.154.222, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg1.cfcdn1.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 8, server: 141.101.114.133, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg1.cfcdn1.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 9, server: 141.101.115.136, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg1.cfcdn1.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 10, server: 198.41.212.145, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.cfcdn3.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 11, server: 172.64.153.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 12, server: www.gov.hk, port: 2086, type: vmess, uuid: 1ab91f18-6168-4cb6-c9ca-2c3c7158fe4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aries, headers: {Host: linus.cloudflare.quest}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 13, server: 141.101.114.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 14, server: 141.101.115.133, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg1.cfcdn1.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 15, server: 198.41.212.144, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 16, server: 141.101.114.120, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 17, server: 141.101.115.120, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.cfcdn3.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 18, server: 141.101.114.17, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 19, server: 141.101.114.120, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 20, server: 141.101.114.102, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 21, server: 52.206.12.62, port: 20456, type: vmess, uuid: dd5637ac-b9f7-45a8-85ec-dd25ab5e7f35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 52.206.12.62}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 22, server: 128.14.140.254, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 23, server: 20003.purefast2.com, port: 20003, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: US 美国(youtube阿伟科技) 24, server: 198.41.203.1, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /VHONOFZ3, headers: {Host: lg1.cfcdn2.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 25, server: 141.101.115.121, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 26, server: cdn.chigua.tk, port: 443, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: v2.chigua.tk}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 27, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxusovz2.fovi.tk}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 28, server: 141.101.115.120, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 29, server: 128.14.140.254, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 30, server: 17.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 17.72img.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 31, server: 141.101.115.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}, udp: true}
+  - {name: VN 越南(youtube阿伟科技), server: v2vn1.tututu4.one, port: 443, type: vmess, uuid: e5e55646-d0bf-3ccd-9201-8eb6c6ed2d3c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tu, headers: {Host: v2vn1.tututu4.one}}, udp: true}
+  - {name: VN 越南(youtube阿伟科技) 2, server: 20007.purefast2.com, port: 20007, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: 1078_荷兰-302.4KB_油管阿伟科技1, server: 213.183.51.171, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: 1084_荷兰-393.4KB_油管阿伟科技2, server: 213.183.51.171, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: A-【2022-10-13】已更新_1_油管阿伟科技3, server: eduall.buzzline.org, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 俄罗斯C_1_油管阿伟科技4, server: eduall.buzzline.org, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 意大利_油管阿伟科技5, server: eduall.buzzline.org, port: 612, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 韩国高速A_油管阿伟科技6, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港HKBND_油管阿伟科技7, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港HKTA_1_油管阿伟科技8, server: 1cnrelay.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港HKTC_油管阿伟科技9, server: shgez3.eucdurl.me, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 油管阿伟科技_油管阿伟科技1, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: VFdwT2JWcHRVVE5OVkVWMVlsZHNhbU50T1hwaU1sb3dURzFPZG1KUg, udp: true}
+  - {name: 油管阿伟科技_油管阿伟科技2, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: VFdwT2JWcHRVVE5OVkVWMVlsZHNhbU50T1hwaU1sb3dURzFPZG1KUg, udp: true}
+  - {name: 台湾F_油管阿伟科技12, server: cntwlayer1.standurl.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 台湾G_油管阿伟科技13, server: cntwlayer1.standurl.xyz, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港HKTA_2_油管阿伟科技14, server: 1cnrelay.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 俄罗斯C_2_油管阿伟科技15, server: eduall.buzzline.org, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 油管阿伟科技_油管阿伟科技3, server: eduall.buzzline.org, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 西班牙_油管阿伟科技17, server: eduall.buzzline.org, port: 610, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港HKTN_油管阿伟科技18, server: initest08.initcloud.pro, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 英国iplayerA_油管阿伟科技19, server: eduall.buzzline.org, port: 613, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 1046_荷兰-302.7KB_(youtube阿伟科技)5, server: 213.183.51.171, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
+  - {name: 韩国高速A_(youtube阿伟科技)13, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港HKBND_(youtube阿伟科技)20, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港HKTE_(youtube阿伟科技)22, server: 2cnrelay2.initcloud.pro, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港HKTI_(youtube阿伟科技)25, server: inlayer7.standurls.co, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 英国iplayerB_(youtube阿伟科技)33, server: eduall.buzzline.org, port: 614, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 8663:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_11
-      - CN_16
-      - NL_325 | 4.34Mb
-      - _US_美国
-      - CZ_38
-      - GB_67
-      - HK_70
-      - HK_74
-      - HK_75
-      - HK_76
-      - HK_77
-      - HK_78
-      - HK_79
-      - JP_81
-      - JP_82
-      - JP_92
-      - RO_128
-      - RO_129
-      - SG_141
-      - SG_147
-      - SG_150
-      - SG_152
-      - SG_153
-      - SG_154
-      - SG_155
-      - SG_156
-      - SG_157
-      - SG_158
-      - SG_159
-      - SG_160
-      - UA_164
-      - UA_165
-      - US_249
-      - US_252
-      - US_253
-      - US_254
-      - US_255
-      - US_256
-      - US_262
-      - US_264
-      - US_265
-      - US_266
-      - US_268
-      - US_270
-      - US_274
-      - US_276
-      - US_277
-      - US_279
-      - US_284
-      - US_285
-      - US_287
-      - AU_14
-      - CN_67 | 5.91Mb
-      - CN_68 | 9.49Mb
-      - CN_69 | 2.27Mb
-      - CN_70 | 2.31Mb
-      - CN_71 |13.34Mb
-      - CN_73 | 6.59Mb
-      - CN_74 |11.30Mb
-      - CN_76 | 1.74Mb
-      - CN_77 | 9.49Mb
-      - CN_78
-      - CN_79 |17.22Mb
-      - CN_80 | 3.29Mb
-      - CN_81 | 2.15Mb
-      - CN_82
-      - CN_83 | 3.69Mb
-      - CN_84 |17.30Mb
-      - CN_87 | 6.29Mb
-      - CN_88 |12.73Mb
-      - CN_89 | 7.18Mb
-      - CN_91 |34.59Mb
-      - CN_92
-      - CN_93 | 6.01Mb
-      - CN_94
-      - CN_95 | 7.57Mb
-      - CN_96 |11.03Mb
-      - CN_97 |35.05Mb
-      - CN_99 |10.17Mb
-      - CN_100 |14.61Mb
-      - CN_102 | 2.02Mb
-      - CN_103
-      - NL_310 | 2.77Mb
-      - SG_415 | 1.70Mb
-      - TW_428
-      - TW_429
-      - TW_431
-      - TW_432 |42.44Mb
-      - TW_434 |48.80Mb
-      - TW_435 |48.82Mb
-      - TW_436 |15.94Mb
-      - TW_437 |45.16Mb
-      - TW_438 |31.88Mb
-      - TW_439
-      - TW_441
-      - TW_444 |59.13Mb
-      - TW_447 |56.72Mb
-      - TW_448 |37.58Mb
-      - TW_450 |22.74Mb
-      - TW_451 |26.02Mb
-      - TW_452 |47.35Mb
-      - TW_453 |47.16Mb
-      - TW_454
-      - TW_455 |44.07Mb
-      - TW_459 |19.33Mb
-      - TW_460 |38.23Mb
-      - TW_464 |43.76Mb
-      - TW_465 |41.07Mb
-      - US_1022
-      - ZZ_1110 |55.59Mb
-      - ZZ_1111 |59.62Mb
-      - ZZ_1112 |55.16Mb
-      - ZZ_1115 |51.65Mb
-      - ZZ_1116 |54.83Mb
-      - ZZ_1117 |54.47Mb
-      - KR_256
-      - TW_546
-      - TW_550
-      - US_1156
-      - US_1167
-      - AU_29
-      - AU_30
-      - AU_31
-      - AU_35
-      - AU_36
-      - AU_37
-      - BH_39
-      - CN_53
-      - CN_54
-      - CN_56
-      - CN_57
-      - CN_58
-      - CN_59
-      - CN_60
-      - CN_61
-      - CN_62
-      - CN_63
-      - CN_64
-      - CN_65
-      - CN_66
-      - CN_67
-      - CN_68
-      - CN_69
-      - CN_70
-      - CN_71
-      - CN_72
-      - CN_73
-      - CN_74
-      - CN_75
-      - CN_76
-      - CN_77
-      - CN_78 2
-      - CZ_79
-      - DE_91
-      - DE_92
-      - SG_191
-      - TW_196
-      - TW_198
-      - TW_199
-      - TW_200
-      - TW_201
-      - TW_202
-      - TW_203
-      - TW_205
-      - TW_206
-      - TW_207
-      - TW_208
-      - TW_211
-      - TW_212
-      - TW_213
-      - TW_214
-      - TW_215
-      - TW_216
-      - US_289
-      - US_294
-      - US_300 |27.67Mb
-      - US_301
-      - US_303
-      - US_308
-      - US_312
-      - US_317
+      - AR+阿根廷(youtube阿伟科技)
+      - AU 澳大利亚(youtube阿伟科技)
+      - BR 巴西(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - HK 香港(youtube阿伟科技)
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 3
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
+      - ID 印尼(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技)
+      - PL 波兰(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技)
+      - TUR+土耳其(youtube阿伟科技)
+      - TW+台湾(youtube阿伟科技)
+      - TW 台湾(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
+      - US 美国(youtube阿伟科技) 19
+      - US 美国(youtube阿伟科技) 20
+      - US 美国(youtube阿伟科技) 21
+      - US 美国(youtube阿伟科技) 22
+      - US 美国(youtube阿伟科技) 23
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - VN 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 2
+      - 1078_荷兰-302.4KB_油管阿伟科技1
+      - 1084_荷兰-393.4KB_油管阿伟科技2
+      - A-【2022-10-13】已更新_1_油管阿伟科技3
+      - 俄罗斯C_1_油管阿伟科技4
+      - 意大利_油管阿伟科技5
+      - 韩国高速A_油管阿伟科技6
+      - 香港HKBND_油管阿伟科技7
+      - 香港HKTA_1_油管阿伟科技8
+      - 香港HKTC_油管阿伟科技9
+      - 油管阿伟科技_油管阿伟科技1
+      - 油管阿伟科技_油管阿伟科技2
+      - 台湾F_油管阿伟科技12
+      - 台湾G_油管阿伟科技13
+      - 香港HKTA_2_油管阿伟科技14
+      - 俄罗斯C_2_油管阿伟科技15
+      - 油管阿伟科技_油管阿伟科技3
+      - 西班牙_油管阿伟科技17
+      - 香港HKTN_油管阿伟科技18
+      - 英国iplayerA_油管阿伟科技19
+      - 1046_荷兰-302.7KB_(youtube阿伟科技)5
+      - 韩国高速A_(youtube阿伟科技)13
+      - 香港HKBND_(youtube阿伟科技)20
+      - 香港HKTE_(youtube阿伟科技)22
+      - 香港HKTI_(youtube阿伟科技)25
+      - 英国iplayerB_(youtube阿伟科技)33
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_11
-      - CN_16
-      - NL_325 | 4.34Mb
-      - _US_美国
-      - CZ_38
-      - GB_67
-      - HK_70
-      - HK_74
-      - HK_75
-      - HK_76
-      - HK_77
-      - HK_78
-      - HK_79
-      - JP_81
-      - JP_82
-      - JP_92
-      - RO_128
-      - RO_129
-      - SG_141
-      - SG_147
-      - SG_150
-      - SG_152
-      - SG_153
-      - SG_154
-      - SG_155
-      - SG_156
-      - SG_157
-      - SG_158
-      - SG_159
-      - SG_160
-      - UA_164
-      - UA_165
-      - US_249
-      - US_252
-      - US_253
-      - US_254
-      - US_255
-      - US_256
-      - US_262
-      - US_264
-      - US_265
-      - US_266
-      - US_268
-      - US_270
-      - US_274
-      - US_276
-      - US_277
-      - US_279
-      - US_284
-      - US_285
-      - US_287
-      - AU_14
-      - CN_67 | 5.91Mb
-      - CN_68 | 9.49Mb
-      - CN_69 | 2.27Mb
-      - CN_70 | 2.31Mb
-      - CN_71 |13.34Mb
-      - CN_73 | 6.59Mb
-      - CN_74 |11.30Mb
-      - CN_76 | 1.74Mb
-      - CN_77 | 9.49Mb
-      - CN_78
-      - CN_79 |17.22Mb
-      - CN_80 | 3.29Mb
-      - CN_81 | 2.15Mb
-      - CN_82
-      - CN_83 | 3.69Mb
-      - CN_84 |17.30Mb
-      - CN_87 | 6.29Mb
-      - CN_88 |12.73Mb
-      - CN_89 | 7.18Mb
-      - CN_91 |34.59Mb
-      - CN_92
-      - CN_93 | 6.01Mb
-      - CN_94
-      - CN_95 | 7.57Mb
-      - CN_96 |11.03Mb
-      - CN_97 |35.05Mb
-      - CN_99 |10.17Mb
-      - CN_100 |14.61Mb
-      - CN_102 | 2.02Mb
-      - CN_103
-      - NL_310 | 2.77Mb
-      - SG_415 | 1.70Mb
-      - TW_428
-      - TW_429
-      - TW_431
-      - TW_432 |42.44Mb
-      - TW_434 |48.80Mb
-      - TW_435 |48.82Mb
-      - TW_436 |15.94Mb
-      - TW_437 |45.16Mb
-      - TW_438 |31.88Mb
-      - TW_439
-      - TW_441
-      - TW_444 |59.13Mb
-      - TW_447 |56.72Mb
-      - TW_448 |37.58Mb
-      - TW_450 |22.74Mb
-      - TW_451 |26.02Mb
-      - TW_452 |47.35Mb
-      - TW_453 |47.16Mb
-      - TW_454
-      - TW_455 |44.07Mb
-      - TW_459 |19.33Mb
-      - TW_460 |38.23Mb
-      - TW_464 |43.76Mb
-      - TW_465 |41.07Mb
-      - US_1022
-      - ZZ_1110 |55.59Mb
-      - ZZ_1111 |59.62Mb
-      - ZZ_1112 |55.16Mb
-      - ZZ_1115 |51.65Mb
-      - ZZ_1116 |54.83Mb
-      - ZZ_1117 |54.47Mb
-      - KR_256
-      - TW_546
-      - TW_550
-      - US_1156
-      - US_1167
-      - AU_29
-      - AU_30
-      - AU_31
-      - AU_35
-      - AU_36
-      - AU_37
-      - BH_39
-      - CN_53
-      - CN_54
-      - CN_56
-      - CN_57
-      - CN_58
-      - CN_59
-      - CN_60
-      - CN_61
-      - CN_62
-      - CN_63
-      - CN_64
-      - CN_65
-      - CN_66
-      - CN_67
-      - CN_68
-      - CN_69
-      - CN_70
-      - CN_71
-      - CN_72
-      - CN_73
-      - CN_74
-      - CN_75
-      - CN_76
-      - CN_77
-      - CN_78 2
-      - CZ_79
-      - DE_91
-      - DE_92
-      - SG_191
-      - TW_196
-      - TW_198
-      - TW_199
-      - TW_200
-      - TW_201
-      - TW_202
-      - TW_203
-      - TW_205
-      - TW_206
-      - TW_207
-      - TW_208
-      - TW_211
-      - TW_212
-      - TW_213
-      - TW_214
-      - TW_215
-      - TW_216
-      - US_289
-      - US_294
-      - US_300 |27.67Mb
-      - US_301
-      - US_303
-      - US_308
-      - US_312
-      - US_317
+      - AR+阿根廷(youtube阿伟科技)
+      - AU 澳大利亚(youtube阿伟科技)
+      - BR 巴西(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - HK 香港(youtube阿伟科技)
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 3
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
+      - ID 印尼(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技)
+      - PL 波兰(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技)
+      - TUR+土耳其(youtube阿伟科技)
+      - TW+台湾(youtube阿伟科技)
+      - TW 台湾(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
+      - US 美国(youtube阿伟科技) 19
+      - US 美国(youtube阿伟科技) 20
+      - US 美国(youtube阿伟科技) 21
+      - US 美国(youtube阿伟科技) 22
+      - US 美国(youtube阿伟科技) 23
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - VN 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 2
+      - 1078_荷兰-302.4KB_油管阿伟科技1
+      - 1084_荷兰-393.4KB_油管阿伟科技2
+      - A-【2022-10-13】已更新_1_油管阿伟科技3
+      - 俄罗斯C_1_油管阿伟科技4
+      - 意大利_油管阿伟科技5
+      - 韩国高速A_油管阿伟科技6
+      - 香港HKBND_油管阿伟科技7
+      - 香港HKTA_1_油管阿伟科技8
+      - 香港HKTC_油管阿伟科技9
+      - 油管阿伟科技_油管阿伟科技1
+      - 油管阿伟科技_油管阿伟科技2
+      - 台湾F_油管阿伟科技12
+      - 台湾G_油管阿伟科技13
+      - 香港HKTA_2_油管阿伟科技14
+      - 俄罗斯C_2_油管阿伟科技15
+      - 油管阿伟科技_油管阿伟科技3
+      - 西班牙_油管阿伟科技17
+      - 香港HKTN_油管阿伟科技18
+      - 英国iplayerA_油管阿伟科技19
+      - 1046_荷兰-302.7KB_(youtube阿伟科技)5
+      - 韩国高速A_(youtube阿伟科技)13
+      - 香港HKBND_(youtube阿伟科技)20
+      - 香港HKTE_(youtube阿伟科技)22
+      - 香港HKTI_(youtube阿伟科技)25
+      - 英国iplayerB_(youtube阿伟科技)33
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_11
-      - CN_16
-      - NL_325 | 4.34Mb
-      - _US_美国
-      - CZ_38
-      - GB_67
-      - HK_70
-      - HK_74
-      - HK_75
-      - HK_76
-      - HK_77
-      - HK_78
-      - HK_79
-      - JP_81
-      - JP_82
-      - JP_92
-      - RO_128
-      - RO_129
-      - SG_141
-      - SG_147
-      - SG_150
-      - SG_152
-      - SG_153
-      - SG_154
-      - SG_155
-      - SG_156
-      - SG_157
-      - SG_158
-      - SG_159
-      - SG_160
-      - UA_164
-      - UA_165
-      - US_249
-      - US_252
-      - US_253
-      - US_254
-      - US_255
-      - US_256
-      - US_262
-      - US_264
-      - US_265
-      - US_266
-      - US_268
-      - US_270
-      - US_274
-      - US_276
-      - US_277
-      - US_279
-      - US_284
-      - US_285
-      - US_287
-      - AU_14
-      - CN_67 | 5.91Mb
-      - CN_68 | 9.49Mb
-      - CN_69 | 2.27Mb
-      - CN_70 | 2.31Mb
-      - CN_71 |13.34Mb
-      - CN_73 | 6.59Mb
-      - CN_74 |11.30Mb
-      - CN_76 | 1.74Mb
-      - CN_77 | 9.49Mb
-      - CN_78
-      - CN_79 |17.22Mb
-      - CN_80 | 3.29Mb
-      - CN_81 | 2.15Mb
-      - CN_82
-      - CN_83 | 3.69Mb
-      - CN_84 |17.30Mb
-      - CN_87 | 6.29Mb
-      - CN_88 |12.73Mb
-      - CN_89 | 7.18Mb
-      - CN_91 |34.59Mb
-      - CN_92
-      - CN_93 | 6.01Mb
-      - CN_94
-      - CN_95 | 7.57Mb
-      - CN_96 |11.03Mb
-      - CN_97 |35.05Mb
-      - CN_99 |10.17Mb
-      - CN_100 |14.61Mb
-      - CN_102 | 2.02Mb
-      - CN_103
-      - NL_310 | 2.77Mb
-      - SG_415 | 1.70Mb
-      - TW_428
-      - TW_429
-      - TW_431
-      - TW_432 |42.44Mb
-      - TW_434 |48.80Mb
-      - TW_435 |48.82Mb
-      - TW_436 |15.94Mb
-      - TW_437 |45.16Mb
-      - TW_438 |31.88Mb
-      - TW_439
-      - TW_441
-      - TW_444 |59.13Mb
-      - TW_447 |56.72Mb
-      - TW_448 |37.58Mb
-      - TW_450 |22.74Mb
-      - TW_451 |26.02Mb
-      - TW_452 |47.35Mb
-      - TW_453 |47.16Mb
-      - TW_454
-      - TW_455 |44.07Mb
-      - TW_459 |19.33Mb
-      - TW_460 |38.23Mb
-      - TW_464 |43.76Mb
-      - TW_465 |41.07Mb
-      - US_1022
-      - ZZ_1110 |55.59Mb
-      - ZZ_1111 |59.62Mb
-      - ZZ_1112 |55.16Mb
-      - ZZ_1115 |51.65Mb
-      - ZZ_1116 |54.83Mb
-      - ZZ_1117 |54.47Mb
-      - KR_256
-      - TW_546
-      - TW_550
-      - US_1156
-      - US_1167
-      - AU_29
-      - AU_30
-      - AU_31
-      - AU_35
-      - AU_36
-      - AU_37
-      - BH_39
-      - CN_53
-      - CN_54
-      - CN_56
-      - CN_57
-      - CN_58
-      - CN_59
-      - CN_60
-      - CN_61
-      - CN_62
-      - CN_63
-      - CN_64
-      - CN_65
-      - CN_66
-      - CN_67
-      - CN_68
-      - CN_69
-      - CN_70
-      - CN_71
-      - CN_72
-      - CN_73
-      - CN_74
-      - CN_75
-      - CN_76
-      - CN_77
-      - CN_78 2
-      - CZ_79
-      - DE_91
-      - DE_92
-      - SG_191
-      - TW_196
-      - TW_198
-      - TW_199
-      - TW_200
-      - TW_201
-      - TW_202
-      - TW_203
-      - TW_205
-      - TW_206
-      - TW_207
-      - TW_208
-      - TW_211
-      - TW_212
-      - TW_213
-      - TW_214
-      - TW_215
-      - TW_216
-      - US_289
-      - US_294
-      - US_300 |27.67Mb
-      - US_301
-      - US_303
-      - US_308
-      - US_312
-      - US_317
+      - AR+阿根廷(youtube阿伟科技)
+      - AU 澳大利亚(youtube阿伟科技)
+      - BR 巴西(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - HK 香港(youtube阿伟科技)
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 3
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
+      - ID 印尼(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技)
+      - PL 波兰(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技)
+      - TUR+土耳其(youtube阿伟科技)
+      - TW+台湾(youtube阿伟科技)
+      - TW 台湾(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
+      - US 美国(youtube阿伟科技) 19
+      - US 美国(youtube阿伟科技) 20
+      - US 美国(youtube阿伟科技) 21
+      - US 美国(youtube阿伟科技) 22
+      - US 美国(youtube阿伟科技) 23
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - VN 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 2
+      - 1078_荷兰-302.4KB_油管阿伟科技1
+      - 1084_荷兰-393.4KB_油管阿伟科技2
+      - A-【2022-10-13】已更新_1_油管阿伟科技3
+      - 俄罗斯C_1_油管阿伟科技4
+      - 意大利_油管阿伟科技5
+      - 韩国高速A_油管阿伟科技6
+      - 香港HKBND_油管阿伟科技7
+      - 香港HKTA_1_油管阿伟科技8
+      - 香港HKTC_油管阿伟科技9
+      - 油管阿伟科技_油管阿伟科技1
+      - 油管阿伟科技_油管阿伟科技2
+      - 台湾F_油管阿伟科技12
+      - 台湾G_油管阿伟科技13
+      - 香港HKTA_2_油管阿伟科技14
+      - 俄罗斯C_2_油管阿伟科技15
+      - 油管阿伟科技_油管阿伟科技3
+      - 西班牙_油管阿伟科技17
+      - 香港HKTN_油管阿伟科技18
+      - 英国iplayerA_油管阿伟科技19
+      - 1046_荷兰-302.7KB_(youtube阿伟科技)5
+      - 韩国高速A_(youtube阿伟科技)13
+      - 香港HKBND_(youtube阿伟科技)20
+      - 香港HKTE_(youtube阿伟科技)22
+      - 香港HKTI_(youtube阿伟科技)25
+      - 英国iplayerB_(youtube阿伟科技)33
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -764,751 +400,403 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_11
-      - CN_16
-      - NL_325 | 4.34Mb
-      - _US_美国
-      - CZ_38
-      - GB_67
-      - HK_70
-      - HK_74
-      - HK_75
-      - HK_76
-      - HK_77
-      - HK_78
-      - HK_79
-      - JP_81
-      - JP_82
-      - JP_92
-      - RO_128
-      - RO_129
-      - SG_141
-      - SG_147
-      - SG_150
-      - SG_152
-      - SG_153
-      - SG_154
-      - SG_155
-      - SG_156
-      - SG_157
-      - SG_158
-      - SG_159
-      - SG_160
-      - UA_164
-      - UA_165
-      - US_249
-      - US_252
-      - US_253
-      - US_254
-      - US_255
-      - US_256
-      - US_262
-      - US_264
-      - US_265
-      - US_266
-      - US_268
-      - US_270
-      - US_274
-      - US_276
-      - US_277
-      - US_279
-      - US_284
-      - US_285
-      - US_287
-      - AU_14
-      - CN_67 | 5.91Mb
-      - CN_68 | 9.49Mb
-      - CN_69 | 2.27Mb
-      - CN_70 | 2.31Mb
-      - CN_71 |13.34Mb
-      - CN_73 | 6.59Mb
-      - CN_74 |11.30Mb
-      - CN_76 | 1.74Mb
-      - CN_77 | 9.49Mb
-      - CN_78
-      - CN_79 |17.22Mb
-      - CN_80 | 3.29Mb
-      - CN_81 | 2.15Mb
-      - CN_82
-      - CN_83 | 3.69Mb
-      - CN_84 |17.30Mb
-      - CN_87 | 6.29Mb
-      - CN_88 |12.73Mb
-      - CN_89 | 7.18Mb
-      - CN_91 |34.59Mb
-      - CN_92
-      - CN_93 | 6.01Mb
-      - CN_94
-      - CN_95 | 7.57Mb
-      - CN_96 |11.03Mb
-      - CN_97 |35.05Mb
-      - CN_99 |10.17Mb
-      - CN_100 |14.61Mb
-      - CN_102 | 2.02Mb
-      - CN_103
-      - NL_310 | 2.77Mb
-      - SG_415 | 1.70Mb
-      - TW_428
-      - TW_429
-      - TW_431
-      - TW_432 |42.44Mb
-      - TW_434 |48.80Mb
-      - TW_435 |48.82Mb
-      - TW_436 |15.94Mb
-      - TW_437 |45.16Mb
-      - TW_438 |31.88Mb
-      - TW_439
-      - TW_441
-      - TW_444 |59.13Mb
-      - TW_447 |56.72Mb
-      - TW_448 |37.58Mb
-      - TW_450 |22.74Mb
-      - TW_451 |26.02Mb
-      - TW_452 |47.35Mb
-      - TW_453 |47.16Mb
-      - TW_454
-      - TW_455 |44.07Mb
-      - TW_459 |19.33Mb
-      - TW_460 |38.23Mb
-      - TW_464 |43.76Mb
-      - TW_465 |41.07Mb
-      - US_1022
-      - ZZ_1110 |55.59Mb
-      - ZZ_1111 |59.62Mb
-      - ZZ_1112 |55.16Mb
-      - ZZ_1115 |51.65Mb
-      - ZZ_1116 |54.83Mb
-      - ZZ_1117 |54.47Mb
-      - KR_256
-      - TW_546
-      - TW_550
-      - US_1156
-      - US_1167
-      - AU_29
-      - AU_30
-      - AU_31
-      - AU_35
-      - AU_36
-      - AU_37
-      - BH_39
-      - CN_53
-      - CN_54
-      - CN_56
-      - CN_57
-      - CN_58
-      - CN_59
-      - CN_60
-      - CN_61
-      - CN_62
-      - CN_63
-      - CN_64
-      - CN_65
-      - CN_66
-      - CN_67
-      - CN_68
-      - CN_69
-      - CN_70
-      - CN_71
-      - CN_72
-      - CN_73
-      - CN_74
-      - CN_75
-      - CN_76
-      - CN_77
-      - CN_78 2
-      - CZ_79
-      - DE_91
-      - DE_92
-      - SG_191
-      - TW_196
-      - TW_198
-      - TW_199
-      - TW_200
-      - TW_201
-      - TW_202
-      - TW_203
-      - TW_205
-      - TW_206
-      - TW_207
-      - TW_208
-      - TW_211
-      - TW_212
-      - TW_213
-      - TW_214
-      - TW_215
-      - TW_216
-      - US_289
-      - US_294
-      - US_300 |27.67Mb
-      - US_301
-      - US_303
-      - US_308
-      - US_312
-      - US_317
+      - AR+阿根廷(youtube阿伟科技)
+      - AU 澳大利亚(youtube阿伟科技)
+      - BR 巴西(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - HK 香港(youtube阿伟科技)
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 3
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
+      - ID 印尼(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技)
+      - PL 波兰(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技)
+      - TUR+土耳其(youtube阿伟科技)
+      - TW+台湾(youtube阿伟科技)
+      - TW 台湾(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
+      - US 美国(youtube阿伟科技) 19
+      - US 美国(youtube阿伟科技) 20
+      - US 美国(youtube阿伟科技) 21
+      - US 美国(youtube阿伟科技) 22
+      - US 美国(youtube阿伟科技) 23
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - VN 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 2
+      - 1078_荷兰-302.4KB_油管阿伟科技1
+      - 1084_荷兰-393.4KB_油管阿伟科技2
+      - A-【2022-10-13】已更新_1_油管阿伟科技3
+      - 俄罗斯C_1_油管阿伟科技4
+      - 意大利_油管阿伟科技5
+      - 韩国高速A_油管阿伟科技6
+      - 香港HKBND_油管阿伟科技7
+      - 香港HKTA_1_油管阿伟科技8
+      - 香港HKTC_油管阿伟科技9
+      - 油管阿伟科技_油管阿伟科技1
+      - 油管阿伟科技_油管阿伟科技2
+      - 台湾F_油管阿伟科技12
+      - 台湾G_油管阿伟科技13
+      - 香港HKTA_2_油管阿伟科技14
+      - 俄罗斯C_2_油管阿伟科技15
+      - 油管阿伟科技_油管阿伟科技3
+      - 西班牙_油管阿伟科技17
+      - 香港HKTN_油管阿伟科技18
+      - 英国iplayerA_油管阿伟科技19
+      - 1046_荷兰-302.7KB_(youtube阿伟科技)5
+      - 韩国高速A_(youtube阿伟科技)13
+      - 香港HKBND_(youtube阿伟科技)20
+      - 香港HKTE_(youtube阿伟科技)22
+      - 香港HKTI_(youtube阿伟科技)25
+      - 英国iplayerB_(youtube阿伟科技)33
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - HK 香港(youtube阿伟科技)
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 3
+      - TW+台湾(youtube阿伟科技)
+      - TW 台湾(youtube阿伟科技)
+      - 香港HKBND_油管阿伟科技7
+      - 香港HKTA_1_油管阿伟科技8
+      - 香港HKTC_油管阿伟科技9
+      - 台湾F_油管阿伟科技12
+      - 台湾G_油管阿伟科技13
+      - 香港HKTA_2_油管阿伟科技14
+      - 香港HKTN_油管阿伟科技18
+      - 香港HKBND_(youtube阿伟科技)20
+      - 香港HKTE_(youtube阿伟科技)22
+      - 香港HKTI_(youtube阿伟科技)25
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_11
-      - CN_16
-      - NL_325 | 4.34Mb
-      - _US_美国
-      - CZ_38
-      - GB_67
-      - HK_70
-      - HK_74
-      - HK_75
-      - HK_76
-      - HK_77
-      - HK_78
-      - HK_79
-      - JP_81
-      - JP_82
-      - JP_92
-      - RO_128
-      - RO_129
-      - SG_141
-      - SG_147
-      - SG_150
-      - SG_152
-      - SG_153
-      - SG_154
-      - SG_155
-      - SG_156
-      - SG_157
-      - SG_158
-      - SG_159
-      - SG_160
-      - UA_164
-      - UA_165
-      - US_249
-      - US_252
-      - US_253
-      - US_254
-      - US_255
-      - US_256
-      - US_262
-      - US_264
-      - US_265
-      - US_266
-      - US_268
-      - US_270
-      - US_274
-      - US_276
-      - US_277
-      - US_279
-      - US_284
-      - US_285
-      - US_287
-      - AU_14
-      - CN_67 | 5.91Mb
-      - CN_68 | 9.49Mb
-      - CN_69 | 2.27Mb
-      - CN_70 | 2.31Mb
-      - CN_71 |13.34Mb
-      - CN_73 | 6.59Mb
-      - CN_74 |11.30Mb
-      - CN_76 | 1.74Mb
-      - CN_77 | 9.49Mb
-      - CN_78
-      - CN_79 |17.22Mb
-      - CN_80 | 3.29Mb
-      - CN_81 | 2.15Mb
-      - CN_82
-      - CN_83 | 3.69Mb
-      - CN_84 |17.30Mb
-      - CN_87 | 6.29Mb
-      - CN_88 |12.73Mb
-      - CN_89 | 7.18Mb
-      - CN_91 |34.59Mb
-      - CN_92
-      - CN_93 | 6.01Mb
-      - CN_94
-      - CN_95 | 7.57Mb
-      - CN_96 |11.03Mb
-      - CN_97 |35.05Mb
-      - CN_99 |10.17Mb
-      - CN_100 |14.61Mb
-      - CN_102 | 2.02Mb
-      - CN_103
-      - NL_310 | 2.77Mb
-      - SG_415 | 1.70Mb
-      - TW_428
-      - TW_429
-      - TW_431
-      - TW_432 |42.44Mb
-      - TW_434 |48.80Mb
-      - TW_435 |48.82Mb
-      - TW_436 |15.94Mb
-      - TW_437 |45.16Mb
-      - TW_438 |31.88Mb
-      - TW_439
-      - TW_441
-      - TW_444 |59.13Mb
-      - TW_447 |56.72Mb
-      - TW_448 |37.58Mb
-      - TW_450 |22.74Mb
-      - TW_451 |26.02Mb
-      - TW_452 |47.35Mb
-      - TW_453 |47.16Mb
-      - TW_454
-      - TW_455 |44.07Mb
-      - TW_459 |19.33Mb
-      - TW_460 |38.23Mb
-      - TW_464 |43.76Mb
-      - TW_465 |41.07Mb
-      - US_1022
-      - ZZ_1110 |55.59Mb
-      - ZZ_1111 |59.62Mb
-      - ZZ_1112 |55.16Mb
-      - ZZ_1115 |51.65Mb
-      - ZZ_1116 |54.83Mb
-      - ZZ_1117 |54.47Mb
-      - KR_256
-      - TW_546
-      - TW_550
-      - US_1156
-      - US_1167
-      - AU_29
-      - AU_30
-      - AU_31
-      - AU_35
-      - AU_36
-      - AU_37
-      - BH_39
-      - CN_53
-      - CN_54
-      - CN_56
-      - CN_57
-      - CN_58
-      - CN_59
-      - CN_60
-      - CN_61
-      - CN_62
-      - CN_63
-      - CN_64
-      - CN_65
-      - CN_66
-      - CN_67
-      - CN_68
-      - CN_69
-      - CN_70
-      - CN_71
-      - CN_72
-      - CN_73
-      - CN_74
-      - CN_75
-      - CN_76
-      - CN_77
-      - CN_78 2
-      - CZ_79
-      - DE_91
-      - DE_92
-      - SG_191
-      - TW_196
-      - TW_198
-      - TW_199
-      - TW_200
-      - TW_201
-      - TW_202
-      - TW_203
-      - TW_205
-      - TW_206
-      - TW_207
-      - TW_208
-      - TW_211
-      - TW_212
-      - TW_213
-      - TW_214
-      - TW_215
-      - TW_216
-      - US_289
-      - US_294
-      - US_300 |27.67Mb
-      - US_301
-      - US_303
-      - US_308
-      - US_312
-      - US_317
+      - AR+阿根廷(youtube阿伟科技)
+      - AU 澳大利亚(youtube阿伟科技)
+      - BR 巴西(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - HK 香港(youtube阿伟科技)
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 3
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
+      - ID 印尼(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技)
+      - PL 波兰(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技)
+      - TUR+土耳其(youtube阿伟科技)
+      - TW+台湾(youtube阿伟科技)
+      - TW 台湾(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
+      - US 美国(youtube阿伟科技) 19
+      - US 美国(youtube阿伟科技) 20
+      - US 美国(youtube阿伟科技) 21
+      - US 美国(youtube阿伟科技) 22
+      - US 美国(youtube阿伟科技) 23
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - VN 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 2
+      - 1078_荷兰-302.4KB_油管阿伟科技1
+      - 1084_荷兰-393.4KB_油管阿伟科技2
+      - A-【2022-10-13】已更新_1_油管阿伟科技3
+      - 俄罗斯C_1_油管阿伟科技4
+      - 意大利_油管阿伟科技5
+      - 韩国高速A_油管阿伟科技6
+      - 香港HKBND_油管阿伟科技7
+      - 香港HKTA_1_油管阿伟科技8
+      - 香港HKTC_油管阿伟科技9
+      - 油管阿伟科技_油管阿伟科技1
+      - 油管阿伟科技_油管阿伟科技2
+      - 台湾F_油管阿伟科技12
+      - 台湾G_油管阿伟科技13
+      - 香港HKTA_2_油管阿伟科技14
+      - 俄罗斯C_2_油管阿伟科技15
+      - 油管阿伟科技_油管阿伟科技3
+      - 西班牙_油管阿伟科技17
+      - 香港HKTN_油管阿伟科技18
+      - 英国iplayerA_油管阿伟科技19
+      - 1046_荷兰-302.7KB_(youtube阿伟科技)5
+      - 韩国高速A_(youtube阿伟科技)13
+      - 香港HKBND_(youtube阿伟科技)20
+      - 香港HKTE_(youtube阿伟科技)22
+      - 香港HKTI_(youtube阿伟科技)25
+      - 英国iplayerB_(youtube阿伟科技)33
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_11
-      - CN_16
-      - NL_325 | 4.34Mb
-      - _US_美国
-      - CZ_38
-      - GB_67
-      - HK_70
-      - HK_74
-      - HK_75
-      - HK_76
-      - HK_77
-      - HK_78
-      - HK_79
-      - JP_81
-      - JP_82
-      - JP_92
-      - RO_128
-      - RO_129
-      - SG_141
-      - SG_147
-      - SG_150
-      - SG_152
-      - SG_153
-      - SG_154
-      - SG_155
-      - SG_156
-      - SG_157
-      - SG_158
-      - SG_159
-      - SG_160
-      - UA_164
-      - UA_165
-      - US_249
-      - US_252
-      - US_253
-      - US_254
-      - US_255
-      - US_256
-      - US_262
-      - US_264
-      - US_265
-      - US_266
-      - US_268
-      - US_270
-      - US_274
-      - US_276
-      - US_277
-      - US_279
-      - US_284
-      - US_285
-      - US_287
-      - AU_14
-      - CN_67 | 5.91Mb
-      - CN_68 | 9.49Mb
-      - CN_69 | 2.27Mb
-      - CN_70 | 2.31Mb
-      - CN_71 |13.34Mb
-      - CN_73 | 6.59Mb
-      - CN_74 |11.30Mb
-      - CN_76 | 1.74Mb
-      - CN_77 | 9.49Mb
-      - CN_78
-      - CN_79 |17.22Mb
-      - CN_80 | 3.29Mb
-      - CN_81 | 2.15Mb
-      - CN_82
-      - CN_83 | 3.69Mb
-      - CN_84 |17.30Mb
-      - CN_87 | 6.29Mb
-      - CN_88 |12.73Mb
-      - CN_89 | 7.18Mb
-      - CN_91 |34.59Mb
-      - CN_92
-      - CN_93 | 6.01Mb
-      - CN_94
-      - CN_95 | 7.57Mb
-      - CN_96 |11.03Mb
-      - CN_97 |35.05Mb
-      - CN_99 |10.17Mb
-      - CN_100 |14.61Mb
-      - CN_102 | 2.02Mb
-      - CN_103
-      - NL_310 | 2.77Mb
-      - SG_415 | 1.70Mb
-      - TW_428
-      - TW_429
-      - TW_431
-      - TW_432 |42.44Mb
-      - TW_434 |48.80Mb
-      - TW_435 |48.82Mb
-      - TW_436 |15.94Mb
-      - TW_437 |45.16Mb
-      - TW_438 |31.88Mb
-      - TW_439
-      - TW_441
-      - TW_444 |59.13Mb
-      - TW_447 |56.72Mb
-      - TW_448 |37.58Mb
-      - TW_450 |22.74Mb
-      - TW_451 |26.02Mb
-      - TW_452 |47.35Mb
-      - TW_453 |47.16Mb
-      - TW_454
-      - TW_455 |44.07Mb
-      - TW_459 |19.33Mb
-      - TW_460 |38.23Mb
-      - TW_464 |43.76Mb
-      - TW_465 |41.07Mb
-      - US_1022
-      - ZZ_1110 |55.59Mb
-      - ZZ_1111 |59.62Mb
-      - ZZ_1112 |55.16Mb
-      - ZZ_1115 |51.65Mb
-      - ZZ_1116 |54.83Mb
-      - ZZ_1117 |54.47Mb
-      - KR_256
-      - TW_546
-      - TW_550
-      - US_1156
-      - US_1167
-      - AU_29
-      - AU_30
-      - AU_31
-      - AU_35
-      - AU_36
-      - AU_37
-      - BH_39
-      - CN_53
-      - CN_54
-      - CN_56
-      - CN_57
-      - CN_58
-      - CN_59
-      - CN_60
-      - CN_61
-      - CN_62
-      - CN_63
-      - CN_64
-      - CN_65
-      - CN_66
-      - CN_67
-      - CN_68
-      - CN_69
-      - CN_70
-      - CN_71
-      - CN_72
-      - CN_73
-      - CN_74
-      - CN_75
-      - CN_76
-      - CN_77
-      - CN_78 2
-      - CZ_79
-      - DE_91
-      - DE_92
-      - SG_191
-      - TW_196
-      - TW_198
-      - TW_199
-      - TW_200
-      - TW_201
-      - TW_202
-      - TW_203
-      - TW_205
-      - TW_206
-      - TW_207
-      - TW_208
-      - TW_211
-      - TW_212
-      - TW_213
-      - TW_214
-      - TW_215
-      - TW_216
-      - US_289
-      - US_294
-      - US_300 |27.67Mb
-      - US_301
-      - US_303
-      - US_308
-      - US_312
-      - US_317
+      - AR+阿根廷(youtube阿伟科技)
+      - AU 澳大利亚(youtube阿伟科技)
+      - BR 巴西(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - HK 香港(youtube阿伟科技)
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 3
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
+      - ID 印尼(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技)
+      - PL 波兰(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技)
+      - TUR+土耳其(youtube阿伟科技)
+      - TW+台湾(youtube阿伟科技)
+      - TW 台湾(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
+      - US 美国(youtube阿伟科技) 19
+      - US 美国(youtube阿伟科技) 20
+      - US 美国(youtube阿伟科技) 21
+      - US 美国(youtube阿伟科技) 22
+      - US 美国(youtube阿伟科技) 23
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - VN 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 2
+      - 1078_荷兰-302.4KB_油管阿伟科技1
+      - 1084_荷兰-393.4KB_油管阿伟科技2
+      - A-【2022-10-13】已更新_1_油管阿伟科技3
+      - 俄罗斯C_1_油管阿伟科技4
+      - 意大利_油管阿伟科技5
+      - 韩国高速A_油管阿伟科技6
+      - 香港HKBND_油管阿伟科技7
+      - 香港HKTA_1_油管阿伟科技8
+      - 香港HKTC_油管阿伟科技9
+      - 油管阿伟科技_油管阿伟科技1
+      - 油管阿伟科技_油管阿伟科技2
+      - 台湾F_油管阿伟科技12
+      - 台湾G_油管阿伟科技13
+      - 香港HKTA_2_油管阿伟科技14
+      - 俄罗斯C_2_油管阿伟科技15
+      - 油管阿伟科技_油管阿伟科技3
+      - 西班牙_油管阿伟科技17
+      - 香港HKTN_油管阿伟科技18
+      - 英国iplayerA_油管阿伟科技19
+      - 1046_荷兰-302.7KB_(youtube阿伟科技)5
+      - 韩国高速A_(youtube阿伟科技)13
+      - 香港HKBND_(youtube阿伟科技)20
+      - 香港HKTE_(youtube阿伟科技)22
+      - 香港HKTI_(youtube阿伟科技)25
+      - 英国iplayerB_(youtube阿伟科技)33
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_11
-      - CN_16
-      - NL_325 | 4.34Mb
-      - _US_美国
-      - CZ_38
-      - GB_67
-      - HK_70
-      - HK_74
-      - HK_75
-      - HK_76
-      - HK_77
-      - HK_78
-      - HK_79
-      - JP_81
-      - JP_82
-      - JP_92
-      - RO_128
-      - RO_129
-      - SG_141
-      - SG_147
-      - SG_150
-      - SG_152
-      - SG_153
-      - SG_154
-      - SG_155
-      - SG_156
-      - SG_157
-      - SG_158
-      - SG_159
-      - SG_160
-      - UA_164
-      - UA_165
-      - US_249
-      - US_252
-      - US_253
-      - US_254
-      - US_255
-      - US_256
-      - US_262
-      - US_264
-      - US_265
-      - US_266
-      - US_268
-      - US_270
-      - US_274
-      - US_276
-      - US_277
-      - US_279
-      - US_284
-      - US_285
-      - US_287
-      - AU_14
-      - CN_67 | 5.91Mb
-      - CN_68 | 9.49Mb
-      - CN_69 | 2.27Mb
-      - CN_70 | 2.31Mb
-      - CN_71 |13.34Mb
-      - CN_73 | 6.59Mb
-      - CN_74 |11.30Mb
-      - CN_76 | 1.74Mb
-      - CN_77 | 9.49Mb
-      - CN_78
-      - CN_79 |17.22Mb
-      - CN_80 | 3.29Mb
-      - CN_81 | 2.15Mb
-      - CN_82
-      - CN_83 | 3.69Mb
-      - CN_84 |17.30Mb
-      - CN_87 | 6.29Mb
-      - CN_88 |12.73Mb
-      - CN_89 | 7.18Mb
-      - CN_91 |34.59Mb
-      - CN_92
-      - CN_93 | 6.01Mb
-      - CN_94
-      - CN_95 | 7.57Mb
-      - CN_96 |11.03Mb
-      - CN_97 |35.05Mb
-      - CN_99 |10.17Mb
-      - CN_100 |14.61Mb
-      - CN_102 | 2.02Mb
-      - CN_103
-      - NL_310 | 2.77Mb
-      - SG_415 | 1.70Mb
-      - TW_428
-      - TW_429
-      - TW_431
-      - TW_432 |42.44Mb
-      - TW_434 |48.80Mb
-      - TW_435 |48.82Mb
-      - TW_436 |15.94Mb
-      - TW_437 |45.16Mb
-      - TW_438 |31.88Mb
-      - TW_439
-      - TW_441
-      - TW_444 |59.13Mb
-      - TW_447 |56.72Mb
-      - TW_448 |37.58Mb
-      - TW_450 |22.74Mb
-      - TW_451 |26.02Mb
-      - TW_452 |47.35Mb
-      - TW_453 |47.16Mb
-      - TW_454
-      - TW_455 |44.07Mb
-      - TW_459 |19.33Mb
-      - TW_460 |38.23Mb
-      - TW_464 |43.76Mb
-      - TW_465 |41.07Mb
-      - US_1022
-      - ZZ_1110 |55.59Mb
-      - ZZ_1111 |59.62Mb
-      - ZZ_1112 |55.16Mb
-      - ZZ_1115 |51.65Mb
-      - ZZ_1116 |54.83Mb
-      - ZZ_1117 |54.47Mb
-      - KR_256
-      - TW_546
-      - TW_550
-      - US_1156
-      - US_1167
-      - AU_29
-      - AU_30
-      - AU_31
-      - AU_35
-      - AU_36
-      - AU_37
-      - BH_39
-      - CN_53
-      - CN_54
-      - CN_56
-      - CN_57
-      - CN_58
-      - CN_59
-      - CN_60
-      - CN_61
-      - CN_62
-      - CN_63
-      - CN_64
-      - CN_65
-      - CN_66
-      - CN_67
-      - CN_68
-      - CN_69
-      - CN_70
-      - CN_71
-      - CN_72
-      - CN_73
-      - CN_74
-      - CN_75
-      - CN_76
-      - CN_77
-      - CN_78 2
-      - CZ_79
-      - DE_91
-      - DE_92
-      - SG_191
-      - TW_196
-      - TW_198
-      - TW_199
-      - TW_200
-      - TW_201
-      - TW_202
-      - TW_203
-      - TW_205
-      - TW_206
-      - TW_207
-      - TW_208
-      - TW_211
-      - TW_212
-      - TW_213
-      - TW_214
-      - TW_215
-      - TW_216
-      - US_289
-      - US_294
-      - US_300 |27.67Mb
-      - US_301
-      - US_303
-      - US_308
-      - US_312
-      - US_317
+      - AR+阿根廷(youtube阿伟科技)
+      - AU 澳大利亚(youtube阿伟科技)
+      - BR 巴西(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - HK 香港(youtube阿伟科技)
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 3
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
+      - ID 印尼(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技)
+      - PL 波兰(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技)
+      - TUR+土耳其(youtube阿伟科技)
+      - TW+台湾(youtube阿伟科技)
+      - TW 台湾(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
+      - US 美国(youtube阿伟科技) 19
+      - US 美国(youtube阿伟科技) 20
+      - US 美国(youtube阿伟科技) 21
+      - US 美国(youtube阿伟科技) 22
+      - US 美国(youtube阿伟科技) 23
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - VN 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 2
+      - 1078_荷兰-302.4KB_油管阿伟科技1
+      - 1084_荷兰-393.4KB_油管阿伟科技2
+      - A-【2022-10-13】已更新_1_油管阿伟科技3
+      - 俄罗斯C_1_油管阿伟科技4
+      - 意大利_油管阿伟科技5
+      - 韩国高速A_油管阿伟科技6
+      - 香港HKBND_油管阿伟科技7
+      - 香港HKTA_1_油管阿伟科技8
+      - 香港HKTC_油管阿伟科技9
+      - 油管阿伟科技_油管阿伟科技1
+      - 油管阿伟科技_油管阿伟科技2
+      - 台湾F_油管阿伟科技12
+      - 台湾G_油管阿伟科技13
+      - 香港HKTA_2_油管阿伟科技14
+      - 俄罗斯C_2_油管阿伟科技15
+      - 油管阿伟科技_油管阿伟科技3
+      - 西班牙_油管阿伟科技17
+      - 香港HKTN_油管阿伟科技18
+      - 英国iplayerA_油管阿伟科技19
+      - 1046_荷兰-302.7KB_(youtube阿伟科技)5
+      - 韩国高速A_(youtube阿伟科技)13
+      - 香港HKBND_(youtube阿伟科技)20
+      - 香港HKTE_(youtube阿伟科技)22
+      - 香港HKTI_(youtube阿伟科技)25
+      - 英国iplayerB_(youtube阿伟科技)33
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1524,187 +812,96 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_11
-      - CN_16
-      - NL_325 | 4.34Mb
-      - _US_美国
-      - CZ_38
-      - GB_67
-      - HK_70
-      - HK_74
-      - HK_75
-      - HK_76
-      - HK_77
-      - HK_78
-      - HK_79
-      - JP_81
-      - JP_82
-      - JP_92
-      - RO_128
-      - RO_129
-      - SG_141
-      - SG_147
-      - SG_150
-      - SG_152
-      - SG_153
-      - SG_154
-      - SG_155
-      - SG_156
-      - SG_157
-      - SG_158
-      - SG_159
-      - SG_160
-      - UA_164
-      - UA_165
-      - US_249
-      - US_252
-      - US_253
-      - US_254
-      - US_255
-      - US_256
-      - US_262
-      - US_264
-      - US_265
-      - US_266
-      - US_268
-      - US_270
-      - US_274
-      - US_276
-      - US_277
-      - US_279
-      - US_284
-      - US_285
-      - US_287
-      - AU_14
-      - CN_67 | 5.91Mb
-      - CN_68 | 9.49Mb
-      - CN_69 | 2.27Mb
-      - CN_70 | 2.31Mb
-      - CN_71 |13.34Mb
-      - CN_73 | 6.59Mb
-      - CN_74 |11.30Mb
-      - CN_76 | 1.74Mb
-      - CN_77 | 9.49Mb
-      - CN_78
-      - CN_79 |17.22Mb
-      - CN_80 | 3.29Mb
-      - CN_81 | 2.15Mb
-      - CN_82
-      - CN_83 | 3.69Mb
-      - CN_84 |17.30Mb
-      - CN_87 | 6.29Mb
-      - CN_88 |12.73Mb
-      - CN_89 | 7.18Mb
-      - CN_91 |34.59Mb
-      - CN_92
-      - CN_93 | 6.01Mb
-      - CN_94
-      - CN_95 | 7.57Mb
-      - CN_96 |11.03Mb
-      - CN_97 |35.05Mb
-      - CN_99 |10.17Mb
-      - CN_100 |14.61Mb
-      - CN_102 | 2.02Mb
-      - CN_103
-      - NL_310 | 2.77Mb
-      - SG_415 | 1.70Mb
-      - TW_428
-      - TW_429
-      - TW_431
-      - TW_432 |42.44Mb
-      - TW_434 |48.80Mb
-      - TW_435 |48.82Mb
-      - TW_436 |15.94Mb
-      - TW_437 |45.16Mb
-      - TW_438 |31.88Mb
-      - TW_439
-      - TW_441
-      - TW_444 |59.13Mb
-      - TW_447 |56.72Mb
-      - TW_448 |37.58Mb
-      - TW_450 |22.74Mb
-      - TW_451 |26.02Mb
-      - TW_452 |47.35Mb
-      - TW_453 |47.16Mb
-      - TW_454
-      - TW_455 |44.07Mb
-      - TW_459 |19.33Mb
-      - TW_460 |38.23Mb
-      - TW_464 |43.76Mb
-      - TW_465 |41.07Mb
-      - US_1022
-      - ZZ_1110 |55.59Mb
-      - ZZ_1111 |59.62Mb
-      - ZZ_1112 |55.16Mb
-      - ZZ_1115 |51.65Mb
-      - ZZ_1116 |54.83Mb
-      - ZZ_1117 |54.47Mb
-      - KR_256
-      - TW_546
-      - TW_550
-      - US_1156
-      - US_1167
-      - AU_29
-      - AU_30
-      - AU_31
-      - AU_35
-      - AU_36
-      - AU_37
-      - BH_39
-      - CN_53
-      - CN_54
-      - CN_56
-      - CN_57
-      - CN_58
-      - CN_59
-      - CN_60
-      - CN_61
-      - CN_62
-      - CN_63
-      - CN_64
-      - CN_65
-      - CN_66
-      - CN_67
-      - CN_68
-      - CN_69
-      - CN_70
-      - CN_71
-      - CN_72
-      - CN_73
-      - CN_74
-      - CN_75
-      - CN_76
-      - CN_77
-      - CN_78 2
-      - CZ_79
-      - DE_91
-      - DE_92
-      - SG_191
-      - TW_196
-      - TW_198
-      - TW_199
-      - TW_200
-      - TW_201
-      - TW_202
-      - TW_203
-      - TW_205
-      - TW_206
-      - TW_207
-      - TW_208
-      - TW_211
-      - TW_212
-      - TW_213
-      - TW_214
-      - TW_215
-      - TW_216
-      - US_289
-      - US_294
-      - US_300 |27.67Mb
-      - US_301
-      - US_303
-      - US_308
-      - US_312
-      - US_317
+      - AR+阿根廷(youtube阿伟科技)
+      - AU 澳大利亚(youtube阿伟科技)
+      - BR 巴西(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - HK 香港(youtube阿伟科技)
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 3
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
+      - ID 印尼(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技)
+      - PL 波兰(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技)
+      - SG 新加坡(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技)
+      - TUR+土耳其(youtube阿伟科技)
+      - TW+台湾(youtube阿伟科技)
+      - TW 台湾(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技)
+      - US 美国(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
+      - US 美国(youtube阿伟科技) 19
+      - US 美国(youtube阿伟科技) 20
+      - US 美国(youtube阿伟科技) 21
+      - US 美国(youtube阿伟科技) 22
+      - US 美国(youtube阿伟科技) 23
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - VN 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 2
+      - 1078_荷兰-302.4KB_油管阿伟科技1
+      - 1084_荷兰-393.4KB_油管阿伟科技2
+      - A-【2022-10-13】已更新_1_油管阿伟科技3
+      - 俄罗斯C_1_油管阿伟科技4
+      - 意大利_油管阿伟科技5
+      - 韩国高速A_油管阿伟科技6
+      - 香港HKBND_油管阿伟科技7
+      - 香港HKTA_1_油管阿伟科技8
+      - 香港HKTC_油管阿伟科技9
+      - 油管阿伟科技_油管阿伟科技1
+      - 油管阿伟科技_油管阿伟科技2
+      - 台湾F_油管阿伟科技12
+      - 台湾G_油管阿伟科技13
+      - 香港HKTA_2_油管阿伟科技14
+      - 俄罗斯C_2_油管阿伟科技15
+      - 油管阿伟科技_油管阿伟科技3
+      - 西班牙_油管阿伟科技17
+      - 香港HKTN_油管阿伟科技18
+      - 英国iplayerA_油管阿伟科技19
+      - 1046_荷兰-302.7KB_(youtube阿伟科技)5
+      - 韩国高速A_(youtube阿伟科技)13
+      - 香港HKBND_(youtube阿伟科技)20
+      - 香港HKTE_(youtube阿伟科技)22
+      - 香港HKTI_(youtube阿伟科技)25
+      - 英国iplayerB_(youtube阿伟科技)33
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -10661,6 +9858,8 @@ rules:
  - DOMAIN-SUFFIX,hypeapp.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,hypersnap.net,🛑 全球拦截
  - DOMAIN-SUFFIX,iconworkshop.cn,🛑 全球拦截
+ - DOMAIN-SUFFIX,idmchina.net,🛑 全球拦截
+ - DOMAIN-SUFFIX,imazingchina.com,🛑 全球拦截
  - DOMAIN-SUFFIX,imindmap.cc,🛑 全球拦截
  - DOMAIN-SUFFIX,jihehuaban.com.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,keyshot.cc,🛑 全球拦截
@@ -10730,6 +9929,8 @@ rules:
  - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
  - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
  - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+ - DOMAIN,radio.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,tv.applemusic.com,🌍 国外媒体
  - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
  - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
  - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
@@ -10774,6 +9975,7 @@ rules:
  - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
  - DOMAIN,linear.tv.apple.com,🌍 国外媒体
  - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,uts-api.itunes.apple.com,🌍 国外媒体
  - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
  - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
  - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
@@ -10860,6 +10062,7 @@ rules:
  - IP-CIDR,203.74.95.153/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.169/32,🌍 国外媒体,no-resolve
  - IP-CIDR,203.211.4.193/32,🌍 国外媒体,no-resolve
+ - IP-CIDR,210.71.227.200/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.71.227.202/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.8/32,🌍 国外媒体,no-resolve
  - IP-CIDR,210.201.32.11/32,🌍 国外媒体,no-resolve
@@ -10960,15 +10163,14 @@ rules:
  - DOMAIN-SUFFIX,acg.tv,🌏 国内媒体
  - DOMAIN-SUFFIX,acgvideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,b23.tv,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
  - DOMAIN-SUFFIX,bilibili.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.com,🌏 国内媒体
- - DOMAIN-SUFFIX,biligame.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,bilibili.tv,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.net,🌏 国内媒体
+ - DOMAIN-SUFFIX,biliapi.com,🌏 国内媒体
  - DOMAIN-SUFFIX,bilivideo.com,🌏 国内媒体
  - DOMAIN-SUFFIX,hdslb.com,🌏 国内媒体
- - DOMAIN-SUFFIX,im9.com,🌏 国内媒体
- - DOMAIN-SUFFIX,smtcdns.net,🌏 国内媒体
+ - DOMAIN,upos-hz-mirrorakam.akamaized.net,🌏 国内媒体
+ - DOMAIN,apiintl.biliapi.net,🌏 国内媒体
  - DOMAIN,intel-cache.m.iqiyi.com,🌏 国内媒体
  - DOMAIN,intel-cache.video.iqiyi.com,🌏 国内媒体
  - DOMAIN,intl-rcd.iqiyi.com,🌏 国内媒体
@@ -10986,6 +10188,7 @@ rules:
  - DOMAIN-SUFFIX,api.mob.app.letv.com,🌏 国内媒体
  - DOMAIN-SUFFIX,v.smtcdns.com,🌏 国内媒体
  - DOMAIN-SUFFIX,vv.video.qq.com,🌏 国内媒体
+ - DOMAIN-SUFFIX,youku.com,🌏 国内媒体
  - IP-CIDR,106.11.0.0/16,🌏 国内媒体,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
@@ -10999,11 +10202,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.20.0/22,📲 电报信息,no-resolve
  - IP-CIDR,91.108.56.0/22,📲 电报信息,no-resolve
- - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,91.105.192.0/23,📲 电报信息,no-resolve
  - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,185.76.151.0/24,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,amazon.co.jp,🔰 节点选择
  - DOMAIN,d3c33hcgiwev3.cloudfront.net,🔰 节点选择
  - DOMAIN,payments-jp.amazon.com,🔰 节点选择
@@ -11012,16 +10218,36 @@ rules:
  - DOMAIN,a248.e.akamai.net,🔰 节点选择
  - DOMAIN,a771.dscq.akamai.net,🔰 节点选择
  - DOMAIN,testflight.apple.com,🔰 节点选择
+ - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
+ - DOMAIN,clubhouse.pubnubapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,aex.com,🔰 节点选择
  - DOMAIN-SUFFIX,bibox.com,🔰 节点选择
  - DOMAIN-SUFFIX,binance.cc,🔰 节点选择
  - DOMAIN-SUFFIX,binance.com,🔰 节点选择
+ - DOMAIN-SUFFIX,binance.us,🔰 节点选择
  - DOMAIN-SUFFIX,bitcointalk.org,🔰 节点选择
  - DOMAIN-SUFFIX,bitfinex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bithumb.com,🔰 节点选择
  - DOMAIN-SUFFIX,bitmex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bitstamp.net,🔰 节点选择
+ - DOMAIN-SUFFIX,bittrex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,bybit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinbase.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coincheck.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coingecko.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinmarketcap.com,🔰 节点选择
+ - DOMAIN-SUFFIX,coinone.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,ftx.com,🔰 节点选择
  - DOMAIN-SUFFIX,gate.io,🔰 节点选择
+ - DOMAIN-SUFFIX,gemini.com,🔰 节点选择
  - DOMAIN-SUFFIX,huobi.com,🔰 节点选择
+ - DOMAIN-SUFFIX,korbit.co.kr,🔰 节点选择
+ - DOMAIN-SUFFIX,kraken.com,🔰 节点选择
+ - DOMAIN-SUFFIX,kucoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,liquid.com,🔰 节点选择
  - DOMAIN-SUFFIX,okex.com,🔰 节点选择
+ - DOMAIN-SUFFIX,poloniex.com,🔰 节点选择
  - DOMAIN-SUFFIX,uniswap.org,🔰 节点选择
  - DOMAIN-SUFFIX,zb.com,🔰 节点选择
  - DOMAIN-SUFFIX,discord.com,🔰 节点选择
@@ -11054,6 +10280,7 @@ rules:
  - DOMAIN-SUFFIX,blogger.com,🔰 节点选择
  - DOMAIN-SUFFIX,getoutline.org,🔰 节点选择
  - DOMAIN-SUFFIX,gvt0.com,🔰 节点选择
+ - DOMAIN-SUFFIX,gvt1.com,🔰 节点选择
  - DOMAIN-SUFFIX,gvt3.com,🔰 节点选择
  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🔰 节点选择
  - DOMAIN-SUFFIX,ytimg.com,🔰 节点选择
@@ -11104,11 +10331,14 @@ rules:
  - IP-CIDR,91.108.16.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.20.0/22,🔰 节点选择,no-resolve
  - IP-CIDR,91.108.56.0/22,🔰 节点选择,no-resolve
- - IP-CIDR,95.161.64.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,91.105.192.0/23,🔰 节点选择,no-resolve
  - IP-CIDR,149.154.160.0/20,🔰 节点选择,no-resolve
+ - IP-CIDR,185.76.151.0/24,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23d::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:b28:f23f::/48,🔰 节点选择,no-resolve
  - IP-CIDR6,2001:67c:4e8::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23c::/48,🔰 节点选择,no-resolve
+ - IP-CIDR6,2a0a:f280::/32,🔰 节点选择,no-resolve
  - DOMAIN-SUFFIX,pscp.tv,🔰 节点选择
  - DOMAIN-SUFFIX,periscope.tv,🔰 节点选择
  - DOMAIN-SUFFIX,t.co,🔰 节点选择
@@ -11177,7 +10407,6 @@ rules:
  - DOMAIN-SUFFIX,ck101.com,🔰 节点选择
  - DOMAIN-SUFFIX,clarionproject.org,🔰 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🔰 节点选择
- - DOMAIN-SUFFIX,clubhouseapi.com,🔰 节点选择
  - DOMAIN-SUFFIX,clyp.it,🔰 节点选择
  - DOMAIN-SUFFIX,cna.com.tw,🔰 节点选择
  - DOMAIN-SUFFIX,comparitech.com,🔰 节点选择
@@ -11271,7 +10500,6 @@ rules:
  - DOMAIN-SUFFIX,jiji.com,🔰 节点选择
  - DOMAIN-SUFFIX,jinx.com,🔰 节点选择
  - DOMAIN-SUFFIX,jkforum.net,🔰 节点选择
- - DOMAIN-SUFFIX,joinclubhouse.com,🔰 节点选择
  - DOMAIN-SUFFIX,joinmastodon.org,🔰 节点选择
  - DOMAIN-SUFFIX,justmysocks.net,🔰 节点选择
  - DOMAIN-SUFFIX,justpaste.it,🔰 节点选择
@@ -11297,6 +10525,7 @@ rules:
  - DOMAIN-SUFFIX,marc.info,🔰 节点选择
  - DOMAIN-SUFFIX,matters.news,🔰 节点选择
  - DOMAIN-SUFFIX,maying.co,🔰 节点选择
+ - DOMAIN-SUFFIX,medibang.com,🔰 节点选择
  - DOMAIN-SUFFIX,medium.com,🔰 节点选择
  - DOMAIN-SUFFIX,mega.nz,🔰 节点选择
  - DOMAIN-SUFFIX,mergersandinquisitions.com,🔰 节点选择
@@ -11386,6 +10615,7 @@ rules:
  - DOMAIN-SUFFIX,streamable.com,🔰 节点选择
  - DOMAIN-SUFFIX,streema.com,🔰 节点选择
  - DOMAIN-SUFFIX,substack.com,🔰 节点选择
+ - DOMAIN-SUFFIX,substack.com,🔰 节点选择
  - DOMAIN-SUFFIX,t66y.com,🔰 节点选择
  - DOMAIN-SUFFIX,tapatalk.com,🔰 节点选择
  - DOMAIN-SUFFIX,teco-hk.org,🔰 节点选择
@@ -11401,6 +10631,7 @@ rules:
  - DOMAIN-SUFFIX,tiny.cc,🔰 节点选择
  - DOMAIN-SUFFIX,tinyurl.com,🔰 节点选择
  - DOMAIN-SUFFIX,torproject.org,🔰 节点选择
+ - DOMAIN-SUFFIX,tradingview.com,🔰 节点选择
  - DOMAIN-SUFFIX,tumblr.com,🔰 节点选择
  - DOMAIN-SUFFIX,turbobit.net,🔰 节点选择
  - DOMAIN-SUFFIX,tutanota.com,🔰 节点选择
@@ -11517,20 +10748,33 @@ rules:
  - DOMAIN-SUFFIX,twitter.jp,🔰 节点选择
  - DOMAIN-SUFFIX,appsto.re,🔰 节点选择
  - DOMAIN,books.itunes.apple.com,🔰 节点选择
- - DOMAIN,api-glb-sea.smoot.apple.com,🔰 节点选择
- - DOMAIN,beta.music.apple.com,🔰 节点选择
- - DOMAIN,tv.apple.com,🔰 节点选择
- - DOMAIN,apps.apple.com,🔰 节点选择
- - DOMAIN,itunes.apple.com,🔰 节点选择
  - DOMAIN-SUFFIX,smoot.apple.com,🔰 节点选择
+ - DOMAIN,beta.music.apple.com,🔰 节点选择
  - DOMAIN,lookup-api.apple.com,🔰 节点选择
+ - DOMAIN,apps.apple.com,🔰 节点选择
+ - DOMAIN,books.apple.com,🔰 节点选择
+ - DOMAIN,itunes.apple.com,🔰 节点选择
+ - DOMAIN,tv.apple.com,🔰 节点选择
+ - DOMAIN,amp-api.podcasts.apple.com,🔰 节点选择
+ - DOMAIN,bookkeeper.itunes.apple.com,🔰 节点选择
+ - DOMAIN,gateway.icloud.com,🔰 节点选择
+ - DOMAIN-SUFFIX,apple.news,🔰 节点选择
+ - DOMAIN,news-assets.apple.com,🔰 节点选择
+ - DOMAIN,news-client.apple.com,🔰 节点选择
+ - DOMAIN,news-client-search.apple.com,🔰 节点选择
+ - DOMAIN,news-edge.apple.com,🔰 节点选择
+ - DOMAIN,news-events.apple.com,🔰 节点选择
+ - DOMAIN,apple.comscoreresearch.com,🔰 节点选择
  - DOMAIN-SUFFIX,go.dev,🔰 节点选择
  - DOMAIN-SUFFIX,golang.org,🔰 节点选择
+ - DOMAIN-SUFFIX,aicoin.com,🔰 节点选择
+ - DOMAIN-SUFFIX,aimoon.com,🔰 节点选择
  - DOMAIN-SUFFIX,bing.com,🔰 节点选择
  - DOMAIN-SUFFIX,cccat.io,🔰 节点选择
  - DOMAIN-SUFFIX,dubox.com,🔰 节点选择
  - DOMAIN-SUFFIX,duboxcdn.com,🔰 节点选择
  - DOMAIN-SUFFIX,ifixit.com,🔰 节点选择
+ - DOMAIN-SUFFIX,linkedin.com,🔰 节点选择
  - DOMAIN-SUFFIX,mangakakalot.com,🔰 节点选择
  - DOMAIN-SUFFIX,shopeemobile.com,🔰 节点选择
  - DOMAIN-SUFFIX,sushi.com,🔰 节点选择
@@ -11538,12 +10782,10 @@ rules:
  - DOMAIN,developer.apple.com,🔰 节点选择
  - DOMAIN,www.icloud.com,🔰 节点选择
  - DOMAIN,ocsp.apple.com,🔰 节点选择
- - DOMAIN,xp.apple.com,🔰 节点选择
  - DOMAIN,cacerts.digicert.com,🔰 节点选择
  - DOMAIN,crl3.digicert.com,🔰 节点选择
  - DOMAIN,crl4.digicert.com,🔰 节点选择
  - DOMAIN,ocsp.digicert.com,🔰 节点选择
- - DOMAIN-SUFFIX,cloudcone.com.cn,🔰 节点选择
  - DOMAIN-SUFFIX,inkbunny.net,🔰 节点选择
  - DOMAIN-SUFFIX,metapix.net,🔰 节点选择
  - DOMAIN-SUFFIX,s3.amazonaws.com,🔰 节点选择
@@ -11699,19 +10941,11 @@ rules:
  - DOMAIN-SUFFIX,qqmail.com,🎯 全球直连
  - DOMAIN-SUFFIX,servicewechat.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tencent-cloud.com,🎯 全球直连
  - DOMAIN-SUFFIX,tencent-cloud.net,🎯 全球直连
  - DOMAIN-SUFFIX,tenpay.com,🎯 全球直连
  - DOMAIN-SUFFIX,wechat.com,🎯 全球直连
  - DOMAIN,file-igamecj.akamaized.net,🎯 全球直连
- - IP-CIDR,101.32.104.4/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.41/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.104.56/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.118.25/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.16/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.53/32,🎯 全球直连,no-resolve
- - IP-CIDR,101.32.133.209/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.3.47/32,🎯 全球直连,no-resolve
- - IP-CIDR,129.226.107.244/32,🎯 全球直连,no-resolve
  - IP-CIDR,182.254.116.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,203.205.254.0/23,🎯 全球直连,no-resolve
  - DOMAIN-SUFFIX,ccgslb.com,🎯 全球直连
@@ -11791,6 +11025,7 @@ rules:
  - DOMAIN-SUFFIX,chinaso.com,🎯 全球直连
  - DOMAIN-SUFFIX,chuimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,chunyu.mobi,🎯 全球直连
+ - DOMAIN-SUFFIX,cibntv.net,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,coolapk.com,🎯 全球直连
@@ -11835,8 +11070,6 @@ rules:
  - DOMAIN-SUFFIX,keepcdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,kkmh.com,🎯 全球直连
  - DOMAIN-SUFFIX,lanzous.com,🎯 全球直连
- - DOMAIN-SUFFIX,licdn.com,🎯 全球直连
- - DOMAIN-SUFFIX,linkedin.com,🎯 全球直连
  - DOMAIN-SUFFIX,luojilab.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyan.com,🎯 全球直连
  - DOMAIN-SUFFIX,maoyun.tv,🎯 全球直连
@@ -11859,6 +11092,7 @@ rules:
  - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
  - DOMAIN-SUFFIX,sankuai.com,🎯 全球直连
  - DOMAIN-SUFFIX,scomper.me,🎯 全球直连
+ - DOMAIN-SUFFIX,shouqianba.com,🎯 全球直连
  - DOMAIN-SUFFIX,sm.ms,🎯 全球直连
  - DOMAIN-SUFFIX,smzdm.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
