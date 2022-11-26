@@ -5,583 +5,1275 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _RU_wmt(11.21)_1, server: 176.119.159.245, port: 37672, type: vmess, uuid: 86b4e35c-1061-47b3-8c6c-811d1853a477, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [176.119.159.245]}}, udp: true}
-  - {name: _US_wmt(11.21)_2, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: 36ebef7da3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_3, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: ac5a3ef0-b4ab-11eb-b65e-1239d0255236ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_4, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ea3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_6, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: mM36ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_9, server: 211.72.35.156, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_10, server: 211.72.35.158, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_11, server: 211.72.35.155, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
-  - {name: _HK_wmt(11.21)_12, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_13, server: 60.249.3.125, port: 3389, type: trojan, password: c3c448da2363a6f7, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_14, server: 211.72.35.157, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_15, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, sni: ned-server-01.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_19, server: 60.249.3.231, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_20, server: usa-server-02.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: usa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_23, server: 211.72.35.158, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _HK_wmt(11.21)_24, server: ar.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: ar.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_26, server: 60.249.3.125, port: 3389, type: trojan, password: f6f2072a2e4cfc91, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_27, server: 60.249.3.125, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
-  - {name: _HK_wmt(11.21)_28, server: de.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: de.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_30, server: 60.249.3.125, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: true, udp: true}
-  - {name: _HK_wmt(11.21)_31, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_32, server: sg-server-01.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: sg-server-01.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_34, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_35, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: ned-server-01.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_37, server: zf1.windowsupdate1.com, port: 50040, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_38, server: zf1.windowsupdate1.com, port: 50060, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_47, server: zf1.windowsupdate1.com, port: 50080, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_48, server: zf1.windowsupdate1.com, port: 50030, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
-  - {name: _BH_wmt(11.21)_49, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
-  - {name: _FR_wmt(11.21)_69, server: 51.77.71.134, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
-  - {name: _FR_wmt(11.21)_70, server: de.tjvpn.org, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, sni: de.tjvpn.org, skip-cert-verify: true, udp: true}
-  - {name: _FR_wmt(11.21)_80, server: 51.75.76.22, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, skip-cert-verify: true, udp: true}
-  - {name: _HK_wmt(11.21)_81, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: wmt(11.21)_82, server: 103.173.155.72, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_83, server: zf1.windowsupdate1.com, port: 50010, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
-  - {name: _DE_wmt(11.21)_88, server: 89.163.220.99, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
-  - {name: _DE_wmt(11.21)_89, server: 89.163.220.99, port: 28443, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_90, server: us-trojan.bonds.id, port: 443, type: trojan, password: 38239dd0-902b-11eb-afc1-1239d0255272, sni: us-trojan.bonds.id, skip-cert-verify: true, udp: true}
-  - {name: _JP_wmt(11.21)_95, server: www.tokyo2023.ga, port: 443, type: trojan, password: 4f7dc540-d244-4e64-af21-4b5bb300add3, sni: www.tokyo2023.ga, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_96, server: us-trojan.bonds.id, port: 443, type: trojan, password: ccf1ee40-b4ab-11eb-b421-1239d0255272, sni: us-trojan.bonds.id, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_104, server: www.anloao.cf, port: 9053, type: trojan, password: b64b0f9c-23df-3112-a790-d8aa068aa2fe, sni: www.anloao.cf, skip-cert-verify: true, udp: true}
-  - {name: _CA_wmt(11.21)_106, server: cat-1.opensvr.net, port: 443, type: trojan, password: opentunnel.net-wd3dzt4j9yoy, sni: cat-1.opensvr.net, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_107, server: 60.249.3.125, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_117, server: zf1.windowsupdate1.com, port: 50020, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_wmt(11.21)_119, server: 184.168.127.50, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
-  - {name: _JP_wmt(11.21)_121, server: trs12.bolab.net, port: 443, type: trojan, password: 14bdba6dede262387ebdebaa706e1c90, sni: trs12.bolab.net, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_122, server: 60.249.3.125, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
-  - {name: _HK_wmt(11.21)_124, server: ru.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: ru.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: _FR_wmt(11.21)_125, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, sni: content-provider5.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_129, server: zf1.windowsupdate1.com, port: 50070, type: trojan, password: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, sni: zf1.windowsupdate1.com, skip-cert-verify: true, udp: true}
-  - {name: _CN_wmt(11.21)_130, server: 106.75.239.176, port: 3389, type: trojan, password: 3febb05ea76a940f, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_131, server: jp.useanlo.cf, port: 6523, type: trojan, password: 77065fa6-b38e-302c-beea-4b047967af01, sni: jp.useanlo.cf, skip-cert-verify: true, udp: true}
-  - {name: wmt(11.21)_132, server: 103.172.116.8, port: 9084, type: ss, cipher: aes-256-cfb, password: c3NtHJ5ujV2tGDfj, udp: true}
-  - {name: _NL_wmt(11.21)_133, server: content-provider24.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, sni: content-provider24.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: _NL_wmt(11.21)_134, server: 185.212.200.75, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: wmt(11.21)_135, server: 103.172.116.8, port: 9025, type: ss, cipher: aes-256-cfb, password: XPtzA9sCug3SPR4c, udp: true}
-  - {name: _FR_wmt(11.21)_136, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: _FR_wmt(11.21)_137, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, sni: content-provider26.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: wmt(11.21)_138, server: 103.172.116.8, port: 9045, type: ss, cipher: aes-256-cfb, password: Lp27rqyJq72bZsqX, udp: true}
-  - {name: _US_wmt(11.21)_139, server: 148.113.141.99, port: 443, type: trojan, password: HdsUZmsHQW, skip-cert-verify: true, udp: true}
-  - {name: wmt(11.21)_140, server: 103.172.116.8, port: 9011, type: ss, cipher: aes-256-cfb, password: M3t2ZEQcMGRWBjRa, udp: true}
-  - {name: _US_wmt(11.21)_141, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: 97fdf760-7a3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_142, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: ac5a3ef0-b4ab-11eb-b65e-12336ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_143, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: mMQ36ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: wmt(11.21)_144, server: 103.172.116.8, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
-  - {name: _US_wmt(11.21)_145, server: t03.ssrsub.comr-02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comr-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: wmt(11.21)_146, server: 103.172.116.8, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: _US_wmt(11.21)_147, server: t03.ssrsub.comver-02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comver-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_148, server: t03.ssrsub.comusa-server-02.selfupay.com, port: 443, type: trojan, password: 5c5c640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comusa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_149, server: t03.ssrsub.com02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.com02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_150, server: jp-server-02.selfupay.com-02.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_151, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: 8d4ab0f0a3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_152, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: P9azqCxQMAaZca3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: wmt(11.21)_153, server: 103.172.116.8, port: 9015, type: ss, cipher: aes-256-cfb, password: ZpNDDKRu9MagNvaf, udp: true}
-  - {name: _US_wmt(11.21)_154, server: t03.ssrsub.comusa-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-lWNFc1RmRBNk5NQU5KSnga640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comusa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_155, server: 211.72.35.158, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _SG_wmt(11.21)_156, server: ap.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: wmt(11.21)_158, server: 103.172.116.8, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
-  - {name: _TW_wmt(11.21)_159, server: 60.249.3.231, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_160, server: 138.2.114.255, port: 443, type: trojan, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, skip-cert-verify: true, udp: true}
-  - {name: _HK_wmt(11.21)_161, server: 45.11.104.94, port: 3389, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_163, server: 211.72.35.157, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_165, server: tw01.balala2016.xyz, port: 20261, type: trojan, password: ED177480-E516-11EA-8B44-BBC4E882BA0B, sni: tw01.balala2016.xyz, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_168, server: 51.81.82.15, port: 443, type: trojan, password: c2b0a060-44b0-11ed-ad2e-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_170, server: 211.72.35.155, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_171, server: 60.249.3.125, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: _SG_wmt(11.21)_172, server: jp.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_174, server: 60.249.3.230, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_175, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_wmt(11.21)_176, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_178, server: 60.249.3.125, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_179, server: 211.72.35.154, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: _SG_wmt(11.21)_181, server: ap.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: _TW_wmt(11.21)_182, server: 60.249.3.125, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_183, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_184, server: usa-server-02.selfupay.com.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, sni: usa-server-02.selfupay.com.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: wmt(11.21)_185, server: 103.172.116.8, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: wmt(11.21)_186, server: 103.172.116.8, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
-  - {name: _SG_wmt(11.21)_187, server: 5.44.249.43, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
-  - {name: wmt(11.21)_188, server: 103.172.116.8, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: wmt(11.21)_189, server: 103.172.116.8, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7, udp: true}
-  - {name: _US_wmt(11.21)_190, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 03f9d1c7-40f9-47a3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_wmt(11.21)_191, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_192, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 36ebefac5-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: wmt(11.21)_193, server: 103.172.116.8, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: _SG_wmt(11.21)_194, server: 5.44.249.43, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_195, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f32a3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_196, server: t03.ssrsub.comjp-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-lWNFc1RmRBNk5NQU5KSnga3fa58ac640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comjp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_197, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5KSn640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_198, server: t03.ssrsub.comned-server-01.selfupay.com, port: 443, type: trojan, password: 82lWNFc1RmRBN640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comned-server-01.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_199, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_200, server: t03.ssrsub.comusa-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comusa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_wmt(11.21)_201, server: 5.44.249.43, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_202, server: sg-server-01.selfupay.com, port: 443, type: trojan, password: 280a1162-00cb-11ec-a8bf-f23c91c36ebef7d1b1d6205fd0c55f28800e674, sni: sg-server-01.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_203, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: a3fa5640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_wmt(11.21)_204, server: 5.44.249.43, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_205, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_206, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 9a3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: wmt(11.21)_207, server: 103.172.116.8, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
-  - {name: _US_wmt(11.21)_208, server: hk-server-01.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: hk-server-01.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_209, server: t03.ssrsub.comusa-server-02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comusa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_210, server: t03.ssrsub.comk-server-02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_211, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206lWNFc1RmRBNk5NQU5KSnga3fa58a3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_wmt(11.21)_212, server: 5.44.249.43, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_213, server: t03.ssrsub.comned-server-01.selfupay.com, port: 443, type: trojan, password: 82lWNFc1Rm640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comned-server-01.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_214, server: t03.ssrsub.comp-server-02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_wmt(11.21)_215, server: 5.44.249.43, port: 3389, type: trojan, password: 711aabc21e45ae31, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_216, server: t03.ssrsub.comjp-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comjp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_217, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: YWVzLTI1Ni1nY206WWd1c0gyTac5a3ef0-b4ablWNFc1RmRBNk5NQU5KSnga3fa58a640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_218, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 36ebefac5640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_219, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_220, server: usa-server-02.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, sni: usa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_221, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_222, server: t03.ssrsub.comjp-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-43640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comjp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _US_wmt(11.21)_223, server: t03.ssrsub.comrver-01.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comrver-01.selfupay.com, skip-cert-verify: true, udp: true}
-  - {name: _AU_wmt(11.21)_224, server: 7.earths.team, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: 7.earths.team, skip-cert-verify: true, udp: true}
-  - {name: wmt(11.21)_225, server: 103.172.116.8, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
-  - {name: wmt(11.21)_226, server: 103.172.116.8, port: 9079, type: ss, cipher: aes-256-cfb, password: TPqX8edgbAURcAMb, udp: true}
-  - {name: wmt(11.21)_227, server: 103.172.116.8, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
-  - {name: _NL_wmt(11.21)_228, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, sni: content-provider23.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_1, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: m36ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_3, server: uk.liangyuandian.top, port: 443, type: trojan, password: 18304160-03d4-4c55-95c1-586c0a5f3a0a, sni: uk.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_4, server: sg.liangyuandian.top, port: 443, type: trojan, password: 51c44c4e-f8c2-4419-a52b-b4b7bd915078, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_5, server: jgw3.gaox.ml, port: 443, type: trojan, password: a1718180-d616-4b71-9bb6-3e96ba20f921, sni: jgw3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: _BH_wmt(11.49)_7, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(11.49)_8, server: v1r.centaur.network, port: 16801, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_9, server: 184.168.127.50, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_10, server: 5.44.249.43, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_11, server: t03.ssrsub.comusa-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comusa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: wmt(11.49)_12, server: 103.173.155.72, port: 28443, type: trojan, password: 6f6ae34d-fe7f-4ca1-a912-ecc01386bdc4, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_13, server: 211.72.35.158, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_14, server: w12.udpgw.com, port: 443, type: trojan, password: 08964210-e7b8-11ec-95aa-1239d0255272, sni: w12.udpgw.com, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_15, server: kr1.api-aws.com, port: 443, type: trojan, password: 7f9e51b9-928e-4076-b075-ba7577c36443, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_17, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: ned-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _JP_wmt(11.49)_18, server: 45.66.134.219, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_19, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_20, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa536ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_21, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTZLajhUac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_22, server: jp.liangyuandian.top, port: 443, type: trojan, password: 51c44c4e-f8c2-4419-a52b-b4b7bd915078, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(11.49)_23, server: 223.111.202.148, port: 30070, type: trojan, password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_24, server: 18.140.67.76, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_25, server: 60.249.3.229, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_26, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ea3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_27, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1Ni1nY206WWd1c0gyTac5a3ef0-b4ablWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: wmt(11.49)_28, server: 103.172.116.8, port: 9000, type: ss, cipher: aes-256-cfb, password: a3GFYt36Sm82Vys9, udp: true}
+  - {name: _AU_wmt(11.49)_29, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: ccf1ee40-b4ab-11eb-b421-1239da3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_30, server: usa.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: wmt(11.49)_31, server: 103.172.116.7, port: 9010, type: ss, cipher: aes-256-cfb, password: f63gg8EruDnUrmz4, udp: true}
+  - {name: _SG_wmt(11.49)_32, server: ap.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_33, server: hk-server-01.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f32793a3fa58b581353bb375d2ddad0f327938, sni: hk-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_34, server: ca-trojan.bonds.id, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_35, server: ca-trojan.bonds.id, port: 443, type: trojan, password: ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(11.49)_36, server: 141.147.191.85, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(11.49)_37, server: v1r.centaur.network, port: 16806, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_38, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5KSn640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_39, server: t03.ssrsub.com-server-02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.com-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_41, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_42, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 94aa3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_43, server: usa-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: usa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_44, server: 211.72.35.154, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_45, server: kr1.api-aws.com, port: 443, type: trojan, password: 80b07539-c253-4526-8a80-424708ff2ced, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_46, server: ru01.awcloud.top, port: 443, type: trojan, password: b88a1a71-5250-4ddc-8337-3a28594b6192, sni: ru01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_47, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: -40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_48, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_49, server: sg.liangyuandian.top, port: 443, type: trojan, password: 2b2b1b4f-3372-47f7-9f90-26097c7683f9, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_50, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: 283695dc-fcc8-11ea-868a3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_51, server: 211.72.35.157, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_52, server: 60.249.3.231, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_53, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf-36ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_54, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_55, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_56, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTaclWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_57, server: t03.ssrsub.com2.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.com2.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_58, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1Ni1nY206WWlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_59, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: e4307a50-36ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_60, server: 60.249.3.226, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_61, server: de.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: de.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_62, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_63, server: 60.249.3.126, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_64, server: 210.0.158.220, port: 28443, type: trojan, password: 7f38669a-90f2-481f-8591-8a09c5108959, skip-cert-verify: true, udp: true}
+  - {name: wmt(11.49)_65, server: 103.172.116.7, port: 9033, type: ss, cipher: aes-256-cfb, password: UTJA57ypk2XKQpnm, udp: true}
+  - {name: _HK_wmt(11.49)_66, server: de01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: de01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_67, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d36ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_68, server: r-02.selfupay.com, port: 443, type: trojan, password: -40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: r-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_69, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf36ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_70, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(11.49)_71, server: v1r.centaur.network, port: 16803, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_72, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f32a3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_73, server: sg-server-01.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: sg-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_74, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _CH_wmt(11.49)_75, server: 185.126.116.235, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_76, server: sg.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_77, server: usa.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_78, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: 36ebef7da3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_79, server: usa-server-02.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: usa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_80, server: 40.earths.team, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: 40.earths.team, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_81, server: uk.liangyuandian.top, port: 443, type: trojan, password: cc55e294-b76f-425a-9301-c18afbecaa22, sni: uk.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_82, server: 5.44.249.43, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(11.49)_83, server: 170.187.182.212, port: 443, type: trojan, password: a1e12464-9208-4583-bd21-ab6889fdd242, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_84, server: 60.249.3.231, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_85, server: 60.249.3.226, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_86, server: 211.72.35.158, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_87, server: ver-02.selfupay.com, port: 443, type: trojan, password: -40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: ver-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(11.49)_88, server: v1r.centaur.network, port: 16802, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: wmt(11.49)_89, server: 103.172.116.8, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: _CN_wmt(11.49)_90, server: 116.129.254.47, port: 3389, type: trojan, password: e37c6d7efa845d60, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_91, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: 97fdf760-7a3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: wmt(11.49)_92, server: 103.172.116.8, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
+  - {name: _KR_wmt(11.49)_93, server: kr1.api-aws.com, port: 443, type: trojan, password: 7c953fab-2d79-4320-b208-59e07b6033fd, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_94, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1Ni1nY206WWd1c0gyTac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _CH_wmt(11.49)_95, server: www.liuyiyang19891222.tk, port: 443, type: vmess, uuid: ad48ebeb-f949-472b-9717-e8c8f0f7984d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: www.liuyiyang19891222.tk}, udp: true}
+  - {name: _HK_wmt(11.49)_96, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_97, server: kr1.api-aws.com, port: 443, type: trojan, password: 3fe45691-03ac-40a1-8f4e-1317905020db, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_98, server: 52.141.26.55, port: 443, type: trojan, password: 3dacbaa8-784b-430c-9c1e-57d33648981d, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_99, server: ap.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_100, server: 00000000000000000000000000000000000000000000000000000000000005a.rui77.com, port: 80, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_101, server: sg-server-01.selfupay.com, port: 443, type: trojan, password: YWVzLT36ebef7d1b1d6205fd0c55f28800e674, sni: sg-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_102, server: usa-server-02.selfupay.com, port: 443, type: trojan, password: -40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: usa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_103, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: YWVzLlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4a3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_104, server: usa.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_105, server: ru01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: ru01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(11.49)_108, server: 138.2.114.255, port: 443, type: trojan, password: 81d93f62-15a2-4994-adb9-0b5d906aac7e, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_109, server: 60.249.3.227, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_110, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 54080640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_111, server: ru.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: ru.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_112, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: mMQ636ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_113, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _JP_wmt(11.49)_114, server: jp-cdn.iqyun.zone, port: 29999, type: trojan, password: fbb2cc06-b018-4ad0-bb27-baa4a834807f, sni: jp-cdn.iqyun.zone, skip-cert-verify: true, udp: true}
+  - {name: _FR_wmt(11.49)_115, server: de.tjvpn.org, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, sni: de.tjvpn.org, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_116, server: 210.0.158.220, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_117, server: 211.72.35.152, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_118, server: kr1.api-aws.com, port: 443, type: trojan, password: ca3a57c6-9bb5-4d19-876d-4552de4bb959, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_119, server: ar.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: ar.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_120, server: ca-trojan.bonds.id, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0fac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_121, server: ca-trojan.bonds.id, port: 443, type: trojan, password: a3fa5lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _FR_wmt(11.49)_122, server: 176.31.83.90, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_123, server: usa-server-02.selfupay.com, port: 443, type: trojan, password: 5c5c-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: usa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _CZ_wmt(11.49)_124, server: v2cross.com.02.v2ce.com, port: 443, type: trojan, password: 3gLlCYBipVwr6Y5F, sni: v2cross.com.02.v2ce.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_125, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4a36ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_126, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf-f23c9136ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: wmt(11.49)_127, server: 103.172.116.8, port: 9008, type: ss, cipher: aes-256-cfb, password: y9VURyNzJWNRYEGQ, udp: true}
+  - {name: _FR_wmt(11.49)_128, server: content-provider26.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: origin, sni: content-provider26.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: wmt(11.49)_129, server: 103.172.116.8, port: 9057, type: ss, cipher: aes-256-cfb, password: wjTugX3ZtHMB9c3Z, udp: true}
+  - {name: _AU_wmt(11.49)_130, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: 82lWNFc1Rm-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: ned-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_131, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: P9azqCxQMAaZca3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_132, server: usa-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-lWNFc1RmRBNk5NQU5KSnga-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: usa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: wmt(11.49)_133, server: 103.172.116.7, port: 9050, type: ss, cipher: aes-256-cfb, password: FG5ddLsMPbV5CutE, udp: true}
+  - {name: _SG_wmt(11.49)_134, server: de.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: de.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_135, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-43-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_136, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: mM36ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(11.49)_137, server: 155.248.172.87, port: 28443, type: trojan, password: 750a29bf-0a40-437f-b120-38de74ae7eaf, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(11.49)_138, server: 148.113.141.99, port: 443, type: trojan, password: HdsUZmsHQW, skip-cert-verify: true, udp: true}
+  - {name: _FR_wmt(11.49)_139, server: ukt-2.opensvr.net, port: 443, type: trojan, password: opentunnel.net-rw8uuv207taq, sni: ukt-2.opensvr.net, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(11.49)_140, server: 51.81.211.171, port: 443, type: trojan, password: 2dab5d78-5c56-4252-850d-c037753a40db, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(11.49)_141, server: 116.129.254.47, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: wmt(11.49)_142, server: 103.172.116.8, port: 9007, type: ss, cipher: aes-256-cfb, password: kSPmvwdFzGMMW5pY, udp: true}
+  - {name: _CN_wmt(11.49)_143, server: 116.129.254.47, port: 3389, type: trojan, password: ca4596fb9bc63cf2, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_144, server: 60.249.3.226, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_145, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_146, server: hk64.fans8.xyzver-02.selfupay.com, port: 443, type: trojan, password: 96abb4d5-d709-40bd-9933-58f57b67c641, sni: hk64.fans8.xyzver-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_147, server: kr1.api-aws.com, port: 443, type: trojan, password: 61f6271b-5e65-46b8-bc80-c6468a1f185e, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(11.49)_148, server: listener.freetrade.link, port: 443, type: trojan, password: Z9TS0AeB8S5ZlpFNRea3aypDaXISOyzY67xCO33lF4gKq38jw2uDEnDYRCCxAc, sni: listener.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_149, server: 60.249.3.230, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_150, server: usa.liangyuandian.top, port: 443, type: trojan, password: b7bc6b1c-610d-4d39-ad29-18a0d6902348, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_151, server: kr1.api-aws.com, port: 443, type: trojan, password: 3f087c04-44e6-4c96-a917-ca974de1212b, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_152, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: a3a3fa58b581353bb375d2ddad0f327938, sni: ned-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_153, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 28d98f761aca9d636f44db6254462836ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_154, server: hk-server-01.selfupay.com, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8da3fa58b581353bb375d2ddad0f327938, sni: hk-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_155, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5KSn-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _JP_wmt(11.49)_156, server: trs17.bolab.net, port: 443, type: trojan, password: 40c89b10235c40321e7a3cef82b53a03, sni: trs17.bolab.net, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_157, server: 2.selfupay.com, port: 443, type: trojan, password: -40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: 2.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_158, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 7c9b7536ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_159, server: uk01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: uk01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_160, server: 60.249.3.229, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_161, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: _NL_wmt(11.49)_162, server: content-provider24.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, sni: content-provider24.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_163, server: 60.249.3.229, port: 3389, type: trojan, password: ca911d30af65ef1b, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_164, server: t03.ssrsub.comhk-server-01.selfupay.com, port: 443, type: trojan, password: 4640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_165, server: ca.liangyuandian.top, port: 443, type: trojan, password: 51c44c4e-f8c2-4419-a52b-b4b7bd915078, sni: ca.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: wmt(11.49)_166, server: 103.172.116.8, port: 9088, type: ss, cipher: aes-256-cfb, password: f8npKgNzdkss2ytn, udp: true}
+  - {name: _CA_wmt(11.49)_167, server: cat-1.opensvr.net, port: 443, type: trojan, password: opentunnel.net-wd3dzt4j9yoy, sni: cat-1.opensvr.net, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_168, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNF640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_169, server: in01.awcloud.top, port: 443, type: trojan, password: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, sni: in01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_170, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206lWNFc1RmRBNk5NQU5KSnga3fa58a3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_171, server: kr1.api-aws.com, port: 443, type: trojan, password: d30afdba-ca55-463a-b26e-27080698a2a6, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_172, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 36ebefac5a3a3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_173, server: 18.141.8.87, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: _NL_wmt(11.49)_174, server: 5.255.103.209, port: 443, type: trojan, password: 3dacbaa8-784b-430c-9c1e-57d33648981d, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_175, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: a3fa5lWNF640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_176, server: kr1.api-aws.com, port: 443, type: trojan, password: 205f8ab6-cb17-4480-93a6-aece90b88742, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_177, server: xieyi.jddg.me, port: 443, type: trojan, password: d716e745-62f8-498e-af97-3a1e096d8c84, sni: xieyi.jddg.me, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_178, server: 60.249.3.226, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_179, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: YWVzLTI1Ni1nY206WWd1c0gyTac5a3ef0-b4ablWNFc1Rm-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_180, server: kr1.api-aws.com, port: 443, type: trojan, password: 3753719b-eb37-4f34-ab60-ae3a70486b27, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _CZ_wmt(11.49)_181, server: v2cross.com.01.v2ce.com, port: 443, type: trojan, password: mMQ6qJB9xbhiRvgg, sni: v2cross.com.01.v2ce.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_182, server: usa-server-02.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, sni: usa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_183, server: 60.249.3.228, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_184, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_185, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 7c9b7560-b036ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_186, server: 60.249.3.227, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_187, server: usa-server-02.selfupay.com, port: 443, type: trojan, password: 5c5ceb40-902b-11eb-945a-123936ebef7d1b1d6205fd0c55f28800e674, sni: usa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_188, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: 8d4ab0f0a3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_189, server: sg-relay.iqyun.zone, port: 443, type: trojan, password: fbb2cc06-b018-4ad0-bb27-baa4a834807f, sni: sg-relay.iqyun.zone, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_190, server: ap.liangyuandian.top, port: 443, type: trojan, password: 51c44c4e-f8c2-4419-a52b-b4b7bd915078, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(11.49)_191, server: v1r.centaur.network, port: 16804, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_192, server: kr1.api-aws.com, port: 443, type: trojan, password: e3dcc71e-f058-43bf-bf0d-5bdf20dec071, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_193, server: 211.72.35.155, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_194, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_195, server: t03.ssrsub.comusa-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-lWNFc1RmRBNk5NQU5KSnga640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comusa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(11.49)_196, server: 51.81.82.15, port: 443, type: trojan, password: c2b0a060-44b0-11ed-ad2e-1239d0255272, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_197, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nYlW640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _FR_wmt(11.49)_198, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, sni: content-provider5.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_200, server: 60.249.3.227, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_201, server: t03.ssrsub.comhk-server-01.selfupay.com, port: 443, type: trojan, password: 2836640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_202, server: t03.ssrsub.comusa-server-02.selfupay.com, port: 443, type: trojan, password: 5c640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comusa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_203, server: uk01.awcloud.top, port: 443, type: trojan, password: 59e806eb-8f89-4c37-a961-86ee23211300, sni: uk01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_204, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-lWNFc1RmRBNk5NQU5KSnga3fa58ac-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _FR_wmt(11.49)_205, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_206, server: hk-server-01.selfupay.com, port: 443, type: trojan, password: ac5a3ef0-b4ab-11eb-b65e-1239da3fa58b581353bb375d2ddad0f327938, sni: hk-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_207, server: uk.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: uk.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_208, server: w11.udpgw.com, port: 443, type: trojan, password: f64e69c0-e7b7-11ec-ab81-1239d0255272, sni: w11.udpgw.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_209, server: jp.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_210, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: 5c7b33c6-6d83-a3fa58b581353bb375d2ddad0f327938, sni: ned-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_212, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-lWNFc1RmRBNk5NQU5KSng36ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: wmt(11.49)_213, server: 103.172.116.7, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH, udp: true}
+  - {name: _SG_wmt(11.49)_214, server: sg.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _IN_wmt(11.49)_215, server: 152.67.160.174, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, skip-cert-verify: true, udp: true}
+  - {name: _JP_wmt(11.49)_217, server: 45.66.134.219, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_218, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_219, server: ca-trojan.bonds.id, port: 443, type: trojan, password: 36ebefac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_221, server: hk-server-01.selfupay.com, port: 443, type: trojan, password: 48ac743a-2da3fa58b581353bb375d2ddad0f327938, sni: hk-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_222, server: ca-trojan.bonds.id, port: 443, type: trojan, password: 28d98ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _JP_wmt(11.49)_223, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_224, server: 211.72.35.152, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(11.49)_225, server: 223.111.202.148, port: 30020, type: trojan, password: ae7cc604-d970-4200-9a9b-eb45087b4fc1, skip-cert-verify: true, udp: true}
+  - {name: wmt(11.49)_226, server: 103.172.116.7, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
+  - {name: _SG_wmt(11.49)_227, server: jp.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_228, server: kr1.api-aws.com, port: 443, type: trojan, password: 10f81a15-c7c8-473b-a12a-a09f098b6236, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(11.49)_229, server: p3r.centaur.network, port: 16802, type: trojan, password: e199b516-00f9-469e-9ee5-fe609b4bc34e, sni: p3r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_230, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_231, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1NlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_232, server: hk31.ssgnode.ga, port: 443, type: trojan, password: 41742_920c8caa, sni: hk31.ssgnode.ga, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_233, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 08d178d4-ec8b-11eb-a8bf-f236ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_234, server: usa-server-02.selfupay.com, port: 443, type: trojan, password: e5d4636ebef7d1b1d6205fd0c55f28800e674, sni: usa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_235, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_236, server: usla.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: usla.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: _CZ_wmt(11.49)_237, server: cz5.v2ce.com, port: 443, type: trojan, password: HTrovQkamDxNfaD5, sni: cz5.v2ce.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(11.49)_238, server: v1r.centaur.network, port: 16805, type: trojan, password: 86114b8a-078f-4c7b-acdd-bfc91b2e9a3b, sni: v1r.centaur.network, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_239, server: 184.168.127.50, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_240, server: t03.ssrsub.comjp-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comjp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_241, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: 82lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eba3fa58b581353bb375d2ddad0f327938, sni: ned-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_242, server: usa-server-02.selfupay.com, port: 443, type: trojan, password: 036ebef7d1b1d6205fd0c55f28800e674, sni: usa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_243, server: 60.249.3.226, port: 3389, type: trojan, password: 9029864a78d29a43, skip-cert-verify: true, udp: true}
+  - {name: _JP_wmt(11.49)_244, server: tw.softbank.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, sni: tw.softbank.mjj-home.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_245, server: ca.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: ca.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_247, server: kr1.api-aws.com, port: 443, type: trojan, password: 84773125-8f79-481c-a80b-e1f4aad86850, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_248, server: t03.ssrsub.comjp-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comjp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_249, server: t03.ssrsub.comk-server-02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_250, server: 60.249.3.231, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: _CZ_wmt(11.49)_252, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, sni: v2cross.com.04.v2ce.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_253, server: t03.ssrsub.comusa-server-02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comusa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_254, server: t03.ssrsub.comjp-server-02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comjp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_255, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: a3fa5-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_256, server: ap.liangyuandian.top, port: 443, type: trojan, password: b341f309-7e2b-45c4-a316-9e23037e3711, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_257, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_258, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_259, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: mMQ36ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_260, server: sg.liangyuandian.top, port: 443, type: trojan, password: 192a5fc9-2baa-4043-8655-d840d370cb86, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_261, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: e4307a50-985336ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_262, server: 2.58.242.43, port: 443, type: trojan, password: YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_263, server: sg02.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: sg02.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_264, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTIlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_265, server: 60.249.3.226, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_266, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nYlW-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_267, server: tw-oo-01.click, port: 443, type: trojan, password: s6rIg1Mkke73fwZU, sni: tw-oo-01.click, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_268, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: b27c853c-714a-45a5-be55-6451595a1b69, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_269, server: kr1.api-aws.com, port: 443, type: trojan, password: 545034ab-8179-46ea-a7d4-a5c992cce000, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_270, server: ca-trojan.bonds.id, port: 443, type: trojan, password: TZLajhUSac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_271, server: usa-server-02.selfupay.com, port: 443, type: trojan, password: 5c-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: usa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_272, server: 5.44.249.43, port: 3389, type: trojan, password: ffec9f6ea19e1dd1, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_273, server: 81.90.189.85, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_274, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nYlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_275, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 2640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_276, server: de.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: de.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_277, server: 5.44.249.43, port: 3389, type: trojan, password: 6f0a9d0fa39d65fa, skip-cert-verify: true, udp: true}
+  - {name: _CH_wmt(11.49)_278, server: 185.126.116.235, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: _GB_wmt(11.49)_279, server: 88.150.137.201, port: 1021, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: _US_wmt(11.49)_280, server: 72.167.45.6, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_281, server: 13.213.69.245, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: _US_wmt(11.49)_282, server: 72.167.45.6, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_284, server: kr1.api-aws.com, port: 443, type: trojan, password: da647e58-8f85-450f-b123-568c492c297c, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_285, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_287, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_288, server: tw01.balala2016.xyz, port: 20261, type: trojan, password: ED177480-E516-11EA-8B44-BBC4E882BA0B, sni: tw01.balala2016.xyz, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_290, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_291, server: t03.ssrsub.comrver-01.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comrver-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_292, server: ca-trojan.bonds.id, port: 443, type: trojan, password: YWVzLTI1Ni1nY206WWd1c0gyTVdBOFBXYzNwac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _JP_wmt(11.49)_293, server: share.softbank.mjj-home.com, port: 443, type: trojan, password: share.mjj-home.com, sni: share.softbank.mjj-home.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_294, server: 5.44.249.43, port: 3389, type: trojan, password: cd39f62aed7b90f6, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_295, server: ca-trojan.bonds.id, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_296, server: 211.72.35.158, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: _CA_wmt(11.49)_297, server: ca-trojan.bonds.id, port: 443, type: trojan, password: a3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: ca-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_298, server: in01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: in01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(11.49)_299, server: 20000.purefast2.com, port: 20000, type: trojan, password: a1d4c471-61d1-3f61-8502-63b14b8b56be, sni: 20000.purefast2.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_300, server: 60.249.3.231, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_301, server: 5.44.249.43, port: 3389, type: trojan, password: d66013c645b93c5c, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_302, server: ap.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(11.49)_303, server: 223.111.202.148, port: 30030, type: trojan, password: ae7cc604-d970-4200-9a9b-eb45087b4fc1, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_304, server: usa-server-02.selfupay.com, port: 443, type: trojan, password: 5c5-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: usa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_305, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 7778e684-f435-4166-bf9e-0256cb28bf10, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(11.49)_306, server: 116.129.254.47, port: 3389, type: trojan, password: 9a27800ca7b52ee0, skip-cert-verify: true, udp: true}
+  - {name: _CN_wmt(11.49)_307, server: 116.129.254.47, port: 3389, type: trojan, password: a170b44c2dfac9e6, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_308, server: jp.liangyuandian.top, port: 443, type: trojan, password: 176196e4-7cf7-4561-87a9-21a1b4e344be, sni: jp.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_309, server: t03.ssrsub.comusa-server-02.selfupay.com, port: 443, type: trojan, password: 5c5c640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comusa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_310, server: singapore.anthoncloud.com, port: 3306, type: trojan, password: 6589ce99-9ff7-3c1b-a744-ca3f4abfe386, sni: singapore.anthoncloud.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_311, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_312, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: YWVzLTI1Ni1nY206WWd1c0gyTac5a3ef0-b4ablWNFc1RmRBNk5NQU5KSnga3fa58a640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _TW_wmt(11.49)_313, server: 2.58.242.43, port: 443, type: trojan, password: 7a9a3bb7-43b4YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_314, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _SG_wmt(11.49)_315, server: 184.168.127.50, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: _NL_wmt(11.49)_316, server: 185.212.200.75, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_317, server: ver-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: ver-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_318, server: sg-server-01.selfupay.com, port: 443, type: trojan, password: 36ebef736ebef7d1b1d6205fd0c55f28800e674, sni: sg-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_319, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTac5a3ef0-b4ab-11eb-b65e-1239d036ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_320, server: sg-server-01.selfupay.com, port: 443, type: trojan, password: YWVzLlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d36ebef7d1b1d6205fd0c55f28800e674, sni: sg-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_321, server: hk01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: hk01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_322, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: 280a1162-00cb-11ec-a8bf-fa3fa58b581353bb375d2ddad0f327938, sni: ned-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_323, server: sg-server-01.selfupay.com, port: 443, type: trojan, password: 280a1162-00cb-11ec-a8bf-f23c91cfbb36ebef7d1b1d6205fd0c55f28800e674, sni: sg-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_324, server: kr1.api-aws.com, port: 443, type: trojan, password: 23103894-eec7-4de1-a05a-c2e11e351287, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_325, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef036ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _AU_wmt(11.49)_326, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: ac5a3ef0-b4ab-11eb-b65e-12336ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: _KR_wmt(11.49)_327, server: kr1.api-aws.com, port: 443, type: trojan, password: db9b6698-f01c-4fe1-93ca-d752c956c2d3, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
+  - {name: _HK_wmt(11.49)_328, server: in01.awcloud.top, port: 443, type: trojan, password: 59e806eb-8f89-4c37-a961-86ee23211300, sni: in01.awcloud.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _RU_wmt(11.21)_1
-      - _US_wmt(11.21)_2
-      - _US_wmt(11.21)_3
-      - _US_wmt(11.21)_4
-      - _US_wmt(11.21)_6
-      - _TW_wmt(11.21)_9
-      - _TW_wmt(11.21)_10
-      - _TW_wmt(11.21)_11
-      - _HK_wmt(11.21)_12
-      - _TW_wmt(11.21)_13
-      - _TW_wmt(11.21)_14
-      - _US_wmt(11.21)_15
-      - _TW_wmt(11.21)_19
-      - _US_wmt(11.21)_20
-      - _TW_wmt(11.21)_23
-      - _HK_wmt(11.21)_24
-      - _TW_wmt(11.21)_26
-      - _TW_wmt(11.21)_27
-      - _HK_wmt(11.21)_28
-      - _TW_wmt(11.21)_30
-      - _HK_wmt(11.21)_31
-      - _US_wmt(11.21)_32
-      - _US_wmt(11.21)_34
-      - _US_wmt(11.21)_35
-      - _US_wmt(11.21)_37
-      - _US_wmt(11.21)_38
-      - _US_wmt(11.21)_47
-      - _US_wmt(11.21)_48
-      - _BH_wmt(11.21)_49
-      - _FR_wmt(11.21)_69
-      - _FR_wmt(11.21)_70
-      - _FR_wmt(11.21)_80
-      - _HK_wmt(11.21)_81
-      - wmt(11.21)_82
-      - _US_wmt(11.21)_83
-      - _DE_wmt(11.21)_88
-      - _DE_wmt(11.21)_89
-      - _US_wmt(11.21)_90
-      - _JP_wmt(11.21)_95
-      - _US_wmt(11.21)_96
-      - _US_wmt(11.21)_104
-      - _CA_wmt(11.21)_106
-      - _TW_wmt(11.21)_107
-      - _US_wmt(11.21)_117
-      - _SG_wmt(11.21)_119
-      - _JP_wmt(11.21)_121
-      - _TW_wmt(11.21)_122
-      - _HK_wmt(11.21)_124
-      - _FR_wmt(11.21)_125
-      - _US_wmt(11.21)_129
-      - _CN_wmt(11.21)_130
-      - _US_wmt(11.21)_131
-      - wmt(11.21)_132
-      - _NL_wmt(11.21)_133
-      - _NL_wmt(11.21)_134
-      - wmt(11.21)_135
-      - _FR_wmt(11.21)_136
-      - _FR_wmt(11.21)_137
-      - wmt(11.21)_138
-      - _US_wmt(11.21)_139
-      - wmt(11.21)_140
-      - _US_wmt(11.21)_141
-      - _US_wmt(11.21)_142
-      - _US_wmt(11.21)_143
-      - wmt(11.21)_144
-      - _US_wmt(11.21)_145
-      - wmt(11.21)_146
-      - _US_wmt(11.21)_147
-      - _US_wmt(11.21)_148
-      - _US_wmt(11.21)_149
-      - _US_wmt(11.21)_150
-      - _US_wmt(11.21)_151
-      - _US_wmt(11.21)_152
-      - wmt(11.21)_153
-      - _US_wmt(11.21)_154
-      - _TW_wmt(11.21)_155
-      - _SG_wmt(11.21)_156
-      - wmt(11.21)_158
-      - _TW_wmt(11.21)_159
-      - _US_wmt(11.21)_160
-      - _HK_wmt(11.21)_161
-      - _TW_wmt(11.21)_163
-      - _TW_wmt(11.21)_165
-      - _US_wmt(11.21)_168
-      - _TW_wmt(11.21)_170
-      - _TW_wmt(11.21)_171
-      - _SG_wmt(11.21)_172
-      - _TW_wmt(11.21)_174
-      - _US_wmt(11.21)_175
-      - _HK_wmt(11.21)_176
-      - _TW_wmt(11.21)_178
-      - _TW_wmt(11.21)_179
-      - _SG_wmt(11.21)_181
-      - _TW_wmt(11.21)_182
-      - _US_wmt(11.21)_183
-      - _US_wmt(11.21)_184
-      - wmt(11.21)_185
-      - wmt(11.21)_186
-      - _SG_wmt(11.21)_187
-      - wmt(11.21)_188
-      - wmt(11.21)_189
-      - _US_wmt(11.21)_190
-      - _SG_wmt(11.21)_191
-      - _US_wmt(11.21)_192
-      - wmt(11.21)_193
-      - _SG_wmt(11.21)_194
-      - _US_wmt(11.21)_195
-      - _US_wmt(11.21)_196
-      - _US_wmt(11.21)_197
-      - _US_wmt(11.21)_198
-      - _US_wmt(11.21)_199
-      - _US_wmt(11.21)_200
-      - _SG_wmt(11.21)_201
-      - _US_wmt(11.21)_202
-      - _US_wmt(11.21)_203
-      - _SG_wmt(11.21)_204
-      - _US_wmt(11.21)_205
-      - _US_wmt(11.21)_206
-      - wmt(11.21)_207
-      - _US_wmt(11.21)_208
-      - _US_wmt(11.21)_209
-      - _US_wmt(11.21)_210
-      - _US_wmt(11.21)_211
-      - _SG_wmt(11.21)_212
-      - _US_wmt(11.21)_213
-      - _US_wmt(11.21)_214
-      - _SG_wmt(11.21)_215
-      - _US_wmt(11.21)_216
-      - _US_wmt(11.21)_217
-      - _US_wmt(11.21)_218
-      - _US_wmt(11.21)_219
-      - _US_wmt(11.21)_220
-      - _US_wmt(11.21)_221
-      - _US_wmt(11.21)_222
-      - _US_wmt(11.21)_223
-      - _AU_wmt(11.21)_224
-      - wmt(11.21)_225
-      - wmt(11.21)_226
-      - wmt(11.21)_227
-      - _NL_wmt(11.21)_228
+      - _AU_wmt(11.49)_1
+      - _SG_wmt(11.49)_3
+      - _SG_wmt(11.49)_4
+      - _KR_wmt(11.49)_5
+      - _BH_wmt(11.49)_7
+      - _CN_wmt(11.49)_8
+      - _SG_wmt(11.49)_9
+      - _SG_wmt(11.49)_10
+      - _AU_wmt(11.49)_11
+      - wmt(11.49)_12
+      - _TW_wmt(11.49)_13
+      - _SG_wmt(11.49)_14
+      - _KR_wmt(11.49)_15
+      - _AU_wmt(11.49)_17
+      - _JP_wmt(11.49)_18
+      - _CA_wmt(11.49)_19
+      - _AU_wmt(11.49)_20
+      - _CA_wmt(11.49)_21
+      - _SG_wmt(11.49)_22
+      - _CN_wmt(11.49)_23
+      - _SG_wmt(11.49)_24
+      - _TW_wmt(11.49)_25
+      - _AU_wmt(11.49)_26
+      - _CA_wmt(11.49)_27
+      - wmt(11.49)_28
+      - _AU_wmt(11.49)_29
+      - _SG_wmt(11.49)_30
+      - wmt(11.49)_31
+      - _SG_wmt(11.49)_32
+      - _AU_wmt(11.49)_33
+      - _CA_wmt(11.49)_34
+      - _CA_wmt(11.49)_35
+      - _US_wmt(11.49)_36
+      - _CN_wmt(11.49)_37
+      - _AU_wmt(11.49)_38
+      - _AU_wmt(11.49)_39
+      - _HK_wmt(11.49)_41
+      - _AU_wmt(11.49)_42
+      - _AU_wmt(11.49)_43
+      - _TW_wmt(11.49)_44
+      - _KR_wmt(11.49)_45
+      - _HK_wmt(11.49)_46
+      - _AU_wmt(11.49)_47
+      - _AU_wmt(11.49)_48
+      - _SG_wmt(11.49)_49
+      - _AU_wmt(11.49)_50
+      - _TW_wmt(11.49)_51
+      - _TW_wmt(11.49)_52
+      - _AU_wmt(11.49)_53
+      - _HK_wmt(11.49)_54
+      - _HK_wmt(11.49)_55
+      - _CA_wmt(11.49)_56
+      - _AU_wmt(11.49)_57
+      - _CA_wmt(11.49)_58
+      - _AU_wmt(11.49)_59
+      - _TW_wmt(11.49)_60
+      - _SG_wmt(11.49)_61
+      - _CA_wmt(11.49)_62
+      - _TW_wmt(11.49)_63
+      - _HK_wmt(11.49)_64
+      - wmt(11.49)_65
+      - _HK_wmt(11.49)_66
+      - _AU_wmt(11.49)_67
+      - _AU_wmt(11.49)_68
+      - _AU_wmt(11.49)_69
+      - _AU_wmt(11.49)_70
+      - _CN_wmt(11.49)_71
+      - _AU_wmt(11.49)_72
+      - _AU_wmt(11.49)_73
+      - _CA_wmt(11.49)_74
+      - _CH_wmt(11.49)_75
+      - _SG_wmt(11.49)_76
+      - _SG_wmt(11.49)_77
+      - _AU_wmt(11.49)_78
+      - _AU_wmt(11.49)_79
+      - _AU_wmt(11.49)_80
+      - _SG_wmt(11.49)_81
+      - _SG_wmt(11.49)_82
+      - _US_wmt(11.49)_83
+      - _TW_wmt(11.49)_84
+      - _TW_wmt(11.49)_85
+      - _TW_wmt(11.49)_86
+      - _AU_wmt(11.49)_87
+      - _CN_wmt(11.49)_88
+      - wmt(11.49)_89
+      - _CN_wmt(11.49)_90
+      - _AU_wmt(11.49)_91
+      - wmt(11.49)_92
+      - _KR_wmt(11.49)_93
+      - _CA_wmt(11.49)_94
+      - _CH_wmt(11.49)_95
+      - _HK_wmt(11.49)_96
+      - _KR_wmt(11.49)_97
+      - _KR_wmt(11.49)_98
+      - _SG_wmt(11.49)_99
+      - _SG_wmt(11.49)_100
+      - _AU_wmt(11.49)_101
+      - _AU_wmt(11.49)_102
+      - _AU_wmt(11.49)_103
+      - _SG_wmt(11.49)_104
+      - _HK_wmt(11.49)_105
+      - _US_wmt(11.49)_108
+      - _TW_wmt(11.49)_109
+      - _AU_wmt(11.49)_110
+      - _HK_wmt(11.49)_111
+      - _AU_wmt(11.49)_112
+      - _CA_wmt(11.49)_113
+      - _JP_wmt(11.49)_114
+      - _FR_wmt(11.49)_115
+      - _HK_wmt(11.49)_116
+      - _TW_wmt(11.49)_117
+      - _KR_wmt(11.49)_118
+      - _HK_wmt(11.49)_119
+      - _CA_wmt(11.49)_120
+      - _CA_wmt(11.49)_121
+      - _FR_wmt(11.49)_122
+      - _AU_wmt(11.49)_123
+      - _CZ_wmt(11.49)_124
+      - _AU_wmt(11.49)_125
+      - _AU_wmt(11.49)_126
+      - wmt(11.49)_127
+      - _FR_wmt(11.49)_128
+      - wmt(11.49)_129
+      - _AU_wmt(11.49)_130
+      - _AU_wmt(11.49)_131
+      - _AU_wmt(11.49)_132
+      - wmt(11.49)_133
+      - _SG_wmt(11.49)_134
+      - _AU_wmt(11.49)_135
+      - _AU_wmt(11.49)_136
+      - _US_wmt(11.49)_137
+      - _US_wmt(11.49)_138
+      - _FR_wmt(11.49)_139
+      - _US_wmt(11.49)_140
+      - _CN_wmt(11.49)_141
+      - wmt(11.49)_142
+      - _CN_wmt(11.49)_143
+      - _TW_wmt(11.49)_144
+      - _HK_wmt(11.49)_145
+      - _AU_wmt(11.49)_146
+      - _KR_wmt(11.49)_147
+      - _US_wmt(11.49)_148
+      - _TW_wmt(11.49)_149
+      - _SG_wmt(11.49)_150
+      - _KR_wmt(11.49)_151
+      - _AU_wmt(11.49)_152
+      - _AU_wmt(11.49)_153
+      - _AU_wmt(11.49)_154
+      - _AU_wmt(11.49)_155
+      - _JP_wmt(11.49)_156
+      - _AU_wmt(11.49)_157
+      - _AU_wmt(11.49)_158
+      - _HK_wmt(11.49)_159
+      - _TW_wmt(11.49)_160
+      - _HK_wmt(11.49)_161
+      - _NL_wmt(11.49)_162
+      - _TW_wmt(11.49)_163
+      - _AU_wmt(11.49)_164
+      - _SG_wmt(11.49)_165
+      - wmt(11.49)_166
+      - _CA_wmt(11.49)_167
+      - _AU_wmt(11.49)_168
+      - _HK_wmt(11.49)_169
+      - _AU_wmt(11.49)_170
+      - _KR_wmt(11.49)_171
+      - _AU_wmt(11.49)_172
+      - _SG_wmt(11.49)_173
+      - _NL_wmt(11.49)_174
+      - _AU_wmt(11.49)_175
+      - _KR_wmt(11.49)_176
+      - _AU_wmt(11.49)_177
+      - _TW_wmt(11.49)_178
+      - _AU_wmt(11.49)_179
+      - _KR_wmt(11.49)_180
+      - _CZ_wmt(11.49)_181
+      - _AU_wmt(11.49)_182
+      - _TW_wmt(11.49)_183
+      - _AU_wmt(11.49)_184
+      - _AU_wmt(11.49)_185
+      - _TW_wmt(11.49)_186
+      - _AU_wmt(11.49)_187
+      - _AU_wmt(11.49)_188
+      - _SG_wmt(11.49)_189
+      - _SG_wmt(11.49)_190
+      - _CN_wmt(11.49)_191
+      - _KR_wmt(11.49)_192
+      - _TW_wmt(11.49)_193
+      - _AU_wmt(11.49)_194
+      - _AU_wmt(11.49)_195
+      - _US_wmt(11.49)_196
+      - _AU_wmt(11.49)_197
+      - _FR_wmt(11.49)_198
+      - _TW_wmt(11.49)_200
+      - _AU_wmt(11.49)_201
+      - _AU_wmt(11.49)_202
+      - _HK_wmt(11.49)_203
+      - _AU_wmt(11.49)_204
+      - _FR_wmt(11.49)_205
+      - _AU_wmt(11.49)_206
+      - _SG_wmt(11.49)_207
+      - _SG_wmt(11.49)_208
+      - _SG_wmt(11.49)_209
+      - _AU_wmt(11.49)_210
+      - _AU_wmt(11.49)_212
+      - wmt(11.49)_213
+      - _SG_wmt(11.49)_214
+      - _IN_wmt(11.49)_215
+      - _JP_wmt(11.49)_217
+      - _CA_wmt(11.49)_218
+      - _CA_wmt(11.49)_219
+      - _AU_wmt(11.49)_221
+      - _CA_wmt(11.49)_222
+      - _JP_wmt(11.49)_223
+      - _TW_wmt(11.49)_224
+      - _CN_wmt(11.49)_225
+      - wmt(11.49)_226
+      - _SG_wmt(11.49)_227
+      - _KR_wmt(11.49)_228
+      - _CN_wmt(11.49)_229
+      - _AU_wmt(11.49)_230
+      - _CA_wmt(11.49)_231
+      - _SG_wmt(11.49)_232
+      - _AU_wmt(11.49)_233
+      - _AU_wmt(11.49)_234
+      - _CA_wmt(11.49)_235
+      - _HK_wmt(11.49)_236
+      - _CZ_wmt(11.49)_237
+      - _CN_wmt(11.49)_238
+      - _SG_wmt(11.49)_239
+      - _AU_wmt(11.49)_240
+      - _AU_wmt(11.49)_241
+      - _AU_wmt(11.49)_242
+      - _TW_wmt(11.49)_243
+      - _JP_wmt(11.49)_244
+      - _SG_wmt(11.49)_245
+      - _KR_wmt(11.49)_247
+      - _AU_wmt(11.49)_248
+      - _AU_wmt(11.49)_249
+      - _TW_wmt(11.49)_250
+      - _CZ_wmt(11.49)_252
+      - _AU_wmt(11.49)_253
+      - _AU_wmt(11.49)_254
+      - _AU_wmt(11.49)_255
+      - _SG_wmt(11.49)_256
+      - _CA_wmt(11.49)_257
+      - _AU_wmt(11.49)_258
+      - _AU_wmt(11.49)_259
+      - _SG_wmt(11.49)_260
+      - _AU_wmt(11.49)_261
+      - _TW_wmt(11.49)_262
+      - _HK_wmt(11.49)_263
+      - _CA_wmt(11.49)_264
+      - _TW_wmt(11.49)_265
+      - _AU_wmt(11.49)_266
+      - _TW_wmt(11.49)_267
+      - _HK_wmt(11.49)_268
+      - _KR_wmt(11.49)_269
+      - _CA_wmt(11.49)_270
+      - _AU_wmt(11.49)_271
+      - _SG_wmt(11.49)_272
+      - _SG_wmt(11.49)_273
+      - _CA_wmt(11.49)_274
+      - _AU_wmt(11.49)_275
+      - _HK_wmt(11.49)_276
+      - _SG_wmt(11.49)_277
+      - _CH_wmt(11.49)_278
+      - _GB_wmt(11.49)_279
+      - _US_wmt(11.49)_280
+      - _SG_wmt(11.49)_281
+      - _US_wmt(11.49)_282
+      - _KR_wmt(11.49)_284
+      - _AU_wmt(11.49)_285
+      - _HK_wmt(11.49)_287
+      - _TW_wmt(11.49)_288
+      - _HK_wmt(11.49)_290
+      - _AU_wmt(11.49)_291
+      - _CA_wmt(11.49)_292
+      - _JP_wmt(11.49)_293
+      - _SG_wmt(11.49)_294
+      - _CA_wmt(11.49)_295
+      - _TW_wmt(11.49)_296
+      - _CA_wmt(11.49)_297
+      - _HK_wmt(11.49)_298
+      - _CN_wmt(11.49)_299
+      - _TW_wmt(11.49)_300
+      - _SG_wmt(11.49)_301
+      - _SG_wmt(11.49)_302
+      - _CN_wmt(11.49)_303
+      - _AU_wmt(11.49)_304
+      - _HK_wmt(11.49)_305
+      - _CN_wmt(11.49)_306
+      - _CN_wmt(11.49)_307
+      - _SG_wmt(11.49)_308
+      - _AU_wmt(11.49)_309
+      - _SG_wmt(11.49)_310
+      - _HK_wmt(11.49)_311
+      - _AU_wmt(11.49)_312
+      - _TW_wmt(11.49)_313
+      - _AU_wmt(11.49)_314
+      - _SG_wmt(11.49)_315
+      - _NL_wmt(11.49)_316
+      - _AU_wmt(11.49)_317
+      - _AU_wmt(11.49)_318
+      - _AU_wmt(11.49)_319
+      - _AU_wmt(11.49)_320
+      - _HK_wmt(11.49)_321
+      - _AU_wmt(11.49)_322
+      - _AU_wmt(11.49)_323
+      - _KR_wmt(11.49)_324
+      - _AU_wmt(11.49)_325
+      - _AU_wmt(11.49)_326
+      - _KR_wmt(11.49)_327
+      - _HK_wmt(11.49)_328
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _RU_wmt(11.21)_1
-      - _US_wmt(11.21)_2
-      - _US_wmt(11.21)_3
-      - _US_wmt(11.21)_4
-      - _US_wmt(11.21)_6
-      - _TW_wmt(11.21)_9
-      - _TW_wmt(11.21)_10
-      - _TW_wmt(11.21)_11
-      - _HK_wmt(11.21)_12
-      - _TW_wmt(11.21)_13
-      - _TW_wmt(11.21)_14
-      - _US_wmt(11.21)_15
-      - _TW_wmt(11.21)_19
-      - _US_wmt(11.21)_20
-      - _TW_wmt(11.21)_23
-      - _HK_wmt(11.21)_24
-      - _TW_wmt(11.21)_26
-      - _TW_wmt(11.21)_27
-      - _HK_wmt(11.21)_28
-      - _TW_wmt(11.21)_30
-      - _HK_wmt(11.21)_31
-      - _US_wmt(11.21)_32
-      - _US_wmt(11.21)_34
-      - _US_wmt(11.21)_35
-      - _US_wmt(11.21)_37
-      - _US_wmt(11.21)_38
-      - _US_wmt(11.21)_47
-      - _US_wmt(11.21)_48
-      - _BH_wmt(11.21)_49
-      - _FR_wmt(11.21)_69
-      - _FR_wmt(11.21)_70
-      - _FR_wmt(11.21)_80
-      - _HK_wmt(11.21)_81
-      - wmt(11.21)_82
-      - _US_wmt(11.21)_83
-      - _DE_wmt(11.21)_88
-      - _DE_wmt(11.21)_89
-      - _US_wmt(11.21)_90
-      - _JP_wmt(11.21)_95
-      - _US_wmt(11.21)_96
-      - _US_wmt(11.21)_104
-      - _CA_wmt(11.21)_106
-      - _TW_wmt(11.21)_107
-      - _US_wmt(11.21)_117
-      - _SG_wmt(11.21)_119
-      - _JP_wmt(11.21)_121
-      - _TW_wmt(11.21)_122
-      - _HK_wmt(11.21)_124
-      - _FR_wmt(11.21)_125
-      - _US_wmt(11.21)_129
-      - _CN_wmt(11.21)_130
-      - _US_wmt(11.21)_131
-      - wmt(11.21)_132
-      - _NL_wmt(11.21)_133
-      - _NL_wmt(11.21)_134
-      - wmt(11.21)_135
-      - _FR_wmt(11.21)_136
-      - _FR_wmt(11.21)_137
-      - wmt(11.21)_138
-      - _US_wmt(11.21)_139
-      - wmt(11.21)_140
-      - _US_wmt(11.21)_141
-      - _US_wmt(11.21)_142
-      - _US_wmt(11.21)_143
-      - wmt(11.21)_144
-      - _US_wmt(11.21)_145
-      - wmt(11.21)_146
-      - _US_wmt(11.21)_147
-      - _US_wmt(11.21)_148
-      - _US_wmt(11.21)_149
-      - _US_wmt(11.21)_150
-      - _US_wmt(11.21)_151
-      - _US_wmt(11.21)_152
-      - wmt(11.21)_153
-      - _US_wmt(11.21)_154
-      - _TW_wmt(11.21)_155
-      - _SG_wmt(11.21)_156
-      - wmt(11.21)_158
-      - _TW_wmt(11.21)_159
-      - _US_wmt(11.21)_160
-      - _HK_wmt(11.21)_161
-      - _TW_wmt(11.21)_163
-      - _TW_wmt(11.21)_165
-      - _US_wmt(11.21)_168
-      - _TW_wmt(11.21)_170
-      - _TW_wmt(11.21)_171
-      - _SG_wmt(11.21)_172
-      - _TW_wmt(11.21)_174
-      - _US_wmt(11.21)_175
-      - _HK_wmt(11.21)_176
-      - _TW_wmt(11.21)_178
-      - _TW_wmt(11.21)_179
-      - _SG_wmt(11.21)_181
-      - _TW_wmt(11.21)_182
-      - _US_wmt(11.21)_183
-      - _US_wmt(11.21)_184
-      - wmt(11.21)_185
-      - wmt(11.21)_186
-      - _SG_wmt(11.21)_187
-      - wmt(11.21)_188
-      - wmt(11.21)_189
-      - _US_wmt(11.21)_190
-      - _SG_wmt(11.21)_191
-      - _US_wmt(11.21)_192
-      - wmt(11.21)_193
-      - _SG_wmt(11.21)_194
-      - _US_wmt(11.21)_195
-      - _US_wmt(11.21)_196
-      - _US_wmt(11.21)_197
-      - _US_wmt(11.21)_198
-      - _US_wmt(11.21)_199
-      - _US_wmt(11.21)_200
-      - _SG_wmt(11.21)_201
-      - _US_wmt(11.21)_202
-      - _US_wmt(11.21)_203
-      - _SG_wmt(11.21)_204
-      - _US_wmt(11.21)_205
-      - _US_wmt(11.21)_206
-      - wmt(11.21)_207
-      - _US_wmt(11.21)_208
-      - _US_wmt(11.21)_209
-      - _US_wmt(11.21)_210
-      - _US_wmt(11.21)_211
-      - _SG_wmt(11.21)_212
-      - _US_wmt(11.21)_213
-      - _US_wmt(11.21)_214
-      - _SG_wmt(11.21)_215
-      - _US_wmt(11.21)_216
-      - _US_wmt(11.21)_217
-      - _US_wmt(11.21)_218
-      - _US_wmt(11.21)_219
-      - _US_wmt(11.21)_220
-      - _US_wmt(11.21)_221
-      - _US_wmt(11.21)_222
-      - _US_wmt(11.21)_223
-      - _AU_wmt(11.21)_224
-      - wmt(11.21)_225
-      - wmt(11.21)_226
-      - wmt(11.21)_227
-      - _NL_wmt(11.21)_228
+      - _AU_wmt(11.49)_1
+      - _SG_wmt(11.49)_3
+      - _SG_wmt(11.49)_4
+      - _KR_wmt(11.49)_5
+      - _BH_wmt(11.49)_7
+      - _CN_wmt(11.49)_8
+      - _SG_wmt(11.49)_9
+      - _SG_wmt(11.49)_10
+      - _AU_wmt(11.49)_11
+      - wmt(11.49)_12
+      - _TW_wmt(11.49)_13
+      - _SG_wmt(11.49)_14
+      - _KR_wmt(11.49)_15
+      - _AU_wmt(11.49)_17
+      - _JP_wmt(11.49)_18
+      - _CA_wmt(11.49)_19
+      - _AU_wmt(11.49)_20
+      - _CA_wmt(11.49)_21
+      - _SG_wmt(11.49)_22
+      - _CN_wmt(11.49)_23
+      - _SG_wmt(11.49)_24
+      - _TW_wmt(11.49)_25
+      - _AU_wmt(11.49)_26
+      - _CA_wmt(11.49)_27
+      - wmt(11.49)_28
+      - _AU_wmt(11.49)_29
+      - _SG_wmt(11.49)_30
+      - wmt(11.49)_31
+      - _SG_wmt(11.49)_32
+      - _AU_wmt(11.49)_33
+      - _CA_wmt(11.49)_34
+      - _CA_wmt(11.49)_35
+      - _US_wmt(11.49)_36
+      - _CN_wmt(11.49)_37
+      - _AU_wmt(11.49)_38
+      - _AU_wmt(11.49)_39
+      - _HK_wmt(11.49)_41
+      - _AU_wmt(11.49)_42
+      - _AU_wmt(11.49)_43
+      - _TW_wmt(11.49)_44
+      - _KR_wmt(11.49)_45
+      - _HK_wmt(11.49)_46
+      - _AU_wmt(11.49)_47
+      - _AU_wmt(11.49)_48
+      - _SG_wmt(11.49)_49
+      - _AU_wmt(11.49)_50
+      - _TW_wmt(11.49)_51
+      - _TW_wmt(11.49)_52
+      - _AU_wmt(11.49)_53
+      - _HK_wmt(11.49)_54
+      - _HK_wmt(11.49)_55
+      - _CA_wmt(11.49)_56
+      - _AU_wmt(11.49)_57
+      - _CA_wmt(11.49)_58
+      - _AU_wmt(11.49)_59
+      - _TW_wmt(11.49)_60
+      - _SG_wmt(11.49)_61
+      - _CA_wmt(11.49)_62
+      - _TW_wmt(11.49)_63
+      - _HK_wmt(11.49)_64
+      - wmt(11.49)_65
+      - _HK_wmt(11.49)_66
+      - _AU_wmt(11.49)_67
+      - _AU_wmt(11.49)_68
+      - _AU_wmt(11.49)_69
+      - _AU_wmt(11.49)_70
+      - _CN_wmt(11.49)_71
+      - _AU_wmt(11.49)_72
+      - _AU_wmt(11.49)_73
+      - _CA_wmt(11.49)_74
+      - _CH_wmt(11.49)_75
+      - _SG_wmt(11.49)_76
+      - _SG_wmt(11.49)_77
+      - _AU_wmt(11.49)_78
+      - _AU_wmt(11.49)_79
+      - _AU_wmt(11.49)_80
+      - _SG_wmt(11.49)_81
+      - _SG_wmt(11.49)_82
+      - _US_wmt(11.49)_83
+      - _TW_wmt(11.49)_84
+      - _TW_wmt(11.49)_85
+      - _TW_wmt(11.49)_86
+      - _AU_wmt(11.49)_87
+      - _CN_wmt(11.49)_88
+      - wmt(11.49)_89
+      - _CN_wmt(11.49)_90
+      - _AU_wmt(11.49)_91
+      - wmt(11.49)_92
+      - _KR_wmt(11.49)_93
+      - _CA_wmt(11.49)_94
+      - _CH_wmt(11.49)_95
+      - _HK_wmt(11.49)_96
+      - _KR_wmt(11.49)_97
+      - _KR_wmt(11.49)_98
+      - _SG_wmt(11.49)_99
+      - _SG_wmt(11.49)_100
+      - _AU_wmt(11.49)_101
+      - _AU_wmt(11.49)_102
+      - _AU_wmt(11.49)_103
+      - _SG_wmt(11.49)_104
+      - _HK_wmt(11.49)_105
+      - _US_wmt(11.49)_108
+      - _TW_wmt(11.49)_109
+      - _AU_wmt(11.49)_110
+      - _HK_wmt(11.49)_111
+      - _AU_wmt(11.49)_112
+      - _CA_wmt(11.49)_113
+      - _JP_wmt(11.49)_114
+      - _FR_wmt(11.49)_115
+      - _HK_wmt(11.49)_116
+      - _TW_wmt(11.49)_117
+      - _KR_wmt(11.49)_118
+      - _HK_wmt(11.49)_119
+      - _CA_wmt(11.49)_120
+      - _CA_wmt(11.49)_121
+      - _FR_wmt(11.49)_122
+      - _AU_wmt(11.49)_123
+      - _CZ_wmt(11.49)_124
+      - _AU_wmt(11.49)_125
+      - _AU_wmt(11.49)_126
+      - wmt(11.49)_127
+      - _FR_wmt(11.49)_128
+      - wmt(11.49)_129
+      - _AU_wmt(11.49)_130
+      - _AU_wmt(11.49)_131
+      - _AU_wmt(11.49)_132
+      - wmt(11.49)_133
+      - _SG_wmt(11.49)_134
+      - _AU_wmt(11.49)_135
+      - _AU_wmt(11.49)_136
+      - _US_wmt(11.49)_137
+      - _US_wmt(11.49)_138
+      - _FR_wmt(11.49)_139
+      - _US_wmt(11.49)_140
+      - _CN_wmt(11.49)_141
+      - wmt(11.49)_142
+      - _CN_wmt(11.49)_143
+      - _TW_wmt(11.49)_144
+      - _HK_wmt(11.49)_145
+      - _AU_wmt(11.49)_146
+      - _KR_wmt(11.49)_147
+      - _US_wmt(11.49)_148
+      - _TW_wmt(11.49)_149
+      - _SG_wmt(11.49)_150
+      - _KR_wmt(11.49)_151
+      - _AU_wmt(11.49)_152
+      - _AU_wmt(11.49)_153
+      - _AU_wmt(11.49)_154
+      - _AU_wmt(11.49)_155
+      - _JP_wmt(11.49)_156
+      - _AU_wmt(11.49)_157
+      - _AU_wmt(11.49)_158
+      - _HK_wmt(11.49)_159
+      - _TW_wmt(11.49)_160
+      - _HK_wmt(11.49)_161
+      - _NL_wmt(11.49)_162
+      - _TW_wmt(11.49)_163
+      - _AU_wmt(11.49)_164
+      - _SG_wmt(11.49)_165
+      - wmt(11.49)_166
+      - _CA_wmt(11.49)_167
+      - _AU_wmt(11.49)_168
+      - _HK_wmt(11.49)_169
+      - _AU_wmt(11.49)_170
+      - _KR_wmt(11.49)_171
+      - _AU_wmt(11.49)_172
+      - _SG_wmt(11.49)_173
+      - _NL_wmt(11.49)_174
+      - _AU_wmt(11.49)_175
+      - _KR_wmt(11.49)_176
+      - _AU_wmt(11.49)_177
+      - _TW_wmt(11.49)_178
+      - _AU_wmt(11.49)_179
+      - _KR_wmt(11.49)_180
+      - _CZ_wmt(11.49)_181
+      - _AU_wmt(11.49)_182
+      - _TW_wmt(11.49)_183
+      - _AU_wmt(11.49)_184
+      - _AU_wmt(11.49)_185
+      - _TW_wmt(11.49)_186
+      - _AU_wmt(11.49)_187
+      - _AU_wmt(11.49)_188
+      - _SG_wmt(11.49)_189
+      - _SG_wmt(11.49)_190
+      - _CN_wmt(11.49)_191
+      - _KR_wmt(11.49)_192
+      - _TW_wmt(11.49)_193
+      - _AU_wmt(11.49)_194
+      - _AU_wmt(11.49)_195
+      - _US_wmt(11.49)_196
+      - _AU_wmt(11.49)_197
+      - _FR_wmt(11.49)_198
+      - _TW_wmt(11.49)_200
+      - _AU_wmt(11.49)_201
+      - _AU_wmt(11.49)_202
+      - _HK_wmt(11.49)_203
+      - _AU_wmt(11.49)_204
+      - _FR_wmt(11.49)_205
+      - _AU_wmt(11.49)_206
+      - _SG_wmt(11.49)_207
+      - _SG_wmt(11.49)_208
+      - _SG_wmt(11.49)_209
+      - _AU_wmt(11.49)_210
+      - _AU_wmt(11.49)_212
+      - wmt(11.49)_213
+      - _SG_wmt(11.49)_214
+      - _IN_wmt(11.49)_215
+      - _JP_wmt(11.49)_217
+      - _CA_wmt(11.49)_218
+      - _CA_wmt(11.49)_219
+      - _AU_wmt(11.49)_221
+      - _CA_wmt(11.49)_222
+      - _JP_wmt(11.49)_223
+      - _TW_wmt(11.49)_224
+      - _CN_wmt(11.49)_225
+      - wmt(11.49)_226
+      - _SG_wmt(11.49)_227
+      - _KR_wmt(11.49)_228
+      - _CN_wmt(11.49)_229
+      - _AU_wmt(11.49)_230
+      - _CA_wmt(11.49)_231
+      - _SG_wmt(11.49)_232
+      - _AU_wmt(11.49)_233
+      - _AU_wmt(11.49)_234
+      - _CA_wmt(11.49)_235
+      - _HK_wmt(11.49)_236
+      - _CZ_wmt(11.49)_237
+      - _CN_wmt(11.49)_238
+      - _SG_wmt(11.49)_239
+      - _AU_wmt(11.49)_240
+      - _AU_wmt(11.49)_241
+      - _AU_wmt(11.49)_242
+      - _TW_wmt(11.49)_243
+      - _JP_wmt(11.49)_244
+      - _SG_wmt(11.49)_245
+      - _KR_wmt(11.49)_247
+      - _AU_wmt(11.49)_248
+      - _AU_wmt(11.49)_249
+      - _TW_wmt(11.49)_250
+      - _CZ_wmt(11.49)_252
+      - _AU_wmt(11.49)_253
+      - _AU_wmt(11.49)_254
+      - _AU_wmt(11.49)_255
+      - _SG_wmt(11.49)_256
+      - _CA_wmt(11.49)_257
+      - _AU_wmt(11.49)_258
+      - _AU_wmt(11.49)_259
+      - _SG_wmt(11.49)_260
+      - _AU_wmt(11.49)_261
+      - _TW_wmt(11.49)_262
+      - _HK_wmt(11.49)_263
+      - _CA_wmt(11.49)_264
+      - _TW_wmt(11.49)_265
+      - _AU_wmt(11.49)_266
+      - _TW_wmt(11.49)_267
+      - _HK_wmt(11.49)_268
+      - _KR_wmt(11.49)_269
+      - _CA_wmt(11.49)_270
+      - _AU_wmt(11.49)_271
+      - _SG_wmt(11.49)_272
+      - _SG_wmt(11.49)_273
+      - _CA_wmt(11.49)_274
+      - _AU_wmt(11.49)_275
+      - _HK_wmt(11.49)_276
+      - _SG_wmt(11.49)_277
+      - _CH_wmt(11.49)_278
+      - _GB_wmt(11.49)_279
+      - _US_wmt(11.49)_280
+      - _SG_wmt(11.49)_281
+      - _US_wmt(11.49)_282
+      - _KR_wmt(11.49)_284
+      - _AU_wmt(11.49)_285
+      - _HK_wmt(11.49)_287
+      - _TW_wmt(11.49)_288
+      - _HK_wmt(11.49)_290
+      - _AU_wmt(11.49)_291
+      - _CA_wmt(11.49)_292
+      - _JP_wmt(11.49)_293
+      - _SG_wmt(11.49)_294
+      - _CA_wmt(11.49)_295
+      - _TW_wmt(11.49)_296
+      - _CA_wmt(11.49)_297
+      - _HK_wmt(11.49)_298
+      - _CN_wmt(11.49)_299
+      - _TW_wmt(11.49)_300
+      - _SG_wmt(11.49)_301
+      - _SG_wmt(11.49)_302
+      - _CN_wmt(11.49)_303
+      - _AU_wmt(11.49)_304
+      - _HK_wmt(11.49)_305
+      - _CN_wmt(11.49)_306
+      - _CN_wmt(11.49)_307
+      - _SG_wmt(11.49)_308
+      - _AU_wmt(11.49)_309
+      - _SG_wmt(11.49)_310
+      - _HK_wmt(11.49)_311
+      - _AU_wmt(11.49)_312
+      - _TW_wmt(11.49)_313
+      - _AU_wmt(11.49)_314
+      - _SG_wmt(11.49)_315
+      - _NL_wmt(11.49)_316
+      - _AU_wmt(11.49)_317
+      - _AU_wmt(11.49)_318
+      - _AU_wmt(11.49)_319
+      - _AU_wmt(11.49)_320
+      - _HK_wmt(11.49)_321
+      - _AU_wmt(11.49)_322
+      - _AU_wmt(11.49)_323
+      - _KR_wmt(11.49)_324
+      - _AU_wmt(11.49)_325
+      - _AU_wmt(11.49)_326
+      - _KR_wmt(11.49)_327
+      - _HK_wmt(11.49)_328
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _RU_wmt(11.21)_1
-      - _US_wmt(11.21)_2
-      - _US_wmt(11.21)_3
-      - _US_wmt(11.21)_4
-      - _US_wmt(11.21)_6
-      - _TW_wmt(11.21)_9
-      - _TW_wmt(11.21)_10
-      - _TW_wmt(11.21)_11
-      - _HK_wmt(11.21)_12
-      - _TW_wmt(11.21)_13
-      - _TW_wmt(11.21)_14
-      - _US_wmt(11.21)_15
-      - _TW_wmt(11.21)_19
-      - _US_wmt(11.21)_20
-      - _TW_wmt(11.21)_23
-      - _HK_wmt(11.21)_24
-      - _TW_wmt(11.21)_26
-      - _TW_wmt(11.21)_27
-      - _HK_wmt(11.21)_28
-      - _TW_wmt(11.21)_30
-      - _HK_wmt(11.21)_31
-      - _US_wmt(11.21)_32
-      - _US_wmt(11.21)_34
-      - _US_wmt(11.21)_35
-      - _US_wmt(11.21)_37
-      - _US_wmt(11.21)_38
-      - _US_wmt(11.21)_47
-      - _US_wmt(11.21)_48
-      - _BH_wmt(11.21)_49
-      - _FR_wmt(11.21)_69
-      - _FR_wmt(11.21)_70
-      - _FR_wmt(11.21)_80
-      - _HK_wmt(11.21)_81
-      - wmt(11.21)_82
-      - _US_wmt(11.21)_83
-      - _DE_wmt(11.21)_88
-      - _DE_wmt(11.21)_89
-      - _US_wmt(11.21)_90
-      - _JP_wmt(11.21)_95
-      - _US_wmt(11.21)_96
-      - _US_wmt(11.21)_104
-      - _CA_wmt(11.21)_106
-      - _TW_wmt(11.21)_107
-      - _US_wmt(11.21)_117
-      - _SG_wmt(11.21)_119
-      - _JP_wmt(11.21)_121
-      - _TW_wmt(11.21)_122
-      - _HK_wmt(11.21)_124
-      - _FR_wmt(11.21)_125
-      - _US_wmt(11.21)_129
-      - _CN_wmt(11.21)_130
-      - _US_wmt(11.21)_131
-      - wmt(11.21)_132
-      - _NL_wmt(11.21)_133
-      - _NL_wmt(11.21)_134
-      - wmt(11.21)_135
-      - _FR_wmt(11.21)_136
-      - _FR_wmt(11.21)_137
-      - wmt(11.21)_138
-      - _US_wmt(11.21)_139
-      - wmt(11.21)_140
-      - _US_wmt(11.21)_141
-      - _US_wmt(11.21)_142
-      - _US_wmt(11.21)_143
-      - wmt(11.21)_144
-      - _US_wmt(11.21)_145
-      - wmt(11.21)_146
-      - _US_wmt(11.21)_147
-      - _US_wmt(11.21)_148
-      - _US_wmt(11.21)_149
-      - _US_wmt(11.21)_150
-      - _US_wmt(11.21)_151
-      - _US_wmt(11.21)_152
-      - wmt(11.21)_153
-      - _US_wmt(11.21)_154
-      - _TW_wmt(11.21)_155
-      - _SG_wmt(11.21)_156
-      - wmt(11.21)_158
-      - _TW_wmt(11.21)_159
-      - _US_wmt(11.21)_160
-      - _HK_wmt(11.21)_161
-      - _TW_wmt(11.21)_163
-      - _TW_wmt(11.21)_165
-      - _US_wmt(11.21)_168
-      - _TW_wmt(11.21)_170
-      - _TW_wmt(11.21)_171
-      - _SG_wmt(11.21)_172
-      - _TW_wmt(11.21)_174
-      - _US_wmt(11.21)_175
-      - _HK_wmt(11.21)_176
-      - _TW_wmt(11.21)_178
-      - _TW_wmt(11.21)_179
-      - _SG_wmt(11.21)_181
-      - _TW_wmt(11.21)_182
-      - _US_wmt(11.21)_183
-      - _US_wmt(11.21)_184
-      - wmt(11.21)_185
-      - wmt(11.21)_186
-      - _SG_wmt(11.21)_187
-      - wmt(11.21)_188
-      - wmt(11.21)_189
-      - _US_wmt(11.21)_190
-      - _SG_wmt(11.21)_191
-      - _US_wmt(11.21)_192
-      - wmt(11.21)_193
-      - _SG_wmt(11.21)_194
-      - _US_wmt(11.21)_195
-      - _US_wmt(11.21)_196
-      - _US_wmt(11.21)_197
-      - _US_wmt(11.21)_198
-      - _US_wmt(11.21)_199
-      - _US_wmt(11.21)_200
-      - _SG_wmt(11.21)_201
-      - _US_wmt(11.21)_202
-      - _US_wmt(11.21)_203
-      - _SG_wmt(11.21)_204
-      - _US_wmt(11.21)_205
-      - _US_wmt(11.21)_206
-      - wmt(11.21)_207
-      - _US_wmt(11.21)_208
-      - _US_wmt(11.21)_209
-      - _US_wmt(11.21)_210
-      - _US_wmt(11.21)_211
-      - _SG_wmt(11.21)_212
-      - _US_wmt(11.21)_213
-      - _US_wmt(11.21)_214
-      - _SG_wmt(11.21)_215
-      - _US_wmt(11.21)_216
-      - _US_wmt(11.21)_217
-      - _US_wmt(11.21)_218
-      - _US_wmt(11.21)_219
-      - _US_wmt(11.21)_220
-      - _US_wmt(11.21)_221
-      - _US_wmt(11.21)_222
-      - _US_wmt(11.21)_223
-      - _AU_wmt(11.21)_224
-      - wmt(11.21)_225
-      - wmt(11.21)_226
-      - wmt(11.21)_227
-      - _NL_wmt(11.21)_228
+      - _AU_wmt(11.49)_1
+      - _SG_wmt(11.49)_3
+      - _SG_wmt(11.49)_4
+      - _KR_wmt(11.49)_5
+      - _BH_wmt(11.49)_7
+      - _CN_wmt(11.49)_8
+      - _SG_wmt(11.49)_9
+      - _SG_wmt(11.49)_10
+      - _AU_wmt(11.49)_11
+      - wmt(11.49)_12
+      - _TW_wmt(11.49)_13
+      - _SG_wmt(11.49)_14
+      - _KR_wmt(11.49)_15
+      - _AU_wmt(11.49)_17
+      - _JP_wmt(11.49)_18
+      - _CA_wmt(11.49)_19
+      - _AU_wmt(11.49)_20
+      - _CA_wmt(11.49)_21
+      - _SG_wmt(11.49)_22
+      - _CN_wmt(11.49)_23
+      - _SG_wmt(11.49)_24
+      - _TW_wmt(11.49)_25
+      - _AU_wmt(11.49)_26
+      - _CA_wmt(11.49)_27
+      - wmt(11.49)_28
+      - _AU_wmt(11.49)_29
+      - _SG_wmt(11.49)_30
+      - wmt(11.49)_31
+      - _SG_wmt(11.49)_32
+      - _AU_wmt(11.49)_33
+      - _CA_wmt(11.49)_34
+      - _CA_wmt(11.49)_35
+      - _US_wmt(11.49)_36
+      - _CN_wmt(11.49)_37
+      - _AU_wmt(11.49)_38
+      - _AU_wmt(11.49)_39
+      - _HK_wmt(11.49)_41
+      - _AU_wmt(11.49)_42
+      - _AU_wmt(11.49)_43
+      - _TW_wmt(11.49)_44
+      - _KR_wmt(11.49)_45
+      - _HK_wmt(11.49)_46
+      - _AU_wmt(11.49)_47
+      - _AU_wmt(11.49)_48
+      - _SG_wmt(11.49)_49
+      - _AU_wmt(11.49)_50
+      - _TW_wmt(11.49)_51
+      - _TW_wmt(11.49)_52
+      - _AU_wmt(11.49)_53
+      - _HK_wmt(11.49)_54
+      - _HK_wmt(11.49)_55
+      - _CA_wmt(11.49)_56
+      - _AU_wmt(11.49)_57
+      - _CA_wmt(11.49)_58
+      - _AU_wmt(11.49)_59
+      - _TW_wmt(11.49)_60
+      - _SG_wmt(11.49)_61
+      - _CA_wmt(11.49)_62
+      - _TW_wmt(11.49)_63
+      - _HK_wmt(11.49)_64
+      - wmt(11.49)_65
+      - _HK_wmt(11.49)_66
+      - _AU_wmt(11.49)_67
+      - _AU_wmt(11.49)_68
+      - _AU_wmt(11.49)_69
+      - _AU_wmt(11.49)_70
+      - _CN_wmt(11.49)_71
+      - _AU_wmt(11.49)_72
+      - _AU_wmt(11.49)_73
+      - _CA_wmt(11.49)_74
+      - _CH_wmt(11.49)_75
+      - _SG_wmt(11.49)_76
+      - _SG_wmt(11.49)_77
+      - _AU_wmt(11.49)_78
+      - _AU_wmt(11.49)_79
+      - _AU_wmt(11.49)_80
+      - _SG_wmt(11.49)_81
+      - _SG_wmt(11.49)_82
+      - _US_wmt(11.49)_83
+      - _TW_wmt(11.49)_84
+      - _TW_wmt(11.49)_85
+      - _TW_wmt(11.49)_86
+      - _AU_wmt(11.49)_87
+      - _CN_wmt(11.49)_88
+      - wmt(11.49)_89
+      - _CN_wmt(11.49)_90
+      - _AU_wmt(11.49)_91
+      - wmt(11.49)_92
+      - _KR_wmt(11.49)_93
+      - _CA_wmt(11.49)_94
+      - _CH_wmt(11.49)_95
+      - _HK_wmt(11.49)_96
+      - _KR_wmt(11.49)_97
+      - _KR_wmt(11.49)_98
+      - _SG_wmt(11.49)_99
+      - _SG_wmt(11.49)_100
+      - _AU_wmt(11.49)_101
+      - _AU_wmt(11.49)_102
+      - _AU_wmt(11.49)_103
+      - _SG_wmt(11.49)_104
+      - _HK_wmt(11.49)_105
+      - _US_wmt(11.49)_108
+      - _TW_wmt(11.49)_109
+      - _AU_wmt(11.49)_110
+      - _HK_wmt(11.49)_111
+      - _AU_wmt(11.49)_112
+      - _CA_wmt(11.49)_113
+      - _JP_wmt(11.49)_114
+      - _FR_wmt(11.49)_115
+      - _HK_wmt(11.49)_116
+      - _TW_wmt(11.49)_117
+      - _KR_wmt(11.49)_118
+      - _HK_wmt(11.49)_119
+      - _CA_wmt(11.49)_120
+      - _CA_wmt(11.49)_121
+      - _FR_wmt(11.49)_122
+      - _AU_wmt(11.49)_123
+      - _CZ_wmt(11.49)_124
+      - _AU_wmt(11.49)_125
+      - _AU_wmt(11.49)_126
+      - wmt(11.49)_127
+      - _FR_wmt(11.49)_128
+      - wmt(11.49)_129
+      - _AU_wmt(11.49)_130
+      - _AU_wmt(11.49)_131
+      - _AU_wmt(11.49)_132
+      - wmt(11.49)_133
+      - _SG_wmt(11.49)_134
+      - _AU_wmt(11.49)_135
+      - _AU_wmt(11.49)_136
+      - _US_wmt(11.49)_137
+      - _US_wmt(11.49)_138
+      - _FR_wmt(11.49)_139
+      - _US_wmt(11.49)_140
+      - _CN_wmt(11.49)_141
+      - wmt(11.49)_142
+      - _CN_wmt(11.49)_143
+      - _TW_wmt(11.49)_144
+      - _HK_wmt(11.49)_145
+      - _AU_wmt(11.49)_146
+      - _KR_wmt(11.49)_147
+      - _US_wmt(11.49)_148
+      - _TW_wmt(11.49)_149
+      - _SG_wmt(11.49)_150
+      - _KR_wmt(11.49)_151
+      - _AU_wmt(11.49)_152
+      - _AU_wmt(11.49)_153
+      - _AU_wmt(11.49)_154
+      - _AU_wmt(11.49)_155
+      - _JP_wmt(11.49)_156
+      - _AU_wmt(11.49)_157
+      - _AU_wmt(11.49)_158
+      - _HK_wmt(11.49)_159
+      - _TW_wmt(11.49)_160
+      - _HK_wmt(11.49)_161
+      - _NL_wmt(11.49)_162
+      - _TW_wmt(11.49)_163
+      - _AU_wmt(11.49)_164
+      - _SG_wmt(11.49)_165
+      - wmt(11.49)_166
+      - _CA_wmt(11.49)_167
+      - _AU_wmt(11.49)_168
+      - _HK_wmt(11.49)_169
+      - _AU_wmt(11.49)_170
+      - _KR_wmt(11.49)_171
+      - _AU_wmt(11.49)_172
+      - _SG_wmt(11.49)_173
+      - _NL_wmt(11.49)_174
+      - _AU_wmt(11.49)_175
+      - _KR_wmt(11.49)_176
+      - _AU_wmt(11.49)_177
+      - _TW_wmt(11.49)_178
+      - _AU_wmt(11.49)_179
+      - _KR_wmt(11.49)_180
+      - _CZ_wmt(11.49)_181
+      - _AU_wmt(11.49)_182
+      - _TW_wmt(11.49)_183
+      - _AU_wmt(11.49)_184
+      - _AU_wmt(11.49)_185
+      - _TW_wmt(11.49)_186
+      - _AU_wmt(11.49)_187
+      - _AU_wmt(11.49)_188
+      - _SG_wmt(11.49)_189
+      - _SG_wmt(11.49)_190
+      - _CN_wmt(11.49)_191
+      - _KR_wmt(11.49)_192
+      - _TW_wmt(11.49)_193
+      - _AU_wmt(11.49)_194
+      - _AU_wmt(11.49)_195
+      - _US_wmt(11.49)_196
+      - _AU_wmt(11.49)_197
+      - _FR_wmt(11.49)_198
+      - _TW_wmt(11.49)_200
+      - _AU_wmt(11.49)_201
+      - _AU_wmt(11.49)_202
+      - _HK_wmt(11.49)_203
+      - _AU_wmt(11.49)_204
+      - _FR_wmt(11.49)_205
+      - _AU_wmt(11.49)_206
+      - _SG_wmt(11.49)_207
+      - _SG_wmt(11.49)_208
+      - _SG_wmt(11.49)_209
+      - _AU_wmt(11.49)_210
+      - _AU_wmt(11.49)_212
+      - wmt(11.49)_213
+      - _SG_wmt(11.49)_214
+      - _IN_wmt(11.49)_215
+      - _JP_wmt(11.49)_217
+      - _CA_wmt(11.49)_218
+      - _CA_wmt(11.49)_219
+      - _AU_wmt(11.49)_221
+      - _CA_wmt(11.49)_222
+      - _JP_wmt(11.49)_223
+      - _TW_wmt(11.49)_224
+      - _CN_wmt(11.49)_225
+      - wmt(11.49)_226
+      - _SG_wmt(11.49)_227
+      - _KR_wmt(11.49)_228
+      - _CN_wmt(11.49)_229
+      - _AU_wmt(11.49)_230
+      - _CA_wmt(11.49)_231
+      - _SG_wmt(11.49)_232
+      - _AU_wmt(11.49)_233
+      - _AU_wmt(11.49)_234
+      - _CA_wmt(11.49)_235
+      - _HK_wmt(11.49)_236
+      - _CZ_wmt(11.49)_237
+      - _CN_wmt(11.49)_238
+      - _SG_wmt(11.49)_239
+      - _AU_wmt(11.49)_240
+      - _AU_wmt(11.49)_241
+      - _AU_wmt(11.49)_242
+      - _TW_wmt(11.49)_243
+      - _JP_wmt(11.49)_244
+      - _SG_wmt(11.49)_245
+      - _KR_wmt(11.49)_247
+      - _AU_wmt(11.49)_248
+      - _AU_wmt(11.49)_249
+      - _TW_wmt(11.49)_250
+      - _CZ_wmt(11.49)_252
+      - _AU_wmt(11.49)_253
+      - _AU_wmt(11.49)_254
+      - _AU_wmt(11.49)_255
+      - _SG_wmt(11.49)_256
+      - _CA_wmt(11.49)_257
+      - _AU_wmt(11.49)_258
+      - _AU_wmt(11.49)_259
+      - _SG_wmt(11.49)_260
+      - _AU_wmt(11.49)_261
+      - _TW_wmt(11.49)_262
+      - _HK_wmt(11.49)_263
+      - _CA_wmt(11.49)_264
+      - _TW_wmt(11.49)_265
+      - _AU_wmt(11.49)_266
+      - _TW_wmt(11.49)_267
+      - _HK_wmt(11.49)_268
+      - _KR_wmt(11.49)_269
+      - _CA_wmt(11.49)_270
+      - _AU_wmt(11.49)_271
+      - _SG_wmt(11.49)_272
+      - _SG_wmt(11.49)_273
+      - _CA_wmt(11.49)_274
+      - _AU_wmt(11.49)_275
+      - _HK_wmt(11.49)_276
+      - _SG_wmt(11.49)_277
+      - _CH_wmt(11.49)_278
+      - _GB_wmt(11.49)_279
+      - _US_wmt(11.49)_280
+      - _SG_wmt(11.49)_281
+      - _US_wmt(11.49)_282
+      - _KR_wmt(11.49)_284
+      - _AU_wmt(11.49)_285
+      - _HK_wmt(11.49)_287
+      - _TW_wmt(11.49)_288
+      - _HK_wmt(11.49)_290
+      - _AU_wmt(11.49)_291
+      - _CA_wmt(11.49)_292
+      - _JP_wmt(11.49)_293
+      - _SG_wmt(11.49)_294
+      - _CA_wmt(11.49)_295
+      - _TW_wmt(11.49)_296
+      - _CA_wmt(11.49)_297
+      - _HK_wmt(11.49)_298
+      - _CN_wmt(11.49)_299
+      - _TW_wmt(11.49)_300
+      - _SG_wmt(11.49)_301
+      - _SG_wmt(11.49)_302
+      - _CN_wmt(11.49)_303
+      - _AU_wmt(11.49)_304
+      - _HK_wmt(11.49)_305
+      - _CN_wmt(11.49)_306
+      - _CN_wmt(11.49)_307
+      - _SG_wmt(11.49)_308
+      - _AU_wmt(11.49)_309
+      - _SG_wmt(11.49)_310
+      - _HK_wmt(11.49)_311
+      - _AU_wmt(11.49)_312
+      - _TW_wmt(11.49)_313
+      - _AU_wmt(11.49)_314
+      - _SG_wmt(11.49)_315
+      - _NL_wmt(11.49)_316
+      - _AU_wmt(11.49)_317
+      - _AU_wmt(11.49)_318
+      - _AU_wmt(11.49)_319
+      - _AU_wmt(11.49)_320
+      - _HK_wmt(11.49)_321
+      - _AU_wmt(11.49)_322
+      - _AU_wmt(11.49)_323
+      - _KR_wmt(11.49)_324
+      - _AU_wmt(11.49)_325
+      - _AU_wmt(11.49)_326
+      - _KR_wmt(11.49)_327
+      - _HK_wmt(11.49)_328
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -600,146 +1292,319 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _RU_wmt(11.21)_1
-      - _US_wmt(11.21)_2
-      - _US_wmt(11.21)_3
-      - _US_wmt(11.21)_4
-      - _US_wmt(11.21)_6
-      - _TW_wmt(11.21)_9
-      - _TW_wmt(11.21)_10
-      - _TW_wmt(11.21)_11
-      - _HK_wmt(11.21)_12
-      - _TW_wmt(11.21)_13
-      - _TW_wmt(11.21)_14
-      - _US_wmt(11.21)_15
-      - _TW_wmt(11.21)_19
-      - _US_wmt(11.21)_20
-      - _TW_wmt(11.21)_23
-      - _HK_wmt(11.21)_24
-      - _TW_wmt(11.21)_26
-      - _TW_wmt(11.21)_27
-      - _HK_wmt(11.21)_28
-      - _TW_wmt(11.21)_30
-      - _HK_wmt(11.21)_31
-      - _US_wmt(11.21)_32
-      - _US_wmt(11.21)_34
-      - _US_wmt(11.21)_35
-      - _US_wmt(11.21)_37
-      - _US_wmt(11.21)_38
-      - _US_wmt(11.21)_47
-      - _US_wmt(11.21)_48
-      - _BH_wmt(11.21)_49
-      - _FR_wmt(11.21)_69
-      - _FR_wmt(11.21)_70
-      - _FR_wmt(11.21)_80
-      - _HK_wmt(11.21)_81
-      - wmt(11.21)_82
-      - _US_wmt(11.21)_83
-      - _DE_wmt(11.21)_88
-      - _DE_wmt(11.21)_89
-      - _US_wmt(11.21)_90
-      - _JP_wmt(11.21)_95
-      - _US_wmt(11.21)_96
-      - _US_wmt(11.21)_104
-      - _CA_wmt(11.21)_106
-      - _TW_wmt(11.21)_107
-      - _US_wmt(11.21)_117
-      - _SG_wmt(11.21)_119
-      - _JP_wmt(11.21)_121
-      - _TW_wmt(11.21)_122
-      - _HK_wmt(11.21)_124
-      - _FR_wmt(11.21)_125
-      - _US_wmt(11.21)_129
-      - _CN_wmt(11.21)_130
-      - _US_wmt(11.21)_131
-      - wmt(11.21)_132
-      - _NL_wmt(11.21)_133
-      - _NL_wmt(11.21)_134
-      - wmt(11.21)_135
-      - _FR_wmt(11.21)_136
-      - _FR_wmt(11.21)_137
-      - wmt(11.21)_138
-      - _US_wmt(11.21)_139
-      - wmt(11.21)_140
-      - _US_wmt(11.21)_141
-      - _US_wmt(11.21)_142
-      - _US_wmt(11.21)_143
-      - wmt(11.21)_144
-      - _US_wmt(11.21)_145
-      - wmt(11.21)_146
-      - _US_wmt(11.21)_147
-      - _US_wmt(11.21)_148
-      - _US_wmt(11.21)_149
-      - _US_wmt(11.21)_150
-      - _US_wmt(11.21)_151
-      - _US_wmt(11.21)_152
-      - wmt(11.21)_153
-      - _US_wmt(11.21)_154
-      - _TW_wmt(11.21)_155
-      - _SG_wmt(11.21)_156
-      - wmt(11.21)_158
-      - _TW_wmt(11.21)_159
-      - _US_wmt(11.21)_160
-      - _HK_wmt(11.21)_161
-      - _TW_wmt(11.21)_163
-      - _TW_wmt(11.21)_165
-      - _US_wmt(11.21)_168
-      - _TW_wmt(11.21)_170
-      - _TW_wmt(11.21)_171
-      - _SG_wmt(11.21)_172
-      - _TW_wmt(11.21)_174
-      - _US_wmt(11.21)_175
-      - _HK_wmt(11.21)_176
-      - _TW_wmt(11.21)_178
-      - _TW_wmt(11.21)_179
-      - _SG_wmt(11.21)_181
-      - _TW_wmt(11.21)_182
-      - _US_wmt(11.21)_183
-      - _US_wmt(11.21)_184
-      - wmt(11.21)_185
-      - wmt(11.21)_186
-      - _SG_wmt(11.21)_187
-      - wmt(11.21)_188
-      - wmt(11.21)_189
-      - _US_wmt(11.21)_190
-      - _SG_wmt(11.21)_191
-      - _US_wmt(11.21)_192
-      - wmt(11.21)_193
-      - _SG_wmt(11.21)_194
-      - _US_wmt(11.21)_195
-      - _US_wmt(11.21)_196
-      - _US_wmt(11.21)_197
-      - _US_wmt(11.21)_198
-      - _US_wmt(11.21)_199
-      - _US_wmt(11.21)_200
-      - _SG_wmt(11.21)_201
-      - _US_wmt(11.21)_202
-      - _US_wmt(11.21)_203
-      - _SG_wmt(11.21)_204
-      - _US_wmt(11.21)_205
-      - _US_wmt(11.21)_206
-      - wmt(11.21)_207
-      - _US_wmt(11.21)_208
-      - _US_wmt(11.21)_209
-      - _US_wmt(11.21)_210
-      - _US_wmt(11.21)_211
-      - _SG_wmt(11.21)_212
-      - _US_wmt(11.21)_213
-      - _US_wmt(11.21)_214
-      - _SG_wmt(11.21)_215
-      - _US_wmt(11.21)_216
-      - _US_wmt(11.21)_217
-      - _US_wmt(11.21)_218
-      - _US_wmt(11.21)_219
-      - _US_wmt(11.21)_220
-      - _US_wmt(11.21)_221
-      - _US_wmt(11.21)_222
-      - _US_wmt(11.21)_223
-      - _AU_wmt(11.21)_224
-      - wmt(11.21)_225
-      - wmt(11.21)_226
-      - wmt(11.21)_227
-      - _NL_wmt(11.21)_228
+      - _AU_wmt(11.49)_1
+      - _SG_wmt(11.49)_3
+      - _SG_wmt(11.49)_4
+      - _KR_wmt(11.49)_5
+      - _BH_wmt(11.49)_7
+      - _CN_wmt(11.49)_8
+      - _SG_wmt(11.49)_9
+      - _SG_wmt(11.49)_10
+      - _AU_wmt(11.49)_11
+      - wmt(11.49)_12
+      - _TW_wmt(11.49)_13
+      - _SG_wmt(11.49)_14
+      - _KR_wmt(11.49)_15
+      - _AU_wmt(11.49)_17
+      - _JP_wmt(11.49)_18
+      - _CA_wmt(11.49)_19
+      - _AU_wmt(11.49)_20
+      - _CA_wmt(11.49)_21
+      - _SG_wmt(11.49)_22
+      - _CN_wmt(11.49)_23
+      - _SG_wmt(11.49)_24
+      - _TW_wmt(11.49)_25
+      - _AU_wmt(11.49)_26
+      - _CA_wmt(11.49)_27
+      - wmt(11.49)_28
+      - _AU_wmt(11.49)_29
+      - _SG_wmt(11.49)_30
+      - wmt(11.49)_31
+      - _SG_wmt(11.49)_32
+      - _AU_wmt(11.49)_33
+      - _CA_wmt(11.49)_34
+      - _CA_wmt(11.49)_35
+      - _US_wmt(11.49)_36
+      - _CN_wmt(11.49)_37
+      - _AU_wmt(11.49)_38
+      - _AU_wmt(11.49)_39
+      - _HK_wmt(11.49)_41
+      - _AU_wmt(11.49)_42
+      - _AU_wmt(11.49)_43
+      - _TW_wmt(11.49)_44
+      - _KR_wmt(11.49)_45
+      - _HK_wmt(11.49)_46
+      - _AU_wmt(11.49)_47
+      - _AU_wmt(11.49)_48
+      - _SG_wmt(11.49)_49
+      - _AU_wmt(11.49)_50
+      - _TW_wmt(11.49)_51
+      - _TW_wmt(11.49)_52
+      - _AU_wmt(11.49)_53
+      - _HK_wmt(11.49)_54
+      - _HK_wmt(11.49)_55
+      - _CA_wmt(11.49)_56
+      - _AU_wmt(11.49)_57
+      - _CA_wmt(11.49)_58
+      - _AU_wmt(11.49)_59
+      - _TW_wmt(11.49)_60
+      - _SG_wmt(11.49)_61
+      - _CA_wmt(11.49)_62
+      - _TW_wmt(11.49)_63
+      - _HK_wmt(11.49)_64
+      - wmt(11.49)_65
+      - _HK_wmt(11.49)_66
+      - _AU_wmt(11.49)_67
+      - _AU_wmt(11.49)_68
+      - _AU_wmt(11.49)_69
+      - _AU_wmt(11.49)_70
+      - _CN_wmt(11.49)_71
+      - _AU_wmt(11.49)_72
+      - _AU_wmt(11.49)_73
+      - _CA_wmt(11.49)_74
+      - _CH_wmt(11.49)_75
+      - _SG_wmt(11.49)_76
+      - _SG_wmt(11.49)_77
+      - _AU_wmt(11.49)_78
+      - _AU_wmt(11.49)_79
+      - _AU_wmt(11.49)_80
+      - _SG_wmt(11.49)_81
+      - _SG_wmt(11.49)_82
+      - _US_wmt(11.49)_83
+      - _TW_wmt(11.49)_84
+      - _TW_wmt(11.49)_85
+      - _TW_wmt(11.49)_86
+      - _AU_wmt(11.49)_87
+      - _CN_wmt(11.49)_88
+      - wmt(11.49)_89
+      - _CN_wmt(11.49)_90
+      - _AU_wmt(11.49)_91
+      - wmt(11.49)_92
+      - _KR_wmt(11.49)_93
+      - _CA_wmt(11.49)_94
+      - _CH_wmt(11.49)_95
+      - _HK_wmt(11.49)_96
+      - _KR_wmt(11.49)_97
+      - _KR_wmt(11.49)_98
+      - _SG_wmt(11.49)_99
+      - _SG_wmt(11.49)_100
+      - _AU_wmt(11.49)_101
+      - _AU_wmt(11.49)_102
+      - _AU_wmt(11.49)_103
+      - _SG_wmt(11.49)_104
+      - _HK_wmt(11.49)_105
+      - _US_wmt(11.49)_108
+      - _TW_wmt(11.49)_109
+      - _AU_wmt(11.49)_110
+      - _HK_wmt(11.49)_111
+      - _AU_wmt(11.49)_112
+      - _CA_wmt(11.49)_113
+      - _JP_wmt(11.49)_114
+      - _FR_wmt(11.49)_115
+      - _HK_wmt(11.49)_116
+      - _TW_wmt(11.49)_117
+      - _KR_wmt(11.49)_118
+      - _HK_wmt(11.49)_119
+      - _CA_wmt(11.49)_120
+      - _CA_wmt(11.49)_121
+      - _FR_wmt(11.49)_122
+      - _AU_wmt(11.49)_123
+      - _CZ_wmt(11.49)_124
+      - _AU_wmt(11.49)_125
+      - _AU_wmt(11.49)_126
+      - wmt(11.49)_127
+      - _FR_wmt(11.49)_128
+      - wmt(11.49)_129
+      - _AU_wmt(11.49)_130
+      - _AU_wmt(11.49)_131
+      - _AU_wmt(11.49)_132
+      - wmt(11.49)_133
+      - _SG_wmt(11.49)_134
+      - _AU_wmt(11.49)_135
+      - _AU_wmt(11.49)_136
+      - _US_wmt(11.49)_137
+      - _US_wmt(11.49)_138
+      - _FR_wmt(11.49)_139
+      - _US_wmt(11.49)_140
+      - _CN_wmt(11.49)_141
+      - wmt(11.49)_142
+      - _CN_wmt(11.49)_143
+      - _TW_wmt(11.49)_144
+      - _HK_wmt(11.49)_145
+      - _AU_wmt(11.49)_146
+      - _KR_wmt(11.49)_147
+      - _US_wmt(11.49)_148
+      - _TW_wmt(11.49)_149
+      - _SG_wmt(11.49)_150
+      - _KR_wmt(11.49)_151
+      - _AU_wmt(11.49)_152
+      - _AU_wmt(11.49)_153
+      - _AU_wmt(11.49)_154
+      - _AU_wmt(11.49)_155
+      - _JP_wmt(11.49)_156
+      - _AU_wmt(11.49)_157
+      - _AU_wmt(11.49)_158
+      - _HK_wmt(11.49)_159
+      - _TW_wmt(11.49)_160
+      - _HK_wmt(11.49)_161
+      - _NL_wmt(11.49)_162
+      - _TW_wmt(11.49)_163
+      - _AU_wmt(11.49)_164
+      - _SG_wmt(11.49)_165
+      - wmt(11.49)_166
+      - _CA_wmt(11.49)_167
+      - _AU_wmt(11.49)_168
+      - _HK_wmt(11.49)_169
+      - _AU_wmt(11.49)_170
+      - _KR_wmt(11.49)_171
+      - _AU_wmt(11.49)_172
+      - _SG_wmt(11.49)_173
+      - _NL_wmt(11.49)_174
+      - _AU_wmt(11.49)_175
+      - _KR_wmt(11.49)_176
+      - _AU_wmt(11.49)_177
+      - _TW_wmt(11.49)_178
+      - _AU_wmt(11.49)_179
+      - _KR_wmt(11.49)_180
+      - _CZ_wmt(11.49)_181
+      - _AU_wmt(11.49)_182
+      - _TW_wmt(11.49)_183
+      - _AU_wmt(11.49)_184
+      - _AU_wmt(11.49)_185
+      - _TW_wmt(11.49)_186
+      - _AU_wmt(11.49)_187
+      - _AU_wmt(11.49)_188
+      - _SG_wmt(11.49)_189
+      - _SG_wmt(11.49)_190
+      - _CN_wmt(11.49)_191
+      - _KR_wmt(11.49)_192
+      - _TW_wmt(11.49)_193
+      - _AU_wmt(11.49)_194
+      - _AU_wmt(11.49)_195
+      - _US_wmt(11.49)_196
+      - _AU_wmt(11.49)_197
+      - _FR_wmt(11.49)_198
+      - _TW_wmt(11.49)_200
+      - _AU_wmt(11.49)_201
+      - _AU_wmt(11.49)_202
+      - _HK_wmt(11.49)_203
+      - _AU_wmt(11.49)_204
+      - _FR_wmt(11.49)_205
+      - _AU_wmt(11.49)_206
+      - _SG_wmt(11.49)_207
+      - _SG_wmt(11.49)_208
+      - _SG_wmt(11.49)_209
+      - _AU_wmt(11.49)_210
+      - _AU_wmt(11.49)_212
+      - wmt(11.49)_213
+      - _SG_wmt(11.49)_214
+      - _IN_wmt(11.49)_215
+      - _JP_wmt(11.49)_217
+      - _CA_wmt(11.49)_218
+      - _CA_wmt(11.49)_219
+      - _AU_wmt(11.49)_221
+      - _CA_wmt(11.49)_222
+      - _JP_wmt(11.49)_223
+      - _TW_wmt(11.49)_224
+      - _CN_wmt(11.49)_225
+      - wmt(11.49)_226
+      - _SG_wmt(11.49)_227
+      - _KR_wmt(11.49)_228
+      - _CN_wmt(11.49)_229
+      - _AU_wmt(11.49)_230
+      - _CA_wmt(11.49)_231
+      - _SG_wmt(11.49)_232
+      - _AU_wmt(11.49)_233
+      - _AU_wmt(11.49)_234
+      - _CA_wmt(11.49)_235
+      - _HK_wmt(11.49)_236
+      - _CZ_wmt(11.49)_237
+      - _CN_wmt(11.49)_238
+      - _SG_wmt(11.49)_239
+      - _AU_wmt(11.49)_240
+      - _AU_wmt(11.49)_241
+      - _AU_wmt(11.49)_242
+      - _TW_wmt(11.49)_243
+      - _JP_wmt(11.49)_244
+      - _SG_wmt(11.49)_245
+      - _KR_wmt(11.49)_247
+      - _AU_wmt(11.49)_248
+      - _AU_wmt(11.49)_249
+      - _TW_wmt(11.49)_250
+      - _CZ_wmt(11.49)_252
+      - _AU_wmt(11.49)_253
+      - _AU_wmt(11.49)_254
+      - _AU_wmt(11.49)_255
+      - _SG_wmt(11.49)_256
+      - _CA_wmt(11.49)_257
+      - _AU_wmt(11.49)_258
+      - _AU_wmt(11.49)_259
+      - _SG_wmt(11.49)_260
+      - _AU_wmt(11.49)_261
+      - _TW_wmt(11.49)_262
+      - _HK_wmt(11.49)_263
+      - _CA_wmt(11.49)_264
+      - _TW_wmt(11.49)_265
+      - _AU_wmt(11.49)_266
+      - _TW_wmt(11.49)_267
+      - _HK_wmt(11.49)_268
+      - _KR_wmt(11.49)_269
+      - _CA_wmt(11.49)_270
+      - _AU_wmt(11.49)_271
+      - _SG_wmt(11.49)_272
+      - _SG_wmt(11.49)_273
+      - _CA_wmt(11.49)_274
+      - _AU_wmt(11.49)_275
+      - _HK_wmt(11.49)_276
+      - _SG_wmt(11.49)_277
+      - _CH_wmt(11.49)_278
+      - _GB_wmt(11.49)_279
+      - _US_wmt(11.49)_280
+      - _SG_wmt(11.49)_281
+      - _US_wmt(11.49)_282
+      - _KR_wmt(11.49)_284
+      - _AU_wmt(11.49)_285
+      - _HK_wmt(11.49)_287
+      - _TW_wmt(11.49)_288
+      - _HK_wmt(11.49)_290
+      - _AU_wmt(11.49)_291
+      - _CA_wmt(11.49)_292
+      - _JP_wmt(11.49)_293
+      - _SG_wmt(11.49)_294
+      - _CA_wmt(11.49)_295
+      - _TW_wmt(11.49)_296
+      - _CA_wmt(11.49)_297
+      - _HK_wmt(11.49)_298
+      - _CN_wmt(11.49)_299
+      - _TW_wmt(11.49)_300
+      - _SG_wmt(11.49)_301
+      - _SG_wmt(11.49)_302
+      - _CN_wmt(11.49)_303
+      - _AU_wmt(11.49)_304
+      - _HK_wmt(11.49)_305
+      - _CN_wmt(11.49)_306
+      - _CN_wmt(11.49)_307
+      - _SG_wmt(11.49)_308
+      - _AU_wmt(11.49)_309
+      - _SG_wmt(11.49)_310
+      - _HK_wmt(11.49)_311
+      - _AU_wmt(11.49)_312
+      - _TW_wmt(11.49)_313
+      - _AU_wmt(11.49)_314
+      - _SG_wmt(11.49)_315
+      - _NL_wmt(11.49)_316
+      - _AU_wmt(11.49)_317
+      - _AU_wmt(11.49)_318
+      - _AU_wmt(11.49)_319
+      - _AU_wmt(11.49)_320
+      - _HK_wmt(11.49)_321
+      - _AU_wmt(11.49)_322
+      - _AU_wmt(11.49)_323
+      - _KR_wmt(11.49)_324
+      - _AU_wmt(11.49)_325
+      - _AU_wmt(11.49)_326
+      - _KR_wmt(11.49)_327
+      - _HK_wmt(11.49)_328
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -750,437 +1615,956 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _RU_wmt(11.21)_1
-      - _US_wmt(11.21)_2
-      - _US_wmt(11.21)_3
-      - _US_wmt(11.21)_4
-      - _US_wmt(11.21)_6
-      - _TW_wmt(11.21)_9
-      - _TW_wmt(11.21)_10
-      - _TW_wmt(11.21)_11
-      - _HK_wmt(11.21)_12
-      - _TW_wmt(11.21)_13
-      - _TW_wmt(11.21)_14
-      - _US_wmt(11.21)_15
-      - _TW_wmt(11.21)_19
-      - _US_wmt(11.21)_20
-      - _TW_wmt(11.21)_23
-      - _HK_wmt(11.21)_24
-      - _TW_wmt(11.21)_26
-      - _TW_wmt(11.21)_27
-      - _HK_wmt(11.21)_28
-      - _TW_wmt(11.21)_30
-      - _HK_wmt(11.21)_31
-      - _US_wmt(11.21)_32
-      - _US_wmt(11.21)_34
-      - _US_wmt(11.21)_35
-      - _US_wmt(11.21)_37
-      - _US_wmt(11.21)_38
-      - _US_wmt(11.21)_47
-      - _US_wmt(11.21)_48
-      - _BH_wmt(11.21)_49
-      - _FR_wmt(11.21)_69
-      - _FR_wmt(11.21)_70
-      - _FR_wmt(11.21)_80
-      - _HK_wmt(11.21)_81
-      - wmt(11.21)_82
-      - _US_wmt(11.21)_83
-      - _DE_wmt(11.21)_88
-      - _DE_wmt(11.21)_89
-      - _US_wmt(11.21)_90
-      - _JP_wmt(11.21)_95
-      - _US_wmt(11.21)_96
-      - _US_wmt(11.21)_104
-      - _CA_wmt(11.21)_106
-      - _TW_wmt(11.21)_107
-      - _US_wmt(11.21)_117
-      - _SG_wmt(11.21)_119
-      - _JP_wmt(11.21)_121
-      - _TW_wmt(11.21)_122
-      - _HK_wmt(11.21)_124
-      - _FR_wmt(11.21)_125
-      - _US_wmt(11.21)_129
-      - _CN_wmt(11.21)_130
-      - _US_wmt(11.21)_131
-      - wmt(11.21)_132
-      - _NL_wmt(11.21)_133
-      - _NL_wmt(11.21)_134
-      - wmt(11.21)_135
-      - _FR_wmt(11.21)_136
-      - _FR_wmt(11.21)_137
-      - wmt(11.21)_138
-      - _US_wmt(11.21)_139
-      - wmt(11.21)_140
-      - _US_wmt(11.21)_141
-      - _US_wmt(11.21)_142
-      - _US_wmt(11.21)_143
-      - wmt(11.21)_144
-      - _US_wmt(11.21)_145
-      - wmt(11.21)_146
-      - _US_wmt(11.21)_147
-      - _US_wmt(11.21)_148
-      - _US_wmt(11.21)_149
-      - _US_wmt(11.21)_150
-      - _US_wmt(11.21)_151
-      - _US_wmt(11.21)_152
-      - wmt(11.21)_153
-      - _US_wmt(11.21)_154
-      - _TW_wmt(11.21)_155
-      - _SG_wmt(11.21)_156
-      - wmt(11.21)_158
-      - _TW_wmt(11.21)_159
-      - _US_wmt(11.21)_160
-      - _HK_wmt(11.21)_161
-      - _TW_wmt(11.21)_163
-      - _TW_wmt(11.21)_165
-      - _US_wmt(11.21)_168
-      - _TW_wmt(11.21)_170
-      - _TW_wmt(11.21)_171
-      - _SG_wmt(11.21)_172
-      - _TW_wmt(11.21)_174
-      - _US_wmt(11.21)_175
-      - _HK_wmt(11.21)_176
-      - _TW_wmt(11.21)_178
-      - _TW_wmt(11.21)_179
-      - _SG_wmt(11.21)_181
-      - _TW_wmt(11.21)_182
-      - _US_wmt(11.21)_183
-      - _US_wmt(11.21)_184
-      - wmt(11.21)_185
-      - wmt(11.21)_186
-      - _SG_wmt(11.21)_187
-      - wmt(11.21)_188
-      - wmt(11.21)_189
-      - _US_wmt(11.21)_190
-      - _SG_wmt(11.21)_191
-      - _US_wmt(11.21)_192
-      - wmt(11.21)_193
-      - _SG_wmt(11.21)_194
-      - _US_wmt(11.21)_195
-      - _US_wmt(11.21)_196
-      - _US_wmt(11.21)_197
-      - _US_wmt(11.21)_198
-      - _US_wmt(11.21)_199
-      - _US_wmt(11.21)_200
-      - _SG_wmt(11.21)_201
-      - _US_wmt(11.21)_202
-      - _US_wmt(11.21)_203
-      - _SG_wmt(11.21)_204
-      - _US_wmt(11.21)_205
-      - _US_wmt(11.21)_206
-      - wmt(11.21)_207
-      - _US_wmt(11.21)_208
-      - _US_wmt(11.21)_209
-      - _US_wmt(11.21)_210
-      - _US_wmt(11.21)_211
-      - _SG_wmt(11.21)_212
-      - _US_wmt(11.21)_213
-      - _US_wmt(11.21)_214
-      - _SG_wmt(11.21)_215
-      - _US_wmt(11.21)_216
-      - _US_wmt(11.21)_217
-      - _US_wmt(11.21)_218
-      - _US_wmt(11.21)_219
-      - _US_wmt(11.21)_220
-      - _US_wmt(11.21)_221
-      - _US_wmt(11.21)_222
-      - _US_wmt(11.21)_223
-      - _AU_wmt(11.21)_224
-      - wmt(11.21)_225
-      - wmt(11.21)_226
-      - wmt(11.21)_227
-      - _NL_wmt(11.21)_228
+      - _AU_wmt(11.49)_1
+      - _SG_wmt(11.49)_3
+      - _SG_wmt(11.49)_4
+      - _KR_wmt(11.49)_5
+      - _BH_wmt(11.49)_7
+      - _CN_wmt(11.49)_8
+      - _SG_wmt(11.49)_9
+      - _SG_wmt(11.49)_10
+      - _AU_wmt(11.49)_11
+      - wmt(11.49)_12
+      - _TW_wmt(11.49)_13
+      - _SG_wmt(11.49)_14
+      - _KR_wmt(11.49)_15
+      - _AU_wmt(11.49)_17
+      - _JP_wmt(11.49)_18
+      - _CA_wmt(11.49)_19
+      - _AU_wmt(11.49)_20
+      - _CA_wmt(11.49)_21
+      - _SG_wmt(11.49)_22
+      - _CN_wmt(11.49)_23
+      - _SG_wmt(11.49)_24
+      - _TW_wmt(11.49)_25
+      - _AU_wmt(11.49)_26
+      - _CA_wmt(11.49)_27
+      - wmt(11.49)_28
+      - _AU_wmt(11.49)_29
+      - _SG_wmt(11.49)_30
+      - wmt(11.49)_31
+      - _SG_wmt(11.49)_32
+      - _AU_wmt(11.49)_33
+      - _CA_wmt(11.49)_34
+      - _CA_wmt(11.49)_35
+      - _US_wmt(11.49)_36
+      - _CN_wmt(11.49)_37
+      - _AU_wmt(11.49)_38
+      - _AU_wmt(11.49)_39
+      - _HK_wmt(11.49)_41
+      - _AU_wmt(11.49)_42
+      - _AU_wmt(11.49)_43
+      - _TW_wmt(11.49)_44
+      - _KR_wmt(11.49)_45
+      - _HK_wmt(11.49)_46
+      - _AU_wmt(11.49)_47
+      - _AU_wmt(11.49)_48
+      - _SG_wmt(11.49)_49
+      - _AU_wmt(11.49)_50
+      - _TW_wmt(11.49)_51
+      - _TW_wmt(11.49)_52
+      - _AU_wmt(11.49)_53
+      - _HK_wmt(11.49)_54
+      - _HK_wmt(11.49)_55
+      - _CA_wmt(11.49)_56
+      - _AU_wmt(11.49)_57
+      - _CA_wmt(11.49)_58
+      - _AU_wmt(11.49)_59
+      - _TW_wmt(11.49)_60
+      - _SG_wmt(11.49)_61
+      - _CA_wmt(11.49)_62
+      - _TW_wmt(11.49)_63
+      - _HK_wmt(11.49)_64
+      - wmt(11.49)_65
+      - _HK_wmt(11.49)_66
+      - _AU_wmt(11.49)_67
+      - _AU_wmt(11.49)_68
+      - _AU_wmt(11.49)_69
+      - _AU_wmt(11.49)_70
+      - _CN_wmt(11.49)_71
+      - _AU_wmt(11.49)_72
+      - _AU_wmt(11.49)_73
+      - _CA_wmt(11.49)_74
+      - _CH_wmt(11.49)_75
+      - _SG_wmt(11.49)_76
+      - _SG_wmt(11.49)_77
+      - _AU_wmt(11.49)_78
+      - _AU_wmt(11.49)_79
+      - _AU_wmt(11.49)_80
+      - _SG_wmt(11.49)_81
+      - _SG_wmt(11.49)_82
+      - _US_wmt(11.49)_83
+      - _TW_wmt(11.49)_84
+      - _TW_wmt(11.49)_85
+      - _TW_wmt(11.49)_86
+      - _AU_wmt(11.49)_87
+      - _CN_wmt(11.49)_88
+      - wmt(11.49)_89
+      - _CN_wmt(11.49)_90
+      - _AU_wmt(11.49)_91
+      - wmt(11.49)_92
+      - _KR_wmt(11.49)_93
+      - _CA_wmt(11.49)_94
+      - _CH_wmt(11.49)_95
+      - _HK_wmt(11.49)_96
+      - _KR_wmt(11.49)_97
+      - _KR_wmt(11.49)_98
+      - _SG_wmt(11.49)_99
+      - _SG_wmt(11.49)_100
+      - _AU_wmt(11.49)_101
+      - _AU_wmt(11.49)_102
+      - _AU_wmt(11.49)_103
+      - _SG_wmt(11.49)_104
+      - _HK_wmt(11.49)_105
+      - _US_wmt(11.49)_108
+      - _TW_wmt(11.49)_109
+      - _AU_wmt(11.49)_110
+      - _HK_wmt(11.49)_111
+      - _AU_wmt(11.49)_112
+      - _CA_wmt(11.49)_113
+      - _JP_wmt(11.49)_114
+      - _FR_wmt(11.49)_115
+      - _HK_wmt(11.49)_116
+      - _TW_wmt(11.49)_117
+      - _KR_wmt(11.49)_118
+      - _HK_wmt(11.49)_119
+      - _CA_wmt(11.49)_120
+      - _CA_wmt(11.49)_121
+      - _FR_wmt(11.49)_122
+      - _AU_wmt(11.49)_123
+      - _CZ_wmt(11.49)_124
+      - _AU_wmt(11.49)_125
+      - _AU_wmt(11.49)_126
+      - wmt(11.49)_127
+      - _FR_wmt(11.49)_128
+      - wmt(11.49)_129
+      - _AU_wmt(11.49)_130
+      - _AU_wmt(11.49)_131
+      - _AU_wmt(11.49)_132
+      - wmt(11.49)_133
+      - _SG_wmt(11.49)_134
+      - _AU_wmt(11.49)_135
+      - _AU_wmt(11.49)_136
+      - _US_wmt(11.49)_137
+      - _US_wmt(11.49)_138
+      - _FR_wmt(11.49)_139
+      - _US_wmt(11.49)_140
+      - _CN_wmt(11.49)_141
+      - wmt(11.49)_142
+      - _CN_wmt(11.49)_143
+      - _TW_wmt(11.49)_144
+      - _HK_wmt(11.49)_145
+      - _AU_wmt(11.49)_146
+      - _KR_wmt(11.49)_147
+      - _US_wmt(11.49)_148
+      - _TW_wmt(11.49)_149
+      - _SG_wmt(11.49)_150
+      - _KR_wmt(11.49)_151
+      - _AU_wmt(11.49)_152
+      - _AU_wmt(11.49)_153
+      - _AU_wmt(11.49)_154
+      - _AU_wmt(11.49)_155
+      - _JP_wmt(11.49)_156
+      - _AU_wmt(11.49)_157
+      - _AU_wmt(11.49)_158
+      - _HK_wmt(11.49)_159
+      - _TW_wmt(11.49)_160
+      - _HK_wmt(11.49)_161
+      - _NL_wmt(11.49)_162
+      - _TW_wmt(11.49)_163
+      - _AU_wmt(11.49)_164
+      - _SG_wmt(11.49)_165
+      - wmt(11.49)_166
+      - _CA_wmt(11.49)_167
+      - _AU_wmt(11.49)_168
+      - _HK_wmt(11.49)_169
+      - _AU_wmt(11.49)_170
+      - _KR_wmt(11.49)_171
+      - _AU_wmt(11.49)_172
+      - _SG_wmt(11.49)_173
+      - _NL_wmt(11.49)_174
+      - _AU_wmt(11.49)_175
+      - _KR_wmt(11.49)_176
+      - _AU_wmt(11.49)_177
+      - _TW_wmt(11.49)_178
+      - _AU_wmt(11.49)_179
+      - _KR_wmt(11.49)_180
+      - _CZ_wmt(11.49)_181
+      - _AU_wmt(11.49)_182
+      - _TW_wmt(11.49)_183
+      - _AU_wmt(11.49)_184
+      - _AU_wmt(11.49)_185
+      - _TW_wmt(11.49)_186
+      - _AU_wmt(11.49)_187
+      - _AU_wmt(11.49)_188
+      - _SG_wmt(11.49)_189
+      - _SG_wmt(11.49)_190
+      - _CN_wmt(11.49)_191
+      - _KR_wmt(11.49)_192
+      - _TW_wmt(11.49)_193
+      - _AU_wmt(11.49)_194
+      - _AU_wmt(11.49)_195
+      - _US_wmt(11.49)_196
+      - _AU_wmt(11.49)_197
+      - _FR_wmt(11.49)_198
+      - _TW_wmt(11.49)_200
+      - _AU_wmt(11.49)_201
+      - _AU_wmt(11.49)_202
+      - _HK_wmt(11.49)_203
+      - _AU_wmt(11.49)_204
+      - _FR_wmt(11.49)_205
+      - _AU_wmt(11.49)_206
+      - _SG_wmt(11.49)_207
+      - _SG_wmt(11.49)_208
+      - _SG_wmt(11.49)_209
+      - _AU_wmt(11.49)_210
+      - _AU_wmt(11.49)_212
+      - wmt(11.49)_213
+      - _SG_wmt(11.49)_214
+      - _IN_wmt(11.49)_215
+      - _JP_wmt(11.49)_217
+      - _CA_wmt(11.49)_218
+      - _CA_wmt(11.49)_219
+      - _AU_wmt(11.49)_221
+      - _CA_wmt(11.49)_222
+      - _JP_wmt(11.49)_223
+      - _TW_wmt(11.49)_224
+      - _CN_wmt(11.49)_225
+      - wmt(11.49)_226
+      - _SG_wmt(11.49)_227
+      - _KR_wmt(11.49)_228
+      - _CN_wmt(11.49)_229
+      - _AU_wmt(11.49)_230
+      - _CA_wmt(11.49)_231
+      - _SG_wmt(11.49)_232
+      - _AU_wmt(11.49)_233
+      - _AU_wmt(11.49)_234
+      - _CA_wmt(11.49)_235
+      - _HK_wmt(11.49)_236
+      - _CZ_wmt(11.49)_237
+      - _CN_wmt(11.49)_238
+      - _SG_wmt(11.49)_239
+      - _AU_wmt(11.49)_240
+      - _AU_wmt(11.49)_241
+      - _AU_wmt(11.49)_242
+      - _TW_wmt(11.49)_243
+      - _JP_wmt(11.49)_244
+      - _SG_wmt(11.49)_245
+      - _KR_wmt(11.49)_247
+      - _AU_wmt(11.49)_248
+      - _AU_wmt(11.49)_249
+      - _TW_wmt(11.49)_250
+      - _CZ_wmt(11.49)_252
+      - _AU_wmt(11.49)_253
+      - _AU_wmt(11.49)_254
+      - _AU_wmt(11.49)_255
+      - _SG_wmt(11.49)_256
+      - _CA_wmt(11.49)_257
+      - _AU_wmt(11.49)_258
+      - _AU_wmt(11.49)_259
+      - _SG_wmt(11.49)_260
+      - _AU_wmt(11.49)_261
+      - _TW_wmt(11.49)_262
+      - _HK_wmt(11.49)_263
+      - _CA_wmt(11.49)_264
+      - _TW_wmt(11.49)_265
+      - _AU_wmt(11.49)_266
+      - _TW_wmt(11.49)_267
+      - _HK_wmt(11.49)_268
+      - _KR_wmt(11.49)_269
+      - _CA_wmt(11.49)_270
+      - _AU_wmt(11.49)_271
+      - _SG_wmt(11.49)_272
+      - _SG_wmt(11.49)_273
+      - _CA_wmt(11.49)_274
+      - _AU_wmt(11.49)_275
+      - _HK_wmt(11.49)_276
+      - _SG_wmt(11.49)_277
+      - _CH_wmt(11.49)_278
+      - _GB_wmt(11.49)_279
+      - _US_wmt(11.49)_280
+      - _SG_wmt(11.49)_281
+      - _US_wmt(11.49)_282
+      - _KR_wmt(11.49)_284
+      - _AU_wmt(11.49)_285
+      - _HK_wmt(11.49)_287
+      - _TW_wmt(11.49)_288
+      - _HK_wmt(11.49)_290
+      - _AU_wmt(11.49)_291
+      - _CA_wmt(11.49)_292
+      - _JP_wmt(11.49)_293
+      - _SG_wmt(11.49)_294
+      - _CA_wmt(11.49)_295
+      - _TW_wmt(11.49)_296
+      - _CA_wmt(11.49)_297
+      - _HK_wmt(11.49)_298
+      - _CN_wmt(11.49)_299
+      - _TW_wmt(11.49)_300
+      - _SG_wmt(11.49)_301
+      - _SG_wmt(11.49)_302
+      - _CN_wmt(11.49)_303
+      - _AU_wmt(11.49)_304
+      - _HK_wmt(11.49)_305
+      - _CN_wmt(11.49)_306
+      - _CN_wmt(11.49)_307
+      - _SG_wmt(11.49)_308
+      - _AU_wmt(11.49)_309
+      - _SG_wmt(11.49)_310
+      - _HK_wmt(11.49)_311
+      - _AU_wmt(11.49)_312
+      - _TW_wmt(11.49)_313
+      - _AU_wmt(11.49)_314
+      - _SG_wmt(11.49)_315
+      - _NL_wmt(11.49)_316
+      - _AU_wmt(11.49)_317
+      - _AU_wmt(11.49)_318
+      - _AU_wmt(11.49)_319
+      - _AU_wmt(11.49)_320
+      - _HK_wmt(11.49)_321
+      - _AU_wmt(11.49)_322
+      - _AU_wmt(11.49)_323
+      - _KR_wmt(11.49)_324
+      - _AU_wmt(11.49)_325
+      - _AU_wmt(11.49)_326
+      - _KR_wmt(11.49)_327
+      - _HK_wmt(11.49)_328
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _RU_wmt(11.21)_1
-      - _US_wmt(11.21)_2
-      - _US_wmt(11.21)_3
-      - _US_wmt(11.21)_4
-      - _US_wmt(11.21)_6
-      - _TW_wmt(11.21)_9
-      - _TW_wmt(11.21)_10
-      - _TW_wmt(11.21)_11
-      - _HK_wmt(11.21)_12
-      - _TW_wmt(11.21)_13
-      - _TW_wmt(11.21)_14
-      - _US_wmt(11.21)_15
-      - _TW_wmt(11.21)_19
-      - _US_wmt(11.21)_20
-      - _TW_wmt(11.21)_23
-      - _HK_wmt(11.21)_24
-      - _TW_wmt(11.21)_26
-      - _TW_wmt(11.21)_27
-      - _HK_wmt(11.21)_28
-      - _TW_wmt(11.21)_30
-      - _HK_wmt(11.21)_31
-      - _US_wmt(11.21)_32
-      - _US_wmt(11.21)_34
-      - _US_wmt(11.21)_35
-      - _US_wmt(11.21)_37
-      - _US_wmt(11.21)_38
-      - _US_wmt(11.21)_47
-      - _US_wmt(11.21)_48
-      - _BH_wmt(11.21)_49
-      - _FR_wmt(11.21)_69
-      - _FR_wmt(11.21)_70
-      - _FR_wmt(11.21)_80
-      - _HK_wmt(11.21)_81
-      - wmt(11.21)_82
-      - _US_wmt(11.21)_83
-      - _DE_wmt(11.21)_88
-      - _DE_wmt(11.21)_89
-      - _US_wmt(11.21)_90
-      - _JP_wmt(11.21)_95
-      - _US_wmt(11.21)_96
-      - _US_wmt(11.21)_104
-      - _CA_wmt(11.21)_106
-      - _TW_wmt(11.21)_107
-      - _US_wmt(11.21)_117
-      - _SG_wmt(11.21)_119
-      - _JP_wmt(11.21)_121
-      - _TW_wmt(11.21)_122
-      - _HK_wmt(11.21)_124
-      - _FR_wmt(11.21)_125
-      - _US_wmt(11.21)_129
-      - _CN_wmt(11.21)_130
-      - _US_wmt(11.21)_131
-      - wmt(11.21)_132
-      - _NL_wmt(11.21)_133
-      - _NL_wmt(11.21)_134
-      - wmt(11.21)_135
-      - _FR_wmt(11.21)_136
-      - _FR_wmt(11.21)_137
-      - wmt(11.21)_138
-      - _US_wmt(11.21)_139
-      - wmt(11.21)_140
-      - _US_wmt(11.21)_141
-      - _US_wmt(11.21)_142
-      - _US_wmt(11.21)_143
-      - wmt(11.21)_144
-      - _US_wmt(11.21)_145
-      - wmt(11.21)_146
-      - _US_wmt(11.21)_147
-      - _US_wmt(11.21)_148
-      - _US_wmt(11.21)_149
-      - _US_wmt(11.21)_150
-      - _US_wmt(11.21)_151
-      - _US_wmt(11.21)_152
-      - wmt(11.21)_153
-      - _US_wmt(11.21)_154
-      - _TW_wmt(11.21)_155
-      - _SG_wmt(11.21)_156
-      - wmt(11.21)_158
-      - _TW_wmt(11.21)_159
-      - _US_wmt(11.21)_160
-      - _HK_wmt(11.21)_161
-      - _TW_wmt(11.21)_163
-      - _TW_wmt(11.21)_165
-      - _US_wmt(11.21)_168
-      - _TW_wmt(11.21)_170
-      - _TW_wmt(11.21)_171
-      - _SG_wmt(11.21)_172
-      - _TW_wmt(11.21)_174
-      - _US_wmt(11.21)_175
-      - _HK_wmt(11.21)_176
-      - _TW_wmt(11.21)_178
-      - _TW_wmt(11.21)_179
-      - _SG_wmt(11.21)_181
-      - _TW_wmt(11.21)_182
-      - _US_wmt(11.21)_183
-      - _US_wmt(11.21)_184
-      - wmt(11.21)_185
-      - wmt(11.21)_186
-      - _SG_wmt(11.21)_187
-      - wmt(11.21)_188
-      - wmt(11.21)_189
-      - _US_wmt(11.21)_190
-      - _SG_wmt(11.21)_191
-      - _US_wmt(11.21)_192
-      - wmt(11.21)_193
-      - _SG_wmt(11.21)_194
-      - _US_wmt(11.21)_195
-      - _US_wmt(11.21)_196
-      - _US_wmt(11.21)_197
-      - _US_wmt(11.21)_198
-      - _US_wmt(11.21)_199
-      - _US_wmt(11.21)_200
-      - _SG_wmt(11.21)_201
-      - _US_wmt(11.21)_202
-      - _US_wmt(11.21)_203
-      - _SG_wmt(11.21)_204
-      - _US_wmt(11.21)_205
-      - _US_wmt(11.21)_206
-      - wmt(11.21)_207
-      - _US_wmt(11.21)_208
-      - _US_wmt(11.21)_209
-      - _US_wmt(11.21)_210
-      - _US_wmt(11.21)_211
-      - _SG_wmt(11.21)_212
-      - _US_wmt(11.21)_213
-      - _US_wmt(11.21)_214
-      - _SG_wmt(11.21)_215
-      - _US_wmt(11.21)_216
-      - _US_wmt(11.21)_217
-      - _US_wmt(11.21)_218
-      - _US_wmt(11.21)_219
-      - _US_wmt(11.21)_220
-      - _US_wmt(11.21)_221
-      - _US_wmt(11.21)_222
-      - _US_wmt(11.21)_223
-      - _AU_wmt(11.21)_224
-      - wmt(11.21)_225
-      - wmt(11.21)_226
-      - wmt(11.21)_227
-      - _NL_wmt(11.21)_228
+      - _AU_wmt(11.49)_1
+      - _SG_wmt(11.49)_3
+      - _SG_wmt(11.49)_4
+      - _KR_wmt(11.49)_5
+      - _BH_wmt(11.49)_7
+      - _CN_wmt(11.49)_8
+      - _SG_wmt(11.49)_9
+      - _SG_wmt(11.49)_10
+      - _AU_wmt(11.49)_11
+      - wmt(11.49)_12
+      - _TW_wmt(11.49)_13
+      - _SG_wmt(11.49)_14
+      - _KR_wmt(11.49)_15
+      - _AU_wmt(11.49)_17
+      - _JP_wmt(11.49)_18
+      - _CA_wmt(11.49)_19
+      - _AU_wmt(11.49)_20
+      - _CA_wmt(11.49)_21
+      - _SG_wmt(11.49)_22
+      - _CN_wmt(11.49)_23
+      - _SG_wmt(11.49)_24
+      - _TW_wmt(11.49)_25
+      - _AU_wmt(11.49)_26
+      - _CA_wmt(11.49)_27
+      - wmt(11.49)_28
+      - _AU_wmt(11.49)_29
+      - _SG_wmt(11.49)_30
+      - wmt(11.49)_31
+      - _SG_wmt(11.49)_32
+      - _AU_wmt(11.49)_33
+      - _CA_wmt(11.49)_34
+      - _CA_wmt(11.49)_35
+      - _US_wmt(11.49)_36
+      - _CN_wmt(11.49)_37
+      - _AU_wmt(11.49)_38
+      - _AU_wmt(11.49)_39
+      - _HK_wmt(11.49)_41
+      - _AU_wmt(11.49)_42
+      - _AU_wmt(11.49)_43
+      - _TW_wmt(11.49)_44
+      - _KR_wmt(11.49)_45
+      - _HK_wmt(11.49)_46
+      - _AU_wmt(11.49)_47
+      - _AU_wmt(11.49)_48
+      - _SG_wmt(11.49)_49
+      - _AU_wmt(11.49)_50
+      - _TW_wmt(11.49)_51
+      - _TW_wmt(11.49)_52
+      - _AU_wmt(11.49)_53
+      - _HK_wmt(11.49)_54
+      - _HK_wmt(11.49)_55
+      - _CA_wmt(11.49)_56
+      - _AU_wmt(11.49)_57
+      - _CA_wmt(11.49)_58
+      - _AU_wmt(11.49)_59
+      - _TW_wmt(11.49)_60
+      - _SG_wmt(11.49)_61
+      - _CA_wmt(11.49)_62
+      - _TW_wmt(11.49)_63
+      - _HK_wmt(11.49)_64
+      - wmt(11.49)_65
+      - _HK_wmt(11.49)_66
+      - _AU_wmt(11.49)_67
+      - _AU_wmt(11.49)_68
+      - _AU_wmt(11.49)_69
+      - _AU_wmt(11.49)_70
+      - _CN_wmt(11.49)_71
+      - _AU_wmt(11.49)_72
+      - _AU_wmt(11.49)_73
+      - _CA_wmt(11.49)_74
+      - _CH_wmt(11.49)_75
+      - _SG_wmt(11.49)_76
+      - _SG_wmt(11.49)_77
+      - _AU_wmt(11.49)_78
+      - _AU_wmt(11.49)_79
+      - _AU_wmt(11.49)_80
+      - _SG_wmt(11.49)_81
+      - _SG_wmt(11.49)_82
+      - _US_wmt(11.49)_83
+      - _TW_wmt(11.49)_84
+      - _TW_wmt(11.49)_85
+      - _TW_wmt(11.49)_86
+      - _AU_wmt(11.49)_87
+      - _CN_wmt(11.49)_88
+      - wmt(11.49)_89
+      - _CN_wmt(11.49)_90
+      - _AU_wmt(11.49)_91
+      - wmt(11.49)_92
+      - _KR_wmt(11.49)_93
+      - _CA_wmt(11.49)_94
+      - _CH_wmt(11.49)_95
+      - _HK_wmt(11.49)_96
+      - _KR_wmt(11.49)_97
+      - _KR_wmt(11.49)_98
+      - _SG_wmt(11.49)_99
+      - _SG_wmt(11.49)_100
+      - _AU_wmt(11.49)_101
+      - _AU_wmt(11.49)_102
+      - _AU_wmt(11.49)_103
+      - _SG_wmt(11.49)_104
+      - _HK_wmt(11.49)_105
+      - _US_wmt(11.49)_108
+      - _TW_wmt(11.49)_109
+      - _AU_wmt(11.49)_110
+      - _HK_wmt(11.49)_111
+      - _AU_wmt(11.49)_112
+      - _CA_wmt(11.49)_113
+      - _JP_wmt(11.49)_114
+      - _FR_wmt(11.49)_115
+      - _HK_wmt(11.49)_116
+      - _TW_wmt(11.49)_117
+      - _KR_wmt(11.49)_118
+      - _HK_wmt(11.49)_119
+      - _CA_wmt(11.49)_120
+      - _CA_wmt(11.49)_121
+      - _FR_wmt(11.49)_122
+      - _AU_wmt(11.49)_123
+      - _CZ_wmt(11.49)_124
+      - _AU_wmt(11.49)_125
+      - _AU_wmt(11.49)_126
+      - wmt(11.49)_127
+      - _FR_wmt(11.49)_128
+      - wmt(11.49)_129
+      - _AU_wmt(11.49)_130
+      - _AU_wmt(11.49)_131
+      - _AU_wmt(11.49)_132
+      - wmt(11.49)_133
+      - _SG_wmt(11.49)_134
+      - _AU_wmt(11.49)_135
+      - _AU_wmt(11.49)_136
+      - _US_wmt(11.49)_137
+      - _US_wmt(11.49)_138
+      - _FR_wmt(11.49)_139
+      - _US_wmt(11.49)_140
+      - _CN_wmt(11.49)_141
+      - wmt(11.49)_142
+      - _CN_wmt(11.49)_143
+      - _TW_wmt(11.49)_144
+      - _HK_wmt(11.49)_145
+      - _AU_wmt(11.49)_146
+      - _KR_wmt(11.49)_147
+      - _US_wmt(11.49)_148
+      - _TW_wmt(11.49)_149
+      - _SG_wmt(11.49)_150
+      - _KR_wmt(11.49)_151
+      - _AU_wmt(11.49)_152
+      - _AU_wmt(11.49)_153
+      - _AU_wmt(11.49)_154
+      - _AU_wmt(11.49)_155
+      - _JP_wmt(11.49)_156
+      - _AU_wmt(11.49)_157
+      - _AU_wmt(11.49)_158
+      - _HK_wmt(11.49)_159
+      - _TW_wmt(11.49)_160
+      - _HK_wmt(11.49)_161
+      - _NL_wmt(11.49)_162
+      - _TW_wmt(11.49)_163
+      - _AU_wmt(11.49)_164
+      - _SG_wmt(11.49)_165
+      - wmt(11.49)_166
+      - _CA_wmt(11.49)_167
+      - _AU_wmt(11.49)_168
+      - _HK_wmt(11.49)_169
+      - _AU_wmt(11.49)_170
+      - _KR_wmt(11.49)_171
+      - _AU_wmt(11.49)_172
+      - _SG_wmt(11.49)_173
+      - _NL_wmt(11.49)_174
+      - _AU_wmt(11.49)_175
+      - _KR_wmt(11.49)_176
+      - _AU_wmt(11.49)_177
+      - _TW_wmt(11.49)_178
+      - _AU_wmt(11.49)_179
+      - _KR_wmt(11.49)_180
+      - _CZ_wmt(11.49)_181
+      - _AU_wmt(11.49)_182
+      - _TW_wmt(11.49)_183
+      - _AU_wmt(11.49)_184
+      - _AU_wmt(11.49)_185
+      - _TW_wmt(11.49)_186
+      - _AU_wmt(11.49)_187
+      - _AU_wmt(11.49)_188
+      - _SG_wmt(11.49)_189
+      - _SG_wmt(11.49)_190
+      - _CN_wmt(11.49)_191
+      - _KR_wmt(11.49)_192
+      - _TW_wmt(11.49)_193
+      - _AU_wmt(11.49)_194
+      - _AU_wmt(11.49)_195
+      - _US_wmt(11.49)_196
+      - _AU_wmt(11.49)_197
+      - _FR_wmt(11.49)_198
+      - _TW_wmt(11.49)_200
+      - _AU_wmt(11.49)_201
+      - _AU_wmt(11.49)_202
+      - _HK_wmt(11.49)_203
+      - _AU_wmt(11.49)_204
+      - _FR_wmt(11.49)_205
+      - _AU_wmt(11.49)_206
+      - _SG_wmt(11.49)_207
+      - _SG_wmt(11.49)_208
+      - _SG_wmt(11.49)_209
+      - _AU_wmt(11.49)_210
+      - _AU_wmt(11.49)_212
+      - wmt(11.49)_213
+      - _SG_wmt(11.49)_214
+      - _IN_wmt(11.49)_215
+      - _JP_wmt(11.49)_217
+      - _CA_wmt(11.49)_218
+      - _CA_wmt(11.49)_219
+      - _AU_wmt(11.49)_221
+      - _CA_wmt(11.49)_222
+      - _JP_wmt(11.49)_223
+      - _TW_wmt(11.49)_224
+      - _CN_wmt(11.49)_225
+      - wmt(11.49)_226
+      - _SG_wmt(11.49)_227
+      - _KR_wmt(11.49)_228
+      - _CN_wmt(11.49)_229
+      - _AU_wmt(11.49)_230
+      - _CA_wmt(11.49)_231
+      - _SG_wmt(11.49)_232
+      - _AU_wmt(11.49)_233
+      - _AU_wmt(11.49)_234
+      - _CA_wmt(11.49)_235
+      - _HK_wmt(11.49)_236
+      - _CZ_wmt(11.49)_237
+      - _CN_wmt(11.49)_238
+      - _SG_wmt(11.49)_239
+      - _AU_wmt(11.49)_240
+      - _AU_wmt(11.49)_241
+      - _AU_wmt(11.49)_242
+      - _TW_wmt(11.49)_243
+      - _JP_wmt(11.49)_244
+      - _SG_wmt(11.49)_245
+      - _KR_wmt(11.49)_247
+      - _AU_wmt(11.49)_248
+      - _AU_wmt(11.49)_249
+      - _TW_wmt(11.49)_250
+      - _CZ_wmt(11.49)_252
+      - _AU_wmt(11.49)_253
+      - _AU_wmt(11.49)_254
+      - _AU_wmt(11.49)_255
+      - _SG_wmt(11.49)_256
+      - _CA_wmt(11.49)_257
+      - _AU_wmt(11.49)_258
+      - _AU_wmt(11.49)_259
+      - _SG_wmt(11.49)_260
+      - _AU_wmt(11.49)_261
+      - _TW_wmt(11.49)_262
+      - _HK_wmt(11.49)_263
+      - _CA_wmt(11.49)_264
+      - _TW_wmt(11.49)_265
+      - _AU_wmt(11.49)_266
+      - _TW_wmt(11.49)_267
+      - _HK_wmt(11.49)_268
+      - _KR_wmt(11.49)_269
+      - _CA_wmt(11.49)_270
+      - _AU_wmt(11.49)_271
+      - _SG_wmt(11.49)_272
+      - _SG_wmt(11.49)_273
+      - _CA_wmt(11.49)_274
+      - _AU_wmt(11.49)_275
+      - _HK_wmt(11.49)_276
+      - _SG_wmt(11.49)_277
+      - _CH_wmt(11.49)_278
+      - _GB_wmt(11.49)_279
+      - _US_wmt(11.49)_280
+      - _SG_wmt(11.49)_281
+      - _US_wmt(11.49)_282
+      - _KR_wmt(11.49)_284
+      - _AU_wmt(11.49)_285
+      - _HK_wmt(11.49)_287
+      - _TW_wmt(11.49)_288
+      - _HK_wmt(11.49)_290
+      - _AU_wmt(11.49)_291
+      - _CA_wmt(11.49)_292
+      - _JP_wmt(11.49)_293
+      - _SG_wmt(11.49)_294
+      - _CA_wmt(11.49)_295
+      - _TW_wmt(11.49)_296
+      - _CA_wmt(11.49)_297
+      - _HK_wmt(11.49)_298
+      - _CN_wmt(11.49)_299
+      - _TW_wmt(11.49)_300
+      - _SG_wmt(11.49)_301
+      - _SG_wmt(11.49)_302
+      - _CN_wmt(11.49)_303
+      - _AU_wmt(11.49)_304
+      - _HK_wmt(11.49)_305
+      - _CN_wmt(11.49)_306
+      - _CN_wmt(11.49)_307
+      - _SG_wmt(11.49)_308
+      - _AU_wmt(11.49)_309
+      - _SG_wmt(11.49)_310
+      - _HK_wmt(11.49)_311
+      - _AU_wmt(11.49)_312
+      - _TW_wmt(11.49)_313
+      - _AU_wmt(11.49)_314
+      - _SG_wmt(11.49)_315
+      - _NL_wmt(11.49)_316
+      - _AU_wmt(11.49)_317
+      - _AU_wmt(11.49)_318
+      - _AU_wmt(11.49)_319
+      - _AU_wmt(11.49)_320
+      - _HK_wmt(11.49)_321
+      - _AU_wmt(11.49)_322
+      - _AU_wmt(11.49)_323
+      - _KR_wmt(11.49)_324
+      - _AU_wmt(11.49)_325
+      - _AU_wmt(11.49)_326
+      - _KR_wmt(11.49)_327
+      - _HK_wmt(11.49)_328
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _RU_wmt(11.21)_1
-      - _US_wmt(11.21)_2
-      - _US_wmt(11.21)_3
-      - _US_wmt(11.21)_4
-      - _US_wmt(11.21)_6
-      - _TW_wmt(11.21)_9
-      - _TW_wmt(11.21)_10
-      - _TW_wmt(11.21)_11
-      - _HK_wmt(11.21)_12
-      - _TW_wmt(11.21)_13
-      - _TW_wmt(11.21)_14
-      - _US_wmt(11.21)_15
-      - _TW_wmt(11.21)_19
-      - _US_wmt(11.21)_20
-      - _TW_wmt(11.21)_23
-      - _HK_wmt(11.21)_24
-      - _TW_wmt(11.21)_26
-      - _TW_wmt(11.21)_27
-      - _HK_wmt(11.21)_28
-      - _TW_wmt(11.21)_30
-      - _HK_wmt(11.21)_31
-      - _US_wmt(11.21)_32
-      - _US_wmt(11.21)_34
-      - _US_wmt(11.21)_35
-      - _US_wmt(11.21)_37
-      - _US_wmt(11.21)_38
-      - _US_wmt(11.21)_47
-      - _US_wmt(11.21)_48
-      - _BH_wmt(11.21)_49
-      - _FR_wmt(11.21)_69
-      - _FR_wmt(11.21)_70
-      - _FR_wmt(11.21)_80
-      - _HK_wmt(11.21)_81
-      - wmt(11.21)_82
-      - _US_wmt(11.21)_83
-      - _DE_wmt(11.21)_88
-      - _DE_wmt(11.21)_89
-      - _US_wmt(11.21)_90
-      - _JP_wmt(11.21)_95
-      - _US_wmt(11.21)_96
-      - _US_wmt(11.21)_104
-      - _CA_wmt(11.21)_106
-      - _TW_wmt(11.21)_107
-      - _US_wmt(11.21)_117
-      - _SG_wmt(11.21)_119
-      - _JP_wmt(11.21)_121
-      - _TW_wmt(11.21)_122
-      - _HK_wmt(11.21)_124
-      - _FR_wmt(11.21)_125
-      - _US_wmt(11.21)_129
-      - _CN_wmt(11.21)_130
-      - _US_wmt(11.21)_131
-      - wmt(11.21)_132
-      - _NL_wmt(11.21)_133
-      - _NL_wmt(11.21)_134
-      - wmt(11.21)_135
-      - _FR_wmt(11.21)_136
-      - _FR_wmt(11.21)_137
-      - wmt(11.21)_138
-      - _US_wmt(11.21)_139
-      - wmt(11.21)_140
-      - _US_wmt(11.21)_141
-      - _US_wmt(11.21)_142
-      - _US_wmt(11.21)_143
-      - wmt(11.21)_144
-      - _US_wmt(11.21)_145
-      - wmt(11.21)_146
-      - _US_wmt(11.21)_147
-      - _US_wmt(11.21)_148
-      - _US_wmt(11.21)_149
-      - _US_wmt(11.21)_150
-      - _US_wmt(11.21)_151
-      - _US_wmt(11.21)_152
-      - wmt(11.21)_153
-      - _US_wmt(11.21)_154
-      - _TW_wmt(11.21)_155
-      - _SG_wmt(11.21)_156
-      - wmt(11.21)_158
-      - _TW_wmt(11.21)_159
-      - _US_wmt(11.21)_160
-      - _HK_wmt(11.21)_161
-      - _TW_wmt(11.21)_163
-      - _TW_wmt(11.21)_165
-      - _US_wmt(11.21)_168
-      - _TW_wmt(11.21)_170
-      - _TW_wmt(11.21)_171
-      - _SG_wmt(11.21)_172
-      - _TW_wmt(11.21)_174
-      - _US_wmt(11.21)_175
-      - _HK_wmt(11.21)_176
-      - _TW_wmt(11.21)_178
-      - _TW_wmt(11.21)_179
-      - _SG_wmt(11.21)_181
-      - _TW_wmt(11.21)_182
-      - _US_wmt(11.21)_183
-      - _US_wmt(11.21)_184
-      - wmt(11.21)_185
-      - wmt(11.21)_186
-      - _SG_wmt(11.21)_187
-      - wmt(11.21)_188
-      - wmt(11.21)_189
-      - _US_wmt(11.21)_190
-      - _SG_wmt(11.21)_191
-      - _US_wmt(11.21)_192
-      - wmt(11.21)_193
-      - _SG_wmt(11.21)_194
-      - _US_wmt(11.21)_195
-      - _US_wmt(11.21)_196
-      - _US_wmt(11.21)_197
-      - _US_wmt(11.21)_198
-      - _US_wmt(11.21)_199
-      - _US_wmt(11.21)_200
-      - _SG_wmt(11.21)_201
-      - _US_wmt(11.21)_202
-      - _US_wmt(11.21)_203
-      - _SG_wmt(11.21)_204
-      - _US_wmt(11.21)_205
-      - _US_wmt(11.21)_206
-      - wmt(11.21)_207
-      - _US_wmt(11.21)_208
-      - _US_wmt(11.21)_209
-      - _US_wmt(11.21)_210
-      - _US_wmt(11.21)_211
-      - _SG_wmt(11.21)_212
-      - _US_wmt(11.21)_213
-      - _US_wmt(11.21)_214
-      - _SG_wmt(11.21)_215
-      - _US_wmt(11.21)_216
-      - _US_wmt(11.21)_217
-      - _US_wmt(11.21)_218
-      - _US_wmt(11.21)_219
-      - _US_wmt(11.21)_220
-      - _US_wmt(11.21)_221
-      - _US_wmt(11.21)_222
-      - _US_wmt(11.21)_223
-      - _AU_wmt(11.21)_224
-      - wmt(11.21)_225
-      - wmt(11.21)_226
-      - wmt(11.21)_227
-      - _NL_wmt(11.21)_228
+      - _AU_wmt(11.49)_1
+      - _SG_wmt(11.49)_3
+      - _SG_wmt(11.49)_4
+      - _KR_wmt(11.49)_5
+      - _BH_wmt(11.49)_7
+      - _CN_wmt(11.49)_8
+      - _SG_wmt(11.49)_9
+      - _SG_wmt(11.49)_10
+      - _AU_wmt(11.49)_11
+      - wmt(11.49)_12
+      - _TW_wmt(11.49)_13
+      - _SG_wmt(11.49)_14
+      - _KR_wmt(11.49)_15
+      - _AU_wmt(11.49)_17
+      - _JP_wmt(11.49)_18
+      - _CA_wmt(11.49)_19
+      - _AU_wmt(11.49)_20
+      - _CA_wmt(11.49)_21
+      - _SG_wmt(11.49)_22
+      - _CN_wmt(11.49)_23
+      - _SG_wmt(11.49)_24
+      - _TW_wmt(11.49)_25
+      - _AU_wmt(11.49)_26
+      - _CA_wmt(11.49)_27
+      - wmt(11.49)_28
+      - _AU_wmt(11.49)_29
+      - _SG_wmt(11.49)_30
+      - wmt(11.49)_31
+      - _SG_wmt(11.49)_32
+      - _AU_wmt(11.49)_33
+      - _CA_wmt(11.49)_34
+      - _CA_wmt(11.49)_35
+      - _US_wmt(11.49)_36
+      - _CN_wmt(11.49)_37
+      - _AU_wmt(11.49)_38
+      - _AU_wmt(11.49)_39
+      - _HK_wmt(11.49)_41
+      - _AU_wmt(11.49)_42
+      - _AU_wmt(11.49)_43
+      - _TW_wmt(11.49)_44
+      - _KR_wmt(11.49)_45
+      - _HK_wmt(11.49)_46
+      - _AU_wmt(11.49)_47
+      - _AU_wmt(11.49)_48
+      - _SG_wmt(11.49)_49
+      - _AU_wmt(11.49)_50
+      - _TW_wmt(11.49)_51
+      - _TW_wmt(11.49)_52
+      - _AU_wmt(11.49)_53
+      - _HK_wmt(11.49)_54
+      - _HK_wmt(11.49)_55
+      - _CA_wmt(11.49)_56
+      - _AU_wmt(11.49)_57
+      - _CA_wmt(11.49)_58
+      - _AU_wmt(11.49)_59
+      - _TW_wmt(11.49)_60
+      - _SG_wmt(11.49)_61
+      - _CA_wmt(11.49)_62
+      - _TW_wmt(11.49)_63
+      - _HK_wmt(11.49)_64
+      - wmt(11.49)_65
+      - _HK_wmt(11.49)_66
+      - _AU_wmt(11.49)_67
+      - _AU_wmt(11.49)_68
+      - _AU_wmt(11.49)_69
+      - _AU_wmt(11.49)_70
+      - _CN_wmt(11.49)_71
+      - _AU_wmt(11.49)_72
+      - _AU_wmt(11.49)_73
+      - _CA_wmt(11.49)_74
+      - _CH_wmt(11.49)_75
+      - _SG_wmt(11.49)_76
+      - _SG_wmt(11.49)_77
+      - _AU_wmt(11.49)_78
+      - _AU_wmt(11.49)_79
+      - _AU_wmt(11.49)_80
+      - _SG_wmt(11.49)_81
+      - _SG_wmt(11.49)_82
+      - _US_wmt(11.49)_83
+      - _TW_wmt(11.49)_84
+      - _TW_wmt(11.49)_85
+      - _TW_wmt(11.49)_86
+      - _AU_wmt(11.49)_87
+      - _CN_wmt(11.49)_88
+      - wmt(11.49)_89
+      - _CN_wmt(11.49)_90
+      - _AU_wmt(11.49)_91
+      - wmt(11.49)_92
+      - _KR_wmt(11.49)_93
+      - _CA_wmt(11.49)_94
+      - _CH_wmt(11.49)_95
+      - _HK_wmt(11.49)_96
+      - _KR_wmt(11.49)_97
+      - _KR_wmt(11.49)_98
+      - _SG_wmt(11.49)_99
+      - _SG_wmt(11.49)_100
+      - _AU_wmt(11.49)_101
+      - _AU_wmt(11.49)_102
+      - _AU_wmt(11.49)_103
+      - _SG_wmt(11.49)_104
+      - _HK_wmt(11.49)_105
+      - _US_wmt(11.49)_108
+      - _TW_wmt(11.49)_109
+      - _AU_wmt(11.49)_110
+      - _HK_wmt(11.49)_111
+      - _AU_wmt(11.49)_112
+      - _CA_wmt(11.49)_113
+      - _JP_wmt(11.49)_114
+      - _FR_wmt(11.49)_115
+      - _HK_wmt(11.49)_116
+      - _TW_wmt(11.49)_117
+      - _KR_wmt(11.49)_118
+      - _HK_wmt(11.49)_119
+      - _CA_wmt(11.49)_120
+      - _CA_wmt(11.49)_121
+      - _FR_wmt(11.49)_122
+      - _AU_wmt(11.49)_123
+      - _CZ_wmt(11.49)_124
+      - _AU_wmt(11.49)_125
+      - _AU_wmt(11.49)_126
+      - wmt(11.49)_127
+      - _FR_wmt(11.49)_128
+      - wmt(11.49)_129
+      - _AU_wmt(11.49)_130
+      - _AU_wmt(11.49)_131
+      - _AU_wmt(11.49)_132
+      - wmt(11.49)_133
+      - _SG_wmt(11.49)_134
+      - _AU_wmt(11.49)_135
+      - _AU_wmt(11.49)_136
+      - _US_wmt(11.49)_137
+      - _US_wmt(11.49)_138
+      - _FR_wmt(11.49)_139
+      - _US_wmt(11.49)_140
+      - _CN_wmt(11.49)_141
+      - wmt(11.49)_142
+      - _CN_wmt(11.49)_143
+      - _TW_wmt(11.49)_144
+      - _HK_wmt(11.49)_145
+      - _AU_wmt(11.49)_146
+      - _KR_wmt(11.49)_147
+      - _US_wmt(11.49)_148
+      - _TW_wmt(11.49)_149
+      - _SG_wmt(11.49)_150
+      - _KR_wmt(11.49)_151
+      - _AU_wmt(11.49)_152
+      - _AU_wmt(11.49)_153
+      - _AU_wmt(11.49)_154
+      - _AU_wmt(11.49)_155
+      - _JP_wmt(11.49)_156
+      - _AU_wmt(11.49)_157
+      - _AU_wmt(11.49)_158
+      - _HK_wmt(11.49)_159
+      - _TW_wmt(11.49)_160
+      - _HK_wmt(11.49)_161
+      - _NL_wmt(11.49)_162
+      - _TW_wmt(11.49)_163
+      - _AU_wmt(11.49)_164
+      - _SG_wmt(11.49)_165
+      - wmt(11.49)_166
+      - _CA_wmt(11.49)_167
+      - _AU_wmt(11.49)_168
+      - _HK_wmt(11.49)_169
+      - _AU_wmt(11.49)_170
+      - _KR_wmt(11.49)_171
+      - _AU_wmt(11.49)_172
+      - _SG_wmt(11.49)_173
+      - _NL_wmt(11.49)_174
+      - _AU_wmt(11.49)_175
+      - _KR_wmt(11.49)_176
+      - _AU_wmt(11.49)_177
+      - _TW_wmt(11.49)_178
+      - _AU_wmt(11.49)_179
+      - _KR_wmt(11.49)_180
+      - _CZ_wmt(11.49)_181
+      - _AU_wmt(11.49)_182
+      - _TW_wmt(11.49)_183
+      - _AU_wmt(11.49)_184
+      - _AU_wmt(11.49)_185
+      - _TW_wmt(11.49)_186
+      - _AU_wmt(11.49)_187
+      - _AU_wmt(11.49)_188
+      - _SG_wmt(11.49)_189
+      - _SG_wmt(11.49)_190
+      - _CN_wmt(11.49)_191
+      - _KR_wmt(11.49)_192
+      - _TW_wmt(11.49)_193
+      - _AU_wmt(11.49)_194
+      - _AU_wmt(11.49)_195
+      - _US_wmt(11.49)_196
+      - _AU_wmt(11.49)_197
+      - _FR_wmt(11.49)_198
+      - _TW_wmt(11.49)_200
+      - _AU_wmt(11.49)_201
+      - _AU_wmt(11.49)_202
+      - _HK_wmt(11.49)_203
+      - _AU_wmt(11.49)_204
+      - _FR_wmt(11.49)_205
+      - _AU_wmt(11.49)_206
+      - _SG_wmt(11.49)_207
+      - _SG_wmt(11.49)_208
+      - _SG_wmt(11.49)_209
+      - _AU_wmt(11.49)_210
+      - _AU_wmt(11.49)_212
+      - wmt(11.49)_213
+      - _SG_wmt(11.49)_214
+      - _IN_wmt(11.49)_215
+      - _JP_wmt(11.49)_217
+      - _CA_wmt(11.49)_218
+      - _CA_wmt(11.49)_219
+      - _AU_wmt(11.49)_221
+      - _CA_wmt(11.49)_222
+      - _JP_wmt(11.49)_223
+      - _TW_wmt(11.49)_224
+      - _CN_wmt(11.49)_225
+      - wmt(11.49)_226
+      - _SG_wmt(11.49)_227
+      - _KR_wmt(11.49)_228
+      - _CN_wmt(11.49)_229
+      - _AU_wmt(11.49)_230
+      - _CA_wmt(11.49)_231
+      - _SG_wmt(11.49)_232
+      - _AU_wmt(11.49)_233
+      - _AU_wmt(11.49)_234
+      - _CA_wmt(11.49)_235
+      - _HK_wmt(11.49)_236
+      - _CZ_wmt(11.49)_237
+      - _CN_wmt(11.49)_238
+      - _SG_wmt(11.49)_239
+      - _AU_wmt(11.49)_240
+      - _AU_wmt(11.49)_241
+      - _AU_wmt(11.49)_242
+      - _TW_wmt(11.49)_243
+      - _JP_wmt(11.49)_244
+      - _SG_wmt(11.49)_245
+      - _KR_wmt(11.49)_247
+      - _AU_wmt(11.49)_248
+      - _AU_wmt(11.49)_249
+      - _TW_wmt(11.49)_250
+      - _CZ_wmt(11.49)_252
+      - _AU_wmt(11.49)_253
+      - _AU_wmt(11.49)_254
+      - _AU_wmt(11.49)_255
+      - _SG_wmt(11.49)_256
+      - _CA_wmt(11.49)_257
+      - _AU_wmt(11.49)_258
+      - _AU_wmt(11.49)_259
+      - _SG_wmt(11.49)_260
+      - _AU_wmt(11.49)_261
+      - _TW_wmt(11.49)_262
+      - _HK_wmt(11.49)_263
+      - _CA_wmt(11.49)_264
+      - _TW_wmt(11.49)_265
+      - _AU_wmt(11.49)_266
+      - _TW_wmt(11.49)_267
+      - _HK_wmt(11.49)_268
+      - _KR_wmt(11.49)_269
+      - _CA_wmt(11.49)_270
+      - _AU_wmt(11.49)_271
+      - _SG_wmt(11.49)_272
+      - _SG_wmt(11.49)_273
+      - _CA_wmt(11.49)_274
+      - _AU_wmt(11.49)_275
+      - _HK_wmt(11.49)_276
+      - _SG_wmt(11.49)_277
+      - _CH_wmt(11.49)_278
+      - _GB_wmt(11.49)_279
+      - _US_wmt(11.49)_280
+      - _SG_wmt(11.49)_281
+      - _US_wmt(11.49)_282
+      - _KR_wmt(11.49)_284
+      - _AU_wmt(11.49)_285
+      - _HK_wmt(11.49)_287
+      - _TW_wmt(11.49)_288
+      - _HK_wmt(11.49)_290
+      - _AU_wmt(11.49)_291
+      - _CA_wmt(11.49)_292
+      - _JP_wmt(11.49)_293
+      - _SG_wmt(11.49)_294
+      - _CA_wmt(11.49)_295
+      - _TW_wmt(11.49)_296
+      - _CA_wmt(11.49)_297
+      - _HK_wmt(11.49)_298
+      - _CN_wmt(11.49)_299
+      - _TW_wmt(11.49)_300
+      - _SG_wmt(11.49)_301
+      - _SG_wmt(11.49)_302
+      - _CN_wmt(11.49)_303
+      - _AU_wmt(11.49)_304
+      - _HK_wmt(11.49)_305
+      - _CN_wmt(11.49)_306
+      - _CN_wmt(11.49)_307
+      - _SG_wmt(11.49)_308
+      - _AU_wmt(11.49)_309
+      - _SG_wmt(11.49)_310
+      - _HK_wmt(11.49)_311
+      - _AU_wmt(11.49)_312
+      - _TW_wmt(11.49)_313
+      - _AU_wmt(11.49)_314
+      - _SG_wmt(11.49)_315
+      - _NL_wmt(11.49)_316
+      - _AU_wmt(11.49)_317
+      - _AU_wmt(11.49)_318
+      - _AU_wmt(11.49)_319
+      - _AU_wmt(11.49)_320
+      - _HK_wmt(11.49)_321
+      - _AU_wmt(11.49)_322
+      - _AU_wmt(11.49)_323
+      - _KR_wmt(11.49)_324
+      - _AU_wmt(11.49)_325
+      - _AU_wmt(11.49)_326
+      - _KR_wmt(11.49)_327
+      - _HK_wmt(11.49)_328
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1196,146 +2580,319 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _RU_wmt(11.21)_1
-      - _US_wmt(11.21)_2
-      - _US_wmt(11.21)_3
-      - _US_wmt(11.21)_4
-      - _US_wmt(11.21)_6
-      - _TW_wmt(11.21)_9
-      - _TW_wmt(11.21)_10
-      - _TW_wmt(11.21)_11
-      - _HK_wmt(11.21)_12
-      - _TW_wmt(11.21)_13
-      - _TW_wmt(11.21)_14
-      - _US_wmt(11.21)_15
-      - _TW_wmt(11.21)_19
-      - _US_wmt(11.21)_20
-      - _TW_wmt(11.21)_23
-      - _HK_wmt(11.21)_24
-      - _TW_wmt(11.21)_26
-      - _TW_wmt(11.21)_27
-      - _HK_wmt(11.21)_28
-      - _TW_wmt(11.21)_30
-      - _HK_wmt(11.21)_31
-      - _US_wmt(11.21)_32
-      - _US_wmt(11.21)_34
-      - _US_wmt(11.21)_35
-      - _US_wmt(11.21)_37
-      - _US_wmt(11.21)_38
-      - _US_wmt(11.21)_47
-      - _US_wmt(11.21)_48
-      - _BH_wmt(11.21)_49
-      - _FR_wmt(11.21)_69
-      - _FR_wmt(11.21)_70
-      - _FR_wmt(11.21)_80
-      - _HK_wmt(11.21)_81
-      - wmt(11.21)_82
-      - _US_wmt(11.21)_83
-      - _DE_wmt(11.21)_88
-      - _DE_wmt(11.21)_89
-      - _US_wmt(11.21)_90
-      - _JP_wmt(11.21)_95
-      - _US_wmt(11.21)_96
-      - _US_wmt(11.21)_104
-      - _CA_wmt(11.21)_106
-      - _TW_wmt(11.21)_107
-      - _US_wmt(11.21)_117
-      - _SG_wmt(11.21)_119
-      - _JP_wmt(11.21)_121
-      - _TW_wmt(11.21)_122
-      - _HK_wmt(11.21)_124
-      - _FR_wmt(11.21)_125
-      - _US_wmt(11.21)_129
-      - _CN_wmt(11.21)_130
-      - _US_wmt(11.21)_131
-      - wmt(11.21)_132
-      - _NL_wmt(11.21)_133
-      - _NL_wmt(11.21)_134
-      - wmt(11.21)_135
-      - _FR_wmt(11.21)_136
-      - _FR_wmt(11.21)_137
-      - wmt(11.21)_138
-      - _US_wmt(11.21)_139
-      - wmt(11.21)_140
-      - _US_wmt(11.21)_141
-      - _US_wmt(11.21)_142
-      - _US_wmt(11.21)_143
-      - wmt(11.21)_144
-      - _US_wmt(11.21)_145
-      - wmt(11.21)_146
-      - _US_wmt(11.21)_147
-      - _US_wmt(11.21)_148
-      - _US_wmt(11.21)_149
-      - _US_wmt(11.21)_150
-      - _US_wmt(11.21)_151
-      - _US_wmt(11.21)_152
-      - wmt(11.21)_153
-      - _US_wmt(11.21)_154
-      - _TW_wmt(11.21)_155
-      - _SG_wmt(11.21)_156
-      - wmt(11.21)_158
-      - _TW_wmt(11.21)_159
-      - _US_wmt(11.21)_160
-      - _HK_wmt(11.21)_161
-      - _TW_wmt(11.21)_163
-      - _TW_wmt(11.21)_165
-      - _US_wmt(11.21)_168
-      - _TW_wmt(11.21)_170
-      - _TW_wmt(11.21)_171
-      - _SG_wmt(11.21)_172
-      - _TW_wmt(11.21)_174
-      - _US_wmt(11.21)_175
-      - _HK_wmt(11.21)_176
-      - _TW_wmt(11.21)_178
-      - _TW_wmt(11.21)_179
-      - _SG_wmt(11.21)_181
-      - _TW_wmt(11.21)_182
-      - _US_wmt(11.21)_183
-      - _US_wmt(11.21)_184
-      - wmt(11.21)_185
-      - wmt(11.21)_186
-      - _SG_wmt(11.21)_187
-      - wmt(11.21)_188
-      - wmt(11.21)_189
-      - _US_wmt(11.21)_190
-      - _SG_wmt(11.21)_191
-      - _US_wmt(11.21)_192
-      - wmt(11.21)_193
-      - _SG_wmt(11.21)_194
-      - _US_wmt(11.21)_195
-      - _US_wmt(11.21)_196
-      - _US_wmt(11.21)_197
-      - _US_wmt(11.21)_198
-      - _US_wmt(11.21)_199
-      - _US_wmt(11.21)_200
-      - _SG_wmt(11.21)_201
-      - _US_wmt(11.21)_202
-      - _US_wmt(11.21)_203
-      - _SG_wmt(11.21)_204
-      - _US_wmt(11.21)_205
-      - _US_wmt(11.21)_206
-      - wmt(11.21)_207
-      - _US_wmt(11.21)_208
-      - _US_wmt(11.21)_209
-      - _US_wmt(11.21)_210
-      - _US_wmt(11.21)_211
-      - _SG_wmt(11.21)_212
-      - _US_wmt(11.21)_213
-      - _US_wmt(11.21)_214
-      - _SG_wmt(11.21)_215
-      - _US_wmt(11.21)_216
-      - _US_wmt(11.21)_217
-      - _US_wmt(11.21)_218
-      - _US_wmt(11.21)_219
-      - _US_wmt(11.21)_220
-      - _US_wmt(11.21)_221
-      - _US_wmt(11.21)_222
-      - _US_wmt(11.21)_223
-      - _AU_wmt(11.21)_224
-      - wmt(11.21)_225
-      - wmt(11.21)_226
-      - wmt(11.21)_227
-      - _NL_wmt(11.21)_228
+      - _AU_wmt(11.49)_1
+      - _SG_wmt(11.49)_3
+      - _SG_wmt(11.49)_4
+      - _KR_wmt(11.49)_5
+      - _BH_wmt(11.49)_7
+      - _CN_wmt(11.49)_8
+      - _SG_wmt(11.49)_9
+      - _SG_wmt(11.49)_10
+      - _AU_wmt(11.49)_11
+      - wmt(11.49)_12
+      - _TW_wmt(11.49)_13
+      - _SG_wmt(11.49)_14
+      - _KR_wmt(11.49)_15
+      - _AU_wmt(11.49)_17
+      - _JP_wmt(11.49)_18
+      - _CA_wmt(11.49)_19
+      - _AU_wmt(11.49)_20
+      - _CA_wmt(11.49)_21
+      - _SG_wmt(11.49)_22
+      - _CN_wmt(11.49)_23
+      - _SG_wmt(11.49)_24
+      - _TW_wmt(11.49)_25
+      - _AU_wmt(11.49)_26
+      - _CA_wmt(11.49)_27
+      - wmt(11.49)_28
+      - _AU_wmt(11.49)_29
+      - _SG_wmt(11.49)_30
+      - wmt(11.49)_31
+      - _SG_wmt(11.49)_32
+      - _AU_wmt(11.49)_33
+      - _CA_wmt(11.49)_34
+      - _CA_wmt(11.49)_35
+      - _US_wmt(11.49)_36
+      - _CN_wmt(11.49)_37
+      - _AU_wmt(11.49)_38
+      - _AU_wmt(11.49)_39
+      - _HK_wmt(11.49)_41
+      - _AU_wmt(11.49)_42
+      - _AU_wmt(11.49)_43
+      - _TW_wmt(11.49)_44
+      - _KR_wmt(11.49)_45
+      - _HK_wmt(11.49)_46
+      - _AU_wmt(11.49)_47
+      - _AU_wmt(11.49)_48
+      - _SG_wmt(11.49)_49
+      - _AU_wmt(11.49)_50
+      - _TW_wmt(11.49)_51
+      - _TW_wmt(11.49)_52
+      - _AU_wmt(11.49)_53
+      - _HK_wmt(11.49)_54
+      - _HK_wmt(11.49)_55
+      - _CA_wmt(11.49)_56
+      - _AU_wmt(11.49)_57
+      - _CA_wmt(11.49)_58
+      - _AU_wmt(11.49)_59
+      - _TW_wmt(11.49)_60
+      - _SG_wmt(11.49)_61
+      - _CA_wmt(11.49)_62
+      - _TW_wmt(11.49)_63
+      - _HK_wmt(11.49)_64
+      - wmt(11.49)_65
+      - _HK_wmt(11.49)_66
+      - _AU_wmt(11.49)_67
+      - _AU_wmt(11.49)_68
+      - _AU_wmt(11.49)_69
+      - _AU_wmt(11.49)_70
+      - _CN_wmt(11.49)_71
+      - _AU_wmt(11.49)_72
+      - _AU_wmt(11.49)_73
+      - _CA_wmt(11.49)_74
+      - _CH_wmt(11.49)_75
+      - _SG_wmt(11.49)_76
+      - _SG_wmt(11.49)_77
+      - _AU_wmt(11.49)_78
+      - _AU_wmt(11.49)_79
+      - _AU_wmt(11.49)_80
+      - _SG_wmt(11.49)_81
+      - _SG_wmt(11.49)_82
+      - _US_wmt(11.49)_83
+      - _TW_wmt(11.49)_84
+      - _TW_wmt(11.49)_85
+      - _TW_wmt(11.49)_86
+      - _AU_wmt(11.49)_87
+      - _CN_wmt(11.49)_88
+      - wmt(11.49)_89
+      - _CN_wmt(11.49)_90
+      - _AU_wmt(11.49)_91
+      - wmt(11.49)_92
+      - _KR_wmt(11.49)_93
+      - _CA_wmt(11.49)_94
+      - _CH_wmt(11.49)_95
+      - _HK_wmt(11.49)_96
+      - _KR_wmt(11.49)_97
+      - _KR_wmt(11.49)_98
+      - _SG_wmt(11.49)_99
+      - _SG_wmt(11.49)_100
+      - _AU_wmt(11.49)_101
+      - _AU_wmt(11.49)_102
+      - _AU_wmt(11.49)_103
+      - _SG_wmt(11.49)_104
+      - _HK_wmt(11.49)_105
+      - _US_wmt(11.49)_108
+      - _TW_wmt(11.49)_109
+      - _AU_wmt(11.49)_110
+      - _HK_wmt(11.49)_111
+      - _AU_wmt(11.49)_112
+      - _CA_wmt(11.49)_113
+      - _JP_wmt(11.49)_114
+      - _FR_wmt(11.49)_115
+      - _HK_wmt(11.49)_116
+      - _TW_wmt(11.49)_117
+      - _KR_wmt(11.49)_118
+      - _HK_wmt(11.49)_119
+      - _CA_wmt(11.49)_120
+      - _CA_wmt(11.49)_121
+      - _FR_wmt(11.49)_122
+      - _AU_wmt(11.49)_123
+      - _CZ_wmt(11.49)_124
+      - _AU_wmt(11.49)_125
+      - _AU_wmt(11.49)_126
+      - wmt(11.49)_127
+      - _FR_wmt(11.49)_128
+      - wmt(11.49)_129
+      - _AU_wmt(11.49)_130
+      - _AU_wmt(11.49)_131
+      - _AU_wmt(11.49)_132
+      - wmt(11.49)_133
+      - _SG_wmt(11.49)_134
+      - _AU_wmt(11.49)_135
+      - _AU_wmt(11.49)_136
+      - _US_wmt(11.49)_137
+      - _US_wmt(11.49)_138
+      - _FR_wmt(11.49)_139
+      - _US_wmt(11.49)_140
+      - _CN_wmt(11.49)_141
+      - wmt(11.49)_142
+      - _CN_wmt(11.49)_143
+      - _TW_wmt(11.49)_144
+      - _HK_wmt(11.49)_145
+      - _AU_wmt(11.49)_146
+      - _KR_wmt(11.49)_147
+      - _US_wmt(11.49)_148
+      - _TW_wmt(11.49)_149
+      - _SG_wmt(11.49)_150
+      - _KR_wmt(11.49)_151
+      - _AU_wmt(11.49)_152
+      - _AU_wmt(11.49)_153
+      - _AU_wmt(11.49)_154
+      - _AU_wmt(11.49)_155
+      - _JP_wmt(11.49)_156
+      - _AU_wmt(11.49)_157
+      - _AU_wmt(11.49)_158
+      - _HK_wmt(11.49)_159
+      - _TW_wmt(11.49)_160
+      - _HK_wmt(11.49)_161
+      - _NL_wmt(11.49)_162
+      - _TW_wmt(11.49)_163
+      - _AU_wmt(11.49)_164
+      - _SG_wmt(11.49)_165
+      - wmt(11.49)_166
+      - _CA_wmt(11.49)_167
+      - _AU_wmt(11.49)_168
+      - _HK_wmt(11.49)_169
+      - _AU_wmt(11.49)_170
+      - _KR_wmt(11.49)_171
+      - _AU_wmt(11.49)_172
+      - _SG_wmt(11.49)_173
+      - _NL_wmt(11.49)_174
+      - _AU_wmt(11.49)_175
+      - _KR_wmt(11.49)_176
+      - _AU_wmt(11.49)_177
+      - _TW_wmt(11.49)_178
+      - _AU_wmt(11.49)_179
+      - _KR_wmt(11.49)_180
+      - _CZ_wmt(11.49)_181
+      - _AU_wmt(11.49)_182
+      - _TW_wmt(11.49)_183
+      - _AU_wmt(11.49)_184
+      - _AU_wmt(11.49)_185
+      - _TW_wmt(11.49)_186
+      - _AU_wmt(11.49)_187
+      - _AU_wmt(11.49)_188
+      - _SG_wmt(11.49)_189
+      - _SG_wmt(11.49)_190
+      - _CN_wmt(11.49)_191
+      - _KR_wmt(11.49)_192
+      - _TW_wmt(11.49)_193
+      - _AU_wmt(11.49)_194
+      - _AU_wmt(11.49)_195
+      - _US_wmt(11.49)_196
+      - _AU_wmt(11.49)_197
+      - _FR_wmt(11.49)_198
+      - _TW_wmt(11.49)_200
+      - _AU_wmt(11.49)_201
+      - _AU_wmt(11.49)_202
+      - _HK_wmt(11.49)_203
+      - _AU_wmt(11.49)_204
+      - _FR_wmt(11.49)_205
+      - _AU_wmt(11.49)_206
+      - _SG_wmt(11.49)_207
+      - _SG_wmt(11.49)_208
+      - _SG_wmt(11.49)_209
+      - _AU_wmt(11.49)_210
+      - _AU_wmt(11.49)_212
+      - wmt(11.49)_213
+      - _SG_wmt(11.49)_214
+      - _IN_wmt(11.49)_215
+      - _JP_wmt(11.49)_217
+      - _CA_wmt(11.49)_218
+      - _CA_wmt(11.49)_219
+      - _AU_wmt(11.49)_221
+      - _CA_wmt(11.49)_222
+      - _JP_wmt(11.49)_223
+      - _TW_wmt(11.49)_224
+      - _CN_wmt(11.49)_225
+      - wmt(11.49)_226
+      - _SG_wmt(11.49)_227
+      - _KR_wmt(11.49)_228
+      - _CN_wmt(11.49)_229
+      - _AU_wmt(11.49)_230
+      - _CA_wmt(11.49)_231
+      - _SG_wmt(11.49)_232
+      - _AU_wmt(11.49)_233
+      - _AU_wmt(11.49)_234
+      - _CA_wmt(11.49)_235
+      - _HK_wmt(11.49)_236
+      - _CZ_wmt(11.49)_237
+      - _CN_wmt(11.49)_238
+      - _SG_wmt(11.49)_239
+      - _AU_wmt(11.49)_240
+      - _AU_wmt(11.49)_241
+      - _AU_wmt(11.49)_242
+      - _TW_wmt(11.49)_243
+      - _JP_wmt(11.49)_244
+      - _SG_wmt(11.49)_245
+      - _KR_wmt(11.49)_247
+      - _AU_wmt(11.49)_248
+      - _AU_wmt(11.49)_249
+      - _TW_wmt(11.49)_250
+      - _CZ_wmt(11.49)_252
+      - _AU_wmt(11.49)_253
+      - _AU_wmt(11.49)_254
+      - _AU_wmt(11.49)_255
+      - _SG_wmt(11.49)_256
+      - _CA_wmt(11.49)_257
+      - _AU_wmt(11.49)_258
+      - _AU_wmt(11.49)_259
+      - _SG_wmt(11.49)_260
+      - _AU_wmt(11.49)_261
+      - _TW_wmt(11.49)_262
+      - _HK_wmt(11.49)_263
+      - _CA_wmt(11.49)_264
+      - _TW_wmt(11.49)_265
+      - _AU_wmt(11.49)_266
+      - _TW_wmt(11.49)_267
+      - _HK_wmt(11.49)_268
+      - _KR_wmt(11.49)_269
+      - _CA_wmt(11.49)_270
+      - _AU_wmt(11.49)_271
+      - _SG_wmt(11.49)_272
+      - _SG_wmt(11.49)_273
+      - _CA_wmt(11.49)_274
+      - _AU_wmt(11.49)_275
+      - _HK_wmt(11.49)_276
+      - _SG_wmt(11.49)_277
+      - _CH_wmt(11.49)_278
+      - _GB_wmt(11.49)_279
+      - _US_wmt(11.49)_280
+      - _SG_wmt(11.49)_281
+      - _US_wmt(11.49)_282
+      - _KR_wmt(11.49)_284
+      - _AU_wmt(11.49)_285
+      - _HK_wmt(11.49)_287
+      - _TW_wmt(11.49)_288
+      - _HK_wmt(11.49)_290
+      - _AU_wmt(11.49)_291
+      - _CA_wmt(11.49)_292
+      - _JP_wmt(11.49)_293
+      - _SG_wmt(11.49)_294
+      - _CA_wmt(11.49)_295
+      - _TW_wmt(11.49)_296
+      - _CA_wmt(11.49)_297
+      - _HK_wmt(11.49)_298
+      - _CN_wmt(11.49)_299
+      - _TW_wmt(11.49)_300
+      - _SG_wmt(11.49)_301
+      - _SG_wmt(11.49)_302
+      - _CN_wmt(11.49)_303
+      - _AU_wmt(11.49)_304
+      - _HK_wmt(11.49)_305
+      - _CN_wmt(11.49)_306
+      - _CN_wmt(11.49)_307
+      - _SG_wmt(11.49)_308
+      - _AU_wmt(11.49)_309
+      - _SG_wmt(11.49)_310
+      - _HK_wmt(11.49)_311
+      - _AU_wmt(11.49)_312
+      - _TW_wmt(11.49)_313
+      - _AU_wmt(11.49)_314
+      - _SG_wmt(11.49)_315
+      - _NL_wmt(11.49)_316
+      - _AU_wmt(11.49)_317
+      - _AU_wmt(11.49)_318
+      - _AU_wmt(11.49)_319
+      - _AU_wmt(11.49)_320
+      - _HK_wmt(11.49)_321
+      - _AU_wmt(11.49)_322
+      - _AU_wmt(11.49)_323
+      - _KR_wmt(11.49)_324
+      - _AU_wmt(11.49)_325
+      - _AU_wmt(11.49)_326
+      - _KR_wmt(11.49)_327
+      - _HK_wmt(11.49)_328
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
