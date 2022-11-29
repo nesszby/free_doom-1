@@ -5,171 +5,235 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 油管阿伟科技_9, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20001, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: AU 澳大利亚(youtube阿伟科技), server: 139.99.135.182, port: 80, type: vmess, uuid: e7df0582-d168-43af-bfff-90c25af7d085, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 139.99.135.182}}, udp: true}
-  - {name: CA 加拿大(youtube阿伟科技), server: 46.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 46.72img.xyz}}, udp: true}
-  - {name: CA 加拿大(youtube阿伟科技) 2, server: 44.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 44.72img.xyz}}, udp: true}
-  - {name: CA 加拿大(youtube科技), server: 44.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 44.72img.xyz}}, udp: true}
-  - {name: DE 德国(youtube阿伟科技), server: 45.146.252.141, port: 80, type: vmess, uuid: b29defe7-36ee-47bf-b731-c4cccabc4200, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 45.146.252.141}}, udp: true}
-  - {name: DE 德国(youtube阿伟科技) 2, server: 5.249.160.226, port: 80, type: vmess, uuid: c721b258-e101-41e1-9574-ad171e502ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 5.249.160.226}}, udp: true}
-  - {name: DE 德国(youtube阿伟科技) 3, server: 55.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 55.72img.xyz}}, udp: true}
-  - {name: DE 德国(youtube阿伟科技) 4, server: 8.218.126.208, port: 443, type: vmess, uuid: 1197321c-eb59-4159-959f-5d81f53c1792, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: h1.800876.xyz}}, udp: true}
-  - {name: DE 德国(youtube阿伟科技) 5, server: 30.tehvp.xyz, port: 2083, type: vmess, uuid: 1ffeca67-a2bc-471b-b138-369d6762967d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 30.tehvp.xyz}}, udp: true}
-  - {name: DE 德国(youtube阿伟科技) 2 2, server: 54.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 54.72img.xyz}}, udp: true}
-  - {name: HK 香港(youtube阿伟科技), server: cm.kapoknode.com, port: 25898, type: vmess, uuid: 232be5eb-2caf-4aa1-be27-25b54e83c446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: HK 香港(youtube阿伟科技) 2, server: cm.kapoknode.com, port: 25898, type: vmess, uuid: cecea450-5c6d-4295-99bb-63fb9407f366, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: HK 香港(youtube阿伟科技) 3, server: hk80.sanfen001.pics, port: 80, type: vmess, uuid: b7d2a97b-ab6e-438d-922d-b541b5ff0722, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn/download, headers: {Host: hk80.sanfen001.pics}}, udp: true}
-  - {name: HK 香港(youtube阿伟科技) 4, server: hk80.sanfen001.pics, port: 80, type: vmess, uuid: b7d2a97b-ab6e-438d-922d-b541b5ff0722, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn/download, headers: {Host: a.189.cn}}, udp: true}
-  - {name: ID 印尼(youtube阿伟科技), server: 172.64.154.102, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: ID 印尼(youtube阿伟科技) 2, server: 107.189.31.41, port: 12378, type: vmess, uuid: 9e312ef5-6d40-4fcb-ceb3-4c7a69bbe0b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@Backdor_Filter, headers: {Host: 107.189.31.41}}, udp: true}
-  - {name: ID 印尼(youtube阿伟科技) 3, server: hynesconstruction.com, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/401452697/635b464921141/, headers: {Host: sg1-v2ray.sshkit.org}}, udp: true}
-  - {name: IN 印度(youtube阿伟科技), server: 13.234.123.31, port: 13043, type: vmess, uuid: de365d16-9e0a-483a-8d1e-7b57fb30bc65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 13.234.123.31}}, udp: true}
-  - {name: IN 印度(youtube阿伟科技) 2, server: 16.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 16.72img.xyz}}, udp: true}
-  - {name: KR 韩国(youtube阿伟科技), server: kr2.czs1000.com, port: 6688, type: vmess, uuid: 38f01aae-edb9-43d3-9609-49bf6adcfbf9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: KR 韩国(youtube阿伟科技) 2, server: 26.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 26.72img.xyz}}, udp: true}
-  - {name: NL 荷兰(youtube阿伟科技), server: 218.76.244.216, port: 30281, type: vmess, uuid: 3f421e27-5bf8-40c9-86cb-7b8c41dddea2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /lXvA0Vse/, headers: {Host: 218.76.244.216}}, udp: true}
-  - {name: NL 荷兰(youtube阿伟科技) 2, server: Shopify.com, port: 2086, type: vmess, uuid: ddcd66fd-c716-439c-9ab8-2adb1400ff48, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aries, headers: {Host: scw.cloudflare.quest}}, udp: true}
-  - {name: NL 荷兰(youtube阿伟科技) 3, server: king6.workingoogle.ga, port: 8880, type: vmess, uuid: 050624ec-ba6a-49c3-e8d9-c46e5c167be0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fh454hg4fthfh, headers: {Host: king6.workingoogle.ga}}, udp: true}
-  - {name: NL 荷兰(youtube阿伟科技) 4, server: amshare.jingledev.me, port: 443, type: vmess, uuid: 532a5f12-cadb-46e4-963f-ee7c075e40f0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /pkhhvws, headers: {Host: amshare.jingledev.me}}, udp: true}
-  - {name: NL 荷兰(youtube阿伟科技) 5, server: king2.mmadserr.ml, port: 2095, type: vmess, uuid: dabdbbec-f774-41ff-a296-18026f469a97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fhf5hfth565fhtf, headers: {Host: king2.mmadserr.ml}}, udp: true}
-  - {name: RU 俄罗斯(youtube阿伟科技), server: 9.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 9.72img.xyz}}, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技), server: sg4.czs1000.com, port: 6688, type: vmess, uuid: 38f01aae-edb9-43d3-9609-49bf6adcfbf9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技) 2, server: lll.277428.xyz, port: 40771, type: vmess, uuid: 61194810-5193-48bc-eb0a-7978a059d681, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: AU 澳大利亚(youtube阿伟科技), server: aus.520748.xyz, port: 10001, type: trojan, password: dffb4522-2ead-4b92-9ac3-001c88f53f79, sni: aus.520748.xyz, skip-cert-verify: true, udp: true}
+  - {name: AU 澳大利亚(youtube阿伟科技) 2, server: zz1.piligou.cc, port: 35121, type: trojan, password: bbab60b8-779f-31e2-916e-571f7d7023c4, sni: jd11.piligou.cc, skip-cert-verify: true, udp: true}
+  - {name: DE+德国(youtube阿伟科技), server: hnt.cndns.shop, port: 27766, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160, udp: true}
+  - {name: DE 德国(youtube阿伟科技), server: 8.219.198.139, port: 80, type: vmess, uuid: 429b13a5-3747-493d-a5d0-de6fa67d51d1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: h2.800876.xyz}}, udp: true}
+  - {name: DE+德国(youtube阿伟科技) 2, server: hnt.cndns.shop, port: 27763, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160, udp: true}
+  - {name: DE+德国(youtube阿伟科技) 3, server: hnt.cndns.shop, port: 27765, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160, udp: true}
+  - {name: FR 法国(youtube阿伟科技), server: 8.219.139.136, port: 80, type: vmess, uuid: 0f1f1cca-56dc-4feb-8b4b-50ab074f4467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: w1.800876.xyz}}, udp: true}
+  - {name: FR 法国(youtube阿伟科技) 2, server: frr.xlkjjs.top, port: 443, type: vmess, uuid: a383d4f5-d749-3421-be3a-606ec432db91, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: frr.xlkjjs.top}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技), server: hk3.520748.xyz, port: 10002, type: trojan, password: dffb4522-2ead-4b92-9ac3-001c88f53f79, sni: hk3.520748.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 2, server: 8.218.140.111, port: 34193, type: vmess, uuid: 544bf832-7df2-4ce1-aafc-9258a28b7cfb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hk, headers: {Host: 8.218.140.111}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 3, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: 166aa948-205c-4277-bbdc-07f6ce31a060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 4, server: azsh01.1aba.cn, port: 45260, type: vmess, uuid: cf974aff-b908-411c-966c-e1d59e73ec01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 5, server: hk1.sanfen001.pics, port: 443, type: vmess, uuid: e7e73e1d-2418-4766-8831-d1b3b83cc877, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 6, server: gddx.fosi.hk, port: 60952, type: vmess, uuid: 5a6335e3-1215-47cd-b98e-b32a50e9600d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 7, server: hk3.sanfen001.pics, port: 443, type: vmess, uuid: e7e73e1d-2418-4766-8831-d1b3b83cc877, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: HK+香港(youtube阿伟科技), server: gzct.xqxayjr.us, port: 11258, type: ss, cipher: aes-128-gcm, password: 87OIxQkaz9, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 8, server: gddx.fosi.hk, port: 60952, type: vmess, uuid: b3744a72-e018-40ad-9dc7-28a1c20cffd4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 9, server: 210.75.24.220, port: 443, type: vmess, uuid: 82ece5db-34f5-4b86-a469-01df94d15bbb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk4.sanfen001.pics}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 10, server: gddx.fosi.hk, port: 60952, type: vmess, uuid: cf974aff-b908-411c-966c-e1d59e73ec01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 11, server: hk12.sanfen001.pics, port: 443, type: vmess, uuid: e7e73e1d-2418-4766-8831-d1b3b83cc877, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 12, server: hk11.sanfen001.pics, port: 443, type: vmess, uuid: e7e73e1d-2418-4766-8831-d1b3b83cc877, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 13, server: 219.76.13.180, port: 443, type: vmess, uuid: 82ece5db-34f5-4b86-a469-01df94d15bbb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk1.sanfen001.pics}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 14, server: 219.76.13.167, port: 443, type: vmess, uuid: 82ece5db-34f5-4b86-a469-01df94d15bbb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk1.sanfen001.pics}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 15, server: 219.76.13.181, port: 443, type: vmess, uuid: 82ece5db-34f5-4b86-a469-01df94d15bbb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk1.sanfen001.pics}}, udp: true}
+  - {name: ID 印尼(youtube阿伟科技), server: news.microsoft.com, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.cfcdn3.xyz}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技), server: jp1.speeds99.ml, port: 25920, type: vmess, uuid: db7b31c5-733f-4076-b5b6-d403ee307640, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp1.speeds99.ml}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 2, server: jp2.520748.xyz, port: 10006, type: trojan, password: dffb4522-2ead-4b92-9ac3-001c88f53f79, sni: jp2.520748.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 3, server: jp03-vm0.entry.srthdw.art, port: 448, type: vmess, uuid: ef097acf-b4be-3cf5-a915-dec4fc5a70a3, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp03-vm0.entry.srthdw.art}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 4, server: jp2.sanfen001.pics, port: 443, type: vmess, uuid: e7e73e1d-2418-4766-8831-d1b3b83cc877, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 5, server: azsh01.1aba.cn, port: 37363, type: vmess, uuid: 7e01c0c4-24d0-4f97-a22d-9726cb90d6df, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 6, server: azsh01.1aba.cn, port: 17180, type: vmess, uuid: 166aa948-205c-4277-bbdc-07f6ce31a060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 7, server: 31.223.184.156, port: 3322, type: vmess, uuid: 4ee35757-a7f4-40e3-a886-9c49d8742d71, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 31.223.184.156}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 8, server: zz1.piligou.cc, port: 35117, type: trojan, password: bbab60b8-779f-31e2-916e-571f7d7023c4, sni: jd7.piligou.cc, skip-cert-verify: true, udp: true}
+  - {name: KR 韩国(youtube阿伟科技), server: kr2.520748.xyz, port: 10009, type: trojan, password: dffb4522-2ead-4b92-9ac3-001c88f53f79, sni: kr2.520748.xyz, skip-cert-verify: true, udp: true}
+  - {name: KR 韩国(youtube阿伟科技) 2, server: bp.i809.ml, port: 18443, type: trojan, password: b9c4f30f-0e95-4c23-80f8-b134414f43ec, sni: qt53.shenseven.xyz, skip-cert-verify: true, udp: true}
+  - {name: KR 韩国(youtube阿伟科技) 3, server: kr3.t.sgateway.link, port: 5223, type: trojan, password: TC64iX8lkokJaa3226ejFj3fgrNhMe5Q, sni: pod-kr-2020712915.psusercontent.com, skip-cert-verify: true, udp: true}
+  - {name: KR 韩国(youtube阿伟科技) 4, server: 20002.purefast2.com, port: 20002, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: NL 荷兰(youtube阿伟科技), server: king2.mmadserr.ml, port: 2095, type: vmess, uuid: dabdbbec-f774-41ff-a296-18026f469a97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fhf5hfth565fhtf, headers: {Host: king2.mmadserr.ml}}, udp: true}
+  - {name: RU 俄罗斯(youtube阿伟科技), server: 194.87.248.27, port: 26743, type: vmess, uuid: 59952a8e-b712-4190-d85e-f9aadd65faa0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [apple.com]}}, udp: true}
+  - {name: RU 俄罗斯(youtube阿伟科技) 2, server: els200.jslist.tk, port: 8443, type: vmess, uuid: e30cfa80-bc2c-43df-e808-97876aee77e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wo.php, headers: {Host: els200.jslist.tk}}, udp: true}
+  - {name: SG 新加坡(youtube阿伟科技), server: 138.2.83.217, port: 43863, type: vmess, uuid: ca984457-b017-46e5-d973-42a3c3fdc292, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [apple.com]}}, udp: true}
+  - {name: SG 新加坡(youtube阿伟科技) 2, server: 43.156.18.119, port: 32482, type: vmess, uuid: fd3df956-8d30-4942-f8be-f4441f292cc6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [apple.com]}}, udp: true}
+  - {name: SG 新加坡(youtube阿伟科技) 3, server: sg.520748.xyz, port: 10006, type: trojan, password: dffb4522-2ead-4b92-9ac3-001c88f53f79, sni: sg.520748.xyz, skip-cert-verify: true, udp: true}
   - {name: TUR 土耳其(youtube阿伟科技), server: icook.hk, port: 2083, type: vmess, uuid: 8a21b84d-183e-450d-ec82-8d45855d8180, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: xui.mycf.ml}}, udp: true}
-  - {name: TW 台湾(youtube阿伟科技), server: tw.xibai6.top, port: 31009, type: trojan, password: ca2345ba-46e7-3991-b1b7-45d18954caf1, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: TW 台湾(youtube阿伟科技) 2, server: tw.xibai6.top, port: 31008, type: trojan, password: ca2345ba-46e7-3991-b1b7-45d18954caf1, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: UK 英国(youtube阿伟科技), server: 51.75.160.126, port: 80, type: vmess, uuid: b739a204-ea0d-428b-bbf5-a632ec05edcf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: 51.75.160.126}}, udp: true}
-  - {name: US 美国(youtube阿伟科技), server: azgy001.xibai6.top, port: 20711, type: trojan, password: ca2345ba-46e7-3991-b1b7-45d18954caf1, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
-  - {name: US 美国(youtube阿伟科技) 2, server: gg1.tanglu.xyz, port: 8080, type: vmess, uuid: a4d1d3dd-5097-4dd5-93fa-9b412233174f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.asuka.buzz}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 3, server: 104.17.235.63, port: 443, type: vmess, uuid: ef21cf46-bf59-40af-8300-113db1e5f40b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: q.acuteclaydoll.xyz}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 4, server: gg1.tanglu.xyz, port: 8080, type: vmess, uuid: a4d1d3dd-5097-4dd5-93fa-9b412233174f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.asuka.buzz}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 5, server: 104.29.64.24, port: 80, type: vmess, uuid: 3f421e27-5bf8-40c9-86cb-7b8c41dddea2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /lXvA0Vse/, headers: {Host: hl1.cachexy.ga}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 6, server: www.digitalocean.com, port: 8080, type: vmess, uuid: a4d1d3dd-5097-4dd5-93fa-9b412233174f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.asuka.buzz}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 7, server: www.digitalocean.com, port: 8080, type: vmess, uuid: a4d1d3dd-5097-4dd5-93fa-9b412233174f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.asuka.buzz}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 8, server: 36.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 36.72img.xyz}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 9, server: 2607:f130:0:103::72f9:6485, port: 65512, type: vmess, uuid: 941dc916-cabb-40a0-cb33-9f9b22c6b796, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 美国(youtube阿伟科技) 10, server: v2ray.wefuckgfw.ga, port: 2053, type: vmess, uuid: 2c23eb31-1133-4807-818e-484d9a473b9b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /DQsafRJn/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 11, server: 33.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 33.72img.xyz}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 12, server: v2ray.wefuckgfw.ga, port: 2053, type: vmess, uuid: ab323ed9-dda5-4feb-9f17-c77c7fd811b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /DQsafRJn/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 13, server: 2607:f130:0:103::72f9:6485, port: 65512, type: vmess, uuid: 941dc916-cabb-40a0-cb33-9f9b22c6b796, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 美国(youtube阿伟科技) 14, server: icook.hk, port: 2083, type: vmess, uuid: 8a21b84d-183e-450d-ec82-8d45855d8180, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: xui.mycf.ml}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 15, server: v2ray.wefuckgfw.ga, port: 2053, type: vmess, uuid: ab323ed9-dda5-4feb-9f17-c77c7fd811b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /DQsafRJn/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 16, server: icook.hk, port: 2083, type: vmess, uuid: 8a21b84d-183e-450d-ec82-8d45855d8180, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: xui.mycf.ml}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 17, server: huclouds.ml, port: 5505, type: vmess, uuid: 69801534-3870-4d14-9d07-6f65da593da4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: huclouds.ml}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 18, server: 43.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 43.72img.xyz}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 19, server: 2607:f130:0:103::72f9:6485, port: 65512, type: vmess, uuid: 941dc916-cabb-40a0-cb33-9f9b22c6b796, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US 美国(youtube阿伟科技) 20, server: 218.76.244.216, port: 30281, type: vmess, uuid: 3f421e27-5bf8-40c9-86cb-7b8c41dddea2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /lXvA0Vse/, headers: {Host: 218.76.244.216}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 21, server: 218.76.244.216, port: 10797, type: vmess, uuid: 78cac8cb-d1be-4a6d-82e7-01901bc08113, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qp4ZdPY0/, headers: {Host: 218.76.244.216}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 22, server: mg.loyou.me, port: 13051, type: vmess, uuid: 7eb24766-3d7c-4986-8241-a995d4fcdc7f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: US 美国(youtube阿伟科技) 23, server: 218.76.244.216, port: 10797, type: vmess, uuid: 78cac8cb-d1be-4a6d-82e7-01901bc08113, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qp4ZdPY0/, headers: {Host: 218.76.244.216}}, udp: true}
-  - {name: VN 越南(youtube阿伟科技), server: 103.147.126.127, port: 80, type: vmess, uuid: c863dd9d-55f2-4615-b1a1-549da098722e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /nkpvpn.site, headers: {Host: 103.147.126.127}}, udp: true}
-  - {name: 低速备用-油管阿伟科技, server: 2607:f130:0:103::72f9:6485, port: 65512, type: vmess, uuid: 941dc916-cabb-40a0-cb33-9f9b22c6b796, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 低速备用-油管阿伟科技 2, server: ip125.com, port: 2086, type: vmess, uuid: 078b436e-de58-42d9-cfe9-ffdcf72e1ab8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aries, headers: {Host: kz.cloudflare.quest}}, udp: true}
-  - {name: 低速备用-油管阿伟科技 3, server: v2ray.wefuckgfw.ga, port: 2053, type: vmess, uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /DQsafRJn/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
-  - {name: 低速备用-油管阿伟科技 4, server: 45.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.72img.xyz}}, udp: true}
-  - {name: 低速备用-油管阿伟科技 5, server: 35.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 35.72img.xyz}}, udp: true}
-  - {name: 低速备用-油管阿伟科技 6, server: 34.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 34.72img.xyz}}, udp: true}
-  - {name: 低速备用-油管阿伟科技 7, server: 24.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 24.72img.xyz}}, udp: true}
-  - {name: 低速备用-油管阿伟科技 8, server: 14.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 14.72img.xyz}}, udp: true}
-  - {name: 低速备用-油管阿伟科技 9, server: 4.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 4.72img.xyz}}, udp: true}
-  - {name: 低速备用-油管阿伟科技 10, server: 37.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 37.72img.xyz}}, udp: true}
-  - {name: 低速备用-油管阿伟科技 14, server: 29.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 29.72img.xyz}}, udp: true}
-  - {name: 低速备用-油管阿伟科技 21, server: 30.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 30.72img.xyz}}, udp: true}
-  - {name: 低速备用-油管阿伟科技 7 2, server: 14.72img.xyz, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 14.72img.xyz}}, udp: true}
-  - {name: _JP_日本_1_油管阿伟科技32, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: _JP_日本_2_油管阿伟科技33, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 0.84|youtube阿伟科技_油管阿伟科技17, server: eduall.buzzline.org, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
-  - {name: Argentina+|+01_油管阿伟科技47, server: oss-cn-shanghai.westdatacloud.xyz, port: 20062, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Australia+|+01_1_油管阿伟科技34, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20061, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Brazil+|+01_油管阿伟科技48, server: oss-cn-shanghai.westdatacloud.xyz, port: 20063, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Canada+|+01_油管阿伟科技49, server: oss-cn-shanghai.westdatacloud.xyz, port: 20051, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Chile+|+01_油管阿伟科技50, server: oss-cn-shanghai.westdatacloud.xyz, port: 20064, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_34+|11.56Mb_油管阿伟科技36, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20005, type: trojan, password: 713CACFC-0A22-DC5F-2CBC-78BC18F1FF88, skip-cert-verify: true, udp: true}
-  - {name: CN_36+|+3.77Mb_油管阿伟科技37, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20005, type: trojan, password: F3716B01-2442-9FD9-D414-503F4291F8B6, skip-cert-verify: true, udp: true}
-  - {name: Germany+|+01_油管阿伟科技10, server: cos-ap-beijing.westdatacloud.xyz, port: 20054, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: cos-ap-beijing.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Hong+Kong+|+07_油管阿伟科技38, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20007, type: trojan, password: F43108B7-90F9-7397-3188-D321E25BB428, sni: v12.kwaicdn.com, skip-cert-verify: true, udp: true}
-  - {name: India+|+01_油管阿伟科技39, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20066, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Israel+|+01_油管阿伟科技11, server: cos-ap-beijing.westdatacloud.xyz, port: 20067, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: cos-ap-beijing.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Italy+|+01_油管阿伟科技12, server: cos-ap-beijing.westdatacloud.xyz, port: 20058, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: cos-ap-beijing.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Japan+|+08_油管阿伟科技51, server: oss-cn-shanghai.westdatacloud.xyz, port: 20038, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Korea+|+01_油管阿伟科技52, server: oss-cn-shanghai.westdatacloud.xyz, port: 20065, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Netherlands+|+02_油管阿伟科技13, server: cos-ap-beijing.westdatacloud.xyz, port: 20057, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: cos-ap-beijing.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Singapore+|+02_油管阿伟科技40, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20022, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Spain+|+01_油管阿伟科技14, server: cos-ap-beijing.westdatacloud.xyz, port: 20059, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: cos-ap-beijing.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Taiwan+|+02_油管阿伟科技41, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20012, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Thailand+|+01_油管阿伟科技43, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20068, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: United+Kingdom+|+02_油管阿伟科技16, server: cos-ap-beijing.westdatacloud.xyz, port: 20053, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: cos-ap-beijing.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: United+States+|+01_油管阿伟科技53, server: oss-cn-shanghai.westdatacloud.xyz, port: 20041, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Vietnam+|+01_1_油管阿伟科技45, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20069, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: Vietnam+|+01_2_油管阿伟科技46, server: oss-cn-guangzhou.westdatacloud.xyz, port: 20069, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-guangzhou.westdatacloud.xyz, skip-cert-verify: true, udp: true}
-  - {name: 韩国高速A_油管阿伟科技6, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 荷兰_油管阿伟科技19, server: eduall.buzzline.org, port: 611, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 加拿大_油管阿伟科技20, server: eduall.buzzline.org, port: 615, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 美国优化2G3.5_油管阿伟科技60, server: usstand2.eucdurl.me, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 香港HKTA_油管阿伟科技5, server: 1cnrelay.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 香港HKTC_油管阿伟科技58, server: shgez3.eucdurl.me, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 香港HKTF_油管阿伟科技31, server: inlayer7.standurls.co, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 香港HKTM_油管阿伟科技9, server: cnhkall.debugex.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 香港动态HKTC_油管阿伟科技57, server: shcuzxhk.eucdurl.me, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 新加坡优化1A_油管阿伟科技7, server: cmaisallin.debugspace.work, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 新加坡优化1B_油管阿伟科技8, server: cmaisallin.debugspace.work, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 意大利_油管阿伟科技21, server: eduall.buzzline.org, port: 612, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 英国iplayerA_油管阿伟科技22, server: eduall.buzzline.org, port: 613, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 英国iplayerB_油管阿伟科技23, server: eduall.buzzline.org, port: 614, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 油管阿伟科技_1, server: 116.129.253.134, port: 3389, type: trojan, password: faf42aa0a9ad4c1e, skip-cert-verify: true, udp: true}
-  - {name: 油管阿伟科技_1 2, server: eduall.buzzline.org, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: TUR 土耳其(youtube阿伟科技) 2, server: techplanet.today, port: 2083, type: vmess, uuid: 8a21b84d-183e-450d-ec82-8d45855d8180, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: xui.mycf.ml}}, udp: true}
+  - {name: TUR 土耳其(youtube阿伟科技) 3, server: 20008.purefast2.com, port: 20008, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: TUR 土耳其(youtube阿伟科技) 4, server: pokerad.xyz, port: 80, type: vmess, uuid: 842a57d2-3a6a-4a04-b207-98e4ed16c72e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /10Gb.bin, headers: {Host: pokerad.xyz}}, udp: true}
+  - {name: TW 台湾(youtube阿伟科技), server: zz1.piligou.cc, port: 35111, type: trojan, password: bbab60b8-779f-31e2-916e-571f7d7023c4, sni: jd1.piligou.cc, skip-cert-verify: true, udp: true}
+  - {name: TW 台湾(youtube阿伟科技) 2, server: tw1.sanfen001.pics, port: 443, type: vmess, uuid: 82ece5db-34f5-4b86-a469-01df94d15bbb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: tw1.sanfen001.pics}}, udp: true}
+  - {name: TW 台湾(youtube阿伟科技) 3, server: 20001.purefast2.com, port: 20001, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
+  - {name: UK 英国(youtube阿伟科技), server: 51.75.70.34, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshocean, headers: {Host: uk2.v2rayserv.com}}, udp: true}
+  - {name: UK 英国(youtube阿伟科技) 2, server: uk4.iranz.me, port: 443, type: vmess, uuid: c0a68381-275a-4f13-b844-0a61ce3c393b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uk4.iranz.me}}, udp: true}
+  - {name: UK 英国(youtube阿伟科技) 3, server: uk3.iranz.me, port: 443, type: vmess, uuid: 0c5e33e9-74fe-4435-9ec1-e8d2223ed16a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uk3.iranz.me}}, udp: true}
+  - {name: UK 英国(youtube阿伟科技) 4, server: uk.xlkjjs.top, port: 443, type: vmess, uuid: a383d4f5-d749-3421-be3a-606ec432db91, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uk.xlkjjs.top}}, udp: true}
+  - {name: US 美国(youtube阿伟科技), server: gddx.fosi.hk, port: 35499, type: vmess, uuid: a64acb4c-b7b8-430d-8991-6022d9b94e0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 2, server: shcu.1aba.cn, port: 61148, type: vmess, uuid: 166aa948-205c-4277-bbdc-07f6ce31a060, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 3, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: cf974aff-b908-411c-966c-e1d59e73ec01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 4, server: azsh01.1aba.cn, port: 39272, type: vmess, uuid: b3744a72-e018-40ad-9dc7-28a1c20cffd4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 5, server: 47.52.50.183, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/243535322906, headers: {Host: www.39472028.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 6, server: 129.154.215.101, port: 443, type: vmess, uuid: c9d5f9f1-1bfd-4b12-97be-0fa3b05ab845, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /baipiaozhenkuaile, headers: {Host: www.jimengsro.cf}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 7, server: 192.161.55.76, port: 17125, type: vmess, uuid: 72ecc3a9-7e0a-4a62-fa1e-e1479c8bf645, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [apple.com]}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 8, server: 132.226.18.130, port: 443, type: vmess, uuid: c9d5f9f1-1bfd-4b12-97be-0fa3b05ab845, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /baipiaozhenkuaile, headers: {Host: www.jimengsro.cf}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 9, server: shcu.1aba.cn, port: 61148, type: vmess, uuid: a64acb4c-b7b8-430d-8991-6022d9b94e0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 10, server: news.microsoft.com, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 11, server: shcu.1aba.cn, port: 61148, type: vmess, uuid: 5a6335e3-1215-47cd-b98e-b32a50e9600d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 12, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: b3744a72-e018-40ad-9dc7-28a1c20cffd4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 13, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: 5a6335e3-1215-47cd-b98e-b32a50e9600d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 14, server: shcu.1aba.cn, port: 61148, type: vmess, uuid: 7e01c0c4-24d0-4f97-a22d-9726cb90d6df, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 15, server: cu.kapoknode.com, port: 25885, type: vmess, uuid: af4aa8c6-a864-412f-b5fa-d82c5598ff32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 16, server: www.digitalocean.com, port: 8080, type: vmess, uuid: a4d1d3dd-5097-4dd5-93fa-9b412233174f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.asuka.buzz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 17, server: cu.kapoknode.com, port: 25885, type: vmess, uuid: 452e7481-42e7-4012-9a03-0d983a53c6af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 18, server: 2607:f130:0:103::72f9:6485, port: 65512, type: vmess, uuid: 941dc916-cabb-40a0-cb33-9f9b22c6b796, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 美国(youtube阿伟科技) 19, server: us1.520748.xyz, port: 10002, type: trojan, password: dffb4522-2ead-4b92-9ac3-001c88f53f79, sni: us1.520748.xyz, skip-cert-verify: true, udp: true}
+  - {name: US 美国(youtube阿伟科技) 20, server: gddx.fosi.hk, port: 35499, type: vmess, uuid: cf92eb1d-f667-43db-9870-ab16222b7125, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 21, server: 193.122.111.23, port: 443, type: vmess, uuid: c9d5f9f1-1bfd-4b12-97be-0fa3b05ab845, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /baipiaozhenkuaile, headers: {Host: www.jimengsro.cf}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 22, server: 1.1808.cf, port: 443, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: v2.chigua.tk}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 23, server: 140.238.17.225, port: 443, type: vmess, uuid: c9d5f9f1-1bfd-4b12-97be-0fa3b05ab845, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /baipiaozhenkuaile, headers: {Host: www.jimengsro.cf}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 24, server: cacerts.digicert.com, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 25, server: cacerts.digicert.com, port: 2053, type: vmess, uuid: ce3f0dd3-8a04-4daa-9416-e67c5d42083a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /DQsafRJn/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 26, server: 54.218.3.181, port: 80, type: vmess, uuid: 7150bb4d-2016-4032-ba6b-7cc228d34eef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /images, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 27, server: 150.136.57.125, port: 41106, type: trojan, password: kSZddpnUKy, sni: fxe.fengcj.xyz, skip-cert-verify: true, udp: true}
+  - {name: US 美国(youtube阿伟科技) 28, server: 5.161.114.91, port: 26613, type: vmess, uuid: 2c10a354-ca2d-4db3-d8f6-6f89f5117c9f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 5.161.114.91}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 29, server: gg1.tanglu.xyz, port: 8080, type: vmess, uuid: a4d1d3dd-5097-4dd5-93fa-9b412233174f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.asuka.buzz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 30, server: 193.122.119.249, port: 443, type: vmess, uuid: c9d5f9f1-1bfd-4b12-97be-0fa3b05ab845, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /baipiaozhenkuaile, headers: {Host: www.jimengsro.cf}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 31, server: 193.122.113.203, port: 443, type: vmess, uuid: c9d5f9f1-1bfd-4b12-97be-0fa3b05ab845, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /baipiaozhenkuaile, headers: {Host: www.jimengsro.cf}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 32, server: main.millionaireaisle.com, port: 2053, type: vmess, uuid: ce3f0dd3-8a04-4daa-9416-e67c5d42083a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /DQsafRJn/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 33, server: 129.154.197.225, port: 443, type: vmess, uuid: c9d5f9f1-1bfd-4b12-97be-0fa3b05ab845, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /baipiaozhenkuaile, headers: {Host: www.jimengsro.cf}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 34, server: 129.213.117.66, port: 41106, type: trojan, password: Yaib2g1jy3, sni: 1sj.fengcj.xyz, skip-cert-verify: true, udp: true}
+  - {name: US 美国(youtube阿伟科技) 35, server: 129.154.217.179, port: 443, type: vmess, uuid: c9d5f9f1-1bfd-4b12-97be-0fa3b05ab845, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /baipiaozhenkuaile, headers: {Host: www.jimengsro.cf}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 36, server: v2ray.wefuckgfw.ga, port: 2053, type: vmess, uuid: ce02a636-88ac-4c29-963d-e09961ec3b3d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /DQsafRJn/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 37, server: main.millionaireaisle.com, port: 2053, type: vmess, uuid: ab323ed9-dda5-4feb-9f17-c77c7fd811b6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /DQsafRJn/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 38, server: 193.122.121.218, port: 443, type: vmess, uuid: c9d5f9f1-1bfd-4b12-97be-0fa3b05ab845, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /baipiaozhenkuaile, headers: {Host: www.jimengsro.cf}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 39, server: us2.t.sgateway.link, port: 5223, type: trojan, password: TC64iX8lkokJaa3226ejFj3fgrNhMe5Q, sni: pod-us-z1.psusercontent.com, skip-cert-verify: true, udp: true}
+  - {name: US 美国(youtube阿伟科技) 40, server: main.millionaireaisle.com, port: 2053, type: vmess, uuid: 2c23eb31-1133-4807-818e-484d9a473b9b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /DQsafRJn/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 41, server: www.jimengsro.cf, port: 443, type: vmess, uuid: c9d5f9f1-1bfd-4b12-97be-0fa3b05ab845, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /baipiaozhenkuaile, headers: {Host: www.jimengsro.cf}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 42, server: pus2-ag.t.sgateway.link, port: 5223, type: trojan, password: TC64iX8lkokJaa3226ejFj3fgrNhMe5Q, sni: pod-us-g1.psusercontent.com, skip-cert-verify: true, udp: true}
+  - {name: US 美国(youtube阿伟科技) 43, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 44, server: cacerts.digicert.com, port: 2053, type: vmess, uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /DQsafRJn/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 45, server: cacerts.digicert.com, port: 2053, type: vmess, uuid: 2c23eb31-1133-4807-818e-484d9a473b9b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /DQsafRJn/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 46, server: 47.88.52.220, port: 80, type: vmess, uuid: c9fe8359-5878-4413-c80e-3ffeabc47b02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: w.800876.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 47, server: main.millionaireaisle.com, port: 2053, type: vmess, uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /DQsafRJn/, headers: {Host: v2ray.wefuckgfw.ga}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 48, server: 138.2.122.225, port: 80, type: vmess, uuid: 0f1f1cca-56dc-4feb-8b4b-50ab074f4467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: w1.800876.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 49, server: "[2607:f130:0:103::72f9:6485]", port: 65512, type: vmess, uuid: 941dc916-cabb-40a0-cb33-9f9b22c6b796, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 美国(youtube阿伟科技) 50, server: zz1.piligou.cc, port: 35118, type: trojan, password: bbab60b8-779f-31e2-916e-571f7d7023c4, sni: jd8.piligou.cc, skip-cert-verify: true, udp: true}
+  - {name: 卢森堡(youtube阿伟科技), server: azsh01.1aba.cn, port: 30002, type: vmess, uuid: 5a6335e3-1215-47cd-b98e-b32a50e9600d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
+  - {name: 卢森堡(youtube阿伟科技) 2, server: azbj01.1aba.cn, port: 38676, type: vmess, uuid: cf974aff-b908-411c-966c-e1d59e73ec01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azbj01.1aba.cn}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 16, server: shcuzxhk.eucdurl.me, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 17, server: 3layer03.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 18, server: inlayer7.standurls.co, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 19, server: inlayer7.standurls.co, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 20, server: 2cnrelay2.initcloud.pro, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 21, server: cnhkall.debugex.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 22, server: shgez3.eucdurl.me, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 23, server: 1cnrelay.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 24, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 25, server: layercm05.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: SG 新加坡(youtube阿伟科技) 4, server: cnallaz2.eucdurl.me, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: TW 台湾(youtube阿伟科技) 4, server: cntwlayer1.standurl.xyz, port: 569, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: US 美国(youtube阿伟科技) 51, server: usstand2.eucdurl.me, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: KR 韩国(youtube阿伟科技) 5, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: TW 台湾(youtube阿伟科技) 5, server: cos-ap-guangzhou.westdatacloud.top, port: 20016, type: trojan, password: 0A7F7256-1D67-4A3F-31DF-C71302D0B146, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 9, server: oss-cn-shanghai.westdatacloud.top, port: 20035, type: trojan, password: 4232F98B-C7A6-FC46-26C1-23E2EBD14CE1, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 26, server: cos-ap-guangzhou.westdatacloud.top, port: 20006, type: trojan, password: 0A7F7256-1D67-4A3F-31DF-C71302D0B146, sni: cos-ap-guangzhou.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技, server: 20.239.55.73, port: 443, type: vmess, uuid: 82ece5db-34f5-4b86-a469-01df94d15bbb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: 20.239.55.73}}, udp: true}
+  - {name: youtube阿伟科技 2, server: oss-cn-shanghai.westdatacloud.top, port: 20064, type: trojan, password: 3CBCFD7A-2000-8939-E07D-6ACDD4810C5A, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 3, server: oss-cn-shanghai.westdatacloud.top, port: 20063, type: trojan, password: 3CBCFD7A-2000-8939-E07D-6ACDD4810C5A, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 4, server: oss-cn-shanghai.westdatacloud.xyz, port: 20063, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 5, server: 117.149.247.11, port: 20041, type: trojan, password: B2127411-6CEF-95A5-D711-4BE5F9617240, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 6, server: cos-ap-beijing.westdatacloud.xyz, port: 20067, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: cos-ap-beijing.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 7, server: oss-cn-shanghai.westdatacloud.xyz, port: 20064, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 8, server: cos-ap-beijing.westdatacloud.xyz, port: 20053, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: cos-ap-beijing.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 9, server: cos-ap-beijing.westdatacloud.xyz, port: 20058, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: cos-ap-beijing.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 10, server: 117.149.247.11, port: 20041, type: trojan, password: 0D76D7AE-EB7B-1CB7-86D6-A5525A126B7A, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 11, server: 117.149.247.11, port: 20041, type: trojan, password: 2AC48363-B93F-7F0C-4788-8EBEFF437529, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 12, server: 117.149.247.11, port: 20065, type: trojan, password: 0D76D7AE-EB7B-1CB7-86D6-A5525A126B7A, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 13, server: oss-cn-shanghai.westdatacloud.top, port: 20041, type: trojan, password: 3CBCFD7A-2000-8939-E07D-6ACDD4810C5A, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 14, server: 117.149.247.11, port: 20065, type: trojan, password: 2AC48363-B93F-7F0C-4788-8EBEFF437529, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 15, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: 3CBCFD7A-2000-8939-E07D-6ACDD4810C5A, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 16, server: oss-cn-shanghai.westdatacloud.xyz, port: 20041, type: trojan, password: BA0E1FE4-6984-9D3D-4FB9-FC081BD33145, sni: oss-cn-shanghai.westdatacloud.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube阿伟科技 17, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
+  - {name: youtube阿伟科技 18, server: hk2.gkdnode.com, port: 23815, type: ssr, cipher: chacha20-ietf, password: bagz04mllt, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 96118:wMtB0Q5CcNHrpMqY, obfs-param: "", udp: true}
+  - {name: youtube阿伟科技 19, server: 116.162.120.28, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: WkVNMWRGcFRPVEpqUnpWdldWaFI, udp: true}
+  - {name: youtube阿伟科技 20, server: 116.162.120.29, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: WkVNMWRGcFRPVEpqUnpWdldWaFI, udp: true}
+  - {name: youtube阿伟科技 21, server: 116.162.120.59, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: WkVNMWRGcFRPVEpqUnpWdldWaFI, udp: true}
+  - {name: youtube阿伟科技 22, server: 116.162.120.59, port: 568, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: WkVNMWRGcFRPVEpqUnpWdldWaFI, udp: true}
+  - {name: youtube阿伟科技 23, server: 116.162.120.59, port: 569, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: WkVNMWRGcFRPVEpqUnpWdldWaFI, udp: true}
+  - {name: youtube阿伟科技 24, server: 116.162.120.50, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: youtube阿伟科技 25, server: 116.162.120.59, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: youtube阿伟科技 26, server: 116.162.120.44, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: youtube阿伟科技 27, server: 116.162.120.59, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: youtube阿伟科技 28, server: 116.162.120.24, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: dC5tZS92cG5oYXQ, udp: true}
+  - {name: youtube阿伟科技 29, server: gzyd.120.817777.xyz, port: 11000, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: ZDYyYzQyMjY2My5taWNyb3NvZnQuY29t, udp: true}
+  - {name: youtube阿伟科技 30, server: guangzhouddns.xyz, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 29039:HWVD5doPgr2nnp5o, obfs-param: NjQzNmYyOTAzOS5taWNyb3NvZnQuY29t, udp: true}
+  - {name: youtube阿伟科技 31, server: hnlt.817777.xyz, port: 11011, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: ZDYyYzQyMjY2My5taWNyb3NvZnQuY29t, udp: true}
+  - {name: youtube阿伟科技 32, server: guangzhouddns.xyz, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 29039:HWVD5doPgr2nnp5o, obfs-param: NjQzNmYyOTAzOS5taWNyb3NvZnQuY29t, udp: true}
+  - {name: youtube阿伟科技 33, server: 116.162.120.23, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: WkVNMWRGcFRPVEpqUnpWdldWaFI, udp: true}
+  - {name: youtube阿伟科技 34, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 60431:123456, obfs-param: "", udp: true}
+  - {name: youtube阿伟科技 35, server: gzyd.120.817777.xyz, port: 11000, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: ZDYyYzQyMjY2My5taWNyb3NvZnQuY29t, udp: true}
+  - {name: youtube阿伟科技 36, server: guangzhouddns.xyz, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 29039:HWVD5doPgr2nnp5o, obfs-param: NjQzNmYyOTAzOS5taWNyb3NvZnQuY29t, udp: true}
+  - {name: youtube阿伟科技 37, server: hnlt.817777.xyz, port: 11011, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: ZDYyYzQyMjY2My5taWNyb3NvZnQuY29t, udp: true}
+  - {name: youtube阿伟科技 38, server: guangzhouddns.xyz, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 29039:HWVD5doPgr2nnp5o, obfs-param: NjQzNmYyOTAzOS5taWNyb3NvZnQuY29t, udp: true}
+  - {name: youtube阿伟科技 39, server: usstand2.eucdurl.me, port: 563, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 33198:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
   - {name: 油管阿伟科技_10, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 油管阿伟科技_11, server: uk-2.gito.cc, port: 3330, type: ssr, cipher: aes-256-cfb, password: 9ifast, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 12965:7g0tCI, obfs-param: MjdlNmMxMjk2NS5kb3dubG9hZC53aW5kb3dzdXBkYXRlLmNvbQ, udp: true}
-  - {name: 油管阿伟科技_2, server: 116.162.120.30, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: 油管阿伟科技_2 2, server: guangzhouddns.xyz, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 29039:HWVD5doPgr2nnp5o, obfs-param: VG1wUmVrNXRXWGxQVkVGNlQxTTFkR0ZYVG5saU0wNTJXbTVSZFZreU9YUQ, udp: true}
-  - {name: 油管阿伟科技_3, server: 116.162.120.30, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: dC5tZS92cG5oYXQ, udp: true}
-  - {name: 油管阿伟科技_3 2, server: guangzhouddns.xyz, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 29039:HWVD5doPgr2nnp5o, obfs-param: VG1wUmVrNXRXWGxQVkVGNlQxTTFkR0ZYVG5saU0wNTJXbTVSZFZreU9YUQ, udp: true}
-  - {name: 油管阿伟科技_4, server: 116.162.120.30, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: WkVNMWRGcFRPVEpqUnpWdldWaFI, udp: true}
-  - {name: 油管阿伟科技_4 2, server: guangzhouddns.xyz, port: 22848, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 29039:HWVD5doPgr2nnp5o, obfs-param: NjQzNmYyOTAzOS5taWNyb3NvZnQuY29t, udp: true}
-  - {name: 油管阿伟科技_5, server: guangzhouddns.xyz, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 29039:HWVD5doPgr2nnp5o, obfs-param: NjQzNmYyOTAzOS5taWNyb3NvZnQuY29t, udp: true}
-  - {name: 油管阿伟科技_6, server: gzyd.120.817777.xyz, port: 11000, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: ZDYyYzQyMjY2My5taWNyb3NvZnQuY29t, udp: true}
-  - {name: 油管阿伟科技_7, server: hnlt.817777.xyz, port: 11011, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: ZDYyYzQyMjY2My5taWNyb3NvZnQuY29t, udp: true}
-  - {name: 油管阿伟科技_8, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 60431:123456, obfs-param: "", udp: true}
+  - {name: 3.74|油管阿伟科技6, server: gzyd.120.817777.xyz, port: 11000, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: ZDYyYzQyMjY2My5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 2.89|油管阿伟科技7, server: hnlt.817777.xyz, port: 11011, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 22663:naiboob, obfs-param: ZDYyYzQyMjY2My5taWNyb3NvZnQuY29t, udp: true}
+  - {name: 0.11|油管阿伟科技10, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: youtube阿伟科技 40, server: guangzhouddns.xyz, port: 11846, type: ssr, cipher: chacha20-ietf, password: Fhbe0z, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 29039:HWVD5doPgr2nnp5o, obfs-param: NjQzNmYyOTAzOS5taWNyb3NvZnQuY29t, udp: true}
+  - {name: KR 韩国(youtube阿伟科技) 6, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 27, server: shcuzxhk.eucdurl.me, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 34976:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 油管阿伟科技_9
       - AU 澳大利亚(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技) 2
-      - CA 加拿大(youtube科技)
+      - AU 澳大利亚(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
-      - DE 德国(youtube阿伟科技) 2
-      - DE 德国(youtube阿伟科技) 3
-      - DE 德国(youtube阿伟科技) 4
-      - DE 德国(youtube阿伟科技) 5
-      - DE 德国(youtube阿伟科技) 2 2
+      - DE+德国(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 10
+      - HK 香港(youtube阿伟科技) 11
+      - HK 香港(youtube阿伟科技) 12
+      - HK 香港(youtube阿伟科技) 13
+      - HK 香港(youtube阿伟科技) 14
+      - HK 香港(youtube阿伟科技) 15
       - ID 印尼(youtube阿伟科技)
-      - ID 印尼(youtube阿伟科技) 2
-      - ID 印尼(youtube阿伟科技) 3
-      - IN 印度(youtube阿伟科技)
-      - IN 印度(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
       - NL 荷兰(youtube阿伟科技)
-      - NL 荷兰(youtube阿伟科技) 2
-      - NL 荷兰(youtube阿伟科技) 3
-      - NL 荷兰(youtube阿伟科技) 4
-      - NL 荷兰(youtube阿伟科技) 5
       - RU 俄罗斯(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
+      - SG 新加坡(youtube阿伟科技) 3
       - TUR 土耳其(youtube阿伟科技)
+      - TUR 土耳其(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技) 3
+      - TUR 土耳其(youtube阿伟科技) 4
       - TW 台湾(youtube阿伟科技)
       - TW 台湾(youtube阿伟科技) 2
+      - TW 台湾(youtube阿伟科技) 3
       - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
+      - UK 英国(youtube阿伟科技) 4
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
       - US 美国(youtube阿伟科技) 3
@@ -193,113 +257,157 @@ proxy-groups:
       - US 美国(youtube阿伟科技) 21
       - US 美国(youtube阿伟科技) 22
       - US 美国(youtube阿伟科技) 23
-      - VN 越南(youtube阿伟科技)
-      - 低速备用-油管阿伟科技
-      - 低速备用-油管阿伟科技 2
-      - 低速备用-油管阿伟科技 3
-      - 低速备用-油管阿伟科技 4
-      - 低速备用-油管阿伟科技 5
-      - 低速备用-油管阿伟科技 6
-      - 低速备用-油管阿伟科技 7
-      - 低速备用-油管阿伟科技 8
-      - 低速备用-油管阿伟科技 9
-      - 低速备用-油管阿伟科技 10
-      - 低速备用-油管阿伟科技 14
-      - 低速备用-油管阿伟科技 21
-      - 低速备用-油管阿伟科技 7 2
-      - _JP_日本_1_油管阿伟科技32
-      - _JP_日本_2_油管阿伟科技33
-      - 0.84|youtube阿伟科技_油管阿伟科技17
-      - Argentina+|+01_油管阿伟科技47
-      - Australia+|+01_1_油管阿伟科技34
-      - Brazil+|+01_油管阿伟科技48
-      - Canada+|+01_油管阿伟科技49
-      - Chile+|+01_油管阿伟科技50
-      - CN_34+|11.56Mb_油管阿伟科技36
-      - CN_36+|+3.77Mb_油管阿伟科技37
-      - Germany+|+01_油管阿伟科技10
-      - Hong+Kong+|+07_油管阿伟科技38
-      - India+|+01_油管阿伟科技39
-      - Israel+|+01_油管阿伟科技11
-      - Italy+|+01_油管阿伟科技12
-      - Japan+|+08_油管阿伟科技51
-      - Korea+|+01_油管阿伟科技52
-      - Netherlands+|+02_油管阿伟科技13
-      - Singapore+|+02_油管阿伟科技40
-      - Spain+|+01_油管阿伟科技14
-      - Taiwan+|+02_油管阿伟科技41
-      - Thailand+|+01_油管阿伟科技43
-      - United+Kingdom+|+02_油管阿伟科技16
-      - United+States+|+01_油管阿伟科技53
-      - Vietnam+|+01_1_油管阿伟科技45
-      - Vietnam+|+01_2_油管阿伟科技46
-      - 韩国高速A_油管阿伟科技6
-      - 荷兰_油管阿伟科技19
-      - 加拿大_油管阿伟科技20
-      - 美国优化2G3.5_油管阿伟科技60
-      - 香港HKTA_油管阿伟科技5
-      - 香港HKTC_油管阿伟科技58
-      - 香港HKTF_油管阿伟科技31
-      - 香港HKTM_油管阿伟科技9
-      - 香港动态HKTC_油管阿伟科技57
-      - 新加坡优化1A_油管阿伟科技7
-      - 新加坡优化1B_油管阿伟科技8
-      - 意大利_油管阿伟科技21
-      - 英国iplayerA_油管阿伟科技22
-      - 英国iplayerB_油管阿伟科技23
-      - 油管阿伟科技_1
-      - 油管阿伟科技_1 2
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - US 美国(youtube阿伟科技) 32
+      - US 美国(youtube阿伟科技) 33
+      - US 美国(youtube阿伟科技) 34
+      - US 美国(youtube阿伟科技) 35
+      - US 美国(youtube阿伟科技) 36
+      - US 美国(youtube阿伟科技) 37
+      - US 美国(youtube阿伟科技) 38
+      - US 美国(youtube阿伟科技) 39
+      - US 美国(youtube阿伟科技) 40
+      - US 美国(youtube阿伟科技) 41
+      - US 美国(youtube阿伟科技) 42
+      - US 美国(youtube阿伟科技) 43
+      - US 美国(youtube阿伟科技) 44
+      - US 美国(youtube阿伟科技) 45
+      - US 美国(youtube阿伟科技) 46
+      - US 美国(youtube阿伟科技) 47
+      - US 美国(youtube阿伟科技) 48
+      - US 美国(youtube阿伟科技) 49
+      - US 美国(youtube阿伟科技) 50
+      - 卢森堡(youtube阿伟科技)
+      - 卢森堡(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 16
+      - HK 香港(youtube阿伟科技) 17
+      - HK 香港(youtube阿伟科技) 18
+      - HK 香港(youtube阿伟科技) 19
+      - HK 香港(youtube阿伟科技) 20
+      - HK 香港(youtube阿伟科技) 21
+      - HK 香港(youtube阿伟科技) 22
+      - HK 香港(youtube阿伟科技) 23
+      - HK 香港(youtube阿伟科技) 24
+      - HK 香港(youtube阿伟科技) 25
+      - SG 新加坡(youtube阿伟科技) 4
+      - TW 台湾(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 51
+      - KR 韩国(youtube阿伟科技) 5
+      - TW 台湾(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 26
+      - youtube阿伟科技
+      - youtube阿伟科技 2
+      - youtube阿伟科技 3
+      - youtube阿伟科技 4
+      - youtube阿伟科技 5
+      - youtube阿伟科技 6
+      - youtube阿伟科技 7
+      - youtube阿伟科技 8
+      - youtube阿伟科技 9
+      - youtube阿伟科技 10
+      - youtube阿伟科技 11
+      - youtube阿伟科技 12
+      - youtube阿伟科技 13
+      - youtube阿伟科技 14
+      - youtube阿伟科技 15
+      - youtube阿伟科技 16
+      - youtube阿伟科技 17
+      - youtube阿伟科技 18
+      - youtube阿伟科技 19
+      - youtube阿伟科技 20
+      - youtube阿伟科技 21
+      - youtube阿伟科技 22
+      - youtube阿伟科技 23
+      - youtube阿伟科技 24
+      - youtube阿伟科技 25
+      - youtube阿伟科技 26
+      - youtube阿伟科技 27
+      - youtube阿伟科技 28
+      - youtube阿伟科技 29
+      - youtube阿伟科技 30
+      - youtube阿伟科技 31
+      - youtube阿伟科技 32
+      - youtube阿伟科技 33
+      - youtube阿伟科技 34
+      - youtube阿伟科技 35
+      - youtube阿伟科技 36
+      - youtube阿伟科技 37
+      - youtube阿伟科技 38
+      - youtube阿伟科技 39
       - 油管阿伟科技_10
-      - 油管阿伟科技_11
-      - 油管阿伟科技_2
-      - 油管阿伟科技_2 2
-      - 油管阿伟科技_3
-      - 油管阿伟科技_3 2
-      - 油管阿伟科技_4
-      - 油管阿伟科技_4 2
-      - 油管阿伟科技_5
-      - 油管阿伟科技_6
-      - 油管阿伟科技_7
-      - 油管阿伟科技_8
+      - 3.74|油管阿伟科技6
+      - 2.89|油管阿伟科技7
+      - 0.11|油管阿伟科技10
+      - youtube阿伟科技 40
+      - KR 韩国(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 27
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 油管阿伟科技_9
       - AU 澳大利亚(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技) 2
-      - CA 加拿大(youtube科技)
+      - AU 澳大利亚(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
-      - DE 德国(youtube阿伟科技) 2
-      - DE 德国(youtube阿伟科技) 3
-      - DE 德国(youtube阿伟科技) 4
-      - DE 德国(youtube阿伟科技) 5
-      - DE 德国(youtube阿伟科技) 2 2
+      - DE+德国(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 10
+      - HK 香港(youtube阿伟科技) 11
+      - HK 香港(youtube阿伟科技) 12
+      - HK 香港(youtube阿伟科技) 13
+      - HK 香港(youtube阿伟科技) 14
+      - HK 香港(youtube阿伟科技) 15
       - ID 印尼(youtube阿伟科技)
-      - ID 印尼(youtube阿伟科技) 2
-      - ID 印尼(youtube阿伟科技) 3
-      - IN 印度(youtube阿伟科技)
-      - IN 印度(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
       - NL 荷兰(youtube阿伟科技)
-      - NL 荷兰(youtube阿伟科技) 2
-      - NL 荷兰(youtube阿伟科技) 3
-      - NL 荷兰(youtube阿伟科技) 4
-      - NL 荷兰(youtube阿伟科技) 5
       - RU 俄罗斯(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
+      - SG 新加坡(youtube阿伟科技) 3
       - TUR 土耳其(youtube阿伟科技)
+      - TUR 土耳其(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技) 3
+      - TUR 土耳其(youtube阿伟科技) 4
       - TW 台湾(youtube阿伟科技)
       - TW 台湾(youtube阿伟科技) 2
+      - TW 台湾(youtube阿伟科技) 3
       - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
+      - UK 英国(youtube阿伟科技) 4
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
       - US 美国(youtube阿伟科技) 3
@@ -323,114 +431,158 @@ proxy-groups:
       - US 美国(youtube阿伟科技) 21
       - US 美国(youtube阿伟科技) 22
       - US 美国(youtube阿伟科技) 23
-      - VN 越南(youtube阿伟科技)
-      - 低速备用-油管阿伟科技
-      - 低速备用-油管阿伟科技 2
-      - 低速备用-油管阿伟科技 3
-      - 低速备用-油管阿伟科技 4
-      - 低速备用-油管阿伟科技 5
-      - 低速备用-油管阿伟科技 6
-      - 低速备用-油管阿伟科技 7
-      - 低速备用-油管阿伟科技 8
-      - 低速备用-油管阿伟科技 9
-      - 低速备用-油管阿伟科技 10
-      - 低速备用-油管阿伟科技 14
-      - 低速备用-油管阿伟科技 21
-      - 低速备用-油管阿伟科技 7 2
-      - _JP_日本_1_油管阿伟科技32
-      - _JP_日本_2_油管阿伟科技33
-      - 0.84|youtube阿伟科技_油管阿伟科技17
-      - Argentina+|+01_油管阿伟科技47
-      - Australia+|+01_1_油管阿伟科技34
-      - Brazil+|+01_油管阿伟科技48
-      - Canada+|+01_油管阿伟科技49
-      - Chile+|+01_油管阿伟科技50
-      - CN_34+|11.56Mb_油管阿伟科技36
-      - CN_36+|+3.77Mb_油管阿伟科技37
-      - Germany+|+01_油管阿伟科技10
-      - Hong+Kong+|+07_油管阿伟科技38
-      - India+|+01_油管阿伟科技39
-      - Israel+|+01_油管阿伟科技11
-      - Italy+|+01_油管阿伟科技12
-      - Japan+|+08_油管阿伟科技51
-      - Korea+|+01_油管阿伟科技52
-      - Netherlands+|+02_油管阿伟科技13
-      - Singapore+|+02_油管阿伟科技40
-      - Spain+|+01_油管阿伟科技14
-      - Taiwan+|+02_油管阿伟科技41
-      - Thailand+|+01_油管阿伟科技43
-      - United+Kingdom+|+02_油管阿伟科技16
-      - United+States+|+01_油管阿伟科技53
-      - Vietnam+|+01_1_油管阿伟科技45
-      - Vietnam+|+01_2_油管阿伟科技46
-      - 韩国高速A_油管阿伟科技6
-      - 荷兰_油管阿伟科技19
-      - 加拿大_油管阿伟科技20
-      - 美国优化2G3.5_油管阿伟科技60
-      - 香港HKTA_油管阿伟科技5
-      - 香港HKTC_油管阿伟科技58
-      - 香港HKTF_油管阿伟科技31
-      - 香港HKTM_油管阿伟科技9
-      - 香港动态HKTC_油管阿伟科技57
-      - 新加坡优化1A_油管阿伟科技7
-      - 新加坡优化1B_油管阿伟科技8
-      - 意大利_油管阿伟科技21
-      - 英国iplayerA_油管阿伟科技22
-      - 英国iplayerB_油管阿伟科技23
-      - 油管阿伟科技_1
-      - 油管阿伟科技_1 2
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - US 美国(youtube阿伟科技) 32
+      - US 美国(youtube阿伟科技) 33
+      - US 美国(youtube阿伟科技) 34
+      - US 美国(youtube阿伟科技) 35
+      - US 美国(youtube阿伟科技) 36
+      - US 美国(youtube阿伟科技) 37
+      - US 美国(youtube阿伟科技) 38
+      - US 美国(youtube阿伟科技) 39
+      - US 美国(youtube阿伟科技) 40
+      - US 美国(youtube阿伟科技) 41
+      - US 美国(youtube阿伟科技) 42
+      - US 美国(youtube阿伟科技) 43
+      - US 美国(youtube阿伟科技) 44
+      - US 美国(youtube阿伟科技) 45
+      - US 美国(youtube阿伟科技) 46
+      - US 美国(youtube阿伟科技) 47
+      - US 美国(youtube阿伟科技) 48
+      - US 美国(youtube阿伟科技) 49
+      - US 美国(youtube阿伟科技) 50
+      - 卢森堡(youtube阿伟科技)
+      - 卢森堡(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 16
+      - HK 香港(youtube阿伟科技) 17
+      - HK 香港(youtube阿伟科技) 18
+      - HK 香港(youtube阿伟科技) 19
+      - HK 香港(youtube阿伟科技) 20
+      - HK 香港(youtube阿伟科技) 21
+      - HK 香港(youtube阿伟科技) 22
+      - HK 香港(youtube阿伟科技) 23
+      - HK 香港(youtube阿伟科技) 24
+      - HK 香港(youtube阿伟科技) 25
+      - SG 新加坡(youtube阿伟科技) 4
+      - TW 台湾(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 51
+      - KR 韩国(youtube阿伟科技) 5
+      - TW 台湾(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 26
+      - youtube阿伟科技
+      - youtube阿伟科技 2
+      - youtube阿伟科技 3
+      - youtube阿伟科技 4
+      - youtube阿伟科技 5
+      - youtube阿伟科技 6
+      - youtube阿伟科技 7
+      - youtube阿伟科技 8
+      - youtube阿伟科技 9
+      - youtube阿伟科技 10
+      - youtube阿伟科技 11
+      - youtube阿伟科技 12
+      - youtube阿伟科技 13
+      - youtube阿伟科技 14
+      - youtube阿伟科技 15
+      - youtube阿伟科技 16
+      - youtube阿伟科技 17
+      - youtube阿伟科技 18
+      - youtube阿伟科技 19
+      - youtube阿伟科技 20
+      - youtube阿伟科技 21
+      - youtube阿伟科技 22
+      - youtube阿伟科技 23
+      - youtube阿伟科技 24
+      - youtube阿伟科技 25
+      - youtube阿伟科技 26
+      - youtube阿伟科技 27
+      - youtube阿伟科技 28
+      - youtube阿伟科技 29
+      - youtube阿伟科技 30
+      - youtube阿伟科技 31
+      - youtube阿伟科技 32
+      - youtube阿伟科技 33
+      - youtube阿伟科技 34
+      - youtube阿伟科技 35
+      - youtube阿伟科技 36
+      - youtube阿伟科技 37
+      - youtube阿伟科技 38
+      - youtube阿伟科技 39
       - 油管阿伟科技_10
-      - 油管阿伟科技_11
-      - 油管阿伟科技_2
-      - 油管阿伟科技_2 2
-      - 油管阿伟科技_3
-      - 油管阿伟科技_3 2
-      - 油管阿伟科技_4
-      - 油管阿伟科技_4 2
-      - 油管阿伟科技_5
-      - 油管阿伟科技_6
-      - 油管阿伟科技_7
-      - 油管阿伟科技_8
+      - 3.74|油管阿伟科技6
+      - 2.89|油管阿伟科技7
+      - 0.11|油管阿伟科技10
+      - youtube阿伟科技 40
+      - KR 韩国(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 27
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 油管阿伟科技_9
       - AU 澳大利亚(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技) 2
-      - CA 加拿大(youtube科技)
+      - AU 澳大利亚(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
-      - DE 德国(youtube阿伟科技) 2
-      - DE 德国(youtube阿伟科技) 3
-      - DE 德国(youtube阿伟科技) 4
-      - DE 德国(youtube阿伟科技) 5
-      - DE 德国(youtube阿伟科技) 2 2
+      - DE+德国(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 10
+      - HK 香港(youtube阿伟科技) 11
+      - HK 香港(youtube阿伟科技) 12
+      - HK 香港(youtube阿伟科技) 13
+      - HK 香港(youtube阿伟科技) 14
+      - HK 香港(youtube阿伟科技) 15
       - ID 印尼(youtube阿伟科技)
-      - ID 印尼(youtube阿伟科技) 2
-      - ID 印尼(youtube阿伟科技) 3
-      - IN 印度(youtube阿伟科技)
-      - IN 印度(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
       - NL 荷兰(youtube阿伟科技)
-      - NL 荷兰(youtube阿伟科技) 2
-      - NL 荷兰(youtube阿伟科技) 3
-      - NL 荷兰(youtube阿伟科技) 4
-      - NL 荷兰(youtube阿伟科技) 5
       - RU 俄罗斯(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
+      - SG 新加坡(youtube阿伟科技) 3
       - TUR 土耳其(youtube阿伟科技)
+      - TUR 土耳其(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技) 3
+      - TUR 土耳其(youtube阿伟科技) 4
       - TW 台湾(youtube阿伟科技)
       - TW 台湾(youtube阿伟科技) 2
+      - TW 台湾(youtube阿伟科技) 3
       - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
+      - UK 英国(youtube阿伟科技) 4
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
       - US 美国(youtube阿伟科技) 3
@@ -454,74 +606,98 @@ proxy-groups:
       - US 美国(youtube阿伟科技) 21
       - US 美国(youtube阿伟科技) 22
       - US 美国(youtube阿伟科技) 23
-      - VN 越南(youtube阿伟科技)
-      - 低速备用-油管阿伟科技
-      - 低速备用-油管阿伟科技 2
-      - 低速备用-油管阿伟科技 3
-      - 低速备用-油管阿伟科技 4
-      - 低速备用-油管阿伟科技 5
-      - 低速备用-油管阿伟科技 6
-      - 低速备用-油管阿伟科技 7
-      - 低速备用-油管阿伟科技 8
-      - 低速备用-油管阿伟科技 9
-      - 低速备用-油管阿伟科技 10
-      - 低速备用-油管阿伟科技 14
-      - 低速备用-油管阿伟科技 21
-      - 低速备用-油管阿伟科技 7 2
-      - _JP_日本_1_油管阿伟科技32
-      - _JP_日本_2_油管阿伟科技33
-      - 0.84|youtube阿伟科技_油管阿伟科技17
-      - Argentina+|+01_油管阿伟科技47
-      - Australia+|+01_1_油管阿伟科技34
-      - Brazil+|+01_油管阿伟科技48
-      - Canada+|+01_油管阿伟科技49
-      - Chile+|+01_油管阿伟科技50
-      - CN_34+|11.56Mb_油管阿伟科技36
-      - CN_36+|+3.77Mb_油管阿伟科技37
-      - Germany+|+01_油管阿伟科技10
-      - Hong+Kong+|+07_油管阿伟科技38
-      - India+|+01_油管阿伟科技39
-      - Israel+|+01_油管阿伟科技11
-      - Italy+|+01_油管阿伟科技12
-      - Japan+|+08_油管阿伟科技51
-      - Korea+|+01_油管阿伟科技52
-      - Netherlands+|+02_油管阿伟科技13
-      - Singapore+|+02_油管阿伟科技40
-      - Spain+|+01_油管阿伟科技14
-      - Taiwan+|+02_油管阿伟科技41
-      - Thailand+|+01_油管阿伟科技43
-      - United+Kingdom+|+02_油管阿伟科技16
-      - United+States+|+01_油管阿伟科技53
-      - Vietnam+|+01_1_油管阿伟科技45
-      - Vietnam+|+01_2_油管阿伟科技46
-      - 韩国高速A_油管阿伟科技6
-      - 荷兰_油管阿伟科技19
-      - 加拿大_油管阿伟科技20
-      - 美国优化2G3.5_油管阿伟科技60
-      - 香港HKTA_油管阿伟科技5
-      - 香港HKTC_油管阿伟科技58
-      - 香港HKTF_油管阿伟科技31
-      - 香港HKTM_油管阿伟科技9
-      - 香港动态HKTC_油管阿伟科技57
-      - 新加坡优化1A_油管阿伟科技7
-      - 新加坡优化1B_油管阿伟科技8
-      - 意大利_油管阿伟科技21
-      - 英国iplayerA_油管阿伟科技22
-      - 英国iplayerB_油管阿伟科技23
-      - 油管阿伟科技_1
-      - 油管阿伟科技_1 2
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - US 美国(youtube阿伟科技) 32
+      - US 美国(youtube阿伟科技) 33
+      - US 美国(youtube阿伟科技) 34
+      - US 美国(youtube阿伟科技) 35
+      - US 美国(youtube阿伟科技) 36
+      - US 美国(youtube阿伟科技) 37
+      - US 美国(youtube阿伟科技) 38
+      - US 美国(youtube阿伟科技) 39
+      - US 美国(youtube阿伟科技) 40
+      - US 美国(youtube阿伟科技) 41
+      - US 美国(youtube阿伟科技) 42
+      - US 美国(youtube阿伟科技) 43
+      - US 美国(youtube阿伟科技) 44
+      - US 美国(youtube阿伟科技) 45
+      - US 美国(youtube阿伟科技) 46
+      - US 美国(youtube阿伟科技) 47
+      - US 美国(youtube阿伟科技) 48
+      - US 美国(youtube阿伟科技) 49
+      - US 美国(youtube阿伟科技) 50
+      - 卢森堡(youtube阿伟科技)
+      - 卢森堡(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 16
+      - HK 香港(youtube阿伟科技) 17
+      - HK 香港(youtube阿伟科技) 18
+      - HK 香港(youtube阿伟科技) 19
+      - HK 香港(youtube阿伟科技) 20
+      - HK 香港(youtube阿伟科技) 21
+      - HK 香港(youtube阿伟科技) 22
+      - HK 香港(youtube阿伟科技) 23
+      - HK 香港(youtube阿伟科技) 24
+      - HK 香港(youtube阿伟科技) 25
+      - SG 新加坡(youtube阿伟科技) 4
+      - TW 台湾(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 51
+      - KR 韩国(youtube阿伟科技) 5
+      - TW 台湾(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 26
+      - youtube阿伟科技
+      - youtube阿伟科技 2
+      - youtube阿伟科技 3
+      - youtube阿伟科技 4
+      - youtube阿伟科技 5
+      - youtube阿伟科技 6
+      - youtube阿伟科技 7
+      - youtube阿伟科技 8
+      - youtube阿伟科技 9
+      - youtube阿伟科技 10
+      - youtube阿伟科技 11
+      - youtube阿伟科技 12
+      - youtube阿伟科技 13
+      - youtube阿伟科技 14
+      - youtube阿伟科技 15
+      - youtube阿伟科技 16
+      - youtube阿伟科技 17
+      - youtube阿伟科技 18
+      - youtube阿伟科技 19
+      - youtube阿伟科技 20
+      - youtube阿伟科技 21
+      - youtube阿伟科技 22
+      - youtube阿伟科技 23
+      - youtube阿伟科技 24
+      - youtube阿伟科技 25
+      - youtube阿伟科技 26
+      - youtube阿伟科技 27
+      - youtube阿伟科技 28
+      - youtube阿伟科技 29
+      - youtube阿伟科技 30
+      - youtube阿伟科技 31
+      - youtube阿伟科技 32
+      - youtube阿伟科技 33
+      - youtube阿伟科技 34
+      - youtube阿伟科技 35
+      - youtube阿伟科技 36
+      - youtube阿伟科技 37
+      - youtube阿伟科技 38
+      - youtube阿伟科技 39
       - 油管阿伟科技_10
-      - 油管阿伟科技_11
-      - 油管阿伟科技_2
-      - 油管阿伟科技_2 2
-      - 油管阿伟科技_3
-      - 油管阿伟科技_3 2
-      - 油管阿伟科技_4
-      - 油管阿伟科技_4 2
-      - 油管阿伟科技_5
-      - 油管阿伟科技_6
-      - 油管阿伟科技_7
-      - 油管阿伟科技_8
+      - 3.74|油管阿伟科技6
+      - 2.89|油管阿伟科技7
+      - 0.11|油管阿伟科技10
+      - youtube阿伟科技 40
+      - KR 韩国(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 27
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -540,40 +716,60 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 油管阿伟科技_9
       - AU 澳大利亚(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技) 2
-      - CA 加拿大(youtube科技)
+      - AU 澳大利亚(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
-      - DE 德国(youtube阿伟科技) 2
-      - DE 德国(youtube阿伟科技) 3
-      - DE 德国(youtube阿伟科技) 4
-      - DE 德国(youtube阿伟科技) 5
-      - DE 德国(youtube阿伟科技) 2 2
+      - DE+德国(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 10
+      - HK 香港(youtube阿伟科技) 11
+      - HK 香港(youtube阿伟科技) 12
+      - HK 香港(youtube阿伟科技) 13
+      - HK 香港(youtube阿伟科技) 14
+      - HK 香港(youtube阿伟科技) 15
       - ID 印尼(youtube阿伟科技)
-      - ID 印尼(youtube阿伟科技) 2
-      - ID 印尼(youtube阿伟科技) 3
-      - IN 印度(youtube阿伟科技)
-      - IN 印度(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
       - NL 荷兰(youtube阿伟科技)
-      - NL 荷兰(youtube阿伟科技) 2
-      - NL 荷兰(youtube阿伟科技) 3
-      - NL 荷兰(youtube阿伟科技) 4
-      - NL 荷兰(youtube阿伟科技) 5
       - RU 俄罗斯(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
+      - SG 新加坡(youtube阿伟科技) 3
       - TUR 土耳其(youtube阿伟科技)
+      - TUR 土耳其(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技) 3
+      - TUR 土耳其(youtube阿伟科技) 4
       - TW 台湾(youtube阿伟科技)
       - TW 台湾(youtube阿伟科技) 2
+      - TW 台湾(youtube阿伟科技) 3
       - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
+      - UK 英国(youtube阿伟科技) 4
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
       - US 美国(youtube阿伟科技) 3
@@ -597,74 +793,98 @@ proxy-groups:
       - US 美国(youtube阿伟科技) 21
       - US 美国(youtube阿伟科技) 22
       - US 美国(youtube阿伟科技) 23
-      - VN 越南(youtube阿伟科技)
-      - 低速备用-油管阿伟科技
-      - 低速备用-油管阿伟科技 2
-      - 低速备用-油管阿伟科技 3
-      - 低速备用-油管阿伟科技 4
-      - 低速备用-油管阿伟科技 5
-      - 低速备用-油管阿伟科技 6
-      - 低速备用-油管阿伟科技 7
-      - 低速备用-油管阿伟科技 8
-      - 低速备用-油管阿伟科技 9
-      - 低速备用-油管阿伟科技 10
-      - 低速备用-油管阿伟科技 14
-      - 低速备用-油管阿伟科技 21
-      - 低速备用-油管阿伟科技 7 2
-      - _JP_日本_1_油管阿伟科技32
-      - _JP_日本_2_油管阿伟科技33
-      - 0.84|youtube阿伟科技_油管阿伟科技17
-      - Argentina+|+01_油管阿伟科技47
-      - Australia+|+01_1_油管阿伟科技34
-      - Brazil+|+01_油管阿伟科技48
-      - Canada+|+01_油管阿伟科技49
-      - Chile+|+01_油管阿伟科技50
-      - CN_34+|11.56Mb_油管阿伟科技36
-      - CN_36+|+3.77Mb_油管阿伟科技37
-      - Germany+|+01_油管阿伟科技10
-      - Hong+Kong+|+07_油管阿伟科技38
-      - India+|+01_油管阿伟科技39
-      - Israel+|+01_油管阿伟科技11
-      - Italy+|+01_油管阿伟科技12
-      - Japan+|+08_油管阿伟科技51
-      - Korea+|+01_油管阿伟科技52
-      - Netherlands+|+02_油管阿伟科技13
-      - Singapore+|+02_油管阿伟科技40
-      - Spain+|+01_油管阿伟科技14
-      - Taiwan+|+02_油管阿伟科技41
-      - Thailand+|+01_油管阿伟科技43
-      - United+Kingdom+|+02_油管阿伟科技16
-      - United+States+|+01_油管阿伟科技53
-      - Vietnam+|+01_1_油管阿伟科技45
-      - Vietnam+|+01_2_油管阿伟科技46
-      - 韩国高速A_油管阿伟科技6
-      - 荷兰_油管阿伟科技19
-      - 加拿大_油管阿伟科技20
-      - 美国优化2G3.5_油管阿伟科技60
-      - 香港HKTA_油管阿伟科技5
-      - 香港HKTC_油管阿伟科技58
-      - 香港HKTF_油管阿伟科技31
-      - 香港HKTM_油管阿伟科技9
-      - 香港动态HKTC_油管阿伟科技57
-      - 新加坡优化1A_油管阿伟科技7
-      - 新加坡优化1B_油管阿伟科技8
-      - 意大利_油管阿伟科技21
-      - 英国iplayerA_油管阿伟科技22
-      - 英国iplayerB_油管阿伟科技23
-      - 油管阿伟科技_1
-      - 油管阿伟科技_1 2
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - US 美国(youtube阿伟科技) 32
+      - US 美国(youtube阿伟科技) 33
+      - US 美国(youtube阿伟科技) 34
+      - US 美国(youtube阿伟科技) 35
+      - US 美国(youtube阿伟科技) 36
+      - US 美国(youtube阿伟科技) 37
+      - US 美国(youtube阿伟科技) 38
+      - US 美国(youtube阿伟科技) 39
+      - US 美国(youtube阿伟科技) 40
+      - US 美国(youtube阿伟科技) 41
+      - US 美国(youtube阿伟科技) 42
+      - US 美国(youtube阿伟科技) 43
+      - US 美国(youtube阿伟科技) 44
+      - US 美国(youtube阿伟科技) 45
+      - US 美国(youtube阿伟科技) 46
+      - US 美国(youtube阿伟科技) 47
+      - US 美国(youtube阿伟科技) 48
+      - US 美国(youtube阿伟科技) 49
+      - US 美国(youtube阿伟科技) 50
+      - 卢森堡(youtube阿伟科技)
+      - 卢森堡(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 16
+      - HK 香港(youtube阿伟科技) 17
+      - HK 香港(youtube阿伟科技) 18
+      - HK 香港(youtube阿伟科技) 19
+      - HK 香港(youtube阿伟科技) 20
+      - HK 香港(youtube阿伟科技) 21
+      - HK 香港(youtube阿伟科技) 22
+      - HK 香港(youtube阿伟科技) 23
+      - HK 香港(youtube阿伟科技) 24
+      - HK 香港(youtube阿伟科技) 25
+      - SG 新加坡(youtube阿伟科技) 4
+      - TW 台湾(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 51
+      - KR 韩国(youtube阿伟科技) 5
+      - TW 台湾(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 26
+      - youtube阿伟科技
+      - youtube阿伟科技 2
+      - youtube阿伟科技 3
+      - youtube阿伟科技 4
+      - youtube阿伟科技 5
+      - youtube阿伟科技 6
+      - youtube阿伟科技 7
+      - youtube阿伟科技 8
+      - youtube阿伟科技 9
+      - youtube阿伟科技 10
+      - youtube阿伟科技 11
+      - youtube阿伟科技 12
+      - youtube阿伟科技 13
+      - youtube阿伟科技 14
+      - youtube阿伟科技 15
+      - youtube阿伟科技 16
+      - youtube阿伟科技 17
+      - youtube阿伟科技 18
+      - youtube阿伟科技 19
+      - youtube阿伟科技 20
+      - youtube阿伟科技 21
+      - youtube阿伟科技 22
+      - youtube阿伟科技 23
+      - youtube阿伟科技 24
+      - youtube阿伟科技 25
+      - youtube阿伟科技 26
+      - youtube阿伟科技 27
+      - youtube阿伟科技 28
+      - youtube阿伟科技 29
+      - youtube阿伟科技 30
+      - youtube阿伟科技 31
+      - youtube阿伟科技 32
+      - youtube阿伟科技 33
+      - youtube阿伟科技 34
+      - youtube阿伟科技 35
+      - youtube阿伟科技 36
+      - youtube阿伟科技 37
+      - youtube阿伟科技 38
+      - youtube阿伟科技 39
       - 油管阿伟科技_10
-      - 油管阿伟科技_11
-      - 油管阿伟科技_2
-      - 油管阿伟科技_2 2
-      - 油管阿伟科技_3
-      - 油管阿伟科技_3 2
-      - 油管阿伟科技_4
-      - 油管阿伟科技_4 2
-      - 油管阿伟科技_5
-      - 油管阿伟科技_6
-      - 油管阿伟科技_7
-      - 油管阿伟科技_8
+      - 3.74|油管阿伟科技6
+      - 2.89|油管阿伟科技7
+      - 0.11|油管阿伟科技10
+      - youtube阿伟科技 40
+      - KR 韩国(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 27
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -673,53 +893,95 @@ proxy-groups:
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 10
+      - HK 香港(youtube阿伟科技) 11
+      - HK 香港(youtube阿伟科技) 12
+      - HK 香港(youtube阿伟科技) 13
+      - HK 香港(youtube阿伟科技) 14
+      - HK 香港(youtube阿伟科技) 15
       - TW 台湾(youtube阿伟科技)
       - TW 台湾(youtube阿伟科技) 2
-      - 香港HKTA_油管阿伟科技5
-      - 香港HKTC_油管阿伟科技58
-      - 香港HKTF_油管阿伟科技31
-      - 香港HKTM_油管阿伟科技9
-      - 香港动态HKTC_油管阿伟科技57
+      - TW 台湾(youtube阿伟科技) 3
+      - HK 香港(youtube阿伟科技) 16
+      - HK 香港(youtube阿伟科技) 17
+      - HK 香港(youtube阿伟科技) 18
+      - HK 香港(youtube阿伟科技) 19
+      - HK 香港(youtube阿伟科技) 20
+      - HK 香港(youtube阿伟科技) 21
+      - HK 香港(youtube阿伟科技) 22
+      - HK 香港(youtube阿伟科技) 23
+      - HK 香港(youtube阿伟科技) 24
+      - HK 香港(youtube阿伟科技) 25
+      - TW 台湾(youtube阿伟科技) 4
+      - TW 台湾(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 26
+      - HK 香港(youtube阿伟科技) 27
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 油管阿伟科技_9
       - AU 澳大利亚(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技) 2
-      - CA 加拿大(youtube科技)
+      - AU 澳大利亚(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
-      - DE 德国(youtube阿伟科技) 2
-      - DE 德国(youtube阿伟科技) 3
-      - DE 德国(youtube阿伟科技) 4
-      - DE 德国(youtube阿伟科技) 5
-      - DE 德国(youtube阿伟科技) 2 2
+      - DE+德国(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 10
+      - HK 香港(youtube阿伟科技) 11
+      - HK 香港(youtube阿伟科技) 12
+      - HK 香港(youtube阿伟科技) 13
+      - HK 香港(youtube阿伟科技) 14
+      - HK 香港(youtube阿伟科技) 15
       - ID 印尼(youtube阿伟科技)
-      - ID 印尼(youtube阿伟科技) 2
-      - ID 印尼(youtube阿伟科技) 3
-      - IN 印度(youtube阿伟科技)
-      - IN 印度(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
       - NL 荷兰(youtube阿伟科技)
-      - NL 荷兰(youtube阿伟科技) 2
-      - NL 荷兰(youtube阿伟科技) 3
-      - NL 荷兰(youtube阿伟科技) 4
-      - NL 荷兰(youtube阿伟科技) 5
       - RU 俄罗斯(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
+      - SG 新加坡(youtube阿伟科技) 3
       - TUR 土耳其(youtube阿伟科技)
+      - TUR 土耳其(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技) 3
+      - TUR 土耳其(youtube阿伟科技) 4
       - TW 台湾(youtube阿伟科技)
       - TW 台湾(youtube阿伟科技) 2
+      - TW 台湾(youtube阿伟科技) 3
       - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
+      - UK 英国(youtube阿伟科技) 4
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
       - US 美国(youtube阿伟科技) 3
@@ -743,113 +1005,157 @@ proxy-groups:
       - US 美国(youtube阿伟科技) 21
       - US 美国(youtube阿伟科技) 22
       - US 美国(youtube阿伟科技) 23
-      - VN 越南(youtube阿伟科技)
-      - 低速备用-油管阿伟科技
-      - 低速备用-油管阿伟科技 2
-      - 低速备用-油管阿伟科技 3
-      - 低速备用-油管阿伟科技 4
-      - 低速备用-油管阿伟科技 5
-      - 低速备用-油管阿伟科技 6
-      - 低速备用-油管阿伟科技 7
-      - 低速备用-油管阿伟科技 8
-      - 低速备用-油管阿伟科技 9
-      - 低速备用-油管阿伟科技 10
-      - 低速备用-油管阿伟科技 14
-      - 低速备用-油管阿伟科技 21
-      - 低速备用-油管阿伟科技 7 2
-      - _JP_日本_1_油管阿伟科技32
-      - _JP_日本_2_油管阿伟科技33
-      - 0.84|youtube阿伟科技_油管阿伟科技17
-      - Argentina+|+01_油管阿伟科技47
-      - Australia+|+01_1_油管阿伟科技34
-      - Brazil+|+01_油管阿伟科技48
-      - Canada+|+01_油管阿伟科技49
-      - Chile+|+01_油管阿伟科技50
-      - CN_34+|11.56Mb_油管阿伟科技36
-      - CN_36+|+3.77Mb_油管阿伟科技37
-      - Germany+|+01_油管阿伟科技10
-      - Hong+Kong+|+07_油管阿伟科技38
-      - India+|+01_油管阿伟科技39
-      - Israel+|+01_油管阿伟科技11
-      - Italy+|+01_油管阿伟科技12
-      - Japan+|+08_油管阿伟科技51
-      - Korea+|+01_油管阿伟科技52
-      - Netherlands+|+02_油管阿伟科技13
-      - Singapore+|+02_油管阿伟科技40
-      - Spain+|+01_油管阿伟科技14
-      - Taiwan+|+02_油管阿伟科技41
-      - Thailand+|+01_油管阿伟科技43
-      - United+Kingdom+|+02_油管阿伟科技16
-      - United+States+|+01_油管阿伟科技53
-      - Vietnam+|+01_1_油管阿伟科技45
-      - Vietnam+|+01_2_油管阿伟科技46
-      - 韩国高速A_油管阿伟科技6
-      - 荷兰_油管阿伟科技19
-      - 加拿大_油管阿伟科技20
-      - 美国优化2G3.5_油管阿伟科技60
-      - 香港HKTA_油管阿伟科技5
-      - 香港HKTC_油管阿伟科技58
-      - 香港HKTF_油管阿伟科技31
-      - 香港HKTM_油管阿伟科技9
-      - 香港动态HKTC_油管阿伟科技57
-      - 新加坡优化1A_油管阿伟科技7
-      - 新加坡优化1B_油管阿伟科技8
-      - 意大利_油管阿伟科技21
-      - 英国iplayerA_油管阿伟科技22
-      - 英国iplayerB_油管阿伟科技23
-      - 油管阿伟科技_1
-      - 油管阿伟科技_1 2
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - US 美国(youtube阿伟科技) 32
+      - US 美国(youtube阿伟科技) 33
+      - US 美国(youtube阿伟科技) 34
+      - US 美国(youtube阿伟科技) 35
+      - US 美国(youtube阿伟科技) 36
+      - US 美国(youtube阿伟科技) 37
+      - US 美国(youtube阿伟科技) 38
+      - US 美国(youtube阿伟科技) 39
+      - US 美国(youtube阿伟科技) 40
+      - US 美国(youtube阿伟科技) 41
+      - US 美国(youtube阿伟科技) 42
+      - US 美国(youtube阿伟科技) 43
+      - US 美国(youtube阿伟科技) 44
+      - US 美国(youtube阿伟科技) 45
+      - US 美国(youtube阿伟科技) 46
+      - US 美国(youtube阿伟科技) 47
+      - US 美国(youtube阿伟科技) 48
+      - US 美国(youtube阿伟科技) 49
+      - US 美国(youtube阿伟科技) 50
+      - 卢森堡(youtube阿伟科技)
+      - 卢森堡(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 16
+      - HK 香港(youtube阿伟科技) 17
+      - HK 香港(youtube阿伟科技) 18
+      - HK 香港(youtube阿伟科技) 19
+      - HK 香港(youtube阿伟科技) 20
+      - HK 香港(youtube阿伟科技) 21
+      - HK 香港(youtube阿伟科技) 22
+      - HK 香港(youtube阿伟科技) 23
+      - HK 香港(youtube阿伟科技) 24
+      - HK 香港(youtube阿伟科技) 25
+      - SG 新加坡(youtube阿伟科技) 4
+      - TW 台湾(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 51
+      - KR 韩国(youtube阿伟科技) 5
+      - TW 台湾(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 26
+      - youtube阿伟科技
+      - youtube阿伟科技 2
+      - youtube阿伟科技 3
+      - youtube阿伟科技 4
+      - youtube阿伟科技 5
+      - youtube阿伟科技 6
+      - youtube阿伟科技 7
+      - youtube阿伟科技 8
+      - youtube阿伟科技 9
+      - youtube阿伟科技 10
+      - youtube阿伟科技 11
+      - youtube阿伟科技 12
+      - youtube阿伟科技 13
+      - youtube阿伟科技 14
+      - youtube阿伟科技 15
+      - youtube阿伟科技 16
+      - youtube阿伟科技 17
+      - youtube阿伟科技 18
+      - youtube阿伟科技 19
+      - youtube阿伟科技 20
+      - youtube阿伟科技 21
+      - youtube阿伟科技 22
+      - youtube阿伟科技 23
+      - youtube阿伟科技 24
+      - youtube阿伟科技 25
+      - youtube阿伟科技 26
+      - youtube阿伟科技 27
+      - youtube阿伟科技 28
+      - youtube阿伟科技 29
+      - youtube阿伟科技 30
+      - youtube阿伟科技 31
+      - youtube阿伟科技 32
+      - youtube阿伟科技 33
+      - youtube阿伟科技 34
+      - youtube阿伟科技 35
+      - youtube阿伟科技 36
+      - youtube阿伟科技 37
+      - youtube阿伟科技 38
+      - youtube阿伟科技 39
       - 油管阿伟科技_10
-      - 油管阿伟科技_11
-      - 油管阿伟科技_2
-      - 油管阿伟科技_2 2
-      - 油管阿伟科技_3
-      - 油管阿伟科技_3 2
-      - 油管阿伟科技_4
-      - 油管阿伟科技_4 2
-      - 油管阿伟科技_5
-      - 油管阿伟科技_6
-      - 油管阿伟科技_7
-      - 油管阿伟科技_8
+      - 3.74|油管阿伟科技6
+      - 2.89|油管阿伟科技7
+      - 0.11|油管阿伟科技10
+      - youtube阿伟科技 40
+      - KR 韩国(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 27
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 油管阿伟科技_9
       - AU 澳大利亚(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技) 2
-      - CA 加拿大(youtube科技)
+      - AU 澳大利亚(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
-      - DE 德国(youtube阿伟科技) 2
-      - DE 德国(youtube阿伟科技) 3
-      - DE 德国(youtube阿伟科技) 4
-      - DE 德国(youtube阿伟科技) 5
-      - DE 德国(youtube阿伟科技) 2 2
+      - DE+德国(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 10
+      - HK 香港(youtube阿伟科技) 11
+      - HK 香港(youtube阿伟科技) 12
+      - HK 香港(youtube阿伟科技) 13
+      - HK 香港(youtube阿伟科技) 14
+      - HK 香港(youtube阿伟科技) 15
       - ID 印尼(youtube阿伟科技)
-      - ID 印尼(youtube阿伟科技) 2
-      - ID 印尼(youtube阿伟科技) 3
-      - IN 印度(youtube阿伟科技)
-      - IN 印度(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
       - NL 荷兰(youtube阿伟科技)
-      - NL 荷兰(youtube阿伟科技) 2
-      - NL 荷兰(youtube阿伟科技) 3
-      - NL 荷兰(youtube阿伟科技) 4
-      - NL 荷兰(youtube阿伟科技) 5
       - RU 俄罗斯(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
+      - SG 新加坡(youtube阿伟科技) 3
       - TUR 土耳其(youtube阿伟科技)
+      - TUR 土耳其(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技) 3
+      - TUR 土耳其(youtube阿伟科技) 4
       - TW 台湾(youtube阿伟科技)
       - TW 台湾(youtube阿伟科技) 2
+      - TW 台湾(youtube阿伟科技) 3
       - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
+      - UK 英国(youtube阿伟科技) 4
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
       - US 美国(youtube阿伟科技) 3
@@ -873,114 +1179,158 @@ proxy-groups:
       - US 美国(youtube阿伟科技) 21
       - US 美国(youtube阿伟科技) 22
       - US 美国(youtube阿伟科技) 23
-      - VN 越南(youtube阿伟科技)
-      - 低速备用-油管阿伟科技
-      - 低速备用-油管阿伟科技 2
-      - 低速备用-油管阿伟科技 3
-      - 低速备用-油管阿伟科技 4
-      - 低速备用-油管阿伟科技 5
-      - 低速备用-油管阿伟科技 6
-      - 低速备用-油管阿伟科技 7
-      - 低速备用-油管阿伟科技 8
-      - 低速备用-油管阿伟科技 9
-      - 低速备用-油管阿伟科技 10
-      - 低速备用-油管阿伟科技 14
-      - 低速备用-油管阿伟科技 21
-      - 低速备用-油管阿伟科技 7 2
-      - _JP_日本_1_油管阿伟科技32
-      - _JP_日本_2_油管阿伟科技33
-      - 0.84|youtube阿伟科技_油管阿伟科技17
-      - Argentina+|+01_油管阿伟科技47
-      - Australia+|+01_1_油管阿伟科技34
-      - Brazil+|+01_油管阿伟科技48
-      - Canada+|+01_油管阿伟科技49
-      - Chile+|+01_油管阿伟科技50
-      - CN_34+|11.56Mb_油管阿伟科技36
-      - CN_36+|+3.77Mb_油管阿伟科技37
-      - Germany+|+01_油管阿伟科技10
-      - Hong+Kong+|+07_油管阿伟科技38
-      - India+|+01_油管阿伟科技39
-      - Israel+|+01_油管阿伟科技11
-      - Italy+|+01_油管阿伟科技12
-      - Japan+|+08_油管阿伟科技51
-      - Korea+|+01_油管阿伟科技52
-      - Netherlands+|+02_油管阿伟科技13
-      - Singapore+|+02_油管阿伟科技40
-      - Spain+|+01_油管阿伟科技14
-      - Taiwan+|+02_油管阿伟科技41
-      - Thailand+|+01_油管阿伟科技43
-      - United+Kingdom+|+02_油管阿伟科技16
-      - United+States+|+01_油管阿伟科技53
-      - Vietnam+|+01_1_油管阿伟科技45
-      - Vietnam+|+01_2_油管阿伟科技46
-      - 韩国高速A_油管阿伟科技6
-      - 荷兰_油管阿伟科技19
-      - 加拿大_油管阿伟科技20
-      - 美国优化2G3.5_油管阿伟科技60
-      - 香港HKTA_油管阿伟科技5
-      - 香港HKTC_油管阿伟科技58
-      - 香港HKTF_油管阿伟科技31
-      - 香港HKTM_油管阿伟科技9
-      - 香港动态HKTC_油管阿伟科技57
-      - 新加坡优化1A_油管阿伟科技7
-      - 新加坡优化1B_油管阿伟科技8
-      - 意大利_油管阿伟科技21
-      - 英国iplayerA_油管阿伟科技22
-      - 英国iplayerB_油管阿伟科技23
-      - 油管阿伟科技_1
-      - 油管阿伟科技_1 2
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - US 美国(youtube阿伟科技) 32
+      - US 美国(youtube阿伟科技) 33
+      - US 美国(youtube阿伟科技) 34
+      - US 美国(youtube阿伟科技) 35
+      - US 美国(youtube阿伟科技) 36
+      - US 美国(youtube阿伟科技) 37
+      - US 美国(youtube阿伟科技) 38
+      - US 美国(youtube阿伟科技) 39
+      - US 美国(youtube阿伟科技) 40
+      - US 美国(youtube阿伟科技) 41
+      - US 美国(youtube阿伟科技) 42
+      - US 美国(youtube阿伟科技) 43
+      - US 美国(youtube阿伟科技) 44
+      - US 美国(youtube阿伟科技) 45
+      - US 美国(youtube阿伟科技) 46
+      - US 美国(youtube阿伟科技) 47
+      - US 美国(youtube阿伟科技) 48
+      - US 美国(youtube阿伟科技) 49
+      - US 美国(youtube阿伟科技) 50
+      - 卢森堡(youtube阿伟科技)
+      - 卢森堡(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 16
+      - HK 香港(youtube阿伟科技) 17
+      - HK 香港(youtube阿伟科技) 18
+      - HK 香港(youtube阿伟科技) 19
+      - HK 香港(youtube阿伟科技) 20
+      - HK 香港(youtube阿伟科技) 21
+      - HK 香港(youtube阿伟科技) 22
+      - HK 香港(youtube阿伟科技) 23
+      - HK 香港(youtube阿伟科技) 24
+      - HK 香港(youtube阿伟科技) 25
+      - SG 新加坡(youtube阿伟科技) 4
+      - TW 台湾(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 51
+      - KR 韩国(youtube阿伟科技) 5
+      - TW 台湾(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 26
+      - youtube阿伟科技
+      - youtube阿伟科技 2
+      - youtube阿伟科技 3
+      - youtube阿伟科技 4
+      - youtube阿伟科技 5
+      - youtube阿伟科技 6
+      - youtube阿伟科技 7
+      - youtube阿伟科技 8
+      - youtube阿伟科技 9
+      - youtube阿伟科技 10
+      - youtube阿伟科技 11
+      - youtube阿伟科技 12
+      - youtube阿伟科技 13
+      - youtube阿伟科技 14
+      - youtube阿伟科技 15
+      - youtube阿伟科技 16
+      - youtube阿伟科技 17
+      - youtube阿伟科技 18
+      - youtube阿伟科技 19
+      - youtube阿伟科技 20
+      - youtube阿伟科技 21
+      - youtube阿伟科技 22
+      - youtube阿伟科技 23
+      - youtube阿伟科技 24
+      - youtube阿伟科技 25
+      - youtube阿伟科技 26
+      - youtube阿伟科技 27
+      - youtube阿伟科技 28
+      - youtube阿伟科技 29
+      - youtube阿伟科技 30
+      - youtube阿伟科技 31
+      - youtube阿伟科技 32
+      - youtube阿伟科技 33
+      - youtube阿伟科技 34
+      - youtube阿伟科技 35
+      - youtube阿伟科技 36
+      - youtube阿伟科技 37
+      - youtube阿伟科技 38
+      - youtube阿伟科技 39
       - 油管阿伟科技_10
-      - 油管阿伟科技_11
-      - 油管阿伟科技_2
-      - 油管阿伟科技_2 2
-      - 油管阿伟科技_3
-      - 油管阿伟科技_3 2
-      - 油管阿伟科技_4
-      - 油管阿伟科技_4 2
-      - 油管阿伟科技_5
-      - 油管阿伟科技_6
-      - 油管阿伟科技_7
-      - 油管阿伟科技_8
+      - 3.74|油管阿伟科技6
+      - 2.89|油管阿伟科技7
+      - 0.11|油管阿伟科技10
+      - youtube阿伟科技 40
+      - KR 韩国(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 27
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 油管阿伟科技_9
       - AU 澳大利亚(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技) 2
-      - CA 加拿大(youtube科技)
+      - AU 澳大利亚(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
-      - DE 德国(youtube阿伟科技) 2
-      - DE 德国(youtube阿伟科技) 3
-      - DE 德国(youtube阿伟科技) 4
-      - DE 德国(youtube阿伟科技) 5
-      - DE 德国(youtube阿伟科技) 2 2
+      - DE+德国(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 10
+      - HK 香港(youtube阿伟科技) 11
+      - HK 香港(youtube阿伟科技) 12
+      - HK 香港(youtube阿伟科技) 13
+      - HK 香港(youtube阿伟科技) 14
+      - HK 香港(youtube阿伟科技) 15
       - ID 印尼(youtube阿伟科技)
-      - ID 印尼(youtube阿伟科技) 2
-      - ID 印尼(youtube阿伟科技) 3
-      - IN 印度(youtube阿伟科技)
-      - IN 印度(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
       - NL 荷兰(youtube阿伟科技)
-      - NL 荷兰(youtube阿伟科技) 2
-      - NL 荷兰(youtube阿伟科技) 3
-      - NL 荷兰(youtube阿伟科技) 4
-      - NL 荷兰(youtube阿伟科技) 5
       - RU 俄罗斯(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
+      - SG 新加坡(youtube阿伟科技) 3
       - TUR 土耳其(youtube阿伟科技)
+      - TUR 土耳其(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技) 3
+      - TUR 土耳其(youtube阿伟科技) 4
       - TW 台湾(youtube阿伟科技)
       - TW 台湾(youtube阿伟科技) 2
+      - TW 台湾(youtube阿伟科技) 3
       - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
+      - UK 英国(youtube阿伟科技) 4
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
       - US 美国(youtube阿伟科技) 3
@@ -1004,74 +1354,98 @@ proxy-groups:
       - US 美国(youtube阿伟科技) 21
       - US 美国(youtube阿伟科技) 22
       - US 美国(youtube阿伟科技) 23
-      - VN 越南(youtube阿伟科技)
-      - 低速备用-油管阿伟科技
-      - 低速备用-油管阿伟科技 2
-      - 低速备用-油管阿伟科技 3
-      - 低速备用-油管阿伟科技 4
-      - 低速备用-油管阿伟科技 5
-      - 低速备用-油管阿伟科技 6
-      - 低速备用-油管阿伟科技 7
-      - 低速备用-油管阿伟科技 8
-      - 低速备用-油管阿伟科技 9
-      - 低速备用-油管阿伟科技 10
-      - 低速备用-油管阿伟科技 14
-      - 低速备用-油管阿伟科技 21
-      - 低速备用-油管阿伟科技 7 2
-      - _JP_日本_1_油管阿伟科技32
-      - _JP_日本_2_油管阿伟科技33
-      - 0.84|youtube阿伟科技_油管阿伟科技17
-      - Argentina+|+01_油管阿伟科技47
-      - Australia+|+01_1_油管阿伟科技34
-      - Brazil+|+01_油管阿伟科技48
-      - Canada+|+01_油管阿伟科技49
-      - Chile+|+01_油管阿伟科技50
-      - CN_34+|11.56Mb_油管阿伟科技36
-      - CN_36+|+3.77Mb_油管阿伟科技37
-      - Germany+|+01_油管阿伟科技10
-      - Hong+Kong+|+07_油管阿伟科技38
-      - India+|+01_油管阿伟科技39
-      - Israel+|+01_油管阿伟科技11
-      - Italy+|+01_油管阿伟科技12
-      - Japan+|+08_油管阿伟科技51
-      - Korea+|+01_油管阿伟科技52
-      - Netherlands+|+02_油管阿伟科技13
-      - Singapore+|+02_油管阿伟科技40
-      - Spain+|+01_油管阿伟科技14
-      - Taiwan+|+02_油管阿伟科技41
-      - Thailand+|+01_油管阿伟科技43
-      - United+Kingdom+|+02_油管阿伟科技16
-      - United+States+|+01_油管阿伟科技53
-      - Vietnam+|+01_1_油管阿伟科技45
-      - Vietnam+|+01_2_油管阿伟科技46
-      - 韩国高速A_油管阿伟科技6
-      - 荷兰_油管阿伟科技19
-      - 加拿大_油管阿伟科技20
-      - 美国优化2G3.5_油管阿伟科技60
-      - 香港HKTA_油管阿伟科技5
-      - 香港HKTC_油管阿伟科技58
-      - 香港HKTF_油管阿伟科技31
-      - 香港HKTM_油管阿伟科技9
-      - 香港动态HKTC_油管阿伟科技57
-      - 新加坡优化1A_油管阿伟科技7
-      - 新加坡优化1B_油管阿伟科技8
-      - 意大利_油管阿伟科技21
-      - 英国iplayerA_油管阿伟科技22
-      - 英国iplayerB_油管阿伟科技23
-      - 油管阿伟科技_1
-      - 油管阿伟科技_1 2
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - US 美国(youtube阿伟科技) 32
+      - US 美国(youtube阿伟科技) 33
+      - US 美国(youtube阿伟科技) 34
+      - US 美国(youtube阿伟科技) 35
+      - US 美国(youtube阿伟科技) 36
+      - US 美国(youtube阿伟科技) 37
+      - US 美国(youtube阿伟科技) 38
+      - US 美国(youtube阿伟科技) 39
+      - US 美国(youtube阿伟科技) 40
+      - US 美国(youtube阿伟科技) 41
+      - US 美国(youtube阿伟科技) 42
+      - US 美国(youtube阿伟科技) 43
+      - US 美国(youtube阿伟科技) 44
+      - US 美国(youtube阿伟科技) 45
+      - US 美国(youtube阿伟科技) 46
+      - US 美国(youtube阿伟科技) 47
+      - US 美国(youtube阿伟科技) 48
+      - US 美国(youtube阿伟科技) 49
+      - US 美国(youtube阿伟科技) 50
+      - 卢森堡(youtube阿伟科技)
+      - 卢森堡(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 16
+      - HK 香港(youtube阿伟科技) 17
+      - HK 香港(youtube阿伟科技) 18
+      - HK 香港(youtube阿伟科技) 19
+      - HK 香港(youtube阿伟科技) 20
+      - HK 香港(youtube阿伟科技) 21
+      - HK 香港(youtube阿伟科技) 22
+      - HK 香港(youtube阿伟科技) 23
+      - HK 香港(youtube阿伟科技) 24
+      - HK 香港(youtube阿伟科技) 25
+      - SG 新加坡(youtube阿伟科技) 4
+      - TW 台湾(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 51
+      - KR 韩国(youtube阿伟科技) 5
+      - TW 台湾(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 26
+      - youtube阿伟科技
+      - youtube阿伟科技 2
+      - youtube阿伟科技 3
+      - youtube阿伟科技 4
+      - youtube阿伟科技 5
+      - youtube阿伟科技 6
+      - youtube阿伟科技 7
+      - youtube阿伟科技 8
+      - youtube阿伟科技 9
+      - youtube阿伟科技 10
+      - youtube阿伟科技 11
+      - youtube阿伟科技 12
+      - youtube阿伟科技 13
+      - youtube阿伟科技 14
+      - youtube阿伟科技 15
+      - youtube阿伟科技 16
+      - youtube阿伟科技 17
+      - youtube阿伟科技 18
+      - youtube阿伟科技 19
+      - youtube阿伟科技 20
+      - youtube阿伟科技 21
+      - youtube阿伟科技 22
+      - youtube阿伟科技 23
+      - youtube阿伟科技 24
+      - youtube阿伟科技 25
+      - youtube阿伟科技 26
+      - youtube阿伟科技 27
+      - youtube阿伟科技 28
+      - youtube阿伟科技 29
+      - youtube阿伟科技 30
+      - youtube阿伟科技 31
+      - youtube阿伟科技 32
+      - youtube阿伟科技 33
+      - youtube阿伟科技 34
+      - youtube阿伟科技 35
+      - youtube阿伟科技 36
+      - youtube阿伟科技 37
+      - youtube阿伟科技 38
+      - youtube阿伟科技 39
       - 油管阿伟科技_10
-      - 油管阿伟科技_11
-      - 油管阿伟科技_2
-      - 油管阿伟科技_2 2
-      - 油管阿伟科技_3
-      - 油管阿伟科技_3 2
-      - 油管阿伟科技_4
-      - 油管阿伟科技_4 2
-      - 油管阿伟科技_5
-      - 油管阿伟科技_6
-      - 油管阿伟科技_7
-      - 油管阿伟科技_8
+      - 3.74|油管阿伟科技6
+      - 2.89|油管阿伟科技7
+      - 0.11|油管阿伟科技10
+      - youtube阿伟科技 40
+      - KR 韩国(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 27
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1087,40 +1461,60 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 油管阿伟科技_9
       - AU 澳大利亚(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技)
-      - CA 加拿大(youtube阿伟科技) 2
-      - CA 加拿大(youtube科技)
+      - AU 澳大利亚(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
-      - DE 德国(youtube阿伟科技) 2
-      - DE 德国(youtube阿伟科技) 3
-      - DE 德国(youtube阿伟科技) 4
-      - DE 德国(youtube阿伟科技) 5
-      - DE 德国(youtube阿伟科技) 2 2
+      - DE+德国(youtube阿伟科技) 2
+      - DE+德国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技)
+      - FR 法国(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK+香港(youtube阿伟科技)
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 10
+      - HK 香港(youtube阿伟科技) 11
+      - HK 香港(youtube阿伟科技) 12
+      - HK 香港(youtube阿伟科技) 13
+      - HK 香港(youtube阿伟科技) 14
+      - HK 香港(youtube阿伟科技) 15
       - ID 印尼(youtube阿伟科技)
-      - ID 印尼(youtube阿伟科技) 2
-      - ID 印尼(youtube阿伟科技) 3
-      - IN 印度(youtube阿伟科技)
-      - IN 印度(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技)
+      - JP 日本(youtube阿伟科技) 2
+      - JP 日本(youtube阿伟科技) 3
+      - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
       - NL 荷兰(youtube阿伟科技)
-      - NL 荷兰(youtube阿伟科技) 2
-      - NL 荷兰(youtube阿伟科技) 3
-      - NL 荷兰(youtube阿伟科技) 4
-      - NL 荷兰(youtube阿伟科技) 5
       - RU 俄罗斯(youtube阿伟科技)
+      - RU 俄罗斯(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
+      - SG 新加坡(youtube阿伟科技) 3
       - TUR 土耳其(youtube阿伟科技)
+      - TUR 土耳其(youtube阿伟科技) 2
+      - TUR 土耳其(youtube阿伟科技) 3
+      - TUR 土耳其(youtube阿伟科技) 4
       - TW 台湾(youtube阿伟科技)
       - TW 台湾(youtube阿伟科技) 2
+      - TW 台湾(youtube阿伟科技) 3
       - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
+      - UK 英国(youtube阿伟科技) 4
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
       - US 美国(youtube阿伟科技) 3
@@ -1144,74 +1538,98 @@ proxy-groups:
       - US 美国(youtube阿伟科技) 21
       - US 美国(youtube阿伟科技) 22
       - US 美国(youtube阿伟科技) 23
-      - VN 越南(youtube阿伟科技)
-      - 低速备用-油管阿伟科技
-      - 低速备用-油管阿伟科技 2
-      - 低速备用-油管阿伟科技 3
-      - 低速备用-油管阿伟科技 4
-      - 低速备用-油管阿伟科技 5
-      - 低速备用-油管阿伟科技 6
-      - 低速备用-油管阿伟科技 7
-      - 低速备用-油管阿伟科技 8
-      - 低速备用-油管阿伟科技 9
-      - 低速备用-油管阿伟科技 10
-      - 低速备用-油管阿伟科技 14
-      - 低速备用-油管阿伟科技 21
-      - 低速备用-油管阿伟科技 7 2
-      - _JP_日本_1_油管阿伟科技32
-      - _JP_日本_2_油管阿伟科技33
-      - 0.84|youtube阿伟科技_油管阿伟科技17
-      - Argentina+|+01_油管阿伟科技47
-      - Australia+|+01_1_油管阿伟科技34
-      - Brazil+|+01_油管阿伟科技48
-      - Canada+|+01_油管阿伟科技49
-      - Chile+|+01_油管阿伟科技50
-      - CN_34+|11.56Mb_油管阿伟科技36
-      - CN_36+|+3.77Mb_油管阿伟科技37
-      - Germany+|+01_油管阿伟科技10
-      - Hong+Kong+|+07_油管阿伟科技38
-      - India+|+01_油管阿伟科技39
-      - Israel+|+01_油管阿伟科技11
-      - Italy+|+01_油管阿伟科技12
-      - Japan+|+08_油管阿伟科技51
-      - Korea+|+01_油管阿伟科技52
-      - Netherlands+|+02_油管阿伟科技13
-      - Singapore+|+02_油管阿伟科技40
-      - Spain+|+01_油管阿伟科技14
-      - Taiwan+|+02_油管阿伟科技41
-      - Thailand+|+01_油管阿伟科技43
-      - United+Kingdom+|+02_油管阿伟科技16
-      - United+States+|+01_油管阿伟科技53
-      - Vietnam+|+01_1_油管阿伟科技45
-      - Vietnam+|+01_2_油管阿伟科技46
-      - 韩国高速A_油管阿伟科技6
-      - 荷兰_油管阿伟科技19
-      - 加拿大_油管阿伟科技20
-      - 美国优化2G3.5_油管阿伟科技60
-      - 香港HKTA_油管阿伟科技5
-      - 香港HKTC_油管阿伟科技58
-      - 香港HKTF_油管阿伟科技31
-      - 香港HKTM_油管阿伟科技9
-      - 香港动态HKTC_油管阿伟科技57
-      - 新加坡优化1A_油管阿伟科技7
-      - 新加坡优化1B_油管阿伟科技8
-      - 意大利_油管阿伟科技21
-      - 英国iplayerA_油管阿伟科技22
-      - 英国iplayerB_油管阿伟科技23
-      - 油管阿伟科技_1
-      - 油管阿伟科技_1 2
+      - US 美国(youtube阿伟科技) 24
+      - US 美国(youtube阿伟科技) 25
+      - US 美国(youtube阿伟科技) 26
+      - US 美国(youtube阿伟科技) 27
+      - US 美国(youtube阿伟科技) 28
+      - US 美国(youtube阿伟科技) 29
+      - US 美国(youtube阿伟科技) 30
+      - US 美国(youtube阿伟科技) 31
+      - US 美国(youtube阿伟科技) 32
+      - US 美国(youtube阿伟科技) 33
+      - US 美国(youtube阿伟科技) 34
+      - US 美国(youtube阿伟科技) 35
+      - US 美国(youtube阿伟科技) 36
+      - US 美国(youtube阿伟科技) 37
+      - US 美国(youtube阿伟科技) 38
+      - US 美国(youtube阿伟科技) 39
+      - US 美国(youtube阿伟科技) 40
+      - US 美国(youtube阿伟科技) 41
+      - US 美国(youtube阿伟科技) 42
+      - US 美国(youtube阿伟科技) 43
+      - US 美国(youtube阿伟科技) 44
+      - US 美国(youtube阿伟科技) 45
+      - US 美国(youtube阿伟科技) 46
+      - US 美国(youtube阿伟科技) 47
+      - US 美国(youtube阿伟科技) 48
+      - US 美国(youtube阿伟科技) 49
+      - US 美国(youtube阿伟科技) 50
+      - 卢森堡(youtube阿伟科技)
+      - 卢森堡(youtube阿伟科技) 2
+      - HK 香港(youtube阿伟科技) 16
+      - HK 香港(youtube阿伟科技) 17
+      - HK 香港(youtube阿伟科技) 18
+      - HK 香港(youtube阿伟科技) 19
+      - HK 香港(youtube阿伟科技) 20
+      - HK 香港(youtube阿伟科技) 21
+      - HK 香港(youtube阿伟科技) 22
+      - HK 香港(youtube阿伟科技) 23
+      - HK 香港(youtube阿伟科技) 24
+      - HK 香港(youtube阿伟科技) 25
+      - SG 新加坡(youtube阿伟科技) 4
+      - TW 台湾(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 51
+      - KR 韩国(youtube阿伟科技) 5
+      - TW 台湾(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 9
+      - HK 香港(youtube阿伟科技) 26
+      - youtube阿伟科技
+      - youtube阿伟科技 2
+      - youtube阿伟科技 3
+      - youtube阿伟科技 4
+      - youtube阿伟科技 5
+      - youtube阿伟科技 6
+      - youtube阿伟科技 7
+      - youtube阿伟科技 8
+      - youtube阿伟科技 9
+      - youtube阿伟科技 10
+      - youtube阿伟科技 11
+      - youtube阿伟科技 12
+      - youtube阿伟科技 13
+      - youtube阿伟科技 14
+      - youtube阿伟科技 15
+      - youtube阿伟科技 16
+      - youtube阿伟科技 17
+      - youtube阿伟科技 18
+      - youtube阿伟科技 19
+      - youtube阿伟科技 20
+      - youtube阿伟科技 21
+      - youtube阿伟科技 22
+      - youtube阿伟科技 23
+      - youtube阿伟科技 24
+      - youtube阿伟科技 25
+      - youtube阿伟科技 26
+      - youtube阿伟科技 27
+      - youtube阿伟科技 28
+      - youtube阿伟科技 29
+      - youtube阿伟科技 30
+      - youtube阿伟科技 31
+      - youtube阿伟科技 32
+      - youtube阿伟科技 33
+      - youtube阿伟科技 34
+      - youtube阿伟科技 35
+      - youtube阿伟科技 36
+      - youtube阿伟科技 37
+      - youtube阿伟科技 38
+      - youtube阿伟科技 39
       - 油管阿伟科技_10
-      - 油管阿伟科技_11
-      - 油管阿伟科技_2
-      - 油管阿伟科技_2 2
-      - 油管阿伟科技_3
-      - 油管阿伟科技_3 2
-      - 油管阿伟科技_4
-      - 油管阿伟科技_4 2
-      - 油管阿伟科技_5
-      - 油管阿伟科技_6
-      - 油管阿伟科技_7
-      - 油管阿伟科技_8
+      - 3.74|油管阿伟科技6
+      - 2.89|油管阿伟科技7
+      - 0.11|油管阿伟科技10
+      - youtube阿伟科技 40
+      - KR 韩国(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 27
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
