@@ -5,383 +5,543 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: JP_131, server: kr1.api-aws.com, port: 443, type: trojan, password: ec129ab2-3c89-4e25-8b97-aee479ac06f1, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: FR_256, server: 51.77.71.131, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: TW_423, server: 211.72.35.154, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: HK_283, server: sg02.awcloud.top, port: 443, type: trojan, password: b88a1a71-5250-4ddc-8337-3a28594b6192, sni: sg02.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: FR_260, server: content-provider5.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, sni: content-provider5.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |33.41Mb, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51760:LLL090ui8oll8, obfs-param: "", udp: true}
-  - {name: JP_112, server: kr1.api-aws.com, port: 443, type: trojan, password: f2239c58-4684-4747-8985-fbca693f352b, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: US_518, server: usla.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: usla.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: US_555, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: JP_127, server: kr1.api-aws.com, port: 443, type: trojan, password: 1988268c-a841-42f2-acac-7a8c0c7e78e5, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: ID_302, server: idc1.vpn-akcelluler.my.id, port: 443, type: trojan, password: idc117okt, sni: idc1.vpn-akcelluler.my.id, skip-cert-verify: true, udp: true}
-  - {name: SG_392, server: ca.liangyuandian.top, port: 443, type: trojan, password: 51c44c4e-f8c2-4419-a52b-b4b7bd915078, sni: ca.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: JP_311 | 2.03Mb, server: kr1.api-aws.com, port: 443, type: trojan, password: dc26913c-a31c-4b3f-9c03-28a6b4283a89, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: SG_390, server: ca.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: ca.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: HK_292, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: HK_294, server: hk01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: hk01.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: HK_288, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 7778e684-f435-4166-bf9e-0256cb28bf10, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: FR_259, server: 176.31.83.90, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
-  - {name: JP_110, server: kr1.api-aws.com, port: 443, type: trojan, password: 36443c4f-4487-48a6-8438-57bd7700b916, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: ZZ_568, server: 45.11.104.94, port: 3389, type: trojan, password: d4e41ff772c7fd45, skip-cert-verify: true, udp: true}
-  - {name: JP_96, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: SG_381, server: 00000000000000000000000000000000000000000000000000000000000005a.rui77.com, port: 80, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TW_419, server: 60.249.3.231, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: FR_263, server: ukt-2.opensvr.net, port: 443, type: trojan, password: opentunnel.net-trhrst5ju45s, sni: ukt-2.opensvr.net, skip-cert-verify: true, udp: true}
-  - {name: HK_285, server: ru01.awcloud.top, port: 443, type: trojan, password: b88a1a71-5250-4ddc-8337-3a28594b6192, sni: ru01.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: TW_420, server: 211.72.35.152, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: HK_282, server: download2hkt.windowsupdate.lol, port: 443, type: trojan, password: 5d07a7bd-3696-4bc2-ab37-e7082c86f5cb, sni: download2hkt.windowsupdate.lol, skip-cert-verify: true, udp: true}
-  - {name: SG_389, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: TW_418, server: 211.72.35.158, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: TW_417 | 5.04Mb, server: 60.249.3.226, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: TW_422, server: 211.72.35.157, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: JP_138, server: kr1.api-aws.com, port: 443, type: trojan, password: ed9a202f-7871-4a15-a4c1-f3a47c1f5493, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: TW_416, server: 60.249.3.231, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: SG_211, server: ap.liangyuandian.top, port: 443, type: trojan, password: 51c44c4e-f8c2-4419-a52b-b4b7bd915078, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: JP_143, server: kr1.api-aws.com, port: 443, type: trojan, password: d30afdba-ca55-463a-b26e-27080698a2a6, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: SG_206, server: sg.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: SG_208, server: ap.liangyuandian.top, port: 443, type: trojan, password: cc55e294-b76f-425a-9301-c18afbecaa22, sni: ap.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇫🇷FR-🇫🇷FR_307 | 8.72Mb, server: ukt-2.opensvr.net, port: 443, type: trojan, password: opentunnel.net-rw8uuv207taq, sni: ukt-2.opensvr.net, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |42.26Mb, server: usa.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: usa.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇭🇰HK-🇸🇬SG_330, server: sg.liangyuandian.top, port: 443, type: trojan, password: 51c44c4e-f8c2-4419-a52b-b4b7bd915078, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: JP_356, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |20.20Mb, server: kr1.api-aws.com, port: 443, type: trojan, password: 98a68cfb-42c6-4498-ac6e-7e5c203924a7, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: FR_254, server: 51.77.71.134, port: 443, type: trojan, password: origin, skip-cert-verify: true, udp: true}
-  - {name: US_206 |373.23Mb, server: 129.213.117.66, port: 41106, type: trojan, password: Yaib2g1jy3, skip-cert-verify: true, udp: true}
-  - {name: JP_347, server: kr1.api-aws.com, port: 443, type: trojan, password: 1f9e7c79-ce39-44f3-bdbd-90ea117629b3, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_ | 4.18Mb, server: 120.233.11.136, port: 9009, type: vmess, uuid: 3346872e-3104-3c5b-8f6f-4b809309fa8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_351 | 9.07Mb, server: kr1.api-aws.com, port: 443, type: trojan, password: 7e92d33f-6917-4c69-8eca-7fe80be58199, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇿CZ-🇨🇿CZ_202 | 2.14Mb, server: v2cross.com.01.v2ce.com, port: 443, type: trojan, password: mMQ6qJB9xbhiRvgg, sni: v2cross.com.01.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |161.12Mb, server: kr1.api-aws.com, port: 443, type: trojan, password: 545034ab-8179-46ea-a7d4-a5c992cce000, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |31.71Mb, server: 111.45.22.139, port: 9043, type: vmess, uuid: 3346872e-3104-3c5b-8f6f-4b809309fa8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇿CZ-🇨🇿CZ_201 | 0.01Mb, server: v2cross.com.02.v2ce.com, port: 443, type: trojan, password: 3gLlCYBipVwr6Y5F, sni: v2cross.com.02.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_353 | 8.62Mb, server: kr1.api-aws.com, port: 443, type: trojan, password: 036ba5aa-fcb7-4e6f-95b5-a857cb354aa8, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |23.27Mb, server: kr1.api-aws.com, port: 443, type: trojan, password: d66dccd1-90c1-4713-8972-2417a2854df2, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: Relay_ |53.47Mb, server: js04.balala2016.xyz, port: 20261, type: trojan, password: ED177480-E516-11EA-8B44-BBC4E882BA0B, sni: js04.balala2016.xyz, skip-cert-verify: true, udp: true}
-  - {name: JP_332 |30.65Mb, server: 40.115.213.4, port: 443, type: trojan, password: 52171d41-9367-429f-baa6-43660a6c84e4, skip-cert-verify: true, udp: true}
-  - {name: TW_408, server: 211.72.35.155, port: 3389, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: TW_406, server: 60.249.3.230, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: TW_409 |40.28Mb, server: 60.249.3.229, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: TW_413, server: 211.72.35.155, port: 3389, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
-  - {name: JP_115, server: kr1.api-aws.com, port: 443, type: trojan, password: 96e08c45-762a-48d2-8b65-0088c3c5e3d4, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: JP_338 | 2.48Mb, server: kr1.api-aws.com, port: 443, type: trojan, password: 33073a7c-e6d5-4271-9b19-4416afcc25b5, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: JP_328 | 2.52Mb, server: kr1.api-aws.com, port: 443, type: trojan, password: 21f204d3-b42e-466a-9cb2-b83d868dcd5f, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: TW_410 |10.87Mb, server: 60.249.3.228, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: NL_364 | 3.20Mb, server: 185.212.200.75, port: 443, type: trojan, password: Sp3eDVp, skip-cert-verify: true, udp: true}
-  - {name: US_537, server: in01.awcloud.top, port: 443, type: trojan, password: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, sni: in01.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: US_554, server: lux.iamnotagoodman.com, port: 443, type: trojan, password: 2ac7fc8a-68b5-4809-8bd2-73a593bae292, sni: lux.iamnotagoodman.com, skip-cert-verify: true, udp: true}
-  - {name: TW_412, server: 211.72.35.157, port: 3389, type: trojan, password: 0cc6b4268dea0ba8, skip-cert-verify: true, udp: true}
-  - {name: JP_118, server: kr1.api-aws.com, port: 443, type: trojan, password: 10f81a15-c7c8-473b-a12a-a09f098b6236, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: NL_365, server: 5.255.103.209, port: 443, type: trojan, password: 3dacbaa8-784b-430c-9c1e-57d33648981d, skip-cert-verify: true, udp: true}
-  - {name: US_432 | 6.26Mb, server: 138.2.113.248, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, skip-cert-verify: true, udp: true}
-  - {name: US_433 |37.67Mb, server: 148.113.141.99, port: 443, type: trojan, password: HdsUZmsHQW, skip-cert-verify: true, udp: true}
-  - {name: US_523, server: 212.90.123.133, port: 28443, type: trojan, password: a1b16d10-4f43-4dd9-8c4f-52065b2b0910, skip-cert-verify: true, udp: true}
-  - {name: JP_129, server: kr1.api-aws.com, port: 443, type: trojan, password: e92293ba-8399-4759-b58e-6416f0702576, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: TW_407, server: 211.72.35.152, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: NL_366 |53.87Mb, server: content-provider23.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: Sp3eDVp, sni: content-provider23.cdn-delivery.akamaicd.com, skip-cert-verify: true, udp: true}
-  - {name: JP_333 | 8.10Mb, server: kr1.api-aws.com, port: 443, type: trojan, password: 3f087c04-44e6-4c96-a917-ca974de1212b, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: VN_558 | 9.92Mb, server: 103.81.85.238, port: 443, type: trojan, password: 8078dd51-d4d9-4024-89df-50e358a00a54, skip-cert-verify: true, udp: true}
-  - {name: JP_132, server: kr1.api-aws.com, port: 443, type: trojan, password: 3753719b-eb37-4f34-ab60-ae3a70486b27, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: HK_298, server: in01.awcloud.top, port: 443, type: trojan, password: 59e806eb-8f89-4c37-a961-86ee23211300, sni: in01.awcloud.top, skip-cert-verify: true, udp: true}
-  - {name: US_546, server: 51.81.82.15, port: 443, type: trojan, password: c2b0a060-44b0-11ed-ad2e-1239d0255272, skip-cert-verify: true, udp: true}
-  - {name: JP_136, server: kr1.api-aws.com, port: 443, type: trojan, password: aa7d24e0-b60c-44bb-bcd1-8b74a297cdbc, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: JP_327 | 9.11Mb, server: kr1.api-aws.com, port: 443, type: trojan, password: 8c20177e-d245-4ec6-9610-34c20500d10b, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: JP_304 |29.86Mb, server: 40.115.213.4, port: 443, type: trojan, password: 8078dd51-d4d9-4024-89df-50e358a00a54, skip-cert-verify: true, udp: true}
-  - {name: FR_257, server: 51.75.76.22, port: 443, type: trojan, password: c60fbf90-4b55-11ed-b935-225401db9d57, skip-cert-verify: true, udp: true}
-  - {name: TW_424 | 8.65Mb, server: 60.249.3.227, port: 3389, type: trojan, password: 182228812d1e0f23, skip-cert-verify: true, udp: true}
-  - {name: SG_387, server: de.liangyuandian.top, port: 443, type: trojan, password: ceaea123-1b4b-469b-8358-bcd5f5529305, sni: de.liangyuandian.top, skip-cert-verify: true, udp: true}
-  - {name: FR_64, server: t1.samsung.bforward2.uk, port: 443, type: trojan, password: 67e200f1-4ff5-42ca-8425-3f16f7986c29, sni: t1.samsung.bforward2.uk, skip-cert-verify: true, udp: true}
-  - {name: TW_415 | 7.17Mb, server: 60.249.3.226, port: 3389, type: trojan, password: 36fe28a331638747, skip-cert-verify: true, udp: true}
-  - {name: GB_84 | 3.98Mb, server: 144.24.72.126, port: 443, type: trojan, password: 7118b5f4-0ea4-4c11-be7f-11471cb91e4a, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1310 | 3.50Mb, server: kr05.wangxd.life, port: 443, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, sni: kr05.wangxd.life, skip-cert-verify: true, udp: true}
+  - {name: US_305, server: 170.187.182.212, port: 443, type: trojan, password: a1e12464-9208-4583-bd21-ab6889fdd242, skip-cert-verify: true, udp: true}
+  - {name: US_309, server: us-trojan.bonds.id, port: 443, type: trojan, password: ccf1ee40-b4ab-11eb-b421-1239d0255272, sni: us-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: US_311, server: 184.168.127.50, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: US_299, server: sg.liangyuandian.top, port: 443, type: trojan, password: 53f20cd4-b381-4a80-8059-7bcd484bbb52, sni: sg.liangyuandian.top, skip-cert-verify: true, udp: true}
+  - {name: US_329, server: usla.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: usla.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: US_306, server: kr.iamnotagoodman.com, port: 443, type: trojan, password: b2119912-55bb-4e69-a002-b1d2ae75e47e, sni: kr.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: US_310, server: 13.213.69.245, port: 443, type: trojan, password: iyinglong, skip-cert-verify: true, udp: true}
+  - {name: US_308, server: 72.167.45.6, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: US_293, server: in01.awcloud.top, port: 443, type: trojan, password: 42f54d42-b1c8-4244-805e-8c4c02f86b5b, sni: in01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: US_291, server: us-trojan.bonds.id, port: 443, type: trojan, password: 38239dd0-902b-11eb-afc1-1239d0255272, sni: us-trojan.bonds.id, skip-cert-verify: true, udp: true}
+  - {name: US_318, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: b2119912-55bb-4e69-a002-b1d2ae75e47e, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: US_323, server: 72.167.45.6, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
+  - {name: US_325, server: www.cjf0423.cf, port: 443, type: trojan, password: !<str> 111111, sni: www.cjf0423.cf, skip-cert-verify: true, udp: true}
+  - {name: US_283, server: de01-cdn.airport-v2.com, port: 2086, type: vmess, uuid: 87d9da8f-7839-37f8-b7f2-a7be22ae3833, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: de01-cdn.airport-v2.com}, udp: true}
+  - {name: US_297, server: tj2.dalazhi.cyou, port: 443, type: trojan, password: 8f70fde3-a04c-4f6a-b705-aef7406f6ac1, sni: tj2.dalazhi.cyou, skip-cert-verify: true, udp: true}
+  - {name: US_289, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: US_300, server: permissions.freetrade.link, port: 443, type: trojan, password: lCYI0KOB8exTgp736ac3ZR3DnXwaOFS5pACRuZzSyeYy4N3j2D8qAxF9alDSEC, sni: permissions.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: AU_44, server: jp-server-02.selfupay.com-02.selfupay.com, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: US_331, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 36d9d131-6319-4758-b4ce-3011f0afc72a, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: US_284, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: sg.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: US_332, server: cd.rutracker-cn.com, port: 443, type: trojan, password: ukMzuFSmIXDvgW0h, sni: cd.rutracker-cn.com, skip-cert-verify: true, udp: true}
+  - {name: US_327, server: in01.awcloud.top, port: 443, type: trojan, password: 7f9ef59e-20fb-4343-bafc-3a84fa22fe70, sni: in01.awcloud.top, skip-cert-verify: true, udp: true}
+  - {name: AU_18, server: t03.ssrsub.comusa-server-02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comusa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: US_290, server: listener.freetrade.link, port: 443, type: trojan, password: Z9TS0AeB8S5ZlpFNRea3aypDaXISOyzY67xCO33lF4gKq38jw2uDEnDYRCCxAc, sni: listener.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: AU_03, server: usa-server-02.selfupay.com, port: 443, type: trojan, password: e5d4636ebef7d1b1d6205fd0c55f28800e674, sni: usa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_11, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5KSn640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: US_287, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: 459d23f4-dcfd-4fef-9ba3-ef0ad10fc336, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: US_328, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: US_312, server: 72.167.45.6, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: AU_34, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY206Q1VuZFNabllzUEtjdTac5a3ef0-b4ab-11eb-b65e-1239d036ebef7d1b1d6205fd0c55f28800e674, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_28, server: t03.ssrsub.comhk-server-01.selfupay.com, port: 443, type: trojan, password: 2836640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: US_277, server: hkt2-cdn.tencent.best, port: 2086, type: vmess, uuid: 87d9da8f-7839-37f8-b7f2-a7be22ae3833, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hkt2-cdn.tencent.best}, udp: true}
+  - {name: AU_36, server: jp2.trojan.tel-01.selfupay.com, port: 443, type: trojan, password: f736834f-1fc8-4738-9884-9afe0eb0d818, sni: jp2.trojan.tel-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: US_276, server: uk01-cdn.airport-v2.com, port: 2086, type: vmess, uuid: 87d9da8f-7839-37f8-b7f2-a7be22ae3833, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: uk01-cdn.airport-v2.com}, udp: true}
+  - {name: US_316, server: de.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: de.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: AU_04, server: t03.ssrsub.com2.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.com2.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: US_317, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: 28bccca2-43d2-47f8-bd63-b1361ce7d362, sni: kh.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: US_314, server: 184.168.127.50, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
+  - {name: AU_19, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 36ebefac5640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_07, server: t03.ssrsub.comk-server-02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_42, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: m36ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_41, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: YWVzLlWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4a3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_05, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nYlW640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_10, server: t03.ssrsub.comusa-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comusa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_45, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: mM36ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_49, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: ac5a3ef0-b4ab-11eb-b65e-1239d0255236ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_27, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 54080640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_33, server: ver-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: ver-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_14, server: t03.ssrsub.comjp-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comjp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_17, server: t03.ssrsub.comusa-server-02.selfupay.com, port: 443, type: trojan, password: 5c640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comusa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_43, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: ac5a3ef0-b4ab-11eb-b65e-12336ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_20, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: a3fa5lWNF640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_31, server: hk-server-01.selfupay.com, port: 443, type: trojan, password: ac5a3ef0-b4ab-11eb-b65e-1239da3fa58b581353bb375d2ddad0f327938, sni: hk-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_12, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_22, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f32a3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_09, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: a3fa5640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_15, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: YWVzLTI1Ni1nY206WWd1c0gyTac5a3ef0-b4ablWNFc1Rm640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_32, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: mMQ36ebef7d1b1d6205fd0c55f28800e674, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_24, server: t03.ssrsub.comjp-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comjp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_13, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_40, server: ned-server-01.selfupay.com, port: 443, type: trojan, password: 28d98ac5a3ef0-b4ab-11ea3fa58b581353bb375d2ddad0f327938, sni: ned-server-01.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_23, server: hk-server-02.selfupay.com, port: 443, type: trojan, password: 03f9d1c7-40f9-47a3fa58b581353bb375d2ddad0f327938, sni: hk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_29, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNF640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_25, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 2640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_30, server: t03.ssrsub.comhk-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNFc1R640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comhk-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_08, server: t03.ssrsub.comjp-server-02.selfupay.com, port: 443, type: trojan, password: 82a115db-6e59-43640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comjp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AU_16, server: t03.ssrsub.comusa-server-02.selfupay.com, port: 443, type: trojan, password: bc7593fe-0604-4fbe-a70bYWVzLTI1Ni1nY2ac5a3ef0-lWNFc1RmRBNk5NQU5KSnga640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.comusa-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: US_294, server: jp.iamnotagoodman.com, port: 443, type: trojan, password: f8d19ba5-8684-45f2-8523-77dbea588955, sni: jp.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: US_302, server: vn.iamnotagoodman.com, port: 443, type: trojan, password: b2119912-55bb-4e69-a002-b1d2ae75e47e, sni: vn.iamnotagoodman.com, skip-cert-verify: true, udp: true}
+  - {name: US_303, server: jpa.llbb.cf, port: 8443, type: trojan, password: 5713b236-0e0d-4efd-ad60-eb14e6ff9162, sni: jpa.llbb.cf, skip-cert-verify: true, udp: true}
+  - {name: AU_50, server: jp-server-02.selfupay.com, port: 443, type: trojan, password: P9azqCxQMAaZca3fa58b581353bb375d2ddad0f327938, sni: jp-server-02.selfupay.com, skip-cert-verify: true, udp: true}
+  - {name: AM_亚美尼亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1, server: 185.162.228.229, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
+  - {name: BR_巴西_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1, server: azbx.paolujichang.com, port: 80, type: vmess, uuid: 975a0a5d-12b3-4a24-bafc-53f69c431429, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /goudan, ws-headers: {Host: alidocs.dingtalk.com}, udp: true}
+  - {name: BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1, server: 203.30.188.189, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5QNROSRV, ws-headers: {Host: oplg1.zhujicn2.com}, udp: true}
+  - {name: BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2, server: 203.30.188.188, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
+  - {name: BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3, server: 203.30.190.192, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /A2DJOPFT, ws-headers: {Host: lg10.cfcdn1.xyz}, udp: true}
+  - {name: CA_加拿大_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1, server: 23.227.38.38, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ECTCJ0DF, ws-headers: {Host: lg1.trump2023.us}, udp: true}
+  - {name: CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1, server: cm.kapoknode.com, port: 25898, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.kapoknode.com}, udp: true}
+  - {name: CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2, server: cu.kapoknode.com, port: 25898, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.kapoknode.com}, udp: true}
+  - {name: CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3, server: 106.75.218.112, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: lg30.cfcdn3.xyz}, udp: true}
+  - {name: CO_哥伦比亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1, server: 188.114.99.11, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /A2DJOPFT, ws-headers: {Host: lg10.cfcdn1.xyz}, udp: true}
+  - {name: CY_塞浦路斯_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1, server: 203.24.108.9, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5QNROSRV, ws-headers: {Host: oplg1.zhujicn2.com}, udp: true}
+  - {name: DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1, server: 188.34.199.94, port: 80, type: vmess, uuid: ae901c0e-c5d4-4b00-ab45-a39e0c277ed4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /graphql, ws-headers: {Host: 188.34.199.94}, udp: true}
+  - {name: DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2, server: 5.75.169.238, port: 80, type: vmess, uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /telegram-id-@privatevpns, ws-headers: {Host: 5.75.169.238}, udp: true}
+  - {name: DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3, server: 5.75.132.207, port: 80, type: vmess, uuid: 2aac77de-b3e4-4017-845c-ca1380f2e8d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /telegram-id-@privatevpns, ws-headers: {Host: 5.75.132.207}, udp: true}
+  - {name: FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1, server: azbl.paolujichang.com, port: 80, type: vmess, uuid: 975a0a5d-12b3-4a24-bafc-53f69c431429, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /goudan, ws-headers: {Host: alidocs.dingtalk.com}, udp: true}
+  - {name: FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2, server: 164.132.68.14, port: 443, type: vmess, uuid: 1f4322e1-0e7e-4af2-cc09-84666ac15616, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: w1.800876.xyz}, udp: true}
+  - {name: FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3, server: cdn1.soft9821.gq, port: 8880, type: vmess, uuid: a2ecce43-c6fb-4978-8b1d-8018ddd9faf4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cdn1.soft9821.gq}, udp: true}
+  - {name: GB_英国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1, server: awsld.paolujichang.com, port: 80, type: vmess, uuid: 975a0a5d-12b3-4a24-bafc-53f69c431429, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /goudan, ws-headers: {Host: alidocs.dingtalk.com}, udp: true}
+  - {name: HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1, server: azxg03.paolujichang.com, port: 80, type: vmess, uuid: 975a0a5d-12b3-4a24-bafc-53f69c431429, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /goudan, ws-headers: {Host: alidocs.dingtalk.com}, udp: true}
+  - {name: HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2, server: azxg02.paolujichang.com, port: 80, type: vmess, uuid: 975a0a5d-12b3-4a24-bafc-53f69c431429, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /goudan, ws-headers: {Host: alidocs.dingtalk.com}, udp: true}
+  - {name: HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3, server: azxg.paolujichang.com, port: 80, type: vmess, uuid: 975a0a5d-12b3-4a24-bafc-53f69c431429, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /goudan, ws-headers: {Host: alidocs.dingtalk.com}, udp: true}
+  - {name: HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4, server: 219.76.13.181, port: 443, type: trojan, password: SyOxpKxC8u5jgNa3DCZ34y3D9CRenFcaABpYATEeqI2RSaXD76zS8YF0Owl3lZ, skip-cert-verify: true, udp: true}
+  - {name: IN_印度_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1, server: azyd.paolujichang.com, port: 80, type: vmess, uuid: 975a0a5d-12b3-4a24-bafc-53f69c431429, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /goudan, ws-headers: {Host: alidocs.dingtalk.com}, udp: true}
+  - {name: JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1, server: azrb02.paolujichang.com, port: 80, type: vmess, uuid: 975a0a5d-12b3-4a24-bafc-53f69c431429, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /goudan, ws-headers: {Host: alidocs.dingtalk.com}, udp: true}
+  - {name: JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2, server: jp1.a100.sbs, port: 2001, type: vmess, uuid: d13a3a08-411b-46eb-87c5-023bc8b61db9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: LU_卢森堡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1, server: dns01.leek.ml, port: 443, type: vmess, uuid: 4596acf5-98da-4832-84bd-e792681a132a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dns01.leek.ml}, udp: true}
+  - {name: MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, skip-cert-verify: true, udp: true}
+  - {name: MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2, server: 45.64.22.41, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, skip-cert-verify: true, udp: true}
+  - {name: MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3, server: 45.64.22.55, port: 443, type: trojan, password: ZRYSly2IRuFlgpZCaep3Ey3DDXqTDczO04aeC8F36OjaYSCABnA573wN8xxK9S, skip-cert-verify: true, udp: true}
+  - {name: SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1, server: awsxjp02.paolujichang.com, port: 80, type: vmess, uuid: 975a0a5d-12b3-4a24-bafc-53f69c431429, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /goudan, ws-headers: {Host: alidocs.dingtalk.com}, udp: true}
+  - {name: SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2, server: awsxjp01.paolujichang.com, port: 80, type: vmess, uuid: 975a0a5d-12b3-4a24-bafc-53f69c431429, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /goudan, ws-headers: {Host: alidocs.dingtalk.com}, udp: true}
+  - {name: SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3, server: 18.143.193.210, port: 10020, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 18.143.193.210}, udp: true}
+  - {name: SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4, server: 18.143.199.239, port: 10020, type: vmess, uuid: c05ad447-3b27-4bcc-83d9-22ad300584ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 18.143.199.239}, udp: true}
+  - {name: SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5, server: 18.143.123.35, port: 80, type: vmess, uuid: 68df4838-46d0-4b5b-c3f0-a40ec7063245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 18.143.123.35}, udp: true}
+  - {name: SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6, server: tw1111.tfzhc.top, port: 443, type: trojan, password: 7595fe24-7a57-4191-8f0a-69c96d4690c7, sni: tw1111.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: TW_台湾_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1, server: tw11142.tfzhc.top, port: 40312, type: trojan, password: 7595fe24-7a57-4191-8f0a-69c96d4690c7, sni: tw11142.tfzhc.top, skip-cert-verify: true, udp: true}
+  - {name: US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1, server: azrb04.paolujichang.com, port: 80, type: vmess, uuid: 975a0a5d-12b3-4a24-bafc-53f69c431429, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /goudan, ws-headers: {Host: alidocs.dingtalk.com}, udp: true}
+  - {name: US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_12, server: sg-lb.vhax.net, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshkit/Ertusg86/635014638c264/, ws-headers: {Host: zoom.us}, udp: true}
+  - {name: US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_13, server: 47.88.52.220, port: 80, type: vmess, uuid: c9fe8359-5878-4413-c80e-3ffeabc47b02, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: w.800876.xyz}, udp: true}
+  - {name: US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_14, server: v2ray.wefuckgfw.ga, port: 2053, type: vmess, uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /DQsafRJn/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
+  - {name: US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_15, server: 66.235.200.22, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /A2DJOPFT, ws-headers: {Host: lg10.cfcdn1.xyz}, udp: true}
+  - {name: US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_16, server: uicdn.cf, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshkit/fdfadsfa/63848bfe228fd/, ws-headers: {Host: us-lb.sshkit.org}, udp: true}
+  - {name: US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 4e21574f-1796-4f0a-86c0-4430fe99d3a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /p9Dq67Nx/, ws-headers: {Host: fr1.cachexy.ga}, udp: true}
+  - {name: US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3, server: uicdn.cf, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshkit/dfsdafdsa/63848baf653eb/, ws-headers: {Host: id-lb.vhax.net}, udp: true}
+  - {name: US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4, server: uicdn.cf, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshkit/1736960111/63859be1a762c/, ws-headers: {Host: sg4-v2ray.sshkit.org}, udp: true}
+  - {name: US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6, server: uicdn.cf, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshkit/1736960111/63859b95e5be4/, ws-headers: {Host: sg2-v2ray.sshkit.org}, udp: true}
+  - {name: US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7, server: uicdn.cf, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /sshkit/1736960111/63859bc177a33/, ws-headers: {Host: sg3-v2ray.sshkit.org}, udp: true}
+  - {name: US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8, server: v2ray.wefuckgfw.ga, port: 2053, type: vmess, uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /DQsafRJn/, ws-headers: {Host: v2ray.wefuckgfw.ga}, udp: true}
+  - {name: US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9, server: news.microsoft.com, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
+  - {name: 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1, server: 198.41.212.122, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /9JZFDTKE, ws-headers: {Host: fr1.trump2023.org}, udp: true}
+  - {name: 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_10, server: 141.101.114.102, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash6.ssr-free.xyz}, udp: true}
+  - {name: 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2, server: 198.41.203.6, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /9JZFDTKE, ws-headers: {Host: fr1.trump2023.org}, udp: true}
+  - {name: 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3, server: 198.41.212.123, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /IYKLD53M, ws-headers: {Host: opfr1.v2rayfree1.xyz}, udp: true}
+  - {name: 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4, server: 141.101.115.111, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /9JZFDTKE, ws-headers: {Host: fr1.trump2023.org}, udp: true}
+  - {name: 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5, server: 190.93.244.3, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5QNROSRV, ws-headers: {Host: oplg1.zhujicn2.com}, udp: true}
+  - {name: 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6, server: 190.93.245.3, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5QNROSRV, ws-headers: {Host: oplg1.zhujicn2.com}, udp: true}
+  - {name: 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7, server: 198.41.203.1, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /VHONOFZ3, ws-headers: {Host: lg1.cfcdn2.xyz}, udp: true}
+  - {name: 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8, server: 198.41.203.2, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: clash1.trump2023.net}, udp: true}
+  - {name: 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9, server: 141.101.114.100, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /VHONOFZ3, ws-headers: {Host: lg1.cfcdn2.xyz}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_131
-      - FR_256
-      - TW_423
-      - HK_283
-      - FR_260
-      - Relay_ |33.41Mb
-      - JP_112
-      - US_518
-      - US_555
-      - JP_127
-      - ID_302
-      - SG_392
-      - JP_311 | 2.03Mb
-      - SG_390
-      - HK_292
-      - HK_294
-      - HK_288
-      - FR_259
-      - JP_110
-      - ZZ_568
-      - JP_96
-      - SG_381
-      - TW_419
-      - FR_263
-      - HK_285
-      - TW_420
-      - HK_282
-      - SG_389
-      - TW_418
-      - TW_417 | 5.04Mb
-      - TW_422
-      - JP_138
-      - TW_416
-      - SG_211
-      - JP_143
-      - SG_206
-      - SG_208
-      - Relay_🇫🇷FR-🇫🇷FR_307 | 8.72Mb
-      - Relay_ |42.26Mb
-      - Relay_🇭🇰HK-🇸🇬SG_330
-      - JP_356
-      - Relay_ |20.20Mb
-      - FR_254
-      - US_206 |373.23Mb
-      - JP_347
-      - Relay_ | 4.18Mb
-      - Relay_🇯🇵JP-🇯🇵JP_351 | 9.07Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_202 | 2.14Mb
-      - Relay_ |161.12Mb
-      - Relay_ |31.71Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_201 | 0.01Mb
-      - Relay_🇯🇵JP-🇯🇵JP_353 | 8.62Mb
-      - Relay_ |23.27Mb
-      - Relay_ |53.47Mb
-      - JP_332 |30.65Mb
-      - TW_408
-      - TW_406
-      - TW_409 |40.28Mb
-      - TW_413
-      - JP_115
-      - JP_338 | 2.48Mb
-      - JP_328 | 2.52Mb
-      - TW_410 |10.87Mb
-      - NL_364 | 3.20Mb
-      - US_537
-      - US_554
-      - TW_412
-      - JP_118
-      - NL_365
-      - US_432 | 6.26Mb
-      - US_433 |37.67Mb
-      - US_523
-      - JP_129
-      - TW_407
-      - NL_366 |53.87Mb
-      - JP_333 | 8.10Mb
-      - VN_558 | 9.92Mb
-      - JP_132
-      - HK_298
-      - US_546
-      - JP_136
-      - JP_327 | 9.11Mb
-      - JP_304 |29.86Mb
-      - FR_257
-      - TW_424 | 8.65Mb
-      - SG_387
-      - FR_64
-      - TW_415 | 7.17Mb
-      - GB_84 | 3.98Mb
-      - Relay_🇺🇸US-🇺🇸US_1310 | 3.50Mb
+      - US_305
+      - US_309
+      - US_311
+      - US_299
+      - US_329
+      - US_306
+      - US_310
+      - US_308
+      - US_293
+      - US_291
+      - US_318
+      - US_323
+      - US_325
+      - US_283
+      - US_297
+      - US_289
+      - US_300
+      - AU_44
+      - US_331
+      - US_284
+      - US_332
+      - US_327
+      - AU_18
+      - US_290
+      - AU_03
+      - AU_11
+      - US_287
+      - US_328
+      - US_312
+      - AU_34
+      - AU_28
+      - US_277
+      - AU_36
+      - US_276
+      - US_316
+      - AU_04
+      - US_317
+      - US_314
+      - AU_19
+      - AU_07
+      - AU_42
+      - AU_41
+      - AU_05
+      - AU_10
+      - AU_45
+      - AU_49
+      - AU_27
+      - AU_33
+      - AU_14
+      - AU_17
+      - AU_43
+      - AU_20
+      - AU_31
+      - AU_12
+      - AU_22
+      - AU_09
+      - AU_15
+      - AU_32
+      - AU_24
+      - AU_13
+      - AU_40
+      - AU_23
+      - AU_29
+      - AU_25
+      - AU_30
+      - AU_08
+      - AU_16
+      - US_294
+      - US_302
+      - US_303
+      - AU_50
+      - AM_亚美尼亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BR_巴西_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CA_加拿大_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CO_哥伦比亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CY_塞浦路斯_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - GB_英国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - IN_印度_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - LU_卢森堡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - TW_台湾_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_12
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_13
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_14
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_15
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_16
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_10
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - JP_131
-      - FR_256
-      - TW_423
-      - HK_283
-      - FR_260
-      - Relay_ |33.41Mb
-      - JP_112
-      - US_518
-      - US_555
-      - JP_127
-      - ID_302
-      - SG_392
-      - JP_311 | 2.03Mb
-      - SG_390
-      - HK_292
-      - HK_294
-      - HK_288
-      - FR_259
-      - JP_110
-      - ZZ_568
-      - JP_96
-      - SG_381
-      - TW_419
-      - FR_263
-      - HK_285
-      - TW_420
-      - HK_282
-      - SG_389
-      - TW_418
-      - TW_417 | 5.04Mb
-      - TW_422
-      - JP_138
-      - TW_416
-      - SG_211
-      - JP_143
-      - SG_206
-      - SG_208
-      - Relay_🇫🇷FR-🇫🇷FR_307 | 8.72Mb
-      - Relay_ |42.26Mb
-      - Relay_🇭🇰HK-🇸🇬SG_330
-      - JP_356
-      - Relay_ |20.20Mb
-      - FR_254
-      - US_206 |373.23Mb
-      - JP_347
-      - Relay_ | 4.18Mb
-      - Relay_🇯🇵JP-🇯🇵JP_351 | 9.07Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_202 | 2.14Mb
-      - Relay_ |161.12Mb
-      - Relay_ |31.71Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_201 | 0.01Mb
-      - Relay_🇯🇵JP-🇯🇵JP_353 | 8.62Mb
-      - Relay_ |23.27Mb
-      - Relay_ |53.47Mb
-      - JP_332 |30.65Mb
-      - TW_408
-      - TW_406
-      - TW_409 |40.28Mb
-      - TW_413
-      - JP_115
-      - JP_338 | 2.48Mb
-      - JP_328 | 2.52Mb
-      - TW_410 |10.87Mb
-      - NL_364 | 3.20Mb
-      - US_537
-      - US_554
-      - TW_412
-      - JP_118
-      - NL_365
-      - US_432 | 6.26Mb
-      - US_433 |37.67Mb
-      - US_523
-      - JP_129
-      - TW_407
-      - NL_366 |53.87Mb
-      - JP_333 | 8.10Mb
-      - VN_558 | 9.92Mb
-      - JP_132
-      - HK_298
-      - US_546
-      - JP_136
-      - JP_327 | 9.11Mb
-      - JP_304 |29.86Mb
-      - FR_257
-      - TW_424 | 8.65Mb
-      - SG_387
-      - FR_64
-      - TW_415 | 7.17Mb
-      - GB_84 | 3.98Mb
-      - Relay_🇺🇸US-🇺🇸US_1310 | 3.50Mb
+      - US_305
+      - US_309
+      - US_311
+      - US_299
+      - US_329
+      - US_306
+      - US_310
+      - US_308
+      - US_293
+      - US_291
+      - US_318
+      - US_323
+      - US_325
+      - US_283
+      - US_297
+      - US_289
+      - US_300
+      - AU_44
+      - US_331
+      - US_284
+      - US_332
+      - US_327
+      - AU_18
+      - US_290
+      - AU_03
+      - AU_11
+      - US_287
+      - US_328
+      - US_312
+      - AU_34
+      - AU_28
+      - US_277
+      - AU_36
+      - US_276
+      - US_316
+      - AU_04
+      - US_317
+      - US_314
+      - AU_19
+      - AU_07
+      - AU_42
+      - AU_41
+      - AU_05
+      - AU_10
+      - AU_45
+      - AU_49
+      - AU_27
+      - AU_33
+      - AU_14
+      - AU_17
+      - AU_43
+      - AU_20
+      - AU_31
+      - AU_12
+      - AU_22
+      - AU_09
+      - AU_15
+      - AU_32
+      - AU_24
+      - AU_13
+      - AU_40
+      - AU_23
+      - AU_29
+      - AU_25
+      - AU_30
+      - AU_08
+      - AU_16
+      - US_294
+      - US_302
+      - US_303
+      - AU_50
+      - AM_亚美尼亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BR_巴西_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CA_加拿大_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CO_哥伦比亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CY_塞浦路斯_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - GB_英国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - IN_印度_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - LU_卢森堡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - TW_台湾_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_12
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_13
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_14
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_15
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_16
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_10
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_131
-      - FR_256
-      - TW_423
-      - HK_283
-      - FR_260
-      - Relay_ |33.41Mb
-      - JP_112
-      - US_518
-      - US_555
-      - JP_127
-      - ID_302
-      - SG_392
-      - JP_311 | 2.03Mb
-      - SG_390
-      - HK_292
-      - HK_294
-      - HK_288
-      - FR_259
-      - JP_110
-      - ZZ_568
-      - JP_96
-      - SG_381
-      - TW_419
-      - FR_263
-      - HK_285
-      - TW_420
-      - HK_282
-      - SG_389
-      - TW_418
-      - TW_417 | 5.04Mb
-      - TW_422
-      - JP_138
-      - TW_416
-      - SG_211
-      - JP_143
-      - SG_206
-      - SG_208
-      - Relay_🇫🇷FR-🇫🇷FR_307 | 8.72Mb
-      - Relay_ |42.26Mb
-      - Relay_🇭🇰HK-🇸🇬SG_330
-      - JP_356
-      - Relay_ |20.20Mb
-      - FR_254
-      - US_206 |373.23Mb
-      - JP_347
-      - Relay_ | 4.18Mb
-      - Relay_🇯🇵JP-🇯🇵JP_351 | 9.07Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_202 | 2.14Mb
-      - Relay_ |161.12Mb
-      - Relay_ |31.71Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_201 | 0.01Mb
-      - Relay_🇯🇵JP-🇯🇵JP_353 | 8.62Mb
-      - Relay_ |23.27Mb
-      - Relay_ |53.47Mb
-      - JP_332 |30.65Mb
-      - TW_408
-      - TW_406
-      - TW_409 |40.28Mb
-      - TW_413
-      - JP_115
-      - JP_338 | 2.48Mb
-      - JP_328 | 2.52Mb
-      - TW_410 |10.87Mb
-      - NL_364 | 3.20Mb
-      - US_537
-      - US_554
-      - TW_412
-      - JP_118
-      - NL_365
-      - US_432 | 6.26Mb
-      - US_433 |37.67Mb
-      - US_523
-      - JP_129
-      - TW_407
-      - NL_366 |53.87Mb
-      - JP_333 | 8.10Mb
-      - VN_558 | 9.92Mb
-      - JP_132
-      - HK_298
-      - US_546
-      - JP_136
-      - JP_327 | 9.11Mb
-      - JP_304 |29.86Mb
-      - FR_257
-      - TW_424 | 8.65Mb
-      - SG_387
-      - FR_64
-      - TW_415 | 7.17Mb
-      - GB_84 | 3.98Mb
-      - Relay_🇺🇸US-🇺🇸US_1310 | 3.50Mb
+      - US_305
+      - US_309
+      - US_311
+      - US_299
+      - US_329
+      - US_306
+      - US_310
+      - US_308
+      - US_293
+      - US_291
+      - US_318
+      - US_323
+      - US_325
+      - US_283
+      - US_297
+      - US_289
+      - US_300
+      - AU_44
+      - US_331
+      - US_284
+      - US_332
+      - US_327
+      - AU_18
+      - US_290
+      - AU_03
+      - AU_11
+      - US_287
+      - US_328
+      - US_312
+      - AU_34
+      - AU_28
+      - US_277
+      - AU_36
+      - US_276
+      - US_316
+      - AU_04
+      - US_317
+      - US_314
+      - AU_19
+      - AU_07
+      - AU_42
+      - AU_41
+      - AU_05
+      - AU_10
+      - AU_45
+      - AU_49
+      - AU_27
+      - AU_33
+      - AU_14
+      - AU_17
+      - AU_43
+      - AU_20
+      - AU_31
+      - AU_12
+      - AU_22
+      - AU_09
+      - AU_15
+      - AU_32
+      - AU_24
+      - AU_13
+      - AU_40
+      - AU_23
+      - AU_29
+      - AU_25
+      - AU_30
+      - AU_08
+      - AU_16
+      - US_294
+      - US_302
+      - US_303
+      - AU_50
+      - AM_亚美尼亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BR_巴西_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CA_加拿大_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CO_哥伦比亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CY_塞浦路斯_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - GB_英国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - IN_印度_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - LU_卢森堡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - TW_台湾_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_12
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_13
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_14
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_15
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_16
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_10
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -400,387 +560,552 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - JP_131
-      - FR_256
-      - TW_423
-      - HK_283
-      - FR_260
-      - Relay_ |33.41Mb
-      - JP_112
-      - US_518
-      - US_555
-      - JP_127
-      - ID_302
-      - SG_392
-      - JP_311 | 2.03Mb
-      - SG_390
-      - HK_292
-      - HK_294
-      - HK_288
-      - FR_259
-      - JP_110
-      - ZZ_568
-      - JP_96
-      - SG_381
-      - TW_419
-      - FR_263
-      - HK_285
-      - TW_420
-      - HK_282
-      - SG_389
-      - TW_418
-      - TW_417 | 5.04Mb
-      - TW_422
-      - JP_138
-      - TW_416
-      - SG_211
-      - JP_143
-      - SG_206
-      - SG_208
-      - Relay_🇫🇷FR-🇫🇷FR_307 | 8.72Mb
-      - Relay_ |42.26Mb
-      - Relay_🇭🇰HK-🇸🇬SG_330
-      - JP_356
-      - Relay_ |20.20Mb
-      - FR_254
-      - US_206 |373.23Mb
-      - JP_347
-      - Relay_ | 4.18Mb
-      - Relay_🇯🇵JP-🇯🇵JP_351 | 9.07Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_202 | 2.14Mb
-      - Relay_ |161.12Mb
-      - Relay_ |31.71Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_201 | 0.01Mb
-      - Relay_🇯🇵JP-🇯🇵JP_353 | 8.62Mb
-      - Relay_ |23.27Mb
-      - Relay_ |53.47Mb
-      - JP_332 |30.65Mb
-      - TW_408
-      - TW_406
-      - TW_409 |40.28Mb
-      - TW_413
-      - JP_115
-      - JP_338 | 2.48Mb
-      - JP_328 | 2.52Mb
-      - TW_410 |10.87Mb
-      - NL_364 | 3.20Mb
-      - US_537
-      - US_554
-      - TW_412
-      - JP_118
-      - NL_365
-      - US_432 | 6.26Mb
-      - US_433 |37.67Mb
-      - US_523
-      - JP_129
-      - TW_407
-      - NL_366 |53.87Mb
-      - JP_333 | 8.10Mb
-      - VN_558 | 9.92Mb
-      - JP_132
-      - HK_298
-      - US_546
-      - JP_136
-      - JP_327 | 9.11Mb
-      - JP_304 |29.86Mb
-      - FR_257
-      - TW_424 | 8.65Mb
-      - SG_387
-      - FR_64
-      - TW_415 | 7.17Mb
-      - GB_84 | 3.98Mb
-      - Relay_🇺🇸US-🇺🇸US_1310 | 3.50Mb
+      - US_305
+      - US_309
+      - US_311
+      - US_299
+      - US_329
+      - US_306
+      - US_310
+      - US_308
+      - US_293
+      - US_291
+      - US_318
+      - US_323
+      - US_325
+      - US_283
+      - US_297
+      - US_289
+      - US_300
+      - AU_44
+      - US_331
+      - US_284
+      - US_332
+      - US_327
+      - AU_18
+      - US_290
+      - AU_03
+      - AU_11
+      - US_287
+      - US_328
+      - US_312
+      - AU_34
+      - AU_28
+      - US_277
+      - AU_36
+      - US_276
+      - US_316
+      - AU_04
+      - US_317
+      - US_314
+      - AU_19
+      - AU_07
+      - AU_42
+      - AU_41
+      - AU_05
+      - AU_10
+      - AU_45
+      - AU_49
+      - AU_27
+      - AU_33
+      - AU_14
+      - AU_17
+      - AU_43
+      - AU_20
+      - AU_31
+      - AU_12
+      - AU_22
+      - AU_09
+      - AU_15
+      - AU_32
+      - AU_24
+      - AU_13
+      - AU_40
+      - AU_23
+      - AU_29
+      - AU_25
+      - AU_30
+      - AU_08
+      - AU_16
+      - US_294
+      - US_302
+      - US_303
+      - AU_50
+      - AM_亚美尼亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BR_巴西_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CA_加拿大_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CO_哥伦比亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CY_塞浦路斯_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - GB_英国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - IN_印度_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - LU_卢森堡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - TW_台湾_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_12
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_13
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_14
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_15
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_16
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_10
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - TW_台湾_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - JP_131
-      - FR_256
-      - TW_423
-      - HK_283
-      - FR_260
-      - Relay_ |33.41Mb
-      - JP_112
-      - US_518
-      - US_555
-      - JP_127
-      - ID_302
-      - SG_392
-      - JP_311 | 2.03Mb
-      - SG_390
-      - HK_292
-      - HK_294
-      - HK_288
-      - FR_259
-      - JP_110
-      - ZZ_568
-      - JP_96
-      - SG_381
-      - TW_419
-      - FR_263
-      - HK_285
-      - TW_420
-      - HK_282
-      - SG_389
-      - TW_418
-      - TW_417 | 5.04Mb
-      - TW_422
-      - JP_138
-      - TW_416
-      - SG_211
-      - JP_143
-      - SG_206
-      - SG_208
-      - Relay_🇫🇷FR-🇫🇷FR_307 | 8.72Mb
-      - Relay_ |42.26Mb
-      - Relay_🇭🇰HK-🇸🇬SG_330
-      - JP_356
-      - Relay_ |20.20Mb
-      - FR_254
-      - US_206 |373.23Mb
-      - JP_347
-      - Relay_ | 4.18Mb
-      - Relay_🇯🇵JP-🇯🇵JP_351 | 9.07Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_202 | 2.14Mb
-      - Relay_ |161.12Mb
-      - Relay_ |31.71Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_201 | 0.01Mb
-      - Relay_🇯🇵JP-🇯🇵JP_353 | 8.62Mb
-      - Relay_ |23.27Mb
-      - Relay_ |53.47Mb
-      - JP_332 |30.65Mb
-      - TW_408
-      - TW_406
-      - TW_409 |40.28Mb
-      - TW_413
-      - JP_115
-      - JP_338 | 2.48Mb
-      - JP_328 | 2.52Mb
-      - TW_410 |10.87Mb
-      - NL_364 | 3.20Mb
-      - US_537
-      - US_554
-      - TW_412
-      - JP_118
-      - NL_365
-      - US_432 | 6.26Mb
-      - US_433 |37.67Mb
-      - US_523
-      - JP_129
-      - TW_407
-      - NL_366 |53.87Mb
-      - JP_333 | 8.10Mb
-      - VN_558 | 9.92Mb
-      - JP_132
-      - HK_298
-      - US_546
-      - JP_136
-      - JP_327 | 9.11Mb
-      - JP_304 |29.86Mb
-      - FR_257
-      - TW_424 | 8.65Mb
-      - SG_387
-      - FR_64
-      - TW_415 | 7.17Mb
-      - GB_84 | 3.98Mb
-      - Relay_🇺🇸US-🇺🇸US_1310 | 3.50Mb
+      - US_305
+      - US_309
+      - US_311
+      - US_299
+      - US_329
+      - US_306
+      - US_310
+      - US_308
+      - US_293
+      - US_291
+      - US_318
+      - US_323
+      - US_325
+      - US_283
+      - US_297
+      - US_289
+      - US_300
+      - AU_44
+      - US_331
+      - US_284
+      - US_332
+      - US_327
+      - AU_18
+      - US_290
+      - AU_03
+      - AU_11
+      - US_287
+      - US_328
+      - US_312
+      - AU_34
+      - AU_28
+      - US_277
+      - AU_36
+      - US_276
+      - US_316
+      - AU_04
+      - US_317
+      - US_314
+      - AU_19
+      - AU_07
+      - AU_42
+      - AU_41
+      - AU_05
+      - AU_10
+      - AU_45
+      - AU_49
+      - AU_27
+      - AU_33
+      - AU_14
+      - AU_17
+      - AU_43
+      - AU_20
+      - AU_31
+      - AU_12
+      - AU_22
+      - AU_09
+      - AU_15
+      - AU_32
+      - AU_24
+      - AU_13
+      - AU_40
+      - AU_23
+      - AU_29
+      - AU_25
+      - AU_30
+      - AU_08
+      - AU_16
+      - US_294
+      - US_302
+      - US_303
+      - AU_50
+      - AM_亚美尼亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BR_巴西_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CA_加拿大_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CO_哥伦比亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CY_塞浦路斯_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - GB_英国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - IN_印度_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - LU_卢森堡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - TW_台湾_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_12
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_13
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_14
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_15
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_16
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_10
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - JP_131
-      - FR_256
-      - TW_423
-      - HK_283
-      - FR_260
-      - Relay_ |33.41Mb
-      - JP_112
-      - US_518
-      - US_555
-      - JP_127
-      - ID_302
-      - SG_392
-      - JP_311 | 2.03Mb
-      - SG_390
-      - HK_292
-      - HK_294
-      - HK_288
-      - FR_259
-      - JP_110
-      - ZZ_568
-      - JP_96
-      - SG_381
-      - TW_419
-      - FR_263
-      - HK_285
-      - TW_420
-      - HK_282
-      - SG_389
-      - TW_418
-      - TW_417 | 5.04Mb
-      - TW_422
-      - JP_138
-      - TW_416
-      - SG_211
-      - JP_143
-      - SG_206
-      - SG_208
-      - Relay_🇫🇷FR-🇫🇷FR_307 | 8.72Mb
-      - Relay_ |42.26Mb
-      - Relay_🇭🇰HK-🇸🇬SG_330
-      - JP_356
-      - Relay_ |20.20Mb
-      - FR_254
-      - US_206 |373.23Mb
-      - JP_347
-      - Relay_ | 4.18Mb
-      - Relay_🇯🇵JP-🇯🇵JP_351 | 9.07Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_202 | 2.14Mb
-      - Relay_ |161.12Mb
-      - Relay_ |31.71Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_201 | 0.01Mb
-      - Relay_🇯🇵JP-🇯🇵JP_353 | 8.62Mb
-      - Relay_ |23.27Mb
-      - Relay_ |53.47Mb
-      - JP_332 |30.65Mb
-      - TW_408
-      - TW_406
-      - TW_409 |40.28Mb
-      - TW_413
-      - JP_115
-      - JP_338 | 2.48Mb
-      - JP_328 | 2.52Mb
-      - TW_410 |10.87Mb
-      - NL_364 | 3.20Mb
-      - US_537
-      - US_554
-      - TW_412
-      - JP_118
-      - NL_365
-      - US_432 | 6.26Mb
-      - US_433 |37.67Mb
-      - US_523
-      - JP_129
-      - TW_407
-      - NL_366 |53.87Mb
-      - JP_333 | 8.10Mb
-      - VN_558 | 9.92Mb
-      - JP_132
-      - HK_298
-      - US_546
-      - JP_136
-      - JP_327 | 9.11Mb
-      - JP_304 |29.86Mb
-      - FR_257
-      - TW_424 | 8.65Mb
-      - SG_387
-      - FR_64
-      - TW_415 | 7.17Mb
-      - GB_84 | 3.98Mb
-      - Relay_🇺🇸US-🇺🇸US_1310 | 3.50Mb
+      - US_305
+      - US_309
+      - US_311
+      - US_299
+      - US_329
+      - US_306
+      - US_310
+      - US_308
+      - US_293
+      - US_291
+      - US_318
+      - US_323
+      - US_325
+      - US_283
+      - US_297
+      - US_289
+      - US_300
+      - AU_44
+      - US_331
+      - US_284
+      - US_332
+      - US_327
+      - AU_18
+      - US_290
+      - AU_03
+      - AU_11
+      - US_287
+      - US_328
+      - US_312
+      - AU_34
+      - AU_28
+      - US_277
+      - AU_36
+      - US_276
+      - US_316
+      - AU_04
+      - US_317
+      - US_314
+      - AU_19
+      - AU_07
+      - AU_42
+      - AU_41
+      - AU_05
+      - AU_10
+      - AU_45
+      - AU_49
+      - AU_27
+      - AU_33
+      - AU_14
+      - AU_17
+      - AU_43
+      - AU_20
+      - AU_31
+      - AU_12
+      - AU_22
+      - AU_09
+      - AU_15
+      - AU_32
+      - AU_24
+      - AU_13
+      - AU_40
+      - AU_23
+      - AU_29
+      - AU_25
+      - AU_30
+      - AU_08
+      - AU_16
+      - US_294
+      - US_302
+      - US_303
+      - AU_50
+      - AM_亚美尼亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BR_巴西_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CA_加拿大_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CO_哥伦比亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CY_塞浦路斯_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - GB_英国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - IN_印度_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - LU_卢森堡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - TW_台湾_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_12
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_13
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_14
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_15
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_16
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_10
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_131
-      - FR_256
-      - TW_423
-      - HK_283
-      - FR_260
-      - Relay_ |33.41Mb
-      - JP_112
-      - US_518
-      - US_555
-      - JP_127
-      - ID_302
-      - SG_392
-      - JP_311 | 2.03Mb
-      - SG_390
-      - HK_292
-      - HK_294
-      - HK_288
-      - FR_259
-      - JP_110
-      - ZZ_568
-      - JP_96
-      - SG_381
-      - TW_419
-      - FR_263
-      - HK_285
-      - TW_420
-      - HK_282
-      - SG_389
-      - TW_418
-      - TW_417 | 5.04Mb
-      - TW_422
-      - JP_138
-      - TW_416
-      - SG_211
-      - JP_143
-      - SG_206
-      - SG_208
-      - Relay_🇫🇷FR-🇫🇷FR_307 | 8.72Mb
-      - Relay_ |42.26Mb
-      - Relay_🇭🇰HK-🇸🇬SG_330
-      - JP_356
-      - Relay_ |20.20Mb
-      - FR_254
-      - US_206 |373.23Mb
-      - JP_347
-      - Relay_ | 4.18Mb
-      - Relay_🇯🇵JP-🇯🇵JP_351 | 9.07Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_202 | 2.14Mb
-      - Relay_ |161.12Mb
-      - Relay_ |31.71Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_201 | 0.01Mb
-      - Relay_🇯🇵JP-🇯🇵JP_353 | 8.62Mb
-      - Relay_ |23.27Mb
-      - Relay_ |53.47Mb
-      - JP_332 |30.65Mb
-      - TW_408
-      - TW_406
-      - TW_409 |40.28Mb
-      - TW_413
-      - JP_115
-      - JP_338 | 2.48Mb
-      - JP_328 | 2.52Mb
-      - TW_410 |10.87Mb
-      - NL_364 | 3.20Mb
-      - US_537
-      - US_554
-      - TW_412
-      - JP_118
-      - NL_365
-      - US_432 | 6.26Mb
-      - US_433 |37.67Mb
-      - US_523
-      - JP_129
-      - TW_407
-      - NL_366 |53.87Mb
-      - JP_333 | 8.10Mb
-      - VN_558 | 9.92Mb
-      - JP_132
-      - HK_298
-      - US_546
-      - JP_136
-      - JP_327 | 9.11Mb
-      - JP_304 |29.86Mb
-      - FR_257
-      - TW_424 | 8.65Mb
-      - SG_387
-      - FR_64
-      - TW_415 | 7.17Mb
-      - GB_84 | 3.98Mb
-      - Relay_🇺🇸US-🇺🇸US_1310 | 3.50Mb
+      - US_305
+      - US_309
+      - US_311
+      - US_299
+      - US_329
+      - US_306
+      - US_310
+      - US_308
+      - US_293
+      - US_291
+      - US_318
+      - US_323
+      - US_325
+      - US_283
+      - US_297
+      - US_289
+      - US_300
+      - AU_44
+      - US_331
+      - US_284
+      - US_332
+      - US_327
+      - AU_18
+      - US_290
+      - AU_03
+      - AU_11
+      - US_287
+      - US_328
+      - US_312
+      - AU_34
+      - AU_28
+      - US_277
+      - AU_36
+      - US_276
+      - US_316
+      - AU_04
+      - US_317
+      - US_314
+      - AU_19
+      - AU_07
+      - AU_42
+      - AU_41
+      - AU_05
+      - AU_10
+      - AU_45
+      - AU_49
+      - AU_27
+      - AU_33
+      - AU_14
+      - AU_17
+      - AU_43
+      - AU_20
+      - AU_31
+      - AU_12
+      - AU_22
+      - AU_09
+      - AU_15
+      - AU_32
+      - AU_24
+      - AU_13
+      - AU_40
+      - AU_23
+      - AU_29
+      - AU_25
+      - AU_30
+      - AU_08
+      - AU_16
+      - US_294
+      - US_302
+      - US_303
+      - AU_50
+      - AM_亚美尼亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BR_巴西_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CA_加拿大_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CO_哥伦比亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CY_塞浦路斯_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - GB_英国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - IN_印度_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - LU_卢森堡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - TW_台湾_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_12
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_13
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_14
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_15
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_16
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_10
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -796,96 +1121,136 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - JP_131
-      - FR_256
-      - TW_423
-      - HK_283
-      - FR_260
-      - Relay_ |33.41Mb
-      - JP_112
-      - US_518
-      - US_555
-      - JP_127
-      - ID_302
-      - SG_392
-      - JP_311 | 2.03Mb
-      - SG_390
-      - HK_292
-      - HK_294
-      - HK_288
-      - FR_259
-      - JP_110
-      - ZZ_568
-      - JP_96
-      - SG_381
-      - TW_419
-      - FR_263
-      - HK_285
-      - TW_420
-      - HK_282
-      - SG_389
-      - TW_418
-      - TW_417 | 5.04Mb
-      - TW_422
-      - JP_138
-      - TW_416
-      - SG_211
-      - JP_143
-      - SG_206
-      - SG_208
-      - Relay_🇫🇷FR-🇫🇷FR_307 | 8.72Mb
-      - Relay_ |42.26Mb
-      - Relay_🇭🇰HK-🇸🇬SG_330
-      - JP_356
-      - Relay_ |20.20Mb
-      - FR_254
-      - US_206 |373.23Mb
-      - JP_347
-      - Relay_ | 4.18Mb
-      - Relay_🇯🇵JP-🇯🇵JP_351 | 9.07Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_202 | 2.14Mb
-      - Relay_ |161.12Mb
-      - Relay_ |31.71Mb
-      - Relay_🇨🇿CZ-🇨🇿CZ_201 | 0.01Mb
-      - Relay_🇯🇵JP-🇯🇵JP_353 | 8.62Mb
-      - Relay_ |23.27Mb
-      - Relay_ |53.47Mb
-      - JP_332 |30.65Mb
-      - TW_408
-      - TW_406
-      - TW_409 |40.28Mb
-      - TW_413
-      - JP_115
-      - JP_338 | 2.48Mb
-      - JP_328 | 2.52Mb
-      - TW_410 |10.87Mb
-      - NL_364 | 3.20Mb
-      - US_537
-      - US_554
-      - TW_412
-      - JP_118
-      - NL_365
-      - US_432 | 6.26Mb
-      - US_433 |37.67Mb
-      - US_523
-      - JP_129
-      - TW_407
-      - NL_366 |53.87Mb
-      - JP_333 | 8.10Mb
-      - VN_558 | 9.92Mb
-      - JP_132
-      - HK_298
-      - US_546
-      - JP_136
-      - JP_327 | 9.11Mb
-      - JP_304 |29.86Mb
-      - FR_257
-      - TW_424 | 8.65Mb
-      - SG_387
-      - FR_64
-      - TW_415 | 7.17Mb
-      - GB_84 | 3.98Mb
-      - Relay_🇺🇸US-🇺🇸US_1310 | 3.50Mb
+      - US_305
+      - US_309
+      - US_311
+      - US_299
+      - US_329
+      - US_306
+      - US_310
+      - US_308
+      - US_293
+      - US_291
+      - US_318
+      - US_323
+      - US_325
+      - US_283
+      - US_297
+      - US_289
+      - US_300
+      - AU_44
+      - US_331
+      - US_284
+      - US_332
+      - US_327
+      - AU_18
+      - US_290
+      - AU_03
+      - AU_11
+      - US_287
+      - US_328
+      - US_312
+      - AU_34
+      - AU_28
+      - US_277
+      - AU_36
+      - US_276
+      - US_316
+      - AU_04
+      - US_317
+      - US_314
+      - AU_19
+      - AU_07
+      - AU_42
+      - AU_41
+      - AU_05
+      - AU_10
+      - AU_45
+      - AU_49
+      - AU_27
+      - AU_33
+      - AU_14
+      - AU_17
+      - AU_43
+      - AU_20
+      - AU_31
+      - AU_12
+      - AU_22
+      - AU_09
+      - AU_15
+      - AU_32
+      - AU_24
+      - AU_13
+      - AU_40
+      - AU_23
+      - AU_29
+      - AU_25
+      - AU_30
+      - AU_08
+      - AU_16
+      - US_294
+      - US_302
+      - US_303
+      - AU_50
+      - AM_亚美尼亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BR_巴西_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - BZ_伯利兹_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CA_加拿大_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - CN_中国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - CO_哥伦比亚_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - CY_塞浦路斯_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - DE_德国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - FR_法国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - GB_英国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - HK_香港_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - IN_印度_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - JP_日本_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - LU_卢森堡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - MO_澳门_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - SG_新加坡_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - TW_台湾_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_12
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_13
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_14
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_15
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_16
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - US_美国_欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_1
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_10
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_2
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_3
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_4
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_5
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_6
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_7
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_8
+      - 欢迎订阅小閑哥频道❤️telegram群组：https://t.me/+iTyt7VgBsHdjZTc1_9
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
