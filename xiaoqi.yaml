@@ -5,371 +5,491 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 0.84|youtube阿伟科技, server: eduall.buzzline.org, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
-  - {name: DE 德国(youtube阿伟科技), server: pro01.my1188.org, port: 3183, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de01.contabo.nbsd.us}}, udp: true}
-  - {name: FR 法国(youtube阿伟科技), server: 203.30.191.192, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /IYKLD53M, headers: {Host: opfr1.v2rayfree1.xyz}}, udp: true}
-  - {name: HK 香港 多台负载均衡(youtube阿伟科技), server: in02.my1188.org, port: 63078, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk-balancer.airport-v2.com}}, udp: true}
-  - {name: HK 香港 多台负载均衡(youtube阿伟科技) 2, server: in01.my1188.org, port: 63078, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk-balancer.airport-v2.com}}, udp: true}
-  - {name: HK 香港(youtube阿伟科技), server: gddx.fosi.hk, port: 35499, type: vmess, uuid: 4aeabaff-1db1-4c1e-a273-1445bfecd11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
-  - {name: HK 香港(youtube阿伟科技) 2, server: fsyy.fosi.hk, port: 43706, type: vmess, uuid: 4d6de244-8f8a-498f-9d5c-6d7e8588880b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: fsyy.fosi.hk}}, udp: true}
-  - {name: HK 香港(youtube阿伟科技) 3, server: gddx.fosi.hk, port: 60952, type: vmess, uuid: d57e3525-71e8-44ed-8120-70334f04169f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}, udp: true}
-  - {name: HK 香港(youtube阿伟科技) 4, server: fsyy.fosi.hk, port: 43706, type: vmess, uuid: 4d0fdb42-258f-4418-8bed-d7bc32f3de0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: fsyy.fosi.hk}}, udp: true}
-  - {name: HK+香港(youtube阿伟科技), server: asdmnioqw21dom.nekodafu.xyz, port: 17701, type: ss, cipher: chacha20-ietf-poly1305, password: b6d1bdd5-b8fd-4a10-96ab-b3b41dbd8357, udp: true}
-  - {name: IN 印度01(youtube阿伟科技), server: in05.my1188.org, port: 63051, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hls, headers: {Host: mugua-in01.airport-v2.com}}, udp: true}
-  - {name: JP 日本 多台负载均衡 (youtube阿伟科技), server: in06.my1188.org, port: 63086, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
-  - {name: JP 日本 多台负载均衡(youtube阿伟科技), server: in03.my1188.org, port: 63086, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
-  - {name: JP 日本 多台负载均衡(youtube阿伟科技) 2, server: in04.my1188.org, port: 63086, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
-  - {name: JP 日本(youtube阿伟科技), server: c186608d-6bef-4eb3-ac43-331a3e5333ea.wnbo.top, port: 45530, type: trojan, password: da398ff5-137f-49b9-98ef-63b154afdca4, sni: azjp.aac6fef.top, skip-cert-verify: true, udp: true}
-  - {name: JP 日本(youtube阿伟科技) 2, server: azsh01.1aba.cn, port: 37363, type: vmess, uuid: 4d0fdb42-258f-4418-8bed-d7bc32f3de0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: JP 日本(youtube阿伟科技) 3, server: shcu.1aba.cn, port: 11613, type: vmess, uuid: 4aeabaff-1db1-4c1e-a273-1445bfecd11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: shcu.1aba.cn}}, udp: true}
-  - {name: JP 日本(youtube阿伟科技) 4, server: jp1.a100.sbs, port: 2001, type: vmess, uuid: d13a3a08-411b-46eb-87c5-023bc8b61db9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: KR 韩国(youtube阿伟科技), server: b1.thesixshadow.com, port: 58034, type: trojan, password: 6774c61a-4ffc-4437-b23b-c479dc1daa4a, sni: id34-1.91merry.top, skip-cert-verify: true, udp: true}
-  - {name: KR 韩国(youtube阿伟科技) 2, server: kr-direct.node002.xyz, port: 445, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: RU 俄罗斯(youtube阿伟科技), server: in01.my1188.org, port: 63071, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mugua-ru01.myn1des.com}}, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技), server: azbj01.1aba.cn, port: 38676, type: vmess, uuid: 4d6de244-8f8a-498f-9d5c-6d7e8588880b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azbj01.1aba.cn}}, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技) 2, server: azsh01.1aba.cn, port: 30002, type: vmess, uuid: 4d0fdb42-258f-4418-8bed-d7bc32f3de0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技) 3, server: ydgy.fosi.hk, port: 28572, type: vmess, uuid: 4d6de244-8f8a-498f-9d5c-6d7e8588880b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: ydgy.fosi.hk}}, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技) 4, server: ydgy.fosi.hk, port: 28572, type: vmess, uuid: 4d0fdb42-258f-4418-8bed-d7bc32f3de0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: ydgy.fosi.hk}}, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技) 5, server: ydgy.fosi.hk, port: 28572, type: vmess, uuid: d57e3525-71e8-44ed-8120-70334f04169f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: ydgy.fosi.hk}}, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技) 6, server: azbj01.1aba.cn, port: 38676, type: vmess, uuid: 4aeabaff-1db1-4c1e-a273-1445bfecd11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azbj01.1aba.cn}}, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技) 7, server: hncu.donghui.tech, port: 23050, type: vmess, uuid: 4d0fdb42-258f-4418-8bed-d7bc32f3de0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: hncu.donghui.tech}}, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技) 8, server: r97q.cdn.node.a.tddns-ounk.com, port: 13567, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, headers: {Host: r97q.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技) 9, server: azsh01.1aba.cn, port: 30002, type: vmess, uuid: 4d6de244-8f8a-498f-9d5c-6d7e8588880b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技) 10, server: azsh01.1aba.cn, port: 30002, type: vmess, uuid: 4aeabaff-1db1-4c1e-a273-1445bfecd11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: SG 新加坡(youtube阿伟科技) 11, server: r97q.cdn.node.a.tddns-ounk.com, port: 12988, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, headers: {Host: r97q.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: speednode_0063, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5435:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: TW 台湾(youtube阿伟科技), server: 6a9f4.cdn.node.a.tddns-ounk.com, port: 20623, type: vmess, uuid: e9376e2a-edf7-3c19-94e4-d526794a15bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: 6a9f4.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: TW 台湾(youtube阿伟科技) 2, server: tw99-hinet.mynodes001.one, port: 445, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TW 台湾(youtube阿伟科技) 3, server: fsyy.fosi.hk, port: 30459, type: vmess, uuid: d57e3525-71e8-44ed-8120-70334f04169f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: fsyy.fosi.hk}}, udp: true}
-  - {name: TW 台湾(youtube阿伟科技) 4, server: tw99-hinet.mynodes001.one, port: 445, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TW 台湾(youtube阿伟科技) 5, server: mjk6.cdn.node.a.tddns-ounk.com, port: 13307, type: vmess, uuid: 00c902b5-5fce-3845-bc55-e7517d30fcc1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, headers: {Host: mjk6.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: US 396 SSR, server: ssrfree.zhujicn2.net, port: 10001, type: ssr, cipher: aes-256-cfb, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: US 美国(youtube阿伟科技), server: azsh01.1aba.cn, port: 54958, type: vmess, uuid: 4aeabaff-1db1-4c1e-a273-1445bfecd11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: US 美国(youtube阿伟科技) 2, server: azsh01.1aba.cn, port: 54958, type: vmess, uuid: 4d6de244-8f8a-498f-9d5c-6d7e8588880b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}, udp: true}
-  - {name: V1-台湾 多台负载均衡(youtube阿伟科技), server: in02.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: tw-load-balancer.myn1des.com}}, udp: true}
-  - {name: V1-台湾 多台负载均衡(youtube阿伟科技) 2, server: in06.my1188.org, port: 63088, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: tw-load-balancer.myn1des.com}}, udp: true}
-  - {name: VN 越南(youtube阿伟科技), server: 203.30.190.191, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: VN 越南(youtube阿伟科技) 2, server: 203.30.189.190, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
+  - {name: (youtube阿伟科技), server: cmaisallin.debugspace.work, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: (youtube阿伟科技) 2, server: cnrefhk2.standurl.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: (youtube阿伟科技) 3, server: cmlayer02.debugex.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: (youtube阿伟科技) 4, server: cmlayer02.debugex.xyz, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: (youtube阿伟科技) 5, server: cucshk4.debugex.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: (youtube阿伟科技) 6, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: None, obfs-param: "", udp: true}
+  - {name: (youtube阿伟科技) 7, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: _SG_新加坡(youtube阿伟科技)1, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 0.23|SG新加坡(youtube阿伟科技)2, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 0.84|youtube阿伟科技(youtube阿伟科技)3, server: eduall.buzzline.org, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 55956:111111, obfs-param: "", udp: true}
+  - {name: AU 澳大利亚(youtube阿伟科技), server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}, udp: true}
+  - {name: CA 加拿大(youtube阿伟科技), server: cacerts.digicert.com, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/1736960111/63859b95e5be4/, headers: {Host: sg2-v2ray.sshkit.org}}, udp: true}
+  - {name: DE 德国(youtube阿伟科技), server: 5.161.50.211, port: 8081, type: vmess, uuid: 9e8c85d7-5f9f-4995-bedb-c415e26207e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 5.161.50.211}}, udp: true}
+  - {name: DE 德国(youtube阿伟科技) 2, server: 5.161.50.211, port: 8081, type: vmess, uuid: 9e8c85d7-5f9f-4995-bedb-c415e26207e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 5.161.50.211}}, udp: true}
+  - {name: DE 德国(youtube阿伟科技) 3, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: DE 德国(youtube阿伟科技) 4, server: 2607:f130:0:103::72f9:6485, port: 65002, type: vmess, uuid: f89e6e0b-c993-4390-a410-5755fdc83858, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: FR 法国(youtube阿伟科技), server: 203.24.108.10, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
+  - {name: FR 法国(youtube阿伟科技) 2, server: news.microsoft.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: FR 法国(youtube阿伟科技) 3, server: news.microsoft.com, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /IYKLD53M, headers: {Host: opfr1.v2rayfree1.xyz}}, udp: true}
+  - {name: FR 法国(youtube阿伟科技) 4, server: cacerts.digicert.com, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /IYKLD53M, headers: {Host: opfr1.v2rayfree1.xyz}}, udp: true}
+  - {name: FR 法国(youtube阿伟科技) 5, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /IYKLD53M, headers: {Host: opfr1.v2rayfree1.xyz}}, udp: true}
+  - {name: FR 法国(youtube阿伟科技) 6, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /IYKLD53M, headers: {Host: opfr1.v2rayfree1.xyz}}, udp: true}
+  - {name: FR 法国(youtube阿伟科技) 7, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: FR 法国(youtube阿伟科技) 8, server: cacerts.digicert.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技), server: 20.239.94.179, port: 443, type: trojan, password: ce6a8639-e367-42bd-bcc7-a5857f713386, sni: data-hk.efyunpan.com, skip-cert-verify: true, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 2, server: ka.funkyun.tk, port: 443, type: vmess, uuid: 2b5e5dec-4bb0-469b-9941-6b39ada28589, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: "", grpc-opts: {grpc-mode: gun, grpc-service-name: funkyun}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 3, server: ka.funkyun.tk, port: 443, type: vmess, uuid: ab22bd85-ba06-41b6-aead-e2d6015e3af3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: "", grpc-opts: {grpc-mode: gun, grpc-service-name: funkyun}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 4, server: zf.hn.cu.edu.kg, port: 33105, type: vmess, uuid: 4db4696e-e2b8-433e-8c4a-2932f2753146, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: "", grpc-opts: {grpc-mode: gun, grpc-service-name: funkyun1}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 5, server: zf.hn.cu.edu.kg, port: 33105, type: vmess, uuid: 2b5e5dec-4bb0-469b-9941-6b39ada28589, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: "", grpc-opts: {grpc-mode: gun, grpc-service-name: funkyun1}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 6, server: gg.funkyun.ml, port: 28638, type: vmess, uuid: 2b5e5dec-4bb0-469b-9941-6b39ada28589, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: "", grpc-opts: {grpc-mode: gun, grpc-service-name: funkyun1}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 7, server: news.microsoft.com, port: 443, type: vmess, uuid: 4456b502-fe61-4be7-a969-aa37d924dbd2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk11.sanfen001.pics}}, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 8, server: ying-moble.gatknqh.cn, port: 40207, type: vmess, uuid: fb1645f7-068a-3b40-a9bf-5c49bb1bf4e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK 香港(youtube阿伟科技) 9, server: ingress-i2.iivvppnn.info, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
+  - {name: HK+香港(youtube阿伟科技), server: ss-18.t8737.shop, port: 7448, type: ss, cipher: chacha20-ietf-poly1305, password: 7a93c940-bda9-415e-a4e2-9324c5b6bcfb, udp: true}
+  - {name: HK+香港(youtube阿伟科技) 2, server: ss-18.t8737.shop, port: 7448, type: ss, cipher: chacha20-ietf-poly1305, password: e3662ee9-0283-4360-bd30-979f2eb85cd6, udp: true}
+  - {name: HK+香港(youtube阿伟科技) 3, server: 04.123445566.xyz, port: 15414, type: ss, cipher: chacha20-ietf-poly1305, password: 7b011243-7ef5-4867-8118-36306763f492, udp: true}
+  - {name: HK+香港(youtube阿伟科技) 4, server: 04.123445566.xyz, port: 15414, type: ss, cipher: chacha20-ietf-poly1305, password: 1662720a-0ade-4a7f-be3c-bcdc0245afe8, udp: true}
+  - {name: ID 印尼(youtube阿伟科技), server: news.microsoft.com, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/1736960111/63859b5b38f53/, headers: {Host: sg1-v2ray.sshkit.org}}, udp: true}
+  - {name: ID 印尼(youtube阿伟科技) 2, server: cacerts.digicert.com, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/1736960111/63859b5b38f53/, headers: {Host: sg1-v2ray.sshkit.org}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技), server: jp3.lianpi.xyz, port: 54234, type: trojan, password: bdecf580-0294-4231-a6b2-64205f04055b, sni: jp3.lianpi.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 2, server: jp.funkyun.tk, port: 1414, type: vmess, uuid: a263e865-1cf9-473a-a93e-57bec9a99dba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: "", grpc-opts: {grpc-mode: gun, grpc-service-name: funkyun}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 3, server: jp.funkyun.tk, port: 1414, type: vmess, uuid: ab22bd85-ba06-41b6-aead-e2d6015e3af3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: grpc, servername: "", grpc-opts: {grpc-mode: gun, grpc-service-name: funkyun}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 4, server: jp-03.lynet.works, port: 45678, type: vmess, uuid: e65ac922-0b68-4aa9-90a4-75d93a074fc5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp-03.lynet.works}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 5, server: jp-04.lynet.works, port: 45678, type: vmess, uuid: 2f640e95-a16a-4cfc-8f0f-c5ffbad3b988, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp-04.lynet.works}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 6, server: jp-01.lynet.works, port: 50000, type: vmess, uuid: e65ac922-0b68-4aa9-90a4-75d93a074fc5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp-01.lynet.works}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 7, server: shcu.1aba.cn, port: 29382, type: vmess, uuid: cd2bc20d-5a2c-44db-b1b0-94f68ffaf780, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yuefei, headers: {Host: shcu.1aba.cn}}, udp: true}
+  - {name: JP 日本(youtube阿伟科技) 8, server: jp-orcle2.clientsconnect.live, port: 10086, type: vmess, uuid: 1e43643e-39e6-4352-b7b9-357c9d5f8ded, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yuefei, headers: {Host: jp-orcle2.clientsconnect.live}}, udp: true}
+  - {name: KR 韩国(youtube阿伟科技), server: ko2.lianpi.xyz, port: 64123, type: trojan, password: bdecf580-0294-4231-a6b2-64205f04055b, sni: ko2.lianpi.xyz, skip-cert-verify: true, udp: true}
+  - {name: KR 韩国(youtube阿伟科技) 2, server: ko3.lianpi.xyz, port: 56145, type: trojan, password: bdecf580-0294-4231-a6b2-64205f04055b, sni: ko3.lianpi.xyz, skip-cert-verify: true, udp: true}
+  - {name: KR 韩国(youtube阿伟科技) 3, server: ying-moble.gatknqh.cn, port: 40222, type: vmess, uuid: fb1645f7-068a-3b40-a9bf-5c49bb1bf4e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: KR 韩国(youtube阿伟科技) 4, server: ying-moble.gatknqh.cn, port: 40223, type: vmess, uuid: fb1645f7-068a-3b40-a9bf-5c49bb1bf4e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: KR 韩国(youtube阿伟科技) 5, server: 13.209.68.219, port: 42517, type: vmess, uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 13.209.68.219}}, udp: true}
+  - {name: KR 韩国(youtube阿伟科技) 6, server: kr1.sanfen001.pics, port: 443, type: vmess, uuid: 4456b502-fe61-4be7-a969-aa37d924dbd2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: kr1.sanfen001.pics}}, udp: true}
+  - {name: KR 韩国(youtube阿伟科技) 7, server: kr1.sanfen001.pics, port: 443, type: vmess, uuid: 4456b502-fe61-4be7-a969-aa37d924dbd2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: kr1.sanfen001.pics}}, udp: true}
+  - {name: NL 荷兰(youtube阿伟科技), server: news.microsoft.com, port: 443, type: vmess, uuid: 3f421e27-5bf8-40c9-86cb-7b8c41dddea2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /lXvA0Vse/, headers: {Host: hl1.cachexy.ga}}, udp: true}
+  - {name: NL 荷兰(youtube阿伟科技) 2, server: king2.mmadserr.ml, port: 2095, type: vmess, uuid: dabdbbec-f774-41ff-a296-18026f469a97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fhf5hfth565fhtf, headers: {Host: king2.mmadserr.ml}}, udp: true}
+  - {name: NL 荷兰(youtube阿伟科技) 3, server: king6.workingoogle.ga, port: 8880, type: vmess, uuid: 050624ec-ba6a-49c3-e8d9-c46e5c167be0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fh454hg4fthfh, headers: {Host: king6.workingoogle.ga}}, udp: true}
+  - {name: RU 俄罗斯(youtube阿伟科技), server: els200.jslist.tk, port: 8443, type: vmess, uuid: e30cfa80-bc2c-43df-e808-97876aee77e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wo.php, headers: {Host: els200.jslist.tk}}, udp: true}
+  - {name: SG 新加坡(youtube阿伟科技), server: fbi.gov, port: 2086, type: vmess, uuid: 929029a5-9d88-4e2f-ee35-918fea716b77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@heinuhome, headers: {Host: heinuhome-gcore-singapore.heinu.cf}}, udp: true}
+  - {name: SG 新加坡(youtube阿伟科技) 2, server: racknerd.com, port: 2086, type: vmess, uuid: e3cfb09c-deb9-4a83-d5e3-1c96ea2d93b1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aries, headers: {Host: azstu.cloudflare.quest}}, udp: true}
+  - {name: SG 新加坡(youtube阿伟科技) 3, server: ying-moble.gatknqh.cn, port: 40210, type: vmess, uuid: fb1645f7-068a-3b40-a9bf-5c49bb1bf4e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG 新加坡(youtube阿伟科技) 4, server: news.microsoft.com, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/1736960111/63859be1a762c/, headers: {Host: sg4-v2ray.sshkit.org}}, udp: true}
+  - {name: SG 新加坡(youtube阿伟科技) 5, server: dosg.gmlovebaipiao.tech, port: 8443, type: vmess, uuid: 706596c5-2315-41e9-c97b-5a4d32ffd5e6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /GenshinMinecraft, headers: {Host: dosg.gmlovebaipiao.tech}}, udp: true}
+  - {name: SG+新加坡(youtube阿伟科技), server: 04.123445566.xyz, port: 42716, type: ss, cipher: chacha20-ietf-poly1305, password: 1662720a-0ade-4a7f-be3c-bcdc0245afe8, udp: true}
+  - {name: SG+新加坡(youtube阿伟科技) 2, server: 04.123445566.xyz, port: 42716, type: ss, cipher: chacha20-ietf-poly1305, password: 7b011243-7ef5-4867-8118-36306763f492, udp: true}
+  - {name: SG+新加坡(youtube阿伟科技) 3, server: ss-18.t8737.shop, port: 7448, type: ss, cipher: chacha20-ietf-poly1305, password: 1bd8d805-b0fa-4b40-a58e-6a935b68d223, udp: true}
+  - {name: TW 台湾(youtube阿伟科技), server: sldron.kctr2038.icu, port: 11189, type: trojan, password: bdecf580-0294-4231-a6b2-64205f04055b, sni: sldron.kctr2038.icu, skip-cert-verify: true, udp: true}
+  - {name: UK 英国(youtube阿伟科技), server: ying-moble.gatknqh.cn, port: 40228, type: vmess, uuid: fb1645f7-068a-3b40-a9bf-5c49bb1bf4e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: UK 英国(youtube阿伟科技) 2, server: v3.583181.xyz, port: 125, type: vmess, uuid: 07f70760-3167-48c4-aa4d-3c81f5266b35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pull.free.video.10010.com}}, udp: true}
+  - {name: UK 英国(youtube阿伟科技) 3, server: ying-moble.gatknqh.cn, port: 40228, type: vmess, uuid: fb1645f7-068a-3b40-a9bf-5c49bb1bf4e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 美国(youtube阿伟科技), server: news.microsoft.com, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 2, server: news.microsoft.com, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 3, server: cu.gongyiyun.cf, port: 2095, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dknbyn3lw16n5elj.gongyiyun.cf}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 4, server: cu.gongyiyun.cf, port: 2095, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dknbyn3lw16n5elj.gongyiyun.cf}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 5, server: us-03.lynet.works, port: 45678, type: vmess, uuid: 21192349-89e2-4499-9b0d-d6bdcb77d0fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-03.lynet.works}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 6, server: us-03.lynet.works, port: 45678, type: vmess, uuid: 2f640e95-a16a-4cfc-8f0f-c5ffbad3b988, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-03.lynet.works}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 7, server: ying-unicom.gatknqh.cn, port: 40224, type: vmess, uuid: fb1645f7-068a-3b40-a9bf-5c49bb1bf4e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 美国(youtube阿伟科技) 8, server: news.microsoft.com, port: 443, type: vmess, uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ca.0112233.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 9, server: ying-unicom.gatknqh.cn, port: 40225, type: vmess, uuid: fb1645f7-068a-3b40-a9bf-5c49bb1bf4e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US 美国(youtube阿伟科技) 10, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxusovz2.fovi.tk}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 11, server: uk-01.lynet.works, port: 8080, type: vmess, uuid: b4909175-2095-4ad5-ac41-22570fdfd18c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: uk-01.lynet.works}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 12, server: us-02.lynet.works, port: 45678, type: vmess, uuid: 21192349-89e2-4499-9b0d-d6bdcb77d0fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-02.lynet.works}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 13, server: news.microsoft.com, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 14, server: main.millionaireaisle.com, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxusovz2.fovi.tk}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 15, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 16, server: main.millionaireaisle.com, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxusovz3.fovi.tk}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 17, server: v13.583182.xyz, port: 2053, type: vmess, uuid: 07f70760-3167-48c4-aa4d-3c81f5266b35, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v13.583181.xyz}}, udp: true}
+  - {name: US 美国(youtube阿伟科技) 18, server: 203.30.188.188, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
+  - {name: VN 越南(youtube阿伟科技), server: 42.96.3.10, port: 80, type: vmess, uuid: c169fa50-a06e-4615-bec2-a776b102bc22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpngiare.net, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: VN 越南(youtube阿伟科技) 2, server: 185.162.228.229, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
   - {name: VN 越南(youtube阿伟科技) 3, server: news.microsoft.com, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: 澳大利亚(youtube阿伟科技), server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}, udp: true}
-  - {name: 德国(youtube阿伟科技), server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol2.fovi.tk}}, udp: true}
-  - {name: "俄罗斯 A-[使用前先更新订阅!]", server: eduall.buzzline.org, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5435:SVIPTIZ8, obfs-param: 23ffd711.microsoft.com, udp: true}
-  - {name: 俄罗斯(youtube阿伟科技), server: eduall.buzzline.org, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5435:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 俄罗斯(youtube阿伟科技) 2, server: eduall.buzzline.org, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5435:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 俄罗斯(youtube阿伟科技) 3, server: eduall.buzzline.org, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5435:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 法国(youtube阿伟科技), server: 8.209.80.231, port: 80, type: vmess, uuid: 0f1f1cca-56dc-4feb-8b4b-50ab074f4467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: w1.800876.xyz}}, udp: true}
-  - {name: 法国(youtube阿伟科技) 2, server: news.microsoft.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: 法国(youtube阿伟科技) 3, server: news.microsoft.com, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /IYKLD53M, headers: {Host: opfr1.v2rayfree1.xyz}}, udp: true}
-  - {name: 法国(youtube阿伟科技) 4, server: 203.30.188.120, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /IYKLD53M, headers: {Host: opfr1.v2rayfree1.xyz}}, udp: true}
-  - {name: 韩国高速 A, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5435:SVIPTIZ8, obfs-param: 23ffd711.microsoft.com, udp: true}
-  - {name: 荷兰, server: eduall.buzzline.org, port: 611, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5435:SVIPTIZ8, obfs-param: 23ffd711.microsoft.com, udp: true}
-  - {name: 美国(youtube阿伟科技), server: dns01.wisdomfree.ml, port: 8443, type: vmess, uuid: 4596acf5-98da-4832-84bd-e792681a132a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dns01.wisdomfree.ml}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 2, server: dns01.wisdomfree.ml, port: 8443, type: vmess, uuid: 4596acf5-98da-4832-84bd-e792681a132a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dns01.wisdomfree.ml}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 3, server: 203.30.191.193, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 4, server: 203.30.188.189, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 5, server: 203.30.191.192, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 6, server: news.microsoft.com, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 7, server: 185.162.228.230, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 8, server: 203.30.189.189, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
-  - {name: 美国(youtube阿伟科技) 9, server: news.microsoft.com, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}, udp: true}
-  - {name: 日本(youtube阿伟科技), server: yd-03.paofunlink.com, port: 1055, type: ssr, cipher: chacha20-ietf, password: bxsnucrgk6hfish, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 239369:kxmAnw, obfs-param: V20xRk1FOUhXWGxOZW10NlRtcHJkV0pYYkdwamJUbDZZakphTUV4dFRuWmlVUT09, udp: true}
-  - {name: 日本(youtube阿伟科技) 2, server: 20004.purefast2.com, port: 20004, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
-  - {name: 日本(youtube阿伟科技) 3, server: jp04-vm0.entry.srthdw.art, port: 447, type: vmess, uuid: 03dd7fee-62a6-3f69-8937-33e5a413fd9a, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: bf419d5f59f7d0.windowsupdate.com}}, udp: true}
-  - {name: 日本(youtube阿伟科技) 4, server: in05.my1188.org, port: 63086, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
-  - {name: 日本(youtube阿伟科技) 5, server: jp-direct.node002.xyz, port: 445, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 日本(youtube阿伟科技) 6, server: 6a9jh.cdn.node.a.tddns-ounk.com, port: 20522, type: vmess, uuid: e9376e2a-edf7-3c19-94e4-d526794a15bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /009c250b-54f5-43a8-8b18-dccbb5d8c66a.y.live01.m3u8, headers: {Host: 6a9jh.cdn.node.a.tddns-ounk.com}}, udp: true}
-  - {name: 台湾(youtube阿伟科技), server: 20016.purefast2.com, port: 20016, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
-  - {name: 香港 HKBN D, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5435:SVIPTIZ8, obfs-param: 23ffd711.microsoft.com, udp: true}
-  - {name: 香港 HKT A, server: 1cnrelay.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5435:SVIPTIZ8, obfs-param: 23ffd711.microsoft.com, udp: true}
-  - {name: 香港 HKT K, server: 3layer03.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5435:SVIPTIZ8, obfs-param: 23ffd711.microsoft.com, udp: true}
-  - {name: 香港(youtube阿伟科技), server: shcuzxhk.eucdurl.me, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5435:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 香港(youtube阿伟科技) 2, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5435:SVIPTIZ8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
-  - {name: 香港(youtube阿伟科技) 3, server: 20014.purefast2.com, port: 20014, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
-  - {name: 香港(youtube阿伟科技) 4, server: ingress-i2.iivvppnn.info, port: 38106, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: 香港动态 HKT C, server: shcuzxhk.eucdurl.me, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5435:SVIPTIZ8, obfs-param: 23ffd711.microsoft.com, udp: true}
-  - {name: 新加坡(youtube阿伟科技), server: 20006.purefast2.com, port: 20006, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡(youtube阿伟科技) 2, server: 138.2.83.217, port: 43863, type: vmess, uuid: ca984457-b017-46e5-d973-42a3c3fdc292, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [apple.com]}}, udp: true}
-  - {name: 英国 iplayer A, server: eduall.buzzline.org, port: 613, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 5435:SVIPTIZ8, obfs-param: 23ffd711.microsoft.com, udp: true}
-  - {name: 英国(youtube阿伟科技), server: 20009.purefast2.com, port: 20009, type: trojan, password: d3a422a0-0714-3196-9cc1-4b5f3e48237e, sni: purefast1.com, skip-cert-verify: true, udp: true}
-  - {name: 越南(youtube阿伟科技), server: news.microsoft.com, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
+  - {name: VN 越南(youtube阿伟科技) 4, server: news.microsoft.com, port: 443, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sshkit/1736960111/63859bc177a33/, headers: {Host: sg3-v2ray.sshkit.org}}, udp: true}
+  - {name: VN 越南(youtube阿伟科技) 5, server: 203.30.189.190, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
+  - {name: VN 越南(youtube阿伟科技) 6, server: 47.90.164.120, port: 80, type: vmess, uuid: 0f1f1cca-56dc-4feb-8b4b-50ab074f4467, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: w1.800876.xyz}}, udp: true}
+  - {name: VN 越南(youtube阿伟科技) 7, server: 203.24.108.9, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
+  - {name: "俄罗斯A-[使用前先更新订阅!]", server: eduall.buzzline.org, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 俄罗斯C(youtube阿伟科技)4, server: eduall.buzzline.org, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 韩国高速A(youtube阿伟科技)5, server: cmaisallin.debugspace.work, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 荷兰_1(youtube阿伟科技)6, server: eduall.buzzline.org, port: 611, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 荷兰_2(youtube阿伟科技)7, server: eduall.buzzline.org, port: 611, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 美国优化2F3.5_1(youtube阿伟科技)9, server: usstand2.eucdurl.me, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 美国优化2F3.5_2(youtube阿伟科技)10, server: usstand2.eucdurl.me, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 美国优化A3.5(youtube阿伟科技)8, server: usstand1.eucdurl.me, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 土耳其(youtube阿伟科技)11, server: eduall.buzzline.org, port: 620, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港HKBND_1(youtube阿伟科技)12, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港HKBND_2(youtube阿伟科技)13, server: initest08.initcloud.pro, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港HKTD(youtube阿伟科技)14, server: cnhkall.debugex.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港HKTJ(youtube阿伟科技)15, server: cmlayer6.standurls.co, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港HKTK(youtube阿伟科技)16, server: 3layer03.initcloud.pro, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港动态HKTC_1(youtube阿伟科技)17, server: shcuzxhk.eucdurl.me, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 香港动态HKTC_2(youtube阿伟科技)18, server: shcuzxhk.eucdurl.me, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 新加坡优化1A_1(youtube阿伟科技)19, server: cmaisallin.debugspace.work, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 新加坡优化1A_2(youtube阿伟科技)20, server: cmaisallin.debugspace.work, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 新加坡优化2C(youtube阿伟科技)21, server: cnallaz2.eucdurl.me, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 意大利(youtube阿伟科技)22, server: eduall.buzzline.org, port: 612, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 英国iplayerA_1(youtube阿伟科技)23, server: eduall.buzzline.org, port: 613, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
+  - {name: 英国iplayerA_2(youtube阿伟科技)24, server: eduall.buzzline.org, port: 613, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 4502:Sviptiz8, obfs-param: MjNmZmQ3MTEubWljcm9zb2Z0LmNvbQ, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 0.84|youtube阿伟科技
+      - (youtube阿伟科技)
+      - (youtube阿伟科技) 2
+      - (youtube阿伟科技) 3
+      - (youtube阿伟科技) 4
+      - (youtube阿伟科技) 5
+      - (youtube阿伟科技) 6
+      - (youtube阿伟科技) 7
+      - _SG_新加坡(youtube阿伟科技)1
+      - 0.23|SG新加坡(youtube阿伟科技)2
+      - 0.84|youtube阿伟科技(youtube阿伟科技)3
+      - AU 澳大利亚(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技) 3
+      - DE 德国(youtube阿伟科技) 4
       - FR 法国(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技) 4
+      - FR 法国(youtube阿伟科技) 5
+      - FR 法国(youtube阿伟科技) 6
+      - FR 法国(youtube阿伟科技) 7
+      - FR 法国(youtube阿伟科技) 8
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
       - HK+香港(youtube阿伟科技)
-      - IN 印度01(youtube阿伟科技)
-      - JP 日本 多台负载均衡 (youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 3
+      - HK+香港(youtube阿伟科技) 4
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技)
       - JP 日本(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技) 3
       - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
+      - KR 韩国(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技) 6
+      - KR 韩国(youtube阿伟科技) 7
+      - NL 荷兰(youtube阿伟科技)
+      - NL 荷兰(youtube阿伟科技) 2
+      - NL 荷兰(youtube阿伟科技) 3
       - RU 俄罗斯(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技) 3
       - SG 新加坡(youtube阿伟科技) 4
       - SG 新加坡(youtube阿伟科技) 5
-      - SG 新加坡(youtube阿伟科技) 6
-      - SG 新加坡(youtube阿伟科技) 7
-      - SG 新加坡(youtube阿伟科技) 8
-      - SG 新加坡(youtube阿伟科技) 9
-      - SG 新加坡(youtube阿伟科技) 10
-      - SG 新加坡(youtube阿伟科技) 11
-      - speednode_0063
+      - SG+新加坡(youtube阿伟科技)
+      - SG+新加坡(youtube阿伟科技) 2
+      - SG+新加坡(youtube阿伟科技) 3
       - TW 台湾(youtube阿伟科技)
-      - TW 台湾(youtube阿伟科技) 2
-      - TW 台湾(youtube阿伟科技) 3
-      - TW 台湾(youtube阿伟科技) 4
-      - TW 台湾(youtube阿伟科技) 5
-      - US 396 SSR
+      - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
-      - V1-台湾 多台负载均衡(youtube阿伟科技)
-      - V1-台湾 多台负载均衡(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
       - VN 越南(youtube阿伟科技)
       - VN 越南(youtube阿伟科技) 2
       - VN 越南(youtube阿伟科技) 3
-      - 澳大利亚(youtube阿伟科技)
-      - 德国(youtube阿伟科技)
-      - 俄罗斯 A-[使用前先更新订阅!]
-      - 俄罗斯(youtube阿伟科技)
-      - 俄罗斯(youtube阿伟科技) 2
-      - 俄罗斯(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技)
-      - 法国(youtube阿伟科技) 2
-      - 法国(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技) 4
-      - 韩国高速 A
-      - 荷兰
-      - 美国(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 美国(youtube阿伟科技) 3
-      - 美国(youtube阿伟科技) 4
-      - 美国(youtube阿伟科技) 5
-      - 美国(youtube阿伟科技) 6
-      - 美国(youtube阿伟科技) 7
-      - 美国(youtube阿伟科技) 8
-      - 美国(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 台湾(youtube阿伟科技)
-      - 香港 HKBN D
-      - 香港 HKT A
-      - 香港 HKT K
-      - 香港(youtube阿伟科技)
-      - 香港(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 3
-      - 香港(youtube阿伟科技) 4
-      - 香港动态 HKT C
-      - 新加坡(youtube阿伟科技)
-      - 新加坡(youtube阿伟科技) 2
-      - 英国 iplayer A
-      - 英国(youtube阿伟科技)
-      - 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 4
+      - VN 越南(youtube阿伟科技) 5
+      - VN 越南(youtube阿伟科技) 6
+      - VN 越南(youtube阿伟科技) 7
+      - 俄罗斯A-[使用前先更新订阅!]
+      - 俄罗斯C(youtube阿伟科技)4
+      - 韩国高速A(youtube阿伟科技)5
+      - 荷兰_1(youtube阿伟科技)6
+      - 荷兰_2(youtube阿伟科技)7
+      - 美国优化2F3.5_1(youtube阿伟科技)9
+      - 美国优化2F3.5_2(youtube阿伟科技)10
+      - 美国优化A3.5(youtube阿伟科技)8
+      - 土耳其(youtube阿伟科技)11
+      - 香港HKBND_1(youtube阿伟科技)12
+      - 香港HKBND_2(youtube阿伟科技)13
+      - 香港HKTD(youtube阿伟科技)14
+      - 香港HKTJ(youtube阿伟科技)15
+      - 香港HKTK(youtube阿伟科技)16
+      - 香港动态HKTC_1(youtube阿伟科技)17
+      - 香港动态HKTC_2(youtube阿伟科技)18
+      - 新加坡优化1A_1(youtube阿伟科技)19
+      - 新加坡优化1A_2(youtube阿伟科技)20
+      - 新加坡优化2C(youtube阿伟科技)21
+      - 意大利(youtube阿伟科技)22
+      - 英国iplayerA_1(youtube阿伟科技)23
+      - 英国iplayerA_2(youtube阿伟科技)24
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 0.84|youtube阿伟科技
+      - (youtube阿伟科技)
+      - (youtube阿伟科技) 2
+      - (youtube阿伟科技) 3
+      - (youtube阿伟科技) 4
+      - (youtube阿伟科技) 5
+      - (youtube阿伟科技) 6
+      - (youtube阿伟科技) 7
+      - _SG_新加坡(youtube阿伟科技)1
+      - 0.23|SG新加坡(youtube阿伟科技)2
+      - 0.84|youtube阿伟科技(youtube阿伟科技)3
+      - AU 澳大利亚(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技) 3
+      - DE 德国(youtube阿伟科技) 4
       - FR 法国(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技) 4
+      - FR 法国(youtube阿伟科技) 5
+      - FR 法国(youtube阿伟科技) 6
+      - FR 法国(youtube阿伟科技) 7
+      - FR 法国(youtube阿伟科技) 8
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
       - HK+香港(youtube阿伟科技)
-      - IN 印度01(youtube阿伟科技)
-      - JP 日本 多台负载均衡 (youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 3
+      - HK+香港(youtube阿伟科技) 4
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技)
       - JP 日本(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技) 3
       - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
+      - KR 韩国(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技) 6
+      - KR 韩国(youtube阿伟科技) 7
+      - NL 荷兰(youtube阿伟科技)
+      - NL 荷兰(youtube阿伟科技) 2
+      - NL 荷兰(youtube阿伟科技) 3
       - RU 俄罗斯(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技) 3
       - SG 新加坡(youtube阿伟科技) 4
       - SG 新加坡(youtube阿伟科技) 5
-      - SG 新加坡(youtube阿伟科技) 6
-      - SG 新加坡(youtube阿伟科技) 7
-      - SG 新加坡(youtube阿伟科技) 8
-      - SG 新加坡(youtube阿伟科技) 9
-      - SG 新加坡(youtube阿伟科技) 10
-      - SG 新加坡(youtube阿伟科技) 11
-      - speednode_0063
+      - SG+新加坡(youtube阿伟科技)
+      - SG+新加坡(youtube阿伟科技) 2
+      - SG+新加坡(youtube阿伟科技) 3
       - TW 台湾(youtube阿伟科技)
-      - TW 台湾(youtube阿伟科技) 2
-      - TW 台湾(youtube阿伟科技) 3
-      - TW 台湾(youtube阿伟科技) 4
-      - TW 台湾(youtube阿伟科技) 5
-      - US 396 SSR
+      - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
-      - V1-台湾 多台负载均衡(youtube阿伟科技)
-      - V1-台湾 多台负载均衡(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
       - VN 越南(youtube阿伟科技)
       - VN 越南(youtube阿伟科技) 2
       - VN 越南(youtube阿伟科技) 3
-      - 澳大利亚(youtube阿伟科技)
-      - 德国(youtube阿伟科技)
-      - 俄罗斯 A-[使用前先更新订阅!]
-      - 俄罗斯(youtube阿伟科技)
-      - 俄罗斯(youtube阿伟科技) 2
-      - 俄罗斯(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技)
-      - 法国(youtube阿伟科技) 2
-      - 法国(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技) 4
-      - 韩国高速 A
-      - 荷兰
-      - 美国(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 美国(youtube阿伟科技) 3
-      - 美国(youtube阿伟科技) 4
-      - 美国(youtube阿伟科技) 5
-      - 美国(youtube阿伟科技) 6
-      - 美国(youtube阿伟科技) 7
-      - 美国(youtube阿伟科技) 8
-      - 美国(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 台湾(youtube阿伟科技)
-      - 香港 HKBN D
-      - 香港 HKT A
-      - 香港 HKT K
-      - 香港(youtube阿伟科技)
-      - 香港(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 3
-      - 香港(youtube阿伟科技) 4
-      - 香港动态 HKT C
-      - 新加坡(youtube阿伟科技)
-      - 新加坡(youtube阿伟科技) 2
-      - 英国 iplayer A
-      - 英国(youtube阿伟科技)
-      - 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 4
+      - VN 越南(youtube阿伟科技) 5
+      - VN 越南(youtube阿伟科技) 6
+      - VN 越南(youtube阿伟科技) 7
+      - 俄罗斯A-[使用前先更新订阅!]
+      - 俄罗斯C(youtube阿伟科技)4
+      - 韩国高速A(youtube阿伟科技)5
+      - 荷兰_1(youtube阿伟科技)6
+      - 荷兰_2(youtube阿伟科技)7
+      - 美国优化2F3.5_1(youtube阿伟科技)9
+      - 美国优化2F3.5_2(youtube阿伟科技)10
+      - 美国优化A3.5(youtube阿伟科技)8
+      - 土耳其(youtube阿伟科技)11
+      - 香港HKBND_1(youtube阿伟科技)12
+      - 香港HKBND_2(youtube阿伟科技)13
+      - 香港HKTD(youtube阿伟科技)14
+      - 香港HKTJ(youtube阿伟科技)15
+      - 香港HKTK(youtube阿伟科技)16
+      - 香港动态HKTC_1(youtube阿伟科技)17
+      - 香港动态HKTC_2(youtube阿伟科技)18
+      - 新加坡优化1A_1(youtube阿伟科技)19
+      - 新加坡优化1A_2(youtube阿伟科技)20
+      - 新加坡优化2C(youtube阿伟科技)21
+      - 意大利(youtube阿伟科技)22
+      - 英国iplayerA_1(youtube阿伟科技)23
+      - 英国iplayerA_2(youtube阿伟科技)24
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 0.84|youtube阿伟科技
+      - (youtube阿伟科技)
+      - (youtube阿伟科技) 2
+      - (youtube阿伟科技) 3
+      - (youtube阿伟科技) 4
+      - (youtube阿伟科技) 5
+      - (youtube阿伟科技) 6
+      - (youtube阿伟科技) 7
+      - _SG_新加坡(youtube阿伟科技)1
+      - 0.23|SG新加坡(youtube阿伟科技)2
+      - 0.84|youtube阿伟科技(youtube阿伟科技)3
+      - AU 澳大利亚(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技) 3
+      - DE 德国(youtube阿伟科技) 4
       - FR 法国(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技) 4
+      - FR 法国(youtube阿伟科技) 5
+      - FR 法国(youtube阿伟科技) 6
+      - FR 法国(youtube阿伟科技) 7
+      - FR 法国(youtube阿伟科技) 8
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
       - HK+香港(youtube阿伟科技)
-      - IN 印度01(youtube阿伟科技)
-      - JP 日本 多台负载均衡 (youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 3
+      - HK+香港(youtube阿伟科技) 4
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技)
       - JP 日本(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技) 3
       - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
+      - KR 韩国(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技) 6
+      - KR 韩国(youtube阿伟科技) 7
+      - NL 荷兰(youtube阿伟科技)
+      - NL 荷兰(youtube阿伟科技) 2
+      - NL 荷兰(youtube阿伟科技) 3
       - RU 俄罗斯(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技) 3
       - SG 新加坡(youtube阿伟科技) 4
       - SG 新加坡(youtube阿伟科技) 5
-      - SG 新加坡(youtube阿伟科技) 6
-      - SG 新加坡(youtube阿伟科技) 7
-      - SG 新加坡(youtube阿伟科技) 8
-      - SG 新加坡(youtube阿伟科技) 9
-      - SG 新加坡(youtube阿伟科技) 10
-      - SG 新加坡(youtube阿伟科技) 11
-      - speednode_0063
+      - SG+新加坡(youtube阿伟科技)
+      - SG+新加坡(youtube阿伟科技) 2
+      - SG+新加坡(youtube阿伟科技) 3
       - TW 台湾(youtube阿伟科技)
-      - TW 台湾(youtube阿伟科技) 2
-      - TW 台湾(youtube阿伟科技) 3
-      - TW 台湾(youtube阿伟科技) 4
-      - TW 台湾(youtube阿伟科技) 5
-      - US 396 SSR
+      - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
-      - V1-台湾 多台负载均衡(youtube阿伟科技)
-      - V1-台湾 多台负载均衡(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
       - VN 越南(youtube阿伟科技)
       - VN 越南(youtube阿伟科技) 2
       - VN 越南(youtube阿伟科技) 3
-      - 澳大利亚(youtube阿伟科技)
-      - 德国(youtube阿伟科技)
-      - 俄罗斯 A-[使用前先更新订阅!]
-      - 俄罗斯(youtube阿伟科技)
-      - 俄罗斯(youtube阿伟科技) 2
-      - 俄罗斯(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技)
-      - 法国(youtube阿伟科技) 2
-      - 法国(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技) 4
-      - 韩国高速 A
-      - 荷兰
-      - 美国(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 美国(youtube阿伟科技) 3
-      - 美国(youtube阿伟科技) 4
-      - 美国(youtube阿伟科技) 5
-      - 美国(youtube阿伟科技) 6
-      - 美国(youtube阿伟科技) 7
-      - 美国(youtube阿伟科技) 8
-      - 美国(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 台湾(youtube阿伟科技)
-      - 香港 HKBN D
-      - 香港 HKT A
-      - 香港 HKT K
-      - 香港(youtube阿伟科技)
-      - 香港(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 3
-      - 香港(youtube阿伟科技) 4
-      - 香港动态 HKT C
-      - 新加坡(youtube阿伟科技)
-      - 新加坡(youtube阿伟科技) 2
-      - 英国 iplayer A
-      - 英国(youtube阿伟科技)
-      - 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 4
+      - VN 越南(youtube阿伟科技) 5
+      - VN 越南(youtube阿伟科技) 6
+      - VN 越南(youtube阿伟科技) 7
+      - 俄罗斯A-[使用前先更新订阅!]
+      - 俄罗斯C(youtube阿伟科技)4
+      - 韩国高速A(youtube阿伟科技)5
+      - 荷兰_1(youtube阿伟科技)6
+      - 荷兰_2(youtube阿伟科技)7
+      - 美国优化2F3.5_1(youtube阿伟科技)9
+      - 美国优化2F3.5_2(youtube阿伟科技)10
+      - 美国优化A3.5(youtube阿伟科技)8
+      - 土耳其(youtube阿伟科技)11
+      - 香港HKBND_1(youtube阿伟科技)12
+      - 香港HKBND_2(youtube阿伟科技)13
+      - 香港HKTD(youtube阿伟科技)14
+      - 香港HKTJ(youtube阿伟科技)15
+      - 香港HKTK(youtube阿伟科技)16
+      - 香港动态HKTC_1(youtube阿伟科技)17
+      - 香港动态HKTC_2(youtube阿伟科技)18
+      - 新加坡优化1A_1(youtube阿伟科技)19
+      - 新加坡优化1A_2(youtube阿伟科技)20
+      - 新加坡优化2C(youtube阿伟科技)21
+      - 意大利(youtube阿伟科技)22
+      - 英国iplayerA_1(youtube阿伟科技)23
+      - 英国iplayerA_2(youtube阿伟科技)24
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -388,401 +508,516 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 0.84|youtube阿伟科技
+      - (youtube阿伟科技)
+      - (youtube阿伟科技) 2
+      - (youtube阿伟科技) 3
+      - (youtube阿伟科技) 4
+      - (youtube阿伟科技) 5
+      - (youtube阿伟科技) 6
+      - (youtube阿伟科技) 7
+      - _SG_新加坡(youtube阿伟科技)1
+      - 0.23|SG新加坡(youtube阿伟科技)2
+      - 0.84|youtube阿伟科技(youtube阿伟科技)3
+      - AU 澳大利亚(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技) 3
+      - DE 德国(youtube阿伟科技) 4
       - FR 法国(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技) 4
+      - FR 法国(youtube阿伟科技) 5
+      - FR 法国(youtube阿伟科技) 6
+      - FR 法国(youtube阿伟科技) 7
+      - FR 法国(youtube阿伟科技) 8
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
       - HK+香港(youtube阿伟科技)
-      - IN 印度01(youtube阿伟科技)
-      - JP 日本 多台负载均衡 (youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 3
+      - HK+香港(youtube阿伟科技) 4
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技)
       - JP 日本(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技) 3
       - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
+      - KR 韩国(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技) 6
+      - KR 韩国(youtube阿伟科技) 7
+      - NL 荷兰(youtube阿伟科技)
+      - NL 荷兰(youtube阿伟科技) 2
+      - NL 荷兰(youtube阿伟科技) 3
       - RU 俄罗斯(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技) 3
       - SG 新加坡(youtube阿伟科技) 4
       - SG 新加坡(youtube阿伟科技) 5
-      - SG 新加坡(youtube阿伟科技) 6
-      - SG 新加坡(youtube阿伟科技) 7
-      - SG 新加坡(youtube阿伟科技) 8
-      - SG 新加坡(youtube阿伟科技) 9
-      - SG 新加坡(youtube阿伟科技) 10
-      - SG 新加坡(youtube阿伟科技) 11
-      - speednode_0063
+      - SG+新加坡(youtube阿伟科技)
+      - SG+新加坡(youtube阿伟科技) 2
+      - SG+新加坡(youtube阿伟科技) 3
       - TW 台湾(youtube阿伟科技)
-      - TW 台湾(youtube阿伟科技) 2
-      - TW 台湾(youtube阿伟科技) 3
-      - TW 台湾(youtube阿伟科技) 4
-      - TW 台湾(youtube阿伟科技) 5
-      - US 396 SSR
+      - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
-      - V1-台湾 多台负载均衡(youtube阿伟科技)
-      - V1-台湾 多台负载均衡(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
       - VN 越南(youtube阿伟科技)
       - VN 越南(youtube阿伟科技) 2
       - VN 越南(youtube阿伟科技) 3
-      - 澳大利亚(youtube阿伟科技)
-      - 德国(youtube阿伟科技)
-      - 俄罗斯 A-[使用前先更新订阅!]
-      - 俄罗斯(youtube阿伟科技)
-      - 俄罗斯(youtube阿伟科技) 2
-      - 俄罗斯(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技)
-      - 法国(youtube阿伟科技) 2
-      - 法国(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技) 4
-      - 韩国高速 A
-      - 荷兰
-      - 美国(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 美国(youtube阿伟科技) 3
-      - 美国(youtube阿伟科技) 4
-      - 美国(youtube阿伟科技) 5
-      - 美国(youtube阿伟科技) 6
-      - 美国(youtube阿伟科技) 7
-      - 美国(youtube阿伟科技) 8
-      - 美国(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 台湾(youtube阿伟科技)
-      - 香港 HKBN D
-      - 香港 HKT A
-      - 香港 HKT K
-      - 香港(youtube阿伟科技)
-      - 香港(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 3
-      - 香港(youtube阿伟科技) 4
-      - 香港动态 HKT C
-      - 新加坡(youtube阿伟科技)
-      - 新加坡(youtube阿伟科技) 2
-      - 英国 iplayer A
-      - 英国(youtube阿伟科技)
-      - 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 4
+      - VN 越南(youtube阿伟科技) 5
+      - VN 越南(youtube阿伟科技) 6
+      - VN 越南(youtube阿伟科技) 7
+      - 俄罗斯A-[使用前先更新订阅!]
+      - 俄罗斯C(youtube阿伟科技)4
+      - 韩国高速A(youtube阿伟科技)5
+      - 荷兰_1(youtube阿伟科技)6
+      - 荷兰_2(youtube阿伟科技)7
+      - 美国优化2F3.5_1(youtube阿伟科技)9
+      - 美国优化2F3.5_2(youtube阿伟科技)10
+      - 美国优化A3.5(youtube阿伟科技)8
+      - 土耳其(youtube阿伟科技)11
+      - 香港HKBND_1(youtube阿伟科技)12
+      - 香港HKBND_2(youtube阿伟科技)13
+      - 香港HKTD(youtube阿伟科技)14
+      - 香港HKTJ(youtube阿伟科技)15
+      - 香港HKTK(youtube阿伟科技)16
+      - 香港动态HKTC_1(youtube阿伟科技)17
+      - 香港动态HKTC_2(youtube阿伟科技)18
+      - 新加坡优化1A_1(youtube阿伟科技)19
+      - 新加坡优化1A_2(youtube阿伟科技)20
+      - 新加坡优化2C(youtube阿伟科技)21
+      - 意大利(youtube阿伟科技)22
+      - 英国iplayerA_1(youtube阿伟科技)23
+      - 英国iplayerA_2(youtube阿伟科技)24
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - HK 香港 多台负载均衡(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
       - HK+香港(youtube阿伟科技)
-      - JP 日本 多台负载均衡 (youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 3
+      - HK+香港(youtube阿伟科技) 4
       - TW 台湾(youtube阿伟科技)
-      - TW 台湾(youtube阿伟科技) 2
-      - TW 台湾(youtube阿伟科技) 3
-      - TW 台湾(youtube阿伟科技) 4
-      - TW 台湾(youtube阿伟科技) 5
-      - V1-台湾 多台负载均衡(youtube阿伟科技)
-      - V1-台湾 多台负载均衡(youtube阿伟科技) 2
-      - 台湾(youtube阿伟科技)
-      - 香港 HKBN D
-      - 香港 HKT A
-      - 香港 HKT K
-      - 香港(youtube阿伟科技)
-      - 香港(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 3
-      - 香港(youtube阿伟科技) 4
-      - 香港动态 HKT C
+      - 香港HKBND_1(youtube阿伟科技)12
+      - 香港HKBND_2(youtube阿伟科技)13
+      - 香港HKTD(youtube阿伟科技)14
+      - 香港HKTJ(youtube阿伟科技)15
+      - 香港HKTK(youtube阿伟科技)16
+      - 香港动态HKTC_1(youtube阿伟科技)17
+      - 香港动态HKTC_2(youtube阿伟科技)18
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 0.84|youtube阿伟科技
+      - (youtube阿伟科技)
+      - (youtube阿伟科技) 2
+      - (youtube阿伟科技) 3
+      - (youtube阿伟科技) 4
+      - (youtube阿伟科技) 5
+      - (youtube阿伟科技) 6
+      - (youtube阿伟科技) 7
+      - _SG_新加坡(youtube阿伟科技)1
+      - 0.23|SG新加坡(youtube阿伟科技)2
+      - 0.84|youtube阿伟科技(youtube阿伟科技)3
+      - AU 澳大利亚(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技) 3
+      - DE 德国(youtube阿伟科技) 4
       - FR 法国(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技) 4
+      - FR 法国(youtube阿伟科技) 5
+      - FR 法国(youtube阿伟科技) 6
+      - FR 法国(youtube阿伟科技) 7
+      - FR 法国(youtube阿伟科技) 8
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
       - HK+香港(youtube阿伟科技)
-      - IN 印度01(youtube阿伟科技)
-      - JP 日本 多台负载均衡 (youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 3
+      - HK+香港(youtube阿伟科技) 4
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技)
       - JP 日本(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技) 3
       - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
+      - KR 韩国(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技) 6
+      - KR 韩国(youtube阿伟科技) 7
+      - NL 荷兰(youtube阿伟科技)
+      - NL 荷兰(youtube阿伟科技) 2
+      - NL 荷兰(youtube阿伟科技) 3
       - RU 俄罗斯(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技) 3
       - SG 新加坡(youtube阿伟科技) 4
       - SG 新加坡(youtube阿伟科技) 5
-      - SG 新加坡(youtube阿伟科技) 6
-      - SG 新加坡(youtube阿伟科技) 7
-      - SG 新加坡(youtube阿伟科技) 8
-      - SG 新加坡(youtube阿伟科技) 9
-      - SG 新加坡(youtube阿伟科技) 10
-      - SG 新加坡(youtube阿伟科技) 11
-      - speednode_0063
+      - SG+新加坡(youtube阿伟科技)
+      - SG+新加坡(youtube阿伟科技) 2
+      - SG+新加坡(youtube阿伟科技) 3
       - TW 台湾(youtube阿伟科技)
-      - TW 台湾(youtube阿伟科技) 2
-      - TW 台湾(youtube阿伟科技) 3
-      - TW 台湾(youtube阿伟科技) 4
-      - TW 台湾(youtube阿伟科技) 5
-      - US 396 SSR
+      - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
-      - V1-台湾 多台负载均衡(youtube阿伟科技)
-      - V1-台湾 多台负载均衡(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
       - VN 越南(youtube阿伟科技)
       - VN 越南(youtube阿伟科技) 2
       - VN 越南(youtube阿伟科技) 3
-      - 澳大利亚(youtube阿伟科技)
-      - 德国(youtube阿伟科技)
-      - 俄罗斯 A-[使用前先更新订阅!]
-      - 俄罗斯(youtube阿伟科技)
-      - 俄罗斯(youtube阿伟科技) 2
-      - 俄罗斯(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技)
-      - 法国(youtube阿伟科技) 2
-      - 法国(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技) 4
-      - 韩国高速 A
-      - 荷兰
-      - 美国(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 美国(youtube阿伟科技) 3
-      - 美国(youtube阿伟科技) 4
-      - 美国(youtube阿伟科技) 5
-      - 美国(youtube阿伟科技) 6
-      - 美国(youtube阿伟科技) 7
-      - 美国(youtube阿伟科技) 8
-      - 美国(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 台湾(youtube阿伟科技)
-      - 香港 HKBN D
-      - 香港 HKT A
-      - 香港 HKT K
-      - 香港(youtube阿伟科技)
-      - 香港(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 3
-      - 香港(youtube阿伟科技) 4
-      - 香港动态 HKT C
-      - 新加坡(youtube阿伟科技)
-      - 新加坡(youtube阿伟科技) 2
-      - 英国 iplayer A
-      - 英国(youtube阿伟科技)
-      - 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 4
+      - VN 越南(youtube阿伟科技) 5
+      - VN 越南(youtube阿伟科技) 6
+      - VN 越南(youtube阿伟科技) 7
+      - 俄罗斯A-[使用前先更新订阅!]
+      - 俄罗斯C(youtube阿伟科技)4
+      - 韩国高速A(youtube阿伟科技)5
+      - 荷兰_1(youtube阿伟科技)6
+      - 荷兰_2(youtube阿伟科技)7
+      - 美国优化2F3.5_1(youtube阿伟科技)9
+      - 美国优化2F3.5_2(youtube阿伟科技)10
+      - 美国优化A3.5(youtube阿伟科技)8
+      - 土耳其(youtube阿伟科技)11
+      - 香港HKBND_1(youtube阿伟科技)12
+      - 香港HKBND_2(youtube阿伟科技)13
+      - 香港HKTD(youtube阿伟科技)14
+      - 香港HKTJ(youtube阿伟科技)15
+      - 香港HKTK(youtube阿伟科技)16
+      - 香港动态HKTC_1(youtube阿伟科技)17
+      - 香港动态HKTC_2(youtube阿伟科技)18
+      - 新加坡优化1A_1(youtube阿伟科技)19
+      - 新加坡优化1A_2(youtube阿伟科技)20
+      - 新加坡优化2C(youtube阿伟科技)21
+      - 意大利(youtube阿伟科技)22
+      - 英国iplayerA_1(youtube阿伟科技)23
+      - 英国iplayerA_2(youtube阿伟科技)24
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 0.84|youtube阿伟科技
+      - (youtube阿伟科技)
+      - (youtube阿伟科技) 2
+      - (youtube阿伟科技) 3
+      - (youtube阿伟科技) 4
+      - (youtube阿伟科技) 5
+      - (youtube阿伟科技) 6
+      - (youtube阿伟科技) 7
+      - _SG_新加坡(youtube阿伟科技)1
+      - 0.23|SG新加坡(youtube阿伟科技)2
+      - 0.84|youtube阿伟科技(youtube阿伟科技)3
+      - AU 澳大利亚(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技) 3
+      - DE 德国(youtube阿伟科技) 4
       - FR 法国(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技) 4
+      - FR 法国(youtube阿伟科技) 5
+      - FR 法国(youtube阿伟科技) 6
+      - FR 法国(youtube阿伟科技) 7
+      - FR 法国(youtube阿伟科技) 8
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
       - HK+香港(youtube阿伟科技)
-      - IN 印度01(youtube阿伟科技)
-      - JP 日本 多台负载均衡 (youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 3
+      - HK+香港(youtube阿伟科技) 4
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技)
       - JP 日本(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技) 3
       - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
+      - KR 韩国(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技) 6
+      - KR 韩国(youtube阿伟科技) 7
+      - NL 荷兰(youtube阿伟科技)
+      - NL 荷兰(youtube阿伟科技) 2
+      - NL 荷兰(youtube阿伟科技) 3
       - RU 俄罗斯(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技) 3
       - SG 新加坡(youtube阿伟科技) 4
       - SG 新加坡(youtube阿伟科技) 5
-      - SG 新加坡(youtube阿伟科技) 6
-      - SG 新加坡(youtube阿伟科技) 7
-      - SG 新加坡(youtube阿伟科技) 8
-      - SG 新加坡(youtube阿伟科技) 9
-      - SG 新加坡(youtube阿伟科技) 10
-      - SG 新加坡(youtube阿伟科技) 11
-      - speednode_0063
+      - SG+新加坡(youtube阿伟科技)
+      - SG+新加坡(youtube阿伟科技) 2
+      - SG+新加坡(youtube阿伟科技) 3
       - TW 台湾(youtube阿伟科技)
-      - TW 台湾(youtube阿伟科技) 2
-      - TW 台湾(youtube阿伟科技) 3
-      - TW 台湾(youtube阿伟科技) 4
-      - TW 台湾(youtube阿伟科技) 5
-      - US 396 SSR
+      - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
-      - V1-台湾 多台负载均衡(youtube阿伟科技)
-      - V1-台湾 多台负载均衡(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
       - VN 越南(youtube阿伟科技)
       - VN 越南(youtube阿伟科技) 2
       - VN 越南(youtube阿伟科技) 3
-      - 澳大利亚(youtube阿伟科技)
-      - 德国(youtube阿伟科技)
-      - 俄罗斯 A-[使用前先更新订阅!]
-      - 俄罗斯(youtube阿伟科技)
-      - 俄罗斯(youtube阿伟科技) 2
-      - 俄罗斯(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技)
-      - 法国(youtube阿伟科技) 2
-      - 法国(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技) 4
-      - 韩国高速 A
-      - 荷兰
-      - 美国(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 美国(youtube阿伟科技) 3
-      - 美国(youtube阿伟科技) 4
-      - 美国(youtube阿伟科技) 5
-      - 美国(youtube阿伟科技) 6
-      - 美国(youtube阿伟科技) 7
-      - 美国(youtube阿伟科技) 8
-      - 美国(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 台湾(youtube阿伟科技)
-      - 香港 HKBN D
-      - 香港 HKT A
-      - 香港 HKT K
-      - 香港(youtube阿伟科技)
-      - 香港(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 3
-      - 香港(youtube阿伟科技) 4
-      - 香港动态 HKT C
-      - 新加坡(youtube阿伟科技)
-      - 新加坡(youtube阿伟科技) 2
-      - 英国 iplayer A
-      - 英国(youtube阿伟科技)
-      - 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 4
+      - VN 越南(youtube阿伟科技) 5
+      - VN 越南(youtube阿伟科技) 6
+      - VN 越南(youtube阿伟科技) 7
+      - 俄罗斯A-[使用前先更新订阅!]
+      - 俄罗斯C(youtube阿伟科技)4
+      - 韩国高速A(youtube阿伟科技)5
+      - 荷兰_1(youtube阿伟科技)6
+      - 荷兰_2(youtube阿伟科技)7
+      - 美国优化2F3.5_1(youtube阿伟科技)9
+      - 美国优化2F3.5_2(youtube阿伟科技)10
+      - 美国优化A3.5(youtube阿伟科技)8
+      - 土耳其(youtube阿伟科技)11
+      - 香港HKBND_1(youtube阿伟科技)12
+      - 香港HKBND_2(youtube阿伟科技)13
+      - 香港HKTD(youtube阿伟科技)14
+      - 香港HKTJ(youtube阿伟科技)15
+      - 香港HKTK(youtube阿伟科技)16
+      - 香港动态HKTC_1(youtube阿伟科技)17
+      - 香港动态HKTC_2(youtube阿伟科技)18
+      - 新加坡优化1A_1(youtube阿伟科技)19
+      - 新加坡优化1A_2(youtube阿伟科技)20
+      - 新加坡优化2C(youtube阿伟科技)21
+      - 意大利(youtube阿伟科技)22
+      - 英国iplayerA_1(youtube阿伟科技)23
+      - 英国iplayerA_2(youtube阿伟科技)24
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 0.84|youtube阿伟科技
+      - (youtube阿伟科技)
+      - (youtube阿伟科技) 2
+      - (youtube阿伟科技) 3
+      - (youtube阿伟科技) 4
+      - (youtube阿伟科技) 5
+      - (youtube阿伟科技) 6
+      - (youtube阿伟科技) 7
+      - _SG_新加坡(youtube阿伟科技)1
+      - 0.23|SG新加坡(youtube阿伟科技)2
+      - 0.84|youtube阿伟科技(youtube阿伟科技)3
+      - AU 澳大利亚(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技) 3
+      - DE 德国(youtube阿伟科技) 4
       - FR 法国(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技) 4
+      - FR 法国(youtube阿伟科技) 5
+      - FR 法国(youtube阿伟科技) 6
+      - FR 法国(youtube阿伟科技) 7
+      - FR 法国(youtube阿伟科技) 8
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
       - HK+香港(youtube阿伟科技)
-      - IN 印度01(youtube阿伟科技)
-      - JP 日本 多台负载均衡 (youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 3
+      - HK+香港(youtube阿伟科技) 4
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技)
       - JP 日本(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技) 3
       - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
+      - KR 韩国(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技) 6
+      - KR 韩国(youtube阿伟科技) 7
+      - NL 荷兰(youtube阿伟科技)
+      - NL 荷兰(youtube阿伟科技) 2
+      - NL 荷兰(youtube阿伟科技) 3
       - RU 俄罗斯(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技) 3
       - SG 新加坡(youtube阿伟科技) 4
       - SG 新加坡(youtube阿伟科技) 5
-      - SG 新加坡(youtube阿伟科技) 6
-      - SG 新加坡(youtube阿伟科技) 7
-      - SG 新加坡(youtube阿伟科技) 8
-      - SG 新加坡(youtube阿伟科技) 9
-      - SG 新加坡(youtube阿伟科技) 10
-      - SG 新加坡(youtube阿伟科技) 11
-      - speednode_0063
+      - SG+新加坡(youtube阿伟科技)
+      - SG+新加坡(youtube阿伟科技) 2
+      - SG+新加坡(youtube阿伟科技) 3
       - TW 台湾(youtube阿伟科技)
-      - TW 台湾(youtube阿伟科技) 2
-      - TW 台湾(youtube阿伟科技) 3
-      - TW 台湾(youtube阿伟科技) 4
-      - TW 台湾(youtube阿伟科技) 5
-      - US 396 SSR
+      - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
-      - V1-台湾 多台负载均衡(youtube阿伟科技)
-      - V1-台湾 多台负载均衡(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
       - VN 越南(youtube阿伟科技)
       - VN 越南(youtube阿伟科技) 2
       - VN 越南(youtube阿伟科技) 3
-      - 澳大利亚(youtube阿伟科技)
-      - 德国(youtube阿伟科技)
-      - 俄罗斯 A-[使用前先更新订阅!]
-      - 俄罗斯(youtube阿伟科技)
-      - 俄罗斯(youtube阿伟科技) 2
-      - 俄罗斯(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技)
-      - 法国(youtube阿伟科技) 2
-      - 法国(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技) 4
-      - 韩国高速 A
-      - 荷兰
-      - 美国(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 美国(youtube阿伟科技) 3
-      - 美国(youtube阿伟科技) 4
-      - 美国(youtube阿伟科技) 5
-      - 美国(youtube阿伟科技) 6
-      - 美国(youtube阿伟科技) 7
-      - 美国(youtube阿伟科技) 8
-      - 美国(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 台湾(youtube阿伟科技)
-      - 香港 HKBN D
-      - 香港 HKT A
-      - 香港 HKT K
-      - 香港(youtube阿伟科技)
-      - 香港(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 3
-      - 香港(youtube阿伟科技) 4
-      - 香港动态 HKT C
-      - 新加坡(youtube阿伟科技)
-      - 新加坡(youtube阿伟科技) 2
-      - 英国 iplayer A
-      - 英国(youtube阿伟科技)
-      - 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 4
+      - VN 越南(youtube阿伟科技) 5
+      - VN 越南(youtube阿伟科技) 6
+      - VN 越南(youtube阿伟科技) 7
+      - 俄罗斯A-[使用前先更新订阅!]
+      - 俄罗斯C(youtube阿伟科技)4
+      - 韩国高速A(youtube阿伟科技)5
+      - 荷兰_1(youtube阿伟科技)6
+      - 荷兰_2(youtube阿伟科技)7
+      - 美国优化2F3.5_1(youtube阿伟科技)9
+      - 美国优化2F3.5_2(youtube阿伟科技)10
+      - 美国优化A3.5(youtube阿伟科技)8
+      - 土耳其(youtube阿伟科技)11
+      - 香港HKBND_1(youtube阿伟科技)12
+      - 香港HKBND_2(youtube阿伟科技)13
+      - 香港HKTD(youtube阿伟科技)14
+      - 香港HKTJ(youtube阿伟科技)15
+      - 香港HKTK(youtube阿伟科技)16
+      - 香港动态HKTC_1(youtube阿伟科技)17
+      - 香港动态HKTC_2(youtube阿伟科技)18
+      - 新加坡优化1A_1(youtube阿伟科技)19
+      - 新加坡优化1A_2(youtube阿伟科技)20
+      - 新加坡优化2C(youtube阿伟科技)21
+      - 意大利(youtube阿伟科技)22
+      - 英国iplayerA_1(youtube阿伟科技)23
+      - 英国iplayerA_2(youtube阿伟科技)24
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -798,93 +1033,123 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 0.84|youtube阿伟科技
+      - (youtube阿伟科技)
+      - (youtube阿伟科技) 2
+      - (youtube阿伟科技) 3
+      - (youtube阿伟科技) 4
+      - (youtube阿伟科技) 5
+      - (youtube阿伟科技) 6
+      - (youtube阿伟科技) 7
+      - _SG_新加坡(youtube阿伟科技)1
+      - 0.23|SG新加坡(youtube阿伟科技)2
+      - 0.84|youtube阿伟科技(youtube阿伟科技)3
+      - AU 澳大利亚(youtube阿伟科技)
+      - CA 加拿大(youtube阿伟科技)
       - DE 德国(youtube阿伟科技)
+      - DE 德国(youtube阿伟科技) 2
+      - DE 德国(youtube阿伟科技) 3
+      - DE 德国(youtube阿伟科技) 4
       - FR 法国(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技)
-      - HK 香港 多台负载均衡(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 2
+      - FR 法国(youtube阿伟科技) 3
+      - FR 法国(youtube阿伟科技) 4
+      - FR 法国(youtube阿伟科技) 5
+      - FR 法国(youtube阿伟科技) 6
+      - FR 法国(youtube阿伟科技) 7
+      - FR 法国(youtube阿伟科技) 8
       - HK 香港(youtube阿伟科技)
       - HK 香港(youtube阿伟科技) 2
       - HK 香港(youtube阿伟科技) 3
       - HK 香港(youtube阿伟科技) 4
+      - HK 香港(youtube阿伟科技) 5
+      - HK 香港(youtube阿伟科技) 6
+      - HK 香港(youtube阿伟科技) 7
+      - HK 香港(youtube阿伟科技) 8
+      - HK 香港(youtube阿伟科技) 9
       - HK+香港(youtube阿伟科技)
-      - IN 印度01(youtube阿伟科技)
-      - JP 日本 多台负载均衡 (youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技)
-      - JP 日本 多台负载均衡(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 2
+      - HK+香港(youtube阿伟科技) 3
+      - HK+香港(youtube阿伟科技) 4
+      - ID 印尼(youtube阿伟科技)
+      - ID 印尼(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技)
       - JP 日本(youtube阿伟科技) 2
       - JP 日本(youtube阿伟科技) 3
       - JP 日本(youtube阿伟科技) 4
+      - JP 日本(youtube阿伟科技) 5
+      - JP 日本(youtube阿伟科技) 6
+      - JP 日本(youtube阿伟科技) 7
+      - JP 日本(youtube阿伟科技) 8
       - KR 韩国(youtube阿伟科技)
       - KR 韩国(youtube阿伟科技) 2
+      - KR 韩国(youtube阿伟科技) 3
+      - KR 韩国(youtube阿伟科技) 4
+      - KR 韩国(youtube阿伟科技) 5
+      - KR 韩国(youtube阿伟科技) 6
+      - KR 韩国(youtube阿伟科技) 7
+      - NL 荷兰(youtube阿伟科技)
+      - NL 荷兰(youtube阿伟科技) 2
+      - NL 荷兰(youtube阿伟科技) 3
       - RU 俄罗斯(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技)
       - SG 新加坡(youtube阿伟科技) 2
       - SG 新加坡(youtube阿伟科技) 3
       - SG 新加坡(youtube阿伟科技) 4
       - SG 新加坡(youtube阿伟科技) 5
-      - SG 新加坡(youtube阿伟科技) 6
-      - SG 新加坡(youtube阿伟科技) 7
-      - SG 新加坡(youtube阿伟科技) 8
-      - SG 新加坡(youtube阿伟科技) 9
-      - SG 新加坡(youtube阿伟科技) 10
-      - SG 新加坡(youtube阿伟科技) 11
-      - speednode_0063
+      - SG+新加坡(youtube阿伟科技)
+      - SG+新加坡(youtube阿伟科技) 2
+      - SG+新加坡(youtube阿伟科技) 3
       - TW 台湾(youtube阿伟科技)
-      - TW 台湾(youtube阿伟科技) 2
-      - TW 台湾(youtube阿伟科技) 3
-      - TW 台湾(youtube阿伟科技) 4
-      - TW 台湾(youtube阿伟科技) 5
-      - US 396 SSR
+      - UK 英国(youtube阿伟科技)
+      - UK 英国(youtube阿伟科技) 2
+      - UK 英国(youtube阿伟科技) 3
       - US 美国(youtube阿伟科技)
       - US 美国(youtube阿伟科技) 2
-      - V1-台湾 多台负载均衡(youtube阿伟科技)
-      - V1-台湾 多台负载均衡(youtube阿伟科技) 2
+      - US 美国(youtube阿伟科技) 3
+      - US 美国(youtube阿伟科技) 4
+      - US 美国(youtube阿伟科技) 5
+      - US 美国(youtube阿伟科技) 6
+      - US 美国(youtube阿伟科技) 7
+      - US 美国(youtube阿伟科技) 8
+      - US 美国(youtube阿伟科技) 9
+      - US 美国(youtube阿伟科技) 10
+      - US 美国(youtube阿伟科技) 11
+      - US 美国(youtube阿伟科技) 12
+      - US 美国(youtube阿伟科技) 13
+      - US 美国(youtube阿伟科技) 14
+      - US 美国(youtube阿伟科技) 15
+      - US 美国(youtube阿伟科技) 16
+      - US 美国(youtube阿伟科技) 17
+      - US 美国(youtube阿伟科技) 18
       - VN 越南(youtube阿伟科技)
       - VN 越南(youtube阿伟科技) 2
       - VN 越南(youtube阿伟科技) 3
-      - 澳大利亚(youtube阿伟科技)
-      - 德国(youtube阿伟科技)
-      - 俄罗斯 A-[使用前先更新订阅!]
-      - 俄罗斯(youtube阿伟科技)
-      - 俄罗斯(youtube阿伟科技) 2
-      - 俄罗斯(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技)
-      - 法国(youtube阿伟科技) 2
-      - 法国(youtube阿伟科技) 3
-      - 法国(youtube阿伟科技) 4
-      - 韩国高速 A
-      - 荷兰
-      - 美国(youtube阿伟科技)
-      - 美国(youtube阿伟科技) 2
-      - 美国(youtube阿伟科技) 3
-      - 美国(youtube阿伟科技) 4
-      - 美国(youtube阿伟科技) 5
-      - 美国(youtube阿伟科技) 6
-      - 美国(youtube阿伟科技) 7
-      - 美国(youtube阿伟科技) 8
-      - 美国(youtube阿伟科技) 9
-      - 日本(youtube阿伟科技)
-      - 日本(youtube阿伟科技) 2
-      - 日本(youtube阿伟科技) 3
-      - 日本(youtube阿伟科技) 4
-      - 日本(youtube阿伟科技) 5
-      - 日本(youtube阿伟科技) 6
-      - 台湾(youtube阿伟科技)
-      - 香港 HKBN D
-      - 香港 HKT A
-      - 香港 HKT K
-      - 香港(youtube阿伟科技)
-      - 香港(youtube阿伟科技) 2
-      - 香港(youtube阿伟科技) 3
-      - 香港(youtube阿伟科技) 4
-      - 香港动态 HKT C
-      - 新加坡(youtube阿伟科技)
-      - 新加坡(youtube阿伟科技) 2
-      - 英国 iplayer A
-      - 英国(youtube阿伟科技)
-      - 越南(youtube阿伟科技)
+      - VN 越南(youtube阿伟科技) 4
+      - VN 越南(youtube阿伟科技) 5
+      - VN 越南(youtube阿伟科技) 6
+      - VN 越南(youtube阿伟科技) 7
+      - 俄罗斯A-[使用前先更新订阅!]
+      - 俄罗斯C(youtube阿伟科技)4
+      - 韩国高速A(youtube阿伟科技)5
+      - 荷兰_1(youtube阿伟科技)6
+      - 荷兰_2(youtube阿伟科技)7
+      - 美国优化2F3.5_1(youtube阿伟科技)9
+      - 美国优化2F3.5_2(youtube阿伟科技)10
+      - 美国优化A3.5(youtube阿伟科技)8
+      - 土耳其(youtube阿伟科技)11
+      - 香港HKBND_1(youtube阿伟科技)12
+      - 香港HKBND_2(youtube阿伟科技)13
+      - 香港HKTD(youtube阿伟科技)14
+      - 香港HKTJ(youtube阿伟科技)15
+      - 香港HKTK(youtube阿伟科技)16
+      - 香港动态HKTC_1(youtube阿伟科技)17
+      - 香港动态HKTC_2(youtube阿伟科技)18
+      - 新加坡优化1A_1(youtube阿伟科技)19
+      - 新加坡优化1A_2(youtube阿伟科技)20
+      - 新加坡优化2C(youtube阿伟科技)21
+      - 意大利(youtube阿伟科技)22
+      - 英国iplayerA_1(youtube阿伟科技)23
+      - 英国iplayerA_2(youtube阿伟科技)24
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
