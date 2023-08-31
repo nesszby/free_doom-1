@@ -5,367 +5,1139 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_youtube@资源分享师_1, server: 116.162.9.7, port: 53032, type: ss, cipher: chacha20-ietf-poly1305, password: 58779cf9-c6bb-48f0-a3c8-0f39c1a85360, udp: true}
-  - {name: CN_youtube@资源分享师_3, server: 116.162.9.7, port: 14125, type: vmess, uuid: 58779cf9-c6bb-48f0-a3c8-0f39c1a85360, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /qwe123123, ws-headers: {Host: 116.162.9.7}, udp: true}
-  - {name: CN_youtube@资源分享师_4, server: free.node.kk-proxy.pro, port: 54087, type: ss, cipher: chacha20-ietf-poly1305, password: b8b481de-2143-4ce1-a7cc-60c3b563b624, udp: true}
-  - {name: CN_youtube@资源分享师_5, server: 116.162.9.7, port: 56003, type: ss, cipher: chacha20-ietf-poly1305, password: 58779cf9-c6bb-48f0-a3c8-0f39c1a85360, udp: true}
-  - {name: US_youtube@资源分享师_9, server: 45.45.177.2, port: 29588, type: ss, cipher: aes-256-gcm, password: 21b54f3f-c84f-4b8e-9d56-9be21f6d59fc, udp: true}
-  - {name: CN_youtube@资源分享师_10, server: 116.162.9.7, port: 53053, type: vmess, uuid: 58779cf9-c6bb-48f0-a3c8-0f39c1a85360, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /qwe123321ewq, ws-headers: {Host: 116.162.9.7}, udp: true}
-  - {name: CN_youtube@资源分享师_17, server: 116.162.9.7, port: 53051, type: vmess, uuid: 58779cf9-c6bb-48f0-a3c8-0f39c1a85360, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /qwe123321ewq, ws-headers: {Host: 116.162.9.7}, udp: true}
-  - {name: TW_youtube@资源分享师_18, server: 6d990d5.r1.gladns.com, port: 3306, type: trojan, password: 71bb6fb9141f3618, sni: 6d990d5.r1.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: CN_youtube@资源分享师_20, server: 116.162.9.7, port: 53041, type: vmess, uuid: 58779cf9-c6bb-48f0-a3c8-0f39c1a85360, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /qwe123321ewq, ws-headers: {Host: 116.162.9.7}, udp: true}
-  - {name: TW_youtube@资源分享师_25, server: 6a70e24.ph.gladns.com, port: 3306, type: trojan, password: 71bb6fb9141f3618, sni: 6a70e24.ph.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: US_youtube@资源分享师_28, server: 1.620720.xyz, port: 8443, type: vmess, uuid: 9173b0b8-a80b-4617-b90f-1d375afbb962, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: 1.620720.xyz}, udp: true}
-  - {name: US_youtube@资源分享师_30, server: 45.15.166.78, port: 39077, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_youtube@资源分享师_32, server: 116.162.9.7, port: 53031, type: vmess, uuid: 58779cf9-c6bb-48f0-a3c8-0f39c1a85360, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /qwe123321ewq, ws-headers: {Host: 116.162.9.7}, udp: true}
-  - {name: CN_youtube@资源分享师_35, server: 116.162.9.7, port: 53014, type: ss, cipher: chacha20-ietf-poly1305, password: 58779cf9-c6bb-48f0-a3c8-0f39c1a85360, udp: true}
-  - {name: US_youtube@资源分享师_39, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: jdf.shabijichang.com}, udp: true}
-  - {name: CN_youtube@资源分享师_46, server: 116.162.9.7, port: 53059, type: vmess, uuid: 58779cf9-c6bb-48f0-a3c8-0f39c1a85360, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /qwe123321ewq, ws-headers: {Host: 116.162.9.7}, udp: true}
-  - {name: US_youtube@资源分享师_56, server: 96.43.110.134, port: 3360, type: vmess, uuid: 58d219c6-aa00-3543-a76f-774845177a16, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /index, ws-headers: {Host: apple.com}, udp: true}
-  - {name: JP_youtube@资源分享师_58, server: 35.79.23.138, port: 3306, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
-  - {name: US_youtube@资源分享师_59, server: 156.225.67.78, port: 43851, type: vmess, uuid: 3e016c4d-986e-42df-838c-6046f3d89ecf, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_youtube@资源分享师_65, server: 116.162.9.7, port: 53057, type: vmess, uuid: 58779cf9-c6bb-48f0-a3c8-0f39c1a85360, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /qwe123321ewq, ws-headers: {Host: 116.162.9.7}, udp: true}
-  - {name: CN_youtube@资源分享师_68, server: 116.162.9.7, port: 53013, type: vmess, uuid: 58779cf9-c6bb-48f0-a3c8-0f39c1a85360, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /qwe123321ewq, ws-headers: {Host: 116.162.9.7}, udp: true}
-  - {name: US_youtube@资源分享师_74, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dld.shabijichang.com}, udp: true}
-  - {name: US_youtube@资源分享师_75, server: 137.175.9.204, port: 48101, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_youtube@资源分享师_78, server: 172.67.95.87, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: db.shabijichang.com}, udp: true}
-  - {name: US_youtube@资源分享师_80, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: kltl.shabijichang.com}, udp: true}
-  - {name: TW_youtube@资源分享师_85, server: 6d990d5.r1.gladns.com, port: 3306, type: trojan, password: 2a5ccc8198d4af09, sni: 6d990d5.r1.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP_youtube@资源分享师_89, server: 35.79.23.138, port: 3306, type: trojan, password: 8a1ab0df6abea549, skip-cert-verify: true, udp: true}
-  - {name: CN_youtube@资源分享师_90, server: 116.162.9.7, port: 53021, type: vmess, uuid: 58779cf9-c6bb-48f0-a3c8-0f39c1a85360, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /qwe123321ewq, ws-headers: {Host: 116.162.9.7}, udp: true}
-  - {name: US_youtube@资源分享师_91, server: 172.67.31.15, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: db.shabijichang.com}, udp: true}
-  - {name: US_youtube@资源分享师_95, server: 140.99.6.42, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: JP_youtube@资源分享师_96, server: 35.79.23.138, port: 3306, type: trojan, password: 71bb6fb9141f3618, skip-cert-verify: true, udp: true}
-  - {name: US_youtube@资源分享师_97, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zjg.shabijichang.com}, udp: true}
-  - {name: US_youtube@资源分享师_98, server: 45.86.8.40, port: 40921, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_youtube@资源分享师_100, server: 162.159.129.96, port: 80, type: vmess, uuid: 722b14be-9571-4510-a348-936822af7a3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /videos, ws-headers: {Host: us.dabaiyyds.baymax.lol}, udp: true}
-  - {name: US_youtube@资源分享师_102, server: 140.99.53.242, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: TW_youtube@资源分享师_103, server: 6d990d5.r1.gladns.com, port: 3306, type: trojan, password: 6c8b18adb11737af, sni: 6d990d5.r1.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: US_youtube@资源分享师_109, server: 171.22.116.45, port: 36109, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_youtube@资源分享师_111, server: 0063340.pg.gladns.com, port: 3306, type: trojan, password: 8b475d9e868e43e0, sni: 0063340.pg.gladns.com, skip-cert-verify: true, udp: true}
-  - {name: JP_youtube@资源分享师_119, server: 35.79.23.138, port: 3306, type: trojan, password: 70face6dd320ea29, skip-cert-verify: true, udp: true}
-  - {name: US_youtube@资源分享师_122, server: 162.159.129.168, port: 80, type: vmess, uuid: 722b14be-9571-4510-a348-936822af7a3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /videos, ws-headers: {Host: us.dabaiyyds.baymax.lol}, udp: true}
-  - {name: US_youtube@资源分享师_126, server: 172.67.118.244, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: lv1.sharecentrepro.org}, udp: true}
-  - {name: US_youtube@资源分享师_129, server: hk.620720.xyz, port: 8443, type: vmess, uuid: 9173b0b8-a80b-4617-b90f-1d375afbb962, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: hk.620720.xyz}, udp: true}
-  - {name: FR_youtube@资源分享师_130, server: 156.249.18.217, port: 443, type: vmess, uuid: 11117d4c-3b6a-4e76-8bcc-2b41b3e9ca93, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /path/1693018744512, ws-headers: {Host: www.11649769.xyz}, udp: true}
-  - {name: US_youtube@资源分享师_133, server: 8.wyhkaa0.gq, port: 2095, type: vmess, uuid: 2c4db0b1-5cd9-4bad-e957-33c36e261987, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TG:@hkaa0, ws-headers: {Host: 8.wyhkaa0.gq}, udp: true}
-  - {name: US_youtube@资源分享师_134, server: 140.99.6.58, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_youtube@资源分享师_135, server: 6.wyhkaa0.gq, port: 2095, type: vmess, uuid: 6bbc9554-07bc-47c6-a088-87aa79fd5ca1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TG:@hkaa0, ws-headers: {Host: 6.wyhkaa0.gq}, udp: true}
-  - {name: US_youtube@资源分享师_139, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zjg.shabijichang.com}, udp: true}
-  - {name: US_youtube@资源分享师_141, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg2.shabijichang.com}, udp: true}
-  - {name: US_youtube@资源分享师_142, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg2.shabijichang.com}, udp: true}
-  - {name: US_youtube@资源分享师_148, server: 162.159.129.98, port: 80, type: vmess, uuid: 722b14be-9571-4510-a348-936822af7a3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /videos, ws-headers: {Host: us.dabaiyyds.baymax.lol}, udp: true}
-  - {name: US_youtube@资源分享师_149, server: 162.159.194.228, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: dp4.ilovescp.com}, udp: true}
-  - {name: US_youtube@资源分享师_151, server: 9.620720.xyz, port: 443, type: vmess, uuid: 9173b0b8-a80b-4617-b90f-1d375afbb962, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: 9.620720.xyz}, udp: true}
-  - {name: JP_youtube@资源分享师_152, server: 35.79.23.138, port: 3306, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
-  - {name: US_youtube@资源分享师_153, server: 6.620720.xyz, port: 443, type: vmess, uuid: 9173b0b8-a80b-4617-b90f-1d375afbb962, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: 6.620720.xyz}, udp: true}
-  - {name: US_youtube@资源分享师_154, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: lv1.sharecentrepro.org}, udp: true}
-  - {name: US_youtube@资源分享师_158, server: kr.620720.xyz, port: 8443, type: vmess, uuid: 9173b0b8-a80b-4617-b90f-1d375afbb962, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: kr.620720.xyz}, udp: true}
-  - {name: US_youtube@资源分享师_159, server: hg.620720.xyz, port: 443, type: vmess, uuid: 9173b0b8-a80b-4617-b90f-1d375afbb962, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: hg.620720.xyz}, udp: true}
-  - {name: US_youtube@资源分享师_161, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: asb2.shabijichang.com}, udp: true}
-  - {name: JP_youtube@资源分享师_162, server: 35.79.23.138, port: 3306, type: trojan, password: 8a5360b3b31229d8, skip-cert-verify: true, udp: true}
-  - {name: CN_youtube@资源分享师_165, server: 116.162.9.7, port: 53054, type: ss, cipher: chacha20-ietf-poly1305, password: 58779cf9-c6bb-48f0-a3c8-0f39c1a85360, udp: true}
-  - {name: US_youtube@资源分享师_167, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fhc.shabijichang.com}, udp: true}
-  - {name: US_youtube@资源分享师_170, server: singapore.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: d.freeh1.xyz}, udp: true}
-  - {name: US_youtube@资源分享师_176, server: 5.620720.xyz, port: 443, type: vmess, uuid: 9173b0b8-a80b-4617-b90f-1d375afbb962, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: 5.620720.xyz}, udp: true}
-  - {name: CN_youtube@资源分享师_178, server: 116.162.9.7, port: 53001, type: vmess, uuid: 58779cf9-c6bb-48f0-a3c8-0f39c1a85360, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /qwe123321ewq, ws-headers: {Host: 116.162.9.7}, udp: true}
-  - {name: US_youtube@资源分享师_183, server: 17.620720.xyz, port: 443, type: vmess, uuid: 9173b0b8-a80b-4617-b90f-1d375afbb962, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: 17.620720.xyz}, udp: true}
-  - {name: US_youtube@资源分享师_187, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: db5.shabijichang.com}, udp: true}
-  - {name: US_youtube@资源分享师_197, server: 7.620720.xyz, port: 8443, type: vmess, uuid: 9173b0b8-a80b-4617-b90f-1d375afbb962, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: 7.620720.xyz}, udp: true}
-  - {name: US_youtube@资源分享师_199, server: 162.159.243.133, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: dp4.scproxy.top}, udp: true}
-  - {name: JP_youtube@资源分享师_203, server: 35.79.23.138, port: 3306, type: trojan, password: dc2d9db59868ba6b, skip-cert-verify: true, udp: true}
-  - {name: US_youtube@资源分享师_204, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fhc.shabijichang.com}, udp: true}
-  - {name: US_youtube@资源分享师_207, server: 137.175.22.187, port: 53999, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_youtube@资源分享师_209, server: 35.79.23.138, port: 3306, type: trojan, password: faf42aa0a9ad4c1e, skip-cert-verify: true, udp: true}
-  - {name: US_youtube@资源分享师_222, server: 18.620720.xyz, port: 8443, type: vmess, uuid: 9173b0b8-a80b-4617-b90f-1d375afbb962, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: 18.620720.xyz}, udp: true}
-  - {name: JP_youtube@资源分享师_223, server: 35.79.23.138, port: 3306, type: trojan, password: 5227e84e4f026b71, skip-cert-verify: true, udp: true}
-  - {name: US_youtube@资源分享师_226, server: 12.620720.xyz, port: 443, type: vmess, uuid: 9173b0b8-a80b-4617-b90f-1d375afbb962, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/?ed=2048", ws-headers: {Host: 12.620720.xyz}, udp: true}
-  - {name: US_youtube@资源分享师_228, server: 172.67.102.115, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: dp3.scproxy.top}, udp: true}
-  - {name: CN_youtube@资源分享师_229, server: 183.232.170.14, port: 61001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: GB_youtube@资源分享师_230, server: 18.168.172.206, port: 22222, type: trojan, password: telegram-id-directvpn, skip-cert-verify: true, udp: true}
-  - {name: US_youtube@资源分享师_231, server: dx1.992688.xyz, port: 8880, type: vmess, uuid: 782e0824-df3e-4c32-de48-beb41c0dadcf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: euserv2.vpn66.eu.org}, udp: true}
-  - {name: US_youtube@资源分享师_233, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mtlr.shabijichang.com}, udp: true}
-  - {name: US_youtube@资源分享师_236, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mtlr.shabijichang.com}, udp: true}
-  - {name: US_youtube@资源分享师_238, server: 107.167.30.132, port: 43900, type: vmess, uuid: 58e560b4-bba6-4843-be5f-83321022fa0d, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_youtube@资源分享师_241, server: 156.225.67.90, port: 48869, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_youtube@资源分享师_242, server: 120.233.43.75, port: 49673, type: vmess, uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN_youtube@资源分享师_244, server: a2jphkzxwmzjylmt.wudaki972.me, port: 9541, type: ss, cipher: aes-128-gcm, password: eFMBbL, udp: true}
-  - {name: TW_youtube@资源分享师_245, server: 6d990d5.r1.gladns.com, port: 3306, type: trojan, password: faf42aa0a9ad4c1e, sni: 6d990d5.r1.gladns.com, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_1, server: gzdx4.170203.xyz, port: 50813, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: SG_youtube@资源分享师_2, server: hkmax07.156786.xyz, port: 45353, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: hkmax07.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: SG_youtube@资源分享师_3, server: sgmax02.156786.xyz, port: 45623, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: sgmax02.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_4, server: gzdx4.170203.xyz, port: 40220, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_5, server: gzdx5.156786.xyz, port: 50802, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_6, server: gzdx4.170203.xyz, port: 23456, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: SG_youtube@资源分享师_7, server: sg002.156786.xyz, port: 45632, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: sg002.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_10, server: gzdx4.170203.xyz, port: 53045, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_11, server: gzdx0.156786.xyz, port: 443, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx0.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: SG_youtube@资源分享师_13, server: sgmax06.170203.xyz, port: 443, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: sgmax06.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_15, server: gzdx5.156786.xyz, port: 50857, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_16, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: asb3.shabijichang.com}, udp: true}
+  - {name: JP_youtube@资源分享师_17, server: 35.79.23.138, port: 3306, type: trojan, password: 70face6dd320ea29, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_18, server: gzdx5.156786.xyz, port: 51112, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_19, server: singapore.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: d.freeh1.xyz}, udp: true}
+  - {name: SG_youtube@资源分享师_20, server: sgmax09.170203.xyz, port: 45356, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: sgmax09.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_21, server: gzdx5.156786.xyz, port: 50857, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_22, server: gzdx3.156786.xyz, port: 23456, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx3.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_23, server: gzdx4.170203.xyz, port: 25596, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_24, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sbl3.shabijichang.com}, udp: true}
+  - {name: JP_youtube@资源分享师_25, server: jpmax05.170203.xyz, port: 56464, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: jpmax05.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_26, server: gzdx5.156786.xyz, port: 51112, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_youtube@资源分享师_27, server: jp01.156786.xyz, port: 443, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: jp01.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_29, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: asb2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_30, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sbl3.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_31, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg.shabijichang.com}, udp: true}
+  - {name: JP_youtube@资源分享师_32, server: jp05.170203.xyz, port: 45336, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: jp05.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_33, server: gzdx0.156786.xyz, port: 14515, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx0.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_youtube@资源分享师_34, server: 35.79.23.138, port: 3306, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_35, server: gzdx4.170203.xyz, port: 25596, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_36, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_37, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg3.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_38, server: 172.67.92.119, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: ca.ilovescp.com}, udp: true}
+  - {name: SG_youtube@资源分享师_39, server: sgmax09.170203.xyz, port: 45356, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: sgmax09.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_40, server: 172.67.187.132, port: 2095, type: vmess, uuid: 79602372-640c-44b8-eb6b-2e655c3089df, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TG:@hkaa0, ws-headers: {Host: 18.wyhkaa0.gq}, udp: true}
+  - {name: JP_youtube@资源分享师_41, server: jp002.170203.xyz, port: 63608, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: jp002.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_42, server: gzdx4.170203.xyz, port: 40220, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN_youtube@资源分享师_43, server: pkl173131369.top, port: 45908, type: vmess, uuid: 76e7cc86-8a8f-461d-e956-a48d251b609c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_44, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zjg.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_45, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mrb3.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_46, server: gzdx3.156786.xyz, port: 32864, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx3.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_48, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: asb3.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_49, server: 108.186.208.156, port: 53404, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_50, server: gzdx4.170203.xyz, port: 36758, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_51, server: gzdx0.156786.xyz, port: 14515, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx0.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_53, server: gzdx1.170203.xyz, port: 49795, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx1.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_54, server: gzdx4.170203.xyz, port: 25596, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_55, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mrb2.shabijichang.com}, udp: true}
+  - {name: SG_youtube@资源分享师_56, server: sgmax02.156786.xyz, port: 45623, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: sgmax02.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_57, server: gzdx2.170203.xyz, port: 34234, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx2.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_58, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm3.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_59, server: gzdx0.156786.xyz, port: 60970, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx0.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: SG_youtube@资源分享师_60, server: sg03.170203.xyz, port: 443, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: sg03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: SG_youtube@资源分享师_61, server: sg03.170203.xyz, port: 443, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: sg03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: CN_youtube@资源分享师_62, server: free.node.kk-proxy.pro, port: 55928, type: ss, cipher: chacha20-ietf-poly1305, password: 248db21a-345d-4eb8-b6e3-859a5d633d81, udp: true}
+  - {name: TW_youtube@资源分享师_63, server: gzdx0.156786.xyz, port: 60970, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx0.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_64, server: gzdx4.170203.xyz, port: 50813, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_65, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_66, server: 172.67.85.32, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_67, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_68, server: gzdx5.156786.xyz, port: 19129, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_69, server: gzdx3.156786.xyz, port: 26419, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx3.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_70, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm2.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_71, server: gzdx5.156786.xyz, port: 62095, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: SG_youtube@资源分享师_72, server: hkmax02.170203.xyz, port: 32443, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: hkmax02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_73, server: gzdx4.170203.xyz, port: 50813, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_74, server: gzdx2.170203.xyz, port: 61413, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx2.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_75, server: gzdx1.170203.xyz, port: 443, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx1.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: SG_youtube@资源分享师_77, server: sgmax09.170203.xyz, port: 45356, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: sgmax09.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_78, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ml2.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_79, server: gzdx0.156786.xyz, port: 443, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx0.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_youtube@资源分享师_80, server: jp001.156786.xyz, port: 443, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: jp001.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_81, server: gzdx5.156786.xyz, port: 23456, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: HK_youtube@资源分享师_82, server: 45.11.104.94, port: 3306, type: trojan, password: 7b06d22a8a7c764f, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_84, server: gzdx5.156786.xyz, port: 62095, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_85, server: gzdx4.170203.xyz, port: 36758, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_86, server: gzdx0.156786.xyz, port: 14515, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx0.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_87, server: gzdx3.156786.xyz, port: 26419, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx3.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_88, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ml2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_89, server: 172.64.80.28, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sbl2.shabijichang.com}, udp: true}
+  - {name: SG_youtube@资源分享师_90, server: sgmax06.170203.xyz, port: 443, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: sgmax06.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_92, server: gzdx5.156786.xyz, port: 28690, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_93, server: gzdx4.170203.xyz, port: 23456, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: SG_youtube@资源分享师_94, server: hkmax02.170203.xyz, port: 32443, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: hkmax02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_95, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sbl4.shabijichang.com}, udp: true}
+  - {name: JP_youtube@资源分享师_96, server: kbawsjp1.aiopen.cfd, port: 443, type: trojan, password: 343f9a0c-494e-4c23-8adc-afb3f75c1294, sni: kbawsjp1.aiopen.cfd, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_97, server: gzdx5.156786.xyz, port: 62095, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_98, server: gzdx4.170203.xyz, port: 53045, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_100, server: gzdx2.170203.xyz, port: 34234, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx2.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_101, server: gzdx5.156786.xyz, port: 28690, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_102, server: 172.64.201.138, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: dp4.ilovescp.com}, udp: true}
+  - {name: TW_youtube@资源分享师_103, server: gzdx5.156786.xyz, port: 50802, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_104, server: 45.199.138.192, port: 40835, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_105, server: gzdx4.170203.xyz, port: 33125, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_107, server: gzdx1.170203.xyz, port: 443, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx1.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_108, server: gzdx2.170203.xyz, port: 64989, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx2.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_109, server: 142.4.110.29, port: 52925, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_youtube@资源分享师_110, server: kbawssg2.aiopen.cfd, port: 443, type: trojan, password: 343f9a0c-494e-4c23-8adc-afb3f75c1294, sni: kbawssg2.aiopen.cfd, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_111, server: gzdx4.170203.xyz, port: 33125, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_112, server: gzdx3.156786.xyz, port: 32864, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx3.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_114, server: 23.26.98.120, port: 31838, type: vmess, uuid: 5f361dd9-2ddd-413b-89cd-8ca9264a655e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TG:@hkaa0, ws-headers: {Host: 23.26.98.120}, udp: true}
+  - {name: TW_youtube@资源分享师_115, server: gzdx0.156786.xyz, port: 443, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx0.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: SG_youtube@资源分享师_116, server: hkmax02.170203.xyz, port: 32443, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: hkmax02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_118, server: gzdx5.156786.xyz, port: 48398, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_119, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zjg.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_121, server: zhuanfa.baiduvideos.online, port: 80, type: vmess, uuid: 13ddc7a0-869f-43cc-857e-cdf29cfbdd2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /114514, ws-headers: {Host: japan11451.baiduvideos.online}, udp: true}
+  - {name: US_youtube@资源分享师_122, server: 142.4.111.76, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_123, server: 172.64.153.211, port: 443, type: vmess, uuid: 6e751712-9569-5187-86ea-8f585ad99105, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api01, ws-headers: {Host: schereswed.softwarenews.store}, udp: true}
+  - {name: US_youtube@资源分享师_124, server: 172.67.58.11, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ml3.shabijichang.com}, udp: true}
+  - {name: JP_youtube@资源分享师_125, server: 35.79.23.138, port: 3306, type: trojan, password: 5227e84e4f026b71, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_126, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: asb2.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_127, server: gzdx4.170203.xyz, port: 23456, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_youtube@资源分享师_128, server: jp002.170203.xyz, port: 63608, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: jp002.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_129, server: gzdx5.156786.xyz, port: 48398, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_130, server: gzdx5.156786.xyz, port: 19129, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_131, server: gzdx4.170203.xyz, port: 33962, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_132, server: gzdx3.156786.xyz, port: 26419, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx3.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_youtube@资源分享师_133, server: jp001.156786.xyz, port: 443, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: jp001.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_134, server: 172.67.64.14, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm.shabijichang.com}, udp: true}
+  - {name: JP_youtube@资源分享师_135, server: jp001.156786.xyz, port: 443, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: jp001.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: CA_youtube@资源分享师_136, server: 23.227.39.82, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: d.freeh1.xyz}, udp: true}
+  - {name: TW_youtube@资源分享师_137, server: gzdx1.170203.xyz, port: 49795, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx1.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_139, server: gzdx1.170203.xyz, port: 443, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx1.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: KR_youtube@资源分享师_140, server: kr02.170203.xyz, port: 443, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: kr02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_youtube@资源分享师_141, server: jpmax03.170203.xyz, port: 443, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: jpmax03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_142, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hdlb2.shabijichang.com}, udp: true}
+  - {name: SG_youtube@资源分享师_144, server: sgmax02.156786.xyz, port: 45623, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: sgmax02.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_youtube@资源分享师_146, server: jp003.156786.xyz, port: 34522, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: jp003.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_youtube@资源分享师_147, server: 35.79.23.138, port: 3306, type: trojan, password: 71bb6fb9141f3618, skip-cert-verify: true, udp: true}
+  - {name: JP_youtube@资源分享师_148, server: 35.79.23.138, port: 3306, type: trojan, password: 8a1ab0df6abea549, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_149, server: gzdx5.156786.xyz, port: 43343, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_150, server: 172.67.163.162, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_151, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm4.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_153, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fhc.shabijichang.com}, udp: true}
+  - {name: JP_youtube@资源分享师_155, server: jpmax05.170203.xyz, port: 56464, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: jpmax05.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: CA_youtube@资源分享师_157, server: 23.227.38.81, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: d.freeh1.xyz}, udp: true}
+  - {name: US_youtube@资源分享师_158, server: 23.26.98.120, port: 28525, type: vmess, uuid: de1d058c-b512-485e-e216-4a8a8ad5a2f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TG:@hkaa0, ws-headers: {Host: 23.26.98.120}, udp: true}
+  - {name: JP_youtube@资源分享师_159, server: 35.79.23.138, port: 3306, type: trojan, password: b09d2aaa443af97a, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_162, server: 172.67.65.128, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hdlb2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_163, server: 172.67.196.139, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: ca.ilovescp.com}, udp: true}
+  - {name: TW_youtube@资源分享师_164, server: gzdx4.170203.xyz, port: 36758, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_167, server: 172.67.136.102, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dld.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_168, server: 45.199.138.162, port: 32661, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_169, server: gzdx2.170203.xyz, port: 64852, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx2.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_youtube@资源分享师_170, server: jp002.170203.xyz, port: 63608, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: jp002.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_171, server: gzdx2.170203.xyz, port: 64852, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx2.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_172, server: 45.199.138.135, port: 51119, type: vmess, uuid: 743bdc87-1dea-41bf-aa0b-51dfbbfec8aa, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_173, server: 172.67.149.100, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: ca.ilovescp.com}, udp: true}
+  - {name: JP_youtube@资源分享师_174, server: jp003.156786.xyz, port: 34522, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: jp003.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_175, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg.shabijichang.com}, udp: true}
+  - {name: JP_youtube@资源分享师_176, server: jp003.156786.xyz, port: 34522, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: jp003.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_youtube@资源分享师_177, server: jp01.156786.xyz, port: 443, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: jp01.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_youtube@资源分享师_179, server: jpmax05.170203.xyz, port: 56464, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: jpmax05.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_180, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dld.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_181, server: gzdx5.156786.xyz, port: 23456, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_182, server: gzdx1.170203.xyz, port: 49795, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx1.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_183, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm3.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_187, server: gzdx2.170203.xyz, port: 34234, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx2.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_188, server: 172.67.149.81, port: 80, type: vmess, uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: wxll.e5outllok.me}, udp: true}
+  - {name: JP_youtube@资源分享师_189, server: kbawsjp2.aiopen.cfd, port: 443, type: trojan, password: 343f9a0c-494e-4c23-8adc-afb3f75c1294, sni: kbawsjp2.aiopen.cfd, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_190, server: gzdx5.156786.xyz, port: 43343, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_191, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_192, server: 104.21.7.61, port: 2095, type: vmess, uuid: a04e2923-1a96-4998-ec89-2634f7197ebf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TG:@hkaa0, ws-headers: {Host: 12.wyhkaa0.gq}, udp: true}
+  - {name: JP_youtube@资源分享师_193, server: jp01.156786.xyz, port: 443, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: jp01.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: KR_youtube@资源分享师_194, server: kr02.170203.xyz, port: 443, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: kr02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_195, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm3.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_196, server: gzdx3.156786.xyz, port: 23456, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx3.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_198, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dld.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_199, server: 172.67.29.49, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ml3.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_200, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_201, server: 172.67.187.132, port: 2095, type: vmess, uuid: a04e2923-1a96-4998-ec89-2634f7197ebf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TG:@hkaa0, ws-headers: {Host: 12.wyhkaa0.gq}, udp: true}
+  - {name: US_youtube@资源分享师_203, server: 172.67.148.210, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: ca.ilovescp.com}, udp: true}
+  - {name: US_youtube@资源分享师_204, server: 172.64.202.22, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: dp4.ilovescp.com}, udp: true}
+  - {name: US_youtube@资源分享师_205, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: asb2.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_206, server: gzdx3.156786.xyz, port: 32864, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx3.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_207, server: shs.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: shs.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_209, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_210, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dld.shabijichang.com}, udp: true}
+  - {name: JP_youtube@资源分享师_211, server: jp05.170203.xyz, port: 45336, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: jp05.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: JP_youtube@资源分享师_213, server: jp05.170203.xyz, port: 45336, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: jp05.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_214, server: 172.67.211.253, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: ca.ilovescp.com}, udp: true}
+  - {name: US_youtube@资源分享师_215, server: 172.67.200.238, port: 443, type: vmess, uuid: 3a02e17e-d68d-4082-893a-65a43716ab13, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: dallas.starsea.vip}, udp: true}
+  - {name: US_youtube@资源分享师_216, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: wnd.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_217, server: 172.67.59.39, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: ca.ilovescp.com}, udp: true}
+  - {name: US_youtube@资源分享师_218, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hdlb.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_220, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ml3.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_222, server: gzdx2.170203.xyz, port: 64852, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx2.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_223, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hdlb.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_224, server: sdygarm.e5outllok.me, port: 80, type: vmess, uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdygarm.e5outllok.me}, udp: true}
+  - {name: US_youtube@资源分享师_225, server: rb.620720.xyz, port: 8443, type: vmess, uuid: ad0a2e96-189b-4ee2-86ed-1fb4052449e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: rb.620720.xyz}, udp: true}
+  - {name: US_youtube@资源分享师_226, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg3.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_227, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hdlb.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_228, server: 172.67.51.152, port: 443, type: vmess, uuid: 8d2ba456-2f0d-4c13-b8a0-bff99c679709, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ikun, ws-headers: {Host: lo.twittei.me}, udp: true}
+  - {name: US_youtube@资源分享师_229, server: 156.225.67.23, port: 43414, type: vmess, uuid: 375e70f0-5d46-476f-8d69-0fb35c5548a9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_231, server: 172.67.120.174, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: ca.ilovescp.com}, udp: true}
+  - {name: TW_youtube@资源分享师_232, server: gzdx5.156786.xyz, port: 50802, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_233, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_234, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: asb3.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_235, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: asb3.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_236, server: gzdx5.156786.xyz, port: 19129, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_237, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sbl2.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_238, server: gzdx4.170203.xyz, port: 53045, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx4.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_239, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hdlb2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_240, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: wnd.shabijichang.com}, udp: true}
+  - {name: SG_youtube@资源分享师_241, server: sg03.170203.xyz, port: 443, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: sg03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_242, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ml2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_243, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_244, server: 172.67.105.58, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: db4.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_245, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zjg.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_246, server: gzdx5.156786.xyz, port: 51112, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_247, server: 45.199.138.186, port: 34538, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_248, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: asb2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_249, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ml4.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_250, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hdlb2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_251, server: 6.620720.xyz, port: 443, type: vmess, uuid: ad0a2e96-189b-4ee2-86ed-1fb4052449e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 6.620720.xyz}, udp: true}
+  - {name: US_youtube@资源分享师_252, server: 172.64.153.211, port: 443, type: vmess, uuid: 6e751712-9569-5187-86ea-8f585ad99105, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api01, ws-headers: {Host: schereswed.softwarenews.store}, udp: true}
+  - {name: US_youtube@资源分享师_253, server: 172.67.0.34, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hdlb2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_254, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg2.shabijichang.com}, udp: true}
+  - {name: JP_youtube@资源分享师_255, server: jpmax03.170203.xyz, port: 443, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: jpmax03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_256, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: xjp.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_257, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mrb2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_258, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sbl2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_259, server: 172.67.29.49, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: db4.shabijichang.com}, udp: true}
+  - {name: CA_youtube@资源分享师_260, server: 108.181.24.41, port: 443, type: trojan, password: 343f9a0c-494e-4c23-8adc-afb3f75c1294, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_262, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sbl4.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_263, server: sdygarm.e5outllok.me, port: 80, type: vmess, uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdygarm.e5outllok.me}, udp: true}
+  - {name: SG_youtube@资源分享师_264, server: sgmax06.170203.xyz, port: 443, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: sgmax06.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_265, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mrb3.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_266, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg3.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_267, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: ca.ilovescp.com}, udp: true}
+  - {name: US_youtube@资源分享师_269, server: 172.67.189.152, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: zjg.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_270, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hdlb.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_271, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ml3.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_272, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: db4.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_273, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: db4.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_274, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sbl2.shabijichang.com}, udp: true}
+  - {name: SG_youtube@资源分享师_275, server: ru04.170203.xyz, port: 34234, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: ru04.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_276, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: xjp.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_277, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: wnd.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_278, server: 6.620720.xyz, port: 443, type: vmess, uuid: ad0a2e96-189b-4ee2-86ed-1fb4052449e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 6.620720.xyz}, udp: true}
+  - {name: US_youtube@资源分享师_279, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ml3.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_280, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_281, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm.shabijichang.com}, udp: true}
+  - {name: TW_youtube@资源分享师_282, server: gzdx5.156786.xyz, port: 28690, type: trojan, password: 445589df-4985-4a82-bc00-d83afd4de249, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_283, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: xjp.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_285, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: xjp.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_286, server: 172.67.65.128, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: db4.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_287, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm4.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_288, server: 140.99.53.242, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_youtube@资源分享师_289, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: db4.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_290, server: 18.wyhkaa0.gq, port: 2095, type: vmess, uuid: 79602372-640c-44b8-eb6b-2e655c3089df, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /TG:@hkaa0, ws-headers: {Host: 18.wyhkaa0.gq}, udp: true}
+  - {name: US_youtube@资源分享师_291, server: wxll.e5outllok.me, port: 80, type: vmess, uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: wxll.e5outllok.me}, udp: true}
+  - {name: US_youtube@资源分享师_292, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm4.shabijichang.com}, udp: true}
+  - {name: JP_youtube@资源分享师_293, server: jpmax03.170203.xyz, port: 443, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: jpmax03.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_294, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: db4.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_295, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fhc.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_296, server: 172.67.27.227, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: dp4.ilovescp.com}, udp: true}
+  - {name: TW_youtube@资源分享师_297, server: gzdx5.156786.xyz, port: 43343, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx5.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: TW_youtube@资源分享师_298, server: gzdx2.170203.xyz, port: 64989, type: trojan, password: 432beda1-6577-494b-b811-f36021350f3b, sni: gzdx2.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_299, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sbl2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_300, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: hdlb2.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_301, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm4.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_302, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm2.shabijichang.com}, udp: true}
+  - {name: CA_youtube@资源分享师_303, server: 108.181.23.249, port: 443, type: trojan, password: 343f9a0c-494e-4c23-8adc-afb3f75c1294, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_304, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: ca.ilovescp.com}, udp: true}
+  - {name: US_youtube@资源分享师_305, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdyg3.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_306, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 11378141-9527-478d-b0b9-c18396ca7c53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm3.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_307, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ml4.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_308, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 3ccbc585-baa6-4bc3-bd44-5b6c54406bfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mm.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_309, server: 172.67.149.81, port: 80, type: vmess, uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: sdygarm.e5outllok.me}, udp: true}
+  - {name: US_youtube@资源分享师_310, server: wxll.e5outllok.me, port: 80, type: vmess, uuid: f31c0b34-977b-4c2b-acfa-becfdfc1f267, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: wxll.e5outllok.me}, udp: true}
+  - {name: US_youtube@资源分享师_311, server: 172.64.169.199, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /shirker, ws-headers: {Host: dp4.scproxy.top}, udp: true}
+  - {name: US_youtube@资源分享师_312, server: fd.shabijichang.com, port: 80, type: vmess, uuid: 2b5dc459-de6c-48aa-b04e-6f76581ad7ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fhc.shabijichang.com}, udp: true}
+  - {name: US_youtube@资源分享师_313, server: zhuanfa.baiduvideos.online, port: 80, type: vmess, uuid: 95252c48-c73b-4a1f-94d0-d351de9c50c8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /114514, ws-headers: {Host: japan11451.baiduvideos.online}, udp: true}
+  - {name: TW_youtube@资源分享师_314, server: gzdx0.156786.xyz, port: 60970, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: gzdx0.156786.xyz, skip-cert-verify: true, udp: true}
+  - {name: KR_youtube@资源分享师_315, server: kr02.170203.xyz, port: 443, type: trojan, password: 9408ac9c-2fb7-4076-bdf2-b171b9980c56, sni: kr02.170203.xyz, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_316, server: franc.digires.shop, port: 443, type: vmess, uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /11201, ws-headers: {Host: franc.digires.shop}, udp: true}
+  - {name: FR_youtube@资源分享师_317, server: 156.249.18.24, port: 44265, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_youtube@资源分享师_318, server: fd.shabijichang.com, port: 80, type: vmess, uuid: df7abf48-196d-4dbd-b981-4d0c4f4bb446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ml3.shabijichang.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_youtube@资源分享师_1
-      - CN_youtube@资源分享师_3
-      - CN_youtube@资源分享师_4
-      - CN_youtube@资源分享师_5
-      - US_youtube@资源分享师_9
-      - CN_youtube@资源分享师_10
-      - CN_youtube@资源分享师_17
+      - TW_youtube@资源分享师_1
+      - SG_youtube@资源分享师_2
+      - SG_youtube@资源分享师_3
+      - TW_youtube@资源分享师_4
+      - TW_youtube@资源分享师_5
+      - TW_youtube@资源分享师_6
+      - SG_youtube@资源分享师_7
+      - TW_youtube@资源分享师_10
+      - TW_youtube@资源分享师_11
+      - SG_youtube@资源分享师_13
+      - TW_youtube@资源分享师_15
+      - US_youtube@资源分享师_16
+      - JP_youtube@资源分享师_17
       - TW_youtube@资源分享师_18
-      - CN_youtube@资源分享师_20
-      - TW_youtube@资源分享师_25
-      - US_youtube@资源分享师_28
+      - US_youtube@资源分享师_19
+      - SG_youtube@资源分享师_20
+      - TW_youtube@资源分享师_21
+      - TW_youtube@资源分享师_22
+      - TW_youtube@资源分享师_23
+      - US_youtube@资源分享师_24
+      - JP_youtube@资源分享师_25
+      - TW_youtube@资源分享师_26
+      - JP_youtube@资源分享师_27
+      - US_youtube@资源分享师_29
       - US_youtube@资源分享师_30
-      - CN_youtube@资源分享师_32
-      - CN_youtube@资源分享师_35
-      - US_youtube@资源分享师_39
-      - CN_youtube@资源分享师_46
-      - US_youtube@资源分享师_56
-      - JP_youtube@资源分享师_58
-      - US_youtube@资源分享师_59
-      - CN_youtube@资源分享师_65
-      - CN_youtube@资源分享师_68
-      - US_youtube@资源分享师_74
-      - US_youtube@资源分享师_75
+      - US_youtube@资源分享师_31
+      - JP_youtube@资源分享师_32
+      - TW_youtube@资源分享师_33
+      - JP_youtube@资源分享师_34
+      - TW_youtube@资源分享师_35
+      - US_youtube@资源分享师_36
+      - US_youtube@资源分享师_37
+      - US_youtube@资源分享师_38
+      - SG_youtube@资源分享师_39
+      - US_youtube@资源分享师_40
+      - JP_youtube@资源分享师_41
+      - TW_youtube@资源分享师_42
+      - CN_youtube@资源分享师_43
+      - US_youtube@资源分享师_44
+      - US_youtube@资源分享师_45
+      - TW_youtube@资源分享师_46
+      - US_youtube@资源分享师_48
+      - US_youtube@资源分享师_49
+      - TW_youtube@资源分享师_50
+      - TW_youtube@资源分享师_51
+      - TW_youtube@资源分享师_53
+      - TW_youtube@资源分享师_54
+      - US_youtube@资源分享师_55
+      - SG_youtube@资源分享师_56
+      - TW_youtube@资源分享师_57
+      - US_youtube@资源分享师_58
+      - TW_youtube@资源分享师_59
+      - SG_youtube@资源分享师_60
+      - SG_youtube@资源分享师_61
+      - CN_youtube@资源分享师_62
+      - TW_youtube@资源分享师_63
+      - TW_youtube@资源分享师_64
+      - US_youtube@资源分享师_65
+      - US_youtube@资源分享师_66
+      - US_youtube@资源分享师_67
+      - TW_youtube@资源分享师_68
+      - TW_youtube@资源分享师_69
+      - US_youtube@资源分享师_70
+      - TW_youtube@资源分享师_71
+      - SG_youtube@资源分享师_72
+      - TW_youtube@资源分享师_73
+      - TW_youtube@资源分享师_74
+      - TW_youtube@资源分享师_75
+      - SG_youtube@资源分享师_77
       - US_youtube@资源分享师_78
-      - US_youtube@资源分享师_80
+      - TW_youtube@资源分享师_79
+      - JP_youtube@资源分享师_80
+      - TW_youtube@资源分享师_81
+      - HK_youtube@资源分享师_82
+      - TW_youtube@资源分享师_84
       - TW_youtube@资源分享师_85
-      - JP_youtube@资源分享师_89
-      - CN_youtube@资源分享师_90
-      - US_youtube@资源分享师_91
+      - TW_youtube@资源分享师_86
+      - TW_youtube@资源分享师_87
+      - US_youtube@资源分享师_88
+      - US_youtube@资源分享师_89
+      - SG_youtube@资源分享师_90
+      - TW_youtube@资源分享师_92
+      - TW_youtube@资源分享师_93
+      - SG_youtube@资源分享师_94
       - US_youtube@资源分享师_95
       - JP_youtube@资源分享师_96
-      - US_youtube@资源分享师_97
-      - US_youtube@资源分享师_98
-      - US_youtube@资源分享师_100
+      - TW_youtube@资源分享师_97
+      - TW_youtube@资源分享师_98
+      - TW_youtube@资源分享师_100
+      - TW_youtube@资源分享师_101
       - US_youtube@资源分享师_102
       - TW_youtube@资源分享师_103
+      - US_youtube@资源分享师_104
+      - TW_youtube@资源分享师_105
+      - TW_youtube@资源分享师_107
+      - TW_youtube@资源分享师_108
       - US_youtube@资源分享师_109
-      - CN_youtube@资源分享师_111
-      - JP_youtube@资源分享师_119
+      - SG_youtube@资源分享师_110
+      - TW_youtube@资源分享师_111
+      - TW_youtube@资源分享师_112
+      - US_youtube@资源分享师_114
+      - TW_youtube@资源分享师_115
+      - SG_youtube@资源分享师_116
+      - TW_youtube@资源分享师_118
+      - US_youtube@资源分享师_119
+      - US_youtube@资源分享师_121
       - US_youtube@资源分享师_122
+      - US_youtube@资源分享师_123
+      - US_youtube@资源分享师_124
+      - JP_youtube@资源分享师_125
       - US_youtube@资源分享师_126
-      - US_youtube@资源分享师_129
-      - FR_youtube@资源分享师_130
-      - US_youtube@资源分享师_133
+      - TW_youtube@资源分享师_127
+      - JP_youtube@资源分享师_128
+      - TW_youtube@资源分享师_129
+      - TW_youtube@资源分享师_130
+      - TW_youtube@资源分享师_131
+      - TW_youtube@资源分享师_132
+      - JP_youtube@资源分享师_133
       - US_youtube@资源分享师_134
-      - US_youtube@资源分享师_135
-      - US_youtube@资源分享师_139
-      - US_youtube@资源分享师_141
+      - JP_youtube@资源分享师_135
+      - CA_youtube@资源分享师_136
+      - TW_youtube@资源分享师_137
+      - TW_youtube@资源分享师_139
+      - KR_youtube@资源分享师_140
+      - JP_youtube@资源分享师_141
       - US_youtube@资源分享师_142
-      - US_youtube@资源分享师_148
-      - US_youtube@资源分享师_149
+      - SG_youtube@资源分享师_144
+      - JP_youtube@资源分享师_146
+      - JP_youtube@资源分享师_147
+      - JP_youtube@资源分享师_148
+      - TW_youtube@资源分享师_149
+      - US_youtube@资源分享师_150
       - US_youtube@资源分享师_151
-      - JP_youtube@资源分享师_152
       - US_youtube@资源分享师_153
-      - US_youtube@资源分享师_154
+      - JP_youtube@资源分享师_155
+      - CA_youtube@资源分享师_157
       - US_youtube@资源分享师_158
-      - US_youtube@资源分享师_159
-      - US_youtube@资源分享师_161
-      - JP_youtube@资源分享师_162
-      - CN_youtube@资源分享师_165
+      - JP_youtube@资源分享师_159
+      - US_youtube@资源分享师_162
+      - US_youtube@资源分享师_163
+      - TW_youtube@资源分享师_164
       - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_170
-      - US_youtube@资源分享师_176
-      - CN_youtube@资源分享师_178
+      - US_youtube@资源分享师_168
+      - TW_youtube@资源分享师_169
+      - JP_youtube@资源分享师_170
+      - TW_youtube@资源分享师_171
+      - US_youtube@资源分享师_172
+      - US_youtube@资源分享师_173
+      - JP_youtube@资源分享师_174
+      - US_youtube@资源分享师_175
+      - JP_youtube@资源分享师_176
+      - JP_youtube@资源分享师_177
+      - JP_youtube@资源分享师_179
+      - US_youtube@资源分享师_180
+      - TW_youtube@资源分享师_181
+      - TW_youtube@资源分享师_182
       - US_youtube@资源分享师_183
-      - US_youtube@资源分享师_187
-      - US_youtube@资源分享师_197
+      - TW_youtube@资源分享师_187
+      - US_youtube@资源分享师_188
+      - JP_youtube@资源分享师_189
+      - TW_youtube@资源分享师_190
+      - US_youtube@资源分享师_191
+      - US_youtube@资源分享师_192
+      - JP_youtube@资源分享师_193
+      - KR_youtube@资源分享师_194
+      - US_youtube@资源分享师_195
+      - TW_youtube@资源分享师_196
+      - US_youtube@资源分享师_198
       - US_youtube@资源分享师_199
-      - JP_youtube@资源分享师_203
+      - US_youtube@资源分享师_200
+      - US_youtube@资源分享师_201
+      - US_youtube@资源分享师_203
       - US_youtube@资源分享师_204
+      - US_youtube@资源分享师_205
+      - TW_youtube@资源分享师_206
       - US_youtube@资源分享师_207
-      - JP_youtube@资源分享师_209
-      - US_youtube@资源分享师_222
-      - JP_youtube@资源分享师_223
+      - US_youtube@资源分享师_209
+      - US_youtube@资源分享师_210
+      - JP_youtube@资源分享师_211
+      - JP_youtube@资源分享师_213
+      - US_youtube@资源分享师_214
+      - US_youtube@资源分享师_215
+      - US_youtube@资源分享师_216
+      - US_youtube@资源分享师_217
+      - US_youtube@资源分享师_218
+      - US_youtube@资源分享师_220
+      - TW_youtube@资源分享师_222
+      - US_youtube@资源分享师_223
+      - US_youtube@资源分享师_224
+      - US_youtube@资源分享师_225
       - US_youtube@资源分享师_226
+      - US_youtube@资源分享师_227
       - US_youtube@资源分享师_228
-      - CN_youtube@资源分享师_229
-      - GB_youtube@资源分享师_230
+      - US_youtube@资源分享师_229
       - US_youtube@资源分享师_231
+      - TW_youtube@资源分享师_232
       - US_youtube@资源分享师_233
-      - US_youtube@资源分享师_236
-      - US_youtube@资源分享师_238
-      - US_youtube@资源分享师_241
-      - CN_youtube@资源分享师_242
-      - CN_youtube@资源分享师_244
-      - TW_youtube@资源分享师_245
+      - US_youtube@资源分享师_234
+      - US_youtube@资源分享师_235
+      - TW_youtube@资源分享师_236
+      - US_youtube@资源分享师_237
+      - TW_youtube@资源分享师_238
+      - US_youtube@资源分享师_239
+      - US_youtube@资源分享师_240
+      - SG_youtube@资源分享师_241
+      - US_youtube@资源分享师_242
+      - US_youtube@资源分享师_243
+      - US_youtube@资源分享师_244
+      - US_youtube@资源分享师_245
+      - TW_youtube@资源分享师_246
+      - US_youtube@资源分享师_247
+      - US_youtube@资源分享师_248
+      - US_youtube@资源分享师_249
+      - US_youtube@资源分享师_250
+      - US_youtube@资源分享师_251
+      - US_youtube@资源分享师_252
+      - US_youtube@资源分享师_253
+      - US_youtube@资源分享师_254
+      - JP_youtube@资源分享师_255
+      - US_youtube@资源分享师_256
+      - US_youtube@资源分享师_257
+      - US_youtube@资源分享师_258
+      - US_youtube@资源分享师_259
+      - CA_youtube@资源分享师_260
+      - US_youtube@资源分享师_262
+      - US_youtube@资源分享师_263
+      - SG_youtube@资源分享师_264
+      - US_youtube@资源分享师_265
+      - US_youtube@资源分享师_266
+      - US_youtube@资源分享师_267
+      - US_youtube@资源分享师_269
+      - US_youtube@资源分享师_270
+      - US_youtube@资源分享师_271
+      - US_youtube@资源分享师_272
+      - US_youtube@资源分享师_273
+      - US_youtube@资源分享师_274
+      - SG_youtube@资源分享师_275
+      - US_youtube@资源分享师_276
+      - US_youtube@资源分享师_277
+      - US_youtube@资源分享师_278
+      - US_youtube@资源分享师_279
+      - US_youtube@资源分享师_280
+      - US_youtube@资源分享师_281
+      - TW_youtube@资源分享师_282
+      - US_youtube@资源分享师_283
+      - US_youtube@资源分享师_285
+      - US_youtube@资源分享师_286
+      - US_youtube@资源分享师_287
+      - US_youtube@资源分享师_288
+      - US_youtube@资源分享师_289
+      - US_youtube@资源分享师_290
+      - US_youtube@资源分享师_291
+      - US_youtube@资源分享师_292
+      - JP_youtube@资源分享师_293
+      - US_youtube@资源分享师_294
+      - US_youtube@资源分享师_295
+      - US_youtube@资源分享师_296
+      - TW_youtube@资源分享师_297
+      - TW_youtube@资源分享师_298
+      - US_youtube@资源分享师_299
+      - US_youtube@资源分享师_300
+      - US_youtube@资源分享师_301
+      - US_youtube@资源分享师_302
+      - CA_youtube@资源分享师_303
+      - US_youtube@资源分享师_304
+      - US_youtube@资源分享师_305
+      - US_youtube@资源分享师_306
+      - US_youtube@资源分享师_307
+      - US_youtube@资源分享师_308
+      - US_youtube@资源分享师_309
+      - US_youtube@资源分享师_310
+      - US_youtube@资源分享师_311
+      - US_youtube@资源分享师_312
+      - US_youtube@资源分享师_313
+      - TW_youtube@资源分享师_314
+      - KR_youtube@资源分享师_315
+      - US_youtube@资源分享师_316
+      - FR_youtube@资源分享师_317
+      - US_youtube@资源分享师_318
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_youtube@资源分享师_1
-      - CN_youtube@资源分享师_3
-      - CN_youtube@资源分享师_4
-      - CN_youtube@资源分享师_5
-      - US_youtube@资源分享师_9
-      - CN_youtube@资源分享师_10
-      - CN_youtube@资源分享师_17
+      - TW_youtube@资源分享师_1
+      - SG_youtube@资源分享师_2
+      - SG_youtube@资源分享师_3
+      - TW_youtube@资源分享师_4
+      - TW_youtube@资源分享师_5
+      - TW_youtube@资源分享师_6
+      - SG_youtube@资源分享师_7
+      - TW_youtube@资源分享师_10
+      - TW_youtube@资源分享师_11
+      - SG_youtube@资源分享师_13
+      - TW_youtube@资源分享师_15
+      - US_youtube@资源分享师_16
+      - JP_youtube@资源分享师_17
       - TW_youtube@资源分享师_18
-      - CN_youtube@资源分享师_20
-      - TW_youtube@资源分享师_25
-      - US_youtube@资源分享师_28
+      - US_youtube@资源分享师_19
+      - SG_youtube@资源分享师_20
+      - TW_youtube@资源分享师_21
+      - TW_youtube@资源分享师_22
+      - TW_youtube@资源分享师_23
+      - US_youtube@资源分享师_24
+      - JP_youtube@资源分享师_25
+      - TW_youtube@资源分享师_26
+      - JP_youtube@资源分享师_27
+      - US_youtube@资源分享师_29
       - US_youtube@资源分享师_30
-      - CN_youtube@资源分享师_32
-      - CN_youtube@资源分享师_35
-      - US_youtube@资源分享师_39
-      - CN_youtube@资源分享师_46
-      - US_youtube@资源分享师_56
-      - JP_youtube@资源分享师_58
-      - US_youtube@资源分享师_59
-      - CN_youtube@资源分享师_65
-      - CN_youtube@资源分享师_68
-      - US_youtube@资源分享师_74
-      - US_youtube@资源分享师_75
+      - US_youtube@资源分享师_31
+      - JP_youtube@资源分享师_32
+      - TW_youtube@资源分享师_33
+      - JP_youtube@资源分享师_34
+      - TW_youtube@资源分享师_35
+      - US_youtube@资源分享师_36
+      - US_youtube@资源分享师_37
+      - US_youtube@资源分享师_38
+      - SG_youtube@资源分享师_39
+      - US_youtube@资源分享师_40
+      - JP_youtube@资源分享师_41
+      - TW_youtube@资源分享师_42
+      - CN_youtube@资源分享师_43
+      - US_youtube@资源分享师_44
+      - US_youtube@资源分享师_45
+      - TW_youtube@资源分享师_46
+      - US_youtube@资源分享师_48
+      - US_youtube@资源分享师_49
+      - TW_youtube@资源分享师_50
+      - TW_youtube@资源分享师_51
+      - TW_youtube@资源分享师_53
+      - TW_youtube@资源分享师_54
+      - US_youtube@资源分享师_55
+      - SG_youtube@资源分享师_56
+      - TW_youtube@资源分享师_57
+      - US_youtube@资源分享师_58
+      - TW_youtube@资源分享师_59
+      - SG_youtube@资源分享师_60
+      - SG_youtube@资源分享师_61
+      - CN_youtube@资源分享师_62
+      - TW_youtube@资源分享师_63
+      - TW_youtube@资源分享师_64
+      - US_youtube@资源分享师_65
+      - US_youtube@资源分享师_66
+      - US_youtube@资源分享师_67
+      - TW_youtube@资源分享师_68
+      - TW_youtube@资源分享师_69
+      - US_youtube@资源分享师_70
+      - TW_youtube@资源分享师_71
+      - SG_youtube@资源分享师_72
+      - TW_youtube@资源分享师_73
+      - TW_youtube@资源分享师_74
+      - TW_youtube@资源分享师_75
+      - SG_youtube@资源分享师_77
       - US_youtube@资源分享师_78
-      - US_youtube@资源分享师_80
+      - TW_youtube@资源分享师_79
+      - JP_youtube@资源分享师_80
+      - TW_youtube@资源分享师_81
+      - HK_youtube@资源分享师_82
+      - TW_youtube@资源分享师_84
       - TW_youtube@资源分享师_85
-      - JP_youtube@资源分享师_89
-      - CN_youtube@资源分享师_90
-      - US_youtube@资源分享师_91
+      - TW_youtube@资源分享师_86
+      - TW_youtube@资源分享师_87
+      - US_youtube@资源分享师_88
+      - US_youtube@资源分享师_89
+      - SG_youtube@资源分享师_90
+      - TW_youtube@资源分享师_92
+      - TW_youtube@资源分享师_93
+      - SG_youtube@资源分享师_94
       - US_youtube@资源分享师_95
       - JP_youtube@资源分享师_96
-      - US_youtube@资源分享师_97
-      - US_youtube@资源分享师_98
-      - US_youtube@资源分享师_100
+      - TW_youtube@资源分享师_97
+      - TW_youtube@资源分享师_98
+      - TW_youtube@资源分享师_100
+      - TW_youtube@资源分享师_101
       - US_youtube@资源分享师_102
       - TW_youtube@资源分享师_103
+      - US_youtube@资源分享师_104
+      - TW_youtube@资源分享师_105
+      - TW_youtube@资源分享师_107
+      - TW_youtube@资源分享师_108
       - US_youtube@资源分享师_109
-      - CN_youtube@资源分享师_111
-      - JP_youtube@资源分享师_119
+      - SG_youtube@资源分享师_110
+      - TW_youtube@资源分享师_111
+      - TW_youtube@资源分享师_112
+      - US_youtube@资源分享师_114
+      - TW_youtube@资源分享师_115
+      - SG_youtube@资源分享师_116
+      - TW_youtube@资源分享师_118
+      - US_youtube@资源分享师_119
+      - US_youtube@资源分享师_121
       - US_youtube@资源分享师_122
+      - US_youtube@资源分享师_123
+      - US_youtube@资源分享师_124
+      - JP_youtube@资源分享师_125
       - US_youtube@资源分享师_126
-      - US_youtube@资源分享师_129
-      - FR_youtube@资源分享师_130
-      - US_youtube@资源分享师_133
+      - TW_youtube@资源分享师_127
+      - JP_youtube@资源分享师_128
+      - TW_youtube@资源分享师_129
+      - TW_youtube@资源分享师_130
+      - TW_youtube@资源分享师_131
+      - TW_youtube@资源分享师_132
+      - JP_youtube@资源分享师_133
       - US_youtube@资源分享师_134
-      - US_youtube@资源分享师_135
-      - US_youtube@资源分享师_139
-      - US_youtube@资源分享师_141
+      - JP_youtube@资源分享师_135
+      - CA_youtube@资源分享师_136
+      - TW_youtube@资源分享师_137
+      - TW_youtube@资源分享师_139
+      - KR_youtube@资源分享师_140
+      - JP_youtube@资源分享师_141
       - US_youtube@资源分享师_142
-      - US_youtube@资源分享师_148
-      - US_youtube@资源分享师_149
+      - SG_youtube@资源分享师_144
+      - JP_youtube@资源分享师_146
+      - JP_youtube@资源分享师_147
+      - JP_youtube@资源分享师_148
+      - TW_youtube@资源分享师_149
+      - US_youtube@资源分享师_150
       - US_youtube@资源分享师_151
-      - JP_youtube@资源分享师_152
       - US_youtube@资源分享师_153
-      - US_youtube@资源分享师_154
+      - JP_youtube@资源分享师_155
+      - CA_youtube@资源分享师_157
       - US_youtube@资源分享师_158
-      - US_youtube@资源分享师_159
-      - US_youtube@资源分享师_161
-      - JP_youtube@资源分享师_162
-      - CN_youtube@资源分享师_165
+      - JP_youtube@资源分享师_159
+      - US_youtube@资源分享师_162
+      - US_youtube@资源分享师_163
+      - TW_youtube@资源分享师_164
       - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_170
-      - US_youtube@资源分享师_176
-      - CN_youtube@资源分享师_178
+      - US_youtube@资源分享师_168
+      - TW_youtube@资源分享师_169
+      - JP_youtube@资源分享师_170
+      - TW_youtube@资源分享师_171
+      - US_youtube@资源分享师_172
+      - US_youtube@资源分享师_173
+      - JP_youtube@资源分享师_174
+      - US_youtube@资源分享师_175
+      - JP_youtube@资源分享师_176
+      - JP_youtube@资源分享师_177
+      - JP_youtube@资源分享师_179
+      - US_youtube@资源分享师_180
+      - TW_youtube@资源分享师_181
+      - TW_youtube@资源分享师_182
       - US_youtube@资源分享师_183
-      - US_youtube@资源分享师_187
-      - US_youtube@资源分享师_197
+      - TW_youtube@资源分享师_187
+      - US_youtube@资源分享师_188
+      - JP_youtube@资源分享师_189
+      - TW_youtube@资源分享师_190
+      - US_youtube@资源分享师_191
+      - US_youtube@资源分享师_192
+      - JP_youtube@资源分享师_193
+      - KR_youtube@资源分享师_194
+      - US_youtube@资源分享师_195
+      - TW_youtube@资源分享师_196
+      - US_youtube@资源分享师_198
       - US_youtube@资源分享师_199
-      - JP_youtube@资源分享师_203
+      - US_youtube@资源分享师_200
+      - US_youtube@资源分享师_201
+      - US_youtube@资源分享师_203
       - US_youtube@资源分享师_204
+      - US_youtube@资源分享师_205
+      - TW_youtube@资源分享师_206
       - US_youtube@资源分享师_207
-      - JP_youtube@资源分享师_209
-      - US_youtube@资源分享师_222
-      - JP_youtube@资源分享师_223
+      - US_youtube@资源分享师_209
+      - US_youtube@资源分享师_210
+      - JP_youtube@资源分享师_211
+      - JP_youtube@资源分享师_213
+      - US_youtube@资源分享师_214
+      - US_youtube@资源分享师_215
+      - US_youtube@资源分享师_216
+      - US_youtube@资源分享师_217
+      - US_youtube@资源分享师_218
+      - US_youtube@资源分享师_220
+      - TW_youtube@资源分享师_222
+      - US_youtube@资源分享师_223
+      - US_youtube@资源分享师_224
+      - US_youtube@资源分享师_225
       - US_youtube@资源分享师_226
+      - US_youtube@资源分享师_227
       - US_youtube@资源分享师_228
-      - CN_youtube@资源分享师_229
-      - GB_youtube@资源分享师_230
+      - US_youtube@资源分享师_229
       - US_youtube@资源分享师_231
+      - TW_youtube@资源分享师_232
       - US_youtube@资源分享师_233
-      - US_youtube@资源分享师_236
-      - US_youtube@资源分享师_238
-      - US_youtube@资源分享师_241
-      - CN_youtube@资源分享师_242
-      - CN_youtube@资源分享师_244
-      - TW_youtube@资源分享师_245
+      - US_youtube@资源分享师_234
+      - US_youtube@资源分享师_235
+      - TW_youtube@资源分享师_236
+      - US_youtube@资源分享师_237
+      - TW_youtube@资源分享师_238
+      - US_youtube@资源分享师_239
+      - US_youtube@资源分享师_240
+      - SG_youtube@资源分享师_241
+      - US_youtube@资源分享师_242
+      - US_youtube@资源分享师_243
+      - US_youtube@资源分享师_244
+      - US_youtube@资源分享师_245
+      - TW_youtube@资源分享师_246
+      - US_youtube@资源分享师_247
+      - US_youtube@资源分享师_248
+      - US_youtube@资源分享师_249
+      - US_youtube@资源分享师_250
+      - US_youtube@资源分享师_251
+      - US_youtube@资源分享师_252
+      - US_youtube@资源分享师_253
+      - US_youtube@资源分享师_254
+      - JP_youtube@资源分享师_255
+      - US_youtube@资源分享师_256
+      - US_youtube@资源分享师_257
+      - US_youtube@资源分享师_258
+      - US_youtube@资源分享师_259
+      - CA_youtube@资源分享师_260
+      - US_youtube@资源分享师_262
+      - US_youtube@资源分享师_263
+      - SG_youtube@资源分享师_264
+      - US_youtube@资源分享师_265
+      - US_youtube@资源分享师_266
+      - US_youtube@资源分享师_267
+      - US_youtube@资源分享师_269
+      - US_youtube@资源分享师_270
+      - US_youtube@资源分享师_271
+      - US_youtube@资源分享师_272
+      - US_youtube@资源分享师_273
+      - US_youtube@资源分享师_274
+      - SG_youtube@资源分享师_275
+      - US_youtube@资源分享师_276
+      - US_youtube@资源分享师_277
+      - US_youtube@资源分享师_278
+      - US_youtube@资源分享师_279
+      - US_youtube@资源分享师_280
+      - US_youtube@资源分享师_281
+      - TW_youtube@资源分享师_282
+      - US_youtube@资源分享师_283
+      - US_youtube@资源分享师_285
+      - US_youtube@资源分享师_286
+      - US_youtube@资源分享师_287
+      - US_youtube@资源分享师_288
+      - US_youtube@资源分享师_289
+      - US_youtube@资源分享师_290
+      - US_youtube@资源分享师_291
+      - US_youtube@资源分享师_292
+      - JP_youtube@资源分享师_293
+      - US_youtube@资源分享师_294
+      - US_youtube@资源分享师_295
+      - US_youtube@资源分享师_296
+      - TW_youtube@资源分享师_297
+      - TW_youtube@资源分享师_298
+      - US_youtube@资源分享师_299
+      - US_youtube@资源分享师_300
+      - US_youtube@资源分享师_301
+      - US_youtube@资源分享师_302
+      - CA_youtube@资源分享师_303
+      - US_youtube@资源分享师_304
+      - US_youtube@资源分享师_305
+      - US_youtube@资源分享师_306
+      - US_youtube@资源分享师_307
+      - US_youtube@资源分享师_308
+      - US_youtube@资源分享师_309
+      - US_youtube@资源分享师_310
+      - US_youtube@资源分享师_311
+      - US_youtube@资源分享师_312
+      - US_youtube@资源分享师_313
+      - TW_youtube@资源分享师_314
+      - KR_youtube@资源分享师_315
+      - US_youtube@资源分享师_316
+      - FR_youtube@资源分享师_317
+      - US_youtube@资源分享师_318
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_youtube@资源分享师_1
-      - CN_youtube@资源分享师_3
-      - CN_youtube@资源分享师_4
-      - CN_youtube@资源分享师_5
-      - US_youtube@资源分享师_9
-      - CN_youtube@资源分享师_10
-      - CN_youtube@资源分享师_17
+      - TW_youtube@资源分享师_1
+      - SG_youtube@资源分享师_2
+      - SG_youtube@资源分享师_3
+      - TW_youtube@资源分享师_4
+      - TW_youtube@资源分享师_5
+      - TW_youtube@资源分享师_6
+      - SG_youtube@资源分享师_7
+      - TW_youtube@资源分享师_10
+      - TW_youtube@资源分享师_11
+      - SG_youtube@资源分享师_13
+      - TW_youtube@资源分享师_15
+      - US_youtube@资源分享师_16
+      - JP_youtube@资源分享师_17
       - TW_youtube@资源分享师_18
-      - CN_youtube@资源分享师_20
-      - TW_youtube@资源分享师_25
-      - US_youtube@资源分享师_28
+      - US_youtube@资源分享师_19
+      - SG_youtube@资源分享师_20
+      - TW_youtube@资源分享师_21
+      - TW_youtube@资源分享师_22
+      - TW_youtube@资源分享师_23
+      - US_youtube@资源分享师_24
+      - JP_youtube@资源分享师_25
+      - TW_youtube@资源分享师_26
+      - JP_youtube@资源分享师_27
+      - US_youtube@资源分享师_29
       - US_youtube@资源分享师_30
-      - CN_youtube@资源分享师_32
-      - CN_youtube@资源分享师_35
-      - US_youtube@资源分享师_39
-      - CN_youtube@资源分享师_46
-      - US_youtube@资源分享师_56
-      - JP_youtube@资源分享师_58
-      - US_youtube@资源分享师_59
-      - CN_youtube@资源分享师_65
-      - CN_youtube@资源分享师_68
-      - US_youtube@资源分享师_74
-      - US_youtube@资源分享师_75
+      - US_youtube@资源分享师_31
+      - JP_youtube@资源分享师_32
+      - TW_youtube@资源分享师_33
+      - JP_youtube@资源分享师_34
+      - TW_youtube@资源分享师_35
+      - US_youtube@资源分享师_36
+      - US_youtube@资源分享师_37
+      - US_youtube@资源分享师_38
+      - SG_youtube@资源分享师_39
+      - US_youtube@资源分享师_40
+      - JP_youtube@资源分享师_41
+      - TW_youtube@资源分享师_42
+      - CN_youtube@资源分享师_43
+      - US_youtube@资源分享师_44
+      - US_youtube@资源分享师_45
+      - TW_youtube@资源分享师_46
+      - US_youtube@资源分享师_48
+      - US_youtube@资源分享师_49
+      - TW_youtube@资源分享师_50
+      - TW_youtube@资源分享师_51
+      - TW_youtube@资源分享师_53
+      - TW_youtube@资源分享师_54
+      - US_youtube@资源分享师_55
+      - SG_youtube@资源分享师_56
+      - TW_youtube@资源分享师_57
+      - US_youtube@资源分享师_58
+      - TW_youtube@资源分享师_59
+      - SG_youtube@资源分享师_60
+      - SG_youtube@资源分享师_61
+      - CN_youtube@资源分享师_62
+      - TW_youtube@资源分享师_63
+      - TW_youtube@资源分享师_64
+      - US_youtube@资源分享师_65
+      - US_youtube@资源分享师_66
+      - US_youtube@资源分享师_67
+      - TW_youtube@资源分享师_68
+      - TW_youtube@资源分享师_69
+      - US_youtube@资源分享师_70
+      - TW_youtube@资源分享师_71
+      - SG_youtube@资源分享师_72
+      - TW_youtube@资源分享师_73
+      - TW_youtube@资源分享师_74
+      - TW_youtube@资源分享师_75
+      - SG_youtube@资源分享师_77
       - US_youtube@资源分享师_78
-      - US_youtube@资源分享师_80
+      - TW_youtube@资源分享师_79
+      - JP_youtube@资源分享师_80
+      - TW_youtube@资源分享师_81
+      - HK_youtube@资源分享师_82
+      - TW_youtube@资源分享师_84
       - TW_youtube@资源分享师_85
-      - JP_youtube@资源分享师_89
-      - CN_youtube@资源分享师_90
-      - US_youtube@资源分享师_91
+      - TW_youtube@资源分享师_86
+      - TW_youtube@资源分享师_87
+      - US_youtube@资源分享师_88
+      - US_youtube@资源分享师_89
+      - SG_youtube@资源分享师_90
+      - TW_youtube@资源分享师_92
+      - TW_youtube@资源分享师_93
+      - SG_youtube@资源分享师_94
       - US_youtube@资源分享师_95
       - JP_youtube@资源分享师_96
-      - US_youtube@资源分享师_97
-      - US_youtube@资源分享师_98
-      - US_youtube@资源分享师_100
+      - TW_youtube@资源分享师_97
+      - TW_youtube@资源分享师_98
+      - TW_youtube@资源分享师_100
+      - TW_youtube@资源分享师_101
       - US_youtube@资源分享师_102
       - TW_youtube@资源分享师_103
+      - US_youtube@资源分享师_104
+      - TW_youtube@资源分享师_105
+      - TW_youtube@资源分享师_107
+      - TW_youtube@资源分享师_108
       - US_youtube@资源分享师_109
-      - CN_youtube@资源分享师_111
-      - JP_youtube@资源分享师_119
+      - SG_youtube@资源分享师_110
+      - TW_youtube@资源分享师_111
+      - TW_youtube@资源分享师_112
+      - US_youtube@资源分享师_114
+      - TW_youtube@资源分享师_115
+      - SG_youtube@资源分享师_116
+      - TW_youtube@资源分享师_118
+      - US_youtube@资源分享师_119
+      - US_youtube@资源分享师_121
       - US_youtube@资源分享师_122
+      - US_youtube@资源分享师_123
+      - US_youtube@资源分享师_124
+      - JP_youtube@资源分享师_125
       - US_youtube@资源分享师_126
-      - US_youtube@资源分享师_129
-      - FR_youtube@资源分享师_130
-      - US_youtube@资源分享师_133
+      - TW_youtube@资源分享师_127
+      - JP_youtube@资源分享师_128
+      - TW_youtube@资源分享师_129
+      - TW_youtube@资源分享师_130
+      - TW_youtube@资源分享师_131
+      - TW_youtube@资源分享师_132
+      - JP_youtube@资源分享师_133
       - US_youtube@资源分享师_134
-      - US_youtube@资源分享师_135
-      - US_youtube@资源分享师_139
-      - US_youtube@资源分享师_141
+      - JP_youtube@资源分享师_135
+      - CA_youtube@资源分享师_136
+      - TW_youtube@资源分享师_137
+      - TW_youtube@资源分享师_139
+      - KR_youtube@资源分享师_140
+      - JP_youtube@资源分享师_141
       - US_youtube@资源分享师_142
-      - US_youtube@资源分享师_148
-      - US_youtube@资源分享师_149
+      - SG_youtube@资源分享师_144
+      - JP_youtube@资源分享师_146
+      - JP_youtube@资源分享师_147
+      - JP_youtube@资源分享师_148
+      - TW_youtube@资源分享师_149
+      - US_youtube@资源分享师_150
       - US_youtube@资源分享师_151
-      - JP_youtube@资源分享师_152
       - US_youtube@资源分享师_153
-      - US_youtube@资源分享师_154
+      - JP_youtube@资源分享师_155
+      - CA_youtube@资源分享师_157
       - US_youtube@资源分享师_158
-      - US_youtube@资源分享师_159
-      - US_youtube@资源分享师_161
-      - JP_youtube@资源分享师_162
-      - CN_youtube@资源分享师_165
+      - JP_youtube@资源分享师_159
+      - US_youtube@资源分享师_162
+      - US_youtube@资源分享师_163
+      - TW_youtube@资源分享师_164
       - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_170
-      - US_youtube@资源分享师_176
-      - CN_youtube@资源分享师_178
+      - US_youtube@资源分享师_168
+      - TW_youtube@资源分享师_169
+      - JP_youtube@资源分享师_170
+      - TW_youtube@资源分享师_171
+      - US_youtube@资源分享师_172
+      - US_youtube@资源分享师_173
+      - JP_youtube@资源分享师_174
+      - US_youtube@资源分享师_175
+      - JP_youtube@资源分享师_176
+      - JP_youtube@资源分享师_177
+      - JP_youtube@资源分享师_179
+      - US_youtube@资源分享师_180
+      - TW_youtube@资源分享师_181
+      - TW_youtube@资源分享师_182
       - US_youtube@资源分享师_183
-      - US_youtube@资源分享师_187
-      - US_youtube@资源分享师_197
+      - TW_youtube@资源分享师_187
+      - US_youtube@资源分享师_188
+      - JP_youtube@资源分享师_189
+      - TW_youtube@资源分享师_190
+      - US_youtube@资源分享师_191
+      - US_youtube@资源分享师_192
+      - JP_youtube@资源分享师_193
+      - KR_youtube@资源分享师_194
+      - US_youtube@资源分享师_195
+      - TW_youtube@资源分享师_196
+      - US_youtube@资源分享师_198
       - US_youtube@资源分享师_199
-      - JP_youtube@资源分享师_203
+      - US_youtube@资源分享师_200
+      - US_youtube@资源分享师_201
+      - US_youtube@资源分享师_203
       - US_youtube@资源分享师_204
+      - US_youtube@资源分享师_205
+      - TW_youtube@资源分享师_206
       - US_youtube@资源分享师_207
-      - JP_youtube@资源分享师_209
-      - US_youtube@资源分享师_222
-      - JP_youtube@资源分享师_223
+      - US_youtube@资源分享师_209
+      - US_youtube@资源分享师_210
+      - JP_youtube@资源分享师_211
+      - JP_youtube@资源分享师_213
+      - US_youtube@资源分享师_214
+      - US_youtube@资源分享师_215
+      - US_youtube@资源分享师_216
+      - US_youtube@资源分享师_217
+      - US_youtube@资源分享师_218
+      - US_youtube@资源分享师_220
+      - TW_youtube@资源分享师_222
+      - US_youtube@资源分享师_223
+      - US_youtube@资源分享师_224
+      - US_youtube@资源分享师_225
       - US_youtube@资源分享师_226
+      - US_youtube@资源分享师_227
       - US_youtube@资源分享师_228
-      - CN_youtube@资源分享师_229
-      - GB_youtube@资源分享师_230
+      - US_youtube@资源分享师_229
       - US_youtube@资源分享师_231
+      - TW_youtube@资源分享师_232
       - US_youtube@资源分享师_233
-      - US_youtube@资源分享师_236
-      - US_youtube@资源分享师_238
-      - US_youtube@资源分享师_241
-      - CN_youtube@资源分享师_242
-      - CN_youtube@资源分享师_244
-      - TW_youtube@资源分享师_245
+      - US_youtube@资源分享师_234
+      - US_youtube@资源分享师_235
+      - TW_youtube@资源分享师_236
+      - US_youtube@资源分享师_237
+      - TW_youtube@资源分享师_238
+      - US_youtube@资源分享师_239
+      - US_youtube@资源分享师_240
+      - SG_youtube@资源分享师_241
+      - US_youtube@资源分享师_242
+      - US_youtube@资源分享师_243
+      - US_youtube@资源分享师_244
+      - US_youtube@资源分享师_245
+      - TW_youtube@资源分享师_246
+      - US_youtube@资源分享师_247
+      - US_youtube@资源分享师_248
+      - US_youtube@资源分享师_249
+      - US_youtube@资源分享师_250
+      - US_youtube@资源分享师_251
+      - US_youtube@资源分享师_252
+      - US_youtube@资源分享师_253
+      - US_youtube@资源分享师_254
+      - JP_youtube@资源分享师_255
+      - US_youtube@资源分享师_256
+      - US_youtube@资源分享师_257
+      - US_youtube@资源分享师_258
+      - US_youtube@资源分享师_259
+      - CA_youtube@资源分享师_260
+      - US_youtube@资源分享师_262
+      - US_youtube@资源分享师_263
+      - SG_youtube@资源分享师_264
+      - US_youtube@资源分享师_265
+      - US_youtube@资源分享师_266
+      - US_youtube@资源分享师_267
+      - US_youtube@资源分享师_269
+      - US_youtube@资源分享师_270
+      - US_youtube@资源分享师_271
+      - US_youtube@资源分享师_272
+      - US_youtube@资源分享师_273
+      - US_youtube@资源分享师_274
+      - SG_youtube@资源分享师_275
+      - US_youtube@资源分享师_276
+      - US_youtube@资源分享师_277
+      - US_youtube@资源分享师_278
+      - US_youtube@资源分享师_279
+      - US_youtube@资源分享师_280
+      - US_youtube@资源分享师_281
+      - TW_youtube@资源分享师_282
+      - US_youtube@资源分享师_283
+      - US_youtube@资源分享师_285
+      - US_youtube@资源分享师_286
+      - US_youtube@资源分享师_287
+      - US_youtube@资源分享师_288
+      - US_youtube@资源分享师_289
+      - US_youtube@资源分享师_290
+      - US_youtube@资源分享师_291
+      - US_youtube@资源分享师_292
+      - JP_youtube@资源分享师_293
+      - US_youtube@资源分享师_294
+      - US_youtube@资源分享师_295
+      - US_youtube@资源分享师_296
+      - TW_youtube@资源分享师_297
+      - TW_youtube@资源分享师_298
+      - US_youtube@资源分享师_299
+      - US_youtube@资源分享师_300
+      - US_youtube@资源分享师_301
+      - US_youtube@资源分享师_302
+      - CA_youtube@资源分享师_303
+      - US_youtube@资源分享师_304
+      - US_youtube@资源分享师_305
+      - US_youtube@资源分享师_306
+      - US_youtube@资源分享师_307
+      - US_youtube@资源分享师_308
+      - US_youtube@资源分享师_309
+      - US_youtube@资源分享师_310
+      - US_youtube@资源分享师_311
+      - US_youtube@资源分享师_312
+      - US_youtube@资源分享师_313
+      - TW_youtube@资源分享师_314
+      - KR_youtube@资源分享师_315
+      - US_youtube@资源分享师_316
+      - FR_youtube@资源分享师_317
+      - US_youtube@资源分享师_318
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -384,92 +1156,285 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_youtube@资源分享师_1
-      - CN_youtube@资源分享师_3
-      - CN_youtube@资源分享师_4
-      - CN_youtube@资源分享师_5
-      - US_youtube@资源分享师_9
-      - CN_youtube@资源分享师_10
-      - CN_youtube@资源分享师_17
+      - TW_youtube@资源分享师_1
+      - SG_youtube@资源分享师_2
+      - SG_youtube@资源分享师_3
+      - TW_youtube@资源分享师_4
+      - TW_youtube@资源分享师_5
+      - TW_youtube@资源分享师_6
+      - SG_youtube@资源分享师_7
+      - TW_youtube@资源分享师_10
+      - TW_youtube@资源分享师_11
+      - SG_youtube@资源分享师_13
+      - TW_youtube@资源分享师_15
+      - US_youtube@资源分享师_16
+      - JP_youtube@资源分享师_17
       - TW_youtube@资源分享师_18
-      - CN_youtube@资源分享师_20
-      - TW_youtube@资源分享师_25
-      - US_youtube@资源分享师_28
+      - US_youtube@资源分享师_19
+      - SG_youtube@资源分享师_20
+      - TW_youtube@资源分享师_21
+      - TW_youtube@资源分享师_22
+      - TW_youtube@资源分享师_23
+      - US_youtube@资源分享师_24
+      - JP_youtube@资源分享师_25
+      - TW_youtube@资源分享师_26
+      - JP_youtube@资源分享师_27
+      - US_youtube@资源分享师_29
       - US_youtube@资源分享师_30
-      - CN_youtube@资源分享师_32
-      - CN_youtube@资源分享师_35
-      - US_youtube@资源分享师_39
-      - CN_youtube@资源分享师_46
-      - US_youtube@资源分享师_56
-      - JP_youtube@资源分享师_58
-      - US_youtube@资源分享师_59
-      - CN_youtube@资源分享师_65
-      - CN_youtube@资源分享师_68
-      - US_youtube@资源分享师_74
-      - US_youtube@资源分享师_75
+      - US_youtube@资源分享师_31
+      - JP_youtube@资源分享师_32
+      - TW_youtube@资源分享师_33
+      - JP_youtube@资源分享师_34
+      - TW_youtube@资源分享师_35
+      - US_youtube@资源分享师_36
+      - US_youtube@资源分享师_37
+      - US_youtube@资源分享师_38
+      - SG_youtube@资源分享师_39
+      - US_youtube@资源分享师_40
+      - JP_youtube@资源分享师_41
+      - TW_youtube@资源分享师_42
+      - CN_youtube@资源分享师_43
+      - US_youtube@资源分享师_44
+      - US_youtube@资源分享师_45
+      - TW_youtube@资源分享师_46
+      - US_youtube@资源分享师_48
+      - US_youtube@资源分享师_49
+      - TW_youtube@资源分享师_50
+      - TW_youtube@资源分享师_51
+      - TW_youtube@资源分享师_53
+      - TW_youtube@资源分享师_54
+      - US_youtube@资源分享师_55
+      - SG_youtube@资源分享师_56
+      - TW_youtube@资源分享师_57
+      - US_youtube@资源分享师_58
+      - TW_youtube@资源分享师_59
+      - SG_youtube@资源分享师_60
+      - SG_youtube@资源分享师_61
+      - CN_youtube@资源分享师_62
+      - TW_youtube@资源分享师_63
+      - TW_youtube@资源分享师_64
+      - US_youtube@资源分享师_65
+      - US_youtube@资源分享师_66
+      - US_youtube@资源分享师_67
+      - TW_youtube@资源分享师_68
+      - TW_youtube@资源分享师_69
+      - US_youtube@资源分享师_70
+      - TW_youtube@资源分享师_71
+      - SG_youtube@资源分享师_72
+      - TW_youtube@资源分享师_73
+      - TW_youtube@资源分享师_74
+      - TW_youtube@资源分享师_75
+      - SG_youtube@资源分享师_77
       - US_youtube@资源分享师_78
-      - US_youtube@资源分享师_80
+      - TW_youtube@资源分享师_79
+      - JP_youtube@资源分享师_80
+      - TW_youtube@资源分享师_81
+      - HK_youtube@资源分享师_82
+      - TW_youtube@资源分享师_84
       - TW_youtube@资源分享师_85
-      - JP_youtube@资源分享师_89
-      - CN_youtube@资源分享师_90
-      - US_youtube@资源分享师_91
+      - TW_youtube@资源分享师_86
+      - TW_youtube@资源分享师_87
+      - US_youtube@资源分享师_88
+      - US_youtube@资源分享师_89
+      - SG_youtube@资源分享师_90
+      - TW_youtube@资源分享师_92
+      - TW_youtube@资源分享师_93
+      - SG_youtube@资源分享师_94
       - US_youtube@资源分享师_95
       - JP_youtube@资源分享师_96
-      - US_youtube@资源分享师_97
-      - US_youtube@资源分享师_98
-      - US_youtube@资源分享师_100
+      - TW_youtube@资源分享师_97
+      - TW_youtube@资源分享师_98
+      - TW_youtube@资源分享师_100
+      - TW_youtube@资源分享师_101
       - US_youtube@资源分享师_102
       - TW_youtube@资源分享师_103
+      - US_youtube@资源分享师_104
+      - TW_youtube@资源分享师_105
+      - TW_youtube@资源分享师_107
+      - TW_youtube@资源分享师_108
       - US_youtube@资源分享师_109
-      - CN_youtube@资源分享师_111
-      - JP_youtube@资源分享师_119
+      - SG_youtube@资源分享师_110
+      - TW_youtube@资源分享师_111
+      - TW_youtube@资源分享师_112
+      - US_youtube@资源分享师_114
+      - TW_youtube@资源分享师_115
+      - SG_youtube@资源分享师_116
+      - TW_youtube@资源分享师_118
+      - US_youtube@资源分享师_119
+      - US_youtube@资源分享师_121
       - US_youtube@资源分享师_122
+      - US_youtube@资源分享师_123
+      - US_youtube@资源分享师_124
+      - JP_youtube@资源分享师_125
       - US_youtube@资源分享师_126
-      - US_youtube@资源分享师_129
-      - FR_youtube@资源分享师_130
-      - US_youtube@资源分享师_133
+      - TW_youtube@资源分享师_127
+      - JP_youtube@资源分享师_128
+      - TW_youtube@资源分享师_129
+      - TW_youtube@资源分享师_130
+      - TW_youtube@资源分享师_131
+      - TW_youtube@资源分享师_132
+      - JP_youtube@资源分享师_133
       - US_youtube@资源分享师_134
-      - US_youtube@资源分享师_135
-      - US_youtube@资源分享师_139
-      - US_youtube@资源分享师_141
+      - JP_youtube@资源分享师_135
+      - CA_youtube@资源分享师_136
+      - TW_youtube@资源分享师_137
+      - TW_youtube@资源分享师_139
+      - KR_youtube@资源分享师_140
+      - JP_youtube@资源分享师_141
       - US_youtube@资源分享师_142
-      - US_youtube@资源分享师_148
-      - US_youtube@资源分享师_149
+      - SG_youtube@资源分享师_144
+      - JP_youtube@资源分享师_146
+      - JP_youtube@资源分享师_147
+      - JP_youtube@资源分享师_148
+      - TW_youtube@资源分享师_149
+      - US_youtube@资源分享师_150
       - US_youtube@资源分享师_151
-      - JP_youtube@资源分享师_152
       - US_youtube@资源分享师_153
-      - US_youtube@资源分享师_154
+      - JP_youtube@资源分享师_155
+      - CA_youtube@资源分享师_157
       - US_youtube@资源分享师_158
-      - US_youtube@资源分享师_159
-      - US_youtube@资源分享师_161
-      - JP_youtube@资源分享师_162
-      - CN_youtube@资源分享师_165
+      - JP_youtube@资源分享师_159
+      - US_youtube@资源分享师_162
+      - US_youtube@资源分享师_163
+      - TW_youtube@资源分享师_164
       - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_170
-      - US_youtube@资源分享师_176
-      - CN_youtube@资源分享师_178
+      - US_youtube@资源分享师_168
+      - TW_youtube@资源分享师_169
+      - JP_youtube@资源分享师_170
+      - TW_youtube@资源分享师_171
+      - US_youtube@资源分享师_172
+      - US_youtube@资源分享师_173
+      - JP_youtube@资源分享师_174
+      - US_youtube@资源分享师_175
+      - JP_youtube@资源分享师_176
+      - JP_youtube@资源分享师_177
+      - JP_youtube@资源分享师_179
+      - US_youtube@资源分享师_180
+      - TW_youtube@资源分享师_181
+      - TW_youtube@资源分享师_182
       - US_youtube@资源分享师_183
-      - US_youtube@资源分享师_187
-      - US_youtube@资源分享师_197
+      - TW_youtube@资源分享师_187
+      - US_youtube@资源分享师_188
+      - JP_youtube@资源分享师_189
+      - TW_youtube@资源分享师_190
+      - US_youtube@资源分享师_191
+      - US_youtube@资源分享师_192
+      - JP_youtube@资源分享师_193
+      - KR_youtube@资源分享师_194
+      - US_youtube@资源分享师_195
+      - TW_youtube@资源分享师_196
+      - US_youtube@资源分享师_198
       - US_youtube@资源分享师_199
-      - JP_youtube@资源分享师_203
+      - US_youtube@资源分享师_200
+      - US_youtube@资源分享师_201
+      - US_youtube@资源分享师_203
       - US_youtube@资源分享师_204
+      - US_youtube@资源分享师_205
+      - TW_youtube@资源分享师_206
       - US_youtube@资源分享师_207
-      - JP_youtube@资源分享师_209
-      - US_youtube@资源分享师_222
-      - JP_youtube@资源分享师_223
+      - US_youtube@资源分享师_209
+      - US_youtube@资源分享师_210
+      - JP_youtube@资源分享师_211
+      - JP_youtube@资源分享师_213
+      - US_youtube@资源分享师_214
+      - US_youtube@资源分享师_215
+      - US_youtube@资源分享师_216
+      - US_youtube@资源分享师_217
+      - US_youtube@资源分享师_218
+      - US_youtube@资源分享师_220
+      - TW_youtube@资源分享师_222
+      - US_youtube@资源分享师_223
+      - US_youtube@资源分享师_224
+      - US_youtube@资源分享师_225
       - US_youtube@资源分享师_226
+      - US_youtube@资源分享师_227
       - US_youtube@资源分享师_228
-      - CN_youtube@资源分享师_229
-      - GB_youtube@资源分享师_230
+      - US_youtube@资源分享师_229
       - US_youtube@资源分享师_231
+      - TW_youtube@资源分享师_232
       - US_youtube@资源分享师_233
-      - US_youtube@资源分享师_236
-      - US_youtube@资源分享师_238
-      - US_youtube@资源分享师_241
-      - CN_youtube@资源分享师_242
-      - CN_youtube@资源分享师_244
-      - TW_youtube@资源分享师_245
+      - US_youtube@资源分享师_234
+      - US_youtube@资源分享师_235
+      - TW_youtube@资源分享师_236
+      - US_youtube@资源分享师_237
+      - TW_youtube@资源分享师_238
+      - US_youtube@资源分享师_239
+      - US_youtube@资源分享师_240
+      - SG_youtube@资源分享师_241
+      - US_youtube@资源分享师_242
+      - US_youtube@资源分享师_243
+      - US_youtube@资源分享师_244
+      - US_youtube@资源分享师_245
+      - TW_youtube@资源分享师_246
+      - US_youtube@资源分享师_247
+      - US_youtube@资源分享师_248
+      - US_youtube@资源分享师_249
+      - US_youtube@资源分享师_250
+      - US_youtube@资源分享师_251
+      - US_youtube@资源分享师_252
+      - US_youtube@资源分享师_253
+      - US_youtube@资源分享师_254
+      - JP_youtube@资源分享师_255
+      - US_youtube@资源分享师_256
+      - US_youtube@资源分享师_257
+      - US_youtube@资源分享师_258
+      - US_youtube@资源分享师_259
+      - CA_youtube@资源分享师_260
+      - US_youtube@资源分享师_262
+      - US_youtube@资源分享师_263
+      - SG_youtube@资源分享师_264
+      - US_youtube@资源分享师_265
+      - US_youtube@资源分享师_266
+      - US_youtube@资源分享师_267
+      - US_youtube@资源分享师_269
+      - US_youtube@资源分享师_270
+      - US_youtube@资源分享师_271
+      - US_youtube@资源分享师_272
+      - US_youtube@资源分享师_273
+      - US_youtube@资源分享师_274
+      - SG_youtube@资源分享师_275
+      - US_youtube@资源分享师_276
+      - US_youtube@资源分享师_277
+      - US_youtube@资源分享师_278
+      - US_youtube@资源分享师_279
+      - US_youtube@资源分享师_280
+      - US_youtube@资源分享师_281
+      - TW_youtube@资源分享师_282
+      - US_youtube@资源分享师_283
+      - US_youtube@资源分享师_285
+      - US_youtube@资源分享师_286
+      - US_youtube@资源分享师_287
+      - US_youtube@资源分享师_288
+      - US_youtube@资源分享师_289
+      - US_youtube@资源分享师_290
+      - US_youtube@资源分享师_291
+      - US_youtube@资源分享师_292
+      - JP_youtube@资源分享师_293
+      - US_youtube@资源分享师_294
+      - US_youtube@资源分享师_295
+      - US_youtube@资源分享师_296
+      - TW_youtube@资源分享师_297
+      - TW_youtube@资源分享师_298
+      - US_youtube@资源分享师_299
+      - US_youtube@资源分享师_300
+      - US_youtube@资源分享师_301
+      - US_youtube@资源分享师_302
+      - CA_youtube@资源分享师_303
+      - US_youtube@资源分享师_304
+      - US_youtube@资源分享师_305
+      - US_youtube@资源分享师_306
+      - US_youtube@资源分享师_307
+      - US_youtube@资源分享师_308
+      - US_youtube@资源分享师_309
+      - US_youtube@资源分享师_310
+      - US_youtube@资源分享师_311
+      - US_youtube@资源分享师_312
+      - US_youtube@资源分享师_313
+      - TW_youtube@资源分享师_314
+      - KR_youtube@资源分享师_315
+      - US_youtube@资源分享师_316
+      - FR_youtube@资源分享师_317
+      - US_youtube@资源分享师_318
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -480,275 +1445,854 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_youtube@资源分享师_1
-      - CN_youtube@资源分享师_3
-      - CN_youtube@资源分享师_4
-      - CN_youtube@资源分享师_5
-      - US_youtube@资源分享师_9
-      - CN_youtube@资源分享师_10
-      - CN_youtube@资源分享师_17
+      - TW_youtube@资源分享师_1
+      - SG_youtube@资源分享师_2
+      - SG_youtube@资源分享师_3
+      - TW_youtube@资源分享师_4
+      - TW_youtube@资源分享师_5
+      - TW_youtube@资源分享师_6
+      - SG_youtube@资源分享师_7
+      - TW_youtube@资源分享师_10
+      - TW_youtube@资源分享师_11
+      - SG_youtube@资源分享师_13
+      - TW_youtube@资源分享师_15
+      - US_youtube@资源分享师_16
+      - JP_youtube@资源分享师_17
       - TW_youtube@资源分享师_18
-      - CN_youtube@资源分享师_20
-      - TW_youtube@资源分享师_25
-      - US_youtube@资源分享师_28
+      - US_youtube@资源分享师_19
+      - SG_youtube@资源分享师_20
+      - TW_youtube@资源分享师_21
+      - TW_youtube@资源分享师_22
+      - TW_youtube@资源分享师_23
+      - US_youtube@资源分享师_24
+      - JP_youtube@资源分享师_25
+      - TW_youtube@资源分享师_26
+      - JP_youtube@资源分享师_27
+      - US_youtube@资源分享师_29
       - US_youtube@资源分享师_30
-      - CN_youtube@资源分享师_32
-      - CN_youtube@资源分享师_35
-      - US_youtube@资源分享师_39
-      - CN_youtube@资源分享师_46
-      - US_youtube@资源分享师_56
-      - JP_youtube@资源分享师_58
-      - US_youtube@资源分享师_59
-      - CN_youtube@资源分享师_65
-      - CN_youtube@资源分享师_68
-      - US_youtube@资源分享师_74
-      - US_youtube@资源分享师_75
+      - US_youtube@资源分享师_31
+      - JP_youtube@资源分享师_32
+      - TW_youtube@资源分享师_33
+      - JP_youtube@资源分享师_34
+      - TW_youtube@资源分享师_35
+      - US_youtube@资源分享师_36
+      - US_youtube@资源分享师_37
+      - US_youtube@资源分享师_38
+      - SG_youtube@资源分享师_39
+      - US_youtube@资源分享师_40
+      - JP_youtube@资源分享师_41
+      - TW_youtube@资源分享师_42
+      - CN_youtube@资源分享师_43
+      - US_youtube@资源分享师_44
+      - US_youtube@资源分享师_45
+      - TW_youtube@资源分享师_46
+      - US_youtube@资源分享师_48
+      - US_youtube@资源分享师_49
+      - TW_youtube@资源分享师_50
+      - TW_youtube@资源分享师_51
+      - TW_youtube@资源分享师_53
+      - TW_youtube@资源分享师_54
+      - US_youtube@资源分享师_55
+      - SG_youtube@资源分享师_56
+      - TW_youtube@资源分享师_57
+      - US_youtube@资源分享师_58
+      - TW_youtube@资源分享师_59
+      - SG_youtube@资源分享师_60
+      - SG_youtube@资源分享师_61
+      - CN_youtube@资源分享师_62
+      - TW_youtube@资源分享师_63
+      - TW_youtube@资源分享师_64
+      - US_youtube@资源分享师_65
+      - US_youtube@资源分享师_66
+      - US_youtube@资源分享师_67
+      - TW_youtube@资源分享师_68
+      - TW_youtube@资源分享师_69
+      - US_youtube@资源分享师_70
+      - TW_youtube@资源分享师_71
+      - SG_youtube@资源分享师_72
+      - TW_youtube@资源分享师_73
+      - TW_youtube@资源分享师_74
+      - TW_youtube@资源分享师_75
+      - SG_youtube@资源分享师_77
       - US_youtube@资源分享师_78
-      - US_youtube@资源分享师_80
+      - TW_youtube@资源分享师_79
+      - JP_youtube@资源分享师_80
+      - TW_youtube@资源分享师_81
+      - HK_youtube@资源分享师_82
+      - TW_youtube@资源分享师_84
       - TW_youtube@资源分享师_85
-      - JP_youtube@资源分享师_89
-      - CN_youtube@资源分享师_90
-      - US_youtube@资源分享师_91
+      - TW_youtube@资源分享师_86
+      - TW_youtube@资源分享师_87
+      - US_youtube@资源分享师_88
+      - US_youtube@资源分享师_89
+      - SG_youtube@资源分享师_90
+      - TW_youtube@资源分享师_92
+      - TW_youtube@资源分享师_93
+      - SG_youtube@资源分享师_94
       - US_youtube@资源分享师_95
       - JP_youtube@资源分享师_96
-      - US_youtube@资源分享师_97
-      - US_youtube@资源分享师_98
-      - US_youtube@资源分享师_100
+      - TW_youtube@资源分享师_97
+      - TW_youtube@资源分享师_98
+      - TW_youtube@资源分享师_100
+      - TW_youtube@资源分享师_101
       - US_youtube@资源分享师_102
       - TW_youtube@资源分享师_103
+      - US_youtube@资源分享师_104
+      - TW_youtube@资源分享师_105
+      - TW_youtube@资源分享师_107
+      - TW_youtube@资源分享师_108
       - US_youtube@资源分享师_109
-      - CN_youtube@资源分享师_111
-      - JP_youtube@资源分享师_119
+      - SG_youtube@资源分享师_110
+      - TW_youtube@资源分享师_111
+      - TW_youtube@资源分享师_112
+      - US_youtube@资源分享师_114
+      - TW_youtube@资源分享师_115
+      - SG_youtube@资源分享师_116
+      - TW_youtube@资源分享师_118
+      - US_youtube@资源分享师_119
+      - US_youtube@资源分享师_121
       - US_youtube@资源分享师_122
+      - US_youtube@资源分享师_123
+      - US_youtube@资源分享师_124
+      - JP_youtube@资源分享师_125
       - US_youtube@资源分享师_126
-      - US_youtube@资源分享师_129
-      - FR_youtube@资源分享师_130
-      - US_youtube@资源分享师_133
+      - TW_youtube@资源分享师_127
+      - JP_youtube@资源分享师_128
+      - TW_youtube@资源分享师_129
+      - TW_youtube@资源分享师_130
+      - TW_youtube@资源分享师_131
+      - TW_youtube@资源分享师_132
+      - JP_youtube@资源分享师_133
       - US_youtube@资源分享师_134
-      - US_youtube@资源分享师_135
-      - US_youtube@资源分享师_139
-      - US_youtube@资源分享师_141
+      - JP_youtube@资源分享师_135
+      - CA_youtube@资源分享师_136
+      - TW_youtube@资源分享师_137
+      - TW_youtube@资源分享师_139
+      - KR_youtube@资源分享师_140
+      - JP_youtube@资源分享师_141
       - US_youtube@资源分享师_142
-      - US_youtube@资源分享师_148
-      - US_youtube@资源分享师_149
+      - SG_youtube@资源分享师_144
+      - JP_youtube@资源分享师_146
+      - JP_youtube@资源分享师_147
+      - JP_youtube@资源分享师_148
+      - TW_youtube@资源分享师_149
+      - US_youtube@资源分享师_150
       - US_youtube@资源分享师_151
-      - JP_youtube@资源分享师_152
       - US_youtube@资源分享师_153
-      - US_youtube@资源分享师_154
+      - JP_youtube@资源分享师_155
+      - CA_youtube@资源分享师_157
       - US_youtube@资源分享师_158
-      - US_youtube@资源分享师_159
-      - US_youtube@资源分享师_161
-      - JP_youtube@资源分享师_162
-      - CN_youtube@资源分享师_165
+      - JP_youtube@资源分享师_159
+      - US_youtube@资源分享师_162
+      - US_youtube@资源分享师_163
+      - TW_youtube@资源分享师_164
       - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_170
-      - US_youtube@资源分享师_176
-      - CN_youtube@资源分享师_178
+      - US_youtube@资源分享师_168
+      - TW_youtube@资源分享师_169
+      - JP_youtube@资源分享师_170
+      - TW_youtube@资源分享师_171
+      - US_youtube@资源分享师_172
+      - US_youtube@资源分享师_173
+      - JP_youtube@资源分享师_174
+      - US_youtube@资源分享师_175
+      - JP_youtube@资源分享师_176
+      - JP_youtube@资源分享师_177
+      - JP_youtube@资源分享师_179
+      - US_youtube@资源分享师_180
+      - TW_youtube@资源分享师_181
+      - TW_youtube@资源分享师_182
       - US_youtube@资源分享师_183
-      - US_youtube@资源分享师_187
-      - US_youtube@资源分享师_197
+      - TW_youtube@资源分享师_187
+      - US_youtube@资源分享师_188
+      - JP_youtube@资源分享师_189
+      - TW_youtube@资源分享师_190
+      - US_youtube@资源分享师_191
+      - US_youtube@资源分享师_192
+      - JP_youtube@资源分享师_193
+      - KR_youtube@资源分享师_194
+      - US_youtube@资源分享师_195
+      - TW_youtube@资源分享师_196
+      - US_youtube@资源分享师_198
       - US_youtube@资源分享师_199
-      - JP_youtube@资源分享师_203
+      - US_youtube@资源分享师_200
+      - US_youtube@资源分享师_201
+      - US_youtube@资源分享师_203
       - US_youtube@资源分享师_204
+      - US_youtube@资源分享师_205
+      - TW_youtube@资源分享师_206
       - US_youtube@资源分享师_207
-      - JP_youtube@资源分享师_209
-      - US_youtube@资源分享师_222
-      - JP_youtube@资源分享师_223
+      - US_youtube@资源分享师_209
+      - US_youtube@资源分享师_210
+      - JP_youtube@资源分享师_211
+      - JP_youtube@资源分享师_213
+      - US_youtube@资源分享师_214
+      - US_youtube@资源分享师_215
+      - US_youtube@资源分享师_216
+      - US_youtube@资源分享师_217
+      - US_youtube@资源分享师_218
+      - US_youtube@资源分享师_220
+      - TW_youtube@资源分享师_222
+      - US_youtube@资源分享师_223
+      - US_youtube@资源分享师_224
+      - US_youtube@资源分享师_225
       - US_youtube@资源分享师_226
+      - US_youtube@资源分享师_227
       - US_youtube@资源分享师_228
-      - CN_youtube@资源分享师_229
-      - GB_youtube@资源分享师_230
+      - US_youtube@资源分享师_229
       - US_youtube@资源分享师_231
+      - TW_youtube@资源分享师_232
       - US_youtube@资源分享师_233
-      - US_youtube@资源分享师_236
-      - US_youtube@资源分享师_238
-      - US_youtube@资源分享师_241
-      - CN_youtube@资源分享师_242
-      - CN_youtube@资源分享师_244
-      - TW_youtube@资源分享师_245
+      - US_youtube@资源分享师_234
+      - US_youtube@资源分享师_235
+      - TW_youtube@资源分享师_236
+      - US_youtube@资源分享师_237
+      - TW_youtube@资源分享师_238
+      - US_youtube@资源分享师_239
+      - US_youtube@资源分享师_240
+      - SG_youtube@资源分享师_241
+      - US_youtube@资源分享师_242
+      - US_youtube@资源分享师_243
+      - US_youtube@资源分享师_244
+      - US_youtube@资源分享师_245
+      - TW_youtube@资源分享师_246
+      - US_youtube@资源分享师_247
+      - US_youtube@资源分享师_248
+      - US_youtube@资源分享师_249
+      - US_youtube@资源分享师_250
+      - US_youtube@资源分享师_251
+      - US_youtube@资源分享师_252
+      - US_youtube@资源分享师_253
+      - US_youtube@资源分享师_254
+      - JP_youtube@资源分享师_255
+      - US_youtube@资源分享师_256
+      - US_youtube@资源分享师_257
+      - US_youtube@资源分享师_258
+      - US_youtube@资源分享师_259
+      - CA_youtube@资源分享师_260
+      - US_youtube@资源分享师_262
+      - US_youtube@资源分享师_263
+      - SG_youtube@资源分享师_264
+      - US_youtube@资源分享师_265
+      - US_youtube@资源分享师_266
+      - US_youtube@资源分享师_267
+      - US_youtube@资源分享师_269
+      - US_youtube@资源分享师_270
+      - US_youtube@资源分享师_271
+      - US_youtube@资源分享师_272
+      - US_youtube@资源分享师_273
+      - US_youtube@资源分享师_274
+      - SG_youtube@资源分享师_275
+      - US_youtube@资源分享师_276
+      - US_youtube@资源分享师_277
+      - US_youtube@资源分享师_278
+      - US_youtube@资源分享师_279
+      - US_youtube@资源分享师_280
+      - US_youtube@资源分享师_281
+      - TW_youtube@资源分享师_282
+      - US_youtube@资源分享师_283
+      - US_youtube@资源分享师_285
+      - US_youtube@资源分享师_286
+      - US_youtube@资源分享师_287
+      - US_youtube@资源分享师_288
+      - US_youtube@资源分享师_289
+      - US_youtube@资源分享师_290
+      - US_youtube@资源分享师_291
+      - US_youtube@资源分享师_292
+      - JP_youtube@资源分享师_293
+      - US_youtube@资源分享师_294
+      - US_youtube@资源分享师_295
+      - US_youtube@资源分享师_296
+      - TW_youtube@资源分享师_297
+      - TW_youtube@资源分享师_298
+      - US_youtube@资源分享师_299
+      - US_youtube@资源分享师_300
+      - US_youtube@资源分享师_301
+      - US_youtube@资源分享师_302
+      - CA_youtube@资源分享师_303
+      - US_youtube@资源分享师_304
+      - US_youtube@资源分享师_305
+      - US_youtube@资源分享师_306
+      - US_youtube@资源分享师_307
+      - US_youtube@资源分享师_308
+      - US_youtube@资源分享师_309
+      - US_youtube@资源分享师_310
+      - US_youtube@资源分享师_311
+      - US_youtube@资源分享师_312
+      - US_youtube@资源分享师_313
+      - TW_youtube@资源分享师_314
+      - KR_youtube@资源分享师_315
+      - US_youtube@资源分享师_316
+      - FR_youtube@资源分享师_317
+      - US_youtube@资源分享师_318
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_youtube@资源分享师_1
-      - CN_youtube@资源分享师_3
-      - CN_youtube@资源分享师_4
-      - CN_youtube@资源分享师_5
-      - US_youtube@资源分享师_9
-      - CN_youtube@资源分享师_10
-      - CN_youtube@资源分享师_17
+      - TW_youtube@资源分享师_1
+      - SG_youtube@资源分享师_2
+      - SG_youtube@资源分享师_3
+      - TW_youtube@资源分享师_4
+      - TW_youtube@资源分享师_5
+      - TW_youtube@资源分享师_6
+      - SG_youtube@资源分享师_7
+      - TW_youtube@资源分享师_10
+      - TW_youtube@资源分享师_11
+      - SG_youtube@资源分享师_13
+      - TW_youtube@资源分享师_15
+      - US_youtube@资源分享师_16
+      - JP_youtube@资源分享师_17
       - TW_youtube@资源分享师_18
-      - CN_youtube@资源分享师_20
-      - TW_youtube@资源分享师_25
-      - US_youtube@资源分享师_28
+      - US_youtube@资源分享师_19
+      - SG_youtube@资源分享师_20
+      - TW_youtube@资源分享师_21
+      - TW_youtube@资源分享师_22
+      - TW_youtube@资源分享师_23
+      - US_youtube@资源分享师_24
+      - JP_youtube@资源分享师_25
+      - TW_youtube@资源分享师_26
+      - JP_youtube@资源分享师_27
+      - US_youtube@资源分享师_29
       - US_youtube@资源分享师_30
-      - CN_youtube@资源分享师_32
-      - CN_youtube@资源分享师_35
-      - US_youtube@资源分享师_39
-      - CN_youtube@资源分享师_46
-      - US_youtube@资源分享师_56
-      - JP_youtube@资源分享师_58
-      - US_youtube@资源分享师_59
-      - CN_youtube@资源分享师_65
-      - CN_youtube@资源分享师_68
-      - US_youtube@资源分享师_74
-      - US_youtube@资源分享师_75
+      - US_youtube@资源分享师_31
+      - JP_youtube@资源分享师_32
+      - TW_youtube@资源分享师_33
+      - JP_youtube@资源分享师_34
+      - TW_youtube@资源分享师_35
+      - US_youtube@资源分享师_36
+      - US_youtube@资源分享师_37
+      - US_youtube@资源分享师_38
+      - SG_youtube@资源分享师_39
+      - US_youtube@资源分享师_40
+      - JP_youtube@资源分享师_41
+      - TW_youtube@资源分享师_42
+      - CN_youtube@资源分享师_43
+      - US_youtube@资源分享师_44
+      - US_youtube@资源分享师_45
+      - TW_youtube@资源分享师_46
+      - US_youtube@资源分享师_48
+      - US_youtube@资源分享师_49
+      - TW_youtube@资源分享师_50
+      - TW_youtube@资源分享师_51
+      - TW_youtube@资源分享师_53
+      - TW_youtube@资源分享师_54
+      - US_youtube@资源分享师_55
+      - SG_youtube@资源分享师_56
+      - TW_youtube@资源分享师_57
+      - US_youtube@资源分享师_58
+      - TW_youtube@资源分享师_59
+      - SG_youtube@资源分享师_60
+      - SG_youtube@资源分享师_61
+      - CN_youtube@资源分享师_62
+      - TW_youtube@资源分享师_63
+      - TW_youtube@资源分享师_64
+      - US_youtube@资源分享师_65
+      - US_youtube@资源分享师_66
+      - US_youtube@资源分享师_67
+      - TW_youtube@资源分享师_68
+      - TW_youtube@资源分享师_69
+      - US_youtube@资源分享师_70
+      - TW_youtube@资源分享师_71
+      - SG_youtube@资源分享师_72
+      - TW_youtube@资源分享师_73
+      - TW_youtube@资源分享师_74
+      - TW_youtube@资源分享师_75
+      - SG_youtube@资源分享师_77
       - US_youtube@资源分享师_78
-      - US_youtube@资源分享师_80
+      - TW_youtube@资源分享师_79
+      - JP_youtube@资源分享师_80
+      - TW_youtube@资源分享师_81
+      - HK_youtube@资源分享师_82
+      - TW_youtube@资源分享师_84
       - TW_youtube@资源分享师_85
-      - JP_youtube@资源分享师_89
-      - CN_youtube@资源分享师_90
-      - US_youtube@资源分享师_91
+      - TW_youtube@资源分享师_86
+      - TW_youtube@资源分享师_87
+      - US_youtube@资源分享师_88
+      - US_youtube@资源分享师_89
+      - SG_youtube@资源分享师_90
+      - TW_youtube@资源分享师_92
+      - TW_youtube@资源分享师_93
+      - SG_youtube@资源分享师_94
       - US_youtube@资源分享师_95
       - JP_youtube@资源分享师_96
-      - US_youtube@资源分享师_97
-      - US_youtube@资源分享师_98
-      - US_youtube@资源分享师_100
+      - TW_youtube@资源分享师_97
+      - TW_youtube@资源分享师_98
+      - TW_youtube@资源分享师_100
+      - TW_youtube@资源分享师_101
       - US_youtube@资源分享师_102
       - TW_youtube@资源分享师_103
+      - US_youtube@资源分享师_104
+      - TW_youtube@资源分享师_105
+      - TW_youtube@资源分享师_107
+      - TW_youtube@资源分享师_108
       - US_youtube@资源分享师_109
-      - CN_youtube@资源分享师_111
-      - JP_youtube@资源分享师_119
+      - SG_youtube@资源分享师_110
+      - TW_youtube@资源分享师_111
+      - TW_youtube@资源分享师_112
+      - US_youtube@资源分享师_114
+      - TW_youtube@资源分享师_115
+      - SG_youtube@资源分享师_116
+      - TW_youtube@资源分享师_118
+      - US_youtube@资源分享师_119
+      - US_youtube@资源分享师_121
       - US_youtube@资源分享师_122
+      - US_youtube@资源分享师_123
+      - US_youtube@资源分享师_124
+      - JP_youtube@资源分享师_125
       - US_youtube@资源分享师_126
-      - US_youtube@资源分享师_129
-      - FR_youtube@资源分享师_130
-      - US_youtube@资源分享师_133
+      - TW_youtube@资源分享师_127
+      - JP_youtube@资源分享师_128
+      - TW_youtube@资源分享师_129
+      - TW_youtube@资源分享师_130
+      - TW_youtube@资源分享师_131
+      - TW_youtube@资源分享师_132
+      - JP_youtube@资源分享师_133
       - US_youtube@资源分享师_134
-      - US_youtube@资源分享师_135
-      - US_youtube@资源分享师_139
-      - US_youtube@资源分享师_141
+      - JP_youtube@资源分享师_135
+      - CA_youtube@资源分享师_136
+      - TW_youtube@资源分享师_137
+      - TW_youtube@资源分享师_139
+      - KR_youtube@资源分享师_140
+      - JP_youtube@资源分享师_141
       - US_youtube@资源分享师_142
-      - US_youtube@资源分享师_148
-      - US_youtube@资源分享师_149
+      - SG_youtube@资源分享师_144
+      - JP_youtube@资源分享师_146
+      - JP_youtube@资源分享师_147
+      - JP_youtube@资源分享师_148
+      - TW_youtube@资源分享师_149
+      - US_youtube@资源分享师_150
       - US_youtube@资源分享师_151
-      - JP_youtube@资源分享师_152
       - US_youtube@资源分享师_153
-      - US_youtube@资源分享师_154
+      - JP_youtube@资源分享师_155
+      - CA_youtube@资源分享师_157
       - US_youtube@资源分享师_158
-      - US_youtube@资源分享师_159
-      - US_youtube@资源分享师_161
-      - JP_youtube@资源分享师_162
-      - CN_youtube@资源分享师_165
+      - JP_youtube@资源分享师_159
+      - US_youtube@资源分享师_162
+      - US_youtube@资源分享师_163
+      - TW_youtube@资源分享师_164
       - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_170
-      - US_youtube@资源分享师_176
-      - CN_youtube@资源分享师_178
+      - US_youtube@资源分享师_168
+      - TW_youtube@资源分享师_169
+      - JP_youtube@资源分享师_170
+      - TW_youtube@资源分享师_171
+      - US_youtube@资源分享师_172
+      - US_youtube@资源分享师_173
+      - JP_youtube@资源分享师_174
+      - US_youtube@资源分享师_175
+      - JP_youtube@资源分享师_176
+      - JP_youtube@资源分享师_177
+      - JP_youtube@资源分享师_179
+      - US_youtube@资源分享师_180
+      - TW_youtube@资源分享师_181
+      - TW_youtube@资源分享师_182
       - US_youtube@资源分享师_183
-      - US_youtube@资源分享师_187
-      - US_youtube@资源分享师_197
+      - TW_youtube@资源分享师_187
+      - US_youtube@资源分享师_188
+      - JP_youtube@资源分享师_189
+      - TW_youtube@资源分享师_190
+      - US_youtube@资源分享师_191
+      - US_youtube@资源分享师_192
+      - JP_youtube@资源分享师_193
+      - KR_youtube@资源分享师_194
+      - US_youtube@资源分享师_195
+      - TW_youtube@资源分享师_196
+      - US_youtube@资源分享师_198
       - US_youtube@资源分享师_199
-      - JP_youtube@资源分享师_203
+      - US_youtube@资源分享师_200
+      - US_youtube@资源分享师_201
+      - US_youtube@资源分享师_203
       - US_youtube@资源分享师_204
+      - US_youtube@资源分享师_205
+      - TW_youtube@资源分享师_206
       - US_youtube@资源分享师_207
-      - JP_youtube@资源分享师_209
-      - US_youtube@资源分享师_222
-      - JP_youtube@资源分享师_223
+      - US_youtube@资源分享师_209
+      - US_youtube@资源分享师_210
+      - JP_youtube@资源分享师_211
+      - JP_youtube@资源分享师_213
+      - US_youtube@资源分享师_214
+      - US_youtube@资源分享师_215
+      - US_youtube@资源分享师_216
+      - US_youtube@资源分享师_217
+      - US_youtube@资源分享师_218
+      - US_youtube@资源分享师_220
+      - TW_youtube@资源分享师_222
+      - US_youtube@资源分享师_223
+      - US_youtube@资源分享师_224
+      - US_youtube@资源分享师_225
       - US_youtube@资源分享师_226
+      - US_youtube@资源分享师_227
       - US_youtube@资源分享师_228
-      - CN_youtube@资源分享师_229
-      - GB_youtube@资源分享师_230
+      - US_youtube@资源分享师_229
       - US_youtube@资源分享师_231
+      - TW_youtube@资源分享师_232
       - US_youtube@资源分享师_233
-      - US_youtube@资源分享师_236
-      - US_youtube@资源分享师_238
-      - US_youtube@资源分享师_241
-      - CN_youtube@资源分享师_242
-      - CN_youtube@资源分享师_244
-      - TW_youtube@资源分享师_245
+      - US_youtube@资源分享师_234
+      - US_youtube@资源分享师_235
+      - TW_youtube@资源分享师_236
+      - US_youtube@资源分享师_237
+      - TW_youtube@资源分享师_238
+      - US_youtube@资源分享师_239
+      - US_youtube@资源分享师_240
+      - SG_youtube@资源分享师_241
+      - US_youtube@资源分享师_242
+      - US_youtube@资源分享师_243
+      - US_youtube@资源分享师_244
+      - US_youtube@资源分享师_245
+      - TW_youtube@资源分享师_246
+      - US_youtube@资源分享师_247
+      - US_youtube@资源分享师_248
+      - US_youtube@资源分享师_249
+      - US_youtube@资源分享师_250
+      - US_youtube@资源分享师_251
+      - US_youtube@资源分享师_252
+      - US_youtube@资源分享师_253
+      - US_youtube@资源分享师_254
+      - JP_youtube@资源分享师_255
+      - US_youtube@资源分享师_256
+      - US_youtube@资源分享师_257
+      - US_youtube@资源分享师_258
+      - US_youtube@资源分享师_259
+      - CA_youtube@资源分享师_260
+      - US_youtube@资源分享师_262
+      - US_youtube@资源分享师_263
+      - SG_youtube@资源分享师_264
+      - US_youtube@资源分享师_265
+      - US_youtube@资源分享师_266
+      - US_youtube@资源分享师_267
+      - US_youtube@资源分享师_269
+      - US_youtube@资源分享师_270
+      - US_youtube@资源分享师_271
+      - US_youtube@资源分享师_272
+      - US_youtube@资源分享师_273
+      - US_youtube@资源分享师_274
+      - SG_youtube@资源分享师_275
+      - US_youtube@资源分享师_276
+      - US_youtube@资源分享师_277
+      - US_youtube@资源分享师_278
+      - US_youtube@资源分享师_279
+      - US_youtube@资源分享师_280
+      - US_youtube@资源分享师_281
+      - TW_youtube@资源分享师_282
+      - US_youtube@资源分享师_283
+      - US_youtube@资源分享师_285
+      - US_youtube@资源分享师_286
+      - US_youtube@资源分享师_287
+      - US_youtube@资源分享师_288
+      - US_youtube@资源分享师_289
+      - US_youtube@资源分享师_290
+      - US_youtube@资源分享师_291
+      - US_youtube@资源分享师_292
+      - JP_youtube@资源分享师_293
+      - US_youtube@资源分享师_294
+      - US_youtube@资源分享师_295
+      - US_youtube@资源分享师_296
+      - TW_youtube@资源分享师_297
+      - TW_youtube@资源分享师_298
+      - US_youtube@资源分享师_299
+      - US_youtube@资源分享师_300
+      - US_youtube@资源分享师_301
+      - US_youtube@资源分享师_302
+      - CA_youtube@资源分享师_303
+      - US_youtube@资源分享师_304
+      - US_youtube@资源分享师_305
+      - US_youtube@资源分享师_306
+      - US_youtube@资源分享师_307
+      - US_youtube@资源分享师_308
+      - US_youtube@资源分享师_309
+      - US_youtube@资源分享师_310
+      - US_youtube@资源分享师_311
+      - US_youtube@资源分享师_312
+      - US_youtube@资源分享师_313
+      - TW_youtube@资源分享师_314
+      - KR_youtube@资源分享师_315
+      - US_youtube@资源分享师_316
+      - FR_youtube@资源分享师_317
+      - US_youtube@资源分享师_318
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_youtube@资源分享师_1
-      - CN_youtube@资源分享师_3
-      - CN_youtube@资源分享师_4
-      - CN_youtube@资源分享师_5
-      - US_youtube@资源分享师_9
-      - CN_youtube@资源分享师_10
-      - CN_youtube@资源分享师_17
+      - TW_youtube@资源分享师_1
+      - SG_youtube@资源分享师_2
+      - SG_youtube@资源分享师_3
+      - TW_youtube@资源分享师_4
+      - TW_youtube@资源分享师_5
+      - TW_youtube@资源分享师_6
+      - SG_youtube@资源分享师_7
+      - TW_youtube@资源分享师_10
+      - TW_youtube@资源分享师_11
+      - SG_youtube@资源分享师_13
+      - TW_youtube@资源分享师_15
+      - US_youtube@资源分享师_16
+      - JP_youtube@资源分享师_17
       - TW_youtube@资源分享师_18
-      - CN_youtube@资源分享师_20
-      - TW_youtube@资源分享师_25
-      - US_youtube@资源分享师_28
+      - US_youtube@资源分享师_19
+      - SG_youtube@资源分享师_20
+      - TW_youtube@资源分享师_21
+      - TW_youtube@资源分享师_22
+      - TW_youtube@资源分享师_23
+      - US_youtube@资源分享师_24
+      - JP_youtube@资源分享师_25
+      - TW_youtube@资源分享师_26
+      - JP_youtube@资源分享师_27
+      - US_youtube@资源分享师_29
       - US_youtube@资源分享师_30
-      - CN_youtube@资源分享师_32
-      - CN_youtube@资源分享师_35
-      - US_youtube@资源分享师_39
-      - CN_youtube@资源分享师_46
-      - US_youtube@资源分享师_56
-      - JP_youtube@资源分享师_58
-      - US_youtube@资源分享师_59
-      - CN_youtube@资源分享师_65
-      - CN_youtube@资源分享师_68
-      - US_youtube@资源分享师_74
-      - US_youtube@资源分享师_75
+      - US_youtube@资源分享师_31
+      - JP_youtube@资源分享师_32
+      - TW_youtube@资源分享师_33
+      - JP_youtube@资源分享师_34
+      - TW_youtube@资源分享师_35
+      - US_youtube@资源分享师_36
+      - US_youtube@资源分享师_37
+      - US_youtube@资源分享师_38
+      - SG_youtube@资源分享师_39
+      - US_youtube@资源分享师_40
+      - JP_youtube@资源分享师_41
+      - TW_youtube@资源分享师_42
+      - CN_youtube@资源分享师_43
+      - US_youtube@资源分享师_44
+      - US_youtube@资源分享师_45
+      - TW_youtube@资源分享师_46
+      - US_youtube@资源分享师_48
+      - US_youtube@资源分享师_49
+      - TW_youtube@资源分享师_50
+      - TW_youtube@资源分享师_51
+      - TW_youtube@资源分享师_53
+      - TW_youtube@资源分享师_54
+      - US_youtube@资源分享师_55
+      - SG_youtube@资源分享师_56
+      - TW_youtube@资源分享师_57
+      - US_youtube@资源分享师_58
+      - TW_youtube@资源分享师_59
+      - SG_youtube@资源分享师_60
+      - SG_youtube@资源分享师_61
+      - CN_youtube@资源分享师_62
+      - TW_youtube@资源分享师_63
+      - TW_youtube@资源分享师_64
+      - US_youtube@资源分享师_65
+      - US_youtube@资源分享师_66
+      - US_youtube@资源分享师_67
+      - TW_youtube@资源分享师_68
+      - TW_youtube@资源分享师_69
+      - US_youtube@资源分享师_70
+      - TW_youtube@资源分享师_71
+      - SG_youtube@资源分享师_72
+      - TW_youtube@资源分享师_73
+      - TW_youtube@资源分享师_74
+      - TW_youtube@资源分享师_75
+      - SG_youtube@资源分享师_77
       - US_youtube@资源分享师_78
-      - US_youtube@资源分享师_80
+      - TW_youtube@资源分享师_79
+      - JP_youtube@资源分享师_80
+      - TW_youtube@资源分享师_81
+      - HK_youtube@资源分享师_82
+      - TW_youtube@资源分享师_84
       - TW_youtube@资源分享师_85
-      - JP_youtube@资源分享师_89
-      - CN_youtube@资源分享师_90
-      - US_youtube@资源分享师_91
+      - TW_youtube@资源分享师_86
+      - TW_youtube@资源分享师_87
+      - US_youtube@资源分享师_88
+      - US_youtube@资源分享师_89
+      - SG_youtube@资源分享师_90
+      - TW_youtube@资源分享师_92
+      - TW_youtube@资源分享师_93
+      - SG_youtube@资源分享师_94
       - US_youtube@资源分享师_95
       - JP_youtube@资源分享师_96
-      - US_youtube@资源分享师_97
-      - US_youtube@资源分享师_98
-      - US_youtube@资源分享师_100
+      - TW_youtube@资源分享师_97
+      - TW_youtube@资源分享师_98
+      - TW_youtube@资源分享师_100
+      - TW_youtube@资源分享师_101
       - US_youtube@资源分享师_102
       - TW_youtube@资源分享师_103
+      - US_youtube@资源分享师_104
+      - TW_youtube@资源分享师_105
+      - TW_youtube@资源分享师_107
+      - TW_youtube@资源分享师_108
       - US_youtube@资源分享师_109
-      - CN_youtube@资源分享师_111
-      - JP_youtube@资源分享师_119
+      - SG_youtube@资源分享师_110
+      - TW_youtube@资源分享师_111
+      - TW_youtube@资源分享师_112
+      - US_youtube@资源分享师_114
+      - TW_youtube@资源分享师_115
+      - SG_youtube@资源分享师_116
+      - TW_youtube@资源分享师_118
+      - US_youtube@资源分享师_119
+      - US_youtube@资源分享师_121
       - US_youtube@资源分享师_122
+      - US_youtube@资源分享师_123
+      - US_youtube@资源分享师_124
+      - JP_youtube@资源分享师_125
       - US_youtube@资源分享师_126
-      - US_youtube@资源分享师_129
-      - FR_youtube@资源分享师_130
-      - US_youtube@资源分享师_133
+      - TW_youtube@资源分享师_127
+      - JP_youtube@资源分享师_128
+      - TW_youtube@资源分享师_129
+      - TW_youtube@资源分享师_130
+      - TW_youtube@资源分享师_131
+      - TW_youtube@资源分享师_132
+      - JP_youtube@资源分享师_133
       - US_youtube@资源分享师_134
-      - US_youtube@资源分享师_135
-      - US_youtube@资源分享师_139
-      - US_youtube@资源分享师_141
+      - JP_youtube@资源分享师_135
+      - CA_youtube@资源分享师_136
+      - TW_youtube@资源分享师_137
+      - TW_youtube@资源分享师_139
+      - KR_youtube@资源分享师_140
+      - JP_youtube@资源分享师_141
       - US_youtube@资源分享师_142
-      - US_youtube@资源分享师_148
-      - US_youtube@资源分享师_149
+      - SG_youtube@资源分享师_144
+      - JP_youtube@资源分享师_146
+      - JP_youtube@资源分享师_147
+      - JP_youtube@资源分享师_148
+      - TW_youtube@资源分享师_149
+      - US_youtube@资源分享师_150
       - US_youtube@资源分享师_151
-      - JP_youtube@资源分享师_152
       - US_youtube@资源分享师_153
-      - US_youtube@资源分享师_154
+      - JP_youtube@资源分享师_155
+      - CA_youtube@资源分享师_157
       - US_youtube@资源分享师_158
-      - US_youtube@资源分享师_159
-      - US_youtube@资源分享师_161
-      - JP_youtube@资源分享师_162
-      - CN_youtube@资源分享师_165
+      - JP_youtube@资源分享师_159
+      - US_youtube@资源分享师_162
+      - US_youtube@资源分享师_163
+      - TW_youtube@资源分享师_164
       - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_170
-      - US_youtube@资源分享师_176
-      - CN_youtube@资源分享师_178
+      - US_youtube@资源分享师_168
+      - TW_youtube@资源分享师_169
+      - JP_youtube@资源分享师_170
+      - TW_youtube@资源分享师_171
+      - US_youtube@资源分享师_172
+      - US_youtube@资源分享师_173
+      - JP_youtube@资源分享师_174
+      - US_youtube@资源分享师_175
+      - JP_youtube@资源分享师_176
+      - JP_youtube@资源分享师_177
+      - JP_youtube@资源分享师_179
+      - US_youtube@资源分享师_180
+      - TW_youtube@资源分享师_181
+      - TW_youtube@资源分享师_182
       - US_youtube@资源分享师_183
-      - US_youtube@资源分享师_187
-      - US_youtube@资源分享师_197
+      - TW_youtube@资源分享师_187
+      - US_youtube@资源分享师_188
+      - JP_youtube@资源分享师_189
+      - TW_youtube@资源分享师_190
+      - US_youtube@资源分享师_191
+      - US_youtube@资源分享师_192
+      - JP_youtube@资源分享师_193
+      - KR_youtube@资源分享师_194
+      - US_youtube@资源分享师_195
+      - TW_youtube@资源分享师_196
+      - US_youtube@资源分享师_198
       - US_youtube@资源分享师_199
-      - JP_youtube@资源分享师_203
+      - US_youtube@资源分享师_200
+      - US_youtube@资源分享师_201
+      - US_youtube@资源分享师_203
       - US_youtube@资源分享师_204
+      - US_youtube@资源分享师_205
+      - TW_youtube@资源分享师_206
       - US_youtube@资源分享师_207
-      - JP_youtube@资源分享师_209
-      - US_youtube@资源分享师_222
-      - JP_youtube@资源分享师_223
+      - US_youtube@资源分享师_209
+      - US_youtube@资源分享师_210
+      - JP_youtube@资源分享师_211
+      - JP_youtube@资源分享师_213
+      - US_youtube@资源分享师_214
+      - US_youtube@资源分享师_215
+      - US_youtube@资源分享师_216
+      - US_youtube@资源分享师_217
+      - US_youtube@资源分享师_218
+      - US_youtube@资源分享师_220
+      - TW_youtube@资源分享师_222
+      - US_youtube@资源分享师_223
+      - US_youtube@资源分享师_224
+      - US_youtube@资源分享师_225
       - US_youtube@资源分享师_226
+      - US_youtube@资源分享师_227
       - US_youtube@资源分享师_228
-      - CN_youtube@资源分享师_229
-      - GB_youtube@资源分享师_230
+      - US_youtube@资源分享师_229
       - US_youtube@资源分享师_231
+      - TW_youtube@资源分享师_232
       - US_youtube@资源分享师_233
-      - US_youtube@资源分享师_236
-      - US_youtube@资源分享师_238
-      - US_youtube@资源分享师_241
-      - CN_youtube@资源分享师_242
-      - CN_youtube@资源分享师_244
-      - TW_youtube@资源分享师_245
+      - US_youtube@资源分享师_234
+      - US_youtube@资源分享师_235
+      - TW_youtube@资源分享师_236
+      - US_youtube@资源分享师_237
+      - TW_youtube@资源分享师_238
+      - US_youtube@资源分享师_239
+      - US_youtube@资源分享师_240
+      - SG_youtube@资源分享师_241
+      - US_youtube@资源分享师_242
+      - US_youtube@资源分享师_243
+      - US_youtube@资源分享师_244
+      - US_youtube@资源分享师_245
+      - TW_youtube@资源分享师_246
+      - US_youtube@资源分享师_247
+      - US_youtube@资源分享师_248
+      - US_youtube@资源分享师_249
+      - US_youtube@资源分享师_250
+      - US_youtube@资源分享师_251
+      - US_youtube@资源分享师_252
+      - US_youtube@资源分享师_253
+      - US_youtube@资源分享师_254
+      - JP_youtube@资源分享师_255
+      - US_youtube@资源分享师_256
+      - US_youtube@资源分享师_257
+      - US_youtube@资源分享师_258
+      - US_youtube@资源分享师_259
+      - CA_youtube@资源分享师_260
+      - US_youtube@资源分享师_262
+      - US_youtube@资源分享师_263
+      - SG_youtube@资源分享师_264
+      - US_youtube@资源分享师_265
+      - US_youtube@资源分享师_266
+      - US_youtube@资源分享师_267
+      - US_youtube@资源分享师_269
+      - US_youtube@资源分享师_270
+      - US_youtube@资源分享师_271
+      - US_youtube@资源分享师_272
+      - US_youtube@资源分享师_273
+      - US_youtube@资源分享师_274
+      - SG_youtube@资源分享师_275
+      - US_youtube@资源分享师_276
+      - US_youtube@资源分享师_277
+      - US_youtube@资源分享师_278
+      - US_youtube@资源分享师_279
+      - US_youtube@资源分享师_280
+      - US_youtube@资源分享师_281
+      - TW_youtube@资源分享师_282
+      - US_youtube@资源分享师_283
+      - US_youtube@资源分享师_285
+      - US_youtube@资源分享师_286
+      - US_youtube@资源分享师_287
+      - US_youtube@资源分享师_288
+      - US_youtube@资源分享师_289
+      - US_youtube@资源分享师_290
+      - US_youtube@资源分享师_291
+      - US_youtube@资源分享师_292
+      - JP_youtube@资源分享师_293
+      - US_youtube@资源分享师_294
+      - US_youtube@资源分享师_295
+      - US_youtube@资源分享师_296
+      - TW_youtube@资源分享师_297
+      - TW_youtube@资源分享师_298
+      - US_youtube@资源分享师_299
+      - US_youtube@资源分享师_300
+      - US_youtube@资源分享师_301
+      - US_youtube@资源分享师_302
+      - CA_youtube@资源分享师_303
+      - US_youtube@资源分享师_304
+      - US_youtube@资源分享师_305
+      - US_youtube@资源分享师_306
+      - US_youtube@资源分享师_307
+      - US_youtube@资源分享师_308
+      - US_youtube@资源分享师_309
+      - US_youtube@资源分享师_310
+      - US_youtube@资源分享师_311
+      - US_youtube@资源分享师_312
+      - US_youtube@资源分享师_313
+      - TW_youtube@资源分享师_314
+      - KR_youtube@资源分享师_315
+      - US_youtube@资源分享师_316
+      - FR_youtube@资源分享师_317
+      - US_youtube@资源分享师_318
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -764,92 +2308,285 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_youtube@资源分享师_1
-      - CN_youtube@资源分享师_3
-      - CN_youtube@资源分享师_4
-      - CN_youtube@资源分享师_5
-      - US_youtube@资源分享师_9
-      - CN_youtube@资源分享师_10
-      - CN_youtube@资源分享师_17
+      - TW_youtube@资源分享师_1
+      - SG_youtube@资源分享师_2
+      - SG_youtube@资源分享师_3
+      - TW_youtube@资源分享师_4
+      - TW_youtube@资源分享师_5
+      - TW_youtube@资源分享师_6
+      - SG_youtube@资源分享师_7
+      - TW_youtube@资源分享师_10
+      - TW_youtube@资源分享师_11
+      - SG_youtube@资源分享师_13
+      - TW_youtube@资源分享师_15
+      - US_youtube@资源分享师_16
+      - JP_youtube@资源分享师_17
       - TW_youtube@资源分享师_18
-      - CN_youtube@资源分享师_20
-      - TW_youtube@资源分享师_25
-      - US_youtube@资源分享师_28
+      - US_youtube@资源分享师_19
+      - SG_youtube@资源分享师_20
+      - TW_youtube@资源分享师_21
+      - TW_youtube@资源分享师_22
+      - TW_youtube@资源分享师_23
+      - US_youtube@资源分享师_24
+      - JP_youtube@资源分享师_25
+      - TW_youtube@资源分享师_26
+      - JP_youtube@资源分享师_27
+      - US_youtube@资源分享师_29
       - US_youtube@资源分享师_30
-      - CN_youtube@资源分享师_32
-      - CN_youtube@资源分享师_35
-      - US_youtube@资源分享师_39
-      - CN_youtube@资源分享师_46
-      - US_youtube@资源分享师_56
-      - JP_youtube@资源分享师_58
-      - US_youtube@资源分享师_59
-      - CN_youtube@资源分享师_65
-      - CN_youtube@资源分享师_68
-      - US_youtube@资源分享师_74
-      - US_youtube@资源分享师_75
+      - US_youtube@资源分享师_31
+      - JP_youtube@资源分享师_32
+      - TW_youtube@资源分享师_33
+      - JP_youtube@资源分享师_34
+      - TW_youtube@资源分享师_35
+      - US_youtube@资源分享师_36
+      - US_youtube@资源分享师_37
+      - US_youtube@资源分享师_38
+      - SG_youtube@资源分享师_39
+      - US_youtube@资源分享师_40
+      - JP_youtube@资源分享师_41
+      - TW_youtube@资源分享师_42
+      - CN_youtube@资源分享师_43
+      - US_youtube@资源分享师_44
+      - US_youtube@资源分享师_45
+      - TW_youtube@资源分享师_46
+      - US_youtube@资源分享师_48
+      - US_youtube@资源分享师_49
+      - TW_youtube@资源分享师_50
+      - TW_youtube@资源分享师_51
+      - TW_youtube@资源分享师_53
+      - TW_youtube@资源分享师_54
+      - US_youtube@资源分享师_55
+      - SG_youtube@资源分享师_56
+      - TW_youtube@资源分享师_57
+      - US_youtube@资源分享师_58
+      - TW_youtube@资源分享师_59
+      - SG_youtube@资源分享师_60
+      - SG_youtube@资源分享师_61
+      - CN_youtube@资源分享师_62
+      - TW_youtube@资源分享师_63
+      - TW_youtube@资源分享师_64
+      - US_youtube@资源分享师_65
+      - US_youtube@资源分享师_66
+      - US_youtube@资源分享师_67
+      - TW_youtube@资源分享师_68
+      - TW_youtube@资源分享师_69
+      - US_youtube@资源分享师_70
+      - TW_youtube@资源分享师_71
+      - SG_youtube@资源分享师_72
+      - TW_youtube@资源分享师_73
+      - TW_youtube@资源分享师_74
+      - TW_youtube@资源分享师_75
+      - SG_youtube@资源分享师_77
       - US_youtube@资源分享师_78
-      - US_youtube@资源分享师_80
+      - TW_youtube@资源分享师_79
+      - JP_youtube@资源分享师_80
+      - TW_youtube@资源分享师_81
+      - HK_youtube@资源分享师_82
+      - TW_youtube@资源分享师_84
       - TW_youtube@资源分享师_85
-      - JP_youtube@资源分享师_89
-      - CN_youtube@资源分享师_90
-      - US_youtube@资源分享师_91
+      - TW_youtube@资源分享师_86
+      - TW_youtube@资源分享师_87
+      - US_youtube@资源分享师_88
+      - US_youtube@资源分享师_89
+      - SG_youtube@资源分享师_90
+      - TW_youtube@资源分享师_92
+      - TW_youtube@资源分享师_93
+      - SG_youtube@资源分享师_94
       - US_youtube@资源分享师_95
       - JP_youtube@资源分享师_96
-      - US_youtube@资源分享师_97
-      - US_youtube@资源分享师_98
-      - US_youtube@资源分享师_100
+      - TW_youtube@资源分享师_97
+      - TW_youtube@资源分享师_98
+      - TW_youtube@资源分享师_100
+      - TW_youtube@资源分享师_101
       - US_youtube@资源分享师_102
       - TW_youtube@资源分享师_103
+      - US_youtube@资源分享师_104
+      - TW_youtube@资源分享师_105
+      - TW_youtube@资源分享师_107
+      - TW_youtube@资源分享师_108
       - US_youtube@资源分享师_109
-      - CN_youtube@资源分享师_111
-      - JP_youtube@资源分享师_119
+      - SG_youtube@资源分享师_110
+      - TW_youtube@资源分享师_111
+      - TW_youtube@资源分享师_112
+      - US_youtube@资源分享师_114
+      - TW_youtube@资源分享师_115
+      - SG_youtube@资源分享师_116
+      - TW_youtube@资源分享师_118
+      - US_youtube@资源分享师_119
+      - US_youtube@资源分享师_121
       - US_youtube@资源分享师_122
+      - US_youtube@资源分享师_123
+      - US_youtube@资源分享师_124
+      - JP_youtube@资源分享师_125
       - US_youtube@资源分享师_126
-      - US_youtube@资源分享师_129
-      - FR_youtube@资源分享师_130
-      - US_youtube@资源分享师_133
+      - TW_youtube@资源分享师_127
+      - JP_youtube@资源分享师_128
+      - TW_youtube@资源分享师_129
+      - TW_youtube@资源分享师_130
+      - TW_youtube@资源分享师_131
+      - TW_youtube@资源分享师_132
+      - JP_youtube@资源分享师_133
       - US_youtube@资源分享师_134
-      - US_youtube@资源分享师_135
-      - US_youtube@资源分享师_139
-      - US_youtube@资源分享师_141
+      - JP_youtube@资源分享师_135
+      - CA_youtube@资源分享师_136
+      - TW_youtube@资源分享师_137
+      - TW_youtube@资源分享师_139
+      - KR_youtube@资源分享师_140
+      - JP_youtube@资源分享师_141
       - US_youtube@资源分享师_142
-      - US_youtube@资源分享师_148
-      - US_youtube@资源分享师_149
+      - SG_youtube@资源分享师_144
+      - JP_youtube@资源分享师_146
+      - JP_youtube@资源分享师_147
+      - JP_youtube@资源分享师_148
+      - TW_youtube@资源分享师_149
+      - US_youtube@资源分享师_150
       - US_youtube@资源分享师_151
-      - JP_youtube@资源分享师_152
       - US_youtube@资源分享师_153
-      - US_youtube@资源分享师_154
+      - JP_youtube@资源分享师_155
+      - CA_youtube@资源分享师_157
       - US_youtube@资源分享师_158
-      - US_youtube@资源分享师_159
-      - US_youtube@资源分享师_161
-      - JP_youtube@资源分享师_162
-      - CN_youtube@资源分享师_165
+      - JP_youtube@资源分享师_159
+      - US_youtube@资源分享师_162
+      - US_youtube@资源分享师_163
+      - TW_youtube@资源分享师_164
       - US_youtube@资源分享师_167
-      - US_youtube@资源分享师_170
-      - US_youtube@资源分享师_176
-      - CN_youtube@资源分享师_178
+      - US_youtube@资源分享师_168
+      - TW_youtube@资源分享师_169
+      - JP_youtube@资源分享师_170
+      - TW_youtube@资源分享师_171
+      - US_youtube@资源分享师_172
+      - US_youtube@资源分享师_173
+      - JP_youtube@资源分享师_174
+      - US_youtube@资源分享师_175
+      - JP_youtube@资源分享师_176
+      - JP_youtube@资源分享师_177
+      - JP_youtube@资源分享师_179
+      - US_youtube@资源分享师_180
+      - TW_youtube@资源分享师_181
+      - TW_youtube@资源分享师_182
       - US_youtube@资源分享师_183
-      - US_youtube@资源分享师_187
-      - US_youtube@资源分享师_197
+      - TW_youtube@资源分享师_187
+      - US_youtube@资源分享师_188
+      - JP_youtube@资源分享师_189
+      - TW_youtube@资源分享师_190
+      - US_youtube@资源分享师_191
+      - US_youtube@资源分享师_192
+      - JP_youtube@资源分享师_193
+      - KR_youtube@资源分享师_194
+      - US_youtube@资源分享师_195
+      - TW_youtube@资源分享师_196
+      - US_youtube@资源分享师_198
       - US_youtube@资源分享师_199
-      - JP_youtube@资源分享师_203
+      - US_youtube@资源分享师_200
+      - US_youtube@资源分享师_201
+      - US_youtube@资源分享师_203
       - US_youtube@资源分享师_204
+      - US_youtube@资源分享师_205
+      - TW_youtube@资源分享师_206
       - US_youtube@资源分享师_207
-      - JP_youtube@资源分享师_209
-      - US_youtube@资源分享师_222
-      - JP_youtube@资源分享师_223
+      - US_youtube@资源分享师_209
+      - US_youtube@资源分享师_210
+      - JP_youtube@资源分享师_211
+      - JP_youtube@资源分享师_213
+      - US_youtube@资源分享师_214
+      - US_youtube@资源分享师_215
+      - US_youtube@资源分享师_216
+      - US_youtube@资源分享师_217
+      - US_youtube@资源分享师_218
+      - US_youtube@资源分享师_220
+      - TW_youtube@资源分享师_222
+      - US_youtube@资源分享师_223
+      - US_youtube@资源分享师_224
+      - US_youtube@资源分享师_225
       - US_youtube@资源分享师_226
+      - US_youtube@资源分享师_227
       - US_youtube@资源分享师_228
-      - CN_youtube@资源分享师_229
-      - GB_youtube@资源分享师_230
+      - US_youtube@资源分享师_229
       - US_youtube@资源分享师_231
+      - TW_youtube@资源分享师_232
       - US_youtube@资源分享师_233
-      - US_youtube@资源分享师_236
-      - US_youtube@资源分享师_238
-      - US_youtube@资源分享师_241
-      - CN_youtube@资源分享师_242
-      - CN_youtube@资源分享师_244
-      - TW_youtube@资源分享师_245
+      - US_youtube@资源分享师_234
+      - US_youtube@资源分享师_235
+      - TW_youtube@资源分享师_236
+      - US_youtube@资源分享师_237
+      - TW_youtube@资源分享师_238
+      - US_youtube@资源分享师_239
+      - US_youtube@资源分享师_240
+      - SG_youtube@资源分享师_241
+      - US_youtube@资源分享师_242
+      - US_youtube@资源分享师_243
+      - US_youtube@资源分享师_244
+      - US_youtube@资源分享师_245
+      - TW_youtube@资源分享师_246
+      - US_youtube@资源分享师_247
+      - US_youtube@资源分享师_248
+      - US_youtube@资源分享师_249
+      - US_youtube@资源分享师_250
+      - US_youtube@资源分享师_251
+      - US_youtube@资源分享师_252
+      - US_youtube@资源分享师_253
+      - US_youtube@资源分享师_254
+      - JP_youtube@资源分享师_255
+      - US_youtube@资源分享师_256
+      - US_youtube@资源分享师_257
+      - US_youtube@资源分享师_258
+      - US_youtube@资源分享师_259
+      - CA_youtube@资源分享师_260
+      - US_youtube@资源分享师_262
+      - US_youtube@资源分享师_263
+      - SG_youtube@资源分享师_264
+      - US_youtube@资源分享师_265
+      - US_youtube@资源分享师_266
+      - US_youtube@资源分享师_267
+      - US_youtube@资源分享师_269
+      - US_youtube@资源分享师_270
+      - US_youtube@资源分享师_271
+      - US_youtube@资源分享师_272
+      - US_youtube@资源分享师_273
+      - US_youtube@资源分享师_274
+      - SG_youtube@资源分享师_275
+      - US_youtube@资源分享师_276
+      - US_youtube@资源分享师_277
+      - US_youtube@资源分享师_278
+      - US_youtube@资源分享师_279
+      - US_youtube@资源分享师_280
+      - US_youtube@资源分享师_281
+      - TW_youtube@资源分享师_282
+      - US_youtube@资源分享师_283
+      - US_youtube@资源分享师_285
+      - US_youtube@资源分享师_286
+      - US_youtube@资源分享师_287
+      - US_youtube@资源分享师_288
+      - US_youtube@资源分享师_289
+      - US_youtube@资源分享师_290
+      - US_youtube@资源分享师_291
+      - US_youtube@资源分享师_292
+      - JP_youtube@资源分享师_293
+      - US_youtube@资源分享师_294
+      - US_youtube@资源分享师_295
+      - US_youtube@资源分享师_296
+      - TW_youtube@资源分享师_297
+      - TW_youtube@资源分享师_298
+      - US_youtube@资源分享师_299
+      - US_youtube@资源分享师_300
+      - US_youtube@资源分享师_301
+      - US_youtube@资源分享师_302
+      - CA_youtube@资源分享师_303
+      - US_youtube@资源分享师_304
+      - US_youtube@资源分享师_305
+      - US_youtube@资源分享师_306
+      - US_youtube@资源分享师_307
+      - US_youtube@资源分享师_308
+      - US_youtube@资源分享师_309
+      - US_youtube@资源分享师_310
+      - US_youtube@资源分享师_311
+      - US_youtube@资源分享师_312
+      - US_youtube@资源分享师_313
+      - TW_youtube@资源分享师_314
+      - KR_youtube@资源分享师_315
+      - US_youtube@资源分享师_316
+      - FR_youtube@资源分享师_317
+      - US_youtube@资源分享师_318
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
